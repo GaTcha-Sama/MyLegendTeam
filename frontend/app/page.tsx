@@ -7,7 +7,8 @@ import { Player } from "./components/Player";
 import { FormationSlot } from "./components/FormationSlot";
 import { SportSelector } from "./components/SportSelector";
 import { players } from "./data/players";
-import { Sport, sportThemes } from "./types/sports";
+import { Sport, sportThemes, sportPositions } from "./types/sports";
+import { Player as PlayerType } from "./data/players";
 
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
@@ -33,7 +34,7 @@ export default function DreamTeamBuilder() {
           </h2>
           <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} />
           {players
-            .filter(player => !isPlayerInTeam(player.id))
+            .filter(player => player.sport === selectedSport && !isPlayerInTeam(player.id))
             .map((player) => (
               <Player key={player.id} player={player} theme={currentTheme} />
             ))}
@@ -44,14 +45,14 @@ export default function DreamTeamBuilder() {
           <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-3">
             Mon équipe de légende
           </h2>
-          <div className="grid grid-cols-3 gap-6">
-            {["Gardien", "Défenseur", "Milieu", "Attaquant"].map((pos) => (
+          <div className="grid grid-cols-5 gap-4">
+            {sportPositions[selectedSport].map((position) => (
               <FormationSlot
-                key={pos}
-                position={pos}
-                player={team[pos as keyof typeof team] || null}
-                onDropPlayer={handleDropPlayer}
-                isPlayerAlreadyPlaced={isPlayerInTeam(team[pos as keyof typeof team]?.id || 0)}
+                key={position.id}
+                position={position.name}
+                player={team[position.id] as PlayerType | null}
+                onDropPlayer={(_, player) => handleDropPlayer(position.id, player)}
+                isPlayerAlreadyPlaced={isPlayerInTeam(team[position.id]?.id || 0)}
                 theme={currentTheme}
               />
             ))}

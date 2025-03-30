@@ -15,7 +15,7 @@ export const SportSelector = ({ selectedSport, onSelectSport }: SportSelectorPro
           className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200
             ${selectedSport === sport 
               ? `${sportThemes[sport as Sport].primary} text-white` 
-              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+              : 'bg-gray-100 cursor-pointer text-gray-700 hover:bg-gray-200'}`}
         >
           {sport === 'football' ? 'Football' : 
            sport === 'basketball' ? 'Basketball' : 

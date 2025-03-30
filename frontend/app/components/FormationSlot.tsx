@@ -48,7 +48,7 @@ export const FormationSlot = ({
           </button>
         </>
       ) : (
-        <span className="text-gray-400 italic">Position {position}</span>
+        <span className="text-gray-400 italic">{position}</span>
       )}
       {isOver && isPlayerAlreadyPlaced && (
         <div className="absolute bottom-0 left-0 right-0 bg-red-100 text-red-600 text-xs p-1 text-center">
