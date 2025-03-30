@@ -18,6 +18,10 @@ export default function DreamTeamBuilder() {
     setTeam((prev) => ({ ...prev, [position]: player }));
   };
 
+  const resetTeam = () => {
+    setTeam({});
+  };
+
   const isPlayerInTeam = (playerId: number) => {
     return Object.values(team).some(player => player?.id === playerId);
   };
@@ -42,9 +46,17 @@ export default function DreamTeamBuilder() {
 
         {/* Terrain / Composition */}
         <div className="flex-1 p-6 bg-white rounded-xl shadow-lg">
-          <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-3">
-            Mon équipe de légende
-          </h2>
+          <div className="flex justify-between items-center mb-6 text-gray-800 border-b pb-3">
+            <h2 className="text-2xl font-bold">
+              Mon équipe de légende
+            </h2>
+            <button
+              onClick={resetTeam}
+              className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors"
+            >
+              Réinitialiser l&apos;équipe
+            </button>
+          </div>
           <div className="grid grid-cols-5 gap-4">
             {sportPositions[selectedSport].map((position) => (
               <FormationSlot
@@ -54,6 +66,7 @@ export default function DreamTeamBuilder() {
                 onDropPlayer={(_, player) => handleDropPlayer(position.id, player)}
                 isPlayerAlreadyPlaced={isPlayerInTeam(team[position.id]?.id || 0)}
                 theme={currentTheme}
+                backgroundImage={`/images/${selectedSport}-field.jpg`}
               />
             ))}
           </div>

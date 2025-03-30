@@ -8,6 +8,7 @@ interface FormationSlotProps {
   onDropPlayer: (position: string, player: PlayerType | null) => void;
   isPlayerAlreadyPlaced: boolean;
   theme: Theme;
+  backgroundImage: string;
 }
 
 export const FormationSlot = ({ 
