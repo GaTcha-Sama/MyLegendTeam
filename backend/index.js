@@ -1,10 +1,18 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const playerController = require("./controllers/playerController");
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// Routes pour les joueurs
+app.get("/players", playerController.getAllPlayers);
+// app.get("/players/:id", playerController.getPlayerById);
+// app.post("/players", playerController.createPlayer);
+// app.put("/players/:id", playerController.updatePlayer);
+// app.delete("/players/:id", playerController.deletePlayer);
 
 app.get("/", (req, res) => {
   res.send("API MyLegendTeam fonctionne !");

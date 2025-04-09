@@ -8,7 +8,7 @@ interface FormationSlotProps {
   onDropPlayer: (position: string, player: PlayerType | null) => void;
   isPlayerAlreadyPlaced: boolean;
   theme: Theme;
-  backgroundImage: string;
+  positionId: string;
 }
 
 export const FormationSlot = ({ 
@@ -16,7 +16,8 @@ export const FormationSlot = ({
   player, 
   onDropPlayer,
   isPlayerAlreadyPlaced,
-  theme
+  theme,
+  positionId
 }: FormationSlotProps) => {
   const [{ isOver }, drop] = useDrop(() => ({
     accept: "PLAYER",
@@ -31,6 +32,7 @@ export const FormationSlot = ({
   return (
     <div
       ref={drop as unknown as React.Ref<HTMLDivElement>}
+      data-position={positionId}
       className={`w-36 h-20 border-2 border-dashed rounded-lg flex items-center justify-center 
       relative group
       ${isOver ? isPlayerAlreadyPlaced ? "bg-red-100 border-red-500" : "bg-green-100 border-green-500" : "bg-gray-50 border-gray-300"} 

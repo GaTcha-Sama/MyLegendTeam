@@ -7,22 +7,20 @@ interface SportSelectorProps {
 
 export const SportSelector = ({ selectedSport, onSelectSport }: SportSelectorProps) => {
   return (
-    <div className="flex gap-4 mb-6">
+    <select
+      aria-label="Sélectionner un sport"
+      value={selectedSport}
+      onChange={(e) => onSelectSport(e.target.value as Sport)}
+      className="px-4 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+    >
       {Object.keys(sportThemes).map((sport) => (
-        <button
-          key={sport}
-          onClick={() => onSelectSport(sport as Sport)}
-          className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200
-            ${selectedSport === sport 
-              ? 'bg-black text-white' 
-              : 'bg-gray-100 cursor-pointer text-gray-700 hover:bg-gray-200'}`}
-        >
+        <option key={sport} value={sport}>
           {sport === 'football' ? 'Football' : 
            sport === 'basketball' ? 'Basketball' : 
            sport === 'handball' ? 'Handball' : 
            sport === 'hockey' ? 'Hockey' : 'Rugby'}
-        </button>
+        </option>
       ))}
-    </div>
+    </select>
   );
 }; 

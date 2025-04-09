@@ -1,0 +1,31 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Dupont",
+      "lastname": "Antoine",
+      "nationality": "France",
+      "position": "Demi de mêlée",
+      "sport": "Rugby",
+      "image_path": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\FRA\\Antoine-Dupont.png"
+    },
+    {
+      "id": 2,
+      "name": "Ollivon",
+      "lastname": "Charles",
+      "nationality": "France",
+      "position": "Flanker",
+      "sport": "Rugby",
+      "image_path": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\FRA\\Charles-Ollivon.png"
+    },
+    {
+      "id": 3,
+      "name": "Dusautoir",
+      "lastname": "Thierry",
+      "nationality": "France",
+      "position": "Flanker",
+      "sport": "Rugby",
+      "image_path": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\FRA\\Thierry-Dusautoir.jpg"
+    }
+  ]
+}
