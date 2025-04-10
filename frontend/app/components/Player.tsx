@@ -39,7 +39,8 @@ export const Player = ({ player, theme }: PlayerProps) => {
     return 'images/portrait-default.png';
   };
 
-  const imagePath = getImagePath(player.image_path);
+  const imagePath = getImagePath(player.photo);
+  const flagPath = getImagePath(player.flag);
 
   return (
     <div
@@ -63,13 +64,11 @@ export const Player = ({ player, theme }: PlayerProps) => {
         ${isDragging ? "opacity-50" : ""}
       `}
     >
-      {/* Nom du joueur */}
-      <div className="text-lg font-bold mb-3 text-center">
+      <div className="text-sm font-bold mb-3 text-center">
         {`${player.lastname} ${player.name}`}
       </div>
 
-      {/* Container de l'image */}
-      <div className="relative w-full aspect-square mb-3 flex-grow">
+      <div className="relative w-full aspect-square mb-3 flex-grow bg-white rounded-lg">
         <Image 
           src={`/${imagePath}`} 
           alt={`${player.lastname} ${player.name}`} 
@@ -77,18 +76,26 @@ export const Player = ({ player, theme }: PlayerProps) => {
           className="rounded-lg object-cover"
           sizes="(max-width: 768px) 100vw, 300px"
           onError={() => {
-            // Au premier échec de chargement, on bascule sur l'image par défaut
             setUseDefaultImage(true);
           }}
-          // Désactive le comportement de retry automatique de Next.js
           unoptimized={useDefaultImage}
           priority
         />
       </div>
 
-      {/* Nationalité */}
-      <div className="text-base font-medium">
-        {player.nationality}
+      <div className="flex items-center gap-2 text-base font-medium">
+        <span>{player.nationality}</span>
+        {player.flag && (
+          <div className="relative w-10 h-6">
+            <Image
+              src={`/${flagPath}`}
+              alt={`Drapeau ${player.nationality}`}
+              fill
+              className="object-contain"
+              sizes="24px"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

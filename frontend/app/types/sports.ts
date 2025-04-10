@@ -10,38 +10,38 @@ export type Theme = {
 
 export const sportThemes: Record<Sport, Theme> = {
   football: {
-    primary: "from-green-600 to-green-700",
-    hover: "hover:from-green-700 hover:to-green-800",
-    accent: "bg-green-500",
-    accentHover: "hover:bg-green-600",
+    primary: "from-emerald-500 to-emerald-600",
+    hover: "hover:from-emerald-600 hover:to-emerald-700",
+    accent: "bg-gray-100",
+    accentHover: "hover:bg-gray-200",
     sportType: "foot"
   },
   basketball: {
-    primary: "from-orange-600 to-orange-700",
-    hover: "hover:from-orange-700 hover:to-orange-800",
-    accent: "bg-orange-500",
-    accentHover: "hover:bg-orange-600",
+    primary: "from-orange-200 to-orange-500",
+    hover: "hover:from-orange-500 hover:to-orange-600",
+    accent: "bg-gray-100",
+    accentHover: "hover:bg-gray-200",
     sportType: "basket"
   },
   hockey: {
-    primary: "from-blue-600 to-blue-700",
-    hover: "hover:from-blue-700 hover:to-blue-800",
-    accent: "bg-blue-500",
-    accentHover: "hover:bg-blue-600",
+    primary: "from-sky-100 to-sky-400",
+    hover: "hover:from-sky-200 hover:to-sky-300",
+    accent: "bg-red-500",
+    accentHover: "hover:bg-red-600",
     sportType: "hockey"
   },
   handball: {
-    primary: "from-purple-600 to-purple-700",
-    hover: "hover:from-purple-700 hover:to-purple-800",
-    accent: "bg-purple-500",
-    accentHover: "hover:bg-purple-600",
+    primary: "from-sky-300 to-sky-400",
+    hover: "hover:from-sky-400 hover:to-sky-500",
+    accent: "bg-sky-200",
+    accentHover: "hover:bg-sky-300",
     sportType: "handball"
   },
   rugby: {
-    primary: "from-red-600 to-red-700",
-    hover: "hover:from-red-700 hover:to-red-800",
-    accent: "bg-red-500",
-    accentHover: "hover:bg-red-600",
+    primary: "from-emerald-600 to-emerald-700",
+    hover: "hover:from-emerald-700 hover:to-emerald-800",
+    accent: "bg-amber-800",
+    accentHover: "hover:bg-amber-900",
     sportType: "rugby"
   }
 };
@@ -122,7 +122,6 @@ export const sportPositions: Record<Sport, Position[]> = {
     { id: "substitute6", name: "Remplaçant 5" },
   ],
   rugby: [
-    // 15 positions du rugby à XV
     { id: "fullback", name: "15 / Arrière" },
     { id: "wing1", name: "14 / Ailier" },
     { id: "center1", name: "13 / Centre" },

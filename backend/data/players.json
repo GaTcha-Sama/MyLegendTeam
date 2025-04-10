@@ -5,27 +5,96 @@
       "name": "Dupont",
       "lastname": "Antoine",
       "nationality": "France",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\FRA.png",
       "position": "Demi de mêlée",
       "sport": "Rugby",
-      "image_path": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\FRA\\Antoine-Dupont.png"
+      "team": "Stade Toulousain",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Stade-Toulousain.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\FRA\\Antoine-Dupont.png"
     },
     {
       "id": 2,
       "name": "Ollivon",
       "lastname": "Charles",
       "nationality": "France",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\FRA.png",
       "position": "Flanker",
       "sport": "Rugby",
-      "image_path": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\FRA\\Charles-Ollivon.png"
+      "team": "RC Toulon",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\RC-Toulon.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\FRA\\Charles-Ollivon.png"
     },
     {
       "id": 3,
       "name": "Dusautoir",
       "lastname": "Thierry",
       "nationality": "France",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\FRA.png",
       "position": "Flanker",
       "sport": "Rugby",
-      "image_path": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\FRA\\Thierry-Dusautoir.jpg"
+      "team": "Stade Toulousain",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Stade-Toulousain.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\FRA\\Thierry-Dusautoir.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Carter",
+      "lastname": "Dan",
+      "nationality": "New Zealand",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NZL.png",
+      "position": "Demi d'ouverture",
+      "sport": "Rugby",
+      "team": "Crusaders",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Crusaders.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\NZL\\Dan-Carter.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Russell",
+      "lastname": "Finn",
+      "nationality": "Scotland",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SCO.png",
+      "position": "Demi d'ouverture",
+      "sport": "Rugby",
+      "team": "Bath",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Bath.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\SCO\\Finn-Russell.png"
+    },
+    {
+      "id": 6,
+      "name": "Giteau",
+      "lastname": "Matt",
+      "nationality": "Australia",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\AUS.png",
+      "position": "Trois-quarts centre",
+      "sport": "Rugby",
+      "team": "RC Toulon",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\RC-Toulon.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\AUS\\Matt-Giteau.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Habana",
+      "lastname": "Bryan",
+      "nationality": "South Africa",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\RSA.png",
+      "position": "Ailier",
+      "sport": "Rugby",
+      "team": "Stormers",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Stormers.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\RSA\\Bryan-Habana.jpg"
+    },
+    {
+      "id": 8,
+      "name": "O'Driscoll",
+      "lastname": "Brian",
+      "nationality": "Ireland",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\IRE.png",
+      "position": "Trois-quarts centre",
+      "sport": "Rugby",
+      "team": "Leinster",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Leinster.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\IRE\\Brian-O-Driscoll.jpg"
     }
   ]
 }

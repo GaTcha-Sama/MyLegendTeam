@@ -49,14 +49,14 @@ export default function DreamTeamBuilder() {
     <DndProvider backend={HTML5Backend}>
       <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
         {/* Sidebar avec la liste des joueurs */}
-        <div className="w-1/2 p-6 bg-white rounded-xl shadow-lg mr-6">
-          <h2 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-3">
+        <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 border-b pb-3">
             Joueurs disponibles
           </h2>
           <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} />
           
           {/* Grille de joueurs */}
-          <div className="grid grid-cols-2 gap-4 mt-4">
+          <div className="grid grid-cols-3 gap-4 mt-4">
             {loading ? (
               <div className="text-center py-4 col-span-2">Chargement des joueurs...</div>
             ) : (

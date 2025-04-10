@@ -8,5 +8,8 @@ CREATE TABLE IF NOT EXISTS players (
     nationality VARCHAR(50) NOT NULL,
     position VARCHAR(50) NOT NULL,
     sport VARCHAR(50) NOT NULL,
-    image_path TEXT NOT NULL
+    photo TEXT NOT NULL,
+    team VARCHAR(50) NOT NULL,
+    team_logo TEXT NOT NULL,
+    flag TEXT NOT NULL
 );

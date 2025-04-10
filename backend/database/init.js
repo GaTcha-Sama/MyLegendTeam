@@ -27,8 +27,8 @@ const db = new sqlite3.Database(dbPath, (err) => {
 
         // Préparer la requête d'insertion
         const stmt = db.prepare(`
-            INSERT INTO players (id, name, lastname, nationality, position, sport, image_path)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO players (id, name, lastname, nationality, position, sport, photo, team, team_logo, flag)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `);
 
         // Insérer tous les joueurs
@@ -42,7 +42,10 @@ const db = new sqlite3.Database(dbPath, (err) => {
                     player.nationality,
                     player.position,
                     player.sport,
-                    player.image_path
+                    player.photo,
+                    player.team,
+                    player.team_logo,
+                    player.flag
                 ],
                 function(err) {
                     if (err) {
