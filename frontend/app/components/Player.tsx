@@ -17,7 +17,11 @@ export const Player = ({ player, theme }: PlayerProps) => {
     type: "PLAYER",
     item: { 
       id: player.id,
-      name: `${player.lastname} ${player.name}`
+      name: player.name,
+      lastname: player.lastname,
+      photo: player.photo,
+      // TODO: add team logo
+      flag: player.flag,
     },
     collect: (monitor) => ({ isDragging: monitor.isDragging() })
   }));
@@ -83,16 +87,17 @@ export const Player = ({ player, theme }: PlayerProps) => {
         />
       </div>
 
-      <div className="flex items-center gap-2 text-base font-medium">
-        <span>{player.nationality}</span>
+      <div className="flex items-center gap-2 text-base justify-center w-full font-medium">
+        <span className="text-xs">{player.nationality}</span>
         {player.flag && (
           <div className="relative w-10 h-6">
             <Image
               src={`/${flagPath}`}
               alt={`Drapeau ${player.nationality}`}
-              fill
               className="object-contain"
               sizes="24px"
+              height={24}
+              width={24}
             />
           </div>
         )}

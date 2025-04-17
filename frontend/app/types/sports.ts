@@ -3,8 +3,8 @@ export type Sport = "football" | "basketball" | "hockey" | "handball" | "rugby";
 export type Theme = {
   primary: string;
   hover: string;
-  accent: string;
-  accentHover: string;
+  cross: string;
+  crossHover: string;
   sportType: string;
 };
 
@@ -12,36 +12,36 @@ export const sportThemes: Record<Sport, Theme> = {
   football: {
     primary: "from-emerald-500 to-emerald-600",
     hover: "hover:from-emerald-600 hover:to-emerald-700",
-    accent: "bg-gray-100",
-    accentHover: "hover:bg-gray-200",
+    cross: "bg-gray-100",
+    crossHover: "hover:bg-gray-200",
     sportType: "foot"
   },
   basketball: {
     primary: "from-orange-200 to-orange-500",
     hover: "hover:from-orange-500 hover:to-orange-600",
-    accent: "bg-gray-100",
-    accentHover: "hover:bg-gray-200",
+    cross: "bg-gray-100",
+    crossHover: "hover:bg-gray-200",
     sportType: "basket"
   },
   hockey: {
     primary: "from-sky-100 to-sky-400",
     hover: "hover:from-sky-200 hover:to-sky-300",
-    accent: "bg-red-500",
-    accentHover: "hover:bg-red-600",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
     sportType: "hockey"
   },
   handball: {
     primary: "from-sky-300 to-sky-400",
     hover: "hover:from-sky-400 hover:to-sky-500",
-    accent: "bg-sky-200",
-    accentHover: "hover:bg-sky-300",
+    cross: "bg-sky-200",
+    crossHover: "hover:bg-sky-300",
     sportType: "handball"
   },
   rugby: {
     primary: "from-emerald-600 to-emerald-700",
     hover: "hover:from-emerald-700 hover:to-emerald-800",
-    accent: "bg-amber-800",
-    accentHover: "hover:bg-amber-900",
+    cross: "bg-gray-800",
+    crossHover: "hover:bg-gray-900",
     sportType: "rugby"
   }
 };

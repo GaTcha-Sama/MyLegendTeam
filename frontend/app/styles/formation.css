@@ -32,33 +32,30 @@
   display: grid;
   grid-template-areas: 
     ".     .    fb    ."
-    "w1    c1    c2    w2"
-    ".     f10   f9    ."
+    "w14    c12    c13    w11"
+    ".     fh10   sh9    ."
     "f6     f8    f7    ."
-    ".    f5    f4    ."
-    ".     l1    l2    ."
-    "p1    h     h     p2"
+    ".     l4    l5    ."
+    "p1    h2    .     p3"
     "sub1  sub2  sub3  sub4"
     "sub5  sub6  sub7  sub8";
 }
   
   .formation-rugby [data-position="fullback"] { grid-area: fb; }
-  .formation-rugby [data-position="wing1"] { grid-area: w1; }
-  .formation-rugby [data-position="wing2"] { grid-area: w2; }
-  .formation-rugby [data-position="center1"] { grid-area: c1; }
-  .formation-rugby [data-position="center2"] { grid-area: c2; }
-  .formation-rugby [data-position="flyhalf"] { grid-area: f10; }
-  .formation-rugby [data-position="scrumhalf"] { grid-area: f9; }
+  .formation-rugby [data-position="wing1"] { grid-area: w14; }
+  .formation-rugby [data-position="wing2"] { grid-area: w11; }
+  .formation-rugby [data-position="center1"] { grid-area: c12; }
+  .formation-rugby [data-position="center2"] { grid-area: c13; }
+  .formation-rugby [data-position="flyhalf"] { grid-area: fh10; }
+  .formation-rugby [data-position="scrumhalf"] { grid-area: sh9; }
   .formation-rugby [data-position="number8"] { grid-area: f8; }
   .formation-rugby [data-position="flanker1"] { grid-area: f7; }
   .formation-rugby [data-position="flanker2"] { grid-area: f6; }
-  .formation-rugby [data-position="lock1"] { grid-area: l1; }
-  .formation-rugby [data-position="lock2"] { grid-area: l2; }
+  .formation-rugby [data-position="lock1"] { grid-area: l4; }
+  .formation-rugby [data-position="lock2"] { grid-area: l5; }
   .formation-rugby [data-position="prop1"] { grid-area: p1; }
-  .formation-rugby [data-position="prop2"] { grid-area: p2; }
-  .formation-rugby [data-position="hooker"] { grid-area: h; }
-  
-  /* Remplaçants */
+  .formation-rugby [data-position="prop2"] { grid-area: p3; }
+  .formation-rugby [data-position="hooker"] { grid-area: h2; }
   .formation-rugby [data-position="substitute1"] { grid-area: sub1; }
   .formation-rugby [data-position="substitute2"] { grid-area: sub2; }
   .formation-rugby [data-position="substitute3"] { grid-area: sub3; }
