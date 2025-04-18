@@ -4,11 +4,18 @@ interface NationalitySelectorProps {
   selectedNationality: string;
   onSelectNationality: (nationality: string) => void;
   players: Player[];
+  selectedSport: string;
 }
 
-export const NationalitySelector = ({ selectedNationality, onSelectNationality, players }: NationalitySelectorProps) => {
-  // Extraire les nationalités uniques des joueurs
-  const nationalities = Array.from(new Set(players.map(player => player.nationality))).sort();
+export const NationalitySelector = ({ selectedNationality, onSelectNationality, players, selectedSport }: NationalitySelectorProps) => {
+  
+  const nationalities = Array.from(
+    new Set(
+      players
+        .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
+        .map(player => player.nationality)
+    )
+  ).sort();
 
   return (
     <div>

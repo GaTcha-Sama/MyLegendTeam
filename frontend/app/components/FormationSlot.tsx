@@ -16,7 +16,15 @@ const getImagePath = (fullPath: string) => {
 };
 
 const getFlagPath = (fullPath: string) => {
-  return fullPath;
+  try {
+    const pathSegments = fullPath.split('public\\');
+    if (pathSegments.length > 1) {
+      return pathSegments[1].replace(/\\/g, '/');
+    }
+  } catch (error) {
+    console.error("Erreur lors du traitement du chemin du drapeau:", error);
+  }
+  return 'images/default-flag.png';
 };
 
 interface FormationSlotProps {
@@ -53,7 +61,7 @@ export const FormationSlot = ({
 
     return (
       <div className="flex flex-col items-center w-full">
-        <div className="relative w-12 h-12 mb-1">
+        <div className="relative w-18 h-18 mb-1">
           <Image 
             src={`/${getImagePath(player.photo)}`}
             alt={player.name}

@@ -33,6 +33,10 @@ export default function DreamTeamBuilder() {
     loadPlayers();
   }, []);
 
+  useEffect(() => {
+    setSelectedNationality("");
+  }, [selectedSport]);
+
   const handleDropPlayer = (position: string, player: { id: number; name: string } | null) => {
     setTeam((prev) => ({ ...prev, [position]: player }));
   };
@@ -56,7 +60,7 @@ export default function DreamTeamBuilder() {
             Available Players
           </h2>
           <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
-          <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} />
+          <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
           
           {/* Grille de joueurs */}
           <div className="grid grid-cols-3 gap-4 mt-4">
@@ -93,11 +97,13 @@ export default function DreamTeamBuilder() {
               Reset Team
             </button>
           </div>
-          <div className={`grid gap-4 bg-gradient-to-b ${currentTheme.primary} p-6 min-h-[750px] relative grid-cols-4
-            ${selectedSport === 'football' ? 'formation-football' : 
-              selectedSport === 'rugby' ? 'formation-rugby' :
-              selectedSport === 'hockey' ? 'formation-hockey' :
-              selectedSport === 'basketball' ? 'formation-basketball' : ''}`}>
+          <div className={`grid gap-4 p-6 min-h-[750px] relative grid-cols-4
+            ${selectedSport === 'football' ? 'formation-football bg-[url("/images/foot-field.jpg")]' : 
+              selectedSport === 'rugby' ? 'formation-rugby bg-[url("/images/rugby-field.jpg")]' :
+              selectedSport === 'hockey' ? 'formation-hockey bg-[url("/images/hockey-field.png")]' :
+              selectedSport === 'basketball' ? 'formation-basketball bg-[url("/images/basket-field.jpg")]' :
+              selectedSport === 'handball' ? 'formation-handball bg-[url("/images/handball-field.jpg")]' : ''} 
+            bg-cover bg-center bg-no-repeat`}>
             {sportPositions[selectedSport].map((position) => (
               <FormationSlot
                 key={position.id}

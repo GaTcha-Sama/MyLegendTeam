@@ -12,15 +12,15 @@ export const sportThemes: Record<Sport, Theme> = {
   football: {
     primary: "from-emerald-500 to-emerald-600",
     hover: "hover:from-emerald-600 hover:to-emerald-700",
-    cross: "bg-gray-100",
-    crossHover: "hover:bg-gray-200",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
     sportType: "foot"
   },
   basketball: {
     primary: "from-orange-200 to-orange-500",
     hover: "hover:from-orange-500 hover:to-orange-600",
-    cross: "bg-gray-100",
-    crossHover: "hover:bg-gray-200",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
     sportType: "basket"
   },
   hockey: {
@@ -33,15 +33,15 @@ export const sportThemes: Record<Sport, Theme> = {
   handball: {
     primary: "from-sky-300 to-sky-400",
     hover: "hover:from-sky-400 hover:to-sky-500",
-    cross: "bg-sky-200",
-    crossHover: "hover:bg-sky-300",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
     sportType: "handball"
   },
   rugby: {
     primary: "from-emerald-600 to-emerald-700",
     hover: "hover:from-emerald-700 hover:to-emerald-800",
-    cross: "bg-gray-800",
-    crossHover: "hover:bg-gray-900",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
     sportType: "rugby"
   }
 };
@@ -107,10 +107,10 @@ export const sportPositions: Record<Sport, Position[]> = {
   ],
   handball: [
     { id: "goalkeeper", name: "Gardien" },
-    { id: "left_wing", name: "Ailier Gauche" },
-    { id: "left_back", name: "Arrière Gauche" },
+    { id: "leftwing", name: "Ailier Gauche" },
+    { id: "leftback", name: "Arrière Gauche" },
     { id: "center", name: "Demi-Centre" },
-    { id: "right_back", name: "Arrière Droit" },
+    { id: "rightback", name: "Arrière Droit" },
     { id: "right_wing", name: "Ailier Droit" },
     { id: "pivot", name: "Pivot" },
     { id: "defense", name: "Défenseur"},

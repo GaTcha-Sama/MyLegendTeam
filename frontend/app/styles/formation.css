@@ -1,7 +1,7 @@
 .formation-football {
     display: grid;
     grid-template-areas: 
-      ".     gk    gk    ."
+      ".     gk    .    ."
       "dl    dc1   dc2   dr"
       ".     md    mc    ."
       ".     mo    .    ."
@@ -126,3 +126,28 @@
   .formation-basketball [data-position="substitute4"] { grid-area: sub4; }
   .formation-basketball [data-position="substitute5"] { grid-area: sub5; }
 
+  .formation-handball {
+    display: grid;
+    grid-template-areas: 
+      ".     gk    .    ."
+      "lw    p     .   rw"
+      "lb    c     .   rb"
+      "def   .     .    ."
+      "sub1  sub2  sub3 ."
+      "sub4  sub5  sub6 ."
+  }
+  
+  .formation-handball [data-position="goalkeeper"] { grid-area: gk; }
+  .formation-handball [data-position="leftwing"] { grid-area: lw; }
+  .formation-handball [data-position="rightwing"] { grid-area: rw; }
+  .formation-handball [data-position="leftback"] { grid-area: lb; }
+  .formation-handball [data-position="rightback"] { grid-area: rb; }
+  .formation-handball [data-position="pivot"] { grid-area: p; }
+  .formation-handball [data-position="center"] { grid-area: c; }
+  .formation-handball [data-position="defense"] { grid-area: def; }
+  .formation-handball [data-position="substitute1"] { grid-area: sub1; }
+  .formation-handball [data-position="substitute2"] { grid-area: sub2; }
+  .formation-handball [data-position="substitute3"] { grid-area: sub3; }
+  .formation-handball [data-position="substitute4"] { grid-area: sub4; }
+  .formation-handball [data-position="substitute5"] { grid-area: sub5; }
+  .formation-handball [data-position="substitute6"] { grid-area: sub6; }
