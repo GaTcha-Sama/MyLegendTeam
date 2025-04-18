@@ -95,6 +95,54 @@
       "team": "Leinster",
       "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Leinster.png",
       "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\IRE\\Brian-O-Driscoll.jpg"
+    },
+    {
+      "id": 1001,
+      "name": "Jordan",
+      "lastname": "Michael",
+      "nationality": "USA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\USA.png",
+      "position": "Shooting guard",
+      "sport": "Basketball",
+      "team": "Chicago Bulls",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\basketball\\teams\\Chicago-Bulls.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\basketball\\players\\USA\\Michael-Jordan.png"
+    },
+    {
+      "id": 2001,
+      "name": "Karabatic",
+      "lastname": "Nikola",
+      "nationality": "France",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\FRA.png",
+      "position": "Left wing",
+      "sport": "Handball",
+      "team": "PSG",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\handball\\teams\\PSG.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\handball\\players\\FRA\\Nikola-Karabatic.png"
+    },
+    {
+      "id": 3001,
+      "name": "Messi",
+      "lastname": "Lionel",
+      "nationality": "Argentina",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ARG.png",
+      "position": "Forward",
+      "sport": "Football",
+      "team": "Barcelona",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\football\\teams\\Barcelona.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\football\\players\\ARG\\Lionel-Messi.jpg"
+    },
+    {
+      "id": 4001,
+      "name": "McDavid",
+      "lastname": "Connor",
+      "nationality": "Canada",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CAN.png",
+      "position": "Center",
+      "sport": "Hockey",
+      "team": "Edmonton Oilers",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\hockey\\teams\\Edmonton-Oilers.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\hockey\\players\\CAN\\Connor-McDavid.png"
     }
   ]
 }

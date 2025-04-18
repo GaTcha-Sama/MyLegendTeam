@@ -10,8 +10,8 @@ interface PlayerProps {
 }
 
 export const Player = ({ player, theme }: PlayerProps) => {
-  // State pour tracker si on utilise l'image par défaut
   const [useDefaultImage, setUseDefaultImage] = useState(false);
+  const [useDefaultFlag, setUseDefaultFlag] = useState(false);
 
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "PLAYER",
@@ -37,20 +37,36 @@ export const Player = ({ player, theme }: PlayerProps) => {
         return pathSegments[1].replace(/\\/g, '/');
       }
     } catch (error) {
-      console.error("Erreur lors du traitement du chemin d'image:", error);
+      console.error("Erreur lors du traitement du chemin de portrait:", error);
     }
     
     return 'images/portrait-default.png';
   };
 
+  const getFlagPath = (fullPath: string) => {
+    if (useDefaultFlag) {
+      return 'images/default-flag.jpg';
+    }
+
+    try {
+      const pathSegments = fullPath.split('public\\');
+      if (pathSegments.length > 1) {
+        return pathSegments[1].replace(/\\/g, '/');
+      }
+    } catch (error) {
+      console.error("Erreur lors du traitement du chemin du drapeau:", error);
+    }
+    return 'images/default-flag.jpg';
+  };
+
   const imagePath = getImagePath(player.photo);
-  const flagPath = getImagePath(player.flag);
+  const flagPath = getFlagPath(player.flag);
 
   return (
     <div
       ref={drag as unknown as React.Ref<HTMLDivElement>}
       className={`
-        p-4 
+        p-2 
         bg-gradient-to-r ${theme.primary} ${theme.hover} 
         text-white 
         rounded-lg 
@@ -90,7 +106,7 @@ export const Player = ({ player, theme }: PlayerProps) => {
       <div className="flex items-center gap-2 text-base justify-center w-full font-medium">
         <span className="text-xs">{player.nationality}</span>
         {player.flag && (
-          <div className="relative w-10 h-6">
+          <div className="relative w-10 h-6 mt-2">
             <Image
               src={`/${flagPath}`}
               alt={`Drapeau ${player.nationality}`}
@@ -98,6 +114,9 @@ export const Player = ({ player, theme }: PlayerProps) => {
               sizes="24px"
               height={24}
               width={24}
+              onError={() => {
+                setUseDefaultFlag(true);
+              }}
             />
           </div>
         )}

@@ -15,6 +15,10 @@ const getImagePath = (fullPath: string) => {
   return 'images/portrait-default.png';
 };
 
+const getFlagPath = (fullPath: string) => {
+  return fullPath;
+};
+
 interface FormationSlotProps {
   position: string;
   player: PlayerType | null;
@@ -66,7 +70,7 @@ export const FormationSlot = ({
           {player.flag && (
             <div className="relative w-6 h-4">
               <Image
-                src={`/${getImagePath(player.flag)}`}
+                src={`/${getFlagPath(player.flag)}`}
                 alt={`Drapeau ${player.nationality}`}
                 fill
                 className="object-contain"

@@ -13,7 +13,7 @@ import { fetchPlayers } from "../lib/api";
 
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
-  const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
+  const [selectedSport, setSelectedSport] = useState<Sport>("football");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
