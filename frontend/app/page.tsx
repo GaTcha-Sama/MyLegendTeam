@@ -85,8 +85,8 @@ export default function DreamTeamBuilder() {
         </div>
 
         {/* Terrain */}
-        <div className="flex-1 p-6 bg-white rounded-xl shadow-lg">
-          <div className="flex justify-between items-center mb-6 text-gray-800 border-b pb-3">
+        <div className="flex-1 p-4 bg-white rounded-xl shadow-lg">
+          <div className="flex justify-between items-center mb-4 text-gray-800 border-b pb-3">
             <h2 className="text-2xl font-bold">
               My {selectedSport} Legend Team
             </h2>

@@ -97,6 +97,18 @@
       "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\IRE\\Brian-O-Driscoll.jpg"
     },
     {
+      "id": 601,
+      "name": "Jones",
+      "lastname": "Alun-Wyn",
+      "nationality": "Wales",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\WAL.png",
+      "position": "Deuxième ligne",
+      "sport": "Rugby",
+      "team": "Ospreys",
+      "team_logo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\teams\\Ospreys.png",
+      "photo": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\rugby\\players\\WAL\\Alun-Wyn-Jones.jpg"
+    },
+    {
       "id": 1001,
       "name": "Jordan",
       "lastname": "Michael",
