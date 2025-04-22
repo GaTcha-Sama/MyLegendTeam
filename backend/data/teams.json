@@ -1,0 +1,22 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "Stade Toulousain",
+      "team_logo": "public/images/rugby/teams/Stade-Toulousain.png",
+      "sport_id": 1
+    },
+    {
+      "id": 2,
+      "name": "RC Toulon",
+      "team_logo": "public/images/rugby/teams/RC-Toulon.png",
+      "sport_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Crusaders",
+      "team_logo": "public/images/rugby/teams/Crusaders.png",
+      "sport_id": 1
+    }
+  ]
+}

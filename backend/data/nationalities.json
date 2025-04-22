@@ -1,0 +1,1186 @@
+{
+  "nationalities": [
+    {
+      "id": 1,
+      "name": "Afghanistan",
+      "code": "AFG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\AFG.png"
+    },
+    {
+      "id": 2,
+      "name": "Albania",
+      "code": "ALB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ALB.png"
+    },
+    {
+      "id": 3,
+      "name": "Algeria",
+      "code": "ALG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ALG.png"
+    },
+    {
+      "id": 4,
+      "name": "Andorra",
+      "code": "AND",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\AND.png"
+    },
+    {
+      "id": 5,
+      "name": "Angola",
+      "code": "AGO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\AGO.png"
+    },
+    {
+      "id": 6,
+      "name": "Antigua and Barbuda",
+      "code": "ATG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ATG.png"
+    },
+    {
+      "id": 7,
+      "name": "Argentina",
+      "code": "ARG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ARG.png"
+    },
+    {
+      "id": 8,
+      "name": "Armenia",
+      "code": "ARM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ARM.png"
+    },
+    {
+      "id": 9,
+      "name": "Australia",
+      "code": "AUS",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\AUS.png"
+    },
+    {
+      "id": 10,
+      "name": "Austria",
+      "code": "AUT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\AUT.png"
+    },
+    {
+      "id": 11,
+      "name": "Azerbaijan",
+      "code": "AZE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\AZE.png"
+    },
+    {
+      "id": 12,
+      "name": "Bahamas",
+      "code": "BHS",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BHS.png"
+    },
+    {
+      "id": 13,
+      "name": "Bahrain",
+      "code": "BHR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BHR.png"  
+    },
+    {
+      "id": 14,
+      "name": "Bangladesh",
+      "code": "BGD",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BGD.png"
+    },
+    {
+      "id": 15,
+      "name": "Barbados",
+      "code": "BRB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BRB.png"
+    },
+    {
+      "id": 16,
+      "name": "Belarus",
+      "code": "BLR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BLR.png"
+    },
+    {
+      "id": 17,
+      "name": "Belgium",
+      "code": "BEL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BEL.png"
+    },
+    {
+      "id": 18,
+      "name": "Belize",
+      "code": "BLZ",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BLZ.png"
+    },
+    {
+      "id": 19,
+      "name": "Benin",
+      "code": "BEN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BEN.png"
+    },
+    {
+      "id": 20,
+      "name": "Bhutan",
+      "code": "BTN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BTN.png"
+    },
+    {
+      "id": 21,
+      "name": "Bolivia",
+      "code": "BOL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BOL.png"
+    },
+    {
+      "id": 22,
+      "name": "Bosnia and Herzegovina",
+      "code": "BOS",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BOS.png"
+    },
+    {
+      "id": 23,
+      "name": "Botswana",
+      "code": "BWA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BWA.png"
+    },
+    {
+      "id": 24,
+      "name": "Brazil",
+      "code": "BRA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BRA.png"
+    },
+    {
+      "id": 25,
+      "name": "Brunei",
+      "code": "BRN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BRN.png"
+    },
+    {
+      "id": 26,
+      "name": "Bulgaria",
+      "code": "BGR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BGR.png"
+    },
+    {
+      "id": 27,
+      "name": "Burkina Faso",
+      "code": "BFA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BFA.png"
+    },
+    {
+      "id": 28,
+      "name": "Burundi",
+      "code": "BDI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BDI.png"
+    },
+    {
+      "id": 29,
+      "name": "Cabo Verde",
+      "code": "CPV",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CPV.png"
+    },
+    {
+      "id": 30,
+      "name": "Cambodia",
+      "code": "KHM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KHM.png"
+    },
+    {
+      "id": 31,
+      "name": "Cameroon",
+      "code": "CMR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CMR.png"
+    },
+    {
+      "id": 32,
+      "name": "Canada",
+      "code": "CAN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CAN.png"
+    },
+    {
+      "id": 33,
+      "name": "Central African Republic",
+      "code": "CAF",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CAF.png"
+    },
+    {
+      "id": 34,
+      "name": "Chad",
+      "code": "TCD",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TCD.png"
+    },
+    {
+      "id": 35,
+      "name": "Chile",
+      "code": "CHL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CHL.png"
+    },
+    {
+      "id": 36,
+      "name": "China",
+      "code": "CHN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CHN.png"
+    },
+    {
+      "id": 37,
+      "name": "Colombia",
+      "code": "COL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\COL.png"
+    },
+    {
+      "id": 38,
+      "name": "Comoros",
+      "code": "COM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\COM.png"
+    },
+    {
+      "id": 39,
+      "name": "Congo",
+      "code": "COG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\COG.png"
+    },
+    {
+      "id": 40,
+      "name": "Costa Rica",
+      "code": "CRI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CRI.png"
+    },
+    {
+      "id": 41,
+      "name": "Croatia",
+      "code": "HRV",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\HRV.png"
+    },
+    {
+      "id": 42,
+      "name": "Cuba",
+      "code": "CUB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CUB.png"
+    },
+    {
+      "id": 43,
+      "name": "Cyprus",
+      "code": "CYP",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CYP.png"
+    },
+    {
+      "id": 44,
+      "name": "Czech Republic",
+      "code": "CZE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\CZE.png"
+    },
+    {
+      "id": 45,
+      "name": "Denmark",
+      "code": "DEN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\DEN.png"
+    },
+    {
+      "id": 46,
+      "name": "Djibouti",
+      "code": "DJI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\DJI.png"
+    },
+    {
+      "id": 47,
+      "name": "Dominica",
+      "code": "DMA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\DMA.png"
+    },
+    {
+      "id": 48,
+      "name": "Dominican Republic",
+      "code": "DOM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\DOM.png"
+    },
+    {
+      "id": 49,
+      "name": "Ecuador",
+      "code": "ECU",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ECU.png"
+    },
+    {
+      "id": 50,
+      "name": "Egypt",
+      "code": "EGY",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\EGY.png"
+    },
+    {
+      "id": 51,
+      "name": "El Salvador",
+      "code": "SLV",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SLV.png"
+    },
+    {
+      "id": 52,
+      "name": "Equatorial Guinea",
+      "code": "GNQ",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GNQ.png"
+    },
+    {
+      "id": 53,
+      "name": "Eritrea",
+      "code": "ERI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ERI.png"
+    },
+    {
+      "id": 54,
+      "name": "Estonia",
+      "code": "EST",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\EST.png"
+    },
+    {
+      "id": 55,
+      "name": "Eswatini",
+      "code": "SWZ",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SWZ.png"
+    },
+    {
+      "id": 56,
+      "name": "Ethiopia",
+      "code": "ETH",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ETH.png"
+    },
+    {
+      "id": 57,
+      "name": "Fiji",
+      "code": "FJI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\FJI.png"
+    },
+    {
+      "id": 58,
+      "name": "Finland",
+      "code": "FIN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\FIN.png"
+    },
+    {
+      "id": 59,
+      "name": "France",
+      "code": "FRA",
+      "flag": "public/images/flags/FRA.png"
+    },
+    {
+      "id": 60,
+      "name": "Gabon",
+      "code": "GAB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GAB.png"
+    },
+    {
+      "id": 61,
+      "name": "Gambia",
+      "code": "GMB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GMB.png"
+    },
+    {
+      "id": 62,
+      "name": "Georgia",
+      "code": "GEO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GEO.png"
+    },
+    {
+      "id": 63,
+      "name": "Germany",
+      "code": "GER",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GER.png"
+    },
+    {
+      "id": 64,
+      "name": "Ghana",
+      "code": "GHA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GHA.png"
+    },
+    {
+      "id": 65,
+      "name": "Greece",
+      "code": "GRC",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GRC.png"
+    },
+    {
+      "id": 66,
+      "name": "Grenada",
+      "code": "GRD",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GRD.png"
+    },
+    {
+      "id": 67,
+      "name": "Guatemala",
+      "code": "GTM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GTM.png"
+    },
+    {
+      "id": 68,
+      "name": "Guinea",
+      "code": "GIN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GIN.png"
+    },
+    {
+      "id": 69,
+      "name": "Guinea-Bissau",
+      "code": "GNB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GNB.png"
+    },
+    {
+      "id": 70,
+      "name": "Guyana",
+      "code": "GUY",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GUY.png"
+    },
+    {
+      "id": 71,
+      "name": "Haiti",
+      "code": "HTI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\HTI.png"
+    },
+    {
+      "id": 72,
+      "name": "Honduras",
+      "code": "HND",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\HND.png"
+    },
+    {
+      "id": 73,
+      "name": "Hungary",
+      "code": "HUN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\HUN.png"
+    },
+    {
+      "id": 74,
+      "name": "Iceland",
+      "code": "ISL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ISL.png"
+    },
+    {
+      "id": 75,
+      "name": "India",
+      "code": "IND",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\IND.png"
+    },
+    {
+      "id": 76,
+      "name": "Indonesia",
+      "code": "IDN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\IDN.png"
+    },
+    {
+      "id": 77,
+      "name": "Iran",
+      "code": "IRN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\IRN.png"
+    },
+    {
+      "id": 78,
+      "name": "Iraq",
+      "code": "IRQ",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\IRQ.png"
+    },
+    {
+      "id": 79,
+      "name": "Ireland",
+      "code": "IRL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\IRL.png"
+    },
+    {
+      "id": 80,
+      "name": "Israel",
+      "code": "ISR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ISR.png"
+    },
+    {
+      "id": 81,
+      "name": "Italy",
+      "code": "ITA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ITA.png"
+    },
+    {
+      "id": 82,
+      "name": "Jamaica",
+      "code": "JAM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\JAM.png"
+    },
+    {
+      "id": 83,
+      "name": "Japan",
+      "code": "JPN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\JPN.png"
+    },
+    {
+      "id": 84,
+      "name": "Jordan",
+      "code": "JOR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\JOR.png"
+    },
+    {
+      "id": 85,
+      "name": "Kazakhstan",
+      "code": "KAZ",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KAZ.png"
+    },
+    {
+      "id": 86,
+      "name": "Kenya",
+      "code": "KEN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KEN.png"
+    },
+    {
+      "id": 87,
+      "name": "Kiribati",
+      "code": "KIR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KIR.png"
+    },
+    {
+      "id": 88,
+      "name": "Kuwait",
+      "code": "KWT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KWT.png"
+    },
+    {
+      "id": 89,
+      "name": "Kyrgyzstan",
+      "code": "KGZ",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KGZ.png"
+    },
+    {
+      "id": 90,
+      "name": "Laos",
+      "code": "LAO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LAO.png"
+    },
+    {
+      "id": 91,
+      "name": "Latvia",
+      "code": "LVA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LVA.png"
+    },
+    {
+      "id": 92,
+      "name": "Lebanon",
+      "code": "LBN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LBN.png"
+    },
+    {
+      "id": 93,
+      "name": "Lesotho",
+      "code": "LSO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LSO.png"
+    },
+    {
+      "id": 94,
+      "name": "Liberia",
+      "code": "LBR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LBR.png"
+    },
+    {
+      "id": 95,
+      "name": "Libya",
+      "code": "LBY",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LBY.png"
+    },
+    {
+      "id": 96,
+      "name": "Liechtenstein",
+      "code": "LIE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LIE.png"
+    },
+    {
+      "id": 97,
+      "name": "Lithuania",
+      "code": "LTU",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LTU.png"
+    },
+    {
+      "id": 98,
+      "name": "Luxembourg",
+      "code": "LUX",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LUX.png"
+    },
+    {
+      "id": 99,
+      "name": "Madagascar",
+      "code": "MDG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MDG.png"
+    },
+    {
+      "id": 100,
+      "name": "Malawi",
+      "code": "MWI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MWI.png"
+    },
+    {
+      "id": 101,
+      "name": "Malaysia",
+      "code": "MYS",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MYS.png"
+    },
+    {
+      "id": 102,
+      "name": "Maldives",
+      "code": "MDV",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MDV.png"
+    },
+    {
+      "id": 103,
+      "name": "Mali",
+      "code": "MLI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MLI.png"
+    },
+    {
+      "id": 104,
+      "name": "Malta",
+      "code": "MLT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MLT.png"
+    },
+    {
+      "id": 105,
+      "name": "Marshall Islands",
+      "code": "MHL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MHL.png"
+    },
+    {
+      "id": 106,
+      "name": "Mauritania",
+      "code": "MRT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MRT.png"
+    },
+    {
+      "id": 107,
+      "name": "Mauritius",
+      "code": "MUS",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MUS.png"
+    },
+    {
+      "id": 108,
+      "name": "Mexico",
+      "code": "MEX",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MEX.png"
+    },
+    {
+      "id": 109,
+      "name": "Micronesia",
+      "code": "FSM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\FSM.png"
+    },
+    {
+      "id": 110,
+      "name": "Moldova",
+      "code": "MDA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MDA.png"
+    },
+    {
+      "id": 111,
+      "name": "Monaco",
+      "code": "MCO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MCO.png"
+    },
+    {
+      "id": 112,
+      "name": "Mongolia",
+      "code": "MNG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MNG.png"
+    },
+    {
+      "id": 113,
+      "name": "Montenegro",
+      "code": "MNE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MNE.png"
+    },
+    {
+      "id": 114,
+      "name": "Morocco",
+      "code": "MAR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MAR.png"
+    },
+    {
+      "id": 115,
+      "name": "Mozambique",
+      "code": "MOZ",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MOZ.png"
+    },
+    {
+      "id": 116,
+      "name": "Myanmar",
+      "code": "MMR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MMR.png"
+    },
+    {
+      "id": 117,
+      "name": "Namibia",
+      "code": "NAM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NAM.png"
+    },
+    {
+      "id": 118,
+      "name": "Nauru",
+      "code": "NRU",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NRU.png"
+    },
+    {
+      "id": 119,
+      "name": "Nepal",
+      "code": "NPL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NPL.png"
+    },
+    {
+      "id": 120,
+      "name": "Netherlands",
+      "code": "NLD",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NLD.png"
+    },
+    {
+      "id": 121,
+      "name": "New Zealand",
+      "code": "NZL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NZL.png"
+    },
+    {
+      "id": 122,
+      "name": "Nicaragua",
+      "code": "NIC",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NIC.png"
+    },
+    {
+      "id": 123,
+      "name": "Niger",
+      "code": "NER",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NER.png"
+    },
+    {
+      "id": 124,
+      "name": "Nigeria",
+      "code": "NGA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NGA.png"
+    },
+    {
+      "id": 125,
+      "name": "North Korea",
+      "code": "PRK",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PRK.png"
+    },
+    {
+      "id": 126,
+      "name": "North Macedonia",
+      "code": "MKD",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\MKD.png"
+    },
+    {
+      "id": 127,
+      "name": "Norway",
+      "code": "NOR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NOR.png"
+    },
+    {
+      "id": 128,
+      "name": "Oman",
+      "code": "OMN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\OMN.png"
+    },
+    {
+      "id": 129,
+      "name": "Pakistan",
+      "code": "PAK",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PAK.png"
+    },
+    {
+      "id": 130,
+      "name": "Palau",
+      "code": "PLW",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PLW.png"
+    },
+    {
+      "id": 131,
+      "name": "Panama",
+      "code": "PAN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PAN.png"
+    },
+    {
+      "id": 132,
+      "name": "Papua New Guinea",
+      "code": "PNG",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PNG.png"
+    },
+    {
+      "id": 133,
+      "name": "Paraguay",
+      "code": "PRY",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PRY.png"
+    },
+    {
+      "id": 134,
+      "name": "Peru",
+      "code": "PER",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PER.png"
+    },
+    {
+      "id": 135,
+      "name": "Philippines",
+      "code": "PHL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\PHL.png"
+    },
+    {
+      "id": 136,
+      "name": "Poland",
+      "code": "POL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\POL.png"
+    },
+    {
+      "id": 137,
+      "name": "Portugal",
+      "code": "POR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\POR.png"
+    },
+    {
+      "id": 138,
+      "name": "Qatar",
+      "code": "QAT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\QAT.png"
+    },
+    {
+      "id": 139,
+      "name": "Romania",
+      "code": "ROU",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ROU.png"
+    },
+    {
+      "id": 140,
+      "name": "Russia",
+      "code": "RUS",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\RUS.png"
+    },
+    {
+      "id": 141,
+      "name": "Rwanda",
+      "code": "RWA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\RWA.png"
+    },
+    {
+      "id": 142,
+      "name": "Saint Kitts and Nevis",
+      "code": "KNA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KNA.png"
+    },
+    {
+      "id": 143,
+      "name": "Saint Lucia",
+      "code": "LCA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LCA.png"
+    },
+    {
+      "id": 144,
+      "name": "Saint Vincent and the Grenadines",
+      "code": "VCT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\VCT.png"
+    },
+    {
+      "id": 145,
+      "name": "Samoa",
+      "code": "WSM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\WSM.png"
+    },
+    {
+      "id": 146,
+      "name": "San Marino",
+      "code": "SMR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SMR.png"
+    },
+    {
+      "id": 147,
+      "name": "Sao Tome and Principe",
+      "code": "STP",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\STP.png"
+    },
+    {
+      "id": 148,
+      "name": "Saudi Arabia",
+      "code": "SAU",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SAU.png"
+    },
+    {
+      "id": 149,
+      "name": "Senegal",
+      "code": "SEN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SEN.png"
+    },
+    {
+      "id": 150,
+      "name": "Serbia",
+      "code": "SRB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SRB.png"
+    },
+    {
+      "id": 151,
+      "name": "Seychelles",
+      "code": "SYC",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SYC.png"
+    },
+    {
+      "id": 152,
+      "name": "Sierra Leone",
+      "code": "SLE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SLE.png"
+    },
+    {
+      "id": 153,
+      "name": "Singapore",
+      "code": "SGP",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SGP.png"
+    },
+    {
+      "id": 154,
+      "name": "Slovakia",
+      "code": "SVK",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SVK.png"
+    },
+    {
+      "id": 155,
+      "name": "Slovenia",
+      "code": "SVN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SVN.png"
+    },
+    {
+      "id": 156,
+      "name": "Solomon Islands",
+      "code": "SLB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SLB.png"
+    },
+    {
+      "id": 157,
+      "name": "Somalia",
+      "code": "SOM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SOM.png"
+    },
+    {
+      "id": 158,
+      "name": "South Africa",
+      "code": "RSA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\RSA.png"
+    },
+    {
+      "id": 159,
+      "name": "South Korea",
+      "code": "KOR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\KOR.png"
+    },
+    {
+      "id": 160,
+      "name": "South Sudan",
+      "code": "SSD",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SSD.png"
+    },
+    {
+      "id": 161,
+      "name": "Spain",
+      "code": "ESP",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ESP.png"
+    },
+    {
+      "id": 162,
+      "name": "Sri Lanka",
+      "code": "LKA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\LKA.png"
+    },
+    {
+      "id": 163,
+      "name": "Sudan",
+      "code": "SDN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SDN.png"
+    },
+    {
+      "id": 164,
+      "name": "Suriname",
+      "code": "SUR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SUR.png"
+    },
+    {
+      "id": 165,
+      "name": "Sweden",
+      "code": "SWE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SWE.png"
+    },
+    {
+      "id": 166,
+      "name": "Switzerland",
+      "code": "SUI",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SUI.png"
+    },
+    {
+      "id": 167,
+      "name": "Syria",
+      "code": "SYR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SYR.png"
+    },
+    {
+      "id": 168,
+      "name": "Tajikistan",
+      "code": "TJK",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TJK.png"
+    },
+    {
+      "id": 169,
+      "name": "Tanzania",
+      "code": "TZA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TZA.png"
+    },
+    {
+      "id": 170,
+      "name": "Thailand",
+      "code": "THA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\THA.png"
+    },
+    {
+      "id": 171,
+      "name": "Timor-Leste",
+      "code": "TLS",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TLS.png"
+    },
+    {
+      "id": 172,
+      "name": "Togo",
+      "code": "TGO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TGO.png"
+    },
+    {
+      "id": 173,
+      "name": "Tonga",
+      "code": "TGA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TGA.png"
+    },
+    {
+      "id": 174,
+      "name": "Trinidad and Tobago",
+      "code": "TTO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TTO.png"
+    },
+    {
+      "id": 175,
+      "name": "Tunisia",
+      "code": "TUN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TUN.png"
+    },
+    {
+      "id": 176,
+      "name": "Turkey",
+      "code": "TUR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TUR.png"
+    },
+    {
+      "id": 177,
+      "name": "Turkmenistan",
+      "code": "TKM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TKM.png"
+    },
+    {
+      "id": 178,
+      "name": "Tuvalu",
+      "code": "TUV",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\TUV.png"
+    },
+    {
+      "id": 179,
+      "name": "Uganda",
+      "code": "UGA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\UGA.png"
+    },
+    {
+      "id": 180,
+      "name": "Ukraine",
+      "code": "UKR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\UKR.png"
+    },
+    {
+      "id": 181,
+      "name": "United Arab Emirates",
+      "code": "UAE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\UAE.png"
+    },
+    {
+      "id": 182,
+      "name": "United Kingdom",
+      "code": "GBR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\GBR.png"
+    },
+    {
+      "id": 183,
+      "name": "United States",
+      "code": "USA",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\USA.png"
+    },
+    {
+      "id": 184,
+      "name": "Uruguay",
+      "code": "URY",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\URY.png"
+    },
+    {
+      "id": 185,
+      "name": "Uzbekistan",
+      "code": "UZB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\UZB.png"
+    },
+    {
+      "id": 186,
+      "name": "Vanuatu",
+      "code": "VUT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\VUT.png"
+    },
+    {
+      "id": 187,
+      "name": "Vatican City",
+      "code": "VAT",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\VAT.png"
+    },
+    {
+      "id": 188,
+      "name": "Venezuela",
+      "code": "VEN",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\VEN.png"
+    },
+    {
+      "id": 189,
+      "name": "Vietnam",
+      "code": "VNM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\VNM.png"
+    },
+    {
+      "id": 190,
+      "name": "Yemen",
+      "code": "YEM",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\YEM.png"
+    },
+    {
+      "id": 191,
+      "name": "Zambia",
+      "code": "ZMB",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ZMB.png"
+    },
+    {
+      "id": 192,
+      "name": "Zimbabwe",
+      "code": "ZWE",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\ZWE.png"
+    },
+    {
+      "id": 193,
+      "name": "Scotland",
+      "code": "SCO",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\SCO.png"
+    },
+    {
+      "id": 194,
+      "name": "Wales",
+      "code": "WAL",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\WAL.png"
+    },
+    {
+      "id": 195,
+      "name": "Northern Ireland",
+      "code": "NIR",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\NIR.png"
+    },
+    {
+      "id": 196,
+      "name": "Bretagne",
+      "code": "BZH",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\BZH.png"
+    },
+    {
+      "id": 197,
+      "name": "Québec",
+      "code": "QBC",
+      "flag": "C:\\dev\\personal_projects\\mylegendteam\\frontend\\public\\images\\flags\\QBC.png"
+    }
+  ]
+}

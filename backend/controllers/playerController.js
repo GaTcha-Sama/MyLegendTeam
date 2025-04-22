@@ -7,15 +7,19 @@ const playerController = {
         if (sport) {
             Player.getBySport(sport, (err, players) => {
                 if (err) {
+                    console.error('Erreur lors de la récupération des joueurs:', err);
                     return res.status(500).json({ error: 'Erreur lors de la récupération des joueurs' });
                 }
+                console.log('Joueurs récupérés:', players);
                 res.json(players);
             });
         } else {
             Player.getAll((err, players) => {
                 if (err) {
+                    console.error('Erreur lors de la récupération des joueurs:', err);
                     return res.status(500).json({ error: 'Erreur lors de la récupération des joueurs' });
                 }
+                console.log('Joueurs récupérés:', players);
                 res.json(players);
             });
         }

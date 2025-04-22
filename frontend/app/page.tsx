@@ -13,7 +13,7 @@ import { fetchPlayers } from "../lib/api";
 
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
-  const [selectedSport, setSelectedSport] = useState<Sport>("football");
+  const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
@@ -68,11 +68,11 @@ export default function DreamTeamBuilder() {
               <div className="text-center py-4 col-span-2">Loading players...</div>
             ) : (
               players
-                .filter(player => 
-                  player.sport.toLowerCase() === selectedSport && 
-                  !isPlayerInTeam(player.id) &&
-                  (selectedNationality === "" || player.nationality === selectedNationality)
-                )
+                .filter(player => {
+                  return player.sport.toLowerCase() === selectedSport && 
+                         !isPlayerInTeam(player.id) &&
+                         (selectedNationality === "" || player.nationality === selectedNationality)
+                })
                 .map((player) => (
                   <Player 
                     key={player.id} 

@@ -1,0 +1,24 @@
+{
+  "sports": [
+    {
+      "id": 1,
+      "name": "Rugby"
+    },
+    {
+      "id": 2,
+      "name": "Basketball"
+    },
+    {
+      "id": 3,
+      "name": "Football"
+    },
+    {
+      "id": 4,
+      "name": "Handball"
+    },
+    {
+      "id": 5,
+      "name": "Hockey"
+    }
+  ]
+}

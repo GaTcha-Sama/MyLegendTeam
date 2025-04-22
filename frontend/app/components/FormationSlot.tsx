@@ -5,26 +5,24 @@ import Image from "next/image";
 
 const getImagePath = (fullPath: string) => {
   try {
-    const pathSegments = fullPath.split('public\\');
-    if (pathSegments.length > 1) {
-      return pathSegments[1].replace(/\\/g, '/');
-    }
+    const normalizedPath = fullPath.replace(/\\/g, '/');
+    const cleanPath = normalizedPath.replace(/^public\//, '');
+    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
   } catch (error) {
     console.error("Erreur lors du traitement du chemin d'image:", error);
+    return 'images/portrait-default.png';
   }
-  return 'images/portrait-default.png';
 };
 
 const getFlagPath = (fullPath: string) => {
   try {
-    const pathSegments = fullPath.split('public\\');
-    if (pathSegments.length > 1) {
-      return pathSegments[1].replace(/\\/g, '/');
-    }
+    const normalizedPath = fullPath.replace(/\\/g, '/');
+    const cleanPath = normalizedPath.replace(/^public\//, '');
+    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
   } catch (error) {
     console.error("Erreur lors du traitement du chemin du drapeau:", error);
+    return 'images/default-flag.png';
   }
-  return 'images/default-flag.png';
 };
 
 interface FormationSlotProps {
