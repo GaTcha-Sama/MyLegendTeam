@@ -57,6 +57,33 @@ class Player {
             callback(null, rows);
         });
     }
+
+    static create(playerData, callback) {
+        const {
+            name,
+            lastname,
+            nationality_id,
+            position_id,
+            sport_id,
+            team_id,
+            photo
+        } = playerData;
+
+        const query = `
+            INSERT INTO players (name, lastname, nationality_id, position_id, sport_id, team_id, photo)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        `;
+
+        db.run(query, 
+            [name, lastname, nationality_id, position_id, sport_id, team_id, photo],
+            function(err) {
+                if (err) {
+                    return callback(err, null);
+                }
+                callback(null, { id: this.lastID, ...playerData });
+            }
+        );
+    }
 }
 
 module.exports = Player; 
