@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Player } from "../app/data/players";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "http://localhost:5001"; // url backend
 
 export const fetchPlayers = async (): Promise<Player[]> => {
   try {
