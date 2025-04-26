@@ -1,0 +1,7 @@
+/backend
+cd /scripts
+python import_players.py
+cd ..
+rm database/mylegendteam.db
+node database/init.js
+npm run dev
