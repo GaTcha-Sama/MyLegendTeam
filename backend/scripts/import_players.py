@@ -23,7 +23,6 @@ def clean_filename(text):
 
 def get_player_photo_path(name, lastname, flag, sport_id, extension):
     sport_folder = get_sport_folder(sport_id)
-    # Nettoie le nom et le prénom pour le nom de fichier
     clean_name = clean_filename(name)
     clean_lastname = clean_filename(lastname)
     filename = f"{clean_lastname}-{clean_name}"

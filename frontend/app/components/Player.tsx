@@ -20,8 +20,8 @@ export const Player = ({ player, theme }: PlayerProps) => {
       name: player.name,
       lastname: player.lastname,
       photo: player.photo,
-      // TODO: add team logo
       flag: player.flag,
+      team_logo: player.team_logo,
     },
     collect: (monitor) => ({ isDragging: monitor.isDragging() })
   }));
@@ -56,8 +56,22 @@ export const Player = ({ player, theme }: PlayerProps) => {
     }
   };
 
+  const getTeamLogoPath = (fullPath: string) => {
+    if (!fullPath) return 'images/team-default.png';
+    
+    try {
+      const normalizedPath = fullPath.replace(/\\/g, '/');
+      const cleanPath = normalizedPath.replace(/^public\//, '');
+      return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+    } catch (error) {
+      console.error("Erreur lors du traitement du chemin du logo:", error);
+      return 'images/team-default.png';
+    }
+  };
+
   const imagePath = getImagePath(player.photo);
   const flagPath = getFlagPath(player.flag);
+  const teamLogoPath = getTeamLogoPath(player.team_logo);
 
   return (
     <div
@@ -100,23 +114,44 @@ export const Player = ({ player, theme }: PlayerProps) => {
         />
       </div>
 
-      <div className="flex items-center gap-2 text-base justify-center w-full font-medium">
-        <span className="text-xs">{player.nationality}</span>
-        {player.flag && (
-          <div className="relative w-10 h-6 mt-2">
-            <Image
-              src={`/${flagPath}`}
-              alt={`Drapeau ${player.nationality}`}
-              className="object-contain"
-              sizes="24px"
-              height={24}
-              width={24}
-              onError={() => {
-                setUseDefaultFlag(true);
-              }}
-            />
-          </div>
-        )}
+      <div className="flex flex-col items-center gap-2 w-full">
+        <div className="flex items-center gap-2 justify-center">
+          <span className="text-xs">{player.nationality}</span>
+          {player.flag && (
+            <div className="relative w-10 h-6">
+              <Image
+                src={`/${flagPath}`}
+                alt={`Drapeau ${player.nationality}`}
+                className="object-contain"
+                sizes="24px"
+                height={24}
+                width={24}
+                onError={() => {
+                  setUseDefaultFlag(true);
+                }}
+              />
+            </div>
+          )}
+        </div>
+        
+        <div className="flex items-center gap-2 justify-center">
+          <span className="text-xs">{player.team}</span>
+          {player.team_logo && (
+            <div className="relative w-10 h-6">
+              <Image
+                src={`/${teamLogoPath}`}
+                alt={`Logo ${player.team}`}
+                className="object-contain"
+                sizes="24px"
+                height={18}
+                width={18}
+                onError={() => {
+                  console.error(`Erreur de chargement du logo pour ${player.team}`);
+                }}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

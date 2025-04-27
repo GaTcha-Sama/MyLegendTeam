@@ -25,6 +25,17 @@ const getFlagPath = (fullPath: string) => {
   }
 };
 
+const getTeamLogoPath = (fullPath: string) => {
+  try {
+    const normalizedPath = fullPath.replace(/\\/g, '/');
+    const cleanPath = normalizedPath.replace(/^public\//, '');
+    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+  } catch (error) {
+    console.error("Erreur lors du traitement du chemin du logo:", error);
+    return 'images/team-default.png';
+  }
+};
+
 interface FormationSlotProps {
   position: string;
   player: PlayerType | null;
@@ -59,20 +70,7 @@ export const FormationSlot = ({
 
     return (
       <div className="flex flex-col items-center w-full">
-        <div className="relative w-18 h-18 mb-1">
-          <Image 
-            src={`/${getImagePath(player.photo)}`}
-            alt={player.name}
-            fill
-            className="rounded-full object-cover"
-            sizes="48px"
-          />
-        </div>
-        <span className="font-semibold text-gray-800 text-sm text-center">
-          {`${player.lastname} ${player.name}`}
-        </span>
-        <div className="flex items-center gap-1 mt-1">
-          <span className="text-xs">{player.nationality}</span>
+        <div className="relative flex items-center justify-center gap-2 mb-1">
           {player.flag && (
             <div className="relative w-6 h-4">
               <Image
@@ -84,6 +82,32 @@ export const FormationSlot = ({
               />
             </div>
           )}
+          <div className="relative w-18 h-18">
+            <Image 
+              src={`/${getImagePath(player.photo)}`}
+              alt={player.name}
+              fill
+              className="rounded-full object-cover"
+              sizes="48px"
+            />
+          </div>
+          {player.team_logo && (
+            <div className="relative w-6 h-4">
+              <Image
+                src={`/${getTeamLogoPath(player.team_logo)}`}
+                alt={`Logo ${player.team}`}
+                fill  
+                className="object-contain"
+                sizes="24px"
+              />
+            </div>
+          )}
+        </div>
+        <span className="font-semibold text-gray-800 text-sm text-center">
+          {`${player.lastname} ${player.name}`}
+        </span>
+        <div className="flex items-center gap-1 mt-1">
+          <span className="text-xs">{player.nationality}</span>
         </div>
         <button
           onClick={() => onDropPlayer(position, null)}

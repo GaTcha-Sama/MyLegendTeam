@@ -2,20 +2,104 @@
   "teams": [
     {
       "id": 1,
-      "name": "Stade Toulousain",
-      "team_logo": "public/images/rugby/teams/Stade-Toulousain.png",
+      "name": "Toulouse",
+      "team_logo": "public/images/rugby/teams/FRA/Toulouse.png",
       "sport_id": 1
     },
     {
       "id": 2,
-      "name": "RC Toulon",
-      "team_logo": "public/images/rugby/teams/RC-Toulon.png",
+      "name": "Toulon",
+      "team_logo": "public/images/rugby/teams/FRA/Toulon.png",
       "sport_id": 1
     },
     {
       "id": 3,
-      "name": "Crusaders",
-      "team_logo": "public/images/rugby/teams/Crusaders.png",
+      "name": "Lyon",
+      "team_logo": "public/images/rugby/teams/FRA/Lyon.png",
+      "sport_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Stade Francais",
+      "team_logo": "public/images/rugby/teams/FRA/Paris.png",
+      "sport_id": 1
+    },
+    {
+      "id": 5,
+      "name": "Racing 92",
+      "team_logo": "public/images/rugby/teams/FRA/Racing.png",
+      "sport_id": 1
+    },
+    {
+      "id": 6,
+      "name": "La Rochelle",
+      "team_logo": "public/images/rugby/teams/FRA/La-Rochelle.png",
+      "sport_id": 1
+    },
+    {
+      "id": 7,
+      "name": "Bordeaux-Begles",
+      "team_logo": "public/images/rugby/teams/FRA/UBB.png",
+      "sport_id": 1
+    },
+    {
+      "id": 8,
+      "name": "Castres",
+      "team_logo": "public/images/rugby/teams/FRA/Castres.png",
+      "sport_id": 1
+    },
+    {
+      "id": 9,
+      "name": "Clermont",
+      "team_logo": "public/images/rugby/teams/FRA/Clermont.png",
+      "sport_id": 1
+    },
+    {
+      "id": 10,
+      "name": "Montpellier",
+      "team_logo": "public/images/rugby/teams/FRA/Montpellier.png",
+      "sport_id": 1
+    },
+    {
+      "id": 11,
+      "name": "Perpignan",
+      "team_logo": "public/images/rugby/teams/FRA/USAP.png",
+      "sport_id": 1
+    },
+    {
+      "id": 12,
+      "name": "Vannes",
+      "team_logo": "public/images/rugby/teams/FRA/Vannes.png",
+      "sport_id": 1
+    },
+    {
+      "id": 13,
+      "name": "Pau",
+      "team_logo": "public/images/rugby/teams/FRA/Pau.png",
+      "sport_id": 1
+    },
+    {
+      "id": 14,
+      "name": "Bayonne",
+      "team_logo": "public/images/rugby/teams/FRA/Bayonne.png",
+      "sport_id": 1
+    },
+    {
+      "id": 15,
+      "name": "Agen",
+      "team_logo": "public/images/rugby/teams/FRA/Agen.png",
+      "sport_id": 1
+    },
+    {
+      "id": 16,
+      "name": "Biarritz",
+      "team_logo": "public/images/rugby/teams/FRA/Biarritz.png",
+      "sport_id": 1
+    },
+    {
+      "id": 17,
+      "name": "Brive",
+      "team_logo": "public/images/rugby/teams/FRA/Brive.png",
       "sport_id": 1
     }
   ]

@@ -13,7 +13,7 @@ class Player {
                 pos.name as position,
                 p.photo,
                 t.name as team,
-                t.team_logo
+                t.team_logo as team_logo
             FROM players p
             LEFT JOIN nationalities n ON p.nationality_id = n.id
             LEFT JOIN teams t ON p.team_id = t.id
@@ -41,7 +41,7 @@ class Player {
                 pos.name as position,
                 p.photo,
                 t.name as team,
-                t.team_logo
+                t.team_logo as team_logo
             FROM players p
             LEFT JOIN nationalities n ON p.nationality_id = n.id
             LEFT JOIN teams t ON p.team_id = t.id

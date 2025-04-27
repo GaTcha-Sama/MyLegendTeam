@@ -10,11 +10,13 @@ import { NationalitySelector } from "./components/NationalitySelector";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { Player as PlayerType } from "./data/players";
 import { fetchPlayers } from "../lib/api";
+import { PositionSelector } from "./components/PositionSelector";
 
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
   const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
+  const [selectedPosition, setSelectedPosition] = useState<string>("");
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -59,9 +61,11 @@ export default function DreamTeamBuilder() {
           <h2 className="text-2xl font-bold mb-4 text-gray-800 border-b pb-3">
             Available Players
           </h2>
-          <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
-          <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
-          
+          <div className="flex mb-4 gap-4 justify-between">
+            <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
+            <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
+            <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
+          </div>
           {/* Grille de joueurs */}
           <div className="grid grid-cols-3 gap-4 mt-4">
             {loading ? (
@@ -71,7 +75,8 @@ export default function DreamTeamBuilder() {
                 .filter(player => {
                   return player.sport.toLowerCase() === selectedSport && 
                          !isPlayerInTeam(player.id) &&
-                         (selectedNationality === "" || player.nationality === selectedNationality)
+                         (selectedNationality === "" || player.nationality === selectedNationality) &&
+                         (selectedPosition === "" || player.position === selectedPosition)
                 })
                 .map((player) => (
                   <Player 
