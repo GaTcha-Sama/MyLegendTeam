@@ -42,7 +42,6 @@ def import_players():
     players_list = []
     current_id = 1  # Pour gérer automatiquement les IDs
     
-    # Liste des fichiers sport à traiter
     sport_files = {
         1: 'rugby_players.ods',
         2: 'football_players.ods',
@@ -51,7 +50,6 @@ def import_players():
         5: 'hockey_players.ods'
     }
     
-    # Traitement de chaque fichier sport
     for sport_id, filename in sport_files.items():
         excel_path = script_dir / filename
         if not excel_path.exists():
@@ -65,8 +63,8 @@ def import_players():
             try:
                 player = {
                     "id": current_id,
-                    "name": str(row['name']).strip(),  # Garde le nom original dans le JSON
-                    "lastname": str(row['lastname']).strip(),  # Garde le nom original dans le JSON
+                    "name": str(row['name']).strip(), 
+                    "lastname": str(row['lastname']).strip(),
                     "nationality_id": int(row['nationality_id']),
                     "position_id": int(row['position_id']),
                     "sport_id": sport_id,

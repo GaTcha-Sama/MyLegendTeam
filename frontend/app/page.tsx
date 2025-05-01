@@ -11,7 +11,7 @@ import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { Player as PlayerType } from "./data/players";
 import { fetchPlayers } from "../lib/api";
 import { PositionSelector } from "./components/PositionSelector";
-
+import { FilterPlayers } from "./components/FilterPlayers";
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
   const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
@@ -19,6 +19,7 @@ export default function DreamTeamBuilder() {
   const [selectedPosition, setSelectedPosition] = useState<string>("");
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
+  const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
 
   useEffect(() => {
     const loadPlayers = async () => {
@@ -55,37 +56,50 @@ export default function DreamTeamBuilder() {
 
   return (
     <DndProvider backend={HTML5Backend}>
-      <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-600 to-gray-300">
         {/* Sidebar avec la liste des joueurs */}
         <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
-          <h2 className="text-2xl font-bold mb-4 text-gray-800 border-b pb-3">
-            Available Players
-          </h2>
-          <div className="flex mb-4 gap-4 justify-between">
-            <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
-            <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
-            <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
-          </div>
-          {/* Grille de joueurs */}
-          <div className="grid grid-cols-3 gap-4 mt-4">
-            {loading ? (
-              <div className="text-center py-4 col-span-2">Loading players...</div>
-            ) : (
-              players
-                .filter(player => {
-                  return player.sport.toLowerCase() === selectedSport && 
-                         !isPlayerInTeam(player.id) &&
-                         (selectedNationality === "" || player.nationality === selectedNationality) &&
-                         (selectedPosition === "" || player.position === selectedPosition)
-                })
-                .map((player) => (
-                  <Player 
-                    key={player.id} 
-                    player={player} 
-                    theme={currentTheme} 
-                  />
-                ))
-            )}
+          <div className="flex flex-col gap-4">
+            <div className="flex justify-between items-center border-b pb-3">
+              <h2 className="text-2xl font-bold text-gray-800">
+                Available Players
+              </h2>
+              <FilterPlayers 
+                onFilterChange={setFilteredPlayers}
+                players={players}
+                selectedSport={selectedSport}
+                isPlayerInTeam={isPlayerInTeam}
+                selectedNationality={selectedNationality}
+                selectedPosition={selectedPosition}
+              />
+            </div>
+            <div className="flex mb-4 gap-4 justify-between">
+              <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
+              <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
+              <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
+            </div>
+            {/* Grille de joueurs */}
+            <div className="grid grid-cols-3 gap-4">
+              {loading ? (
+                <div className="text-center py-4 col-span-2">Loading players...</div>
+              ) : (
+                (filteredPlayers.length > 0 ? filteredPlayers : players
+                  .filter(player => {
+                    return player.sport.toLowerCase() === selectedSport && 
+                           !isPlayerInTeam(player.id) &&
+                           (selectedNationality === "" || player.nationality === selectedNationality) &&
+                           (selectedPosition === "" || player.position === selectedPosition)
+                  }))
+                  .sort((a, b) => a.name.localeCompare(b.name))
+                  .map((player) => (
+                    <Player 
+                      key={player.id} 
+                      player={player} 
+                      theme={currentTheme} 
+                    />
+                  ))
+              )}
+            </div>
           </div>
         </div>
 

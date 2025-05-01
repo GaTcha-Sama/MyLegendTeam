@@ -104,7 +104,7 @@ export const Player = ({ player, theme }: PlayerProps) => {
           src={`/${imagePath}`} 
           alt={`${player.lastname} ${player.name}`} 
           fill
-          className="rounded-lg object-cover"
+          className="rounded-lg object-top object-cover"
           sizes="(max-width: 768px) 100vw, 300px"
           onError={() => {
             setUseDefaultImage(true);
