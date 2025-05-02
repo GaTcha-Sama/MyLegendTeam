@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Player } from '../data/players';
 
 interface FilterPlayersProps {
@@ -20,10 +20,9 @@ export const FilterPlayers = ({
 }: FilterPlayersProps) => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearch = useCallback((value: string) => {
-    setSearchTerm(value);
-    const searchWords = value.toLowerCase().split(' ').filter(word => word.length > 0);
-    
+  useEffect(() => {
+    const searchWords = searchTerm.toLowerCase().split(' ').filter(word => word.length > 0);
+
     const filteredPlayers = players.filter(player => {
       const baseConditions = 
         player.sport.toLowerCase() === selectedSport && 
@@ -44,15 +43,10 @@ export const FilterPlayers = ({
     });
 
     onFilterChange(filteredPlayers);
-  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, onFilterChange]);
-
-  useEffect(() => {
-    handleSearch(searchTerm);
-  }, [handleSearch, searchTerm, selectedNationality, selectedPosition]);
+  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, searchTerm, onFilterChange]);
 
   const resetSearch = () => {
     setSearchTerm('');
-    handleSearch('');
   };
 
   const showNoResults = searchTerm.length >= 3 && players.filter(player => {
@@ -78,7 +72,7 @@ export const FilterPlayers = ({
           type="text"
           value={searchTerm}
           placeholder="Search by name or firstname..."
-          onChange={(e) => handleSearch(e.target.value)}
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent w-64 pr-10"
         />
         {searchTerm && (

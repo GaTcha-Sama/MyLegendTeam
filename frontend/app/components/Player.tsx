@@ -85,7 +85,6 @@ export const Player = ({ player, theme }: PlayerProps) => {
         transition-all 
         duration-200 
         cursor-pointer 
-        mb-4
         flex 
         flex-col 
         items-center 

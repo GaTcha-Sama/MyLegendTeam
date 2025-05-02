@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { Player } from "./components/Player";
@@ -12,6 +12,7 @@ import { Player as PlayerType } from "./data/players";
 import { fetchPlayers } from "../lib/api";
 import { PositionSelector } from "./components/PositionSelector";
 import { FilterPlayers } from "./components/FilterPlayers";
+
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
   const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
@@ -20,6 +21,15 @@ export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const playersPerPage = 9;
+
+  const isPlayerInTeam = useCallback(
+    (playerId: number) => {
+      return Object.values(team).some(player => player?.id === playerId);
+    },
+    [team]
+  );
 
   useEffect(() => {
     const loadPlayers = async () => {
@@ -40,24 +50,54 @@ export default function DreamTeamBuilder() {
     setSelectedNationality("");
   }, [selectedSport]);
 
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedSport, selectedNationality, selectedPosition]);
+
   const handleDropPlayer = (position: string, player: { id: number; name: string } | null) => {
-    setTeam((prev) => ({ ...prev, [position]: player }));
+    setTeam((prev) => {
+      if (!player) {
+        return { ...prev, [position]: null };
+      }
+
+      const currentSlot = Object.keys(prev).find(
+        (pos) => prev[pos]?.id === player.id
+      );
+
+      const newTeam = { ...prev };
+      if (currentSlot) {
+        newTeam[currentSlot] = null;
+      }
+
+      newTeam[position] = player;
+      return newTeam;
+    });
   };
 
   const resetTeam = () => {
     setTeam({});
   };
 
-  const isPlayerInTeam = (playerId: number) => {
-    return Object.values(team).some(player => player?.id === playerId);
-  };
-
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
+
+  const playersToShow = (filteredPlayers.length > 0 ? filteredPlayers : players
+    .filter(player => {
+      return player.sport.toLowerCase() === selectedSport && 
+             !isPlayerInTeam(player.id) &&
+             (selectedNationality === "" || player.nationality === selectedNationality) &&
+             (selectedPosition === "" || player.position === selectedPosition)
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const paginatedPlayers = playersToShow.slice(
+    (currentPage - 1) * playersPerPage,
+    currentPage * playersPerPage
+  );
 
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-600 to-gray-300">
-        {/* Sidebar avec la liste des joueurs */}
+        {/* Sidebar with the list of players */}
         <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
           <div className="flex flex-col gap-4">
             <div className="flex justify-between items-center border-b pb-3">
@@ -73,41 +113,51 @@ export default function DreamTeamBuilder() {
                 selectedPosition={selectedPosition}
               />
             </div>
-            <div className="flex mb-4 gap-4 justify-between">
+            <div className="flex gap-4 justify-between">
               <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
               <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
               <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
             </div>
-            {/* Grille de joueurs */}
+            {/* Grid of players */}
+            <div className="flex justify-center mb-2 gap-2">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer"
+              >
+                Précédent
+              </button>
+              <span className="text-gray-800 mt-1">{currentPage} / {Math.ceil(playersToShow.length / playersPerPage)}</span>
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(Math.ceil(playersToShow.length / playersPerPage), p + 1))}
+                disabled={currentPage === Math.ceil(playersToShow.length / playersPerPage)}
+                className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer"
+              >
+                Suivant
+              </button>
+            </div>
             <div className="grid grid-cols-3 gap-4">
               {loading ? (
                 <div className="text-center py-4 col-span-2">Loading players...</div>
               ) : (
-                (filteredPlayers.length > 0 ? filteredPlayers : players
-                  .filter(player => {
-                    return player.sport.toLowerCase() === selectedSport && 
-                           !isPlayerInTeam(player.id) &&
-                           (selectedNationality === "" || player.nationality === selectedNationality) &&
-                           (selectedPosition === "" || player.position === selectedPosition)
-                  }))
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((player) => (
-                    <Player 
-                      key={player.id} 
-                      player={player} 
-                      theme={currentTheme} 
-                    />
-                  ))
+                paginatedPlayers.map((player) => (
+                  <Player 
+                    key={player.id} 
+                    player={player} 
+                    theme={currentTheme} 
+                  />
+                ))
               )}
             </div>
+            
           </div>
         </div>
 
-        {/* Terrain */}
+        {/* Field */}
         <div className="flex-1 p-4 bg-white rounded-xl shadow-lg">
           <div className="flex justify-between items-center mb-4 text-gray-800 border-b pb-3">
             <h2 className="text-2xl font-bold">
-              My {selectedSport} Legend Team
+              My Legend Team for {selectedSport}
             </h2>
             <button
               onClick={resetTeam}

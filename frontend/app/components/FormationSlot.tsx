@@ -1,4 +1,4 @@
-import { useDrop } from "react-dnd";
+import { useDrop, useDrag } from "react-dnd";
 import { Player as PlayerType } from "../data/players";
 import { Theme } from "../types/sports";
 import Image from "next/image";
@@ -53,15 +53,26 @@ export const FormationSlot = ({
   theme,
   positionId
 }: FormationSlotProps) => {
+  const [{ isDragging }, drag] = useDrag({
+    type: "PLAYER",
+    item: player ? player : {},
+    canDrag: !!player,
+    collect: (monitor) => ({
+      isDragging: monitor.isDragging(),
+    }),
+  });
+
   const [{ isOver }, drop] = useDrop(() => ({
     accept: "PLAYER",
     drop: (item: PlayerType) => {
-      if (!isPlayerAlreadyPlaced) {
-        onDropPlayer(position, item);
-      }
+      onDropPlayer(position, item);
     },
     collect: (monitor) => ({ isOver: monitor.isOver() })
   }));
+
+  const ref = (node: HTMLDivElement | null) => {
+    drag(drop(node));
+  };
 
   const renderPlayerContent = () => {
     if (!player) {
@@ -70,7 +81,7 @@ export const FormationSlot = ({
 
     return (
       <div className="flex flex-col items-center w-full">
-        <div className="relative flex items-center justify-center gap-2 mb-1">
+        <div className="relative flex items-center justify-center gap-1 mb-2">
           {player.flag && (
             <div className="relative w-6 h-4">
               <Image
@@ -82,17 +93,17 @@ export const FormationSlot = ({
               />
             </div>
           )}
-          <div className="relative w-18 h-18">
+          <div className="relative w-22 h-22 mt-2">
             <Image 
               src={`/${getImagePath(player.photo)}`}
               alt={player.name}
               fill
-              className="rounded-full object-cover"
+              className="object-top object-cover"
               sizes="48px"
             />
           </div>
           {player.team_logo && (
-            <div className="relative w-6 h-4">
+            <div className="relative w-6 h-6 bg-white rounded-sm p-2">
               <Image
                 src={`/${getTeamLogoPath(player.team_logo)}`}
                 alt={`Logo ${player.team}`}
@@ -103,10 +114,10 @@ export const FormationSlot = ({
             </div>
           )}
         </div>
-        <span className="font-semibold text-gray-800 text-sm text-center">
+        <span className="font-semibold text-gray-800 text-xs text-center">
           {`${player.lastname} ${player.name}`}
         </span>
-        <div className="flex items-center gap-1 mt-1">
+        <div className="flex items-center gap-1 mt-2">
           <span className="text-xs">{player.nationality}</span>
         </div>
         <button
@@ -123,27 +134,28 @@ export const FormationSlot = ({
 
   return (
     <div
-      ref={drop as unknown as React.Ref<HTMLDivElement>}
+      ref={ref}
       data-position={positionId}
       className={`
-        w-36 h-20 
-        border-2 border-dashed rounded-lg 
+        w-26 h-34 
+        border-2 border-yellow-500 rounded-sm 
         flex items-center justify-center 
-        relative group
+        relative group 
+        transition-all duration-200 
+        shadow-sm hover:shadow-md
         ${isOver 
           ? isPlayerAlreadyPlaced 
             ? "bg-red-100 border-red-500" 
             : "bg-green-100 border-green-500" 
           : "bg-gray-50 border-gray-300"
-        } 
-        transition-all duration-200 
-        shadow-sm hover:shadow-md
+        }
+        ${isDragging ? "opacity-50" : "opacity-100"}
       `}
     >
       {renderPlayerContent()}
       {isOver && isPlayerAlreadyPlaced && (
         <div className="absolute bottom-0 left-0 right-0 bg-red-100 text-red-600 text-xs p-1 text-center">
-          Ce joueur est déjà dans l&apos;équipe
+          Already occupied
         </div>
       )}
     </div>
