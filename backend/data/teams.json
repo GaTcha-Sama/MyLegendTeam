@@ -206,6 +206,13 @@
     },
     {
       "id": 36,
+      "name": "All Blacks",
+      "team_logo": "public/images/rugby/teams/NZL/AllBlacks.svg",
+      "sport_id": 1
+    },
+
+    {
+      "id": 39,
       "name": "Fijian Drua",
       "team_logo": "public/images/rugby/teams/FJI/Fijian-Drua.png",
       "sport_id": 1

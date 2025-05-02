@@ -12,6 +12,7 @@ import { Player as PlayerType } from "./data/players";
 import { fetchPlayers } from "../lib/api";
 import { PositionSelector } from "./components/PositionSelector";
 import { FilterPlayers } from "./components/FilterPlayers";
+import { formationCoords } from "./styles/formation";
 
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
@@ -166,24 +167,52 @@ export default function DreamTeamBuilder() {
               Reset Team
             </button>
           </div>
-          <div className={`grid gap-4 p-6 min-h-[750px] relative grid-cols-4
-            ${selectedSport === 'football' ? 'formation-football bg-[url("/images/foot-field.jpg")]' : 
-              selectedSport === 'rugby' ? 'formation-rugby bg-[url("/images/rugby-field.jpg")]' :
-              selectedSport === 'hockey' ? 'formation-hockey bg-[url("/images/hockey-field.png")]' :
-              selectedSport === 'basketball' ? 'formation-basketball bg-[url("/images/basket-field.jpg")]' :
-              selectedSport === 'handball' ? 'formation-handball bg-[url("/images/handball-field.jpg")]' : ''} 
-            bg-cover bg-center bg-no-repeat`}>
-            {sportPositions[selectedSport].map((position) => (
-              <FormationSlot
-                key={position.id}
-                position={position.name}
-                player={team[position.id] as PlayerType | null}
-                onDropPlayer={(_, player) => handleDropPlayer(position.id, player)}
-                isPlayerAlreadyPlaced={isPlayerInTeam(team[position.id]?.id || 0)}
-                theme={currentTheme}
-                positionId={position.id}
-              />
-            ))}
+          <div
+            className="terrain"
+            style={{
+              position: "relative",
+              width: 1200,
+              height: 900,
+              background: selectedSport === "rugby"
+                ? 'url("/images/rugby-field.jpg") no-repeat center/cover'
+                : selectedSport === "football"
+                ? 'url("/images/foot-field.jpg") no-repeat center/cover'
+                : selectedSport === "basketball"
+                ? 'url("/images/basket-field.jpg") no-repeat center/cover'
+                : selectedSport === "hockey"
+                ? 'url("/images/hockey-field.png") no-repeat center/cover'
+                : selectedSport === "handball"
+                ? 'url("/images/handball-field.jpg") no-repeat center/cover'
+                : ""
+            }}
+          >
+            {sportPositions[selectedSport].map((position) => {
+              const coords = formationCoords[selectedSport][position.id];
+              if (!coords) return null;
+              return (
+                <div
+                  key={position.id}
+                  style={{
+                    position: "absolute",
+                    top: coords.top,
+                    left: coords.left,
+                    width: 60,
+                    height: 60,
+                    zIndex: 2,
+                  }}
+                  data-position={position.id}
+                >
+                  <FormationSlot
+                    position={position.name}
+                    positionId={position.id}
+                    player={team[position.id] as PlayerType | null}
+                    onDropPlayer={(_, player) => handleDropPlayer(position.id, player)}
+                    isPlayerAlreadyPlaced={isPlayerInTeam(team[position.id]?.id || 0)}
+                    theme={currentTheme}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
