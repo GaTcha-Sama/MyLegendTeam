@@ -1178,9 +1178,15 @@
     },
     {
       "id": 197,
-      "name": "Québec",
+      "name": "Quebec",
       "code": "QBC",
       "flag": "public/images/flags/QBC.png"
+    },
+    {
+      "id": 198,
+      "name": "England",
+      "code": "ENG",
+      "flag": "public/images/flags/ENG.png"
     }
   ]
 }

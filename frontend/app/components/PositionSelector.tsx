@@ -18,7 +18,7 @@ export const PositionSelector = ({ selectedPosition, onSelectPosition, players, 
   return (
     <div>
       <select
-        aria-label="Sélectionner une position"
+        aria-label="Choose a position"
         value={selectedPosition}
         onChange={(e) => onSelectPosition(e.target.value)}
         className="px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"

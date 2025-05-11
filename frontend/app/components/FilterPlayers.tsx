@@ -8,6 +8,7 @@ interface FilterPlayersProps {
   isPlayerInTeam: (playerId: number) => boolean;
   selectedNationality: string;
   selectedPosition: string;
+  selectedTeam: string;
 }
 
 export const FilterPlayers = ({ 
@@ -16,7 +17,8 @@ export const FilterPlayers = ({
   selectedSport,
   isPlayerInTeam,
   selectedNationality,
-  selectedPosition 
+  selectedPosition,
+  selectedTeam
 }: FilterPlayersProps) => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -28,7 +30,8 @@ export const FilterPlayers = ({
         player.sport.toLowerCase() === selectedSport && 
         !isPlayerInTeam(player.id) &&
         (selectedNationality === "" || player.nationality === selectedNationality) &&
-        (selectedPosition === "" || player.position === selectedPosition);
+        (selectedPosition === "" || player.position === selectedPosition) &&
+        (selectedTeam === "" || player.team === selectedTeam);
 
       if (searchWords.length === 0) {
         return baseConditions;
@@ -43,7 +46,7 @@ export const FilterPlayers = ({
     });
 
     onFilterChange(filteredPlayers);
-  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, searchTerm, onFilterChange]);
+  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, searchTerm, onFilterChange]);
 
   const resetSearch = () => {
     setSearchTerm('');

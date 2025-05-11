@@ -19,20 +19,20 @@ def get_flag_path(flag):
 
 def clean_filename(text):
     """Nettoie le texte pour un nom de fichier valide"""
-    return text.replace("'", "-").replace(" ", "-")
+    return (
+        text.replace("'", "-")
+            .replace("’", "-")
+            .replace(" ", "-")
+            .replace("–", "-")  # tiret long éventuel
+            .replace("—", "-")  # tiret cadratin éventuel
+    )
 
 def get_player_photo_path(name, lastname, flag, sport_id, extension):
     sport_folder = get_sport_folder(sport_id)
-    clean_name = clean_filename(name)
-    clean_lastname = clean_filename(lastname)
-    filename = f"{clean_lastname}-{clean_name}"
+    # On concatène d'abord, puis on nettoie le tout pour gérer tous les cas
+    filename = f"{lastname}-{name}"
+    filename = clean_filename(filename)
     return f"public/images/{sport_folder}/players/{flag}/{filename}.{extension}"
-
-def sanitize_filename(name):
-    """Convertit le nom pour le fichier seulement si nécessaire"""
-    if "'" in name:
-        return name.replace("'", "-")
-    return name
 
 def import_players():
     script_dir = Path(__file__).parent

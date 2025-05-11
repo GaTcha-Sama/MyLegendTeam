@@ -78,7 +78,6 @@ const initDatabase = async () => {
 
                 console.log('Schéma de base de données créé avec succès');
 
-                // Insertion des données dans l'ordre correct
                 const sports = require('../data/sports.json').sports;
                 await insertData(db, 'sports', sports, ['id', 'name']);
                 console.log('Sports insérés');

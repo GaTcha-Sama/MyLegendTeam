@@ -7,10 +7,11 @@ import { Player } from "./components/Player";
 import { FormationSlot } from "./components/FormationSlot";
 import { SportSelector } from "./components/SportSelector";
 import { NationalitySelector } from "./components/NationalitySelector";
+import { PositionSelector } from "./components/PositionSelector";
+import { TeamSelector } from "./components/TeamSelector";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { Player as PlayerType } from "./data/players";
 import { fetchPlayers } from "../lib/api";
-import { PositionSelector } from "./components/PositionSelector";
 import { FilterPlayers } from "./components/FilterPlayers";
 import { formationCoords } from "./styles/formation";
 
@@ -19,6 +20,7 @@ export default function DreamTeamBuilder() {
   const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState<string>("");
+  const [selectedTeam, setSelectedTeam] = useState<string>("");
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
@@ -52,8 +54,12 @@ export default function DreamTeamBuilder() {
   }, [selectedSport]);
 
   useEffect(() => {
+    setSelectedTeam("");
+  }, [selectedSport]);
+
+  useEffect(() => {
     setCurrentPage(1);
-  }, [selectedSport, selectedNationality, selectedPosition]);
+  }, [selectedSport, selectedNationality, selectedTeam, selectedPosition]);
 
   const handleDropPlayer = (position: string, player: { id: number; name: string } | null) => {
     setTeam((prev) => {
@@ -86,7 +92,8 @@ export default function DreamTeamBuilder() {
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&
              (selectedNationality === "" || player.nationality === selectedNationality) &&
-             (selectedPosition === "" || player.position === selectedPosition)
+             (selectedPosition === "" || player.position === selectedPosition) &&
+             (selectedTeam === "" || player.team === selectedTeam)
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -112,11 +119,13 @@ export default function DreamTeamBuilder() {
                 isPlayerInTeam={isPlayerInTeam}
                 selectedNationality={selectedNationality}
                 selectedPosition={selectedPosition}
+                selectedTeam={selectedTeam}
               />
             </div>
-            <div className="flex gap-4 justify-between">
+            <div className="flex gap-2 justify-between">
               <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
               <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
+              <TeamSelector selectedTeam={selectedTeam} onSelectTeam={setSelectedTeam} players={players} selectedSport={selectedSport} />
               <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
             </div>
             {/* Grid of players */}
@@ -126,7 +135,7 @@ export default function DreamTeamBuilder() {
                 disabled={currentPage === 1}
                 className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer"
               >
-                Précédent
+                Previous
               </button>
               <span className="text-gray-800 mt-1">{currentPage} / {Math.ceil(playersToShow.length / playersPerPage)}</span>
               <button
@@ -134,7 +143,7 @@ export default function DreamTeamBuilder() {
                 disabled={currentPage === Math.ceil(playersToShow.length / playersPerPage)}
                 className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer"
               >
-                Suivant
+                Next
               </button>
             </div>
             <div className="grid grid-cols-3 gap-4">

@@ -242,6 +242,12 @@
       "sport_id": 1
     },
     {
+      "id": 44,
+      "name": "Rebels",
+      "team_logo": "public/images/rugby/teams/AUS/Melbourne-Rebels.png",
+      "sport_id": 1
+    },
+    {
       "id": 50,
       "name": "Lions",
       "team_logo": "public/images/rugby/teams/RSA/Lions.png",
@@ -368,6 +374,24 @@
       "sport_id": 1
     },
     {
+      "id": 82,
+      "name": "London Scottish",
+      "team_logo": "public/images/rugby/teams/ENG/London-Scottish.png",
+      "sport_id": 1
+    },
+    {
+      "id": 83,
+      "name": "Worcester",
+      "team_logo": "public/images/rugby/teams/ENG/Worcester.png",
+      "sport_id": 1
+    },
+    {
+      "id": 84,
+      "name": "London Welsh",
+      "team_logo": "public/images/rugby/teams/ENG/London-Welsh.png",
+      "sport_id": 1
+    },
+    {
       "id": 85,
       "name": "Cardiff",
       "team_logo": "public/images/rugby/teams/WAL/Cardiff.png",
@@ -413,6 +437,102 @@
       "id": 96,
       "name": "Zebre",
       "team_logo": "public/images/rugby/teams/ITA/Zebre.png",
+      "sport_id": 1
+    },
+    {
+      "id": 97,
+      "name": "Calvisano",
+      "team_logo": "public/images/rugby/teams/ITA/Calvisano.png",
+      "sport_id": 1
+    },
+    {
+      "id": 99,
+      "name": "Jaguares",
+      "team_logo": "public/images/rugby/teams/ARG/Jaguares.png",
+      "sport_id": 1
+    },
+    {
+      "id": 100,
+      "name": "Kobe",
+      "team_logo": "public/images/rugby/teams/JAP/Kobe.png",
+      "sport_id": 1
+    },
+    {
+      "id": 101,
+      "name": "Osaka",
+      "team_logo": "public/images/rugby/teams/JAP/Osaka.png",
+      "sport_id": 1
+    },
+    {
+      "id": 102,
+      "name": "Saitama",
+      "team_logo": "public/images/rugby/teams/JAP/Saitama.png",
+      "sport_id": 1
+    },
+    {
+      "id": 103,
+      "name": "Shizuoka",
+      "team_logo": "public/images/rugby/teams/JAP/Shizuoka.png",
+      "sport_id": 1
+    },
+    {
+      "id": 104,
+      "name": "Honda",
+      "team_logo": "public/images/rugby/teams/JAP/Honda.png",
+      "sport_id": 1
+    },
+    {
+      "id": 105,
+      "name": "Tokyo Black Rams",
+      "team_logo": "public/images/rugby/teams/JAP/Tokyo_BlackRams.png",
+      "sport_id": 1
+    },
+    {
+      "id": 106,
+      "name": "Tokyo Spears",
+      "team_logo": "public/images/rugby/teams/JAP/Tokyo_Spears.png",
+      "sport_id": 1
+    },
+    {
+      "id": 107,
+      "name": "Tokyo Sungoliath",
+      "team_logo": "public/images/rugby/teams/JAP/Tokyo_Sungoliath.png",
+      "sport_id": 1
+    },
+    {
+      "id": 108,
+      "name": "Toshiba",
+      "team_logo": "public/images/rugby/teams/JAP/Toshiba.png",
+      "sport_id": 1
+    },
+    {
+      "id": 109,
+      "name": "Toyota",
+      "team_logo": "public/images/rugby/teams/JAP/Toyota.png",
+      "sport_id": 1
+    },
+    {
+      "id": 110,
+      "name": "Urayasu",
+      "team_logo": "public/images/rugby/teams/JAP/Urayasu.png",
+      "sport_id": 1
+    },
+    {
+      "id": 111,
+      "name": "Yokohama",
+      "team_logo": "public/images/rugby/teams/JAP/Yokohama.png",
+      "sport_id": 1
+    },
+    {
+      "id": 112,
+      "name": "Mitsubishi",
+      "team_logo": "public/images/rugby/teams/JAP/Mitsubishi.png",
+      "sport_id": 1
+    },
+    {
+      "id": 113,
+      "name": "Tokatsu",
+      "team_logo": "public/images/rugby/teams/JAP/Tokatsu.png",
       "sport_id": 1
     }
   ]
