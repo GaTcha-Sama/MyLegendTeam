@@ -132,8 +132,18 @@
     },
     {
       "id": 27,
-      "name": "Forward",
+      "name": "Left wing",
       "sport_id": 5
-    }    
+    },    
+    {
+      "id": 28,
+      "name": "Center",
+      "sport_id": 5
+    },
+    {
+      "id": 29,
+      "name": "Right wing",
+      "sport_id": 5
+    }
   ]
 }

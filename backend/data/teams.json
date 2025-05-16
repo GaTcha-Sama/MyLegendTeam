@@ -428,6 +428,18 @@
       "sport_id": 1
     },
     {
+      "id": 92,
+      "name": "Border",
+      "team_logo": "public/images/rugby/teams/SCO/Border.png",
+      "sport_id": 1
+    },
+    {
+      "id": 93,
+      "name": "Caledonia",
+      "team_logo": "public/images/rugby/teams/SCO/Caledonia.png",
+      "sport_id": 1
+    },
+    {
       "id": 95,
       "name": "Benetton",
       "team_logo": "public/images/rugby/teams/ITA/Benetton.png",
@@ -534,6 +546,294 @@
       "name": "Tokatsu",
       "team_logo": "public/images/rugby/teams/JAP/Tokatsu.png",
       "sport_id": 1
+    },
+    {
+      "id": 120,
+      "name": "Carolina",
+      "team_logo": "public/images/rugby/teams/USA/Carolina.png",
+      "sport_id": 1
+    },
+    {
+      "id": 121 ,
+      "name": "Chicago",
+      "team_logo": "public/images/rugby/teams/USA/Chicago.png",
+      "sport_id": 1
+    },
+    {
+      "id": 122,
+      "name": "Houston",
+      "team_logo": "public/images/rugby/teams/USA/Houston.png",
+      "sport_id": 1
+    },
+    {
+      "id": 123,
+      "name": "Los Angeles",
+      "team_logo": "public/images/rugby/teams/USA/Los-Angeles.png",
+      "sport_id": 1
+    },
+    {
+      "id": 124,
+      "name": "Miami",
+      "team_logo": "public/images/rugby/teams/USA/Miami.png",
+      "sport_id": 1
+    },
+    {
+      "id": 125,
+      "name": "New England",
+      "team_logo": "public/images/rugby/teams/USA/New-England.png",
+      "sport_id": 1
+    },
+    {
+      "id": 126,
+      "name": "New Orleans",
+      "team_logo": "public/images/rugby/teams/USA/New-Orleans.png",
+      "sport_id": 1
+    },
+    {
+      "id": 127,
+      "name": "San Diego",
+      "team_logo": "public/images/rugby/teams/USA/San-Diego.png",
+      "sport_id": 1
+    },
+    {
+      "id": 128,
+      "name": "Seattle",
+      "team_logo": "public/images/rugby/teams/USA/Seattle.png",
+      "sport_id": 1
+    },
+    {
+      "id": 129,
+      "name": "Utah",
+      "team_logo": "public/images/rugby/teams/USA/Utah.png",
+      "sport_id": 1
+    },
+    {
+      "id": 130,
+      "name": "Washington",
+      "team_logo": "public/images/rugby/teams/USA/Washington.png",
+      "sport_id": 1
+    },
+    {
+      "id": 200,
+      "name": "Montreal Canadiens",
+      "team_logo": "public/images/hockey/teams/NHL/Montreal-Canadiens.png",
+      "sport_id": 5
+    },
+    {
+      "id": 201,
+      "name": "Ottawa Senators",
+      "team_logo": "public/images/hockey/teams/NHL/Ottawa-Senators.png",
+      "sport_id": 5
+    },
+    {
+      "id": 202,
+      "name": "Toronto Maple Leafs",
+      "team_logo": "public/images/hockey/teams/NHL/Toronto-Maple-Leafs.png",
+      "sport_id": 5
+    },
+    {
+      "id": 203,
+      "name": "Winnipeg Jets",
+      "team_logo": "public/images/hockey/teams/NHL/Winnipeg-Jets.png",
+      "sport_id": 5
+    },
+    {
+      "id": 204,
+      "name": "Edmonton Oilers",
+      "team_logo": "public/images/hockey/teams/NHL/Edmonton-Oilers.png",
+      "sport_id": 5
+    },
+    {
+      "id": 205,
+      "name": "Calgary Flames",
+      "team_logo": "public/images/hockey/teams/NHL/Calgary-Flames.png",
+      "sport_id": 5
+    },
+    {
+      "id": 206,
+      "name": "Vancouver Canucks",
+      "team_logo": "public/images/hockey/teams/NHL/Vancouver-Canucks.png",
+      "sport_id": 5
+    },
+    {
+      "id": 207,
+      "name": "Seattle Kraken",
+      "team_logo": "public/images/hockey/teams/NHL/Seattle-Kraken.png",
+      "sport_id": 5
+    },
+    {
+      "id": 208,
+      "name": "San Jose Sharks",
+      "team_logo": "public/images/hockey/teams/NHL/San-Jose-Sharks.png",
+      "sport_id": 5
+    },
+    {
+      "id": 209,
+      "name": "Anaheim Ducks",
+      "team_logo": "public/images/hockey/teams/NHL/Anaheim-Ducks.png",
+      "sport_id": 5
+    },
+    {
+      "id": 210,
+      "name": "Los Angeles Kings",
+      "team_logo": "public/images/hockey/teams/NHL/Los-Angeles-Kings.png",
+      "sport_id": 5
+    },
+    {
+      "id": 211,
+      "name": "Utah Mammoth",
+      "team_logo": "public/images/hockey/teams/NHL/Utah-Mammoth.png",
+      "sport_id": 5
+    },
+    {
+      "id": 212,
+      "name": "Colorado Avalanche",
+      "team_logo": "public/images/hockey/teams/NHL/Colorado-Avalanche.png",
+      "sport_id": 5
+    },
+    {
+      "id": 213,
+      "name": "Dallas Stars",
+      "team_logo": "public/images/hockey/teams/NHL/Dallas-Stars.png",
+      "sport_id": 5
+    },
+    {
+      "id": 214,
+      "name": "Florida Panthers",
+      "team_logo": "public/images/hockey/teams/NHL/Florida-Panthers.png",
+      "sport_id": 5
+    },
+    {
+      "id": 215,
+      "name": "Tampa Bay Lightning",
+      "team_logo": "public/images/hockey/teams/NHL/Tampa-Bay-Lightning.png",
+      "sport_id": 5
+    },
+    {
+      "id": 216,
+      "name": "Washington Capitals",
+      "team_logo": "public/images/hockey/teams/NHL/Washington-Capitals.png",
+      "sport_id": 5
+    },
+    {
+      "id": 217,
+      "name": "New Jersey Devils",
+      "team_logo": "public/images/hockey/teams/NHL/New-Jersey-Devils.png",
+      "sport_id": 5
+    },
+    {
+      "id": 218,
+      "name": "New York Rangers",
+      "team_logo": "public/images/hockey/teams/NHL/New-York-Rangers.png",
+      "sport_id": 5
+    },
+    {
+      "id": 219,
+      "name": "New York Islanders",
+      "team_logo": "public/images/hockey/teams/NHL/New-York-Islanders.png",
+      "sport_id": 5
+    },
+    {
+      "id": 220,
+      "name": "Boston Bruins",
+      "team_logo": "public/images/hockey/teams/NHL/Boston-Bruins.png",
+      "sport_id": 5
+    },
+    {
+      "id": 221,
+      "name": "Buffalo Sabres",
+      "team_logo": "public/images/hockey/teams/NHL/Buffalo-Sabres.png",
+      "sport_id": 5
+    },
+    {
+      "id": 222,
+      "name": "Pittsburgh Penguins",
+      "team_logo": "public/images/hockey/teams/NHL/Pittsburgh-Penguins.png",
+      "sport_id": 5
+    },
+    {
+      "id": 223,
+      "name": "Philadelphia Flyers",
+      "team_logo": "public/images/hockey/teams/NHL/Philadelphia-Flyers.png",
+      "sport_id": 5
+    },
+    {
+      "id": 224,
+      "name": "Detroit Red Wings",
+      "team_logo": "public/images/hockey/teams/NHL/Detroit-Red-Wings.png",
+      "sport_id": 5
+    },
+    {
+      "id": 225,
+      "name": "Minnesota Wild",
+      "team_logo": "public/images/hockey/teams/NHL/Minnesota-Wild.png",
+      "sport_id": 5
+    },
+    {
+      "id": 226,
+      "name": "Chicago Blackhawks",
+      "team_logo": "public/images/hockey/teams/NHL/Chicago-Blackhawks.png",
+      "sport_id": 5
+    },
+    {
+      "id": 227,
+      "name": "Nashville Predators",
+      "team_logo": "public/images/hockey/teams/NHL/Nashville-Predators.png",
+      "sport_id": 5
+    },
+    {
+      "id": 228,
+      "name": "St. Louis Blues",
+      "team_logo": "public/images/hockey/teams/NHL/Saint-Louis-Blues.png",
+      "sport_id": 5
+    },
+    {
+      "id": 229,
+      "name": "Vegas Golden Knights",
+      "team_logo": "public/images/hockey/teams/NHL/Vegas-Golden-Knights.png",
+      "sport_id": 5
+    },
+    {
+      "id": 230,
+      "name": "Columbus Blue Jackets",
+      "team_logo": "public/images/hockey/teams/NHL/Columbus-Blue-Jackets.png",
+      "sport_id": 5
+    },
+    {
+      "id": 231,
+      "name": "Carolina Hurricanes",
+      "team_logo": "public/images/hockey/teams/NHL/Carolina-Hurricanes.png",
+      "sport_id": 5
+    },
+    {
+      "id": 232,
+      "name": "Atlanta Thrashers",
+      "team_logo": "public/images/hockey/teams/NHL/Atlanta-Thrashers.png",
+      "sport_id": 5
+    },
+    {
+      "id": 233,
+      "name": "Hartford Whalers",
+      "team_logo": "public/images/hockey/teams/NHL/Hartford-Whalers.png",
+      "sport_id": 5
+    },
+    {
+      "id": 234,
+      "name": "Minnesota North Stars",
+      "team_logo": "public/images/hockey/teams/NHL/Minnesota-North-Stars.png",
+      "sport_id": 5
+    },
+    {
+      "id": 235,
+      "name": "Arizona Coyotes",
+      "team_logo": "public/images/hockey/teams/NHL/Arizona-Coyotes.png",
+      "sport_id": 5
+    },
+    {
+      "id": 236,
+      "name": "Quebec Nordiques",
+      "team_logo": "public/images/hockey/teams/NHL/Quebec-Nordiques.png",
+      "sport_id": 5
     }
   ]
 }

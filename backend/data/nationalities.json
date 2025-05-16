@@ -260,7 +260,7 @@
     },
     {
       "id": 44,
-      "name": "Czech Republic",
+      "name": "Czechia",
       "code": "CZE",
       "flag": "public/images/flags/CZE.png"
     },
@@ -387,8 +387,8 @@
     {
       "id": 65,
       "name": "Greece",
-      "code": "GRC",
-      "flag": "public/images/flags/GRC.png"
+      "code": "GRE",
+      "flag": "public/images/flags/GRE.png"
     },
     {
       "id": 66,
@@ -495,8 +495,8 @@
     {
       "id": 83,
       "name": "Japan",
-      "code": "JPN",
-      "flag": "public/images/flags/JPN.png"
+      "code": "JAP",
+      "flag": "public/images/flags/JAP.png"
     },
     {
       "id": 84,
@@ -867,8 +867,8 @@
     {
       "id": 145,
       "name": "Samoa",
-      "code": "WSM",
-      "flag": "public/images/flags/WSM.png"
+      "code": "SAM",
+      "flag": "public/images/flags/SAM.png"
     },
     {
       "id": 146,
@@ -1101,8 +1101,8 @@
     {
       "id": 184,
       "name": "Uruguay",
-      "code": "URY",
-      "flag": "public/images/flags/URY.png"
+      "code": "URU",
+      "flag": "public/images/flags/URU.png"
     },
     {
       "id": 185,

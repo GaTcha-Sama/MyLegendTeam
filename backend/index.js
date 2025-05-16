@@ -6,7 +6,9 @@ const playerController = require("./controllers/playerController");
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000', // URL de votre frontend Next.js
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 }));
 

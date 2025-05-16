@@ -7,8 +7,8 @@ def get_sport_folder(sport_id):
     """Retourne le nom du dossier du sport basé sur son ID"""
     sports_mapping = {
         1: "rugby",
-        2: "football",
-        3: "basketball",
+        3: "football",
+        2: "basketball",
         4: "handball",
         5: "hockey"
     }
@@ -23,13 +23,12 @@ def clean_filename(text):
         text.replace("'", "-")
             .replace("’", "-")
             .replace(" ", "-")
-            .replace("–", "-")  # tiret long éventuel
-            .replace("—", "-")  # tiret cadratin éventuel
+            .replace("–", "-")
+            .replace("—", "-") 
     )
 
 def get_player_photo_path(name, lastname, flag, sport_id, extension):
     sport_folder = get_sport_folder(sport_id)
-    # On concatène d'abord, puis on nettoie le tout pour gérer tous les cas
     filename = f"{lastname}-{name}"
     filename = clean_filename(filename)
     return f"public/images/{sport_folder}/players/{flag}/{filename}.{extension}"
@@ -40,12 +39,11 @@ def import_players():
     json_output_path = root_dir / 'data' / 'players.json'
     
     players_list = []
-    current_id = 1  # Pour gérer automatiquement les IDs
     
     sport_files = {
         1: 'rugby_players.ods',
-        2: 'football_players.ods',
-        3: 'basketball_players.ods',
+        2: 'basketball_players.ods',
+        3: 'football_players.ods',
         4: 'handball_players.ods',
         5: 'hockey_players.ods'
     }
@@ -62,7 +60,7 @@ def import_players():
         for index, row in df.iterrows():
             try:
                 player = {
-                    "id": current_id,
+                    "id": int(row['id']),
                     "name": str(row['name']).strip(), 
                     "lastname": str(row['lastname']).strip(),
                     "nationality_id": int(row['nationality_id']),
@@ -79,7 +77,6 @@ def import_players():
                     )
                 }
                 players_list.append(player)
-                current_id += 1  # Incrémentation de l'ID pour le prochain joueur
             except Exception as e:
                 print(f"Erreur dans {filename} à la ligne {index + 2} :")
                 print(f"Données de la ligne : {row.to_dict()}")
