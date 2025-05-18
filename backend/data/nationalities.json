@@ -183,8 +183,8 @@
     {
       "id": 31,
       "name": "Cameroon",
-      "code": "CMR",
-      "flag": "public/images/flags/CMR.png"
+      "code": "CAM",
+      "flag": "public/images/flags/CAM.png"
     },
     {
       "id": 32,
@@ -579,8 +579,8 @@
     {
       "id": 97,
       "name": "Lithuania",
-      "code": "LTU",
-      "flag": "public/images/flags/LTU.png"
+      "code": "LIT",
+      "flag": "public/images/flags/LIT.png"
     },
     {
       "id": 98,
@@ -1187,6 +1187,12 @@
       "name": "England",
       "code": "ENG",
       "flag": "public/images/flags/ENG.png"
+    },
+    {
+      "id": 199,
+      "name": "DR Congo",
+      "code": "DRC",
+      "flag": "public/images/flags/DRC.png"
     }
   ]
 }

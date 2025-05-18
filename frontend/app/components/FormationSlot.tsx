@@ -2,6 +2,8 @@ import { useDrop, useDrag } from "react-dnd";
 import { Player as PlayerType } from "../data/players";
 import { Theme } from "../types/sports";
 import Image from "next/image";
+import { slotSizes } from "../types/slotSizes";
+import { Sport } from "../types/sports";
 
 const getImagePath = (fullPath: string) => {
   try {
@@ -43,6 +45,7 @@ interface FormationSlotProps {
   isPlayerAlreadyPlaced: boolean;
   theme: Theme;
   positionId: string;
+  sport: Sport;
 }
 
 export const FormationSlot = ({ 
@@ -51,7 +54,8 @@ export const FormationSlot = ({
   onDropPlayer,
   isPlayerAlreadyPlaced,
   theme,
-  positionId
+  positionId,
+  sport
 }: FormationSlotProps) => {
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
@@ -80,8 +84,17 @@ export const FormationSlot = ({
     }
 
     return (
-      <div className="flex flex-col items-center w-full">
-        <div className="relative flex items-center justify-center gap-1 mb-2">
+      <div className="flex flex-col items-center w-full h-full p-2">
+        <div className="relative w-full h-3/4 mb-2">
+          <Image 
+            src={`/${getImagePath(player.photo)}`}
+            alt={player.name}
+            fill
+            className="object-cover rounded-sm"
+            sizes="100%"
+          />
+        </div>
+        <div className="flex items-center justify-center gap-1 mb-1">
           {player.flag && (
             <div className="relative w-6 h-4">
               <Image
@@ -93,17 +106,8 @@ export const FormationSlot = ({
               />
             </div>
           )}
-          <div className="relative w-22 h-22 mt-2">
-            <Image 
-              src={`/${getImagePath(player.photo)}`}
-              alt={player.name}
-              fill
-              className="object-top object-cover"
-              sizes="48px"
-            />
-          </div>
           {player.team_logo && (
-            <div className="relative w-6 h-6 bg-white rounded-sm p-2">
+            <div className="relative w-6 h-6 bg-white rounded-sm p-1">
               <Image
                 src={`/${getTeamLogoPath(player.team_logo)}`}
                 alt={`Logo ${player.team}`}
@@ -117,7 +121,7 @@ export const FormationSlot = ({
         <span className="font-semibold text-gray-800 text-xs text-center">
           {`${player.lastname} ${player.name}`}
         </span>
-        <div className="flex items-center gap-1 mt-2">
+        <div className="flex items-center gap-1">
           <span className="text-xs">{player.nationality}</span>
         </div>
         <button
@@ -137,7 +141,7 @@ export const FormationSlot = ({
       ref={ref}
       data-position={positionId}
       className={`
-        w-26 h-34 
+        ${slotSizes[sport].width} ${slotSizes[sport].height}
         border-2 border-yellow-500 rounded-sm 
         flex items-center justify-center 
         relative group 

@@ -122,11 +122,15 @@ export default function DreamTeamBuilder() {
                 selectedTeam={selectedTeam}
               />
             </div>
-            <div className="flex gap-2 justify-between">
-              <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
-              <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
-              <TeamSelector selectedTeam={selectedTeam} onSelectTeam={setSelectedTeam} players={players} selectedSport={selectedSport} />
-              <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
+            <div className="flex flex-col max-w-full">
+              <div className="flex gap-2">
+                <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
+                <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
+              </div>
+              <div className="flex gap-2">
+                <TeamSelector selectedTeam={selectedTeam} onSelectTeam={setSelectedTeam} players={players} selectedSport={selectedSport} />
+                <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
+              </div>
             </div>
             {/* Grid of players */}
             <div className="flex justify-center mb-2 gap-2">
@@ -218,6 +222,7 @@ export default function DreamTeamBuilder() {
                     onDropPlayer={(_, player) => handleDropPlayer(position.id, player)}
                     isPlayerAlreadyPlaced={isPlayerInTeam(team[position.id]?.id || 0)}
                     theme={currentTheme}
+                    sport={selectedSport}
                   />
                 </div>
               );

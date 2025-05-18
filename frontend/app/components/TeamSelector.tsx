@@ -14,7 +14,7 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
         .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
         .map(player => player.team)
     )
-  );
+  ).sort();
   return (
     <div>
         <select
@@ -25,7 +25,9 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
         >
             <option value="">All teams</option>
             {teams.map((team) => (
-                <option key={team} value={team}>{team}</option>
+                <option key={team} value={team}>
+                  {team}
+                </option>
             ))}
         </select>
     </div>
