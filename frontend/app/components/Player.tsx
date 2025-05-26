@@ -103,7 +103,7 @@ export const Player = ({ player, theme }: PlayerProps) => {
           src={`/${imagePath}`} 
           alt={`${player.lastname} ${player.name}`} 
           fill
-          className="rounded-lg object-top object-cover"
+          className="rounded-lg object-top object-cover bg-gray-400"
           sizes="(max-width: 768px) 100vw, 300px"
           onError={() => {
             setUseDefaultImage(true);
@@ -111,39 +111,34 @@ export const Player = ({ player, theme }: PlayerProps) => {
           unoptimized={useDefaultImage}
           priority
         />
+        {player.flag && (
+          <div className="absolute top-1 left-1 w-8">
+            <Image
+              src={`/${flagPath}`}
+              alt={`Drapeau ${player.nationality}`}
+              className="object-contain"
+              sizes="24px"
+              height={24}
+              width={24}
+              onError={() => {
+                setUseDefaultFlag(true);
+              }}
+            />
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col items-center gap-2 w-full">
         <div className="flex items-center gap-2 justify-center">
-          <span className="text-xs">{player.nationality}</span>
-          {player.flag && (
-            <div className="relative w-10 h-6">
-              <Image
-                src={`/${flagPath}`}
-                alt={`Drapeau ${player.nationality}`}
-                className="object-contain"
-                sizes="24px"
-                height={24}
-                width={24}
-                onError={() => {
-                  setUseDefaultFlag(true);
-                }}
-              />
-            </div>
-          )}
-        </div>
-        
-        <div className="flex items-center gap-2 justify-center">
-          <span className="text-xs">{player.team}</span>
           {player.team_logo && (
-            <div className="relative w-10 h-6">
+            <div className="relative w-16 h-12 bg-gray-400 rounded-sm p-1 flex items-center justify-center">
               <Image
                 src={`/${teamLogoPath}`}
                 alt={`Logo ${player.team}`}
-                className="object-contain"
-                sizes="24px"
-                height={18}
-                width={18}
+                className="object-contain max-w-full max-h-full"
+                sizes="64px"
+                height={48}
+                width={64}
                 onError={() => {
                   console.error(`Erreur de chargement du logo pour ${player.team}`);
                 }}

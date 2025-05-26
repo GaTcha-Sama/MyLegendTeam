@@ -51,10 +51,9 @@ export default function DreamTeamBuilder() {
 
   useEffect(() => {
     setSelectedNationality("");
-  }, [selectedSport]);
-
-  useEffect(() => {
+    setSelectedPosition("");
     setSelectedTeam("");
+    setFilteredPlayers([]);
   }, [selectedSport]);
 
   useEffect(() => {
@@ -83,6 +82,10 @@ export default function DreamTeamBuilder() {
 
   const resetTeam = () => {
     setTeam({});
+    setSelectedNationality("");
+    setSelectedPosition("");
+    setSelectedTeam("");
+    setFilteredPlayers([]);
   };
 
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
@@ -108,28 +111,28 @@ export default function DreamTeamBuilder() {
         {/* Sidebar with the list of players */}
         <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
           <div className="flex flex-col gap-4">
-            <div className="flex justify-between items-center border-b pb-3">
+            <div className="flex justify-center items-center border-b pb-3 border-black">
               <h2 className="text-2xl font-bold text-gray-800">
                 Available Players
               </h2>
-              <FilterPlayers 
-                onFilterChange={setFilteredPlayers}
-                players={players}
-                selectedSport={selectedSport}
-                isPlayerInTeam={isPlayerInTeam}
-                selectedNationality={selectedNationality}
-                selectedPosition={selectedPosition}
-                selectedTeam={selectedTeam}
-              />
             </div>
             <div className="flex flex-col max-w-full">
-              <div className="flex gap-2">
+              <div className="flex gap-3 justify-around">
                 <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
                 <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
-              </div>
-              <div className="flex gap-2">
                 <TeamSelector selectedTeam={selectedTeam} onSelectTeam={setSelectedTeam} players={players} selectedSport={selectedSport} />
+              </div>
+              <div className="flex gap-3 justify-around">
                 <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
+                <FilterPlayers 
+                  onFilterChange={setFilteredPlayers}
+                  players={players}
+                  selectedSport={selectedSport}
+                  isPlayerInTeam={isPlayerInTeam}
+                  selectedNationality={selectedNationality}
+                  selectedPosition={selectedPosition}
+                  selectedTeam={selectedTeam}
+                />
               </div>
             </div>
             {/* Grid of players */}

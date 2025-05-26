@@ -1,6 +1,5 @@
 import type { Sport } from "../types/sports";
 
-// Exemple pour un terrain de 900x1200px (largeur x hauteur)
 export const formationCoords: Record<Sport, Record<string, { top: number; left: number }>> = {
   rugby: {
     fullback:      { top: 0, left: 550 },

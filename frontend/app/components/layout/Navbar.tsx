@@ -7,7 +7,7 @@ export const Navbar = () => {
     <div className="bg-[#191713] py-4">
         <div className="container mx-auto px-4">
             <div className="flex justify-between items-center">
-                <div className="text-gray-600">
+                <div>
                     <Link href="/">
                         <Image src="/favicon.ico" alt="My Legend Team" width={100} height={100} />
                     </Link>

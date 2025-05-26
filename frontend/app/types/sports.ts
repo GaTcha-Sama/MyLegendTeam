@@ -17,15 +17,15 @@ export const sportThemes: Record<Sport, Theme> = {
     sportType: "foot"
   },
   basketball: {
-    primary: "from-orange-200 to-orange-500",
-    hover: "hover:from-orange-500 hover:to-orange-600",
+    primary: "from-orange-400 to-orange-700",
+    hover: "hover:from-orange-700 hover:to-orange-800",
     cross: "bg-red-500",
     crossHover: "hover:bg-red-600",
     sportType: "basket"
   },
   hockey: {
-    primary: "from-sky-100 to-sky-400",
-    hover: "hover:from-sky-200 hover:to-sky-300",
+    primary: "from-sky-400 to-sky-700",
+    hover: "hover:from-sky-700 hover:to-sky-800",
     cross: "bg-red-500",
     crossHover: "hover:bg-red-600",
     sportType: "hockey"
@@ -133,11 +133,11 @@ export const sportPositions: Record<Sport, Position[]> = {
     { id: "flanker2", name: "6 / Flanker" },
     { id: "lock1", name: "5 / Lock" },
     { id: "lock2", name: "4 / Lock" },
-    { id: "prop1", name: "3 / Tighthead Prop" },
+    { id: "prop1", name: "3 / Prop" },
     { id: "hooker", name: "2 / Hooker" },
-    { id: "prop2", name: "1 / Loosehead Prop" },
-    { id: "substitute1", name: "16 / Loosehead Prop" },
-    { id: "substitute2", name: "17 / Tighthead Prop" },
+    { id: "prop2", name: "1 / Prop" },
+    { id: "substitute1", name: "16 / Prop" },
+    { id: "substitute2", name: "17 / Prop" },
     { id: "substitute3", name: "18 / Hooker" },
     { id: "substitute4", name: "19 / Lock" },
     { id: "substitute5", name: "20 / Back Row" },
