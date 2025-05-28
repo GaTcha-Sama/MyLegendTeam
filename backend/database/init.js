@@ -103,7 +103,8 @@ const initDatabase = async () => {
                     'position_id', 
                     'sport_id', 
                     'team_id', 
-                    'photo'
+                    'photo',
+                    'active'
                 ]);
                 console.log('Joueurs insérés');
 

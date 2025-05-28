@@ -9,6 +9,7 @@ interface FilterPlayersProps {
   selectedNationality: string;
   selectedPosition: string;
   selectedTeam: string;
+  selectedActiveRetired: number | null;
 }
 
 export const FilterPlayers = ({ 
@@ -18,7 +19,8 @@ export const FilterPlayers = ({
   isPlayerInTeam,
   selectedNationality,
   selectedPosition,
-  selectedTeam
+  selectedTeam,
+  selectedActiveRetired
 }: FilterPlayersProps) => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -31,7 +33,8 @@ export const FilterPlayers = ({
         !isPlayerInTeam(player.id) &&
         (selectedNationality === "" || player.nationality === selectedNationality) &&
         (selectedPosition === "" || player.position === selectedPosition) &&
-        (selectedTeam === "" || player.team === selectedTeam);
+        (selectedTeam === "" || player.team === selectedTeam) &&
+        (selectedActiveRetired === null || player.active === selectedActiveRetired);
 
       if (searchWords.length === 0) {
         return baseConditions;
@@ -42,11 +45,14 @@ export const FilterPlayers = ({
         player.lastname.toLowerCase().includes(word)
       );
 
+      console.log('Player:', player.name, player.lastname, 'Active:', player.active);
+      console.log('Selected:', selectedActiveRetired);
+
       return baseConditions && matchesSearch;
     });
 
     onFilterChange(filteredPlayers);
-  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, searchTerm, onFilterChange]);
+  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, selectedActiveRetired, searchTerm, onFilterChange]);
 
   const resetSearch = () => {
     setSearchTerm('');
@@ -58,12 +64,17 @@ export const FilterPlayers = ({
       player.sport.toLowerCase() === selectedSport && 
       !isPlayerInTeam(player.id) &&
       (selectedNationality === "" || player.nationality === selectedNationality) &&
-      (selectedPosition === "" || player.position === selectedPosition);
+      (selectedPosition === "" || player.position === selectedPosition) &&
+      (selectedTeam === "" || player.team === selectedTeam) &&
+      (selectedActiveRetired === null || player.active === selectedActiveRetired);
 
     const matchesSearch = searchWords.every(word => 
       player.name.toLowerCase().includes(word) ||
       player.lastname.toLowerCase().includes(word)
     );
+
+    console.log('Player:', player.name, player.lastname, 'Active:', player.active);
+    console.log('Selected:', selectedActiveRetired);
 
     return baseConditions && matchesSearch;
   }).length === 0;

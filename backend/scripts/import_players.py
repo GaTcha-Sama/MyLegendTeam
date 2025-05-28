@@ -68,6 +68,7 @@ def import_players():
                     "sport_id": sport_id,
                     "team_id": int(row['team_id']),
                     "flag": get_flag_path(row['flag']),
+                    "active": int(row['active']) == 1,
                     "photo": get_player_photo_path(
                         row['name'].strip(),
                         row['lastname'].strip(),

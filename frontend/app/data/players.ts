@@ -9,5 +9,6 @@ export interface Player {
   photo: string;
   team: string;
   team_logo: string;
+  active: number;
 }
 

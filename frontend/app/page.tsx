@@ -9,6 +9,7 @@ import { SportSelector } from "./components/SportSelector";
 import { NationalitySelector } from "./components/NationalitySelector";
 import { PositionSelector } from "./components/PositionSelector";
 import { TeamSelector } from "./components/TeamSelector";
+import { ActiveRetiredSelector } from "./components/ActiveRetiredSelector";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { Player as PlayerType } from "./data/players";
 import { fetchPlayers } from "../lib/api";
@@ -21,6 +22,7 @@ export default function DreamTeamBuilder() {
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState<string>("");
   const [selectedTeam, setSelectedTeam] = useState<string>("");
+  const [selectedActiveRetired, setSelectedActiveRetired] = useState<number | null>(null);
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
@@ -53,12 +55,13 @@ export default function DreamTeamBuilder() {
     setSelectedNationality("");
     setSelectedPosition("");
     setSelectedTeam("");
+    setSelectedActiveRetired(null);
     setFilteredPlayers([]);
   }, [selectedSport]);
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedSport, selectedNationality, selectedTeam, selectedPosition]);
+  }, [selectedSport, selectedNationality, selectedTeam, selectedPosition, selectedActiveRetired]);
 
   const handleDropPlayer = (position: string, player: { id: number; name: string } | null) => {
     setTeam((prev) => {
@@ -84,6 +87,7 @@ export default function DreamTeamBuilder() {
     setTeam({});
     setSelectedNationality("");
     setSelectedPosition("");
+    setSelectedActiveRetired(null);
     setSelectedTeam("");
     setFilteredPlayers([]);
   };
@@ -96,7 +100,8 @@ export default function DreamTeamBuilder() {
              !isPlayerInTeam(player.id) &&
              (selectedNationality === "" || player.nationality === selectedNationality) &&
              (selectedPosition === "" || player.position === selectedPosition) &&
-             (selectedTeam === "" || player.team === selectedTeam)
+             (selectedTeam === "" || player.team === selectedTeam) &&
+             (selectedActiveRetired === null || player.active === selectedActiveRetired)
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -124,6 +129,7 @@ export default function DreamTeamBuilder() {
               </div>
               <div className="flex gap-3 justify-around">
                 <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
+                <ActiveRetiredSelector selectedActiveRetired={selectedActiveRetired} onSelectActiveRetired={setSelectedActiveRetired} players={players} selectedSport={selectedSport} />
                 <FilterPlayers 
                   onFilterChange={setFilteredPlayers}
                   players={players}
@@ -132,6 +138,7 @@ export default function DreamTeamBuilder() {
                   selectedNationality={selectedNationality}
                   selectedPosition={selectedPosition}
                   selectedTeam={selectedTeam}
+                  selectedActiveRetired={selectedActiveRetired} 
                 />
               </div>
             </div>
