@@ -7,8 +7,12 @@ export interface Player {
   sport: string;
   position: string;
   photo: string;
-  team: string;
-  team_logo: string;
+  team1: string;
+  team1_logo: string;
+  team2: string;
+  team2_logo: string;
+  team3: string;
+  team3_logo: string;
   active: number;
 }
 

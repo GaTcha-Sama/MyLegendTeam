@@ -7,20 +7,20 @@ export interface SlotSize {
 
 export const slotSizes: Record<Sport, SlotSize> = {
   basketball: {
-    width: "w-36",  // Plus large pour le basket
-    height: "h-46"  // Plus haut pour le basket
+    width: "w-36", 
+    height: "h-46"
   },
   rugby: {
-    width: "w-26",
-    height: "h-34"
+    width: "w-30",
+    height: "h-40"
   },
   football: {
     width: "w-26",
     height: "h-34"
   },
   hockey: {
-    width: "w-26",
-    height: "h-34"
+    width: "w-36",
+    height: "h-46"
   },
   handball: {
     width: "w-26",

@@ -21,7 +21,7 @@ def clean_filename(text):
     """Nettoie le texte pour un nom de fichier valide"""
     return (
         text.replace("'", "-")
-            .replace("’", "-")
+            .replace("'", "-")
             .replace(" ", "-")
             .replace("–", "-")
             .replace("—", "-") 
@@ -59,6 +59,11 @@ def import_players():
         
         for index, row in df.iterrows():
             try:
+                # Gestion des team_id avec vérification des NaN
+                team1_id = int(row['team1_id']) if pd.notna(row['team1_id']) else None
+                team2_id = int(row['team2_id']) if pd.notna(row['team2_id']) else None
+                team3_id = int(row['team3_id']) if pd.notna(row['team3_id']) else None
+
                 player = {
                     "id": int(row['id']),
                     "name": str(row['name']).strip(), 
@@ -66,7 +71,9 @@ def import_players():
                     "nationality_id": int(row['nationality_id']),
                     "position_id": int(row['position_id']),
                     "sport_id": sport_id,
-                    "team_id": int(row['team_id']),
+                    "team1_id": team1_id,
+                    "team2_id": team2_id,
+                    "team3_id": team3_id,
                     "flag": get_flag_path(row['flag']),
                     "active": int(row['active']) == 1,
                     "photo": get_player_photo_path(

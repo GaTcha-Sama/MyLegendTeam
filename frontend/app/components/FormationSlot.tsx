@@ -4,6 +4,7 @@ import { Theme } from "../types/sports";
 import Image from "next/image";
 import { slotSizes } from "../types/slotSizes";
 import { Sport } from "../types/sports";
+import { useState } from "react";
 
 const getImagePath = (fullPath: string) => {
   try {
@@ -57,6 +58,10 @@ export const FormationSlot = ({
   positionId,
   sport
 }: FormationSlotProps) => {
+  const [useDefaultImage, setUseDefaultImage] = useState(false);
+  const [useDefaultFlag, setUseDefaultFlag] = useState(false);
+  const [useDefaultTeamLogo, setUseDefaultTeamLogo] = useState(false);
+
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
     item: player ? player : {},
@@ -84,39 +89,45 @@ export const FormationSlot = ({
     }
 
     return (
-      <div className="flex flex-col items-center w-full h-full p-2">
-        <div className="relative w-full h-3/4 mb-2">
+      <div className="flex flex-col items-center w-full h-full">
+        <div className="relative w-full h-full">
           <Image 
             src={`/${getImagePath(player.photo)}`}
             alt={player.name}
             fill
-            className="object-cover rounded-sm"
+            className="object-cover rounded-sm object-top"
             sizes="100%"
+            onError={() => setUseDefaultImage(true)}
+            unoptimized={useDefaultImage}
           />
-        </div>
-        <div className="flex items-center justify-center gap-1 mb-1">
-          {player.flag && (
-            <div className="relative w-6 h-4">
-              <Image
-                src={`/${getFlagPath(player.flag)}`}
-                alt={`Drapeau ${player.nationality}`}
-                fill
-                className="object-contain"
-                sizes="24px"
-              />
-            </div>
-          )}
-          {player.team_logo && (
-            <div className="relative w-6 h-6 bg-white rounded-sm p-1">
-              <Image
-                src={`/${getTeamLogoPath(player.team_logo)}`}
-                alt={`Logo ${player.team}`}
-                fill  
-                className="object-contain"
-                sizes="24px"
-              />
-            </div>
-          )}
+          <div className="absolute left-1 right-1 flex justify-between">
+            {player.flag && (
+              <div className="relative w-6 h-4">
+                <Image
+                  src={`/${getFlagPath(player.flag)}`}
+                  alt={`Drapeau ${player.nationality}`}
+                  fill
+                  className="object-contain"
+                  sizes="24px"
+                  onError={() => setUseDefaultFlag(true)}
+                  unoptimized={useDefaultFlag}
+                />
+              </div>
+            )}
+            {player.team_logo && (
+              <div className="relative w-6 h-6 rounded-sm p-1">
+                <Image
+                  src={`/${getTeamLogoPath(player.team_logo)}`}
+                  alt={`Logo ${player.team}`}
+                  fill  
+                  className="object-contain"
+                  sizes="24px"
+                  onError={() => setUseDefaultTeamLogo(true)}
+                  unoptimized={useDefaultTeamLogo}
+                />
+              </div>
+            )}
+          </div>
         </div>
         <span className="font-semibold text-gray-800 text-xs text-center">
           {`${player.lastname} ${player.name}`}

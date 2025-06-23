@@ -102,7 +102,9 @@ const initDatabase = async () => {
                     'nationality_id', 
                     'position_id', 
                     'sport_id', 
-                    'team_id', 
+                    'team1_id', 
+                    'team2_id', 
+                    'team3_id', 
                     'photo',
                     'active'
                 ]);

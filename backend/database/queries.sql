@@ -42,11 +42,15 @@ CREATE TABLE players (
     nationality_id INTEGER,
     position_id INTEGER,
     sport_id INTEGER,
-    team_id INTEGER,
+    team1_id INTEGER,
+    team2_id INTEGER,
+    team3_id INTEGER,
     photo TEXT NOT NULL,
     active BOOLEAN NOT NULL,
     FOREIGN KEY (nationality_id) REFERENCES nationalities (id),
     FOREIGN KEY (position_id) REFERENCES positions (id),
     FOREIGN KEY (sport_id) REFERENCES sports (id),
-    FOREIGN KEY (team_id) REFERENCES teams (id)
+    FOREIGN KEY (team1_id) REFERENCES teams (id),
+    FOREIGN KEY (team2_id) REFERENCES teams (id),
+    FOREIGN KEY (team3_id) REFERENCES teams (id)
 );

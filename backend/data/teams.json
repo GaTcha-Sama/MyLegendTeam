@@ -169,6 +169,12 @@
       "sport_id": 1
     },
     {
+      "id": 29,
+      "name": "Soyaux-Angouleme",
+      "team_logo": "public/images/rugby/teams/FRA/Soyaux.png",
+      "sport_id": 1
+    },
+    {
       "id": 30,
       "name": "Crusaders",
       "team_logo": "public/images/rugby/teams/NZL/Canterbury-Crusaders.png",
@@ -237,7 +243,7 @@
     },
     {
       "id": 43,
-      "name": "Force",
+      "name": "Western Force",
       "team_logo": "public/images/rugby/teams/AUS/Western-Force.png",
       "sport_id": 1
     },
@@ -299,6 +305,24 @@
       "id": 63,
       "name": "Ulster",
       "team_logo": "public/images/rugby/teams/IRL/Ulster.png",
+      "sport_id": 1
+    },
+    {
+      "id": 67,
+      "name": "Coventry",
+      "team_logo": "public/images/rugby/teams/ENG/Coventry.png",
+      "sport_id": 1
+    },
+    {
+      "id": 68,
+      "name": "Leeds",
+      "team_logo": "public/images/rugby/teams/ENG/Leeds.png",
+      "sport_id": 1
+    },
+    {
+      "id": 69,
+      "name": "Nottingham",
+      "team_logo": "public/images/rugby/teams/ENG/Nottingham.png",
       "sport_id": 1
     },
     {
@@ -416,6 +440,12 @@
       "sport_id": 1
     },
     {
+      "id": 89,
+      "name": "Pontypridd",
+      "team_logo": "public/images/rugby/teams/WAL/Pontypridd.png",
+      "sport_id": 1
+    },
+    {
       "id": 90,
       "name": "Edinburgh",
       "team_logo": "public/images/rugby/teams/SCO/Edinburgh.png",
@@ -436,7 +466,13 @@
     {
       "id": 93,
       "name": "Caledonia",
-      "team_logo": "public/images/rugby/teams/SCO/Caledonia.png",
+      "team_logo": "public/images/rugby/teams/SCO/Caledonia.jpg",
+      "sport_id": 1
+    },
+    {
+      "id": 94,
+      "name": "L'Aquila",
+      "team_logo": "public/images/rugby/teams/ITA/Aquila.png",
       "sport_id": 1
     },
     {
@@ -455,6 +491,12 @@
       "id": 97,
       "name": "Calvisano",
       "team_logo": "public/images/rugby/teams/ITA/Calvisano.png",
+      "sport_id": 1
+    },
+    {
+      "id": 98,
+      "name": "Petrarca",
+      "team_logo": "public/images/rugby/teams/ITA/Petrarca.png",
       "sport_id": 1
     },
     {
@@ -548,6 +590,24 @@
       "sport_id": 1
     },
     {
+      "id": 114,
+      "name": "Kintetsu",
+      "team_logo": "public/images/rugby/teams/JAP/Kintetsu.png",
+      "sport_id": 1
+    },
+    {
+      "id": 115,
+      "name": "Hino",
+      "team_logo": "public/images/rugby/teams/JAP/Hino.png",
+      "sport_id": 1
+    },
+    {
+      "id": 116,
+      "name": "Sunwolves",
+      "team_logo": "public/images/rugby/teams/JAP/Sunwolves.png",
+      "sport_id": 1
+    },
+    {
       "id": 120,
       "name": "Carolina",
       "team_logo": "public/images/rugby/teams/USA/Carolina.png",
@@ -611,6 +671,12 @@
       "id": 130,
       "name": "Washington",
       "team_logo": "public/images/rugby/teams/USA/Washington.png",
+      "sport_id": 1
+    },
+    {
+      "id": 140,
+      "name": "Black Lion",
+      "team_logo": "public/images/rugby/teams/GEO/BlackLion.png",
       "sport_id": 1
     },
     {
@@ -833,6 +899,12 @@
       "id": 236,
       "name": "Quebec Nordiques",
       "team_logo": "public/images/hockey/teams/NHL/Quebec-Nordiques.png",
+      "sport_id": 5
+    },
+    {
+      "id": 237,
+      "name": "California Golden Seals",
+      "team_logo": "public/images/hockey/teams/NHL/California-Golden-Seals.png",
       "sport_id": 5
     },
     {

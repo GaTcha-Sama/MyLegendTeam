@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
-import { Player } from "./components/Player";
+import { PlayerCard } from "./components/PlayerCard";
 import { FormationSlot } from "./components/FormationSlot";
 import { SportSelector } from "./components/SportSelector";
 import { NationalitySelector } from "./components/NationalitySelector";
@@ -51,12 +51,16 @@ export default function DreamTeamBuilder() {
     loadPlayers();
   }, []);
 
-  useEffect(() => {
+  const resetSelectedFilters = () => {
     setSelectedNationality("");
     setSelectedPosition("");
     setSelectedTeam("");
     setSelectedActiveRetired(null);
     setFilteredPlayers([]);
+  };
+
+  useEffect(() => {
+    resetSelectedFilters();
   }, [selectedSport]);
 
   useEffect(() => {
@@ -74,22 +78,27 @@ export default function DreamTeamBuilder() {
       );
 
       const newTeam = { ...prev };
+      
       if (currentSlot) {
-        newTeam[currentSlot] = null;
+        if (prev[position]) {
+          newTeam[currentSlot] = prev[position];
+          newTeam[position] = player;
+        } else {
+          newTeam[currentSlot] = null;
+          newTeam[position] = player;
+        }
+      } else {
+        newTeam[position] = player;
       }
-
-      newTeam[position] = player;
+      
       return newTeam;
     });
   };
 
+
   const resetTeam = () => {
     setTeam({});
-    setSelectedNationality("");
-    setSelectedPosition("");
-    setSelectedActiveRetired(null);
-    setSelectedTeam("");
-    setFilteredPlayers([]);
+    resetSelectedFilters();
   };
 
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
@@ -100,7 +109,7 @@ export default function DreamTeamBuilder() {
              !isPlayerInTeam(player.id) &&
              (selectedNationality === "" || player.nationality === selectedNationality) &&
              (selectedPosition === "" || player.position === selectedPosition) &&
-             (selectedTeam === "" || player.team === selectedTeam) &&
+             (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam) &&
              (selectedActiveRetired === null || player.active === selectedActiveRetired)
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
@@ -116,10 +125,16 @@ export default function DreamTeamBuilder() {
         {/* Sidebar with the list of players */}
         <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
           <div className="flex flex-col gap-4">
-            <div className="flex justify-center items-center border-b pb-3 border-black">
+            <div className="flex justify-between items-center border-b pb-3 border-black">
               <h2 className="text-2xl font-bold text-gray-800">
                 Available Players
               </h2>
+              <button
+              onClick={resetSelectedFilters}
+              className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
+            >
+              Reset Filters
+            </button>
             </div>
             <div className="flex flex-col max-w-full">
               <div className="flex gap-3 justify-around">
@@ -151,7 +166,23 @@ export default function DreamTeamBuilder() {
               >
                 Previous
               </button>
-              <span className="text-gray-800 mt-1">{currentPage} / {Math.ceil(playersToShow.length / playersPerPage)}</span>
+              <div className="flex items-center gap-2">
+                <select
+                  title="Page"
+                  value={currentPage}
+                  onChange={(e) => setCurrentPage(Number(e.target.value))}
+                  className="px-2 py-1 rounded bg-gray-800 cursor-pointer text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                >
+                  {Array.from({ length: Math.ceil(playersToShow.length / playersPerPage) }, (_, i) => (
+                    <option key={i + 1} value={i + 1}>
+                      {i + 1}
+                    </option>
+                  ))}
+                </select>
+                <span className="text-gray-800">
+                  / {Math.ceil(playersToShow.length / playersPerPage)}
+                </span>
+              </div>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(Math.ceil(playersToShow.length / playersPerPage), p + 1))}
                 disabled={currentPage === Math.ceil(playersToShow.length / playersPerPage)}
@@ -165,7 +196,7 @@ export default function DreamTeamBuilder() {
                 <div className="text-center py-4 col-span-2">Loading players...</div>
               ) : (
                 paginatedPlayers.map((player) => (
-                  <Player 
+                  <PlayerCard 
                     key={player.id} 
                     player={player} 
                     theme={currentTheme} 
@@ -185,7 +216,7 @@ export default function DreamTeamBuilder() {
             </h2>
             <button
               onClick={resetTeam}
-              className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors"
+              className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
             >
               Reset Team
             </button>

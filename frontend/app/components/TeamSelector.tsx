@@ -12,7 +12,7 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
     new Set(
       players
         .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
-        .map(player => player.team)
+        .flatMap(player => [player.team1, player.team2, player.team3].filter(Boolean))
     )
   ).sort();
   return (
