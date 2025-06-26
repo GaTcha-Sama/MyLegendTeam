@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Player } from '../data/players';
+import { Player } from '../types/players';
 
 interface FilterPlayersProps {
   onFilterChange: (filteredPlayers: Player[]) => void;

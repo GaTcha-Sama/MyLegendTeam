@@ -1,5 +1,5 @@
 import { useDrag } from "react-dnd";
-import { Player as PlayerType } from "../data/players";
+import { Player as PlayerType } from "../types/players";
 import { Theme } from "../types/sports";
 import Image from "next/image";
 import { useState } from "react";

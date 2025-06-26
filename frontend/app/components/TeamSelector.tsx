@@ -1,4 +1,4 @@
-import { Player } from "../data/players";
+import { Player } from "../types/players";
 
 interface TeamSelectorProps {
   selectedTeam: string;
