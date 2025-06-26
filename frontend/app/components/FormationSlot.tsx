@@ -114,11 +114,11 @@ export const FormationSlot = ({
                 />
               </div>
             )}
-            {player.team_logo && (
+            {player.team1_logo && (
               <div className="relative w-6 h-6 rounded-sm p-1">
                 <Image
-                  src={`/${getTeamLogoPath(player.team_logo)}`}
-                  alt={`Logo ${player.team}`}
+                  src={`/${getTeamLogoPath(player.team1_logo)}`}
+                  alt={`Logo ${player.team1}`}
                   fill  
                   className="object-contain"
                   sizes="24px"
