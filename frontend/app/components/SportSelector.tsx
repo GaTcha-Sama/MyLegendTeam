@@ -1,5 +1,5 @@
 import { Sport } from "../types/sports";
-import { Player } from "../data/players";
+import { Player } from "../types/players";
 
 interface SportSelectorProps {
   selectedSport: Sport;

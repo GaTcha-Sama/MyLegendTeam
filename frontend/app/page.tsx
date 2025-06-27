@@ -11,7 +11,7 @@ import { PositionSelector } from "./components/PositionSelector";
 import { TeamSelector } from "./components/TeamSelector";
 import { ActiveRetiredSelector } from "./components/ActiveRetiredSelector";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
-import { Player as PlayerType } from "./data/players";
+import { Player as PlayerType } from "./types/players";
 import { fetchPlayers } from "../lib/api";
 import { FilterPlayers } from "./components/FilterPlayers";
 import { formationCoords } from "./styles/formation";
