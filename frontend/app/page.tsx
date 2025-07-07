@@ -18,7 +18,7 @@ import { formationCoords } from "./styles/formation";
 
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
-  const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
+  const [selectedSport, setSelectedSport] = useState<Sport>("football");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState<string>("");
   const [selectedTeam, setSelectedTeam] = useState<string>("");

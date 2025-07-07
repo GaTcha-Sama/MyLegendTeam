@@ -15,8 +15,8 @@ export const slotSizes: Record<Sport, SlotSize> = {
     height: "h-40"
   },
   football: {
-    width: "w-26",
-    height: "h-34"
+    width: "w-32",
+    height: "h-42"
   },
   hockey: {
     width: "w-36",

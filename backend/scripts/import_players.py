@@ -15,7 +15,7 @@ def get_sport_folder(sport_id):
     return sports_mapping.get(sport_id, "unknown")
 
 def get_flag_path(flag):
-    return f"public/images/flags/{flag}.png"
+    return f"images/flags/{flag}.png"
 
 def clean_filename(text):
     """Nettoie le texte pour un nom de fichier valide"""
@@ -29,9 +29,17 @@ def clean_filename(text):
 
 def get_player_photo_path(name, lastname, flag, sport_id, extension):
     sport_folder = get_sport_folder(sport_id)
-    filename = f"{lastname}-{name}"
+    
+    # Gestion des cas où il n'y a qu'un nom (comme Ronaldinho)
+    if pd.isna(lastname) or str(lastname).strip() == "":
+        filename = str(name).strip()
+    elif pd.isna(name) or str(name).strip() == "":
+        filename = str(lastname).strip()
+    else:
+        filename = f"{lastname}-{name}"
+    
     filename = clean_filename(filename)
-    return f"public/images/{sport_folder}/players/{flag}/{filename}.{extension}"
+    return f"images/{sport_folder}/players/{flag}/{filename}.{extension}"
 
 def import_players():
     script_dir = Path(__file__).parent
@@ -64,10 +72,14 @@ def import_players():
                 team2_id = int(row['team2_id']) if pd.notna(row['team2_id']) else None
                 team3_id = int(row['team3_id']) if pd.notna(row['team3_id']) else None
 
+                # Gestion des noms/prénoms avec vérification des NaN
+                name = str(row['name']).strip() if pd.notna(row['name']) else ""
+                lastname = str(row['lastname']).strip() if pd.notna(row['lastname']) else ""
+
                 player = {
                     "id": int(row['id']),
-                    "name": str(row['name']).strip(), 
-                    "lastname": str(row['lastname']).strip(),
+                    "name": name,
+                    "lastname": lastname,
                     "nationality_id": int(row['nationality_id']),
                     "position_id": int(row['position_id']),
                     "sport_id": sport_id,
@@ -77,8 +89,8 @@ def import_players():
                     "flag": get_flag_path(row['flag']),
                     "active": int(row['active']) == 1,
                     "photo": get_player_photo_path(
-                        row['name'].strip(),
-                        row['lastname'].strip(),
+                        name,
+                        lastname,
                         row['flag'],
                         sport_id,
                         row['extension']

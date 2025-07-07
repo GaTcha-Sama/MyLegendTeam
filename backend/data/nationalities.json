@@ -153,8 +153,8 @@
     {
       "id": 26,
       "name": "Bulgaria",
-      "code": "BGR",
-      "flag": "public/images/flags/BGR.png"
+      "code": "BUL",
+      "flag": "public/images/flags/BUL.png"
     },
     {
       "id": 27,
@@ -298,7 +298,7 @@
       "id": 50,
       "name": "Egypt",
       "code": "EGY",
-      "flag": "public/images/flags/EGY.png"
+      "flag": "public/images/flags/EGY.webp"
     },
     {
       "id": 51,
@@ -681,8 +681,8 @@
     {
       "id": 114,
       "name": "Morocco",
-      "code": "MAR",
-      "flag": "public/images/flags/MAR.png"
+      "code": "MOR",
+      "flag": "public/images/flags/MOR.png"
     },
     {
       "id": 115,
@@ -717,8 +717,8 @@
     {
       "id": 120,
       "name": "Netherlands",
-      "code": "NLD",
-      "flag": "public/images/flags/NLD.png"
+      "code": "NED",
+      "flag": "public/images/flags/NED.png"
     },
     {
       "id": 121,
@@ -1193,6 +1193,12 @@
       "name": "DR Congo",
       "code": "DRC",
       "flag": "public/images/flags/DRC.png"
+    },
+    {
+      "id": 200,
+      "name": "Ivory Coast",
+      "code": "CIV",
+      "flag": "public/images/flags/CIV.png"
     }
   ]
 }

@@ -87,6 +87,63 @@ export const FormationSlot = ({
     if (!player) {
       return <span className="text-gray-400 italic">{position}</span>;
     }
+    const renderTeamLogos = () => {
+      const logos = [];
+      
+      if (player.team1_logo) {
+        logos.push(
+          <div key="team1" className="relative w-6 h-6 rounded-sm p-1">
+            <Image
+              src={`/${getTeamLogoPath(player.team1_logo)}`}
+              alt={`Logo ${player.team1}`}
+              fill  
+              className="object-contain"
+              sizes="24px"
+              onError={() => setUseDefaultTeamLogo(true)}
+              unoptimized={useDefaultTeamLogo}
+            />
+          </div>
+        );
+      }
+      
+      if (player.team2_logo) {
+        logos.push(
+          <div key="team2" className="relative w-6 h-6 rounded-sm p-1">
+            <Image
+              src={`/${getTeamLogoPath(player.team2_logo)}`}
+              alt={`Logo ${player.team2}`}
+              fill  
+              className="object-contain"
+              sizes="24px"
+              onError={() => setUseDefaultTeamLogo(true)}
+              unoptimized={useDefaultTeamLogo}
+            />
+          </div>
+        );
+      }
+      
+      if (player.team3_logo) {
+        logos.push(
+          <div key="team3" className="relative w-6 h-6 rounded-sm p-1">
+            <Image
+              src={`/${getTeamLogoPath(player.team3_logo)}`}
+              alt={`Logo ${player.team3}`}
+              fill  
+              className="object-contain"
+              sizes="24px"
+              onError={() => setUseDefaultTeamLogo(true)}
+              unoptimized={useDefaultTeamLogo}
+            />
+          </div>
+        );
+      }
+
+      return logos.length > 0 ? (
+        <div className="flex flex-col gap-1">
+          {logos}
+        </div>
+      ) : null;
+    };
 
     return (
       <div className="flex flex-col items-center w-full h-full">
@@ -114,19 +171,7 @@ export const FormationSlot = ({
                 />
               </div>
             )}
-            {player.team1_logo && (
-              <div className="relative w-6 h-6 rounded-sm p-1">
-                <Image
-                  src={`/${getTeamLogoPath(player.team1_logo)}`}
-                  alt={`Logo ${player.team1}`}
-                  fill  
-                  className="object-contain"
-                  sizes="24px"
-                  onError={() => setUseDefaultTeamLogo(true)}
-                  unoptimized={useDefaultTeamLogo}
-                />
-              </div>
-            )}
+            {renderTeamLogos()}
           </div>
         </div>
         <span className="font-semibold text-gray-800 text-xs text-center">
