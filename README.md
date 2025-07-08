@@ -1,4 +1,5 @@
 1. Installer Docker Desktop
+
 Télécharger Docker Desktop depuis https://www.docker.com/products/docker-desktop/
 Installer et redémarrer l'ordinateur
 S'assurer que Docker Desktop est démarré (icône dans la barre des tâches)
@@ -15,6 +16,7 @@ Sur powershell ou cmd-prompt :
 => cd mylegendteam
 
 3. Lancer l'application
+   
 # Sur Windows (PowerShell ou CMD)
 => docker-compose up --build 
 OU start.bat sinon (pas testé encore)
@@ -31,6 +33,7 @@ Installation des dépendances si problème lors du docker-compose :
 => npm run dev
 
 4. Accéder à l'application
+   
 Ouvrir un navigateur
 Aller sur : http://localhost:3000 pour le frontend
 Aller sur : http://localhost:5000 pour le backend
