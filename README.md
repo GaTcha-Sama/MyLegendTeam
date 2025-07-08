@@ -33,15 +33,13 @@ docker-compose up --build
 start.bat *(script batch, pas encore testé)*
 
 ### Si un problème survient lors de `docker-compose` (installation des dépendances manuelle) :
-cd frontend
-npm install
+cd frontend,
+npm install,
+npm run dev,
+cd ..,
+cd backend,
+npm install,
 npm run dev
-cd ..
-cd backend
-npm install
-npm run dev
-
-text
 
 ---
 
