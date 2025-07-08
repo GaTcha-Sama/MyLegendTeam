@@ -1,69 +1,102 @@
-1. Installer Docker Desktop
+# MyLegendTeam - Guide d'installation et de démarrage
 
-Télécharger Docker Desktop depuis https://www.docker.com/products/docker-desktop/
-Installer et redémarrer l'ordinateur
-S'assurer que Docker Desktop est démarré (icône dans la barre des tâches)
+Bienvenue ! Ce guide vous explique comment installer, configurer et lancer le projet **MyLegendTeam** à l'aide de Docker Desktop.
 
-2. Récupérer le projet
+---
 
-Sur bash :
-=> git clone https://github.com/GaTcha-Sama/MyLegendTeam.git
-=> cd mylegendteam
-=> git checkout docker
-=> git pull origin docker
+## 1. Installer Docker Desktop
 
-Sur powershell ou cmd-prompt :
-=> cd mylegendteam
+- **Téléchargez Docker Desktop** depuis [docker.com](https://www.docker.com/products/docker-desktop/)
+- Installez le logiciel puis **redémarrez votre ordinateur**
+- Vérifiez que Docker Desktop est bien démarré (icône dans la barre des tâches)
 
-3. Lancer l'application
-   
-# Sur Windows (PowerShell ou CMD)
-=> docker-compose up --build 
-OU start.bat sinon (pas testé encore)
-# Ou utiliser le script batch
-=> start.bat
+## 2. Récupérer le projet
 
-Installation des dépendances si problème lors du docker-compose :
-=> cd frontend
-=> npm install
-=> npm run dev
-=> cd ..
-=> cd backend 
-=> npm install
-=> npm run dev
+### Sous bash :
+git clone https://github.com/GaTcha-Sama/MyLegendTeam.git
+cd mylegendteam
+git checkout docker
+git pull origin docker
 
-4. Accéder à l'application
-   
-Ouvrir un navigateur
-Aller sur : http://localhost:3000 pour le frontend
-Aller sur : http://localhost:5000 pour le backend
+### Sous PowerShell ou CMD :
+cd mylegendteam
 
-🔧 En cas de problème
-Docker fonctionne-t-il ?
+## 3. Lancer l'application
+
+### Sur Windows (PowerShell ou CMD) :
+docker-compose up --build
+start.bat *(script batch, pas encore testé)*
+
+### Si un problème survient lors de `docker-compose` (installation des dépendances manuelle) :
+cd frontend
+npm install
+npm run dev
+cd ..
+cd backend
+npm install
+npm run dev
+
+text
+
+---
+
+## 4. Accéder à l'application
+
+- Ouvrez votre navigateur :
+  - Frontend : [http://localhost:3000](http://localhost:3000)
+  - Backend : [http://localhost:5000](http://localhost:5000)
+
+---
+
+## 🔧 En cas de problème
+
+### Vérifications de base
+
+- Docker fonctionne-t-il ?
 docker --version
 docker-compose --version
-vider le cache du navigateur
-Arrêtez tous les conteneurs : docker-compose down
-Nettoyez le cache : docker system prune -a --volumes
-Redémarrez Docker Desktop (si applicable)
-Reconstruisez : docker-compose build --no-cache
-Relancez : docker-compose up
 
-Les ports sont-ils libres ?
-Vérifier qu'aucune autre application n'utilise les ports 3000 et 5000
-Logs d'erreur :
-docker-compose logs
-
-Commandes utiles :
-# Arrêter l'application
+text
+- Vider le cache du navigateur
+- Arrêter tous les conteneurs :
 docker-compose down
 
-# Redémarrer
-docker-compose restart
+text
+- Nettoyer le cache Docker :
+docker system prune -a --volumes
 
-# Voir les logs en temps réel
-docker-compose logs -f
+text
+- Redémarrer Docker Desktop
+- Reconstruire les images :
+docker-compose build --no-cache
 
-# Nettoyer complètement
-docker-compose down -v
-docker system prune -a
+text
+- Relancer :
+docker-compose up
+
+text
+
+### Ports
+
+- Vérifier qu'aucune autre application n'utilise les ports **3000** et **5000**
+
+### Logs d'erreur
+
+docker-compose logs
+
+text
+
+---
+
+## Commandes utiles
+
+| Action                        | Commande                                 |
+|-------------------------------|------------------------------------------|
+| **Arrêter l'application**     | `docker-compose down`                    |
+| **Redémarrer**                | `docker-compose restart`                 |
+| **Voir les logs en temps réel** | `docker-compose logs -f`                |
+| **Nettoyer complètement**     | `docker-compose down -v`<br>`docker system prune -a` |
+
+---
+
+Bon développement ! 🚀
