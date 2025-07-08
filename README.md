@@ -4,11 +4,14 @@ Bienvenue ! Ce guide vous explique comment installer, configurer et lancer le pr
 
 ---
 
-## 1. Installer Docker Desktop
+## 1. Installer ou lancer Docker Desktop
 
+- Lancer Docker Desktop si le logiciel est déjà sur l'ordinateur sinon :
 - **Téléchargez Docker Desktop** depuis [docker.com](https://www.docker.com/products/docker-desktop/)
 - Installez le logiciel puis **redémarrez votre ordinateur**
 - Vérifiez que Docker Desktop est bien démarré (icône dans la barre des tâches)
+
+---
 
 ## 2. Récupérer le projet
 
@@ -20,6 +23,8 @@ git pull origin docker
 
 ### Sous PowerShell ou CMD :
 cd mylegendteam
+
+---
 
 ## 3. Lancer l'application
 
@@ -56,25 +61,20 @@ text
 docker --version
 docker-compose --version
 
-text
 - Vider le cache du navigateur
 - Arrêter tous les conteneurs :
 docker-compose down
 
-text
 - Nettoyer le cache Docker :
 docker system prune -a --volumes
 
-text
 - Redémarrer Docker Desktop
 - Reconstruire les images :
 docker-compose build --no-cache
 
-text
 - Relancer :
 docker-compose up
 
-text
 
 ### Ports
 
@@ -83,8 +83,6 @@ text
 ### Logs d'erreur
 
 docker-compose logs
-
-text
 
 ---
 
