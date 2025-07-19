@@ -15,6 +15,8 @@ import { Player as PlayerType } from "./types/players";
 import { fetchPlayers } from "../lib/api";
 import { FilterPlayers } from "./components/FilterPlayers";
 import { formationCoords } from "./styles/formation";
+import { SavedTeam } from "./types/savedTeam";
+import { SavedTeamsModal } from "./components/SavedTeamsModal";
 
 export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
@@ -28,6 +30,7 @@ export default function DreamTeamBuilder() {
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const playersPerPage = 9;
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const isPlayerInTeam = useCallback(
     (playerId: number) => {
@@ -99,6 +102,53 @@ export default function DreamTeamBuilder() {
   const resetTeam = () => {
     setTeam({});
     resetSelectedFilters();
+  };
+
+  const saveTeam = () => {
+    const teamName = prompt("Nommez votre équipe :");
+    if (!teamName) return;
+
+    const savedTeam: SavedTeam = {
+      id: Date.now().toString(),
+      name: teamName,
+      sport: selectedSport,
+      players: team,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+
+    // Récupérer les équipes existantes
+    const existingTeams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
+    
+    // Ajouter la nouvelle équipe
+    existingTeams.push(savedTeam);
+    
+    // Sauvegarder dans localStorage
+    localStorage.setItem('savedTeams', JSON.stringify(existingTeams));
+    
+    alert(`Team "${teamName}" saved successfully !`);
+  };
+
+  const loadTeam = (teamId: string) => {
+    const savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
+    const teamToLoad = savedTeams.find((t: SavedTeam) => t.id === teamId);
+    
+    if (teamToLoad) {
+      setTeam(teamToLoad.players);
+      setSelectedSport(teamToLoad.sport);
+      alert(`Team "${teamToLoad.name}" loaded !`);
+    }
+  };
+
+  const deleteTeam = (teamId: string) => {
+    const savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
+    const updatedTeams = savedTeams.filter((team: SavedTeam) => team.id !== teamId);
+    localStorage.setItem('savedTeams', JSON.stringify(updatedTeams));
+  };
+
+  const getSavedTeamsCount = () => {
+    const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
+    return teams.length;
   };
 
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
@@ -214,12 +264,31 @@ export default function DreamTeamBuilder() {
             <h2 className="text-2xl font-bold">
               My Legend Team for {selectedSport}
             </h2>
-            <button
-              onClick={resetTeam}
-              className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
-            >
-              Reset Team
-            </button>
+            <div className="flex gap-2">
+              <button
+                onClick={saveTeam}
+                className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors cursor-pointer"
+              >
+                Save Team
+              </button>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer relative"
+              >
+                Load Team
+                {getSavedTeamsCount() > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                    {getSavedTeamsCount()}
+                  </span>
+                )}
+              </button>
+              <button
+                onClick={resetTeam}
+                className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
+              >
+                Reset Team
+              </button>
+            </div>
           </div>
           <div
             className="terrain"
@@ -271,6 +340,15 @@ export default function DreamTeamBuilder() {
           </div>
         </div>
       </div>
+      <SavedTeamsModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onLoadTeam={(teamId) => {
+          loadTeam(teamId);
+          setIsModalOpen(false);
+        }}
+        onDeleteTeam={deleteTeam}
+      />
     </DndProvider>
   );
 }
