@@ -46,7 +46,7 @@ export default function DreamTeamBuilder() {
         setPlayers(data);
         setLoading(false);
       } catch (error) {
-        console.error("Erreur lors du chargement des joueurs:", error);
+        console.error("Error loading players:", error);
         setLoading(false);
       }
     };
@@ -105,7 +105,7 @@ export default function DreamTeamBuilder() {
   };
 
   const saveTeam = () => {
-    const teamName = prompt("Nommez votre équipe :");
+    const teamName = prompt("Name your team :");
     if (!teamName) return;
 
     const savedTeam: SavedTeam = {
