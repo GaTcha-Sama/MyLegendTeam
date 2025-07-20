@@ -112,7 +112,7 @@ export const PlayerCard = ({ player, theme }: PlayerProps) => {
           onError={() => {
             setUseDefaultImage(true);
           }}
-          unoptimized={useDefaultImage}
+          unoptimized={true}
           priority
         />
         {player.flag && (
