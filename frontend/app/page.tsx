@@ -28,7 +28,7 @@ export default function DreamTeamBuilder() {
   const [selectedActiveRetired, setSelectedActiveRetired] = useState<boolean | null>(null);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [playersPerPage] = useState(30);
+  const [playersPerPage] = useState(9);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [team, setTeam] = useState<{ [key: string]: PlayerType | null }>({});
