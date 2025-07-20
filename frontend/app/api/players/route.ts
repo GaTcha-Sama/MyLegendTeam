@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
+import path from 'path';
 
 // Initialiser la base de données
 async function getDb() {
+  const dbPath = path.join(process.cwd(), 'data', 'mylegendteam.db');
   return open({
-    filename: './data/mylegendteam.db',
+    filename: dbPath,
     driver: sqlite3.Database
   });
 }

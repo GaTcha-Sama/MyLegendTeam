@@ -42,3 +42,6 @@ next-env.d.ts
 
 .env
 node_modules
+
+# Base de données (optionnel - vous pouvez la garder dans le repo)
+# data/mylegendteam.db

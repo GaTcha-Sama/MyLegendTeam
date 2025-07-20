@@ -1,10 +1,10 @@
 import axios from "axios";
 import { Player } from "../app/types/players";
 
-// Plus besoin d'URL externe, tout est sur le même domaine
+// API locale - plus besoin d'URL externe
 export const fetchPlayers = async (sport?: string): Promise<Player[]> => {
   try {
-    const url = sport ? `/api/players?sport=${sport}` : '/api/players';
+    const url = sport ? `/api/players?sport=${encodeURIComponent(sport)}` : '/api/players';
     const response = await axios.get(url);
     return response.data;
   } catch (error) {
