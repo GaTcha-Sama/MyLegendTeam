@@ -1,15 +1,14 @@
 import axios from "axios";
 import { Player } from "../app/types/players";
 
-const API_BASE_URL = "http://localhost:5000";
-
-export const fetchPlayers = async (): Promise<Player[]> => {
+// Plus besoin d'URL externe, tout est sur le même domaine
+export const fetchPlayers = async (sport?: string): Promise<Player[]> => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/players`);
-    console.log('Données brutes reçues du backend:', response.data);
+    const url = sport ? `/api/players?sport=${sport}` : '/api/players';
+    const response = await axios.get(url);
     return response.data;
   } catch (error) {
-    console.error('Erreur détaillée lors de la récupération des joueurs:', error);
+    console.error('Erreur lors de la récupération des joueurs:', error);
     throw error;
   }
 };

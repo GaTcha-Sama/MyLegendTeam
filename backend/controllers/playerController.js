@@ -7,19 +7,25 @@ const playerController = {
         if (sport) {
             Player.getBySport(sport, (err, players) => {
                 if (err) {
-                    console.error('Erreur lors de la récupération des joueurs:', err);
-                    return res.status(500).json({ error: 'Erreur lors de la récupération des joueurs' });
+                    console.error('Erreur lors de la récupération des joueurs:', err.message);
+                    return res.status(500).json({ 
+                        error: 'Erreur interne du serveur',
+                        message: process.env.NODE_ENV === 'development' ? err.message : undefined
+                    });
                 }
-                console.log('Joueurs récupérés:', players);
+                console.log(`${players.length} joueurs récupérés pour le sport: ${sport}`);
                 res.json(players);
             });
         } else {
             Player.getAll((err, players) => {
                 if (err) {
-                    console.error('Erreur lors de la récupération des joueurs:', err);
-                    return res.status(500).json({ error: 'Erreur lors de la récupération des joueurs' });
+                    console.error('Erreur lors de la récupération des joueurs:', err.message);
+                    return res.status(500).json({ 
+                        error: 'Erreur interne du serveur',
+                        message: process.env.NODE_ENV === 'development' ? err.message : undefined
+                    });
                 }
-                console.log('Joueurs récupérés:', players);
+                console.log(`${players.length} joueurs récupérés au total`);
                 res.json(players);
             });
         }
