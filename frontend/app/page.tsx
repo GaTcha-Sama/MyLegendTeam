@@ -1,57 +1,58 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { PlayerCard } from "./components/PlayerCard";
 import { FormationSlot } from "./components/FormationSlot";
 import { SportSelector } from "./components/SportSelector";
 import { NationalitySelector } from "./components/NationalitySelector";
-import { PositionSelector } from "./components/PositionSelector";
 import { TeamSelector } from "./components/TeamSelector";
+import { PositionSelector } from "./components/PositionSelector";
 import { ActiveRetiredSelector } from "./components/ActiveRetiredSelector";
-import { Sport, sportThemes, sportPositions } from "./types/sports";
-import { Player as PlayerType } from "./types/players";
-import { fetchPlayers } from "../lib/api";
 import { FilterPlayers } from "./components/FilterPlayers";
-import { formationCoords } from "./styles/formation";
-import { SavedTeam } from "./types/savedTeam";
 import { SavedTeamsModal } from "./components/SavedTeamsModal";
+import { fetchPlayers } from "../lib/api";
+import { Player as PlayerType } from "./types/players";
+import { SavedTeam } from "./types/savedTeam";
+import { Sport, sportThemes, sportPositions } from "./types/sports";
+import { formationCoords } from "./styles/formation";
 
 export default function DreamTeamBuilder() {
-  const [team, setTeam] = useState<Record<string, { id: number; name: string } | null>>({});
-  const [selectedSport, setSelectedSport] = useState<Sport>("football");
-  const [selectedNationality, setSelectedNationality] = useState<string>("");
-  const [selectedPosition, setSelectedPosition] = useState<string>("");
-  const [selectedTeam, setSelectedTeam] = useState<string>("");
-  const [selectedActiveRetired, setSelectedActiveRetired] = useState<number | null>(null);
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedSport, setSelectedSport] = useState<Sport>("football");
+  const [selectedNationality, setSelectedNationality] = useState("");
+  const [selectedPosition, setSelectedPosition] = useState("");
+  const [selectedTeam, setSelectedTeam] = useState("");
+  const [selectedActiveRetired, setSelectedActiveRetired] = useState<boolean | null>(null);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const playersPerPage = 9;
+  const [playersPerPage] = useState(30);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const isPlayerInTeam = useCallback(
-    (playerId: number) => {
-      return Object.values(team).some(player => player?.id === playerId);
-    },
-    [team]
-  );
+  const [team, setTeam] = useState<{ [key: string]: PlayerType | null }>({});
+  const [savedTeams, setSavedTeams] = useState<SavedTeam[]>([]);
+  const [savedTeamsCount, setSavedTeamsCount] = useState(0);
 
   useEffect(() => {
     const loadPlayers = async () => {
       try {
-        const data = await fetchPlayers();
-        setPlayers(data);
-        setLoading(false);
+        const playersData = await fetchPlayers();
+        setPlayers(playersData);
       } catch (error) {
-        console.error("Error loading players:", error);
+        console.error("Erreur lors du chargement des joueurs:", error);
+      } finally {
         setLoading(false);
       }
     };
 
     loadPlayers();
+  }, []);
+
+  useEffect(() => {
+    const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
+    setSavedTeamsCount(teams.length);
   }, []);
 
   const resetSelectedFilters = () => {
@@ -60,55 +61,40 @@ export default function DreamTeamBuilder() {
     setSelectedTeam("");
     setSelectedActiveRetired(null);
     setFilteredPlayers([]);
+    setCurrentPage(1);
   };
 
-  useEffect(() => {
-    resetSelectedFilters();
-  }, [selectedSport]);
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [selectedSport, selectedNationality, selectedTeam, selectedPosition, selectedActiveRetired]);
+  const isPlayerInTeam = (playerId: number) => {
+    return Object.values(team).some(player => player?.id === playerId);
+  };
 
   const handleDropPlayer = (position: string, player: { id: number; name: string } | null) => {
-    setTeam((prev) => {
-      if (!player) {
-        return { ...prev, [position]: null };
-      }
+    if (!player) return;
 
-      const currentSlot = Object.keys(prev).find(
-        (pos) => prev[pos]?.id === player.id
-      );
+    const playerData = players.find(p => p.id === player.id);
+    if (!playerData) return;
 
-      const newTeam = { ...prev };
-      
-      if (currentSlot) {
-        if (prev[position]) {
-          newTeam[currentSlot] = prev[position];
-          newTeam[position] = player;
-        } else {
-          newTeam[currentSlot] = null;
-          newTeam[position] = player;
-        }
-      } else {
-        newTeam[position] = player;
-      }
-      
-      return newTeam;
-    });
+    setTeam(prev => ({
+      ...prev,
+      [position]: playerData
+    }));
   };
-
 
   const resetTeam = () => {
     setTeam({});
-    resetSelectedFilters();
   };
 
   const saveTeam = () => {
-    const teamName = prompt("Name your team :");
+    const teamPlayers = Object.values(team).filter(Boolean);
+    if (teamPlayers.length === 0) {
+      alert("Votre équipe est vide !");
+      return;
+    }
+
+    const teamName = prompt("Nommez votre équipe :");
     if (!teamName) return;
 
-    const savedTeam: SavedTeam = {
+    const newTeam: SavedTeam = {
       id: Date.now().toString(),
       name: teamName,
       sport: selectedSport,
@@ -117,38 +103,24 @@ export default function DreamTeamBuilder() {
       updatedAt: new Date().toISOString()
     };
 
-    // Récupérer les équipes existantes
-    const existingTeams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
-    
-    // Ajouter la nouvelle équipe
-    existingTeams.push(savedTeam);
-    
-    // Sauvegarder dans localStorage
-    localStorage.setItem('savedTeams', JSON.stringify(existingTeams));
-    
-    alert(`Team "${teamName}" saved successfully !`);
+    const updatedTeams = [...savedTeams, newTeam];
+    setSavedTeams(updatedTeams);
+    localStorage.setItem('savedTeams', JSON.stringify(updatedTeams));
+    alert("Équipe sauvegardée !");
   };
 
   const loadTeam = (teamId: string) => {
-    const savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
-    const teamToLoad = savedTeams.find((t: SavedTeam) => t.id === teamId);
-    
+    const teamToLoad = savedTeams.find(t => t.id === teamId);
     if (teamToLoad) {
-      setTeam(teamToLoad.players);
-      setSelectedSport(teamToLoad.sport);
-      alert(`Team "${teamToLoad.name}" loaded !`);
+      setTeam(teamToLoad.players as { [key: string]: PlayerType | null });
+      setSelectedSport(teamToLoad.sport as Sport);
+      setIsModalOpen(false);
     }
   };
 
   const deleteTeam = (teamId: string) => {
-    const savedTeams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
     const updatedTeams = savedTeams.filter((team: SavedTeam) => team.id !== teamId);
     localStorage.setItem('savedTeams', JSON.stringify(updatedTeams));
-  };
-
-  const getSavedTeamsCount = () => {
-    const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
-    return teams.length;
   };
 
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
@@ -160,7 +132,7 @@ export default function DreamTeamBuilder() {
              (selectedNationality === "" || player.nationality === selectedNationality) &&
              (selectedPosition === "" || player.position === selectedPosition) &&
              (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam) &&
-             (selectedActiveRetired === null || player.active === selectedActiveRetired)
+             (selectedActiveRetired === null || player.active === (selectedActiveRetired ? 1 : 0))
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -194,7 +166,7 @@ export default function DreamTeamBuilder() {
               </div>
               <div className="flex gap-3 justify-around">
                 <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
-                <ActiveRetiredSelector selectedActiveRetired={selectedActiveRetired} onSelectActiveRetired={setSelectedActiveRetired} players={players} selectedSport={selectedSport} />
+                <ActiveRetiredSelector selectedActiveRetired={selectedActiveRetired as number | null} onSelectActiveRetired={setSelectedActiveRetired as (activeRetired: number | null) => void} players={players} selectedSport={selectedSport} />
                 <FilterPlayers 
                   onFilterChange={setFilteredPlayers}
                   players={players}
@@ -203,7 +175,7 @@ export default function DreamTeamBuilder() {
                   selectedNationality={selectedNationality}
                   selectedPosition={selectedPosition}
                   selectedTeam={selectedTeam}
-                  selectedActiveRetired={selectedActiveRetired} 
+                  selectedActiveRetired={selectedActiveRetired as number | null} 
                 />
               </div>
             </div>
@@ -276,9 +248,9 @@ export default function DreamTeamBuilder() {
                 className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer relative"
               >
                 Load Team
-                {getSavedTeamsCount() > 0 && (
+                {savedTeamsCount > 0 && (
                   <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                    {getSavedTeamsCount()}
+                    {savedTeamsCount}
                   </span>
                 )}
               </button>
