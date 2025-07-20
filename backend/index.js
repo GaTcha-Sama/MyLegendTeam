@@ -22,15 +22,18 @@ app.use(limiter);
 
 app.use(express.json());
 
-// Configuration CORS sécurisée
+// Configuration CORS pour Render
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://mylegendteam.vercel.app', // Remplacez par votre domaine Vercel
+  'http://localhost:3001',
+  'https://mylegendteam.vercel.app',
+  'https://mylegendteam-frontend.vercel.app',
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
 app.use(cors({
     origin: function (origin, callback) {
+        // Permettre les requêtes sans origin (applications mobiles, Postman, etc.)
         if (!origin) return callback(null, true);
         
         if (allowedOrigins.indexOf(origin) !== -1) {
