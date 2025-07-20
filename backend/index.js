@@ -22,24 +22,27 @@ app.use(limiter);
 
 app.use(express.json());
 
-// Configuration CORS pour Render
+// Configuration CORS pour accepter toutes les URLs Vercel
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
   'https://mylegendteam.vercel.app',
-  'https://mylegendteam-frontend.vercel.app',
+  'https://my-legend-team.vercel.app',
+  'https://my-legend-team-mukxydg0p-gatchas-projects.vercel.app',
+  'https://*.vercel.app', // Accepte tous les sous-domaines Vercel
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
 app.use(cors({
     origin: function (origin, callback) {
-        // Permettre les requêtes sans origin (applications mobiles, Postman, etc.)
         if (!origin) return callback(null, true);
         
-        if (allowedOrigins.indexOf(origin) !== -1) {
+        // Accepter tous les domaines Vercel
+        if (origin.includes('vercel.app') || allowedOrigins.includes(origin)) {
+            console.log('Origin autorisé:', origin);
             callback(null, true);
         } else {
-            console.log('CORS bloqué pour:', origin);
+            console.log('Origin bloqué:', origin);
             callback(new Error('Not allowed by CORS'));
         }
     },
