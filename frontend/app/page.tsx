@@ -21,7 +21,7 @@ import { formationCoords } from "./styles/formation";
 export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedSport, setSelectedSport] = useState<Sport>("football");
+  const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
   const [selectedNationality, setSelectedNationality] = useState("");
   const [selectedPosition, setSelectedPosition] = useState("");
   const [selectedTeam, setSelectedTeam] = useState("");
