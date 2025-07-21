@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "fs": "^0.0.1-security",
     "html2canvas": "^1.4.1",
     "jspdf": "^3.0.1",
-    "react-select": "^5.10.1"
+    "react-select": "^5.10.1",
+    "sharp": "^0.34.3"
   }
 }

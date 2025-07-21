@@ -3,15 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'standalone',
   images: {
-    unoptimized: true, // Désactive l'optimisation automatique
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'my-legend-team.vercel.app',
-        port: '',
-        pathname: '/images/**',
-      },
-    ],
+    unoptimized: true,
+    formats: ['image/webp'],
   },
   experimental: {
     turbo: {

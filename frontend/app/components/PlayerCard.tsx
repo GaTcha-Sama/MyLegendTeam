@@ -30,16 +30,18 @@ export const PlayerCard = ({ player, theme }: PlayerProps) => {
 
   const getImagePath = (fullPath: string) => {
     if (useDefaultImage) {
-      return 'images/portrait-default.png';
+      return 'images/portrait-default.webp';
     }
-  
+
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');      
       const cleanPath = normalizedPath.replace(/^public\//, '');      
-      return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+      // Convertir en WebP
+      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+      return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
-      console.error("Erreur lors du traitement du chemin de portrait:", error);
-      return 'images/portrait-default.png';
+      console.error("Erreur lors du traitement du chemin:", error);
+      return 'images/portrait-default.webp';
     }
   };
   
