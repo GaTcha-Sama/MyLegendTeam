@@ -69,7 +69,14 @@ export default function DreamTeamBuilder() {
   };
 
   const handleDropPlayer = (position: string, player: { id: number; name: string } | null) => {
-    if (!player) return;
+    if (player === null) {
+      setTeam(prev => {
+        const newTeam = { ...prev };
+        delete newTeam[position];
+        return newTeam;
+      });
+      return;
+    }
 
     const playerData = players.find(p => p.id === player.id);
     if (!playerData) return;
@@ -269,15 +276,15 @@ export default function DreamTeamBuilder() {
               width: 1200,
               height: 900,
               background: selectedSport === "rugby"
-                ? 'url("/images/rugby-field.jpg") no-repeat center/cover'
+                ? 'url("/images/rugby-field.webp") no-repeat center/cover'
                 : selectedSport === "football"
-                ? 'url("/images/foot-field.jpg") no-repeat center/cover'
+                ? 'url("/images/foot-field.webp") no-repeat center/cover'
                 : selectedSport === "basketball"
-                ? 'url("/images/basket-field.jpg") no-repeat center/cover'
+                ? 'url("/images/basket-field.webp") no-repeat center/cover'
                 : selectedSport === "hockey"
-                ? 'url("/images/hockey-field.png") no-repeat center/cover'
+                ? 'url("/images/hockey-field.webp") no-repeat center/cover'
                 : selectedSport === "handball"
-                ? 'url("/images/handball-field.jpg") no-repeat center/cover'
+                ? 'url("/images/handball-field.webp") no-repeat center/cover'
                 : ""
             }}
           >
