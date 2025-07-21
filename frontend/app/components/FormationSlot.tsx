@@ -10,10 +10,12 @@ const getImagePath = (fullPath: string) => {
   try {
     const normalizedPath = fullPath.replace(/\\/g, '/');
     const cleanPath = normalizedPath.replace(/^public\//, '');
-    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+    // Convertir en WebP
+    const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
   } catch (error) {
     console.error("Erreur lors du traitement du chemin d'image:", error);
-    return 'images/portrait-default.png';
+    return 'images/portrait-default.webp';
   }
 };
 
@@ -21,10 +23,12 @@ const getFlagPath = (fullPath: string) => {
   try {
     const normalizedPath = fullPath.replace(/\\/g, '/');
     const cleanPath = normalizedPath.replace(/^public\//, '');
-    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+    // Convertir en WebP
+    const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
   } catch (error) {
     console.error("Erreur lors du traitement du chemin du drapeau:", error);
-    return 'images/default-flag.png';
+    return 'images/default-flag.webp';
   }
 };
 
@@ -32,10 +36,12 @@ const getTeamLogoPath = (fullPath: string) => {
   try {
     const normalizedPath = fullPath.replace(/\\/g, '/');
     const cleanPath = normalizedPath.replace(/^public\//, '');
-    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+    // Convertir en WebP
+    const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
   } catch (error) {
     console.error("Erreur lors du traitement du chemin du logo:", error);
-    return 'images/team-default.png';
+    return 'images/team-default.webp';
   }
 };
 

@@ -47,29 +47,33 @@ export const PlayerCard = ({ player, theme }: PlayerProps) => {
   
   const getFlagPath = (fullPath: string) => {
     if (useDefaultFlag) {
-      return 'images/default-flag.jpg';
+      return 'images/default-flag.webp';
     }
   
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');
       const cleanPath = normalizedPath.replace(/^public\//, '');
-      return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+      // Convertir en WebP
+      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+      return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
       console.error("Erreur lors du traitement du chemin du drapeau:", error);
-      return 'images/default-flag.jpg';
+      return 'images/default-flag.webp';
     }
   };
 
   const getTeamLogoPath = (fullPath: string) => {
-    if (!fullPath) return 'images/team-default.png';
+    if (!fullPath) return 'images/team-default.webp';
     
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');
       const cleanPath = normalizedPath.replace(/^public\//, '');
-      return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
+      // Convertir en WebP
+      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+      return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
       console.error("Erreur lors du traitement du chemin du logo:", error);
-      return 'images/team-default.png';
+      return 'images/team-default.webp';
     }
   };
 
