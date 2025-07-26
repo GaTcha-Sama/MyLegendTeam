@@ -15,16 +15,7 @@ export const PlayerCard = ({ player, theme }: PlayerProps) => {
 
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "PLAYER",
-    item: { 
-      id: player.id,
-      name: player.name,
-      lastname: player.lastname,
-      photo: player.photo,
-      flag: player.flag,
-      team1_logo: player.team1_logo,
-      team2_logo: player.team2_logo,
-      team3_logo: player.team3_logo,
-    },
+    item: player, // Passer l'objet player complet au lieu d'un objet partiel
     collect: (monitor) => ({ isDragging: monitor.isDragging() })
   }));
 

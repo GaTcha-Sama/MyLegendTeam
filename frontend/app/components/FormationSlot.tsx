@@ -183,9 +183,6 @@ export const FormationSlot = ({
         <span className="font-semibold text-gray-800 text-xs text-center">
           {`${player.lastname} ${player.name}`}
         </span>
-        <div className="flex items-center gap-1">
-          <span className="text-xs">{player.nationality}</span>
-        </div>
         <button
           onClick={() => onDropPlayer(position, null)}
           className={`absolute -top-2 -right-2 ${theme.cross} ${theme.crossHover} text-white rounded-full w-6 h-6 

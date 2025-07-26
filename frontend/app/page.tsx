@@ -41,7 +41,7 @@ export default function DreamTeamBuilder() {
         const playersData = await fetchPlayers();
         setPlayers(playersData);
       } catch (error) {
-        console.error("Erreur lors du chargement des joueurs:", error);
+        console.error("Error loading players:", error);
       } finally {
         setLoading(false);
       }
@@ -68,7 +68,7 @@ export default function DreamTeamBuilder() {
     return Object.values(team).some(player => player?.id === playerId);
   };
 
-  const handleDropPlayer = (position: string, player: { id: number; name: string } | null) => {
+  const handleDropPlayer = (position: string, player: PlayerType | null) => {
     if (player === null) {
       setTeam(prev => {
         const newTeam = { ...prev };
@@ -78,13 +78,36 @@ export default function DreamTeamBuilder() {
       return;
     }
 
-    const playerData = players.find(p => p.id === player.id);
-    if (!playerData) return;
-
-    setTeam(prev => ({
-      ...prev,
-      [position]: playerData
-    }));
+    setTeam(prev => {
+      const newTeam = { ...prev };
+      
+      // Trouver la position actuelle du joueur qu'on déplace
+      let playerCurrentPosition: string | null = null;
+      Object.keys(newTeam).forEach(pos => {
+        if (newTeam[pos]?.id === player.id) {
+          playerCurrentPosition = pos;
+        }
+      });
+      
+      // Récupérer le joueur qui est actuellement à la position de destination
+      const playerAtDestination = newTeam[position];
+      
+      // Effectuer l'échange
+      if (playerCurrentPosition && playerAtDestination) {
+        // Échange : le joueur déposé va à la nouvelle position, l'ancien joueur va à l'ancienne position
+        newTeam[position] = player;
+        newTeam[playerCurrentPosition] = playerAtDestination;
+      } else if (playerCurrentPosition) {
+        // Le joueur était déjà dans l'équipe mais la position de destination était vide
+        delete newTeam[playerCurrentPosition];
+        newTeam[position] = player;
+      } else {
+        // Nouveau joueur sur une position (vide ou occupée)
+        newTeam[position] = player;
+      }
+      
+      return newTeam;
+    });
   };
 
   const resetTeam = () => {
@@ -94,11 +117,11 @@ export default function DreamTeamBuilder() {
   const saveTeam = () => {
     const teamPlayers = Object.values(team).filter(Boolean);
     if (teamPlayers.length === 0) {
-      alert("Votre équipe est vide !");
+      alert("Your team is empty !");
       return;
     }
 
-    const teamName = prompt("Nommez votre équipe :");
+    const teamName = prompt("Name your team :");
     if (!teamName) return;
 
     const newTeam: SavedTeam = {
@@ -113,7 +136,7 @@ export default function DreamTeamBuilder() {
     const updatedTeams = [...savedTeams, newTeam];
     setSavedTeams(updatedTeams);
     localStorage.setItem('savedTeams', JSON.stringify(updatedTeams));
-    alert("Équipe sauvegardée !");
+    alert("Team saved !");
   };
 
   const loadTeam = (teamId: string) => {
@@ -275,17 +298,18 @@ export default function DreamTeamBuilder() {
               position: "relative",
               width: 1200,
               height: 900,
-              background: selectedSport === "rugby"
-                ? 'url("/images/rugby-field.webp") no-repeat center/cover'
-                : selectedSport === "football"
-                ? 'url("/images/foot-field.webp") no-repeat center/cover'
-                : selectedSport === "basketball"
-                ? 'url("/images/basket-field.webp") no-repeat center/cover'
-                : selectedSport === "hockey"
-                ? 'url("/images/hockey-field.webp") no-repeat center/cover'
-                : selectedSport === "handball"
-                ? 'url("/images/handball-field.webp") no-repeat center/cover'
-                : ""
+              background: "url('/images/rugby-field.webp') no-repeat center/cover",
+              // background: selectedSport === "rugby"
+              //   ? 'url("/images/rugby-field.webp") no-repeat center/cover'
+              //   : selectedSport === "football"
+              //   ? 'url("/images/foot-field.webp") no-repeat center/cover'
+              //   : selectedSport === "basketball"
+              //   ? 'url("/images/basket-field.webp") no-repeat center/cover'
+              //   : selectedSport === "hockey"
+              //   ? 'url("/images/hockey-field.webp") no-repeat center/cover'
+              //   : selectedSport === "handball"
+              //   ? 'url("/images/handball-field.webp") no-repeat center/cover'
+              //   : ""
             }}
           >
             {sportPositions[selectedSport].map((position) => {
