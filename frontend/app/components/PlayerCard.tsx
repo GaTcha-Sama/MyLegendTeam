@@ -163,7 +163,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 height={48}
                 width={64}
                 onError={() => {
-                  console.error(`Erreur de chargement du logo pour ${player.team1}`);
+                  console.error(`Erreur de chargement du logo pour ${player.team1}: ${teamLogoPath1}`);
                   setUseDefaultTeamLogo1(true);
                 }}
                 unoptimized={useDefaultTeamLogo1}
@@ -183,7 +183,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 height={48}
                 width={64}
                 onError={() => {
-                  console.error(`Erreur de chargement du logo pour ${player.team2}`);
+                  console.error(`Erreur de chargement du logo pour ${player.team2}: ${teamLogoPath2}`);
                   setUseDefaultTeamLogo2(true);
                 }}
                 unoptimized={useDefaultTeamLogo2}
@@ -203,7 +203,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 height={48}
                 width={64}
                 onError={() => {
-                  console.error(`Erreur de chargement du logo pour ${player.team3}`);
+                  console.error(`Erreur de chargement du logo pour ${player.team3}: ${teamLogoPath3}`);
                   setUseDefaultTeamLogo3(true);
                 }}
                 unoptimized={useDefaultTeamLogo3}
