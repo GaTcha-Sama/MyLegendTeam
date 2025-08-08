@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { PlayerCard } from "./components/PlayerCard";
@@ -18,6 +18,37 @@ import { SavedTeam } from "./types/savedTeam";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { formationCoords } from "./styles/formation";
 
+// Mapping des positions de joueurs vers les slots autorisés pour le rugby
+export const rugbyPositionSlotMapping: Record<string, string[]> = {
+  "Prop": ["prop1", "prop2", "rugby_substitute1", "rugby_substitute2"],
+  "Hooker": ["hooker", "rugby_substitute3"],
+  "Lock": ["lock1", "lock2", "rugby_substitute4"],
+  "Flanker": ["flanker1", "flanker2", "rugby_substitute5"],
+  "Number 8": ["number8", "rugby_substitute5"],
+  "Scrum half": ["scrumhalf", "rugby_substitute6"],
+  "Fly half": ["flyhalf", "rugby_substitute7"],
+  "Wing": ["wing1", "wing2", "rugby_substitute8"],
+  "Center": ["center1", "center2", "rugby_substitute8"],
+  "Full back": ["fullback", "rugby_substitute8"]
+};
+
+// Fonction pour vérifier si un joueur peut être placé sur un slot
+export const canPlayerBePlacedOnSlot = (playerPosition: string, slotId: string, sport: Sport): boolean => {
+  if (sport === "rugby") {
+    // Les slots de substitution sont toujours disponibles pour toutes les positions
+    if (slotId.startsWith("rugby_substitute")) {
+      return true;
+    }
+    
+    // Vérifier si la position du joueur correspond aux slots autorisés
+    const allowedSlots = rugbyPositionSlotMapping[playerPosition];
+    return allowedSlots ? allowedSlots.includes(slotId) : false;
+  }
+  
+  // Pour les autres sports, retourner true par défaut (pas de restriction implémentée)
+  return true;
+};
+
 export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
@@ -34,6 +65,7 @@ export default function DreamTeamBuilder() {
   const [team, setTeam] = useState<{ [key: string]: PlayerType | null }>({});
   const [savedTeams, setSavedTeams] = useState<SavedTeam[]>([]);
   const [savedTeamsCount, setSavedTeamsCount] = useState(0);
+  const [draggedPlayer, setDraggedPlayer] = useState<PlayerType | null>(null);
 
   useEffect(() => {
     const loadPlayers = async () => {
@@ -64,9 +96,9 @@ export default function DreamTeamBuilder() {
     setCurrentPage(1);
   };
 
-  const isPlayerInTeam = (playerId: number) => {
+  const isPlayerInTeam = useCallback((playerId: number) => {
     return Object.values(team).some(player => player?.id === playerId);
-  };
+  }, [team]);
 
   const handleDropPlayer = (position: string, player: PlayerType | null) => {
     if (player === null) {
@@ -171,6 +203,16 @@ export default function DreamTeamBuilder() {
     currentPage * playersPerPage
   );
 
+  // Fonction pour gérer le début du drag
+  const handleDragStart = (player: PlayerType) => {
+    setDraggedPlayer(player);
+  };
+
+  // Fonction pour gérer la fin du drag
+  const handleDragEnd = () => {
+    setDraggedPlayer(null);
+  };
+
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-600 to-gray-300">
@@ -252,6 +294,8 @@ export default function DreamTeamBuilder() {
                     key={player.id} 
                     player={player} 
                     theme={currentTheme} 
+                    onDragStart={() => handleDragStart(player)}
+                    onDragEnd={handleDragEnd}
                   />
                 ))
               )}
@@ -336,6 +380,7 @@ export default function DreamTeamBuilder() {
                     isPlayerAlreadyPlaced={isPlayerInTeam(team[position.id]?.id || 0)}
                     theme={currentTheme}
                     sport={selectedSport}
+                    draggedPlayer={draggedPlayer}
                   />
                 </div>
               );

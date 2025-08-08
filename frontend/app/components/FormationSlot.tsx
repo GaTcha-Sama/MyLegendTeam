@@ -3,7 +3,7 @@ import { Player as PlayerType } from "../types/players";
 import { Theme } from "../types/sports";
 import Image from "next/image";
 import { slotSizes } from "../types/slotSizes";
-import { Sport } from "../types/sports";
+import { Sport, canPlayerBePlacedOnSlot } from "../types/sports";
 import { useState } from "react";
 
 const getImagePath = (fullPath: string) => {
@@ -45,6 +45,20 @@ const getTeamLogoPath = (fullPath: string) => {
   }
 };
 
+// Mapping des positions de joueurs vers les slots autorisés pour le rugby
+export const rugbyPositionSlotMapping: Record<string, string[]> = {
+  "Prop": ["prop1", "prop2", "rugby_substitute1", "rugby_substitute2"],
+  "Hooker": ["hooker", "rugby_substitute3"],
+  "Lock": ["lock1", "lock2", "rugby_substitute4"],
+  "Flanker": ["flanker1", "flanker2", "rugby_substitute5"],
+  "Number 8": ["number8", "rugby_substitute5"],
+  "Scrum half": ["scrumhalf", "rugby_substitute6"],
+  "Fly half": ["flyhalf", "rugby_substitute7"],
+  "Wing": ["wing1", "wing2", "rugby_substitute8"],
+  "Center": ["center1", "center2", "rugby_substitute8"],
+  "Full back": ["fullback", "rugby_substitute8"]
+};
+
 interface FormationSlotProps {
   position: string;
   player: PlayerType | null;
@@ -53,6 +67,7 @@ interface FormationSlotProps {
   theme: Theme;
   positionId: string;
   sport: Sport;
+  draggedPlayer?: PlayerType | null; // Nouveau prop pour le joueur en cours de drag
 }
 
 export const FormationSlot = ({ 
@@ -62,7 +77,8 @@ export const FormationSlot = ({
   isPlayerAlreadyPlaced,
   theme,
   positionId,
-  sport
+  sport,
+  draggedPlayer
 }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
@@ -82,12 +98,23 @@ export const FormationSlot = ({
     drop: (item: PlayerType) => {
       onDropPlayer(position, item);
     },
-    collect: (monitor) => ({ isOver: monitor.isOver() })
+    canDrop: (item: PlayerType) => {
+      return canPlayerBePlacedOnSlot(item.position, positionId, sport);
+    },
+    collect: (monitor) => ({ 
+      isOver: monitor.isOver(),
+      canDrop: monitor.canDrop()
+    })
   }));
 
   const ref = (node: HTMLDivElement | null) => {
     drag(drop(node));
   };
+
+  // Déterminer si le slot est valide pour le joueur en cours de drag
+  const isSlotValidForDraggedPlayer = draggedPlayer ? 
+    canPlayerBePlacedOnSlot(draggedPlayer.position, positionId, sport) : 
+    true;
 
   const renderPlayerContent = () => {
     if (!player) {
@@ -201,7 +228,7 @@ export const FormationSlot = ({
       data-position={positionId}
       className={`
         ${slotSizes[sport].width} ${slotSizes[sport].height}
-        border-2 border-yellow-500 rounded-sm 
+        border-2 rounded-sm 
         flex items-center justify-center 
         relative group 
         transition-all duration-200 
@@ -209,16 +236,28 @@ export const FormationSlot = ({
         ${isOver 
           ? isPlayerAlreadyPlaced 
             ? "bg-red-100 border-red-500" 
-            : "bg-green-100 border-green-500" 
-          : "bg-gray-50 border-gray-300"
+            : isSlotValidForDraggedPlayer
+              ? "bg-green-100 border-green-500"
+              : "bg-gray-500 border-gray-600"
+          : draggedPlayer && !isSlotValidForDraggedPlayer
+            ? "bg-gray-500 border-gray-600 opacity-80"
+            : isSlotValidForDraggedPlayer
+              ? "bg-gray-50 border-gray-300"
+              : "bg-gray-100 border-gray-400 opacity-60"
         }
         ${isDragging ? "opacity-50" : "opacity-100"}
+        ${!isSlotValidForDraggedPlayer && draggedPlayer ? "cursor-not-allowed" : "cursor-pointer"}
       `}
     >
       {renderPlayerContent()}
       {isOver && isPlayerAlreadyPlaced && (
         <div className="absolute bottom-0 left-0 right-0 bg-red-100 text-red-600 text-xs p-1 text-center">
           Already occupied
+        </div>
+      )}
+      {(isOver || (draggedPlayer && !isSlotValidForDraggedPlayer)) && !isPlayerAlreadyPlaced && !isSlotValidForDraggedPlayer && draggedPlayer && (
+        <div className="absolute bg-gray-600 bottom-0 left-0 right-0 text-white text-xs p-1 text-center">
+          Invalid position
         </div>
       )}
     </div>

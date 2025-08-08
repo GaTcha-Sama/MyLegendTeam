@@ -4,20 +4,30 @@ import { Theme } from "../types/sports";
 import Image from "next/image";
 import { useState } from "react";
 
-interface PlayerProps {
+interface PlayerCardProps {
   player: PlayerType;
   theme: Theme;
+  onDragStart?: () => void;
+  onDragEnd?: () => void;
 }
 
-export const PlayerCard = ({ player, theme }: PlayerProps) => {
+export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCardProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
 
-  const [{ isDragging }, drag] = useDrag(() => ({
+  const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
-    item: player, // Passer l'objet player complet au lieu d'un objet partiel
-    collect: (monitor) => ({ isDragging: monitor.isDragging() })
-  }));
+    item: () => {
+      onDragStart?.();
+      return player;
+    },
+    end: () => {
+      onDragEnd?.();
+    },
+    collect: (monitor) => ({
+      isDragging: monitor.isDragging(),
+    }),
+  });
 
   const getImagePath = (fullPath: string) => {
     if (useDefaultImage) {
