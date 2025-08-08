@@ -67,40 +67,20 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
   };
 
   const getTeamLogoPath = (fullPath: string, logoIndex: number) => {
-    if (!fullPath) {
-      console.log(`Logo ${logoIndex} vide pour ${player.name} ${player.lastname}`);
-      return 'images/team-default.webp';
-    }
+    if (!fullPath) return 'images/team-default.webp';
     
     // Vérifier si on doit utiliser le logo par défaut
     const useDefault = logoIndex === 1 ? useDefaultTeamLogo1 : 
                       logoIndex === 2 ? useDefaultTeamLogo2 : 
                       useDefaultTeamLogo3;
     
-    if (useDefault) {
-      console.log(`Utilisation du logo par défaut pour ${player.name} ${player.lastname} - logo ${logoIndex}`);
-      return 'images/team-default.webp';
-    }
+    if (useDefault) return 'images/team-default.webp';
     
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');
       const cleanPath = normalizedPath.replace(/^public\//, '');
-      
-      // CORRECTION : Gérer la casse pour "teams" -> "Teams"
-      let correctedPath = cleanPath;
-      if (correctedPath.includes('/teams/')) {
-        correctedPath = correctedPath.replace('/teams/', '/Teams/');
-      }
-      
-      const webpPath = correctedPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-      const finalPath = webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
-      
-      console.log(`Logo ${logoIndex} pour ${player.name} ${player.lastname}:`);
-      console.log(`  - Chemin original: ${fullPath}`);
-      console.log(`  - Chemin corrigé: ${correctedPath}`);
-      console.log(`  - Chemin final: ${finalPath}`);
-      
-      return finalPath;
+      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+      return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
       console.error("Erreur lors du traitement du chemin du logo:", error);
       return 'images/team-default.webp';
@@ -112,17 +92,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
   const teamLogoPath1 = getTeamLogoPath(player.team1_logo, 1);
   const teamLogoPath2 = getTeamLogoPath(player.team2_logo, 2);
   const teamLogoPath3 = getTeamLogoPath(player.team3_logo, 3);
-
-  // Debug: afficher les données du joueur
-  console.log(`=== DEBUG JOUEUR: ${player.name} ${player.lastname} ===`);
-  console.log(`Team1: ${player.team1} - Logo: ${player.team1_logo}`);
-  console.log(`Team2: ${player.team2} - Logo: ${player.team2_logo}`);
-  console.log(`Team3: ${player.team3} - Logo: ${player.team3_logo}`);
-  console.log(`Chemins finaux:`, {
-    team1: teamLogoPath1,
-    team2: teamLogoPath2,
-    team3: teamLogoPath3
-  });
 
   return (
     <div
