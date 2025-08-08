@@ -3,680 +3,680 @@
     {
       "id": 1,
       "name": "Toulouse",
-      "team_logo": "public/images/rugby/teams/FRA/Toulouse.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Toulouse.png",
       "sport_id": 1
     },
     {
       "id": 2,
       "name": "Toulon",
-      "team_logo": "public/images/rugby/teams/FRA/Toulon.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Toulon.png",
       "sport_id": 1
     },
     {
       "id": 3,
       "name": "Lyon",
-      "team_logo": "public/images/rugby/teams/FRA/Lyon.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Lyon.png",
       "sport_id": 1
     },
     {
       "id": 4,
       "name": "Stade Francais",
-      "team_logo": "public/images/rugby/teams/FRA/Paris.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Paris.png",
       "sport_id": 1
     },
     {
       "id": 5,
       "name": "Racing 92",
-      "team_logo": "public/images/rugby/teams/FRA/Racing.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Racing.png",
       "sport_id": 1
     },
     {
       "id": 6,
       "name": "La Rochelle",
-      "team_logo": "public/images/rugby/teams/FRA/La-Rochelle.png",
+      "team_logo": "public/images/rugby/Teams/FRA/La-Rochelle.png",
       "sport_id": 1
     },
     {
       "id": 7,
       "name": "Bordeaux-Begles",
-      "team_logo": "public/images/rugby/teams/FRA/UBB.png",
+      "team_logo": "public/images/rugby/Teams/FRA/UBB.png",
       "sport_id": 1
     },
     {
       "id": 8,
       "name": "Castres",
-      "team_logo": "public/images/rugby/teams/FRA/Castres.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Castres.png",
       "sport_id": 1
     },
     {
       "id": 9,
       "name": "Clermont",
-      "team_logo": "public/images/rugby/teams/FRA/Clermont.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Clermont.png",
       "sport_id": 1
     },
     {
       "id": 10,
       "name": "Montpellier",
-      "team_logo": "public/images/rugby/teams/FRA/Montpellier.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Montpellier.png",
       "sport_id": 1
     },
     {
       "id": 11,
       "name": "Perpignan",
-      "team_logo": "public/images/rugby/teams/FRA/USAP.png",
+      "team_logo": "public/images/rugby/Teams/FRA/USAP.png",
       "sport_id": 1
     },
     {
       "id": 12,
       "name": "Vannes",
-      "team_logo": "public/images/rugby/teams/FRA/Vannes.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Vannes.png",
       "sport_id": 1
     },
     {
       "id": 13,
       "name": "Pau",
-      "team_logo": "public/images/rugby/teams/FRA/Pau.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Pau.png",
       "sport_id": 1
     },
     {
       "id": 14,
       "name": "Bayonne",
-      "team_logo": "public/images/rugby/teams/FRA/Bayonne.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Bayonne.png",
       "sport_id": 1
     },
     {
       "id": 15,
       "name": "Agen",
-      "team_logo": "public/images/rugby/teams/FRA/Agen.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Agen.png",
       "sport_id": 1
     },
     {
       "id": 16,
       "name": "Biarritz",
-      "team_logo": "public/images/rugby/teams/FRA/Biarritz.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Biarritz.png",
       "sport_id": 1
     },
     {
       "id": 17,
       "name": "Brive",
-      "team_logo": "public/images/rugby/teams/FRA/Brive.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Brive.png",
       "sport_id": 1
     },
     {
       "id": 18,
       "name": "Oyonnax",
-      "team_logo": "public/images/rugby/teams/FRA/Oyonnax.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Oyonnax.png",
       "sport_id": 1
     },
     {
       "id": 19,
       "name": "Mont-de-Marsan",
-      "team_logo": "public/images/rugby/teams/FRA/Mont-de-Marsan.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Mont-de-Marsan.png",
       "sport_id": 1
     },
     {
       "id": 20,
       "name": "Bourgoin",
-      "team_logo": "public/images/rugby/teams/FRA/Bourgoin.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Bourgoin.png",
       "sport_id": 1
     },
     {
       "id": 21,
       "name": "Provence",
-      "team_logo": "public/images/rugby/teams/FRA/Provence.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Provence.png",
       "sport_id": 1
     },
     {
       "id": 22,
       "name": "Narbonne",
-      "team_logo": "public/images/rugby/teams/FRA/Narbonne.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Narbonne.png",
       "sport_id": 1
     },
     {
       "id": 23,
       "name": "Béziers",
-      "team_logo": "public/images/rugby/teams/FRA/Beziers.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Beziers.png",
       "sport_id": 1
     },
     {
       "id": 24,
       "name": "Colomiers",
-      "team_logo": "public/images/rugby/teams/FRA/Colomiers.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Colomiers.png",
       "sport_id": 1
     },
     {
       "id": 25,
       "name": "Dax",
-      "team_logo": "public/images/rugby/teams/FRA/Dax.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Dax.png",
       "sport_id": 1
     },
     {
       "id": 26,
       "name": "Montauban",
-      "team_logo": "public/images/rugby/teams/FRA/Montauban.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Montauban.png",
       "sport_id": 1
     },
     {
       "id": 27,
       "name": "Aurillac",
-      "team_logo": "public/images/rugby/teams/FRA/Aurillac.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Aurillac.png",
       "sport_id": 1
     },
     {
       "id": 28,
       "name": "Grenoble",
-      "team_logo": "public/images/rugby/teams/FRA/Grenoble.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Grenoble.png",
       "sport_id": 1
     },
     {
       "id": 29,
       "name": "Soyaux-Angouleme",
-      "team_logo": "public/images/rugby/teams/FRA/Soyaux.png",
+      "team_logo": "public/images/rugby/Teams/FRA/Soyaux.png",
       "sport_id": 1
     },
     {
       "id": 30,
       "name": "Crusaders",
-      "team_logo": "public/images/rugby/teams/NZL/Canterbury-Crusaders.png",
+      "team_logo": "public/images/rugby/Teams/NZL/Canterbury-Crusaders.png",
       "sport_id": 1
     },
     {
       "id": 31,
       "name": "Hurricanes",
-      "team_logo": "public/images/rugby/teams/NZL/Wellington-Hurricanes.png",
+      "team_logo": "public/images/rugby/Teams/NZL/Wellington-Hurricanes.png",
       "sport_id": 1
     },
     {
       "id": 32,
       "name": "Blues",
-      "team_logo": "public/images/rugby/teams/NZL/Auckland-Blues.png",
+      "team_logo": "public/images/rugby/Teams/NZL/Auckland-Blues.png",
       "sport_id": 1
     },
     {
       "id": 33,
       "name": "Highlanders",
-      "team_logo": "public/images/rugby/teams/NZL/Otago-Highlanders.png",
+      "team_logo": "public/images/rugby/Teams/NZL/Otago-Highlanders.png",
       "sport_id": 1
     },
     {
       "id": 34,
       "name": "Chiefs",
-      "team_logo": "public/images/rugby/teams/NZL/Waikato-Chiefs.png",
+      "team_logo": "public/images/rugby/Teams/NZL/Waikato-Chiefs.png",
       "sport_id": 1
     },
     {
       "id": 35,
       "name": "Moana Pasifika",
-      "team_logo": "public/images/rugby/teams/NZL/Moana-Pasifika.png",
+      "team_logo": "public/images/rugby/Teams/NZL/Moana-Pasifika.png",
       "sport_id": 1
     },
     {
       "id": 36,
       "name": "All Blacks",
-      "team_logo": "public/images/rugby/teams/NZL/AllBlacks.svg",
+      "team_logo": "public/images/rugby/Teams/NZL/AllBlacks.svg",
       "sport_id": 1
     },
 
     {
       "id": 39,
       "name": "Fijian Drua",
-      "team_logo": "public/images/rugby/teams/FJI/Fijian-Drua.png",
+      "team_logo": "public/images/rugby/Teams/FJI/Fijian-Drua.png",
       "sport_id": 1
     },
     {
       "id": 40,
       "name": "Waratahs",
-      "team_logo": "public/images/rugby/teams/AUS/NSW-Waratahs.png",
+      "team_logo": "public/images/rugby/Teams/AUS/NSW-Waratahs.png",
       "sport_id": 1
     },
     {
       "id": 41,
       "name": "Brumbies",
-      "team_logo": "public/images/rugby/teams/AUS/ACT-Brumbies.png",
+      "team_logo": "public/images/rugby/Teams/AUS/ACT-Brumbies.png",
       "sport_id": 1
     },
     {
       "id": 42,
       "name": "Reds",
-      "team_logo": "public/images/rugby/teams/AUS/Queensland-Reds.png",
+      "team_logo": "public/images/rugby/Teams/AUS/Queensland-Reds.png",
       "sport_id": 1
     },
     {
       "id": 43,
       "name": "Western Force",
-      "team_logo": "public/images/rugby/teams/AUS/Western-Force.png",
+      "team_logo": "public/images/rugby/Teams/AUS/Western-Force.png",
       "sport_id": 1
     },
     {
       "id": 44,
       "name": "Rebels",
-      "team_logo": "public/images/rugby/teams/AUS/Melbourne-Rebels.png",
+        "team_logo": "public/images/rugby/Teams/AUS/Melbourne-Rebels.png",
       "sport_id": 1
     },
     {
       "id": 50,
       "name": "Lions",
-      "team_logo": "public/images/rugby/teams/RSA/Lions.png",
+      "team_logo": "public/images/rugby/Teams/RSA/Lions.png",
       "sport_id": 1
     },
     {
       "id": 51,
       "name": "Stormers",
-      "team_logo": "public/images/rugby/teams/RSA/Stormers.png",
+      "team_logo": "public/images/rugby/Teams/RSA/Stormers.png",
       "sport_id": 1
     },
     {
       "id": 52,
       "name": "Cheetahs",
-      "team_logo": "public/images/rugby/teams/RSA/Cheetahs.png",
+      "team_logo": "public/images/rugby/Teams/RSA/Cheetahs.png",
       "sport_id": 1
     },
     {
       "id": 53,
       "name": "Sharks",
-      "team_logo": "public/images/rugby/teams/RSA/Sharks.png",
+      "team_logo": "public/images/rugby/Teams/RSA/Sharks.png",
       "sport_id": 1
     },
     {
       "id": 54,
       "name": "Bulls",
-      "team_logo": "public/images/rugby/teams/RSA/Bulls.png",
+      "team_logo": "public/images/rugby/Teams/RSA/Bulls.png",
       "sport_id": 1
     },
     {
       "id": 60,
       "name": "Leinster",
-      "team_logo": "public/images/rugby/teams/IRL/Leinster.png",
+      "team_logo": "public/images/rugby/Teams/IRL/Leinster.png",
       "sport_id": 1
     },
     {
       "id": 61,
       "name": "Munster",
-      "team_logo": "public/images/rugby/teams/IRL/Munster.png",
+      "team_logo": "public/images/rugby/Teams/IRL/Munster.png",
       "sport_id": 1
     },
     {
       "id": 62,
       "name": "Connacht",
-      "team_logo": "public/images/rugby/teams/IRL/Connacht.png",
+      "team_logo": "public/images/rugby/Teams/IRL/Connacht.png",
       "sport_id": 1
     },
     {
       "id": 63,
       "name": "Ulster",
-      "team_logo": "public/images/rugby/teams/IRL/Ulster.png",
+      "team_logo": "public/images/rugby/Teams/IRL/Ulster.png",
       "sport_id": 1
     },
     {
       "id": 67,
       "name": "Coventry",
-      "team_logo": "public/images/rugby/teams/ENG/Coventry.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Coventry.png",
       "sport_id": 1
     },
     {
       "id": 68,
       "name": "Leeds",
-      "team_logo": "public/images/rugby/teams/ENG/Leeds.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Leeds.png",
       "sport_id": 1
     },
     {
       "id": 69,
       "name": "Nottingham",
-      "team_logo": "public/images/rugby/teams/ENG/Nottingham.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Nottingham.png",
       "sport_id": 1
     },
     {
       "id": 70,
       "name": "Bath",
-      "team_logo": "public/images/rugby/teams/ENG/Bath.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Bath.png",
       "sport_id": 1
     },
     {
       "id": 71,
       "name": "Bristol",
-      "team_logo": "public/images/rugby/teams/ENG/Bristol.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Bristol.png",
       "sport_id": 1
     },
     {
       "id": 72,
       "name": "Exeter",
-      "team_logo": "public/images/rugby/teams/ENG/Exeter.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Exeter.png",
       "sport_id": 1
     },
     {
       "id": 73,
       "name": "Gloucester",
-      "team_logo": "public/images/rugby/teams/ENG/Gloucester.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Gloucester.png",
       "sport_id": 1
     },
     {
       "id": 74,
       "name": "Harlequins",
-      "team_logo": "public/images/rugby/teams/ENG/Harlequins.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Harlequins.png",
       "sport_id": 1
     },
     {
       "id": 75,
       "name": "Leicester",
-      "team_logo": "public/images/rugby/teams/ENG/Leicester.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Leicester.png",
       "sport_id": 1
     },
     {
       "id": 76,
       "name": "London Irish",
-      "team_logo": "public/images/rugby/teams/ENG/London-Irish.png",
+      "team_logo": "public/images/rugby/Teams/ENG/London-Irish.png",
       "sport_id": 1
     },
     {
       "id": 77,
       "name": "London Wasps",
-      "team_logo": "public/images/rugby/teams/ENG/London-Wasps.png",
+      "team_logo": "public/images/rugby/Teams/ENG/London-Wasps.png",
       "sport_id": 1
     },
     {
       "id": 78,
       "name": "Newcastle",
-      "team_logo": "public/images/rugby/teams/ENG/Newcastle.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Newcastle.png",
       "sport_id": 1
     },
     {
       "id": 79,
       "name": "Northampton",
-      "team_logo": "public/images/rugby/teams/ENG/Northampton.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Northampton.png",
       "sport_id": 1
     },
     {
       "id": 80,
       "name": "Sale",
-      "team_logo": "public/images/rugby/teams/ENG/Sale.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Sale.png",
       "sport_id": 1
     },
     {
       "id": 81,
       "name": "Saracens",
-      "team_logo": "public/images/rugby/teams/ENG/Saracens.png",
+        "team_logo": "public/images/rugby/Teams/ENG/Saracens.png",
       "sport_id": 1
     },
     {
       "id": 82,
       "name": "London Scottish",
-      "team_logo": "public/images/rugby/teams/ENG/London-Scottish.png",
+      "team_logo": "public/images/rugby/Teams/ENG/London-Scottish.png",
       "sport_id": 1
     },
     {
       "id": 83,
       "name": "Worcester",
-      "team_logo": "public/images/rugby/teams/ENG/Worcester.png",
+      "team_logo": "public/images/rugby/Teams/ENG/Worcester.png",
       "sport_id": 1
     },
     {
       "id": 84,
       "name": "London Welsh",
-      "team_logo": "public/images/rugby/teams/ENG/London-Welsh.png",
+      "team_logo": "public/images/rugby/Teams/ENG/London-Welsh.png",
       "sport_id": 1
     },
     {
       "id": 85,
       "name": "Cardiff",
-      "team_logo": "public/images/rugby/teams/WAL/Cardiff.png",
+      "team_logo": "public/images/rugby/Teams/WAL/Cardiff.png",
       "sport_id": 1
     },
     {
       "id": 86,
       "name": "Dragons",
-      "team_logo": "public/images/rugby/teams/WAL/Dragons.png",
+      "team_logo": "public/images/rugby/Teams/WAL/Dragons.png",
       "sport_id": 1
     },
     {
       "id": 87,
       "name": "Ospreys",
-      "team_logo": "public/images/rugby/teams/WAL/Ospreys.png",
+      "team_logo": "public/images/rugby/Teams/WAL/Ospreys.png",
       "sport_id": 1
     },
     {
       "id": 88,
       "name": "Scarlets",
-      "team_logo": "public/images/rugby/teams/WAL/Scarlets.png",
+      "team_logo": "public/images/rugby/Teams/WAL/Scarlets.png",
       "sport_id": 1
     },
     {
       "id": 89,
       "name": "Pontypridd",
-      "team_logo": "public/images/rugby/teams/WAL/Pontypridd.png",
+      "team_logo": "public/images/rugby/Teams/WAL/Pontypridd.png",
       "sport_id": 1
     },
     {
       "id": 90,
       "name": "Edinburgh",
-      "team_logo": "public/images/rugby/teams/SCO/Edinburgh.png",
+      "team_logo": "public/images/rugby/Teams/SCO/Edinburgh.png",
       "sport_id": 1
     },
     {
       "id": 91,
       "name": "Glasgow",
-      "team_logo": "public/images/rugby/teams/SCO/Glasgow.png",
+      "team_logo": "public/images/rugby/Teams/SCO/Glasgow.png",
       "sport_id": 1
     },
     {
       "id": 92,
       "name": "Border",
-      "team_logo": "public/images/rugby/teams/SCO/Border.png",
+      "team_logo": "public/images/rugby/Teams/SCO/Border.png",
       "sport_id": 1
     },
     {
       "id": 93,
       "name": "Caledonia",
-      "team_logo": "public/images/rugby/teams/SCO/Caledonia.jpg",
+      "team_logo": "public/images/rugby/Teams/SCO/Caledonia.jpg",
       "sport_id": 1
     },
     {
       "id": 94,
       "name": "L'Aquila",
-      "team_logo": "public/images/rugby/teams/ITA/Aquila.png",
+      "team_logo": "public/images/rugby/Teams/ITA/Aquila.png",
       "sport_id": 1
     },
     {
       "id": 95,
       "name": "Benetton",
-      "team_logo": "public/images/rugby/teams/ITA/Benetton.png",
+      "team_logo": "public/images/rugby/Teams/ITA/Benetton.png",
       "sport_id": 1
     },
     {
       "id": 96,
       "name": "Zebre",
-      "team_logo": "public/images/rugby/teams/ITA/Zebre.png",
+      "team_logo": "public/images/rugby/Teams/ITA/Zebre.png",
       "sport_id": 1
     },
     {
       "id": 97,
       "name": "Calvisano",
-      "team_logo": "public/images/rugby/teams/ITA/Calvisano.png",
+      "team_logo": "public/images/rugby/Teams/ITA/Calvisano.png",
       "sport_id": 1
     },
     {
       "id": 98,
       "name": "Petrarca",
-      "team_logo": "public/images/rugby/teams/ITA/Petrarca.png",
+      "team_logo": "public/images/rugby/Teams/ITA/Petrarca.png",
       "sport_id": 1
     },
     {
       "id": 99,
       "name": "Jaguares",
-      "team_logo": "public/images/rugby/teams/ARG/Jaguares.png",
+      "team_logo": "public/images/rugby/Teams/ARG/Jaguares.png",
       "sport_id": 1
     },
     {
       "id": 100,
       "name": "Kobe",
-      "team_logo": "public/images/rugby/teams/JAP/Kobe.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Kobe.png",
       "sport_id": 1
     },
     {
       "id": 101,
       "name": "Osaka",
-      "team_logo": "public/images/rugby/teams/JAP/Osaka.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Osaka.png",
       "sport_id": 1
     },
     {
       "id": 102,
       "name": "Saitama",
-      "team_logo": "public/images/rugby/teams/JAP/Saitama.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Saitama.png",
       "sport_id": 1
     },
     {
       "id": 103,
       "name": "Shizuoka",
-      "team_logo": "public/images/rugby/teams/JAP/Shizuoka.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Shizuoka.png",
       "sport_id": 1
     },
     {
       "id": 104,
       "name": "Honda",
-      "team_logo": "public/images/rugby/teams/JAP/Honda.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Honda.png",
       "sport_id": 1
     },
     {
       "id": 105,
       "name": "Tokyo Black Rams",
-      "team_logo": "public/images/rugby/teams/JAP/Tokyo_BlackRams.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Tokyo_BlackRams.png",
       "sport_id": 1
     },
     {
       "id": 106,
       "name": "Tokyo Spears",
-      "team_logo": "public/images/rugby/teams/JAP/Tokyo_Spears.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Tokyo_Spears.png",
       "sport_id": 1
     },
     {
       "id": 107,
       "name": "Tokyo Sungoliath",
-      "team_logo": "public/images/rugby/teams/JAP/Tokyo_Sungoliath.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Tokyo_Sungoliath.png",
       "sport_id": 1
     },
     {
       "id": 108,
       "name": "Toshiba",
-      "team_logo": "public/images/rugby/teams/JAP/Toshiba.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Toshiba.png",
       "sport_id": 1
     },
     {
       "id": 109,
       "name": "Toyota",
-      "team_logo": "public/images/rugby/teams/JAP/Toyota.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Toyota.png",
       "sport_id": 1
     },
     {
       "id": 110,
       "name": "Urayasu",
-      "team_logo": "public/images/rugby/teams/JAP/Urayasu.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Urayasu.png",
       "sport_id": 1
     },
     {
       "id": 111,
       "name": "Yokohama",
-      "team_logo": "public/images/rugby/teams/JAP/Yokohama.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Yokohama.png",
       "sport_id": 1
     },
     {
       "id": 112,
       "name": "Mitsubishi",
-      "team_logo": "public/images/rugby/teams/JAP/Mitsubishi.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Mitsubishi.png",
       "sport_id": 1
     },
     {
       "id": 113,
       "name": "Tokatsu",
-      "team_logo": "public/images/rugby/teams/JAP/Tokatsu.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Tokatsu.png",
       "sport_id": 1
     },
     {
       "id": 114,
       "name": "Kintetsu",
-      "team_logo": "public/images/rugby/teams/JAP/Kintetsu.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Kintetsu.png",
       "sport_id": 1
     },
     {
       "id": 115,
       "name": "Hino",
-      "team_logo": "public/images/rugby/teams/JAP/Hino.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Hino.png",
       "sport_id": 1
     },
     {
       "id": 116,
       "name": "Sunwolves",
-      "team_logo": "public/images/rugby/teams/JAP/Sunwolves.png",
+      "team_logo": "public/images/rugby/Teams/JAP/Sunwolves.png",
       "sport_id": 1
     },
     {
       "id": 120,
       "name": "Carolina",
-      "team_logo": "public/images/rugby/teams/USA/Carolina.png",
+      "team_logo": "public/images/rugby/Teams/USA/Carolina.png",
       "sport_id": 1
     },
     {
       "id": 121 ,
       "name": "Chicago",
-      "team_logo": "public/images/rugby/teams/USA/Chicago.png",
+      "team_logo": "public/images/rugby/Teams/USA/Chicago.png",
       "sport_id": 1
     },
     {
       "id": 122,
       "name": "Houston",
-      "team_logo": "public/images/rugby/teams/USA/Houston.png",
+      "team_logo": "public/images/rugby/Teams/USA/Houston.png",
       "sport_id": 1
     },
     {
       "id": 123,
       "name": "Los Angeles",
-      "team_logo": "public/images/rugby/teams/USA/Los-Angeles.png",
+      "team_logo": "public/images/rugby/Teams/USA/Los-Angeles.png",
       "sport_id": 1
     },
     {
       "id": 124,
       "name": "Miami",
-      "team_logo": "public/images/rugby/teams/USA/Miami.png",
+      "team_logo": "public/images/rugby/Teams/USA/Miami.png",
       "sport_id": 1
     },
     {
       "id": 125,
       "name": "New England",
-      "team_logo": "public/images/rugby/teams/USA/New-England.png",
+      "team_logo": "public/images/rugby/Teams/USA/New-England.png",
       "sport_id": 1
     },
     {
       "id": 126,
       "name": "New Orleans",
-      "team_logo": "public/images/rugby/teams/USA/New-Orleans.png",
+      "team_logo": "public/images/rugby/Teams/USA/New-Orleans.png",
       "sport_id": 1
     },
     {
       "id": 127,
       "name": "San Diego",
-      "team_logo": "public/images/rugby/teams/USA/San-Diego.png",
+      "team_logo": "public/images/rugby/Teams/USA/San-Diego.png",
       "sport_id": 1
     },
     {
       "id": 128,
       "name": "Seattle",
-      "team_logo": "public/images/rugby/teams/USA/Seattle.png",
+      "team_logo": "public/images/rugby/Teams/USA/Seattle.png",
       "sport_id": 1
     },
     {
       "id": 129,
       "name": "Utah",
-      "team_logo": "public/images/rugby/teams/USA/Utah.png",
+      "team_logo": "public/images/rugby/Teams/USA/Utah.png",
       "sport_id": 1
     },
     {
       "id": 130,
       "name": "Washington",
-      "team_logo": "public/images/rugby/teams/USA/Washington.png",
+      "team_logo": "public/images/rugby/Teams/USA/Washington.png",
       "sport_id": 1
     },
     {
       "id": 140,
       "name": "Black Lion",
-      "team_logo": "public/images/rugby/teams/GEO/BlackLion.png",
+      "team_logo": "public/images/rugby/Teams/GEO/BlackLion.png",
       "sport_id": 1
     },
     {

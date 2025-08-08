@@ -39,7 +39,7 @@ def get_player_photo_path(name, lastname, flag, sport_id, extension):
         filename = f"{lastname}-{name}"
     
     filename = clean_filename(filename)
-    return f"images/{sport_folder}/players/{flag}/{filename}.{extension}"
+    return f"images/{sport_folder}/Players/{flag}/{filename}.{extension}"
 
 def import_players():
     script_dir = Path(__file__).parent
