@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+1. Installer ou lancer Docker Desktop
 
-## Getting Started
+=> Lancer Docker Desktop sinon
+=> Télécharger Docker Desktop depuis https://www.docker.com/products/docker-desktop/
+=> Installer et redémarrer l'ordinateur
+=> S'assurer que Docker Desktop est démarré (icône dans la barre des tâches)
 
-First, run the development server:
+2. Récupérer le projet
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Sur bash :
+=> git clone https://github.com/GaTcha-Sama/MyLegendTeam.git
+=> cd mylegendteam
+=> git checkout docker
+=> git pull origin docker
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sur powershell ou cmd-prompt :
+=> cd mylegendteam
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Lancer l'application
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Sur Windows (PowerShell ou cmd-prompt)
+=> docker-compose up --build 
+OU start.bat sinon (pas testé encore attention à éviter pour l’instant)
+# Ou utiliser le script batch
+=> start.bat
 
-## Learn More
+Installation des dépendances si problème lors du docker-compose :
 
-To learn more about Next.js, take a look at the following resources:
+=> cd frontend
+=> npm install
+=> npm run dev
+=> cd ..
+=> cd backend 
+=> npm install
+=> npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Accéder à l'application
 
-## Deploy on Vercel
+Ouvrir un navigateur :
+=> Aller sur : http://localhost:3000 pour le frontend
+=> Aller sur : http://localhost:5000 pour le backend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔧 En cas de problème
+
+Docker fonctionne-t-il ?
+docker --version
+docker-compose –version
+
+Vide le cache du navigateur (Chrome, Firefox…)
+Arrête tous les conteneurs : docker-compose down
+Nettoie le cache : docker system prune -a --volumes
+Redémarre Docker Desktop (si applicable)
+Reconstruire : docker-compose build --no-cache
+Relancer : docker-compose up
+
+Les ports sont-ils libres ?
+Vérifier qu'aucune autre application n'utilise les ports 3000 et 5000
+
+
+Logs d'erreur :
+docker-compose logs
+
+Commandes utiles :
+# Arrêter l'application
+docker-compose down
+
+# Redémarrer
+docker-compose restart
+
+# Voir les logs en temps réel
+docker-compose logs -f
+
+# Nettoyer complètement
+docker-compose down -v
+docker system prune -a
