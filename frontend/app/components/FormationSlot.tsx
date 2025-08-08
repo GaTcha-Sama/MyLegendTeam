@@ -36,8 +36,14 @@ const getTeamLogoPath = (fullPath: string) => {
   try {
     const normalizedPath = fullPath.replace(/\\/g, '/');
     const cleanPath = normalizedPath.replace(/^public\//, '');
-    // Convertir en WebP
-    const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    
+    // CORRECTION : Gérer la casse pour "teams" -> "Teams"
+    let correctedPath = cleanPath;
+    if (correctedPath.includes('/teams/')) {
+      correctedPath = correctedPath.replace('/teams/', '/Teams/');
+    }
+    
+    const webpPath = correctedPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
     return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
   } catch (error) {
     console.error("Erreur lors du traitement du chemin du logo:", error);

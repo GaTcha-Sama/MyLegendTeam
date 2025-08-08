@@ -85,11 +85,19 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');
       const cleanPath = normalizedPath.replace(/^public\//, '');
-      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+      
+      // CORRECTION : Gérer la casse pour "teams" -> "Teams"
+      let correctedPath = cleanPath;
+      if (correctedPath.includes('/teams/')) {
+        correctedPath = correctedPath.replace('/teams/', '/Teams/');
+      }
+      
+      const webpPath = correctedPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
       const finalPath = webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
       
       console.log(`Logo ${logoIndex} pour ${player.name} ${player.lastname}:`);
       console.log(`  - Chemin original: ${fullPath}`);
+      console.log(`  - Chemin corrigé: ${correctedPath}`);
       console.log(`  - Chemin final: ${finalPath}`);
       
       return finalPath;
