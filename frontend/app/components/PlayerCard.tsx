@@ -14,6 +14,9 @@ interface PlayerCardProps {
 export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCardProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
+  const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
+  const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
+  const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
 
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
@@ -63,13 +66,19 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
     }
   };
 
-  const getTeamLogoPath = (fullPath: string) => {
+  const getTeamLogoPath = (fullPath: string, logoIndex: number) => {
     if (!fullPath) return 'images/team-default.webp';
+    
+    // Vérifier si on doit utiliser le logo par défaut
+    const useDefault = logoIndex === 1 ? useDefaultTeamLogo1 : 
+                      logoIndex === 2 ? useDefaultTeamLogo2 : 
+                      useDefaultTeamLogo3;
+    
+    if (useDefault) return 'images/team-default.webp';
     
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');
       const cleanPath = normalizedPath.replace(/^public\//, '');
-      // Convertir en WebP
       const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
       return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
@@ -80,9 +89,9 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
 
   const imagePath = getImagePath(player.photo);
   const flagPath = getFlagPath(player.flag);
-  const teamLogoPath1 = getTeamLogoPath(player.team1_logo);
-  const teamLogoPath2 = getTeamLogoPath(player.team2_logo);
-  const teamLogoPath3 = getTeamLogoPath(player.team3_logo);
+  const teamLogoPath1 = getTeamLogoPath(player.team1_logo, 1);
+  const teamLogoPath2 = getTeamLogoPath(player.team2_logo, 2);
+  const teamLogoPath3 = getTeamLogoPath(player.team3_logo, 3);
 
   return (
     <div
@@ -155,7 +164,9 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 width={64}
                 onError={() => {
                   console.error(`Erreur de chargement du logo pour ${player.team1}`);
+                  setUseDefaultTeamLogo1(true);
                 }}
+                unoptimized={useDefaultTeamLogo1}
               />
             </div>
           )}
@@ -173,7 +184,9 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 width={64}
                 onError={() => {
                   console.error(`Erreur de chargement du logo pour ${player.team2}`);
+                  setUseDefaultTeamLogo2(true);
                 }}
+                unoptimized={useDefaultTeamLogo2}
               />
             </div>
           )}
@@ -191,7 +204,9 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 width={64}
                 onError={() => {
                   console.error(`Erreur de chargement du logo pour ${player.team3}`);
+                  setUseDefaultTeamLogo3(true);
                 }}
+                unoptimized={useDefaultTeamLogo3}
               />
             </div>
           )}
