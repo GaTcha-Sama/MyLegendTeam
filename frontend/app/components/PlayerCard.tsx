@@ -1,15 +1,8 @@
 import { useDrag } from "react-dnd";
-import { useState } from "react";
 import { PlayerCardProps } from "../types/playerCardProps";
 import Image from "next/image";
 
 export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCardProps) => {
-  const [useDefaultImage, setUseDefaultImage] = useState(false);
-  const [useDefaultFlag, setUseDefaultFlag] = useState(false);
-  const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
-  const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
-  const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
-
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
     item: () => {
@@ -24,53 +17,30 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
     }),
   });
 
-  const getImagePath = (fullPath: string) => {
-    if (useDefaultImage) {
-      return 'images/portrait-default.webp';
-    }
+  const getProcessedImagePath = (fullPath: string, defaultPath: string, errorType: string = "image") => {
+    try {
+      if (!fullPath) return defaultPath;
 
-    try {
-      const normalizedPath = fullPath.replace(/\\/g, '/');      
-      const cleanPath = normalizedPath.replace(/^public\//, '');      
-      // Convertir en WebP
-      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-      return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
-    } catch (error) {
-      console.error("Erreur lors du traitement du chemin:", error);
-      return 'images/portrait-default.webp';
-    }
-  };
-  
-  const getFlagPath = (fullPath: string) => {
-    if (useDefaultFlag) {
-      return 'images/default-flag.webp';
-    }
-  
-    try {
       const normalizedPath = fullPath.replace(/\\/g, '/');
       const cleanPath = normalizedPath.replace(/^public\//, '');
-      // Convertir en WebP
       const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
       return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
-      console.error("Erreur lors du traitement du chemin du drapeau:", error);
-      return 'images/default-flag.webp';
+      console.error(`Erreur lors du traitement du chemin ${errorType}:`, error);
+      return defaultPath;
     }
   };
+  
+  const getPortraitPath = (fullPath: string) => 
+    getProcessedImagePath(fullPath, 'images/portrait-default.webp', "of the player");
+  
+  const getFlagPath = (fullPath: string) => 
+    getProcessedImagePath(fullPath, 'images/default-flag.webp', "of the flag");
+  
+  const getTeamLogoPath = (fullPath: string) => 
+    getProcessedImagePath(fullPath, 'images/team-default.webp', "of the team logo");
 
-  const getTeamLogoPath = (fullPath: string) => {
-    if (!fullPath) return 'images/team-default.webp';
-    
-    // Si le chemin commence par 'images/', on l'utilise tel quel
-    if (fullPath.startsWith('images/')) {
-      return fullPath;
-    }
-    
-    // Sinon, on nettoie le chemin
-    return fullPath.replace(/^public\//, '').replace(/\\/g, '/');
-  };
-
-  const imagePath = getImagePath(player.photo);
+  const imagePath = getPortraitPath(player.photo);
   const flagPath = getFlagPath(player.flag);
   const teamLogoPath1 = getTeamLogoPath(player.team1_logo);
   const teamLogoPath2 = getTeamLogoPath(player.team2_logo);
@@ -108,9 +78,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
           fill
           className="rounded-lg object-top object-cover bg-gray-400"
           sizes="(max-width: 768px) 100vw, 300px"
-          onError={() => {
-            setUseDefaultImage(true);
-          }}
           unoptimized={true}
           priority
         />
@@ -123,9 +90,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
               sizes="24px"
               height={24}
               width={24}
-              onError={() => {
-                setUseDefaultFlag(true);
-              }}
             />
           </div>
         )}
@@ -145,11 +109,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 sizes="64px"
                 height={48}
                 width={64}
-                onError={() => {
-                  console.error(`Erreur de chargement du logo pour ${player.team1}: ${teamLogoPath1}`);
-                  setUseDefaultTeamLogo1(true);
-                }}
-                unoptimized={useDefaultTeamLogo1}
               />
             </div>
           )}
@@ -165,11 +124,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 sizes="64px"
                 height={48}
                 width={64}
-                onError={() => {
-                  console.error(`Erreur de chargement du logo pour ${player.team2}: ${teamLogoPath2}`);
-                  setUseDefaultTeamLogo2(true);
-                }}
-                unoptimized={useDefaultTeamLogo2}
               />
             </div>
           )}
@@ -185,11 +139,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
                 sizes="64px"
                 height={48}
                 width={64}
-                onError={() => {
-                  console.error(`Erreur de chargement du logo pour ${player.team3}: ${teamLogoPath3}`);
-                  setUseDefaultTeamLogo3(true);
-                }}
-                unoptimized={useDefaultTeamLogo3}
               />
             </div>
           )}
