@@ -40,7 +40,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');      
       const cleanPath = normalizedPath.replace(/^public\//, '');      
-      // Convertir en WebP
       const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
       return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
@@ -57,7 +56,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
     try {
       const normalizedPath = fullPath.replace(/\\/g, '/');
       const cleanPath = normalizedPath.replace(/^public\//, '');
-      // Convertir en WebP
       const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
       return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
     } catch (error) {
@@ -69,12 +67,10 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
   const getTeamLogoPath = (fullPath: string) => {
     if (!fullPath) return 'images/team-default.webp';
     
-    // Si le chemin commence par 'images/', on l'utilise tel quel
     if (fullPath.startsWith('images/')) {
       return fullPath;
     }
     
-    // Sinon, on nettoie le chemin
     return fullPath.replace(/^public\//, '').replace(/\\/g, '/');
   };
 
