@@ -87,6 +87,9 @@ export const FormationSlot = ({
 }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
+  const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
+  const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
+  const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
 
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
@@ -131,15 +134,12 @@ export const FormationSlot = ({
         logos.push(
           <div key="team1" className="relative w-6 h-6 rounded-sm p-1">
             <Image
-              src={`/${getTeamLogoPath(player.team1_logo)}`}
+              src={useDefaultTeamLogo1 ? '/images/team-default.webp' : `/${getTeamLogoPath(player.team1_logo)}`}
               alt={`Logo ${player.team1}`}
               fill  
               className="object-contain"
               sizes="24px"
-              onError={(e) => {
-                console.log('Erreur de chargement logo team1:', player.team1_logo);
-                e.currentTarget.src = '/images/team-default.webp';
-              }}
+              onError={() => setUseDefaultTeamLogo1(true)}
               unoptimized
             />
           </div>
@@ -150,15 +150,12 @@ export const FormationSlot = ({
         logos.push(
           <div key="team2" className="relative w-6 h-6 rounded-sm p-1">
             <Image
-              src={`/${getTeamLogoPath(player.team2_logo)}`}
+              src={useDefaultTeamLogo2 ? '/images/team-default.webp' : `/${getTeamLogoPath(player.team2_logo)}`}
               alt={`Logo ${player.team2}`}
               fill  
               className="object-contain"
               sizes="24px"
-              onError={(e) => {
-                console.log('Erreur de chargement logo team2:', player.team2_logo);
-                e.currentTarget.src = '/images/team-default.webp';
-              }}
+              onError={() => setUseDefaultTeamLogo2(true)}
               unoptimized
             />
           </div>
@@ -169,15 +166,12 @@ export const FormationSlot = ({
         logos.push(
           <div key="team3" className="relative w-6 h-6 rounded-sm p-1">
             <Image
-              src={`/${getTeamLogoPath(player.team3_logo)}`}
+              src={useDefaultTeamLogo3 ? '/images/team-default.webp' : `/${getTeamLogoPath(player.team3_logo)}`}
               alt={`Logo ${player.team3}`}
               fill  
               className="object-contain"
               sizes="24px"
-              onError={(e) => {
-                console.log('Erreur de chargement logo team3:', player.team3_logo);
-                e.currentTarget.src = '/images/team-default.webp';
-              }}
+              onError={() => setUseDefaultTeamLogo3(true)}
               unoptimized
             />
           </div>
