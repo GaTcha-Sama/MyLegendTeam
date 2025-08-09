@@ -1,11 +1,5 @@
-import { Player } from "../types/players";
+import { TeamSelectorProps } from "../types/teamSelectorProps";
 
-interface TeamSelectorProps {
-  selectedTeam: string;
-  onSelectTeam: (team: string) => void;
-  players: Player[];
-  selectedSport: string;
-}
 export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSport }: TeamSelectorProps) => {
   
   const teams = Array.from(
