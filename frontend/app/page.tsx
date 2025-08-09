@@ -39,7 +39,16 @@ export default function DreamTeamBuilder() {
   useEffect(() => {
     const loadPlayers = async () => {
       try {
-        const playersData = await fetchPlayers();
+        const playersData = await fetchPlayers(selectedSport);
+        
+        // Ajout de débogage - TEMPORAIRE
+        if (playersData && playersData.length > 0) {
+          console.log('Premier joueur:', playersData[0]);
+          console.log('team1_logo du premier joueur:', playersData[0].team1_logo);
+          console.log('team2_logo du premier joueur:', playersData[0].team2_logo);
+          console.log('team3_logo du premier joueur:', playersData[0].team3_logo);
+        }
+        
         setPlayers(playersData);
       } catch (error) {
         console.error("Error loading players:", error);
@@ -49,7 +58,7 @@ export default function DreamTeamBuilder() {
     };
 
     loadPlayers();
-  }, []);
+  }, [selectedSport]);
 
   useEffect(() => {
     const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
