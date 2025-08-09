@@ -1,16 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Player } from '../types/players';
-
-interface FilterPlayersProps {
-  onFilterChange: (filteredPlayers: Player[]) => void;
-  players: Player[];
-  selectedSport: string;
-  isPlayerInTeam: (playerId: number) => boolean;
-  selectedNationality: string;
-  selectedPosition: string;
-  selectedTeam: string;
-  selectedActiveRetired: number | null;
-}
+import { FilterPlayersProps } from '../types/filterPlayersProps';
 
 export const FilterPlayers = ({ 
   onFilterChange, 
@@ -45,9 +34,6 @@ export const FilterPlayers = ({
         player.lastname.toLowerCase().includes(word)
       );
 
-      console.log('Player:', player.name, player.lastname, 'Active:', player.active);
-      console.log('Selected:', selectedActiveRetired);
-
       return baseConditions && matchesSearch;
     });
 
@@ -72,9 +58,6 @@ export const FilterPlayers = ({
       player.name.toLowerCase().includes(word) ||
       player.lastname.toLowerCase().includes(word)
     );
-
-    console.log('Player:', player.name, player.lastname, 'Active:', player.active);
-    console.log('Selected:', selectedActiveRetired);
 
     return baseConditions && matchesSearch;
   }).length === 0;
