@@ -87,6 +87,7 @@ export const FormationSlot = ({
 }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
+  // const [useDefaultTeamLogo, setUseDefaultTeamLogo] = useState(false);
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
   const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
   const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);

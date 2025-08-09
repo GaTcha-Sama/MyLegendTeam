@@ -7,10 +7,8 @@ const playerController = require("./controllers/playerController");
 
 const app = express();
 
-// Middleware de sécurité
 app.use(helmet());
 
-// Rate limiting
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100, // limite chaque IP à 100 requêtes par fenêtre
@@ -22,14 +20,13 @@ app.use(limiter);
 
 app.use(express.json());
 
-// Configuration CORS pour accepter toutes les URLs Vercel
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
   'https://mylegendteam.vercel.app',
   'https://my-legend-team.vercel.app',
   'https://my-legend-team-mukxydg0p-gatchas-projects.vercel.app',
-  'https://*.vercel.app', // Accepte tous les sous-domaines Vercel
+  'https://*.vercel.app',
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
@@ -37,7 +34,11 @@ app.use(cors({
     origin: function (origin, callback) {
         if (!origin) return callback(null, true);
         
-        // Accepter tous les domaines Vercel
+        if (origin && origin.startsWith('http://localhost:')) {
+            console.log('Origin localhost autorisé:', origin);
+            return callback(null, true);
+        }
+        
         if (origin.includes('vercel.app') || allowedOrigins.includes(origin)) {
             console.log('Origin autorisé:', origin);
             callback(null, true);

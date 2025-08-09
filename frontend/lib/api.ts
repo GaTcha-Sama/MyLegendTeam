@@ -1,8 +1,8 @@
 import axios from "axios";
 import { Player } from "../app/types/players";
 
-// URL de votre backend Render
-const API_BASE_URL = "https://mylegendteam.onrender.com";
+//const API_BASE_URL = "https://mylegendteam.onrender.com";
+const API_BASE_URL = "http://localhost:5000";
 
 export const fetchPlayers = async (): Promise<Player[]> => {
   try {
