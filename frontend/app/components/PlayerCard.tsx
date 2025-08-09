@@ -66,32 +66,23 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
     }
   };
 
-  const getTeamLogoPath = (fullPath: string, logoIndex: number) => {
+  const getTeamLogoPath = (fullPath: string) => {
     if (!fullPath) return 'images/team-default.webp';
     
-    // Vérifier si on doit utiliser le logo par défaut
-    const useDefault = logoIndex === 1 ? useDefaultTeamLogo1 : 
-                      logoIndex === 2 ? useDefaultTeamLogo2 : 
-                      useDefaultTeamLogo3;
-    
-    if (useDefault) return 'images/team-default.webp';
-    
-    try {
-      const normalizedPath = fullPath.replace(/\\/g, '/');
-      const cleanPath = normalizedPath.replace(/^public\//, '');
-      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-      return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
-    } catch (error) {
-      console.error("Erreur lors du traitement du chemin du logo:", error);
-      return 'images/team-default.webp';
+    // Si le chemin commence par 'images/', on l'utilise tel quel
+    if (fullPath.startsWith('images/')) {
+      return fullPath;
     }
+    
+    // Sinon, on nettoie le chemin
+    return fullPath.replace(/^public\//, '').replace(/\\/g, '/');
   };
 
   const imagePath = getImagePath(player.photo);
   const flagPath = getFlagPath(player.flag);
-  const teamLogoPath1 = getTeamLogoPath(player.team1_logo, 1);
-  const teamLogoPath2 = getTeamLogoPath(player.team2_logo, 2);
-  const teamLogoPath3 = getTeamLogoPath(player.team3_logo, 3);
+  const teamLogoPath1 = getTeamLogoPath(player.team1_logo);
+  const teamLogoPath2 = getTeamLogoPath(player.team2_logo);
+  const teamLogoPath3 = getTeamLogoPath(player.team3_logo);
 
   return (
     <div

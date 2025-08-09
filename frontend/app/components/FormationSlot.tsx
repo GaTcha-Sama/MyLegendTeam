@@ -34,11 +34,16 @@ const getFlagPath = (fullPath: string) => {
 
 const getTeamLogoPath = (fullPath: string) => {
   try {
+    if (!fullPath) return 'images/team-default.webp';
+    
     const normalizedPath = fullPath.replace(/\\/g, '/');
     const cleanPath = normalizedPath.replace(/^public\//, '');
-    // Convertir en WebP
-    const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-    return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
+    
+    // Ne plus convertir en WebP car les données sont déjà en .webp
+    // const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
+    
+    // S'assurer que le chemin ne commence pas par /
+    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
   } catch (error) {
     console.error("Erreur lors du traitement du chemin du logo:", error);
     return 'images/team-default.webp';
@@ -82,7 +87,6 @@ export const FormationSlot = ({
 }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
-  const [useDefaultTeamLogo, setUseDefaultTeamLogo] = useState(false);
 
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
@@ -132,8 +136,11 @@ export const FormationSlot = ({
               fill  
               className="object-contain"
               sizes="24px"
-              onError={() => setUseDefaultTeamLogo(true)}
-              unoptimized={useDefaultTeamLogo}
+              onError={(e) => {
+                console.log('Erreur de chargement logo team1:', player.team1_logo);
+                e.currentTarget.src = '/images/team-default.webp';
+              }}
+              unoptimized
             />
           </div>
         );
@@ -148,8 +155,11 @@ export const FormationSlot = ({
               fill  
               className="object-contain"
               sizes="24px"
-              onError={() => setUseDefaultTeamLogo(true)}
-              unoptimized={useDefaultTeamLogo}
+              onError={(e) => {
+                console.log('Erreur de chargement logo team2:', player.team2_logo);
+                e.currentTarget.src = '/images/team-default.webp';
+              }}
+              unoptimized
             />
           </div>
         );
@@ -164,8 +174,11 @@ export const FormationSlot = ({
               fill  
               className="object-contain"
               sizes="24px"
-              onError={() => setUseDefaultTeamLogo(true)}
-              unoptimized={useDefaultTeamLogo}
+              onError={(e) => {
+                console.log('Erreur de chargement logo team3:', player.team3_logo);
+                e.currentTarget.src = '/images/team-default.webp';
+              }}
+              unoptimized
             />
           </div>
         );
