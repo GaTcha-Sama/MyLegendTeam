@@ -216,7 +216,6 @@
       "team_logo": "images/rugby/teams/NZL/AllBlacks.webp",
       "sport_id": 1
     },
-
     {
       "id": 39,
       "name": "Fijian Drua",
@@ -250,7 +249,7 @@
     {
       "id": 44,
       "name": "Rebels",
-        "team_logo": "images/rugby/teams/AUS/Melbourne-Rebels.webp",
+      "team_logo": "images/rugby/teams/AUS/Melbourne-Rebels.webp",
       "sport_id": 1
     },
     {
@@ -394,7 +393,7 @@
     {
       "id": 81,
       "name": "Saracens",
-        "team_logo": "images/rugby/teams/ENG/Saracens.webp",
+      "team_logo": "images/rugby/teams/ENG/Saracens.webp",
       "sport_id": 1
     },
     {
@@ -502,7 +501,7 @@
     {
       "id": 99,
       "name": "Jaguares",
-        "team_logo": "images/rugby/teams/ARG/Jaguares.webp",
+      "team_logo": "images/rugby/teams/ARG/Jaguares.webp",
       "sport_id": 1
     },
     {
@@ -614,7 +613,7 @@
       "sport_id": 1
     },
     {
-      "id": 121 ,
+      "id": 121,
       "name": "Chicago",
       "team_logo": "images/rugby/teams/USA/Chicago.webp",
       "sport_id": 1
@@ -682,3169 +681,3169 @@
     {
       "id": 200,
       "name": "Montreal Canadiens",
-      "team_logo": "public/images/hockey/teams/NHL/Montreal-Canadiens.png",
+      "team_logo": "images/hockey/teams/NHL/Montreal-Canadiens.webp",
       "sport_id": 5
     },
     {
       "id": 201,
       "name": "Ottawa Senators",
-      "team_logo": "public/images/hockey/teams/NHL/Ottawa-Senators.png",
+      "team_logo": "images/hockey/teams/NHL/Ottawa-Senators.webp",
       "sport_id": 5
     },
     {
       "id": 202,
       "name": "Toronto Maple Leafs",
-      "team_logo": "public/images/hockey/teams/NHL/Toronto-Maple-Leafs.png",
+      "team_logo": "images/hockey/teams/NHL/Toronto-Maple-Leafs.webp",
       "sport_id": 5
     },
     {
       "id": 203,
       "name": "Winnipeg Jets",
-      "team_logo": "public/images/hockey/teams/NHL/Winnipeg-Jets.png",
+      "team_logo": "images/hockey/teams/NHL/Winnipeg-Jets.webp",
       "sport_id": 5
     },
     {
       "id": 204,
       "name": "Edmonton Oilers",
-      "team_logo": "public/images/hockey/teams/NHL/Edmonton-Oilers.png",
+      "team_logo": "images/hockey/teams/NHL/Edmonton-Oilers.webp",
       "sport_id": 5
     },
     {
       "id": 205,
       "name": "Calgary Flames",
-      "team_logo": "public/images/hockey/teams/NHL/Calgary-Flames.png",
+      "team_logo": "images/hockey/teams/NHL/Calgary-Flames.webp",
       "sport_id": 5
     },
     {
       "id": 206,
       "name": "Vancouver Canucks",
-      "team_logo": "public/images/hockey/teams/NHL/Vancouver-Canucks.png",
+      "team_logo": "images/hockey/teams/NHL/Vancouver-Canucks.webp",
       "sport_id": 5
     },
     {
       "id": 207,
       "name": "Seattle Kraken",
-      "team_logo": "public/images/hockey/teams/NHL/Seattle-Kraken.png",
+      "team_logo": "images/hockey/teams/NHL/Seattle-Kraken.webp",
       "sport_id": 5
     },
     {
       "id": 208,
       "name": "San Jose Sharks",
-      "team_logo": "public/images/hockey/teams/NHL/San-Jose-Sharks.png",
+      "team_logo": "images/hockey/teams/NHL/San-Jose-Sharks.webp",
       "sport_id": 5
     },
     {
       "id": 209,
       "name": "Anaheim Ducks",
-      "team_logo": "public/images/hockey/teams/NHL/Anaheim-Ducks.png",
+      "team_logo": "images/hockey/teams/NHL/Anaheim-Ducks.webp",
       "sport_id": 5
     },
     {
       "id": 210,
       "name": "Los Angeles Kings",
-      "team_logo": "public/images/hockey/teams/NHL/Los-Angeles-Kings.png",
+      "team_logo": "images/hockey/teams/NHL/Los-Angeles-Kings.webp",
       "sport_id": 5
     },
     {
       "id": 211,
       "name": "Utah Mammoth",
-      "team_logo": "public/images/hockey/teams/NHL/Utah-Mammoth.png",
+      "team_logo": "images/hockey/teams/NHL/Utah-Mammoth.webp",
       "sport_id": 5
     },
     {
       "id": 212,
       "name": "Colorado Avalanche",
-      "team_logo": "public/images/hockey/teams/NHL/Colorado-Avalanche.png",
+      "team_logo": "images/hockey/teams/NHL/Colorado-Avalanche.webp",
       "sport_id": 5
     },
     {
       "id": 213,
       "name": "Dallas Stars",
-      "team_logo": "public/images/hockey/teams/NHL/Dallas-Stars.png",
+      "team_logo": "images/hockey/teams/NHL/Dallas-Stars.webp",
       "sport_id": 5
     },
     {
       "id": 214,
       "name": "Florida Panthers",
-      "team_logo": "public/images/hockey/teams/NHL/Florida-Panthers.png",
+      "team_logo": "images/hockey/teams/NHL/Florida-Panthers.webp",
       "sport_id": 5
     },
     {
       "id": 215,
       "name": "Tampa Bay Lightning",
-      "team_logo": "public/images/hockey/teams/NHL/Tampa-Bay-Lightning.png",
+      "team_logo": "images/hockey/teams/NHL/Tampa-Bay-Lightning.webp",
       "sport_id": 5
     },
     {
       "id": 216,
       "name": "Washington Capitals",
-      "team_logo": "public/images/hockey/teams/NHL/Washington-Capitals.png",
+      "team_logo": "images/hockey/teams/NHL/Washington-Capitals.webp",
       "sport_id": 5
     },
     {
       "id": 217,
       "name": "New Jersey Devils",
-      "team_logo": "public/images/hockey/teams/NHL/New-Jersey-Devils.png",
+      "team_logo": "images/hockey/teams/NHL/New-Jersey-Devils.webp",
       "sport_id": 5
     },
     {
       "id": 218,
       "name": "New York Rangers",
-      "team_logo": "public/images/hockey/teams/NHL/New-York-Rangers.png",
+      "team_logo": "images/hockey/teams/NHL/New-York-Rangers.webp",
       "sport_id": 5
     },
     {
       "id": 219,
       "name": "New York Islanders",
-      "team_logo": "public/images/hockey/teams/NHL/New-York-Islanders.png",
+      "team_logo": "images/hockey/teams/NHL/New-York-Islanders.webp",
       "sport_id": 5
     },
     {
       "id": 220,
       "name": "Boston Bruins",
-      "team_logo": "public/images/hockey/teams/NHL/Boston-Bruins.png",
+      "team_logo": "images/hockey/teams/NHL/Boston-Bruins.webp",
       "sport_id": 5
     },
     {
       "id": 221,
       "name": "Buffalo Sabres",
-      "team_logo": "public/images/hockey/teams/NHL/Buffalo-Sabres.png",
+      "team_logo": "images/hockey/teams/NHL/Buffalo-Sabres.webp",
       "sport_id": 5
     },
     {
       "id": 222,
       "name": "Pittsburgh Penguins",
-      "team_logo": "public/images/hockey/teams/NHL/Pittsburgh-Penguins.png",
+      "team_logo": "images/hockey/teams/NHL/Pittsburgh-Penguins.webp",
       "sport_id": 5
     },
     {
       "id": 223,
       "name": "Philadelphia Flyers",
-      "team_logo": "public/images/hockey/teams/NHL/Philadelphia-Flyers.png",
+      "team_logo": "images/hockey/teams/NHL/Philadelphia-Flyers.webp",
       "sport_id": 5
     },
     {
       "id": 224,
       "name": "Detroit Red Wings",
-      "team_logo": "public/images/hockey/teams/NHL/Detroit-Red-Wings.png",
+      "team_logo": "images/hockey/teams/NHL/Detroit-Red-Wings.webp",
       "sport_id": 5
     },
     {
       "id": 225,
       "name": "Minnesota Wild",
-      "team_logo": "public/images/hockey/teams/NHL/Minnesota-Wild.png",
+      "team_logo": "images/hockey/teams/NHL/Minnesota-Wild.webp",
       "sport_id": 5
     },
     {
       "id": 226,
       "name": "Chicago Blackhawks",
-      "team_logo": "public/images/hockey/teams/NHL/Chicago-Blackhawks.png",
+      "team_logo": "images/hockey/teams/NHL/Chicago-Blackhawks.webp",
       "sport_id": 5
     },
     {
       "id": 227,
       "name": "Nashville Predators",
-      "team_logo": "public/images/hockey/teams/NHL/Nashville-Predators.png",
+      "team_logo": "images/hockey/teams/NHL/Nashville-Predators.webp",
       "sport_id": 5
     },
     {
       "id": 228,
       "name": "St. Louis Blues",
-      "team_logo": "public/images/hockey/teams/NHL/Saint-Louis-Blues.png",
+      "team_logo": "images/hockey/teams/NHL/Saint-Louis-Blues.webp",
       "sport_id": 5
     },
     {
       "id": 229,
       "name": "Vegas Golden Knights",
-      "team_logo": "public/images/hockey/teams/NHL/Vegas-Golden-Knights.png",
+      "team_logo": "images/hockey/teams/NHL/Vegas-Golden-Knights.webp",
       "sport_id": 5
     },
     {
       "id": 230,
       "name": "Columbus Blue Jackets",
-      "team_logo": "public/images/hockey/teams/NHL/Columbus-Blue-Jackets.png",
+      "team_logo": "images/hockey/teams/NHL/Columbus-Blue-Jackets.webp",
       "sport_id": 5
     },
     {
       "id": 231,
       "name": "Carolina Hurricanes",
-      "team_logo": "public/images/hockey/teams/NHL/Carolina-Hurricanes.png",
+      "team_logo": "images/hockey/teams/NHL/Carolina-Hurricanes.webp",
       "sport_id": 5
     },
     {
       "id": 232,
       "name": "Atlanta Thrashers",
-      "team_logo": "public/images/hockey/teams/NHL/Atlanta-Thrashers.png",
+      "team_logo": "images/hockey/teams/NHL/Atlanta-Thrashers.webp",
       "sport_id": 5
     },
     {
       "id": 233,
       "name": "Hartford Whalers",
-      "team_logo": "public/images/hockey/teams/NHL/Hartford-Whalers.png",
+      "team_logo": "images/hockey/teams/NHL/Hartford-Whalers.webp",
       "sport_id": 5
     },
     {
       "id": 234,
       "name": "Minnesota North Stars",
-      "team_logo": "public/images/hockey/teams/NHL/Minnesota-North-Stars.png",
+      "team_logo": "images/hockey/teams/NHL/Minnesota-North-Stars.webp",
       "sport_id": 5
     },
     {
       "id": 235,
       "name": "Arizona Coyotes",
-      "team_logo": "public/images/hockey/teams/NHL/Arizona-Coyotes.png",
+      "team_logo": "images/hockey/teams/NHL/Arizona-Coyotes.webp",
       "sport_id": 5
     },
     {
       "id": 236,
       "name": "Quebec Nordiques",
-      "team_logo": "public/images/hockey/teams/NHL/Quebec-Nordiques.png",
+      "team_logo": "images/hockey/teams/NHL/Quebec-Nordiques.webp",
       "sport_id": 5
     },
     {
       "id": 237,
       "name": "California Golden Seals",
-      "team_logo": "public/images/hockey/teams/NHL/California-Golden-Seals.png",
+      "team_logo": "images/hockey/teams/NHL/California-Golden-Seals.webp",
       "sport_id": 5
     },
     {
       "id": 300,
       "name": "Atlanta Hawks",
-      "team_logo": "public/images/basketball/teams/NBA/Atlanta-Hawks.png",
+      "team_logo": "images/basketball/teams/NBA/Atlanta-Hawks.webp",
       "sport_id": 2
     },
     {
       "id": 301,
       "name": "Boston Celtics",
-      "team_logo": "public/images/basketball/teams/NBA/Boston-Celtics.png",
+      "team_logo": "images/basketball/teams/NBA/Boston-Celtics.webp",
       "sport_id": 2
     },
     {
       "id": 302,
       "name": "Brooklyn Nets",
-      "team_logo": "public/images/basketball/teams/NBA/Brooklyn-Nets.png",
+      "team_logo": "images/basketball/teams/NBA/Brooklyn-Nets.webp",
       "sport_id": 2
     },
     {
       "id": 303,
       "name": "Charlotte Hornets",
-      "team_logo": "public/images/basketball/teams/NBA/Charlotte-Hornets.png",
+      "team_logo": "images/basketball/teams/NBA/Charlotte-Hornets.webp",
       "sport_id": 2
     },
     {
       "id": 304,
       "name": "Chicago Bulls",
-      "team_logo": "public/images/basketball/teams/NBA/Chicago-Bulls.png",
+      "team_logo": "images/basketball/teams/NBA/Chicago-Bulls.webp",
       "sport_id": 2
     },
     {
       "id": 305,
       "name": "Cleveland Cavaliers",
-      "team_logo": "public/images/basketball/teams/NBA/Cleveland-Cavaliers.png",
+      "team_logo": "images/basketball/teams/NBA/Cleveland-Cavaliers.webp",
       "sport_id": 2
     },
     {
       "id": 306,
       "name": "Dallas Mavericks",
-      "team_logo": "public/images/basketball/teams/NBA/Dallas-Mavericks.png",
+      "team_logo": "images/basketball/teams/NBA/Dallas-Mavericks.webp",
       "sport_id": 2
     },
     {
       "id": 307,
       "name": "Denver Nuggets",
-      "team_logo": "public/images/basketball/teams/NBA/Denver-Nuggets.png",
+      "team_logo": "images/basketball/teams/NBA/Denver-Nuggets.webp",
       "sport_id": 2
     },
     {
       "id": 308,
       "name": "Detroit Pistons",
-      "team_logo": "public/images/basketball/teams/NBA/Detroit-Pistons.png",
+      "team_logo": "images/basketball/teams/NBA/Detroit-Pistons.webp",
       "sport_id": 2
     },
     {
       "id": 309,
       "name": "Golden State Warriors",
-      "team_logo": "public/images/basketball/teams/NBA/Golden-State-Warriors.png",
+      "team_logo": "images/basketball/teams/NBA/Golden-State-Warriors.webp",
       "sport_id": 2
     },
     {
       "id": 310,
       "name": "Houston Rockets",
-      "team_logo": "public/images/basketball/teams/NBA/Houston-Rockets.png",
+      "team_logo": "images/basketball/teams/NBA/Houston-Rockets.webp",
       "sport_id": 2
     },
     {
       "id": 311,
       "name": "Indiana Pacers",
-      "team_logo": "public/images/basketball/teams/NBA/Indiana-Pacers.png",
+      "team_logo": "images/basketball/teams/NBA/Indiana-Pacers.webp",
       "sport_id": 2
     },
     {
       "id": 312,
       "name": "Los Angeles Clippers",
-      "team_logo": "public/images/basketball/teams/NBA/Los-Angeles-Clippers.png",
+      "team_logo": "images/basketball/teams/NBA/Los-Angeles-Clippers.webp",
       "sport_id": 2
     },
     {
       "id": 313,
       "name": "Los Angeles Lakers",
-      "team_logo": "public/images/basketball/teams/NBA/Los-Angeles-Lakers.png",
+      "team_logo": "images/basketball/teams/NBA/Los-Angeles-Lakers.webp",
       "sport_id": 2
     },
     {
       "id": 314,
       "name": "Memphis Grizzlies",
-      "team_logo": "public/images/basketball/teams/NBA/Memphis-Grizzlies.png",
+      "team_logo": "images/basketball/teams/NBA/Memphis-Grizzlies.webp",
       "sport_id": 2
     },
     {
       "id": 315,
       "name": "Miami Heat",
-      "team_logo": "public/images/basketball/teams/NBA/Miami-Heat.png",
+      "team_logo": "images/basketball/teams/NBA/Miami-Heat.webp",
       "sport_id": 2
     },
     {
       "id": 316,
       "name": "Milwaukee Bucks",
-      "team_logo": "public/images/basketball/teams/NBA/Milwaukee-Bucks.png",
+      "team_logo": "images/basketball/teams/NBA/Milwaukee-Bucks.webp",
       "sport_id": 2
     },
     {
       "id": 317,
       "name": "Minnesota Timberwolves",
-      "team_logo": "public/images/basketball/teams/NBA/Minnesota-Timberwolves.png",
+      "team_logo": "images/basketball/teams/NBA/Minnesota-Timberwolves.webp",
       "sport_id": 2
     },
     {
       "id": 318,
       "name": "New Orleans Pelicans",
-      "team_logo": "public/images/basketball/teams/NBA/New-Orleans-Pelicans.png",
+      "team_logo": "images/basketball/teams/NBA/New-Orleans-Pelicans.webp",
       "sport_id": 2
     },
     {
       "id": 319,
       "name": "New York Knicks",
-      "team_logo": "public/images/basketball/teams/NBA/New-York-Knicks.png",
+      "team_logo": "images/basketball/teams/NBA/New-York-Knicks.webp",
       "sport_id": 2
     },
     {
       "id": 320,
       "name": "Oklahoma City Thunder",
-      "team_logo": "public/images/basketball/teams/NBA/Oklahoma-City-Thunder.png",
+      "team_logo": "images/basketball/teams/NBA/Oklahoma-City-Thunder.webp",
       "sport_id": 2
     },
     {
       "id": 321,
       "name": "Orlando Magic",
-      "team_logo": "public/images/basketball/teams/NBA/Orlando-Magic.png",
+      "team_logo": "images/basketball/teams/NBA/Orlando-Magic.webp",
       "sport_id": 2
     },
     {
       "id": 322,
       "name": "Philadelphia 76ers",
-      "team_logo": "public/images/basketball/teams/NBA/Philadelphia-76ers.png",
+      "team_logo": "images/basketball/teams/NBA/Philadelphia-76ers.webp",
       "sport_id": 2
     },
     {
       "id": 323,
       "name": "Phoenix Suns",
-      "team_logo": "public/images/basketball/teams/NBA/Phoenix-Suns.png",
+      "team_logo": "images/basketball/teams/NBA/Phoenix-Suns.webp",
       "sport_id": 2
     },
     {
       "id": 324,
       "name": "Portland Trail Blazers",
-      "team_logo": "public/images/basketball/teams/NBA/Portland-Trail-Blazers.png",
+      "team_logo": "images/basketball/teams/NBA/Portland-Trail-Blazers.webp",
       "sport_id": 2
     },
     {
       "id": 325,
       "name": "Sacramento Kings",
-      "team_logo": "public/images/basketball/teams/NBA/Sacramento-Kings.png",
+      "team_logo": "images/basketball/teams/NBA/Sacramento-Kings.webp",
       "sport_id": 2
     },
     {
       "id": 326,
       "name": "San Antonio Spurs",
-      "team_logo": "public/images/basketball/teams/NBA/San-Antonio-Spurs.png",
+      "team_logo": "images/basketball/teams/NBA/San-Antonio-Spurs.webp",
       "sport_id": 2
     },
     {
       "id": 327,
       "name": "Seattle SuperSonics",
-      "team_logo": "public/images/basketball/teams/NBA/Seattle-SuperSonics.png",
+      "team_logo": "images/basketball/teams/NBA/Seattle-SuperSonics.webp",
       "sport_id": 2
     },
     {
       "id": 328,
       "name": "Toronto Raptors",
-      "team_logo": "public/images/basketball/teams/NBA/Toronto-Raptors.png",
+      "team_logo": "images/basketball/teams/NBA/Toronto-Raptors.webp",
       "sport_id": 2
     },
     {
       "id": 329,
       "name": "Utah Jazz",
-      "team_logo": "public/images/basketball/teams/NBA/Utah-Jazz.png",
+      "team_logo": "images/basketball/teams/NBA/Utah-Jazz.webp",
       "sport_id": 2
     },
     {
       "id": 330,
       "name": "Washington Wizards",
-      "team_logo": "public/images/basketball/teams/NBA/Washington-Wizards.png",
+      "team_logo": "images/basketball/teams/NBA/Washington-Wizards.webp",
       "sport_id": 2
     },
     {
       "id": 331,
       "name": "Charlotte Bobcats",
-      "team_logo": "public/images/basketball/teams/NBA/Charlotte-Bobcats.png",
+      "team_logo": "images/basketball/teams/NBA/Charlotte-Bobcats.webp",
       "sport_id": 2
     },
     {
       "id": 332,
       "name": "New Jersey Nets",
-      "team_logo": "public/images/basketball/teams/NBA/New-Jersey-Nets.png",
+      "team_logo": "images/basketball/teams/NBA/New-Jersey-Nets.webp",
       "sport_id": 2
     },
     {
       "id": 500,
       "name": "Arsenal",
-      "team_logo": "public/images/football/teams/ENG/Arsenal.png",
+      "team_logo": "images/football/teams/ENG/Arsenal.webp",
       "sport_id": 3
     },
     {
       "id": 501,
-      "name": "Aston Villa" ,
-      "team_logo": "public/images/football/teams/ENG/Aston-Villa.png",
+      "name": "Aston Villa",
+      "team_logo": "images/football/teams/ENG/Aston-Villa.webp",
       "sport_id": 3
     },
     {
       "id": 502,
       "name": "Barnsley",
-      "team_logo": "public/images/football/teams/ENG/Barnsley.png",
+      "team_logo": "images/football/teams/ENG/Barnsley.webp",
       "sport_id": 3
     },
     {
       "id": 503,
       "name": "Birmingham",
-      "team_logo": "public/images/football/teams/ENG/Birmingham.png",
+      "team_logo": "images/football/teams/ENG/Birmingham.webp",
       "sport_id": 3
     },
     {
       "id": 504,
       "name": "Blackburn",
-      "team_logo": "public/images/football/teams/ENG/Blackburn.png",
+      "team_logo": "images/football/teams/ENG/Blackburn.webp",
       "sport_id": 3
     },
     {
       "id": 505,
       "name": "Blackpool",
-      "team_logo": "public/images/football/teams/ENG/Blackpool.png",
+      "team_logo": "images/football/teams/ENG/Blackpool.webp",
       "sport_id": 3
     },
     {
       "id": 506,
       "name": "Bolton",
-      "team_logo": "public/images/football/teams/ENG/Bolton.png",
+      "team_logo": "images/football/teams/ENG/Bolton.webp",
       "sport_id": 3
     },
     {
       "id": 507,
       "name": "Bournemouth",
-      "team_logo": "public/images/football/teams/ENG/Bournemouth.png",
+      "team_logo": "images/football/teams/ENG/Bournemouth.webp",
       "sport_id": 3
     },
     {
       "id": 508,
       "name": "Brentford",
-      "team_logo": "public/images/football/teams/ENG/Brentford.png",
+      "team_logo": "images/football/teams/ENG/Brentford.webp",
       "sport_id": 3
     },
     {
       "id": 509,
       "name": "Brighton",
-      "team_logo": "public/images/football/teams/ENG/Brighton.png",
+      "team_logo": "images/football/teams/ENG/Brighton.webp",
       "sport_id": 3
     },
     {
       "id": 510,
       "name": "Bristol",
-      "team_logo": "public/images/football/teams/ENG/Bristol.png",
+      "team_logo": "images/football/teams/ENG/Bristol.webp",
       "sport_id": 3
     },
     {
       "id": 511,
       "name": "Burnley",
-      "team_logo": "public/images/football/teams/ENG/Burnley.png",
+      "team_logo": "images/football/teams/ENG/Burnley.webp",
       "sport_id": 3
     },
     {
       "id": 512,
       "name": "Burton",
-      "team_logo": "public/images/football/teams/ENG/Burton.png",
+      "team_logo": "images/football/teams/ENG/Burton.webp",
       "sport_id": 3
     },
     {
       "id": 513,
       "name": "Cambridge",
-      "team_logo": "public/images/football/teams/ENG/Cambridge.png",
+      "team_logo": "images/football/teams/ENG/Cambridge.webp",
       "sport_id": 3
     },
     {
       "id": 514,
       "name": "Charlton",
-      "team_logo": "public/images/football/teams/ENG/Charlton.png",
+      "team_logo": "images/football/teams/ENG/Charlton.webp",
       "sport_id": 3
     },
     {
       "id": 515,
       "name": "Chelsea",
-      "team_logo": "public/images/football/teams/ENG/Chelsea.png",
+      "team_logo": "images/football/teams/ENG/Chelsea.webp",
       "sport_id": 3
     },
     {
       "id": 516,
       "name": "Coventry",
-      "team_logo": "public/images/football/teams/ENG/Coventry.png",
+      "team_logo": "images/football/teams/ENG/Coventry.webp",
       "sport_id": 3
     },
     {
       "id": 517,
       "name": "Crystal Palace",
-      "team_logo": "public/images/football/teams/ENG/Crystal-Palace.png",
+      "team_logo": "images/football/teams/ENG/Crystal-Palace.webp",
       "sport_id": 3
     },
     {
       "id": 518,
       "name": "Derby County",
-      "team_logo": "public/images/football/teams/ENG/Derby-County.png",
+      "team_logo": "images/football/teams/ENG/Derby-County.webp",
       "sport_id": 3
     },
     {
       "id": 519,
       "name": "Everton",
-      "team_logo": "public/images/football/teams/ENG/Everton.png",
+      "team_logo": "images/football/teams/ENG/Everton.webp",
       "sport_id": 3
     },
     {
       "id": 520,
       "name": "Fulham",
-      "team_logo": "public/images/football/teams/ENG/Fulham.png",
+      "team_logo": "images/football/teams/ENG/Fulham.webp",
       "sport_id": 3
     },
     {
       "id": 521,
       "name": "Huddersfield",
-      "team_logo": "public/images/football/teams/ENG/Huddersfield.png",
+      "team_logo": "images/football/teams/ENG/Huddersfield.webp",
       "sport_id": 3
     },
     {
       "id": 522,
       "name": "Hull City",
-      "team_logo": "public/images/football/teams/ENG/Hull.png",
+      "team_logo": "images/football/teams/ENG/Hull.webp",
       "sport_id": 3
     },
     {
       "id": 523,
       "name": "Ipswich Town",
-      "team_logo": "public/images/football/teams/ENG/Ipswich.png",
+      "team_logo": "images/football/teams/ENG/Ipswich.webp",
       "sport_id": 3
     },
     {
       "id": 524,
       "name": "Leeds United",
-      "team_logo": "public/images/football/teams/ENG/Leeds.png",
+      "team_logo": "images/football/teams/ENG/Leeds.webp",
       "sport_id": 3
     },
     {
       "id": 525,
       "name": "Leicester",
-      "team_logo": "public/images/football/teams/ENG/Leicester.png",
+      "team_logo": "images/football/teams/ENG/Leicester.webp",
       "sport_id": 3
     },
     {
       "id": 526,
       "name": "Liverpool",
-      "team_logo": "public/images/football/teams/ENG/Liverpool.png",
+      "team_logo": "images/football/teams/ENG/Liverpool.webp",
       "sport_id": 3
     },
     {
       "id": 527,
       "name": "Luton",
-      "team_logo": "public/images/football/teams/ENG/Luton.png",
+      "team_logo": "images/football/teams/ENG/Luton.webp",
       "sport_id": 3
     },
     {
       "id": 528,
       "name": "Manchester City",
-      "team_logo": "public/images/football/teams/ENG/Manchester-City.png",
+      "team_logo": "images/football/teams/ENG/Manchester-City.webp",
       "sport_id": 3
     },
     {
       "id": 529,
       "name": "Manchester United",
-      "team_logo": "public/images/football/teams/ENG/Manchester-United.png",
+      "team_logo": "images/football/teams/ENG/Manchester-United.webp",
       "sport_id": 3
     },
     {
       "id": 530,
       "name": "Middlesbrough",
-      "team_logo": "public/images/football/teams/ENG/Middlesbrough.png",
+      "team_logo": "images/football/teams/ENG/Middlesbrough.webp",
       "sport_id": 3
     },
     {
       "id": 531,
       "name": "Millwall",
-      "team_logo": "public/images/football/teams/ENG/Millwall.png",
+      "team_logo": "images/football/teams/ENG/Millwall.webp",
       "sport_id": 3
     },
     {
       "id": 532,
       "name": "Newcastle",
-      "team_logo": "public/images/football/teams/ENG/Newcastle.png",
+      "team_logo": "images/football/teams/ENG/Newcastle.webp",
       "sport_id": 3
     },
     {
       "id": 533,
       "name": "Norwich",
-      "team_logo": "public/images/football/teams/ENG/Norwich.png",
+      "team_logo": "images/football/teams/ENG/Norwich.webp",
       "sport_id": 3
     },
     {
       "id": 534,
       "name": "Nottingham Forest",
-      "team_logo": "public/images/football/teams/ENG/Nottingham.png",
+      "team_logo": "images/football/teams/ENG/Nottingham.webp",
       "sport_id": 3
     },
     {
       "id": 535,
       "name": "Portsmouth",
-      "team_logo": "public/images/football/teams/ENG/Portsmouth.png",
+      "team_logo": "images/football/teams/ENG/Portsmouth.webp",
       "sport_id": 3
     },
     {
       "id": 536,
       "name": "Preston",
-      "team_logo": "public/images/football/teams/ENG/Preston.png",
+      "team_logo": "images/football/teams/ENG/Preston.webp",
       "sport_id": 3
     },
     {
       "id": 537,
       "name": "Queens Park Rangers",
-      "team_logo": "public/images/football/teams/ENG/QPR.png",
+      "team_logo": "images/football/teams/ENG/QPR.webp",
       "sport_id": 3
     },
     {
       "id": 538,
       "name": "Reading",
-      "team_logo": "public/images/football/teams/ENG/Reading.png",
+      "team_logo": "images/football/teams/ENG/Reading.webp",
       "sport_id": 3
     },
     {
       "id": 539,
       "name": "Rotherham",
-      "team_logo": "public/images/football/teams/ENG/Rotherham.png",
+      "team_logo": "images/football/teams/ENG/Rotherham.webp",
       "sport_id": 3
     },
     {
       "id": 540,
       "name": "Sheffield United",
-      "team_logo": "public/images/football/teams/ENG/Sheffield-United.png",
+      "team_logo": "images/football/teams/ENG/Sheffield-United.webp",
       "sport_id": 3
     },
     {
       "id": 541,
       "name": "Sheffield Wednesday",
-      "team_logo": "public/images/football/teams/ENG/Sheffield-Wednesday.png",
+      "team_logo": "images/football/teams/ENG/Sheffield-Wednesday.webp",
       "sport_id": 3
     },
     {
       "id": 542,
       "name": "Southampton",
-      "team_logo": "public/images/football/teams/ENG/Southampton.webp",
+      "team_logo": "images/football/teams/ENG/Southampton.webp",
       "sport_id": 3
     },
     {
       "id": 543,
       "name": "Stoke City",
-      "team_logo": "public/images/football/teams/ENG/Stoke.png",
+      "team_logo": "images/football/teams/ENG/Stoke.webp",
       "sport_id": 3
     },
     {
       "id": 544,
       "name": "Sunderland",
-      "team_logo": "public/images/football/teams/ENG/Sunderland.png",
+      "team_logo": "images/football/teams/ENG/Sunderland.webp",
       "sport_id": 3
     },
     {
       "id": 545,
       "name": "Tottenham",
-      "team_logo": "public/images/football/teams/ENG/Tottenham.png",
+      "team_logo": "images/football/teams/ENG/Tottenham.webp",
       "sport_id": 3
     },
     {
       "id": 546,
       "name": "Watford",
-      "team_logo": "public/images/football/teams/ENG/Watford.png",
+      "team_logo": "images/football/teams/ENG/Watford.webp",
       "sport_id": 3
     },
     {
       "id": 547,
       "name": "West Ham",
-      "team_logo": "public/images/football/teams/ENG/West-Ham.png",
+      "team_logo": "images/football/teams/ENG/West-Ham.webp",
       "sport_id": 3
     },
     {
       "id": 548,
       "name": "West Bromwich Albion",
-      "team_logo": "public/images/football/teams/ENG/WBA.png",
+      "team_logo": "images/football/teams/ENG/WBA.webp",
       "sport_id": 3
     },
     {
       "id": 549,
       "name": "Wigan",
-      "team_logo": "public/images/football/teams/ENG/Wigan.png",
+      "team_logo": "images/football/teams/ENG/Wigan.webp",
       "sport_id": 3
     },
     {
       "id": 550,
       "name": "Wolverhampton",
-      "team_logo": "public/images/football/teams/ENG/Wolves.png",
+      "team_logo": "images/football/teams/ENG/Wolves.webp",
       "sport_id": 3
     },
     {
       "id": 600,
       "name": "Alaves",
-      "team_logo": "public/images/football/teams/ESP/Alaves.png",
+      "team_logo": "images/football/teams/ESP/Alaves.webp",
       "sport_id": 3
     },
     {
       "id": 601,
       "name": "Almeria",
-      "team_logo": "public/images/football/teams/ESP/Almeria.png",
+      "team_logo": "images/football/teams/ESP/Almeria.webp",
       "sport_id": 3
     },
     {
       "id": 602,
       "name": "Atletico Madrid",
-      "team_logo": "public/images/football/teams/ESP/Atletico-Madrid.png",
+      "team_logo": "images/football/teams/ESP/Atletico-Madrid.webp",
       "sport_id": 3
     },
     {
       "id": 603,
       "name": "FC Barcelona",
-      "team_logo": "public/images/football/teams/ESP/Barcelona.png",
+      "team_logo": "images/football/teams/ESP/Barcelona.webp",
       "sport_id": 3
     },
     {
       "id": 604,
       "name": "Betis",
-      "team_logo": "public/images/football/teams/ESP/Betis.png",
+      "team_logo": "images/football/teams/ESP/Betis.webp",
       "sport_id": 3
     },
     {
       "id": 605,
       "name": "Athletic Bilbao",
-      "team_logo": "public/images/football/teams/ESP/Bilbao.png",
+      "team_logo": "images/football/teams/ESP/Bilbao.webp",
       "sport_id": 3
     },
     {
       "id": 606,
       "name": "Burgos",
-      "team_logo": "public/images/football/teams/ESP/Burgos.png",
+      "team_logo": "images/football/teams/ESP/Burgos.webp",
       "sport_id": 3
     },
     {
       "id": 607,
       "name": "Cadiz",
-      "team_logo": "public/images/football/teams/ESP/Cadiz.png",
+      "team_logo": "images/football/teams/ESP/Cadiz.webp",
       "sport_id": 3
     },
     {
       "id": 608,
       "name": "Eibar",
-      "team_logo": "public/images/football/teams/ESP/Eibar.png",
+      "team_logo": "images/football/teams/ESP/Eibar.webp",
       "sport_id": 3
     },
     {
       "id": 609,
       "name": "Elche",
-      "team_logo": "public/images/football/teams/ESP/Elche.png",
+      "team_logo": "images/football/teams/ESP/Elche.webp",
       "sport_id": 3
     },
     {
       "id": 610,
       "name": "Espanyol Barcelona",
-      "team_logo": "public/images/football/teams/ESP/Espanyol.png",
+      "team_logo": "images/football/teams/ESP/Espanyol.webp",
       "sport_id": 3
     },
     {
       "id": 611,
       "name": "Getafe",
-      "team_logo": "public/images/football/teams/ESP/Getafe.png",
+      "team_logo": "images/football/teams/ESP/Getafe.webp",
       "sport_id": 3
     },
     {
       "id": 612,
       "name": "Gijon",
-      "team_logo": "public/images/football/teams/ESP/Gijon.png",
+      "team_logo": "images/football/teams/ESP/Gijon.webp",
       "sport_id": 3
     },
     {
       "id": 613,
       "name": "Girona",
-      "team_logo": "public/images/football/teams/ESP/Girona.png",
+      "team_logo": "images/football/teams/ESP/Girona.webp",
       "sport_id": 3
     },
     {
       "id": 614,
       "name": "Granada",
-      "team_logo": "public/images/football/teams/ESP/Granada.png",
+      "team_logo": "images/football/teams/ESP/Granada.webp",
       "sport_id": 3
     },
     {
       "id": 615,
       "name": "Huesca",
-      "team_logo": "public/images/football/teams/ESP/Huesca.png",
+      "team_logo": "images/football/teams/ESP/Huesca.webp",
       "sport_id": 3
     },
     {
       "id": 616,
       "name": "Deportivo La Coruna",
-      "team_logo": "public/images/football/teams/ESP/La-Coruna.png",
+      "team_logo": "images/football/teams/ESP/La-Coruna.webp",
       "sport_id": 3
     },
     {
       "id": 617,
       "name": "Leganes",
-      "team_logo": "public/images/football/teams/ESP/Leganes.png",
+      "team_logo": "images/football/teams/ESP/Leganes.webp",
       "sport_id": 3
     },
     {
       "id": 618,
       "name": "Levante",
-      "team_logo": "public/images/football/teams/ESP/Levante.png",
+      "team_logo": "images/football/teams/ESP/Levante.webp",
       "sport_id": 3
     },
     {
       "id": 619,
       "name": "Malaga",
-      "team_logo": "public/images/football/teams/ESP/Malaga.png",
+      "team_logo": "images/football/teams/ESP/Malaga.webp",
       "sport_id": 3
     },
     {
       "id": 620,
       "name": "Mallorca",
-      "team_logo": "public/images/football/teams/ESP/Mallorca.png",
+      "team_logo": "images/football/teams/ESP/Mallorca.webp",
       "sport_id": 3
     },
     {
       "id": 621,
       "name": "Osasuna",
-      "team_logo": "public/images/football/teams/ESP/Osasuna.png",
+      "team_logo": "images/football/teams/ESP/Osasuna.webp",
       "sport_id": 3
     },
     {
       "id": 622,
       "name": "Oviedo",
-      "team_logo": "public/images/football/teams/ESP/Oviedo.png",
+      "team_logo": "images/football/teams/ESP/Oviedo.webp",
       "sport_id": 3
     },
     {
       "id": 623,
       "name": "Real Madrid",
-      "team_logo": "public/images/football/teams/ESP/Real-Madrid.png",
+      "team_logo": "images/football/teams/ESP/Real-Madrid.webp",
       "sport_id": 3
     },
     {
       "id": 624,
       "name": "Real Sociedad",
-      "team_logo": "public/images/football/teams/ESP/Real-Sociedad.png",
+      "team_logo": "images/football/teams/ESP/Real-Sociedad.webp",
       "sport_id": 3
     },
     {
       "id": 625,
       "name": "Real Zaragoza",
-      "team_logo": "public/images/football/teams/ESP/Zaragoza.png",
+      "team_logo": "images/football/teams/ESP/Zaragoza.webp",
       "sport_id": 3
     },
     {
       "id": 626,
       "name": "Rayo Vallecano",
-      "team_logo": "public/images/football/teams/ESP/Vallecano.png",
+      "team_logo": "images/football/teams/ESP/Vallecano.webp",
       "sport_id": 3
     },
     {
       "id": 627,
       "name": "Real Valladolid",
-      "team_logo": "public/images/football/teams/ESP/Valladolid.png",
+      "team_logo": "images/football/teams/ESP/Valladolid.webp",
       "sport_id": 3
     },
     {
       "id": 628,
       "name": "Sevilla",
-      "team_logo": "public/images/football/teams/ESP/Sevilla.png",
+      "team_logo": "images/football/teams/ESP/Sevilla.webp",
       "sport_id": 3
     },
     {
       "id": 629,
       "name": "Tenerife",
-      "team_logo": "public/images/football/teams/ESP/Tenerife.png",
+      "team_logo": "images/football/teams/ESP/Tenerife.webp",
       "sport_id": 3
     },
     {
       "id": 630,
       "name": "Valencia",
-      "team_logo": "public/images/football/teams/ESP/Valencia.png",
+      "team_logo": "images/football/teams/ESP/Valencia.webp",
       "sport_id": 3
     },
     {
       "id": 631,
       "name": "Celta Vigo",
-      "team_logo": "public/images/football/teams/ESP/Vigo.png",
+      "team_logo": "images/football/teams/ESP/Vigo.webp",
       "sport_id": 3
     },
     {
       "id": 632,
       "name": "Villarreal",
-      "team_logo": "public/images/football/teams/ESP/Villarreal.png",
+      "team_logo": "images/football/teams/ESP/Villarreal.webp",
       "sport_id": 3
     },
     {
       "id": 700,
       "name": "Augsburg",
-      "team_logo": "public/images/football/teams/GER/Augsburg.png",
+      "team_logo": "images/football/teams/GER/Augsburg.webp",
       "sport_id": 3
     },
     {
       "id": 701,
       "name": "Bayern Munich",
-      "team_logo": "public/images/football/teams/GER/Bayern.png",
+      "team_logo": "images/football/teams/GER/Bayern.webp",
       "sport_id": 3
     },
     {
       "id": 702,
       "name": "Bochum",
-      "team_logo": "public/images/football/teams/GER/Bochum.png",
+      "team_logo": "images/football/teams/GER/Bochum.webp",
       "sport_id": 3
     },
     {
       "id": 703,
       "name": "Braunschweig",
-      "team_logo": "public/images/football/teams/GER/Braunschweig.png",
+      "team_logo": "images/football/teams/GER/Braunschweig.webp",
       "sport_id": 3
     },
     {
       "id": 704,
       "name": "Werder Bremen",
-      "team_logo": "public/images/football/teams/GER/Werder-Breme.png",
+      "team_logo": "images/football/teams/GER/Werder-Breme.webp",
       "sport_id": 3
     },
     {
       "id": 705,
       "name": "Borussia Dortmund",
-      "team_logo": "public/images/football/teams/GER/Dortmund.png",
+      "team_logo": "images/football/teams/GER/Dortmund.webp",
       "sport_id": 3
     },
     {
       "id": 706,
       "name": "Dusseldorf",
-      "team_logo": "public/images/football/teams/GER/Dusseldorf.png",
+      "team_logo": "images/football/teams/GER/Dusseldorf.webp",
       "sport_id": 3
     },
     {
       "id": 707,
       "name": "Eintracht Frankfurt",
-      "team_logo": "public/images/football/teams/GER/Frankfurt.png",
+      "team_logo": "images/football/teams/GER/Frankfurt.webp",
       "sport_id": 3
     },
     {
       "id": 708,
       "name": "Freiburg",
-      "team_logo": "public/images/football/teams/GER/Freiburg.png",
+      "team_logo": "images/football/teams/GER/Freiburg.webp",
       "sport_id": 3
     },
     {
       "id": 709,
       "name": "Hamburger SV",
-      "team_logo": "public/images/football/teams/GER/Hamburg.png",
+      "team_logo": "images/football/teams/GER/Hamburg.webp",
       "sport_id": 3
     },
     {
       "id": 710,
       "name": "Hannover",
-      "team_logo": "public/images/football/teams/GER/Hannover.png",
+      "team_logo": "images/football/teams/GER/Hannover.webp",
       "sport_id": 3
     },
     {
       "id": 711,
       "name": "Hertha Berlin",
-      "team_logo": "public/images/football/teams/GER/Hertha-Berlin.png",
+      "team_logo": "images/football/teams/GER/Hertha-Berlin.webp",
       "sport_id": 3
     },
     {
       "id": 712,
       "name": "Hoffenheim",
-      "team_logo": "public/images/football/teams/GER/Hoffenheim.png",
+      "team_logo": "images/football/teams/GER/Hoffenheim.webp",
       "sport_id": 3
     },
     {
       "id": 713,
       "name": "Kaiserslautern",
-      "team_logo": "public/images/football/teams/GER/Kaiserslautern.png",
+      "team_logo": "images/football/teams/GER/Kaiserslautern.webp",
       "sport_id": 3
     },
     {
       "id": 714,
       "name": "Karlsruhe",
-      "team_logo": "public/images/football/teams/GER/Karlsruhe.png",
+      "team_logo": "images/football/teams/GER/Karlsruhe.webp",
       "sport_id": 3
     },
     {
       "id": 715,
       "name": "Kiel",
-      "team_logo": "public/images/football/teams/GER/Kiel.png",
+      "team_logo": "images/football/teams/GER/Kiel.webp",
       "sport_id": 3
     },
     {
       "id": 716,
       "name": "Koln",
-      "team_logo": "public/images/football/teams/GER/Koln.png",
+      "team_logo": "images/football/teams/GER/Koln.webp",
       "sport_id": 3
     },
     {
       "id": 717,
       "name": "RB Leipzig",
-      "team_logo": "public/images/football/teams/GER/Leipzig.png",
+      "team_logo": "images/football/teams/GER/Leipzig.webp",
       "sport_id": 3
     },
     {
       "id": 718,
       "name": "Bayer Leverkusen",
-      "team_logo": "public/images/football/teams/GER/Leverkusen.png",
+      "team_logo": "images/football/teams/GER/Leverkusen.webp",
       "sport_id": 3
     },
     {
       "id": 719,
       "name": "Mainz",
-      "team_logo": "public/images/football/teams/GER/Mainz.png",
+      "team_logo": "images/football/teams/GER/Mainz.webp",
       "sport_id": 3
     },
     {
       "id": 720,
       "name": "M'gladbach",
-      "team_logo": "public/images/football/teams/GER/Monchengladbach.png",
+      "team_logo": "images/football/teams/GER/Monchengladbach.webp",
       "sport_id": 3
     },
     {
       "id": 721,
       "name": "Nurnberg",
-      "team_logo": "public/images/football/teams/GER/Nurnberg.png",
+      "team_logo": "images/football/teams/GER/Nurnberg.webp",
       "sport_id": 3
     },
     {
       "id": 722,
       "name": "Paderborn",
-      "team_logo": "public/images/football/teams/GER/Paderborn.png",
+      "team_logo": "images/football/teams/GER/Paderborn.webp",
       "sport_id": 3
     },
     {
       "id": 723,
       "name": "Sankt Pauli",
-      "team_logo": "public/images/football/teams/GER/Sankt-Pauli.png",
+      "team_logo": "images/football/teams/GER/Sankt-Pauli.webp",
       "sport_id": 3
     },
     {
       "id": 724,
       "name": "Schalke 04",
-      "team_logo": "public/images/football/teams/GER/Schalke.webp",
+      "team_logo": "images/football/teams/GER/Schalke.webp",
       "sport_id": 3
     },
     {
       "id": 725,
       "name": "VfB Stuttgart",
-      "team_logo": "public/images/football/teams/GER/Stuttgart.png",
+      "team_logo": "images/football/teams/GER/Stuttgart.webp",
       "sport_id": 3
     },
     {
       "id": 726,
       "name": "Union Berlin",
-      "team_logo": "public/images/football/teams/GER/Union-Berlin.png",
+      "team_logo": "images/football/teams/GER/Union-Berlin.webp",
       "sport_id": 3
     },
     {
       "id": 727,
       "name": "Wolfsburg",
-      "team_logo": "public/images/football/teams/GER/Wolfsburg.png",
+      "team_logo": "images/football/teams/GER/Wolfsburg.webp",
       "sport_id": 3
     },
     {
       "id": 800,
       "name": "AC Milan",
-      "team_logo": "public/images/football/teams/ITA/AC-Milan.png",
+      "team_logo": "images/football/teams/ITA/AC-Milan.webp",
       "sport_id": 3
     },
     {
       "id": 801,
       "name": "Atalanta Bergamo",
-      "team_logo": "public/images/football/teams/ITA/Atalanta-Bergame.png",
+      "team_logo": "images/football/teams/ITA/Atalanta-Bergame.webp",
       "sport_id": 3
     },
     {
       "id": 802,
       "name": "Bari",
-      "team_logo": "public/images/football/teams/ITA/Bari.png",
+      "team_logo": "images/football/teams/ITA/Bari.webp",
       "sport_id": 3
     },
     {
       "id": 803,
       "name": "Bologna",
-      "team_logo": "public/images/football/teams/ITA/Bologna.png",
+      "team_logo": "images/football/teams/ITA/Bologna.webp",
       "sport_id": 3
     },
     {
       "id": 804,
       "name": "Bolzano",
-      "team_logo": "public/images/football/teams/ITA/Bolzano.png",
+      "team_logo": "images/football/teams/ITA/Bolzano.webp",
       "sport_id": 3
     },
     {
       "id": 805,
       "name": "Brescia",
-      "team_logo": "public/images/football/teams/ITA/Brescia.png",
+      "team_logo": "images/football/teams/ITA/Brescia.webp",
       "sport_id": 3
     },
     {
       "id": 806,
       "name": "Cagliari",
-      "team_logo": "public/images/football/teams/ITA/Cagliari.png",
+      "team_logo": "images/football/teams/ITA/Cagliari.webp",
       "sport_id": 3
     },
     {
       "id": 807,
       "name": "Chievo Verona",
-      "team_logo": "public/images/football/teams/ITA/Chievo-Verona.png",
+      "team_logo": "images/football/teams/ITA/Chievo-Verona.webp",
       "sport_id": 3
     },
     {
       "id": 808,
       "name": "Empoli",
-      "team_logo": "public/images/football/teams/ITA/Empoli.png",
+      "team_logo": "images/football/teams/ITA/Empoli.webp",
       "sport_id": 3
     },
     {
       "id": 809,
       "name": "Fiorentina",
-      "team_logo": "public/images/football/teams/ITA/Fiorentina.png",
+      "team_logo": "images/football/teams/ITA/Fiorentina.webp",
       "sport_id": 3
     },
     {
       "id": 810,
       "name": "Genoa",
-      "team_logo": "public/images/football/teams/ITA/Genoa.png",
+      "team_logo": "images/football/teams/ITA/Genoa.webp",
       "sport_id": 3
     },
     {
       "id": 811,
       "name": "Hellas Verona",
-      "team_logo": "public/images/football/teams/ITA/Hellas-Verona.png",
+      "team_logo": "images/football/teams/ITA/Hellas-Verona.webp",
       "sport_id": 3
     },
     {
       "id": 812,
       "name": "Inter Milan",
-      "team_logo": "public/images/football/teams/ITA/Inter-Milan.png",
+      "team_logo": "images/football/teams/ITA/Inter-Milan.webp",
       "sport_id": 3
     },
     {
       "id": 813,
       "name": "Juventus",
-      "team_logo": "public/images/football/teams/ITA/Juventus.png",
+      "team_logo": "images/football/teams/ITA/Juventus.webp",
       "sport_id": 3
     },
     {
       "id": 814,
       "name": "Lazio",
-      "team_logo": "public/images/football/teams/ITA/Lazio.png",
+      "team_logo": "images/football/teams/ITA/Lazio.webp",
       "sport_id": 3
     },
     {
       "id": 815,
       "name": "Lecce",
-      "team_logo": "public/images/football/teams/ITA/Lecce.png",
+      "team_logo": "images/football/teams/ITA/Lecce.webp",
       "sport_id": 3
     },
     {
       "id": 816,
       "name": "Livorno",
-      "team_logo": "public/images/football/teams/ITA/Livorno.png",
+      "team_logo": "images/football/teams/ITA/Livorno.webp",
       "sport_id": 3
     },
     {
       "id": 817,
       "name": "Napoli",
-      "team_logo": "public/images/football/teams/ITA/Napoli.png",
+      "team_logo": "images/football/teams/ITA/Napoli.webp",
       "sport_id": 3
     },
     {
       "id": 818,
       "name": "Palermo",
-      "team_logo": "public/images/football/teams/ITA/Palermo.png",
+      "team_logo": "images/football/teams/ITA/Palermo.webp",
       "sport_id": 3
     },
     {
       "id": 819,
       "name": "Parma",
-      "team_logo": "public/images/football/teams/ITA/Parma.png",
+      "team_logo": "images/football/teams/ITA/Parma.webp",
       "sport_id": 3
     },
     {
       "id": 820,
       "name": "Reggina",
-      "team_logo": "public/images/football/teams/ITA/Reggina.png",
+      "team_logo": "images/football/teams/ITA/Reggina.webp",
       "sport_id": 3
     },
     {
       "id": 821,
       "name": "AS Roma",
-      "team_logo": "public/images/football/teams/ITA/Roma.png",
+      "team_logo": "images/football/teams/ITA/Roma.webp",
       "sport_id": 3
     },
     {
       "id": 822,
       "name": "Sampdoria",
-      "team_logo": "public/images/football/teams/ITA/Sampdoria.png",
+      "team_logo": "images/football/teams/ITA/Sampdoria.webp",
       "sport_id": 3
     },
     {
       "id": 823,
       "name": "Sassuolo",
-      "team_logo": "public/images/football/teams/ITA/Sassuolo.png",
+      "team_logo": "images/football/teams/ITA/Sassuolo.webp",
       "sport_id": 3
     },
     {
       "id": 824,
       "name": "Torino",
-      "team_logo": "public/images/football/teams/ITA/Torino.png",
+      "team_logo": "images/football/teams/ITA/Torino.webp",
       "sport_id": 3
     },
     {
       "id": 825,
       "name": "Udinese",
-      "team_logo": "public/images/football/teams/ITA/Udinese.png",
+      "team_logo": "images/football/teams/ITA/Udinese.webp",
       "sport_id": 3
     },
     {
       "id": 900,
       "name": "Ajaccio",
-      "team_logo": "public/images/football/teams/FRA/Ajaccio.png",
+      "team_logo": "images/football/teams/FRA/Ajaccio.webp",
       "sport_id": 3
     },
     {
       "id": 901,
       "name": "Angers",
-      "team_logo": "public/images/football/teams/FRA/Angers.png",
+      "team_logo": "images/football/teams/FRA/Angers.webp",
       "sport_id": 3
     },
     {
       "id": 902,
       "name": "Auxerre",
-      "team_logo": "public/images/football/teams/FRA/Auxerre.png",
+      "team_logo": "images/football/teams/FRA/Auxerre.webp",
       "sport_id": 3
     },
     {
       "id": 903,
       "name": "Bastia",
-      "team_logo": "public/images/football/teams/FRA/Bastia.png",
+      "team_logo": "images/football/teams/FRA/Bastia.webp",
       "sport_id": 3
     },
     {
       "id": 904,
       "name": "Bordeaux",
-      "team_logo": "public/images/football/teams/FRA/Bordeaux.png",
+      "team_logo": "images/football/teams/FRA/Bordeaux.webp",
       "sport_id": 3
     },
     {
       "id": 905,
       "name": "Brest",
-      "team_logo": "public/images/football/teams/FRA/Brest.png",
+      "team_logo": "images/football/teams/FRA/Brest.webp",
       "sport_id": 3
     },
     {
       "id": 906,
       "name": "Caen",
-      "team_logo": "public/images/football/teams/FRA/Caen.png",
+      "team_logo": "images/football/teams/FRA/Caen.webp",
       "sport_id": 3
     },
     {
       "id": 907,
       "name": "Clermont",
-      "team_logo": "public/images/football/teams/FRA/Clermont.png",
+      "team_logo": "images/football/teams/FRA/Clermont.webp",
       "sport_id": 3
     },
     {
       "id": 908,
       "name": "Guingamp",
-      "team_logo": "public/images/football/teams/FRA/EAG.png",
+      "team_logo": "images/football/teams/FRA/EAG.webp",
       "sport_id": 3
     },
     {
       "id": 909,
       "name": "Le Havre",
-      "team_logo": "public/images/football/teams/FRA/HAC.png",
+      "team_logo": "images/football/teams/FRA/HAC.webp",
       "sport_id": 3
     },
     {
       "id": 910,
       "name": "Lens",
-      "team_logo": "public/images/football/teams/FRA/Lens.png",
+      "team_logo": "images/football/teams/FRA/Lens.webp",
       "sport_id": 3
     },
     {
       "id": 911,
       "name": "Lorient",
-      "team_logo": "public/images/football/teams/FRA/Lorient.png",
+      "team_logo": "images/football/teams/FRA/Lorient.webp",
       "sport_id": 3
     },
     {
       "id": 912,
       "name": "Lille",
-      "team_logo": "public/images/football/teams/FRA/LOSC.png",
+      "team_logo": "images/football/teams/FRA/LOSC.webp",
       "sport_id": 3
     },
     {
       "id": 913,
       "name": "Lyon",
-      "team_logo": "public/images/football/teams/FRA/OL.png",
+      "team_logo": "images/football/teams/FRA/OL.webp",
       "sport_id": 3
     },
     {
       "id": 914,
       "name": "Marseille",
-      "team_logo": "public/images/football/teams/FRA/OM.png",
+      "team_logo": "images/football/teams/FRA/OM.webp",
       "sport_id": 3
     },
     {
       "id": 915,
       "name": "Metz",
-      "team_logo": "public/images/football/teams/FRA/Metz.png",
+      "team_logo": "images/football/teams/FRA/Metz.webp",
       "sport_id": 3
     },
     {
       "id": 916,
       "name": "Montpellier",
-      "team_logo": "public/images/football/teams/FRA/Montpellier.png",
+      "team_logo": "images/football/teams/FRA/Montpellier.webp",
       "sport_id": 3
     },
     {
       "id": 917,
       "name": "Nantes",
-      "team_logo": "public/images/football/teams/FRA/Nantes.png",
+      "team_logo": "images/football/teams/FRA/Nantes.webp",
       "sport_id": 3
     },
     {
       "id": 918,
       "name": "Nice",
-      "team_logo": "public/images/football/teams/FRA/Nice.png",
+      "team_logo": "images/football/teams/FRA/Nice.webp",
       "sport_id": 3
     },
     {
       "id": 919,
       "name": "Paris SG",
-      "team_logo": "public/images/football/teams/FRA/PSG.png",
+      "team_logo": "images/football/teams/FRA/PSG.webp",
       "sport_id": 3
     },
     {
       "id": 920,
       "name": "Reims",
-      "team_logo": "public/images/football/teams/FRA/Reims.png",
+      "team_logo": "images/football/teams/FRA/Reims.webp",
       "sport_id": 3
     },
     {
       "id": 921,
       "name": "Rennes",
-      "team_logo": "public/images/football/teams/FRA/Rennes.png",
+      "team_logo": "images/football/teams/FRA/Rennes.webp",
       "sport_id": 3
     },
     {
       "id": 922,
       "name": "Saint-Etienne",
-      "team_logo": "public/images/football/teams/FRA/ASSE.png",
+      "team_logo": "images/football/teams/FRA/ASSE.webp",
       "sport_id": 3
     },
     {
       "id": 923,
       "name": "Strasbourg",
-      "team_logo": "public/images/football/teams/FRA/Strasbourg.png",
+      "team_logo": "images/football/teams/FRA/Strasbourg.webp",
       "sport_id": 3
     },
     {
       "id": 924,
       "name": "Toulouse",
-      "team_logo": "public/images/football/teams/FRA/Toulouse.png",
+      "team_logo": "images/football/teams/FRA/Toulouse.webp",
       "sport_id": 3
     },
     {
       "id": 925,
       "name": "Troyes",
-      "team_logo": "public/images/football/teams/FRA/Troyes.png",
+      "team_logo": "images/football/teams/FRA/Troyes.webp",
       "sport_id": 3
     },
     {
       "id": 926,
       "name": "Monaco",
-      "team_logo": "public/images/football/teams/FRA/Monaco.png",
+      "team_logo": "images/football/teams/FRA/Monaco.webp",
       "sport_id": 3
     },
     {
       "id": 927,
       "name": "Nancy",
-      "team_logo": "public/images/football/teams/FRA/Nancy.png",
+      "team_logo": "images/football/teams/FRA/Nancy.webp",
       "sport_id": 3
     },
     {
       "id": 1000,
       "name": "Acores",
-      "team_logo": "public/images/football/teams/POR/Acores.png",
+      "team_logo": "images/football/teams/POR/Acores.webp",
       "sport_id": 3
     },
     {
       "id": 1001,
       "name": "Benfica Lisboa",
-      "team_logo": "public/images/football/teams/POR/Benfica.png",
+      "team_logo": "images/football/teams/POR/Benfica.webp",
       "sport_id": 3
     },
     {
       "id": 1002,
       "name": "Boavista Porto",
-      "team_logo": "public/images/football/teams/POR/Boavista.png",
+      "team_logo": "images/football/teams/POR/Boavista.webp",
       "sport_id": 3
     },
     {
       "id": 1003,
       "name": "Braga",
-      "team_logo": "public/images/football/teams/POR/Braga.png",
+      "team_logo": "images/football/teams/POR/Braga.webp",
       "sport_id": 3
     },
     {
       "id": 1004,
       "name": "Braga",
-      "team_logo": "public/images/football/teams/POR/Braga.png",
+      "team_logo": "images/football/teams/POR/Braga.webp",
       "sport_id": 3
     },
     {
       "id": 1005,
       "name": "Estoril",
-      "team_logo": "public/images/football/teams/POR/Estoril.png",
+      "team_logo": "images/football/teams/POR/Estoril.webp",
       "sport_id": 3
     },
     {
       "id": 1006,
       "name": "Famalicao",
-      "team_logo": "public/images/football/teams/POR/Famalicao.png",
+      "team_logo": "images/football/teams/POR/Famalicao.webp",
       "sport_id": 3
     },
     {
       "id": 1007,
       "name": "Farense",
-      "team_logo": "public/images/football/teams/POR/Farense.png",
+      "team_logo": "images/football/teams/POR/Farense.webp",
       "sport_id": 3
     },
     {
       "id": 1008,
       "name": "Gil Vicente",
-      "team_logo": "public/images/football/teams/POR/Gil-Vicente.png",
+      "team_logo": "images/football/teams/POR/Gil-Vicente.webp",
       "sport_id": 3
     },
     {
       "id": 1009,
       "name": "Guimaraes",
-      "team_logo": "public/images/football/teams/POR/Guimaraes.png",
+      "team_logo": "images/football/teams/POR/Guimaraes.webp",
       "sport_id": 3
     },
     {
       "id": 1010,
       "name": "Leiria",
-      "team_logo": "public/images/football/teams/POR/Leiria.png",
+      "team_logo": "images/football/teams/POR/Leiria.webp",
       "sport_id": 3
     },
     {
       "id": 1011,
       "name": "Nacional Madeira",
-      "team_logo": "public/images/football/teams/POR/Madeira.png",
+      "team_logo": "images/football/teams/POR/Madeira.webp",
       "sport_id": 3
     },
     {
       "id": 1012,
       "name": "Maritimo Madeira",
-      "team_logo": "public/images/football/teams/POR/Maritimo.png",
+      "team_logo": "images/football/teams/POR/Maritimo.webp",
       "sport_id": 3
     },
     {
       "id": 1013,
       "name": "Moreirense",
-      "team_logo": "public/images/football/teams/POR/Moreirense.png",
+      "team_logo": "images/football/teams/POR/Moreirense.webp",
       "sport_id": 3
     },
     {
       "id": 1014,
       "name": "Pacos de Ferreira",
-      "team_logo": "public/images/football/teams/POR/Pacos-de-Ferreira.png",
+      "team_logo": "images/football/teams/POR/Pacos-de-Ferreira.webp",
       "sport_id": 3
     },
     {
       "id": 1015,
       "name": "Portimonense",
-      "team_logo": "public/images/football/teams/POR/Portimonense.png",
+      "team_logo": "images/football/teams/POR/Portimonense.webp",
       "sport_id": 3
     },
     {
       "id": 1016,
       "name": "FC Porto",
-      "team_logo": "public/images/football/teams/POR/Porto.png",
+      "team_logo": "images/football/teams/POR/Porto.webp",
       "sport_id": 3
     },
     {
       "id": 1017,
       "name": "Rio Ave",
-      "team_logo": "public/images/football/teams/POR/Rio-Ave.png",
+      "team_logo": "images/football/teams/POR/Rio-Ave.webp",
       "sport_id": 3
     },
     {
       "id": 1018,
       "name": "Sporting CP",
-      "team_logo": "public/images/football/teams/POR/Sporting.png",
+      "team_logo": "images/football/teams/POR/Sporting.webp",
       "sport_id": 3
     },
     {
       "id": 1019,
       "name": "Tondela",
-      "team_logo": "public/images/football/teams/POR/Tondela.png",
+      "team_logo": "images/football/teams/POR/Tondela.webp",
       "sport_id": 3
     },
     {
       "id": 1020,
       "name": "Vitoria Setubal",
-      "team_logo": "public/images/football/teams/POR/Setubal.png",
+      "team_logo": "images/football/teams/POR/Setubal.webp",
       "sport_id": 3
     },
     {
       "id": 1100,
       "name": "Ajax Amsterdam",
-      "team_logo": "public/images/football/teams/NED/Ajax-Amsterdam.png",
+      "team_logo": "images/football/teams/NED/Ajax-Amsterdam.webp",
       "sport_id": 3
     },
     {
       "id": 1101,
       "name": "AZ Alkmaar",
-      "team_logo": "public/images/football/teams/NED/AZ-Alkmaar.png",
+      "team_logo": "images/football/teams/NED/AZ-Alkmaar.webp",
       "sport_id": 3
     },
     {
       "id": 1102,
       "name": "Breda",
-      "team_logo": "public/images/football/teams/NED/Breda.png",
+      "team_logo": "images/football/teams/NED/Breda.webp",
       "sport_id": 3
     },
     {
       "id": 1103,
       "name": "Excelsior Rotterdam",
-      "team_logo": "public/images/football/teams/NED/Excelsior-Rotterdam.png",
+      "team_logo": "images/football/teams/NED/Excelsior-Rotterdam.webp",
       "sport_id": 3
     },
     {
       "id": 1104,
       "name": "Feyenoord Rotterdam",
-      "team_logo": "public/images/football/teams/NED/Feyenoord-Rotterdam.png",
+      "team_logo": "images/football/teams/NED/Feyenoord-Rotterdam.webp",
       "sport_id": 3
     },
     {
       "id": 1105,
       "name": "Fortuna Sittard",
-      "team_logo": "public/images/football/teams/NED/Fortuna-Sittard.png",
+      "team_logo": "images/football/teams/NED/Fortuna-Sittard.webp",
       "sport_id": 3
     },
     {
       "id": 1106,
       "name": "Groningen",
-      "team_logo": "public/images/football/teams/NED/Groningen.png",
+      "team_logo": "images/football/teams/NED/Groningen.webp",
       "sport_id": 3
     },
     {
       "id": 1107,
       "name": "Heerenveen",
-      "team_logo": "public/images/football/teams/NED/Heerenveen.png",
+      "team_logo": "images/football/teams/NED/Heerenveen.webp",
       "sport_id": 3
     },
     {
       "id": 1108,
       "name": "Heracles Almelo",
-      "team_logo": "public/images/football/teams/NED/Heracles-Almelo.png",
+      "team_logo": "images/football/teams/NED/Heracles-Almelo.webp",
       "sport_id": 3
     },
     {
       "id": 1110,
       "name": "Nijmegen",
-      "team_logo": "public/images/football/teams/NED/Nijmegen.png",
+      "team_logo": "images/football/teams/NED/Nijmegen.webp",
       "sport_id": 3
     },
     {
       "id": 1109,
       "name": "PSV Eindhoven",
-      "team_logo": "public/images/football/teams/NED/PSV-Eindhoven.png",
+      "team_logo": "images/football/teams/NED/PSV-Eindhoven.webp",
       "sport_id": 3
     },
     {
       "id": 1111,
       "name": "Sparta Rotterdam",
-      "team_logo": "public/images/football/teams/NED/Sparta-Rotterdam.png",
+      "team_logo": "images/football/teams/NED/Sparta-Rotterdam.webp",
       "sport_id": 3
     },
     {
       "id": 1112,
       "name": "Twente",
-      "team_logo": "public/images/football/teams/NED/Twente.png",
+      "team_logo": "images/football/teams/NED/Twente.webp",
       "sport_id": 3
     },
     {
       "id": 1113,
       "name": "Utrecht",
-      "team_logo": "public/images/football/teams/NED/Utrecht.png",
+      "team_logo": "images/football/teams/NED/Utrecht.webp",
       "sport_id": 3
     },
     {
       "id": 1114,
       "name": "Vitesse Arnhem",
-      "team_logo": "public/images/football/teams/NED/Vitesse-Arnhem.png",
+      "team_logo": "images/football/teams/NED/Vitesse-Arnhem.webp",
       "sport_id": 3
     },
     {
       "id": 1115,
       "name": "Volendam",
-      "team_logo": "public/images/football/teams/NED/Volendam.png",
+      "team_logo": "images/football/teams/NED/Volendam.webp",
       "sport_id": 3
     },
     {
       "id": 1116,
       "name": "Willem II Tilburg",
-      "team_logo": "public/images/football/teams/NED/Willem-Tilburg.png",
+      "team_logo": "images/football/teams/NED/Willem-Tilburg.webp",
       "sport_id": 3
     },
     {
       "id": 1117,
       "name": "Zwolle",
-      "team_logo": "public/images/football/teams/NED/Zwolle.png",
+      "team_logo": "images/football/teams/NED/Zwolle.webp",
       "sport_id": 3
     },
     {
       "id": 1200,
       "name": "Anderlecht",
-      "team_logo": "public/images/football/teams/BEL/Anderlecht.png",
+      "team_logo": "images/football/teams/BEL/Anderlecht.webp",
       "sport_id": 3
     },
     {
       "id": 1201,
       "name": "Antwerp",
-      "team_logo": "public/images/football/teams/BEL/Antwerp.png",
+      "team_logo": "images/football/teams/BEL/Antwerp.webp",
       "sport_id": 3
     },
     {
       "id": 1202,
       "name": "Beveren",
-      "team_logo": "public/images/football/teams/BEL/Beveren.png",
+      "team_logo": "images/football/teams/BEL/Beveren.webp",
       "sport_id": 3
     },
     {
       "id": 1203,
       "name": "Charleroi",
-      "team_logo": "public/images/football/teams/BEL/Charleroi.png",
+      "team_logo": "images/football/teams/BEL/Charleroi.webp",
       "sport_id": 3
     },
     {
       "id": 1204,
       "name": "Cercle Bruges",
-      "team_logo": "public/images/football/teams/BEL/Cercle-Bruges.png",
+      "team_logo": "images/football/teams/BEL/Cercle-Bruges.webp",
       "sport_id": 3
     },
     {
       "id": 1205,
       "name": "Club Brugge",
-      "team_logo": "public/images/football/teams/BEL/Bruges.png",
+      "team_logo": "images/football/teams/BEL/Bruges.webp",
       "sport_id": 3
     },
     {
       "id": 1206,
       "name": "Charleroi",
-      "team_logo": "public/images/football/teams/BEL/Charleroi.png",
+      "team_logo": "images/football/teams/BEL/Charleroi.webp",
       "sport_id": 3
     },
     {
       "id": 1207,
       "name": "Courtrai",
-      "team_logo": "public/images/football/teams/BEL/Courtrai.png",
+      "team_logo": "images/football/teams/BEL/Courtrai.webp",
       "sport_id": 3
     },
     {
       "id": 1208,
       "name": "Genk",
-      "team_logo": "public/images/football/teams/BEL/Genk.png",
+      "team_logo": "images/football/teams/BEL/Genk.webp",
       "sport_id": 3
     },
     {
       "id": 1209,
       "name": "Ghent",
-      "team_logo": "public/images/football/teams/BEL/Ghent.png",
+      "team_logo": "images/football/teams/BEL/Ghent.webp",
       "sport_id": 3
     },
     {
       "id": 1210,
       "name": "Lierse",
-      "team_logo": "public/images/football/teams/BEL/Lierse.png",
+      "team_logo": "images/football/teams/BEL/Lierse.webp",
       "sport_id": 3
     },
     {
       "id": 1211,
       "name": "Lokeren",
-      "team_logo": "public/images/football/teams/BEL/Lokeren.png",
+      "team_logo": "images/football/teams/BEL/Lokeren.webp",
       "sport_id": 3
     },
     {
       "id": 1212,
       "name": "Malines",
-      "team_logo": "public/images/football/teams/BEL/Malines.png",
+      "team_logo": "images/football/teams/BEL/Malines.webp",
       "sport_id": 3
     },
     {
       "id": 1213,
       "name": "Molenbeek",
-      "team_logo": "public/images/football/teams/BEL/Molenbeek.png",
+      "team_logo": "images/football/teams/BEL/Molenbeek.webp",
       "sport_id": 3
     },
     {
       "id": 1214,
       "name": "Oostende",
-      "team_logo": "public/images/football/teams/BEL/Oostende.png",
+      "team_logo": "images/football/teams/BEL/Oostende.webp",
       "sport_id": 3
     },
     {
       "id": 1215,
       "name": "Saint-Gilloise",
-      "team_logo": "public/images/football/teams/BEL/Saint-Gilloise.png",
+      "team_logo": "images/football/teams/BEL/Saint-Gilloise.webp",
       "sport_id": 3
     },
     {
       "id": 1216,
       "name": "Sint-Truiden",
-      "team_logo": "public/images/football/teams/BEL/Sint-Truiden.png",
+      "team_logo": "images/football/teams/BEL/Sint-Truiden.webp",
       "sport_id": 3
     },
     {
       "id": 1217,
       "name": "Standard Liege",
-      "team_logo": "public/images/football/teams/BEL/Standard-Liege.png",
+      "team_logo": "images/football/teams/BEL/Standard-Liege.webp",
       "sport_id": 3
     },
     {
       "id": 1218,
       "name": "Zulte Waregem",
-      "team_logo": "public/images/football/teams/BEL/Zulte-Waregem.png",
+      "team_logo": "images/football/teams/BEL/Zulte-Waregem.webp",
       "sport_id": 3
     },
     {
       "id": 1300,
       "name": "Atletico Mineiro",
-      "team_logo": "public/images/football/teams/BRA/Atletico-Mineiro.png",
+      "team_logo": "images/football/teams/BRA/Atletico-Mineiro.webp",
       "sport_id": 3
     },
     {
       "id": 1301,
       "name": "Bahia",
-      "team_logo": "public/images/football/teams/BRA/Bahia.png",
+      "team_logo": "images/football/teams/BRA/Bahia.webp",
       "sport_id": 3
     },
     {
       "id": 1302,
       "name": "Botafogo",
-      "team_logo": "public/images/football/teams/BRA/Botafogo.png",
+      "team_logo": "images/football/teams/BRA/Botafogo.webp",
       "sport_id": 3
     },
     {
       "id": 1303,
       "name": "Corinthians",
-      "team_logo": "public/images/football/teams/BRA/Corinthians.png",
+      "team_logo": "images/football/teams/BRA/Corinthians.webp",
       "sport_id": 3
     },
     {
       "id": 1304,
       "name": "Coritiba",
-      "team_logo": "public/images/football/teams/BRA/Coritiba.png",
+      "team_logo": "images/football/teams/BRA/Coritiba.webp",
       "sport_id": 3
     },
     {
       "id": 1305,
       "name": "Cruzeiro",
-      "team_logo": "public/images/football/teams/BRA/Cruzeiro.png",
+      "team_logo": "images/football/teams/BRA/Cruzeiro.webp",
       "sport_id": 3
     },
     {
       "id": 1306,
       "name": "Flamengo",
-      "team_logo": "public/images/football/teams/BRA/Flamengo.png",
+      "team_logo": "images/football/teams/BRA/Flamengo.webp",
       "sport_id": 3
     },
     {
       "id": 1307,
       "name": "Fluminense",
-      "team_logo": "public/images/football/teams/BRA/Fluminense.png",
+      "team_logo": "images/football/teams/BRA/Fluminense.webp",
       "sport_id": 3
     },
     {
       "id": 1308,
       "name": "Fortaleza",
-      "team_logo": "public/images/football/teams/BRA/Fortaleza.png",
+      "team_logo": "images/football/teams/BRA/Fortaleza.webp",
       "sport_id": 3
     },
     {
       "id": 1309,
       "name": "Gremio",
-      "team_logo": "public/images/football/teams/BRA/Gremio.png",
+      "team_logo": "images/football/teams/BRA/Gremio.webp",
       "sport_id": 3
     },
     {
       "id": 1310,
       "name": "Guarani",
-      "team_logo": "public/images/football/teams/BRA/Guarani.png",
+      "team_logo": "images/football/teams/BRA/Guarani.webp",
       "sport_id": 3
     },
     {
       "id": 1311,
       "name": "Palmeiras",
-      "team_logo": "public/images/football/teams/BRA/Palmeiras.png",
+      "team_logo": "images/football/teams/BRA/Palmeiras.webp",
       "sport_id": 3
     },
     {
       "id": 1312,
       "name": "Paranaense",
-      "team_logo": "public/images/football/teams/BRA/Paranaense.png",
+      "team_logo": "images/football/teams/BRA/Paranaense.webp",
       "sport_id": 3
     },
     {
       "id": 1313,
       "name": "Porto Alegre",
-      "team_logo": "public/images/football/teams/BRA/Porto-Alegre.png",
+      "team_logo": "images/football/teams/BRA/Porto-Alegre.webp",
       "sport_id": 3
     },
     {
       "id": 1314,
       "name": "Recife",
-      "team_logo": "public/images/football/teams/BRA/Recife.png",
+      "team_logo": "images/football/teams/BRA/Recife.webp",
       "sport_id": 3
     },
     {
       "id": 1315,
       "name": "Santos",
-      "team_logo": "public/images/football/teams/BRA/Santos.png",
+      "team_logo": "images/football/teams/BRA/Santos.webp",
       "sport_id": 3
     },
     {
       "id": 1316,
       "name": "Sao Paulo",
-      "team_logo": "public/images/football/teams/BRA/Sao-Paulo.png",
+      "team_logo": "images/football/teams/BRA/Sao-Paulo.webp",
       "sport_id": 3
     },
     {
       "id": 1317,
       "name": "Vasco da Gama",
-      "team_logo": "public/images/football/teams/BRA/Vasco-de-Gama.png",
+      "team_logo": "images/football/teams/BRA/Vasco-de-Gama.webp",
       "sport_id": 3
     },
     {
       "id": 1318,
       "name": "Vitoria",
-      "team_logo": "public/images/football/teams/BRA/Vitoria.png",
+      "team_logo": "images/football/teams/BRA/Vitoria.webp",
       "sport_id": 3
     },
     {
       "id": 1400,
       "name": "Argentinos Juniors",
-      "team_logo": "public/images/football/teams/ARG/Argentinos-Juniors.png",
+      "team_logo": "images/football/teams/ARG/Argentinos-Juniors.webp",
       "sport_id": 3
     },
     {
       "id": 1401,
       "name": "Arsenal",
-      "team_logo": "public/images/football/teams/ARG/Arsenal.png",
+      "team_logo": "images/football/teams/ARG/Arsenal.webp",
       "sport_id": 3
     },
     {
       "id": 1402,
       "name": "Banfield",
-      "team_logo": "public/images/football/teams/ARG/Banfield.png",
+      "team_logo": "images/football/teams/ARG/Banfield.webp",
       "sport_id": 3
     },
     {
       "id": 1403,
       "name": "Boca Juniors",
-      "team_logo": "public/images/football/teams/ARG/Boca-Juniors.webp",
+      "team_logo": "images/football/teams/ARG/Boca-Juniors.webp",
       "sport_id": 3
     },
     {
       "id": 1404,
       "name": "Estudiantes",
-      "team_logo": "public/images/football/teams/ARG/Estudiantes.png",
+      "team_logo": "images/football/teams/ARG/Estudiantes.webp",
       "sport_id": 3
     },
     {
       "id": 1405,
       "name": "Huracan",
-      "team_logo": "public/images/football/teams/ARG/Huracan.png",
+      "team_logo": "images/football/teams/ARG/Huracan.webp",
       "sport_id": 3
     },
     {
       "id": 1406,
       "name": "Independiente",
-      "team_logo": "public/images/football/teams/ARG/Independiente.png",
+      "team_logo": "images/football/teams/ARG/Independiente.webp",
       "sport_id": 3
     },
     {
       "id": 1407,
       "name": "Lanus",
-      "team_logo": "public/images/football/teams/ARG/Lanus.png",
+      "team_logo": "images/football/teams/ARG/Lanus.webp",
       "sport_id": 3
     },
     {
       "id": 1408,
       "name": "Newell's Old Boys",
-      "team_logo": "public/images/football/teams/ARG/Newells.png",
+      "team_logo": "images/football/teams/ARG/Newells.webp",
       "sport_id": 3
     },
     {
       "id": 1409,
       "name": "Platense",
-      "team_logo": "public/images/football/teams/ARG/Platense.png",
+      "team_logo": "images/football/teams/ARG/Platense.webp",
       "sport_id": 3
     },
     {
       "id": 1410,
       "name": "Racing Club",
-      "team_logo": "public/images/football/teams/ARG/Racing-Club.png",
+      "team_logo": "images/football/teams/ARG/Racing-Club.webp",
       "sport_id": 3
     },
     {
       "id": 1411,
       "name": "River Plate",
-      "team_logo": "public/images/football/teams/ARG/River-Plate.png",
+      "team_logo": "images/football/teams/ARG/River-Plate.webp",
       "sport_id": 3
-    },   
+    },
     {
       "id": 1412,
       "name": "Rosario Central",
-      "team_logo": "public/images/football/teams/ARG/Rosario-Central.png",
+      "team_logo": "images/football/teams/ARG/Rosario-Central.webp",
       "sport_id": 3
-    },    
+    },
     {
       "id": 1413,
       "name": "San Lorenzo",
-      "team_logo": "public/images/football/teams/ARG/San-Lorenzo.png",
+      "team_logo": "images/football/teams/ARG/San-Lorenzo.webp",
       "sport_id": 3
     },
     {
       "id": 1414,
       "name": "Velez Sarsfield",
-      "team_logo": "public/images/football/teams/ARG/Velez-Sarsfield.png",
+      "team_logo": "images/football/teams/ARG/Velez-Sarsfield.webp",
       "sport_id": 3
     },
     {
       "id": 1500,
       "name": "Atlanta United",
-      "team_logo": "public/images/football/teams/USA/Atlanta-United.png",
+      "team_logo": "images/football/teams/USA/Atlanta-United.webp",
       "sport_id": 3
     },
     {
       "id": 1501,
       "name": "Austin FC",
-      "team_logo": "public/images/football/teams/USA/Austin-FC.png",
+      "team_logo": "images/football/teams/USA/Austin-FC.webp",
       "sport_id": 3
     },
     {
       "id": 1502,
       "name": "Charlotte FC",
-      "team_logo": "public/images/football/teams/USA/Charlotte-FC.png",
+      "team_logo": "images/football/teams/USA/Charlotte-FC.webp",
       "sport_id": 3
     },
     {
       "id": 1503,
       "name": "Chicago Fire",
-      "team_logo": "public/images/football/teams/USA/Chicago-Fire.png",
+      "team_logo": "images/football/teams/USA/Chicago-Fire.webp",
       "sport_id": 3
     },
     {
       "id": 1504,
       "name": "Colorado Rapids",
-      "team_logo": "public/images/football/teams/USA/Colorado-Rapids.png",
+      "team_logo": "images/football/teams/USA/Colorado-Rapids.webp",
       "sport_id": 3
     },
     {
       "id": 1505,
       "name": "Columbus Crew",
-      "team_logo": "public/images/football/teams/USA/Columbus-Crew.png",
+      "team_logo": "images/football/teams/USA/Columbus-Crew.webp",
       "sport_id": 3
     },
     {
       "id": 1506,
       "name": "DC United",
-      "team_logo": "public/images/football/teams/USA/DC-United.png",
+      "team_logo": "images/football/teams/USA/DC-United.webp",
       "sport_id": 3
     },
     {
       "id": 1507,
       "name": "FC Cincinnati",
-      "team_logo": "public/images/football/teams/USA/FC-Cincinnati.png",
+      "team_logo": "images/football/teams/USA/FC-Cincinnati.webp",
       "sport_id": 3
     },
     {
       "id": 1508,
       "name": "Dallas FC",
-      "team_logo": "public/images/football/teams/USA/Dallas-FC.png",
+      "team_logo": "images/football/teams/USA/Dallas-FC.webp",
       "sport_id": 3
     },
     {
       "id": 1509,
       "name": "Houston Dynamo",
-      "team_logo": "public/images/football/teams/USA/Houston-Dynamo.png",
+      "team_logo": "images/football/teams/USA/Houston-Dynamo.webp",
       "sport_id": 3
     },
     {
       "id": 1510,
       "name": "Inter Miami",
-      "team_logo": "public/images/football/teams/USA/Inter-Miami.png",
+      "team_logo": "images/football/teams/USA/Inter-Miami.webp",
       "sport_id": 3
     },
     {
       "id": 1511,
       "name": "LA Galaxy",
-      "team_logo": "public/images/football/teams/USA/Los-Angeles-Galaxy.png",
+      "team_logo": "images/football/teams/USA/Los-Angeles-Galaxy.webp",
       "sport_id": 3
     },
     {
       "id": 1512,
       "name": "LAFC",
-      "team_logo": "public/images/football/teams/USA/Los-Angeles-FC.png",
+      "team_logo": "images/football/teams/USA/Los-Angeles-FC.webp",
       "sport_id": 3
     },
     {
       "id": 1513,
       "name": "Minnesota United",
-      "team_logo": "public/images/football/teams/USA/Minnesota-United.png",
+      "team_logo": "images/football/teams/USA/Minnesota-United.webp",
       "sport_id": 3
     },
     {
       "id": 1514,
       "name": "Nashville SC",
-      "team_logo": "public/images/football/teams/USA/Nashville-SC.png",
+      "team_logo": "images/football/teams/USA/Nashville-SC.webp",
       "sport_id": 3
     },
     {
       "id": 1515,
       "name": "New England Revolution",
-      "team_logo": "public/images/football/teams/USA/New-England-Revolution.png",
+      "team_logo": "images/football/teams/USA/New-England-Revolution.webp",
       "sport_id": 3
     },
     {
       "id": 1516,
       "name": "New York City FC",
-      "team_logo": "public/images/football/teams/USA/New-York-City-FC.png",
+      "team_logo": "images/football/teams/USA/New-York-City-FC.webp",
       "sport_id": 3
     },
     {
       "id": 1517,
       "name": "New York Red Bulls",
-      "team_logo": "public/images/football/teams/USA/New-York-Red-Bulls.png",
+      "team_logo": "images/football/teams/USA/New-York-Red-Bulls.webp",
       "sport_id": 3
     },
     {
       "id": 1518,
       "name": "Orlando City",
-      "team_logo": "public/images/football/teams/USA/Orlando-City.png",
+      "team_logo": "images/football/teams/USA/Orlando-City.webp",
       "sport_id": 3
     },
     {
       "id": 1519,
       "name": "Philadelphia Union",
-      "team_logo": "public/images/football/teams/USA/Philadelphia-Union.png",
+      "team_logo": "images/football/teams/USA/Philadelphia-Union.webp",
       "sport_id": 3
     },
     {
       "id": 1520,
       "name": "Portland Timbers",
-      "team_logo": "public/images/football/teams/USA/Portland-Timbers.png",
+      "team_logo": "images/football/teams/USA/Portland-Timbers.webp",
       "sport_id": 3
     },
     {
       "id": 1521,
       "name": "Real Salt Lake",
-      "team_logo": "public/images/football/teams/USA/Real-Salt-Lake.png",
+      "team_logo": "images/football/teams/USA/Real-Salt-Lake.webp",
       "sport_id": 3
     },
     {
       "id": 1522,
       "name": "San Diego FC",
-      "team_logo": "public/images/football/teams/USA/San-Diego-FC.png",
+      "team_logo": "images/football/teams/USA/San-Diego-FC.webp",
       "sport_id": 3
     },
     {
       "id": 1523,
       "name": "San Jose Earthquakes",
-      "team_logo": "public/images/football/teams/USA/San-Jose-Earthquakes.png",
+      "team_logo": "images/football/teams/USA/San-Jose-Earthquakes.webp",
       "sport_id": 3
     },
     {
       "id": 1524,
       "name": "Seattle Sounders",
-      "team_logo": "public/images/football/teams/USA/Seattle-Sounders.png",
+      "team_logo": "images/football/teams/USA/Seattle-Sounders.webp",
       "sport_id": 3
     },
     {
       "id": 1525,
       "name": "Sporting Kansas City",
-      "team_logo": "public/images/football/teams/USA/Sporting-Kansas-City.png",
+      "team_logo": "images/football/teams/USA/Sporting-Kansas-City.webp",
       "sport_id": 3
     },
     {
       "id": 1526,
       "name": "Toronto FC",
-      "team_logo": "public/images/football/teams/USA/Toronto-FC.png",
+      "team_logo": "images/football/teams/USA/Toronto-FC.webp",
       "sport_id": 3
     },
     {
       "id": 1527,
       "name": "Vancouver Whitecaps",
-      "team_logo": "public/images/football/teams/CAN/Vancouver-Whitecaps.png",
+      "team_logo": "images/football/teams/CAN/Vancouver-Whitecaps.webp",
       "sport_id": 3
     },
     {
       "id": 1528,
       "name": "CF Montreal",
-      "team_logo": "public/images/football/teams/CAN/CF-Montreal.png",
+      "team_logo": "images/football/teams/CAN/CF-Montreal.webp",
       "sport_id": 3
     },
     {
       "id": 1600,
       "name": "AEK Athens",
-      "team_logo": "public/images/football/teams/GRE/AEK-Athens.png",
+      "team_logo": "images/football/teams/GRE/AEK-Athens.webp",
       "sport_id": 3
     },
     {
       "id": 1601,
       "name": "Aigaleo",
-      "team_logo": "public/images/football/teams/GRE/Aigaleo.png",
+      "team_logo": "images/football/teams/GRE/Aigaleo.webp",
       "sport_id": 3
     },
     {
       "id": 1602,
       "name": "Aris Tripolis",
-      "team_logo": "public/images/football/teams/GRE/Aris-Tripolis.png",
+      "team_logo": "images/football/teams/GRE/Aris-Tripolis.webp",
       "sport_id": 3
     },
     {
       "id": 1603,
       "name": "Aris Thessaloniki",
-      "team_logo": "public/images/football/teams/GRE/Aris-Thessaloniki.png",
+      "team_logo": "images/football/teams/GRE/Aris-Thessaloniki.webp",
       "sport_id": 3
     },
     {
       "id": 1604,
       "name": "Athens Kalithea",
-      "team_logo": "public/images/football/teams/GRE/Athens-Kallithea.png",
+      "team_logo": "images/football/teams/GRE/Athens-Kallithea.webp",
       "sport_id": 3
     },
     {
       "id": 1605,
       "name": "Atromitos",
-      "team_logo": "public/images/football/teams/GRE/Atromitos.png",
+      "team_logo": "images/football/teams/GRE/Atromitos.webp",
       "sport_id": 3
     },
     {
       "id": 1606,
       "name": "Chania",
-      "team_logo": "public/images/football/teams/GRE/Chania.png",
+      "team_logo": "images/football/teams/GRE/Chania.webp",
       "sport_id": 3
     },
     {
       "id": 1607,
       "name": "Diagoras",
-      "team_logo": "public/images/football/teams/GRE/Diagoras.png",
+      "team_logo": "images/football/teams/GRE/Diagoras.webp",
       "sport_id": 3
     },
     {
       "id": 1608,
       "name": "Ethnikos Neo Keramidi",
-      "team_logo": "public/images/football/teams/GRE/Ethnikos-Neo-Keramidi.png",
+      "team_logo": "images/football/teams/GRE/Ethnikos-Neo-Keramidi.webp",
       "sport_id": 3
     },
     {
       "id": 1609,
       "name": "Giannina",
-      "team_logo": "public/images/football/teams/GRE/Giannina.png",
+      "team_logo": "images/football/teams/GRE/Giannina.webp",
       "sport_id": 3
     },
     {
       "id": 1610,
       "name": "Heraklion",
-      "team_logo": "public/images/football/teams/GRE/Heraklion.png",
+      "team_logo": "images/football/teams/GRE/Heraklion.webp",
       "sport_id": 3
     },
     {
       "id": 1611,
       "name": "Iraklis",
-      "team_logo": "public/images/football/teams/GRE/Iraklis.png",
+      "team_logo": "images/football/teams/GRE/Iraklis.webp",
       "sport_id": 3
     },
     {
       "id": 1612,
       "name": "Kalamata",
-      "team_logo": "public/images/football/teams/GRE/Kalamata.png",
+      "team_logo": "images/football/teams/GRE/Kalamata.webp",
       "sport_id": 3
     },
     {
       "id": 1613,
       "name": "Kavala",
-      "team_logo": "public/images/football/teams/GRE/Kavala.png",
+      "team_logo": "images/football/teams/GRE/Kavala.webp",
       "sport_id": 3
     },
     {
       "id": 1614,
       "name": "Kifissia",
-      "team_logo": "public/images/football/teams/GRE/Kifisia.png",
+      "team_logo": "images/football/teams/GRE/Kifisia.webp",
       "sport_id": 3
     },
     {
       "id": 1615,
       "name": "Kampaniakos",
-      "team_logo": "public/images/football/teams/GRE/Kampaniakos.png",
+      "team_logo": "images/football/teams/GRE/Kampaniakos.webp",
       "sport_id": 3
     },
     {
       "id": 1616,
       "name": "Lamia",
-      "team_logo": "public/images/football/teams/GRE/Lamia.png",
+      "team_logo": "images/football/teams/GRE/Lamia.webp",
       "sport_id": 3
     },
     {
       "id": 1617,
       "name": "Larissa",
-      "team_logo": "public/images/football/teams/GRE/Larissa.png",
+      "team_logo": "images/football/teams/GRE/Larissa.webp",
       "sport_id": 3
     },
     {
       "id": 1618,
       "name": "Levadiakos",
-      "team_logo": "public/images/football/teams/GRE/Levadiakos.png",
+      "team_logo": "images/football/teams/GRE/Levadiakos.webp",
       "sport_id": 3
     },
     {
       "id": 1619,
       "name": "Makedonikos",
-      "team_logo": "public/images/football/teams/GRE/Makedonikos.png",
+      "team_logo": "images/football/teams/GRE/Makedonikos.webp",
       "sport_id": 3
     },
     {
       "id": 1620,
       "name": "Niki Volos",
-      "team_logo": "public/images/football/teams/GRE/Niki-Volos.png",
+      "team_logo": "images/football/teams/GRE/Niki-Volos.webp",
       "sport_id": 3
     },
     {
       "id": 1621,
       "name": "Olympiakos",
-      "team_logo": "public/images/football/teams/GRE/Olympiakos.png",
+      "team_logo": "images/football/teams/GRE/Olympiakos.webp",
       "sport_id": 3
     },
     {
       "id": 1622,
       "name": "Panachaiki",
-      "team_logo": "public/images/football/teams/GRE/Panachaiki.png",
+      "team_logo": "images/football/teams/GRE/Panachaiki.webp",
       "sport_id": 3
     },
     {
       "id": 1623,
       "name": "Panaitolikos",
-      "team_logo": "public/images/football/teams/GRE/Panaitolkos.png",
+      "team_logo": "images/football/teams/GRE/Panaitolkos.webp",
       "sport_id": 3
     },
     {
       "id": 1624,
       "name": "Panathinaikos",
-      "team_logo": "public/images/football/teams/GRE/Panathinaikos.png",
+      "team_logo": "images/football/teams/GRE/Panathinaikos.webp",
       "sport_id": 3
     },
     {
       "id": 1625,
       "name": "Panionios",
-      "team_logo": "public/images/football/teams/GRE/Panionios.png",
+      "team_logo": "images/football/teams/GRE/Panionios.webp",
       "sport_id": 3
     },
     {
       "id": 1626,
       "name": "PAOK Thessaloniki",
-      "team_logo": "public/images/football/teams/GRE/PAOK-Thessaloniki.png",
+      "team_logo": "images/football/teams/GRE/PAOK-Thessaloniki.webp",
       "sport_id": 3
     },
     {
       "id": 1627,
       "name": "Panargiakos",
-      "team_logo": "public/images/football/teams/GRE/Panargiakos.png",
+      "team_logo": "images/football/teams/GRE/Panargiakos.webp",
       "sport_id": 3
     },
     {
       "id": 1628,
       "name": "Panseraikos",
-      "team_logo": "public/images/football/teams/GRE/Panseraikos.png",
+      "team_logo": "images/football/teams/GRE/Panseraikos.webp",
       "sport_id": 3
     },
     {
       "id": 1629,
       "name": "Volos",
-      "team_logo": "public/images/football/teams/GRE/Volos.png",
+      "team_logo": "images/football/teams/GRE/Volos.webp",
       "sport_id": 3
     },
     {
       "id": 1700,
       "name": "Alanyaspor",
-      "team_logo": "public/images/football/teams/TUR/Alanyaspor.png",
+      "team_logo": "images/football/teams/TUR/Alanyaspor.webp",
       "sport_id": 3
     },
     {
       "id": 1701,
       "name": "Antalyaspor",
-      "team_logo": "public/images/football/teams/TUR/Antalyaspor.png",
+      "team_logo": "images/football/teams/TUR/Antalyaspor.webp",
       "sport_id": 3
     },
     {
       "id": 1702,
       "name": "Bursaspor",
-      "team_logo": "public/images/football/teams/TUR/Bursaspor.png",
+      "team_logo": "images/football/teams/TUR/Bursaspor.webp",
       "sport_id": 3
     },
     {
       "id": 1703,
       "name": "Besiktas",
-      "team_logo": "public/images/football/teams/TUR/Besiktas.png",
+      "team_logo": "images/football/teams/TUR/Besiktas.webp",
       "sport_id": 3
     },
     {
       "id": 1704,
       "name": "Basaksehir",
-      "team_logo": "public/images/football/teams/TUR/Basaksehir.png",
+      "team_logo": "images/football/teams/TUR/Basaksehir.webp",
       "sport_id": 3
     },
     {
       "id": 1705,
       "name": "Caykur Rizespor",
-      "team_logo": "public/images/football/teams/TUR/Caykur-Rizespor.png",
+      "team_logo": "images/football/teams/TUR/Caykur-Rizespor.webp",
       "sport_id": 3
     },
     {
       "id": 1706,
       "name": "Eyupspor",
-      "team_logo": "public/images/football/teams/TUR/Eyupspor.png",
+      "team_logo": "images/football/teams/TUR/Eyupspor.webp",
       "sport_id": 3
     },
     {
       "id": 1707,
       "name": "Fenerbahce",
-      "team_logo": "public/images/football/teams/TUR/Fenerbahce.png",
+      "team_logo": "images/football/teams/TUR/Fenerbahce.webp",
       "sport_id": 3
     },
     {
       "id": 1708,
       "name": "Galatasaray",
-      "team_logo": "public/images/football/teams/TUR/Galatasaray.png",
+      "team_logo": "images/football/teams/TUR/Galatasaray.webp",
       "sport_id": 3
     },
     {
-      "id": 1709, 
+      "id": 1709,
       "name": "Gaziantep",
-      "team_logo": "public/images/football/teams/TUR/Gaziantep.png",
+      "team_logo": "images/football/teams/TUR/Gaziantep.webp",
       "sport_id": 3
     },
     {
       "id": 1710,
       "name": "Goztepe",
-      "team_logo": "public/images/football/teams/TUR/Goztepe.png",
+      "team_logo": "images/football/teams/TUR/Goztepe.webp",
       "sport_id": 3
     },
     {
       "id": 1711,
       "name": "Kasimpasa",
-      "team_logo": "public/images/football/teams/TUR/Kasimpasa.png",
+      "team_logo": "images/football/teams/TUR/Kasimpasa.webp",
       "sport_id": 3
     },
     {
       "id": 1712,
       "name": "Kayserispor",
-      "team_logo": "public/images/football/teams/TUR/Kayserispor.png",
+      "team_logo": "images/football/teams/TUR/Kayserispor.webp",
       "sport_id": 3
     },
     {
       "id": 1713,
       "name": "Konyaspor",
-      "team_logo": "public/images/football/teams/TUR/Konyaspor.png",
+      "team_logo": "images/football/teams/TUR/Konyaspor.webp",
       "sport_id": 3
     },
     {
       "id": 1714,
       "name": "Samsunspor",
-      "team_logo": "public/images/football/teams/TUR/Samsunspor.png",
+      "team_logo": "images/football/teams/TUR/Samsunspor.webp",
       "sport_id": 3
     },
     {
       "id": 1715,
       "name": "Trabzonspor",
-      "team_logo": "public/images/football/teams/TUR/Trabzonspor.png",
+      "team_logo": "images/football/teams/TUR/Trabzonspor.webp",
       "sport_id": 3
     },
     {
       "id": 1800,
       "name": "CSKA Sofia",
-      "team_logo": "public/images/football/teams/BUL/CSKA-Sofia.png",
+      "team_logo": "images/football/teams/BUL/CSKA-Sofia.webp",
       "sport_id": 3
     },
     {
       "id": 1801,
       "name": "Levski Sofia",
-      "team_logo": "public/images/football/teams/BUL/Levski-Sofia.png",
+      "team_logo": "images/football/teams/BUL/Levski-Sofia.webp",
       "sport_id": 3
     },
     {
       "id": 1802,
       "name": "Lokomotiv Plovdiv",
-      "team_logo": "public/images/football/teams/BUL/Lokomotiv-Plovdiv.png",
+      "team_logo": "images/football/teams/BUL/Lokomotiv-Plovdiv.webp",
       "sport_id": 3
     },
     {
       "id": 1803,
       "name": "Ludogorets",
-      "team_logo": "public/images/football/teams/BUL/Ludogorets.png",
+      "team_logo": "images/football/teams/BUL/Ludogorets.webp",
       "sport_id": 3
     },
     {
       "id": 1804,
       "name": "Slavia Sofia",
-      "team_logo": "public/images/football/teams/BUL/Slavia-Sofia.png",
+      "team_logo": "images/football/teams/BUL/Slavia-Sofia.webp",
       "sport_id": 3
     },
     {
       "id": 1805,
       "name": "Litex Lovech",
-      "team_logo": "public/images/football/teams/BUL/Litex-Lovech.png",
+      "team_logo": "images/football/teams/BUL/Litex-Lovech.webp",
       "sport_id": 3
     },
     {
       "id": 1900,
       "name": "America Cali",
-      "team_logo": "public/images/football/teams/COL/America-Cali.png",
+      "team_logo": "images/football/teams/COL/America-Cali.webp",
       "sport_id": 3
     },
     {
       "id": 1901,
       "name": "Atletico Junior",
-      "team_logo": "public/images/football/teams/COL/Atletico-Junior.png",
+      "team_logo": "images/football/teams/COL/Atletico-Junior.webp",
       "sport_id": 3
     },
     {
       "id": 1902,
       "name": "Atletico Nacional",
-      "team_logo": "public/images/football/teams/COL/Atletico-Nacional.png",
+      "team_logo": "images/football/teams/COL/Atletico-Nacional.webp",
       "sport_id": 3
     },
     {
       "id": 1903,
       "name": "Deportivo Cali",
-      "team_logo": "public/images/football/teams/COL/Deportivo-Cali.png",
+      "team_logo": "images/football/teams/COL/Deportivo-Cali.webp",
       "sport_id": 3
     },
     {
       "id": 1904,
       "name": "Independiente Medellin",
-      "team_logo": "public/images/football/teams/COL/Independiente-Medellin.png",
+      "team_logo": "images/football/teams/COL/Independiente-Medellin.webp",
       "sport_id": 3
     },
     {
       "id": 1905,
       "name": "Millonarios",
-      "team_logo": "public/images/football/teams/COL/Millonarios.png",
+      "team_logo": "images/football/teams/COL/Millonarios.webp",
       "sport_id": 3
     },
     {
       "id": 2000,
       "name": "Dukla Praha",
-      "team_logo": "public/images/football/teams/CZE/Dukla-Praha.png",
+      "team_logo": "images/football/teams/CZE/Dukla-Praha.webp",
       "sport_id": 3
     },
     {
       "id": 2001,
       "name": "Slavia Praha",
-      "team_logo": "public/images/football/teams/CZE/Slavia-Praha.png",
+      "team_logo": "images/football/teams/CZE/Slavia-Praha.webp",
       "sport_id": 3
     },
     {
       "id": 2002,
       "name": "Slovan Liberec",
-      "team_logo": "public/images/football/teams/CZE/Slovan-Liberec.png",
+      "team_logo": "images/football/teams/CZE/Slovan-Liberec.webp",
       "sport_id": 3
     },
     {
       "id": 2003,
       "name": "Sparta Praha",
-      "team_logo": "public/images/football/teams/CZE/Sparta-Praha.png",
+      "team_logo": "images/football/teams/CZE/Sparta-Praha.webp",
       "sport_id": 3
     },
     {
       "id": 2004,
       "name": "Viktoria Plzen",
-      "team_logo": "public/images/football/teams/CZE/Viktoria-Plzen.png",
+      "team_logo": "images/football/teams/CZE/Viktoria-Plzen.webp",
       "sport_id": 3
     },
     {
       "id": 2100,
       "name": "Austria Wien",
-      "team_logo": "public/images/football/teams/AUT/Austria-Wien.png",
+      "team_logo": "images/football/teams/AUT/Austria-Wien.webp",
       "sport_id": 3
     },
     {
       "id": 2101,
       "name": "Rapid Wien",
-      "team_logo": "public/images/football/teams/AUT/Rapid-Wien.png",
+      "team_logo": "images/football/teams/AUT/Rapid-Wien.webp",
       "sport_id": 3
     },
     {
       "id": 2102,
       "name": "RB Salzburg",
-      "team_logo": "public/images/football/teams/AUT/RB-Salzburg.png",
+      "team_logo": "images/football/teams/AUT/RB-Salzburg.webp",
       "sport_id": 3
     },
     {
       "id": 2103,
       "name": "Sturm Graz",
-      "team_logo": "public/images/football/teams/AUT/Sturm-Graz.png",
+      "team_logo": "images/football/teams/AUT/Sturm-Graz.webp",
       "sport_id": 3
     },
     {
       "id": 2104,
       "name": "Tirol Innsbruck",
-      "team_logo": "public/images/football/teams/AUT/Tirol-Innsbruck.png",
+      "team_logo": "images/football/teams/AUT/Tirol-Innsbruck.webp",
       "sport_id": 3
     },
     {
       "id": 2200,
       "name": "Aalborg",
-      "team_logo": "public/images/football/teams/DEN/Aalborg.png",
+      "team_logo": "images/football/teams/DEN/Aalborg.webp",
       "sport_id": 3
     },
     {
       "id": 2201,
       "name": "Aarhus",
-      "team_logo": "public/images/football/teams/DEN/Aarhus.png",
+      "team_logo": "images/football/teams/DEN/Aarhus.webp",
       "sport_id": 3
     },
     {
       "id": 2202,
       "name": "Brondby",
-      "team_logo": "public/images/football/teams/DEN/Brondby.png",
+      "team_logo": "images/football/teams/DEN/Brondby.webp",
       "sport_id": 3
     },
     {
       "id": 2203,
       "name": "AB Copenhagen",
-      "team_logo": "public/images/football/teams/DEN/AB-Copenhagen.png",
+      "team_logo": "images/football/teams/DEN/AB-Copenhagen.webp",
       "sport_id": 3
     },
     {
       "id": 2204,
       "name": "FC Copenhagen",
-      "team_logo": "public/images/football/teams/DEN/FC-Copenhagen.png",
+      "team_logo": "images/football/teams/DEN/FC-Copenhagen.webp",
       "sport_id": 3
     },
     {
       "id": 2205,
       "name": "Midtjylland",
-      "team_logo": "public/images/football/teams/DEN/Midtjylland.png",
+      "team_logo": "images/football/teams/DEN/Midtjylland.webp",
       "sport_id": 3
     },
     {
       "id": 2206,
       "name": "Nordsjaelland",
-      "team_logo": "public/images/football/teams/DEN/Nordsjaelland.png",
+      "team_logo": "images/football/teams/DEN/Nordsjaelland.webp",
       "sport_id": 3
     },
     {
       "id": 2207,
       "name": "Odense",
-      "team_logo": "public/images/football/teams/DEN/Odense.png",
+      "team_logo": "images/football/teams/DEN/Odense.webp",
       "sport_id": 3
     },
     {
       "id": 2300,
       "name": "Aarau",
-      "team_logo": "public/images/football/teams/SUI/Aarau.png",
+      "team_logo": "images/football/teams/SUI/Aarau.webp",
       "sport_id": 3
     },
     {
       "id": 2301,
       "name": "Basel",
-      "team_logo": "public/images/football/teams/SUI/Basel.png",
+      "team_logo": "images/football/teams/SUI/Basel.webp",
       "sport_id": 3
     },
     {
       "id": 2302,
       "name": "Young Boys Berne",
-      "team_logo": "public/images/football/teams/SUI/Berne.png",
+      "team_logo": "images/football/teams/SUI/Berne.webp",
       "sport_id": 3
     },
     {
       "id": 2303,
       "name": "Luzern",
-      "team_logo": "public/images/football/teams/SUI/Lucerne.png",
+      "team_logo": "images/football/teams/SUI/Lucerne.webp",
       "sport_id": 3
     },
     {
       "id": 2304,
       "name": "FC Zurich",
-      "team_logo": "public/images/football/teams/SUI/FC-Zurich.png",
+      "team_logo": "images/football/teams/SUI/FC-Zurich.webp",
       "sport_id": 3
     },
     {
       "id": 2305,
       "name": "St. Gallen",
-      "team_logo": "public/images/football/teams/SUI/Saint-Gall.png",
+      "team_logo": "images/football/teams/SUI/Saint-Gall.webp",
       "sport_id": 3
     },
     {
       "id": 2306,
       "name": "Thun",
-      "team_logo": "public/images/football/teams/SUI/Thoune.png",
+      "team_logo": "images/football/teams/SUI/Thoune.webp",
       "sport_id": 3
     },
     {
       "id": 2307,
       "name": "Grasshoppers",
-      "team_logo": "public/images/football/teams/SUI/Grasshoppers.png",
+      "team_logo": "images/football/teams/SUI/Grasshoppers.webp",
       "sport_id": 3
     },
     {
       "id": 2308,
       "name": "Servette Geneve",
-      "team_logo": "public/images/football/teams/SUI/Geneve.png",
+      "team_logo": "images/football/teams/SUI/Geneve.webp",
       "sport_id": 3
     },
     {
       "id": 2309,
       "name": "Lugano",
-      "team_logo": "public/images/football/teams/SUI/Lugano.png",
+      "team_logo": "images/football/teams/SUI/Lugano.webp",
       "sport_id": 3
     },
     {
       "id": 2310,
       "name": "Neuchatel",
-      "team_logo": "public/images/football/teams/SUI/Neuchatel.png",
+      "team_logo": "images/football/teams/SUI/Neuchatel.webp",
       "sport_id": 3
     },
     {
       "id": 2400,
       "name": "Aberdeen",
-      "team_logo": "public/images/football/teams/SCO/Aberdeen.png",
+      "team_logo": "images/football/teams/SCO/Aberdeen.webp",
       "sport_id": 3
     },
     {
       "id": 2401,
       "name": "Celtic Glasgow",
-      "team_logo": "public/images/football/teams/SCO/Celtic.png",
+      "team_logo": "images/football/teams/SCO/Celtic.webp",
       "sport_id": 3
     },
     {
       "id": 2402,
       "name": "Dundee FC",
-      "team_logo": "public/images/football/teams/SCO/Dundee-FC.png",
+      "team_logo": "images/football/teams/SCO/Dundee-FC.webp",
       "sport_id": 3
     },
     {
       "id": 2403,
       "name": "Dundee United",
-      "team_logo": "public/images/football/teams/SCO/Dundee-United.png",
+      "team_logo": "images/football/teams/SCO/Dundee-United.webp",
       "sport_id": 3
     },
     {
       "id": 2404,
       "name": "Hearts of Midlothian",
-      "team_logo": "public/images/football/teams/SCO/Hearts-of-Midlothian.png",
+      "team_logo": "images/football/teams/SCO/Hearts-of-Midlothian.webp",
       "sport_id": 3
     },
     {
       "id": 2405,
       "name": "Hibernian",
-      "team_logo": "public/images/football/teams/SCO/Hibernian.png",
+      "team_logo": "images/football/teams/SCO/Hibernian.webp",
       "sport_id": 3
     },
     {
       "id": 2406,
       "name": "Kilmarnock",
-      "team_logo": "public/images/football/teams/SCO/Kilmarnock.png",
+      "team_logo": "images/football/teams/SCO/Kilmarnock.webp",
       "sport_id": 3
     },
     {
       "id": 2407,
       "name": "Motherwell",
-      "team_logo": "public/images/football/teams/SCO/Motherwell.png",
+      "team_logo": "images/football/teams/SCO/Motherwell.webp",
       "sport_id": 3
     },
     {
       "id": 2408,
       "name": "Glasgow Rangers",
-      "team_logo": "public/images/football/teams/SCO/Rangers.png",
+      "team_logo": "images/football/teams/SCO/Rangers.webp",
       "sport_id": 3
     },
     {
       "id": 2500,
       "name": "Kobe",
-      "team_logo": "public/images/football/teams/JAP/Kobe.png",
+      "team_logo": "images/football/teams/JAP/Kobe.webp",
       "sport_id": 3
     },
     {
       "id": 2600,
       "name": "FC Lahti",
-      "team_logo": "public/images/football/teams/FIN/Lahti.png",
+      "team_logo": "images/football/teams/FIN/Lahti.webp",
       "sport_id": 3
     },
     {
       "id": 2700,
       "name": "Dinamo Zagreb",
-      "team_logo": "public/images/football/teams/HRV/Dinamo-Zagreb.png",
+      "team_logo": "images/football/teams/HRV/Dinamo-Zagreb.webp",
       "sport_id": 3
     },
     {
       "id": 2701,
       "name": "Hajduk Split",
-      "team_logo": "public/images/football/teams/HRV/Hajduk-Split.png",
+      "team_logo": "images/football/teams/HRV/Hajduk-Split.webp",
       "sport_id": 3
     },
     {
       "id": 2702,
       "name": "Lokomotiva Zagreb",
-      "team_logo": "public/images/football/teams/HRV/Lokomotiva-Zagreb.png",
+      "team_logo": "images/football/teams/HRV/Lokomotiva-Zagreb.webp",
       "sport_id": 3
     },
     {
       "id": 2703,
       "name": "Osijek",
-      "team_logo": "public/images/football/teams/HRV/Osijek.png",
+      "team_logo": "images/football/teams/HRV/Osijek.webp",
       "sport_id": 3
     },
     {
       "id": 2704,
       "name": "Rijeka",
-      "team_logo": "public/images/football/teams/HRV/Rijeka.png",
+      "team_logo": "images/football/teams/HRV/Rijeka.webp",
       "sport_id": 3
     },
     {
       "id": 2800,
       "name": "Obilic",
-      "team_logo": "public/images/football/teams/SRB/Obilic.png",
+      "team_logo": "images/football/teams/SRB/Obilic.webp",
       "sport_id": 3
     },
     {
       "id": 2801,
       "name": "Partizan Belgrade",
-      "team_logo": "public/images/football/teams/SRB/Partizan-Belgrade.png",
+      "team_logo": "images/football/teams/SRB/Partizan-Belgrade.webp",
       "sport_id": 3
     },
     {
       "id": 2802,
       "name": "Red Star Belgrade",
-      "team_logo": "public/images/football/teams/SRB/Red-Star-Belgrade.png",
+      "team_logo": "images/football/teams/SRB/Red-Star-Belgrade.webp",
       "sport_id": 3
     },
     {
       "id": 2803,
       "name": "Vojvodina",
-      "team_logo": "public/images/football/teams/SRB/Vojvodina.png",
+      "team_logo": "images/football/teams/SRB/Vojvodina.webp",
       "sport_id": 3
     },
     {
       "id": 2900,
       "name": "Debrecen",
-      "team_logo": "public/images/football/teams/HUN/Debrecen.png",
+      "team_logo": "images/football/teams/HUN/Debrecen.webp",
       "sport_id": 3
     },
     {
       "id": 2901,
       "name": "Fehervar",
-      "team_logo": "public/images/football/teams/HUN/Fehervar.png",
+      "team_logo": "images/football/teams/HUN/Fehervar.webp",
       "sport_id": 3
     },
     {
       "id": 2902,
       "name": "Ferencvaros",
-      "team_logo": "public/images/football/teams/HUN/Ferencvaros.png",
+      "team_logo": "images/football/teams/HUN/Ferencvaros.webp",
       "sport_id": 3
     },
     {
       "id": 2903,
       "name": "Gyor",
-      "team_logo": "public/images/football/teams/HUN/Gyor.png",
+      "team_logo": "images/football/teams/HUN/Gyor.webp",
       "sport_id": 3
     },
     {
       "id": 2904,
       "name": "Kispest Honved",
-      "team_logo": "public/images/football/teams/HUN/Kispest-Honved.png",
+      "team_logo": "images/football/teams/HUN/Kispest-Honved.webp",
       "sport_id": 3
     },
     {
       "id": 2905,
       "name": "MTK Budapest",
-      "team_logo": "public/images/football/teams/HUN/MTK-Budapest.png",
+      "team_logo": "images/football/teams/HUN/MTK-Budapest.webp",
       "sport_id": 3
     },
     {
       "id": 2906,
       "name": "Ujpest",
-      "team_logo": "public/images/football/teams/HUN/Ujpest.png",
+      "team_logo": "images/football/teams/HUN/Ujpest.webp",
       "sport_id": 3
     },
     {
       "id": 3000,
       "name": "Sydney",
-      "team_logo": "public/images/football/teams/AUS/Sydney.png",
+      "team_logo": "images/football/teams/AUS/Sydney.webp",
       "sport_id": 3
     },
     {
       "id": 3100,
       "name": "Atlas",
-      "team_logo": "public/images/football/teams/MEX/Atlas.png",
+      "team_logo": "images/football/teams/MEX/Atlas.webp",
       "sport_id": 3
     },
     {
       "id": 3101,
       "name": "Club America",
-      "team_logo": "public/images/football/teams/MEX/Club-America.png",
+      "team_logo": "images/football/teams/MEX/Club-America.webp",
       "sport_id": 3
     },
     {
       "id": 3102,
       "name": "Cruz Azul",
-      "team_logo": "public/images/football/teams/MEX/Cruz-Azul.png",
+      "team_logo": "images/football/teams/MEX/Cruz-Azul.webp",
       "sport_id": 3
     },
     {
       "id": 3103,
       "name": "Guadalajara",
-      "team_logo": "public/images/football/teams/MEX/Guadalajara.png",
+      "team_logo": "images/football/teams/MEX/Guadalajara.webp",
       "sport_id": 3
     },
     {
       "id": 3104,
       "name": "Leon",
-      "team_logo": "public/images/football/teams/MEX/Leon.png",
+      "team_logo": "images/football/teams/MEX/Leon.webp",
       "sport_id": 3
     },
     {
       "id": 3105,
       "name": "Monterrey",
-      "team_logo": "public/images/football/teams/MEX/Monterrey.png",
+      "team_logo": "images/football/teams/MEX/Monterrey.webp",
       "sport_id": 3
     },
     {
       "id": 3106,
       "name": "Pachuca",
-      "team_logo": "public/images/football/teams/MEX/Pachuca.png",
+      "team_logo": "images/football/teams/MEX/Pachuca.webp",
       "sport_id": 3
     },
     {
       "id": 3107,
       "name": "Pumas",
-      "team_logo": "public/images/football/teams/MEX/Pumas.png",
+      "team_logo": "images/football/teams/MEX/Pumas.webp",
       "sport_id": 3
     },
     {
       "id": 3108,
       "name": "Santos Laguna",
-      "team_logo": "public/images/football/teams/MEX/Santos-Laguna.png",
+      "team_logo": "images/football/teams/MEX/Santos-Laguna.webp",
       "sport_id": 3
     },
     {
       "id": 3109,
       "name": "Tigres",
-      "team_logo": "public/images/football/teams/MEX/Tigres.png",
+      "team_logo": "images/football/teams/MEX/Tigres.webp",
       "sport_id": 3
     },
     {
       "id": 3110,
       "name": "Toluca",
-      "team_logo": "public/images/football/teams/MEX/Toluca.png",
+      "team_logo": "images/football/teams/MEX/Toluca.webp",
       "sport_id": 3
     },
     {
       "id": 3200,
       "name": "Bodo/Glimt",
-      "team_logo": "public/images/football/teams/NOR/Bodo-Glimt.png",
+      "team_logo": "images/football/teams/NOR/Bodo-Glimt.webp",
       "sport_id": 3
     },
     {
       "id": 3201,
       "name": "Brann",
-      "team_logo": "public/images/football/teams/NOR/Brann.png",
+      "team_logo": "images/football/teams/NOR/Brann.webp",
       "sport_id": 3
     },
     {
       "id": 3202,
       "name": "Fredrikstad",
-      "team_logo": "public/images/football/teams/NOR/Fredrikstad.png",
+      "team_logo": "images/football/teams/NOR/Fredrikstad.webp",
       "sport_id": 3
     },
     {
       "id": 3203,
       "name": "Lillestrom",
-      "team_logo": "public/images/football/teams/NOR/Lillestrom.png",
+      "team_logo": "images/football/teams/NOR/Lillestrom.webp",
       "sport_id": 3
     },
     {
       "id": 3204,
       "name": "Molde",
-      "team_logo": "public/images/football/teams/NOR/Molde.png",
+      "team_logo": "images/football/teams/NOR/Molde.webp",
       "sport_id": 3
     },
     {
       "id": 3205,
       "name": "Rosenborg",
-      "team_logo": "public/images/football/teams/NOR/Rosenborg.png",
+      "team_logo": "images/football/teams/NOR/Rosenborg.webp",
       "sport_id": 3
     },
     {
       "id": 3206,
       "name": "Stabaek",
-      "team_logo": "public/images/football/teams/NOR/Stabaek.png",
+      "team_logo": "images/football/teams/NOR/Stabaek.webp",
       "sport_id": 3
     },
     {
       "id": 3207,
       "name": "Stromsgodset",
-      "team_logo": "public/images/football/teams/NOR/Stromsgodset.png",
+      "team_logo": "images/football/teams/NOR/Stromsgodset.webp",
       "sport_id": 3
     },
     {
       "id": 3208,
       "name": "Valerenga",
-      "team_logo": "public/images/football/teams/NOR/Valerenga.png",
+      "team_logo": "images/football/teams/NOR/Valerenga.webp",
       "sport_id": 3
     },
     {
       "id": 3209,
       "name": "Viking Stavanger",
-      "team_logo": "public/images/football/teams/NOR/Viking-Stavanger.png",
+      "team_logo": "images/football/teams/NOR/Viking-Stavanger.webp",
       "sport_id": 3
     },
     {
       "id": 3300,
       "name": "Lech Poznan",
-      "team_logo": "public/images/football/teams/POL/Lech-Poznan.png",
+      "team_logo": "images/football/teams/POL/Lech-Poznan.webp",
       "sport_id": 3
     },
     {
       "id": 3301,
       "name": "Legia Warsaw",
-      "team_logo": "public/images/football/teams/POL/Legia-Warsaw.png",
+      "team_logo": "images/football/teams/POL/Legia-Warsaw.webp",
       "sport_id": 3
     },
     {
       "id": 3302,
       "name": "Ruch Chorzow",
-      "team_logo": "public/images/football/teams/POL/Ruch-Chorzow.png",
+      "team_logo": "images/football/teams/POL/Ruch-Chorzow.webp",
       "sport_id": 3
     },
     {
       "id": 3303,
       "name": "Wisla Krakow",
-      "team_logo": "public/images/football/teams/POL/Wisla-Krakow.png",
+      "team_logo": "images/football/teams/POL/Wisla-Krakow.webp",
       "sport_id": 3
     },
     {
       "id": 3304,
       "name": "Widzew Lodz",
-      "team_logo": "public/images/football/teams/POL/Widzew-Lodz.png",
+      "team_logo": "images/football/teams/POL/Widzew-Lodz.webp",
       "sport_id": 3
     },
     {
       "id": 3305,
       "name": "Zaglebie Lubin",
-      "team_logo": "public/images/football/teams/POL/Zaglebie-Lubin.png",
+      "team_logo": "images/football/teams/POL/Zaglebie-Lubin.webp",
       "sport_id": 3
     },
     {
       "id": 3405,
       "name": "Steaua Bucurest",
-      "team_logo": "public/images/football/teams/ROU/Steaua-Bucurest.png",
+      "team_logo": "images/football/teams/ROU/Steaua-Bucurest.webp",
       "sport_id": 3
     },
     {
       "id": 3500,
       "name": "Alania Vladikavkaz",
-      "team_logo": "public/images/football/teams/RUS/Alania-Vladikavkaz.png",
+      "team_logo": "images/football/teams/RUS/Alania-Vladikavkaz.webp",
       "sport_id": 3
     },
     {
       "id": 3501,
       "name": "Anzhi Makhachkala",
-      "team_logo": "public/images/football/teams/RUS/Anzhi-Makhachkala.png",
+      "team_logo": "images/football/teams/RUS/Anzhi-Makhachkala.webp",
       "sport_id": 3
     },
     {
       "id": 3502,
       "name": "CSKA Moscow",
-      "team_logo": "public/images/football/teams/RUS/CSKA-Moscow.png",
+      "team_logo": "images/football/teams/RUS/CSKA-Moscow.webp",
       "sport_id": 3
     },
     {
       "id": 3503,
       "name": "Dynamo Moscow",
-      "team_logo": "public/images/football/teams/RUS/Dynamo-Moscow.png",
+      "team_logo": "images/football/teams/RUS/Dynamo-Moscow.webp",
       "sport_id": 3
     },
     {
       "id": 3504,
       "name": "Krasnodar",
-      "team_logo": "public/images/football/teams/RUS/Krasnodar.png",
+      "team_logo": "images/football/teams/RUS/Krasnodar.webp",
       "sport_id": 3
     },
     {
       "id": 3505,
       "name": "Lokomotiv Moscow",
-      "team_logo": "public/images/football/teams/RUS/Lokomotiv-Moscow.png",
+      "team_logo": "images/football/teams/RUS/Lokomotiv-Moscow.webp",
       "sport_id": 3
     },
     {
       "id": 3506,
       "name": "Rostov",
-      "team_logo": "public/images/football/teams/RUS/Rostov.png",
+      "team_logo": "images/football/teams/RUS/Rostov.webp",
       "sport_id": 3
     },
     {
       "id": 3507,
       "name": "Volgograd",
-      "team_logo": "public/images/football/teams/RUS/Volgograd.png",
+      "team_logo": "images/football/teams/RUS/Volgograd.webp",
       "sport_id": 3
     },
     {
       "id": 3508,
       "name": "Rubin Kazan",
-      "team_logo": "public/images/football/teams/RUS/Rubin-Kazan.png",
+      "team_logo": "images/football/teams/RUS/Rubin-Kazan.webp",
       "sport_id": 3
     },
     {
       "id": 3509,
       "name": "Sotchi",
-      "team_logo": "public/images/football/teams/RUS/Sotchi.png",
+      "team_logo": "images/football/teams/RUS/Sotchi.webp",
       "sport_id": 3
     },
     {
       "id": 3510,
       "name": "Spartak Moscow",
-      "team_logo": "public/images/football/teams/RUS/Spartak-Moscow.png",
+      "team_logo": "images/football/teams/RUS/Spartak-Moscow.webp",
       "sport_id": 3
     },
     {
       "id": 3511,
       "name": "Zenit St. Petersburg",
-      "team_logo": "public/images/football/teams/RUS/Zenit-St-Petersburg.png",
+      "team_logo": "images/football/teams/RUS/Zenit-St-Petersburg.webp",
       "sport_id": 3
     },
     {
       "id": 3600,
       "name": "AIK Stockholm",
-      "team_logo": "public/images/football/teams/SWE/AIK-Stockholm.png",
+      "team_logo": "images/football/teams/SWE/AIK-Stockholm.webp",
       "sport_id": 3
     },
     {
       "id": 3601,
       "name": "Djurgardens",
-      "team_logo": "public/images/football/teams/SWE/Djurgardens.png",
+      "team_logo": "images/football/teams/SWE/Djurgardens.webp",
       "sport_id": 3
     },
     {
       "id": 3602,
       "name": "Elfsborg",
-      "team_logo": "public/images/football/teams/SWE/Elfsborg.png",
+      "team_logo": "images/football/teams/SWE/Elfsborg.webp",
       "sport_id": 3
     },
     {
       "id": 3603,
       "name": "Goteborg",
-      "team_logo": "public/images/football/teams/SWE/Goteborg.png",
+      "team_logo": "images/football/teams/SWE/Goteborg.webp",
       "sport_id": 3
     },
     {
       "id": 3604,
       "name": "Hacken",
-      "team_logo": "public/images/football/teams/SWE/Hacken.png",
+      "team_logo": "images/football/teams/SWE/Hacken.webp",
       "sport_id": 3
     },
     {
       "id": 3605,
       "name": "Halmstads",
-      "team_logo": "public/images/football/teams/SWE/Halmstads.png",
+      "team_logo": "images/football/teams/SWE/Halmstads.webp",
       "sport_id": 3
     },
     {
       "id": 3606,
       "name": "Hammarby",
-      "team_logo": "public/images/football/teams/SWE/Hammarby.png",
+      "team_logo": "images/football/teams/SWE/Hammarby.webp",
       "sport_id": 3
     },
     {
       "id": 3607,
       "name": "Helsingborgs",
-      "team_logo": "public/images/football/teams/SWE/Helsingborgs.png",
+      "team_logo": "images/football/teams/SWE/Helsingborgs.webp",
       "sport_id": 3
     },
     {
       "id": 3608,
       "name": "Kalmar",
-      "team_logo": "public/images/football/teams/SWE/Kalmar.png",
+      "team_logo": "images/football/teams/SWE/Kalmar.webp",
       "sport_id": 3
     },
     {
       "id": 3609,
       "name": "Malmo",
-      "team_logo": "public/images/football/teams/SWE/Malmo.png",
+      "team_logo": "images/football/teams/SWE/Malmo.webp",
       "sport_id": 3
     },
     {
       "id": 3610,
       "name": "Norrkoping",
-      "team_logo": "public/images/football/teams/SWE/Norrkoping.png",
+      "team_logo": "images/football/teams/SWE/Norrkoping.webp",
       "sport_id": 3
     },
     {
       "id": 3611,
       "name": "Orgryte",
-      "team_logo": "public/images/football/teams/SWE/Orgryte.png",
+      "team_logo": "images/football/teams/SWE/Orgryte.webp",
       "sport_id": 3
     },
     {
       "id": 3700,
       "name": "Dynamo Kiev",
-      "team_logo": "public/images/football/teams/UKR/Dynamo-Kiev.png",
+      "team_logo": "images/football/teams/UKR/Dynamo-Kiev.webp",
       "sport_id": 3
     },
     {
       "id": 3800,
       "name": "Nacional Madeira",
-      "team_logo": "public/images/football/teams/URU/Nacional.png",
+      "team_logo": "images/football/teams/URU/Nacional.webp",
       "sport_id": 3
     },
     {
       "id": 3801,
       "name": "Penarol",
-      "team_logo": "public/images/football/teams/URU/Penarol.png",
+      "team_logo": "images/football/teams/URU/Penarol.webp",
       "sport_id": 3
     }
   ]
