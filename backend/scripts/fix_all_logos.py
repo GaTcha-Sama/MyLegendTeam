@@ -21,6 +21,14 @@ def fix_all_logos():
             team['team_logo'] = original_logo.replace('public/', '')
             fixed_count += 1
         
+        # Corriger le chemin pour qu'il commence par 'images/rugby/teams/'
+        if 'rugby/teams/' in original_logo and not original_logo.startswith('images/rugby/teams/'):
+            # Extraire la partie après 'teams/'
+            parts = original_logo.split('teams/')
+            if len(parts) > 1:
+                team['team_logo'] = f'images/rugby/teams/{parts[-1]}'
+                fixed_count += 1
+        
         # Convertir .png en .webp
         if team['team_logo'].endswith('.png'):
             team['team_logo'] = team['team_logo'].replace('.png', '.webp')
