@@ -82,7 +82,6 @@ export default function DreamTeamBuilder() {
     setTeam(prev => {
       const newTeam = { ...prev };
       
-      // Trouver la position actuelle du joueur qu'on déplace
       let playerCurrentPosition: string | null = null;
       Object.keys(newTeam).forEach(pos => {
         if (newTeam[pos]?.id === player.id) {
@@ -90,20 +89,15 @@ export default function DreamTeamBuilder() {
         }
       });
       
-      // Récupérer le joueur qui est actuellement à la position de destination
       const playerAtDestination = newTeam[position];
       
-      // Effectuer l'échange
       if (playerCurrentPosition && playerAtDestination) {
-        // Échange : le joueur déposé va à la nouvelle position, l'ancien joueur va à l'ancienne position
         newTeam[position] = player;
         newTeam[playerCurrentPosition] = playerAtDestination;
       } else if (playerCurrentPosition) {
-        // Le joueur était déjà dans l'équipe mais la position de destination était vide
         delete newTeam[playerCurrentPosition];
         newTeam[position] = player;
       } else {
-        // Nouveau joueur sur une position (vide ou occupée)
         newTeam[position] = player;
       }
       
@@ -152,6 +146,7 @@ export default function DreamTeamBuilder() {
   const deleteTeam = (teamId: string) => {
     const updatedTeams = savedTeams.filter((team: SavedTeam) => team.id !== teamId);
     localStorage.setItem('savedTeams', JSON.stringify(updatedTeams));
+    alert("Team deleted !");
   };
 
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
@@ -172,12 +167,10 @@ export default function DreamTeamBuilder() {
     currentPage * playersPerPage
   );
 
-  // Fonction pour gérer le début du drag
   const handleDragStart = (player: PlayerType) => {
     setDraggedPlayer(player);
   };
 
-  // Fonction pour gérer la fin du drag
   const handleDragEnd = () => {
     setDraggedPlayer(null);
   };
