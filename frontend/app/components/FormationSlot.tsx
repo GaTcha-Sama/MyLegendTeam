@@ -1,10 +1,10 @@
+import { useState } from "react";
 import { useDrop, useDrag } from "react-dnd";
 import { Player as PlayerType } from "../types/players";
-import Image from "next/image";
 import { slotSizes } from "../types/slotSizes";
-import { canPlayerBePlacedOnSlot } from "../types/sports";
-import { useState } from "react";
+import { canPlayerBePlacedOnSlot } from "../utils/canPlayerBePlacedOnSlot";
 import { FormationSlotProps } from "../types/formationSlotProps";
+import Image from "next/image";
 
 const getProcessedImagePath = (fullPath: string, defaultPath: string, errorType: string = "image") => {
   try {
@@ -38,7 +38,7 @@ export const FormationSlot = ({
   positionId,
   sport,
   draggedPlayer
-}: FormationSlotProps) => {
+  }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);

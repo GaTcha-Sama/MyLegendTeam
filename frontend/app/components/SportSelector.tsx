@@ -1,11 +1,5 @@
 import { Sport } from "../types/sports";
-import { Player } from "../types/players";
-
-interface SportSelectorProps {
-  selectedSport: Sport;
-  onSelectSport: (sport: Sport) => void;
-  players: Player[];
-}
+import { SportSelectorProps } from "../types/sportSelectorProps";
 
 export const SportSelector = ({ selectedSport, onSelectSport, players }: SportSelectorProps) => {
   // Extraire les sports uniques des joueurs

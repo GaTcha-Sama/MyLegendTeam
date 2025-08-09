@@ -16,7 +16,7 @@ import { fetchPlayers } from "../lib/api";
 import { Player as PlayerType } from "./types/players";
 import { SavedTeam } from "./types/savedTeam";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
-import { formationCoords } from "./styles/formation";
+import { formationCoordsPixels } from "./styles/formationCoordsPixels";
 
 export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
@@ -326,7 +326,7 @@ export default function DreamTeamBuilder() {
             }}
           >
             {sportPositions[selectedSport].map((position) => {
-              const coords = formationCoords[selectedSport][position.id];
+              const coords = formationCoordsPixels[selectedSport][position.id];
               if (!coords) return null;
               return (
                 <div

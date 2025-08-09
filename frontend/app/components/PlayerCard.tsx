@@ -1,15 +1,7 @@
 import { useDrag } from "react-dnd";
-import { Player as PlayerType } from "../types/players";
-import { Theme } from "../types/sports";
-import Image from "next/image";
 import { useState } from "react";
-
-interface PlayerCardProps {
-  player: PlayerType;
-  theme: Theme;
-  onDragStart?: () => void;
-  onDragEnd?: () => void;
-}
+import { PlayerCardProps } from "../types/playerCardProps";
+import Image from "next/image";
 
 export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCardProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);

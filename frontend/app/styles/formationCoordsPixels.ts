@@ -1,6 +1,6 @@
 import type { Sport } from "../types/sports";
 
-export const formationCoords: Record<Sport, Record<string, { top: number; left: number }>> = {
+export const formationCoordsPixels: Record<Sport, Record<string, { top: number; left: number }>> = {
   rugby: {
     fullback:      { top: 0, left: 550 },
     wing1:         { top: 40, left: 300 },
