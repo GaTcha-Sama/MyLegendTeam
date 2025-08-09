@@ -1,8 +1,13 @@
 import { useDrag } from "react-dnd";
 import { PlayerCardProps } from "../types/playerCardProps";
 import Image from "next/image";
+import { useState } from "react";
 
 export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCardProps) => {
+  const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
+  const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
+  const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
+
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
     item: () => {
@@ -103,12 +108,14 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
               title={player.team1}
             >
               <Image
-                src={`/${teamLogoPath1}`}
+                src={useDefaultTeamLogo1 ? '/images/team-default.webp' : `/${teamLogoPath1}`}
                 alt={`Logo ${player.team1}`}
                 className="object-contain max-w-full max-h-full"
                 sizes="64px"
                 height={48}
                 width={64}
+                onError={() => setUseDefaultTeamLogo1(true)}
+                unoptimized
               />
             </div>
           )}
@@ -118,12 +125,14 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
               title={player.team2}
             >
               <Image
-                src={`/${teamLogoPath2}`}
+                src={useDefaultTeamLogo2 ? '/images/team-default.webp' : `/${teamLogoPath2}`}
                 alt={`Logo ${player.team2}`}
                 className="object-contain max-w-full max-h-full"
                 sizes="64px"
                 height={48}
                 width={64}
+                onError={() => setUseDefaultTeamLogo2(true)}
+                unoptimized
               />
             </div>
           )}
@@ -133,12 +142,14 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
               title={player.team3}
             >
               <Image
-                src={`/${teamLogoPath3}`}
+                src={useDefaultTeamLogo3 ? '/images/team-default.webp' : `/${teamLogoPath3}`}
                 alt={`Logo ${player.team3}`}
                 className="object-contain max-w-full max-h-full"
                 sizes="64px"
                 height={48}
                 width={64}
+                onError={() => setUseDefaultTeamLogo3(true)}
+                unoptimized
               />
             </div>
           )}
