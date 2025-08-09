@@ -61,7 +61,7 @@ class Player {
             LEFT JOIN teams t3 ON p.team3_id = t3.id
             LEFT JOIN positions pos ON p.position_id = pos.id
             LEFT JOIN sports s ON p.sport_id = s.id
-            WHERE s.name = ?
+            WHERE LOWER(s.name) = LOWER(?)
         `;
         db.all(query, [sport], (err, rows) => {
             if (err) {
