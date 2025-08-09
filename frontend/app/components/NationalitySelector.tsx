@@ -1,11 +1,4 @@
-import { Player } from "../types/players";
-
-interface NationalitySelectorProps { 
-  selectedNationality: string;
-  onSelectNationality: (nationality: string) => void;
-  players: Player[];
-  selectedSport: string;
-}
+import { NationalitySelectorProps } from "../types/nationalitySelectorProps";
 
 export const NationalitySelector = ({ selectedNationality, onSelectNationality, players, selectedSport }: NationalitySelectorProps) => {
   

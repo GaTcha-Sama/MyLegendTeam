@@ -1,79 +1,33 @@
+import { useState } from "react";
 import { useDrop, useDrag } from "react-dnd";
 import { Player as PlayerType } from "../types/players";
-import { Theme } from "../types/sports";
-import Image from "next/image";
 import { slotSizes } from "../types/slotSizes";
-import { Sport, canPlayerBePlacedOnSlot } from "../types/sports";
-import { useState } from "react";
+import { canPlayerBePlacedOnSlot } from "../utils/canPlayerBePlacedOnSlot";
+import { FormationSlotProps } from "../types/formationSlotProps";
+import Image from "next/image";
 
-const getImagePath = (fullPath: string) => {
+const getProcessedImagePath = (fullPath: string, defaultPath: string, errorType: string = "image") => {
   try {
+    if (!fullPath) return defaultPath;
+    
     const normalizedPath = fullPath.replace(/\\/g, '/');
     const cleanPath = normalizedPath.replace(/^public\//, '');
-    // Convertir en WebP
     const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
     return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
   } catch (error) {
-    console.error("Erreur lors du traitement du chemin d'image:", error);
-    return 'images/portrait-default.webp';
+    console.error(`Erreur lors du traitement du chemin ${errorType}:`, error);
+    return defaultPath;
   }
 };
 
-const getFlagPath = (fullPath: string) => {
-  try {
-    const normalizedPath = fullPath.replace(/\\/g, '/');
-    const cleanPath = normalizedPath.replace(/^public\//, '');
-    // Convertir en WebP
-    const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-    return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
-  } catch (error) {
-    console.error("Erreur lors du traitement du chemin du drapeau:", error);
-    return 'images/default-flag.webp';
-  }
-};
+const getPortraitPath = (fullPath: string) => 
+  getProcessedImagePath(fullPath, 'images/portrait-default.webp', "of the player");
 
-const getTeamLogoPath = (fullPath: string) => {
-  try {
-    if (!fullPath) return 'images/team-default.webp';
-    
-    const normalizedPath = fullPath.replace(/\\/g, '/');
-    const cleanPath = normalizedPath.replace(/^public\//, '');
-    
-    // Ne plus convertir en WebP car les données sont déjà en .webp
-    // const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-    
-    // S'assurer que le chemin ne commence pas par /
-    return cleanPath.startsWith('/') ? cleanPath.substring(1) : cleanPath;
-  } catch (error) {
-    console.error("Erreur lors du traitement du chemin du logo:", error);
-    return 'images/team-default.webp';
-  }
-};
+const getFlagPath = (fullPath: string) => 
+  getProcessedImagePath(fullPath, 'images/default-flag.webp', "of the flag");
 
-// Mapping des positions de joueurs vers les slots autorisés pour le rugby
-export const rugbyPositionSlotMapping: Record<string, string[]> = {
-  "Prop": ["prop1", "prop2", "rugby_substitute1", "rugby_substitute2"],
-  "Hooker": ["hooker", "rugby_substitute3"],
-  "Lock": ["lock1", "lock2", "rugby_substitute4"],
-  "Flanker": ["flanker1", "flanker2", "rugby_substitute5"],
-  "Number 8": ["number8", "rugby_substitute5"],
-  "Scrum half": ["scrumhalf", "rugby_substitute6"],
-  "Fly half": ["flyhalf", "rugby_substitute7"],
-  "Wing": ["wing1", "wing2", "rugby_substitute8"],
-  "Center": ["center1", "center2", "rugby_substitute8"],
-  "Full back": ["fullback", "rugby_substitute8"]
-};
-
-interface FormationSlotProps {
-  position: string;
-  player: PlayerType | null;
-  onDropPlayer: (position: string, player: PlayerType | null) => void;
-  isPlayerAlreadyPlaced: boolean;
-  theme: Theme;
-  positionId: string;
-  sport: Sport;
-  draggedPlayer?: PlayerType | null; // Nouveau prop pour le joueur en cours de drag
-}
+const getTeamLogoPath = (fullPath: string) => 
+  getProcessedImagePath(fullPath, 'images/team-default.webp', "of the team logo");
 
 export const FormationSlot = ({ 
   position, 
@@ -84,10 +38,9 @@ export const FormationSlot = ({
   positionId,
   sport,
   draggedPlayer
-}: FormationSlotProps) => {
+  }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
-  // const [useDefaultTeamLogo, setUseDefaultTeamLogo] = useState(false);
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
   const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
   const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
@@ -119,7 +72,6 @@ export const FormationSlot = ({
     drag(drop(node));
   };
 
-  // Déterminer si le slot est valide pour le joueur en cours de drag
   const isSlotValidForDraggedPlayer = draggedPlayer ? 
     canPlayerBePlacedOnSlot(draggedPlayer.position, positionId, sport) : 
     true;
@@ -190,7 +142,7 @@ export const FormationSlot = ({
       <div className="flex flex-col items-center w-full h-full">
         <div className="relative w-full h-full">
           <Image 
-            src={`/${getImagePath(player.photo)}`}
+            src={`/${getPortraitPath(player.photo)}`}
             alt={player.name}
             fill
             className="object-cover rounded-sm object-top"

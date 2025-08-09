@@ -1,11 +1,4 @@
-import { Player } from "../types/players";
-
-interface PositionSelectorProps {
-  selectedPosition: string;
-  onSelectPosition: (position: string) => void;
-  players: Player[];
-  selectedSport: string;
-}
+import { PositionSelectorProps } from "../types/positionSelectorProps";
 
 export const PositionSelector = ({ selectedPosition, onSelectPosition, players, selectedSport }: PositionSelectorProps) => {
   const positions = Array.from(
