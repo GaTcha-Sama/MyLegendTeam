@@ -1,13 +1,38 @@
 import { PositionSelectorProps } from "../types/positionSelectorProps";
+import { getOrderedPositions } from "../utils/getOrderedPositions";
+import { Sport } from "../types/sports";
 
-export const PositionSelector = ({ selectedPosition, onSelectPosition, players, selectedSport }: PositionSelectorProps) => {
-  const positions = Array.from(
+export const PositionSelector = ({
+  selectedPosition,
+  onSelectPosition,
+  players,
+  selectedSport,
+}: PositionSelectorProps) => {
+  const existingPositions = Array.from(
     new Set(
       players
-        .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
-        .map(player => player.position)
+        .filter((p) => p.sport.toLowerCase() === selectedSport.toLowerCase())
+        .map((p) => p.position)
     )
-  ).sort();
+  );
+
+  const normalize = (s: string) => s.toLowerCase().replace(/\s|-/g, "");
+
+  const ordered = getOrderedPositions(selectedSport.toLowerCase() as Sport, "en");
+  const orderMap = new Map<string, number>();
+  ordered.forEach((pos, idx) => {
+    const baseName = pos.name.includes("/") ? pos.name.split("/")[1].trim() : pos.name;
+    const key = normalize(baseName);
+    if (!orderMap.has(key)) orderMap.set(key, idx);
+  });
+
+  const rank = (s: string) => {
+    const v = orderMap.get(normalize(s));
+    return v === undefined ? Number.POSITIVE_INFINITY : v;
+  };
+
+  const positions = [...existingPositions].sort((a, b) => rank(a) - rank(b));
+
   return (
     <div>
       <select
