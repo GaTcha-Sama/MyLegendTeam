@@ -4,6 +4,8 @@ const cors = require("cors");
 const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 const playerController = require("./controllers/playerController");
+const authController = require("./controllers/authController");
+const authMiddleware = require("./middlewares/auth");
 
 const app = express();
 
@@ -51,6 +53,12 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 }));
+
+app.post("/auth/register", authController.register);
+app.post("/auth/login", authController.login);
+app.get("/me", authMiddleware, (req, res) => {
+  res.json(req.user);
+});
 
 app.get("/players", playerController.getAllPlayers);
 // app.get("/players/:id", playerController.getPlayerById);
