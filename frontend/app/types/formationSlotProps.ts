@@ -9,5 +9,7 @@ export interface FormationSlotProps {
   theme: Theme;
   positionId: string;
   sport: Sport;
-  draggedPlayer?: PlayerType | null; // Nouveau prop pour le joueur en cours de drag
+  draggedPlayer?: PlayerType | null;
+  onDragStart?: () => void;
+  onDragEnd?: () => void;
 }

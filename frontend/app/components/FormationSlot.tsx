@@ -37,8 +37,10 @@ export const FormationSlot = ({
   theme,
   positionId,
   sport,
-  draggedPlayer
-  }: FormationSlotProps) => {
+  draggedPlayer,
+  onDragStart,
+  onDragEnd
+}: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
@@ -47,8 +49,17 @@ export const FormationSlot = ({
 
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
-    item: player ? player : {},
+    item: () => {
+      if (player) {
+        onDragStart?.();
+        return player;
+      }
+      return {};
+    },
     canDrag: !!player,
+    end: () => {
+      onDragEnd?.();
+    },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),

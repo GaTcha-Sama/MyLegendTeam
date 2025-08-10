@@ -41,13 +41,13 @@ export default function DreamTeamBuilder() {
       try {
         const playersData = await fetchPlayers(selectedSport);
         
-        // Ajout de débogage - TEMPORAIRE
-        if (playersData && playersData.length > 0) {
-          console.log('Premier joueur:', playersData[0]);
-          console.log('team1_logo du premier joueur:', playersData[0].team1_logo);
-          console.log('team2_logo du premier joueur:', playersData[0].team2_logo);
-          console.log('team3_logo du premier joueur:', playersData[0].team3_logo);
-        }
+        // // Ajout de débogage - TEMPORAIRE
+        // if (playersData && playersData.length > 0) {
+        //   console.log('Premier joueur:', playersData[0]);
+        //   console.log('team1_logo du premier joueur:', playersData[0].team1_logo);
+        //   console.log('team2_logo du premier joueur:', playersData[0].team2_logo);
+        //   console.log('team3_logo du premier joueur:', playersData[0].team3_logo);
+        // }
         
         setPlayers(playersData);
       } catch (error) {
@@ -73,6 +73,26 @@ export default function DreamTeamBuilder() {
     setFilteredPlayers([]);
     setCurrentPage(1);
   };
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedPosition]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedTeam]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedActiveRetired]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedSport]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedNationality]);
 
   const isPlayerInTeam = useCallback((playerId: number) => {
     return Object.values(team).some(player => player?.id === playerId);
@@ -352,6 +372,11 @@ export default function DreamTeamBuilder() {
                     theme={currentTheme}
                     sport={selectedSport}
                     draggedPlayer={draggedPlayer}
+                    onDragStart={() => {
+                      const slotPlayer = team[position.id] as PlayerType | null;
+                      if (slotPlayer) handleDragStart(slotPlayer);
+                    }}
+                    onDragEnd={handleDragEnd}
                   />
                 </div>
               );
