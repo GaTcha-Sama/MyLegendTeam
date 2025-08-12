@@ -63,14 +63,14 @@ export const FilterPlayers = ({
   }).length === 0;
 
   return (
-    <div className="flex flex-col gap-2">
-      <div className="relative">
+    <div className="flex flex-col gap-2 w-full min-w-0">
+      <div className="relative w-full">
         <input
           type="text"
           value={searchTerm}
           placeholder="Search by name or firstname..."
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent w-64 pr-10"
+          className="px-3 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent w-full max-w-full min-w-0 pr-10"
         />
         {searchTerm && (
           <button

@@ -272,7 +272,7 @@ export default function DreamTeamBuilder() {
             </div>
             <div className="grid grid-cols-3 gap-4">
               {loading ? (
-                <div className="text-center py-4 col-span-3">Loading players...</div>
+                <div className="text-center py-4 col-span-3 text-black">Loading players...</div>
               ) : playersToShow.length === 0 && hasActiveFilters ? (
                 <div className="text-center py-4 col-span-3 text-red-600 font-semibold">
                   No players found with these filters<br/>
