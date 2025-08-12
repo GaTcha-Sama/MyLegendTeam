@@ -41,14 +41,6 @@ export default function DreamTeamBuilder() {
       try {
         const playersData = await fetchPlayers(selectedSport);
         
-        // // Ajout de débogage - TEMPORAIRE
-        // if (playersData && playersData.length > 0) {
-        //   console.log('Premier joueur:', playersData[0]);
-        //   console.log('team1_logo du premier joueur:', playersData[0].team1_logo);
-        //   console.log('team2_logo du premier joueur:', playersData[0].team2_logo);
-        //   console.log('team3_logo du premier joueur:', playersData[0].team3_logo);
-        // }
-        
         setPlayers(playersData);
       } catch (error) {
         console.error("Error loading players:", error);
@@ -196,6 +188,8 @@ export default function DreamTeamBuilder() {
     currentPage * playersPerPage
   );
 
+  const hasActiveFilters = selectedNationality !== "" || selectedPosition !== "" || selectedTeam !== "" || selectedActiveRetired !== null;
+
   const handleDragStart = (player: PlayerType) => {
     setDraggedPlayer(player);
   };
@@ -278,7 +272,12 @@ export default function DreamTeamBuilder() {
             </div>
             <div className="grid grid-cols-3 gap-4">
               {loading ? (
-                <div className="text-center py-4 col-span-2">Loading players...</div>
+                <div className="text-center py-4 col-span-3">Loading players...</div>
+              ) : playersToShow.length === 0 && hasActiveFilters ? (
+                <div className="text-center py-4 col-span-3 text-red-600 font-semibold">
+                  No players found with these filters<br/>
+                  Please try again with different filters
+                </div>
               ) : (
                 paginatedPlayers.map((player) => (
                   <PlayerCard 

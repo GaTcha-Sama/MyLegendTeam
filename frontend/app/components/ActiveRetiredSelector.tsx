@@ -1,11 +1,4 @@
-import { Player } from "../types/players";
-
-interface ActiveRetiredSelectorProps {
-  selectedActiveRetired: number | null;
-  onSelectActiveRetired: (activeRetired: number | null) => void;
-  players: Player[];
-  selectedSport: string;
-}
+import { ActiveRetiredSelectorProps } from "../types/activeRetiredSelectorProps";
 
 export const ActiveRetiredSelector: React.FC<ActiveRetiredSelectorProps> = ({
   selectedActiveRetired,
