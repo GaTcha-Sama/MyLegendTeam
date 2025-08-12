@@ -6,6 +6,11 @@ class User {
     db.get(q, [email], (err, row) => callback(err, row));
   }
 
+  static findByUsername(username, callback) {
+    const q = 'SELECT id, email, password_hash, username FROM users WHERE LOWER(username)=LOWER(?) LIMIT 1';
+    db.get(q, [username], (err, row) => callback(err, row));
+  }
+
   static create(email, passwordHash, username, callback) {
     const q = 'INSERT INTO users (email, password_hash, username) VALUES (?, ?, ?)';
     db.run(q, [email, passwordHash, username], function (err) {

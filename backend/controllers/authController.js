@@ -10,23 +10,38 @@ const signToken = (user) =>
 
 exports.register = (req, res) => {
   const { email, password, username } = req.body || {};
-  if (!email || !password || !username) return res.status(400).json({ error: 'Email, mot de passe et nom d\'utilisateur sont requis' });
+  if (!email || !password || !username) {
+    return res.status(400).json({ error: 'Email, mot de passe et nom d\'utilisateur sont requis' });
+  }
 
-  User.findByEmail(email, async (err, existing) => {
-    if (err) return res.status(500).json({ error: 'Erreur serveur' });
-    if (existing) return res.status(409).json({ error: 'Email déjà utilisé' });
+  User.findByEmail(email, (errE, existingEmail) => {
+    if (errE) return res.status(500).json({ error: 'Erreur serveur' });
+    if (existingEmail) return res.status(409).json({ error: 'Email déjà utilisé' });
 
-    try {
-      const salt = await bcrypt.genSalt(10);
-      const hash = await bcrypt.hash(password, salt);
-      User.create(email, hash, username, (createErr, created) => {
-        if (createErr) return res.status(500).json({ error: 'Erreur de création' });
-        const token = signToken(created);
-        res.status(201).json({ token, user: { id: created.id, email: created.email, username: created.username } });
-      });
-    } catch {
-      res.status(500).json({ error: 'Erreur serveur' });
-    }
+    User.findByUsername(username, async (errU, existingUsername) => {
+      if (errU) return res.status(500).json({ error: 'Erreur serveur' });
+      if (existingUsername) return res.status(409).json({ error: 'Nom d\'utilisateur déjà utilisé' });
+
+      try {
+        const salt = await bcrypt.genSalt(10);
+        const hash = await bcrypt.hash(password, salt);
+        User.create(email, hash, username, (createErr, created) => {
+          if (createErr) {
+            if (createErr.code === 'SQLITE_CONSTRAINT') {
+              const m = createErr.message || '';
+              if (m.includes('users.username')) return res.status(409).json({ error: 'Nom d\'utilisateur déjà utilisé' });
+              if (m.includes('users.email')) return res.status(409).json({ error: 'Email déjà utilisé' });
+              return res.status(409).json({ error: 'Contrainte d’unicité violée' });
+            }
+            return res.status(500).json({ error: 'Erreur de création' });
+          }
+          const token = signToken(created);
+          res.status(201).json({ token, user: { id: created.id, email: created.email, username: created.username } });
+        });
+      } catch {
+        res.status(500).json({ error: 'Erreur serveur' });
+      }
+    });
   });
 };
 
