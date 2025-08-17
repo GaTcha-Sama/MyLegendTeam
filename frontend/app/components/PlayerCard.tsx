@@ -51,13 +51,13 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
   const teamLogoPath2 = getTeamLogoPath(player.team2_logo);
   const teamLogoPath3 = getTeamLogoPath(player.team3_logo);
 
-  console.log('Player:', player.name, player.lastname);
-  console.log('team1_logo original:', player.team1_logo);
-  console.log('teamLogoPath1 traité:', teamLogoPath1);
-  console.log('team2_logo original:', player.team2_logo);
-  console.log('teamLogoPath2 traité:', teamLogoPath2);
-  console.log('team3_logo original:', player.team3_logo);
-  console.log('teamLogoPath3 traité:', teamLogoPath3);
+  // console.log('Player:', player.name, player.lastname);
+  // console.log('team1_logo original:', player.team1_logo);
+  // console.log('teamLogoPath1 traité:', teamLogoPath1);
+  // console.log('team2_logo original:', player.team2_logo);
+  // console.log('teamLogoPath2 traité:', teamLogoPath2);
+  // console.log('team3_logo original:', player.team3_logo);
+  // console.log('teamLogoPath3 traité:', teamLogoPath3);
 
   return (
     <div

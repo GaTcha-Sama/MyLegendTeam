@@ -10,7 +10,8 @@ class Player {
                 n.name as nationality,
                 n.flag,
                 s.name as sport,
-                pos.name as position,
+                pos1.name as position1,
+                pos2.name as position2,
                 p.photo,
                 t1.name as team1,
                 t1.team_logo as team1_logo,
@@ -24,7 +25,8 @@ class Player {
             LEFT JOIN teams t1 ON p.team1_id = t1.id
             LEFT JOIN teams t2 ON p.team2_id = t2.id
             LEFT JOIN teams t3 ON p.team3_id = t3.id
-            LEFT JOIN positions pos ON p.position_id = pos.id
+            LEFT JOIN positions pos1 ON p.position1_id = pos1.id
+            LEFT JOIN positions pos2 ON p.position2_id = pos2.id
             LEFT JOIN sports s ON p.sport_id = s.id
         `;
         db.all(query, [], (err, rows) => {
@@ -45,7 +47,8 @@ class Player {
                 n.name as nationality,
                 n.flag,
                 s.name as sport,
-                pos.name as position,
+                pos1.name as position1,
+                pos2.name as position2,
                 p.photo,
                 t1.name as team1,
                 t1.team_logo as team1_logo,
@@ -59,7 +62,8 @@ class Player {
             LEFT JOIN teams t1 ON p.team1_id = t1.id
             LEFT JOIN teams t2 ON p.team2_id = t2.id
             LEFT JOIN teams t3 ON p.team3_id = t3.id
-            LEFT JOIN positions pos ON p.position_id = pos.id
+            LEFT JOIN positions pos1 ON p.position1_id = pos1.id
+            LEFT JOIN positions pos2 ON p.position2_id = pos2.id
             LEFT JOIN sports s ON p.sport_id = s.id
             WHERE LOWER(s.name) = LOWER(?)
         `;

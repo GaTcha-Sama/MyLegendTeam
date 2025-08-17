@@ -8,13 +8,13 @@ export const PositionSelector = ({
   players,
   selectedSport,
 }: PositionSelectorProps) => {
-  const existingPositions = Array.from(
-    new Set(
-      players
-        .filter((p) => p.sport.toLowerCase() === selectedSport.toLowerCase())
-        .map((p) => p.position)
-    )
-  );
+  // Récupérer toutes les positions uniques (position1 et position2)
+  const allPositions = players
+    .filter((p) => p.sport.toLowerCase() === selectedSport.toLowerCase())
+    .flatMap((p) => [p.position1, p.position2])
+    .filter((pos) => pos && pos.trim() !== ""); // Filtrer les positions vides
+
+  const existingPositions = Array.from(new Set(allPositions));
 
   const normalize = (s: string) => s.toLowerCase().replace(/\s|-/g, "");
 

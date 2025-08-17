@@ -130,9 +130,9 @@ export const sportPositions: Record<Sport, Position[]> = {
   rugby: [
     { id: "fullback", name: "15 / Fullback", order: 15, translations: { fr: "15 / Arrière" } },
     { id: "wing1", name: "14 / Wing", order: 14, translations: { fr: "14 / Ailier" } },
-    { id: "center1", name: "13 / Center", order: 13, translations: { fr: "13 / Centre" } },
-    { id: "center2", name: "12 / Center", order: 12, translations: { fr: "12 / Centre" } },
-    { id: "wing2", name: "11 / Wing", order: 11, translations: { fr: "11 / Ailier" } },
+    { id: "center1", name: "13 / Center", order: 12, translations: { fr: "13 / Centre" } },
+    { id: "center2", name: "12 / Center", order: 11, translations: { fr: "12 / Centre" } },
+    { id: "wing2", name: "11 / Wing", order: 13, translations: { fr: "11 / Ailier" } },
     { id: "flyhalf", name: "10 / Fly-half", order: 10, translations: { fr: "10 / Demi d'ouverture" } },
     { id: "scrumhalf", name: "9 / Scrum-half", order: 9, translations: { fr: "9 / Demi de mêlée" } },
     { id: "number8", name: "8 / Number 8", order: 8, translations: { fr: "8 / Numéro 8" } },
