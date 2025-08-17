@@ -1,4 +1,5 @@
 import { Sport } from "../types/sports";
+import { Player } from "../types/players";
 
 // Mapping des positions de joueurs vers les slots autorisés pour le rugby
 export const rugbyPositionSlotMapping: Record<string, string[]> = {
@@ -14,16 +15,34 @@ export const rugbyPositionSlotMapping: Record<string, string[]> = {
 };
 
 // Fonction pour vérifier si un joueur peut être placé sur un slot
-export const canPlayerBePlacedOnSlot = (playerPosition: string, slotId: string, sport: Sport): boolean => {
+export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: Sport): boolean => {
   if (sport === "rugby") {
     // Les slots de substitution sont toujours disponibles pour toutes les positions
     if (slotId.startsWith("rugby_substitute")) {
       return true;
     }
     
-    // Vérifier si la position du joueur correspond aux slots autorisés
-    const allowedSlots = rugbyPositionSlotMapping[playerPosition];
-    return allowedSlots ? allowedSlots.includes(slotId) : false;
+    // Vérifier si la position1 ou position2 du joueur correspond aux slots autorisés
+    const position1 = player.position1;
+    const position2 = player.position2;
+    
+    // Vérifier position1
+    if (position1) {
+      const allowedSlots1 = rugbyPositionSlotMapping[position1];
+      if (allowedSlots1 && allowedSlots1.includes(slotId)) {
+        return true;
+      }
+    }
+    
+    // Vérifier position2
+    if (position2) {
+      const allowedSlots2 = rugbyPositionSlotMapping[position2];
+      if (allowedSlots2 && allowedSlots2.includes(slotId)) {
+        return true;
+      }
+    }
+    
+    return false;
   }
   
   // Pour les autres sports, retourner true par défaut (pas de restriction implémentée)

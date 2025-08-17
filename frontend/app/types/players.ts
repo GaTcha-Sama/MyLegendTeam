@@ -5,7 +5,8 @@ export interface Player {
   nationality: string;
   flag: string;
   sport: string;
-  position: string;
+  position1: string;
+  position2: string;
   photo: string;
   team1: string;
   team1_logo: string;

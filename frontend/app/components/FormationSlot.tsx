@@ -71,7 +71,7 @@ export const FormationSlot = ({
       onDropPlayer(position, item);
     },
     canDrop: (item: PlayerType) => {
-      return canPlayerBePlacedOnSlot(item.position, positionId, sport);
+      return canPlayerBePlacedOnSlot(item, positionId, sport);
     },
     collect: (monitor) => ({ 
       isOver: monitor.isOver(),
@@ -84,7 +84,7 @@ export const FormationSlot = ({
   };
 
   const isSlotValidForDraggedPlayer = draggedPlayer ? 
-    canPlayerBePlacedOnSlot(draggedPlayer.position, positionId, sport) : 
+    canPlayerBePlacedOnSlot(draggedPlayer, positionId, sport) : 
     true;
 
   const renderPlayerContent = () => {
