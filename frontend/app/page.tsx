@@ -177,7 +177,7 @@ export default function DreamTeamBuilder() {
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&
              (selectedNationality === "" || player.nationality === selectedNationality) &&
-             (selectedPosition === "" || player.position === selectedPosition) &&
+             (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
              (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam) &&
              (selectedActiveRetired === null || player.active === (selectedActiveRetired ? 1 : 0))
     }))
