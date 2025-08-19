@@ -21,6 +21,11 @@
       "sport_id": 1
     },
     {
+      "id": 30,
+      "name": "Number 8",
+      "sport_id": 1
+    },
+    {
       "id": 5,
       "name": "Scrum half",
       "sport_id": 1
