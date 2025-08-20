@@ -181,7 +181,19 @@ export default function DreamTeamBuilder() {
              (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam) &&
              (selectedActiveRetired === null || player.active === (selectedActiveRetired ? 1 : 0))
     }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => {
+      // Si une position est sélectionnée, trier par priorité de position
+      if (selectedPosition !== "") {
+        const aIsPrimary = a.position1 === selectedPosition;
+        const bIsPrimary = b.position1 === selectedPosition;
+        
+        if (aIsPrimary && !bIsPrimary) return -1;
+        if (!aIsPrimary && bIsPrimary) return 1;
+      }
+      
+      // Sinon, trier par nom
+      return a.name.localeCompare(b.name);
+    });
 
   const paginatedPlayers = playersToShow.slice(
     (currentPage - 1) * playersPerPage,
@@ -286,6 +298,7 @@ export default function DreamTeamBuilder() {
                     theme={currentTheme} 
                     onDragStart={() => handleDragStart(player)}
                     onDragEnd={handleDragEnd}
+                    selectedPosition={selectedPosition} // Nouvelle prop
                   />
                 ))
               )}

@@ -3,7 +3,7 @@ import { PlayerCardProps } from "../types/playerCardProps";
 import Image from "next/image";
 import { useState } from "react";
 
-export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCardProps) => {
+export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosition }: PlayerCardProps) => {
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
   const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
   const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
@@ -59,11 +59,25 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
   // console.log('team3_logo original:', player.team3_logo);
   // console.log('teamLogoPath3 traité:', teamLogoPath3);
 
+  // Déterminer si le joueur a la position sélectionnée en position1 ou position2
+  const isPrimaryPosition = selectedPosition && player.position1 === selectedPosition;
+  const isSecondaryPosition = selectedPosition && player.position2 === selectedPosition;
+  
+  // Déterminer la classe de style selon la position
+  const getPositionStyle = () => {
+    if (isPrimaryPosition) {
+      return "ring-4 ring-yellow-400 ring-opacity-80 shadow-lg";
+    } else if (isSecondaryPosition) {
+      return "ring-2 ring-gray-400 ring-opacity-60 opacity-80";
+    }
+    return "";
+  };
+
   return (
     <div
       ref={drag as unknown as React.Ref<HTMLDivElement>}
       className={`
-        p-2 
+        relative p-2 
         bg-gradient-to-r ${theme.primary} ${theme.hover} 
         text-white 
         rounded-lg 
@@ -78,8 +92,18 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd }: PlayerCard
         min-h-[280px]
         w-full
         ${isDragging ? "opacity-50" : ""}
+        ${getPositionStyle()}
       `}
     >
+      {/* Indicateur de position si une position est sélectionnée */}
+      {(isPrimaryPosition || isSecondaryPosition) && (
+        <div className={`
+          absolute -top-2 -right-2 px-2 py-1 rounded-full text-xs font-bold z-10
+        `}>
+        
+        </div>
+      )}
+
       <div className="text-sm font-bold mb-3 text-center">
         {`${player.lastname} ${player.name}`}
       </div>

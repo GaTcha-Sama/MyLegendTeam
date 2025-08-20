@@ -1,9 +1,10 @@
-import { Player as PlayerType } from "./players";
+import { Player } from "./players";
 import { Theme } from "./sports";
 
 export interface PlayerCardProps {
-  player: PlayerType;
+  player: Player;
   theme: Theme;
   onDragStart?: () => void;
   onDragEnd?: () => void;
+  selectedPosition?: string; // Nouvelle prop pour la position sélectionnée
 }
