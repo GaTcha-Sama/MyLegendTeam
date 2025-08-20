@@ -687,7 +687,7 @@
       "team2_id": 5,
       "team3_id": 6,
       "flag": "images/flags/FRA.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/FRA/Brice-Dulin.webp"
     },
     {
@@ -2345,8 +2345,8 @@
       "name": "Barrett",
       "lastname": "Jordie",
       "nationality_id": 121,
-      "position1_id": 9,
-      "position2_id": 7,
+      "position1_id": 7,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 31,
       "team2_id": 60,
@@ -11391,7 +11391,7 @@
       "lastname": "Horacio",
       "nationality_id": 7,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 17,
       "team2_id": 75,
@@ -11417,6 +11417,21 @@
     },
     {
       "id": 1702,
+      "name": "Albornoz",
+      "lastname": "Tomas",
+      "nationality_id": 7,
+      "position1_id": 6,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 99,
+      "team2_id": 95,
+      "team3_id": null,
+      "flag": "images/flags/ARG.png",
+      "active": true,
+      "photo": "images/rugby/Players/ARG/Tomas-Albornoz.webp"
+    },
+    {
+      "id": 1703,
       "name": "Alemanno",
       "lastname": "Matias",
       "nationality_id": 7,
@@ -11431,12 +11446,12 @@
       "photo": "images/rugby/Players/ARG/Matias-Alemanno.webp"
     },
     {
-      "id": 1703,
+      "id": 1704,
       "name": "Arbizu",
       "lastname": "Lisandro",
       "nationality_id": 7,
-      "position1_id": 7,
-      "position2_id": null,
+      "position1_id": 6,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 17,
       "team2_id": 7,
@@ -11446,7 +11461,7 @@
       "photo": "images/rugby/Players/ARG/Lisandro-Arbizu.webp"
     },
     {
-      "id": 1704,
+      "id": 1705,
       "name": "Ayerza",
       "lastname": "Marcos",
       "nationality_id": 7,
@@ -11461,7 +11476,7 @@
       "photo": "images/rugby/Players/ARG/Marcos-Ayerza.webp"
     },
     {
-      "id": 1705,
+      "id": 1706,
       "name": "Bertranou",
       "lastname": "Gonzalo",
       "nationality_id": 7,
@@ -11476,12 +11491,12 @@
       "photo": "images/rugby/Players/ARG/Gonzalo-Bertranou.webp"
     },
     {
-      "id": 1706,
+      "id": 1707,
       "name": "Boffeli",
       "lastname": "Emiliano",
       "nationality_id": 7,
-      "position1_id": 9,
-      "position2_id": null,
+      "position1_id": 8,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 5,
@@ -11491,7 +11506,7 @@
       "photo": "images/rugby/Players/ARG/Emiliano-Boffeli.webp"
     },
     {
-      "id": 1707,
+      "id": 1708,
       "name": "Bosch",
       "lastname": "Marcelo",
       "nationality_id": 7,
@@ -11506,12 +11521,12 @@
       "photo": "images/rugby/Players/ARG/Marcelo-Bosch.webp"
     },
     {
-      "id": 1708,
+      "id": 1709,
       "name": "Carreras",
       "lastname": "Santiago",
       "nationality_id": 7,
       "position1_id": 9,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 73,
@@ -11521,7 +11536,7 @@
       "photo": "images/rugby/Players/ARG/Santiago-Carreras.webp"
     },
     {
-      "id": 1709,
+      "id": 1710,
       "name": "Chocobares",
       "lastname": "Santiago",
       "nationality_id": 7,
@@ -11536,12 +11551,12 @@
       "photo": "images/rugby/Players/ARG/Santiago-Chocobares.webp"
     },
     {
-      "id": 1710,
+      "id": 1711,
       "name": "Contepomi",
       "lastname": "Felipe",
       "nationality_id": 7,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 71,
       "team2_id": 60,
@@ -11551,12 +11566,12 @@
       "photo": "images/rugby/Players/ARG/Felipe-Contepomi.webp"
     },
     {
-      "id": 1711,
+      "id": 1712,
       "name": "Corleto",
       "lastname": "Ignacio",
       "nationality_id": 7,
       "position1_id": 9,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 22,
       "team2_id": 4,
@@ -11566,7 +11581,7 @@
       "photo": "images/rugby/Players/ARG/Ignacio-Corleto.webp"
     },
     {
-      "id": 1712,
+      "id": 1713,
       "name": "Creevy",
       "lastname": "Agustin",
       "nationality_id": 7,
@@ -11581,7 +11596,7 @@
       "photo": "images/rugby/Players/ARG/Agustin-Creevy.webp"
     },
     {
-      "id": 1713,
+      "id": 1714,
       "name": "Cubelli",
       "lastname": "Tomas",
       "nationality_id": 7,
@@ -11596,7 +11611,7 @@
       "photo": "images/rugby/Players/ARG/Tomas-Cubelli.webp"
     },
     {
-      "id": 1714,
+      "id": 1715,
       "name": "De La Fuente",
       "lastname": "Jeronimo",
       "nationality_id": 7,
@@ -11611,7 +11626,7 @@
       "photo": "images/rugby/Players/ARG/Jeronimo-De-La-Fuente.webp"
     },
     {
-      "id": 1715,
+      "id": 1716,
       "name": "Durand",
       "lastname": "Martin",
       "nationality_id": 7,
@@ -11626,7 +11641,7 @@
       "photo": "images/rugby/Players/ARG/Martin-Durand.webp"
     },
     {
-      "id": 1716,
+      "id": 1717,
       "name": "Fernandez Lobbe",
       "lastname": "Ignacio",
       "nationality_id": 7,
@@ -11641,12 +11656,12 @@
       "photo": "images/rugby/Players/ARG/Ignacio-Fernandez-Lobbe.webp"
     },
     {
-      "id": 1717,
+      "id": 1718,
       "name": "Fernandez Lobbe",
       "lastname": "Juan-Martin",
       "nationality_id": 7,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 80,
       "team2_id": 2,
@@ -11656,7 +11671,7 @@
       "photo": "images/rugby/Players/ARG/Juan-Martin-Fernandez-Lobbe.webp"
     },
     {
-      "id": 1718,
+      "id": 1719,
       "name": "Figallo",
       "lastname": "Juan",
       "nationality_id": 7,
@@ -11671,7 +11686,7 @@
       "photo": "images/rugby/Players/ARG/Juan-Figallo.webp"
     },
     {
-      "id": 1719,
+      "id": 1720,
       "name": "Galarza",
       "lastname": "Mariano",
       "nationality_id": 7,
@@ -11686,7 +11701,7 @@
       "photo": "images/rugby/Players/ARG/Mariano-Galarza.webp"
     },
     {
-      "id": 1720,
+      "id": 1721,
       "name": "Gallo",
       "lastname": "Thomas",
       "nationality_id": 7,
@@ -11701,7 +11716,7 @@
       "photo": "images/rugby/Players/ARG/Thomas-Gallo.webp"
     },
     {
-      "id": 1721,
+      "id": 1722,
       "name": "Hasan",
       "lastname": "Omar",
       "nationality_id": 7,
@@ -11716,12 +11731,12 @@
       "photo": "images/rugby/Players/ARG/Omar-Hasan.webp"
     },
     {
-      "id": 1722,
+      "id": 1723,
       "name": "Hernandez",
       "lastname": "Juan-Martin",
       "nationality_id": 7,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 4,
       "team2_id": 5,
@@ -11731,7 +11746,7 @@
       "photo": "images/rugby/Players/ARG/Juan-Martin-Hernandez.webp"
     },
     {
-      "id": 1723,
+      "id": 1724,
       "name": "Imhoff",
       "lastname": "Juan",
       "nationality_id": 7,
@@ -11746,12 +11761,12 @@
       "photo": "images/rugby/Players/ARG/Juan-Imhoff.webp"
     },
     {
-      "id": 1724,
+      "id": 1725,
       "name": "Isa",
       "lastname": "Facundo",
       "nationality_id": 7,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 2,
@@ -11761,12 +11776,12 @@
       "photo": "images/rugby/Players/ARG/Facundo-Isa.webp"
     },
     {
-      "id": 1725,
+      "id": 1726,
       "name": "Kremer",
       "lastname": "Marcos",
       "nationality_id": 7,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 3,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 4,
@@ -11776,12 +11791,12 @@
       "photo": "images/rugby/Players/ARG/Marcos-Kremer.webp"
     },
     {
-      "id": 1726,
+      "id": 1727,
       "name": "Landajo",
       "lastname": "Martin",
       "nationality_id": 7,
       "position1_id": 5,
-      "position2_id": null,
+      "position2_id": 6,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 74,
@@ -11791,7 +11806,7 @@
       "photo": "images/rugby/Players/ARG/Martin-Landajo.webp"
     },
     {
-      "id": 1727,
+      "id": 1728,
       "name": "Lavanini",
       "lastname": "Tomas",
       "nationality_id": 7,
@@ -11806,7 +11821,7 @@
       "photo": "images/rugby/Players/ARG/Tomas-Lavanini.webp"
     },
     {
-      "id": 1728,
+      "id": 1729,
       "name": "Ledesma",
       "lastname": "Mario",
       "nationality_id": 7,
@@ -11821,12 +11836,12 @@
       "photo": "images/rugby/Players/ARG/Mario-Ledesma.webp"
     },
     {
-      "id": 1729,
+      "id": 1730,
       "name": "Leguizamon",
       "lastname": "Juan-Manuel",
       "nationality_id": 7,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 76,
       "team2_id": 4,
@@ -11836,11 +11851,11 @@
       "photo": "images/rugby/Players/ARG/Juan-Manuel-Leguizamon.webp"
     },
     {
-      "id": 1730,
+      "id": 1731,
       "name": "Longo",
       "lastname": "Gonzalo",
       "nationality_id": 7,
-      "position1_id": 4,
+      "position1_id": 30,
       "position2_id": null,
       "sport_id": 1,
       "team1_id": 22,
@@ -11851,12 +11866,12 @@
       "photo": "images/rugby/Players/ARG/Gonzalo-Longo.webp"
     },
     {
-      "id": 1731,
+      "id": 1732,
       "name": "Mallia",
       "lastname": "Juan-Cruz",
       "nationality_id": 7,
       "position1_id": 9,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 1,
@@ -11866,12 +11881,12 @@
       "photo": "images/rugby/Players/ARG/Juan-Cruz-Mallia.webp"
     },
     {
-      "id": 1732,
+      "id": 1733,
       "name": "Matera",
       "lastname": "Pablo",
       "nationality_id": 7,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 4,
@@ -11881,7 +11896,7 @@
       "photo": "images/rugby/Players/ARG/Pablo-Matera.webp"
     },
     {
-      "id": 1733,
+      "id": 1734,
       "name": "Montoya",
       "lastname": "Julian",
       "nationality_id": 7,
@@ -11896,12 +11911,12 @@
       "photo": "images/rugby/Players/ARG/Julian-Montoya.webp"
     },
     {
-      "id": 1734,
+      "id": 1735,
       "name": "Moroni",
       "lastname": "Matias",
       "nationality_id": 7,
-      "position1_id": 8,
-      "position2_id": null,
+      "position1_id": 7,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 75,
@@ -11911,12 +11926,12 @@
       "photo": "images/rugby/Players/ARG/Matias-Moroni.webp"
     },
     {
-      "id": 1735,
+      "id": 1736,
       "name": "Petti",
       "lastname": "Guido",
       "nationality_id": 7,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 99,
       "team2_id": 7,
@@ -11926,7 +11941,7 @@
       "photo": "images/rugby/Players/ARG/Guido-Petti.webp"
     },
     {
-      "id": 1736,
+      "id": 1737,
       "name": "Pichot",
       "lastname": "Agustin",
       "nationality_id": 7,
@@ -11941,7 +11956,7 @@
       "photo": "images/rugby/Players/ARG/Agustin-Pichot.webp"
     },
     {
-      "id": 1737,
+      "id": 1738,
       "name": "Quesada",
       "lastname": "Gonzalo",
       "nationality_id": 7,
@@ -11956,7 +11971,7 @@
       "photo": "images/rugby/Players/ARG/Gonzalo-Quesada.webp"
     },
     {
-      "id": 1738,
+      "id": 1739,
       "name": "Reggiardo",
       "lastname": "Mauricio",
       "nationality_id": 7,
@@ -11971,7 +11986,7 @@
       "photo": "images/rugby/Players/ARG/Mauricio-Reggiardo.webp"
     },
     {
-      "id": 1739,
+      "id": 1740,
       "name": "Roncero",
       "lastname": "Rodrigo",
       "nationality_id": 7,
@@ -11986,7 +12001,7 @@
       "photo": "images/rugby/Players/ARG/Rodrigo-Roncero.webp"
     },
     {
-      "id": 1740,
+      "id": 1741,
       "name": "Sanchez",
       "lastname": "Nicolas",
       "nationality_id": 7,
@@ -12001,7 +12016,7 @@
       "photo": "images/rugby/Players/ARG/Nicolas-Sanchez.webp"
     },
     {
-      "id": 1741,
+      "id": 1742,
       "name": "Scelzo",
       "lastname": "Martin",
       "nationality_id": 7,
@@ -12016,7 +12031,7 @@
       "photo": "images/rugby/Players/ARG/Martin-Scelzo.webp"
     },
     {
-      "id": 1742,
+      "id": 1743,
       "name": "Sclavi",
       "lastname": "Joel",
       "nationality_id": 7,
@@ -12031,12 +12046,12 @@
       "photo": "images/rugby/Players/ARG/Joel-Sclavi.webp"
     },
     {
-      "id": 1743,
+      "id": 1744,
       "name": "Tuculet",
       "lastname": "Joaquin",
       "nationality_id": 7,
-      "position1_id": 8,
-      "position2_id": null,
+      "position1_id": 9,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 80,
       "team2_id": 28,
