@@ -2,6 +2,21 @@
   "players": [
     {
       "id": 1,
+      "name": "Abadie",
+      "lastname": "Esteban",
+      "nationality_id": 59,
+      "position1_id": 4,
+      "position2_id": 3,
+      "sport_id": 1,
+      "team1_id": 17,
+      "team2_id": 2,
+      "team3_id": null,
+      "flag": "images/flags/FRA.png",
+      "active": true,
+      "photo": "images/rugby/Players/FRA/Esteban-Abadie.webp"
+    },
+    {
+      "id": 2,
       "name": "Aldegheri",
       "lastname": "Dorian",
       "nationality_id": 59,
@@ -16,7 +31,7 @@
       "photo": "images/rugby/Players/FRA/Dorian-Aldegheri.webp"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Alldritt",
       "lastname": "Gregory",
       "nationality_id": 59,
@@ -31,7 +46,7 @@
       "photo": "images/rugby/Players/FRA/Gregory-Alldritt.webp"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Atonio",
       "lastname": "Uini",
       "nationality_id": 59,
@@ -46,7 +61,7 @@
       "photo": "images/rugby/Players/FRA/Uini-Atonio.webp"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Attissogbe",
       "lastname": "Theo",
       "nationality_id": 59,
@@ -61,7 +76,7 @@
       "photo": "images/rugby/Players/FRA/Theo-Attissogbe.webp"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Auradou",
       "lastname": "David",
       "nationality_id": 59,
@@ -76,7 +91,7 @@
       "photo": "images/rugby/Players/FRA/David-Auradou.webp"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Auradou",
       "lastname": "Hugo",
       "nationality_id": 59,
@@ -91,7 +106,7 @@
       "photo": "images/rugby/Players/FRA/Hugo-Auradou.webp"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Baille",
       "lastname": "Cyril",
       "nationality_id": 59,
@@ -106,7 +121,7 @@
       "photo": "images/rugby/Players/FRA/Cyril-Baille.webp"
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Bamba",
       "lastname": "Demba",
       "nationality_id": 59,
@@ -121,7 +136,7 @@
       "photo": "images/rugby/Players/FRA/Demba-Bamba.webp"
     },
     {
-      "id": 9,
+      "id": 10,
       "name": "Barassi",
       "lastname": "Pierre-Louis",
       "nationality_id": 59,
@@ -136,7 +151,7 @@
       "photo": "images/rugby/Players/FRA/Pierre-Louis-Barassi.webp"
     },
     {
-      "id": 10,
+      "id": 11,
       "name": "Barre",
       "lastname": "Leo",
       "nationality_id": 59,
@@ -151,7 +166,7 @@
       "photo": "images/rugby/Players/FRA/Leo-Barre.webp"
     },
     {
-      "id": 11,
+      "id": 12,
       "name": "Beauxis",
       "lastname": "Lionel",
       "nationality_id": 59,
@@ -166,7 +181,7 @@
       "photo": "images/rugby/Players/FRA/Lionel-Beauxis.webp"
     },
     {
-      "id": 12,
+      "id": 13,
       "name": "Benazzi",
       "lastname": "Abdelatif",
       "nationality_id": 59,
@@ -181,7 +196,7 @@
       "photo": "images/rugby/Players/FRA/Abdelatif-Benazzi.webp"
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "Bernat-Salles",
       "lastname": "Philippe",
       "nationality_id": 59,
@@ -196,7 +211,7 @@
       "photo": "images/rugby/Players/FRA/Philippe-Bernat-Salles.webp"
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "Betsen",
       "lastname": "Serge",
       "nationality_id": 59,
@@ -211,7 +226,7 @@
       "photo": "images/rugby/Players/FRA/Serge-Betsen.webp"
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "Bielle-Biarrey",
       "lastname": "Louis",
       "nationality_id": 59,
@@ -226,7 +241,7 @@
       "photo": "images/rugby/Players/FRA/Louis-Bielle-Biarrey.webp"
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Blanco",
       "lastname": "Serge",
       "nationality_id": 59,
@@ -241,7 +256,7 @@
       "photo": "images/rugby/Players/FRA/Serge-Blanco.webp"
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Bonnaire",
       "lastname": "Julien",
       "nationality_id": 59,
@@ -256,7 +271,7 @@
       "photo": "images/rugby/Players/FRA/Julien-Bonnaire.webp"
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Boudehent",
       "lastname": "Paul",
       "nationality_id": 59,
@@ -271,7 +286,7 @@
       "photo": "images/rugby/Players/FRA/Paul-Boudehent.webp"
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Bourgarit",
       "lastname": "Pierre",
       "nationality_id": 59,
@@ -286,7 +301,7 @@
       "photo": "images/rugby/Players/FRA/Pierre-Bourgarit.webp"
     },
     {
-      "id": 20,
+      "id": 21,
       "name": "Bouthier",
       "lastname": "Anthony",
       "nationality_id": 59,
@@ -301,7 +316,22 @@
       "photo": "images/rugby/Players/FRA/Anthony-Bouthier.webp"
     },
     {
-      "id": 21,
+      "id": 22,
+      "name": "Brennan",
+      "lastname": "Joshua",
+      "nationality_id": 59,
+      "position1_id": 3,
+      "position2_id": 4,
+      "sport_id": 1,
+      "team1_id": 1,
+      "team2_id": null,
+      "team3_id": null,
+      "flag": "images/flags/FRA.png",
+      "active": true,
+      "photo": "images/rugby/Players/FRA/Joshua-Brennan.webp"
+    },
+    {
+      "id": 23,
       "name": "Brouzet",
       "lastname": "Olivier",
       "nationality_id": 59,
@@ -316,7 +346,7 @@
       "photo": "images/rugby/Players/FRA/Olivier-Brouzet.webp"
     },
     {
-      "id": 22,
+      "id": 24,
       "name": "Bru",
       "lastname": "Yannick",
       "nationality_id": 59,
@@ -331,7 +361,7 @@
       "photo": "images/rugby/Players/FRA/Yannick-Bru.webp"
     },
     {
-      "id": 23,
+      "id": 25,
       "name": "Brusque",
       "lastname": "Nicolas",
       "nationality_id": 59,
@@ -346,7 +376,7 @@
       "photo": "images/rugby/Players/FRA/Nicolas-Brusque.webp"
     },
     {
-      "id": 24,
+      "id": 26,
       "name": "Buros",
       "lastname": "Romain",
       "nationality_id": 59,
@@ -361,7 +391,7 @@
       "photo": "images/rugby/Players/FRA/Romain-Buros.webp"
     },
     {
-      "id": 25,
+      "id": 27,
       "name": "Califano",
       "lastname": "Christian",
       "nationality_id": 59,
@@ -376,7 +406,7 @@
       "photo": "images/rugby/Players/FRA/Christian-Califano.webp"
     },
     {
-      "id": 26,
+      "id": 28,
       "name": "Camara",
       "lastname": "Yacouba",
       "nationality_id": 59,
@@ -391,7 +421,7 @@
       "photo": "images/rugby/Players/FRA/Yacouba-Camara.webp"
     },
     {
-      "id": 27,
+      "id": 29,
       "name": "Carbonneau",
       "lastname": "Philippe",
       "nationality_id": 59,
@@ -406,7 +436,7 @@
       "photo": "images/rugby/Players/FRA/Philippe-Carbonneau.webp"
     },
     {
-      "id": 28,
+      "id": 30,
       "name": "Castaignede",
       "lastname": "Thomas",
       "nationality_id": 59,
@@ -421,7 +451,7 @@
       "photo": "images/rugby/Players/FRA/Thomas-Castaignede.webp"
     },
     {
-      "id": 29,
+      "id": 31,
       "name": "Cecillon",
       "lastname": "Marc",
       "nationality_id": 59,
@@ -436,7 +466,7 @@
       "photo": "images/rugby/Players/FRA/Marc-Cecillon.webp"
     },
     {
-      "id": 30,
+      "id": 32,
       "name": "Chabal",
       "lastname": "Sebastien",
       "nationality_id": 59,
@@ -451,7 +481,7 @@
       "photo": "images/rugby/Players/FRA/Sebastien-Chabal.webp"
     },
     {
-      "id": 31,
+      "id": 33,
       "name": "Chat",
       "lastname": "Camille",
       "nationality_id": 59,
@@ -466,7 +496,7 @@
       "photo": "images/rugby/Players/FRA/Camille-Chat.webp"
     },
     {
-      "id": 32,
+      "id": 34,
       "name": "Clerc",
       "lastname": "Vincent",
       "nationality_id": 59,
@@ -481,7 +511,7 @@
       "photo": "images/rugby/Players/FRA/Vincent-Clerc.webp"
     },
     {
-      "id": 33,
+      "id": 35,
       "name": "Colombe",
       "lastname": "George-Henri",
       "nationality_id": 59,
@@ -496,7 +526,7 @@
       "photo": "images/rugby/Players/FRA/George-Henri-Colombe.webp"
     },
     {
-      "id": 34,
+      "id": 36,
       "name": "Couilloud",
       "lastname": "Baptiste",
       "nationality_id": 59,
@@ -511,7 +541,7 @@
       "photo": "images/rugby/Players/FRA/Baptiste-Couilloud.webp"
     },
     {
-      "id": 35,
+      "id": 37,
       "name": "Crenca",
       "lastname": "Jean-Jacques",
       "nationality_id": 59,
@@ -526,7 +556,7 @@
       "photo": "images/rugby/Players/FRA/Jean-Jacques-Crenca.webp"
     },
     {
-      "id": 36,
+      "id": 38,
       "name": "Cros",
       "lastname": "Francois",
       "nationality_id": 59,
@@ -541,7 +571,7 @@
       "photo": "images/rugby/Players/FRA/Francois-Cros.webp"
     },
     {
-      "id": 37,
+      "id": 39,
       "name": "Dal Maso",
       "lastname": "Marc",
       "nationality_id": 59,
@@ -556,7 +586,7 @@
       "photo": "images/rugby/Players/FRA/Marc-Dal-Maso.webp"
     },
     {
-      "id": 38,
+      "id": 40,
       "name": "Danty",
       "lastname": "Jonathan",
       "nationality_id": 59,
@@ -571,7 +601,7 @@
       "photo": "images/rugby/Players/FRA/Jonathan-Danty.webp"
     },
     {
-      "id": 39,
+      "id": 41,
       "name": "De Villiers",
       "lastname": "Pieter",
       "nationality_id": 59,
@@ -586,7 +616,7 @@
       "photo": "images/rugby/Players/FRA/Pieter-De-Villiers.webp"
     },
     {
-      "id": 40,
+      "id": 42,
       "name": "Delaigue",
       "lastname": "Yann",
       "nationality_id": 59,
@@ -601,7 +631,7 @@
       "photo": "images/rugby/Players/FRA/Yann-Delaigue.webp"
     },
     {
-      "id": 41,
+      "id": 43,
       "name": "Depoortere",
       "lastname": "Nicolas",
       "nationality_id": 59,
@@ -616,7 +646,7 @@
       "photo": "images/rugby/Players/FRA/Nicolas-Depoortere.webp"
     },
     {
-      "id": 42,
+      "id": 44,
       "name": "Deylaud",
       "lastname": "Christophe",
       "nationality_id": 59,
@@ -631,7 +661,7 @@
       "photo": "images/rugby/Players/FRA/Christophe-Deylaud.webp"
     },
     {
-      "id": 43,
+      "id": 45,
       "name": "Domingo",
       "lastname": "Thomas",
       "nationality_id": 59,
@@ -646,7 +676,7 @@
       "photo": "images/rugby/Players/FRA/Thomas-Domingo.webp"
     },
     {
-      "id": 44,
+      "id": 46,
       "name": "Dominici",
       "lastname": "Christophe",
       "nationality_id": 59,
@@ -661,7 +691,7 @@
       "photo": "images/rugby/Players/FRA/Christophe-Dominici.webp"
     },
     {
-      "id": 45,
+      "id": 47,
       "name": "Dourthe",
       "lastname": "Richard",
       "nationality_id": 59,
@@ -676,7 +706,7 @@
       "photo": "images/rugby/Players/FRA/Richard-Dourthe.webp"
     },
     {
-      "id": 46,
+      "id": 48,
       "name": "Dulin",
       "lastname": "Brice",
       "nationality_id": 59,
@@ -691,7 +721,7 @@
       "photo": "images/rugby/Players/FRA/Brice-Dulin.webp"
     },
     {
-      "id": 47,
+      "id": 49,
       "name": "Dupont",
       "lastname": "Antoine",
       "nationality_id": 59,
@@ -706,7 +736,7 @@
       "photo": "images/rugby/Players/FRA/Antoine-Dupont.webp"
     },
     {
-      "id": 48,
+      "id": 50,
       "name": "Dusautoir",
       "lastname": "Thierry",
       "nationality_id": 59,
@@ -721,7 +751,7 @@
       "photo": "images/rugby/Players/FRA/Thierry-Dusautoir.webp"
     },
     {
-      "id": 49,
+      "id": 51,
       "name": "Elissalde",
       "lastname": "Jean-Baptiste",
       "nationality_id": 59,
@@ -736,7 +766,7 @@
       "photo": "images/rugby/Players/FRA/Jean-Baptiste-Elissalde.webp"
     },
     {
-      "id": 50,
+      "id": 52,
       "name": "Falatea",
       "lastname": "Sipili",
       "nationality_id": 59,
@@ -751,7 +781,7 @@
       "photo": "images/rugby/Players/FRA/Sipili-Falatea.webp"
     },
     {
-      "id": 51,
+      "id": 53,
       "name": "Fall",
       "lastname": "Benjamin",
       "nationality_id": 59,
@@ -766,7 +796,7 @@
       "photo": "images/rugby/Players/FRA/Benjamin-Fall.webp"
     },
     {
-      "id": 52,
+      "id": 54,
       "name": "Fickou",
       "lastname": "Gael",
       "nationality_id": 59,
@@ -781,7 +811,7 @@
       "photo": "images/rugby/Players/FRA/Gael-Fickou.webp"
     },
     {
-      "id": 53,
+      "id": 55,
       "name": "Flament",
       "lastname": "Thibaud",
       "nationality_id": 59,
@@ -796,7 +826,7 @@
       "photo": "images/rugby/Players/FRA/Thibaud-Flament.webp"
     },
     {
-      "id": 54,
+      "id": 56,
       "name": "Fofana",
       "lastname": "Wesley",
       "nationality_id": 59,
@@ -811,7 +841,7 @@
       "photo": "images/rugby/Players/FRA/Wesley-Fofana.webp"
     },
     {
-      "id": 55,
+      "id": 57,
       "name": "Fritz",
       "lastname": "Florian",
       "nationality_id": 59,
@@ -826,7 +856,7 @@
       "photo": "images/rugby/Players/FRA/Florian-Fritz.webp"
     },
     {
-      "id": 56,
+      "id": 58,
       "name": "Gailleton",
       "lastname": "Emilien",
       "nationality_id": 59,
@@ -841,7 +871,7 @@
       "photo": "images/rugby/Players/FRA/Emilien-Gailleton.webp"
     },
     {
-      "id": 57,
+      "id": 59,
       "name": "Galthie",
       "lastname": "Fabien",
       "nationality_id": 59,
@@ -856,7 +886,7 @@
       "photo": "images/rugby/Players/FRA/Fabien-Galthie.webp"
     },
     {
-      "id": 58,
+      "id": 60,
       "name": "Garbajosa",
       "lastname": "Xavier",
       "nationality_id": 59,
@@ -871,12 +901,12 @@
       "photo": "images/rugby/Players/FRA/Xavier-Garbajosa.webp"
     },
     {
-      "id": 59,
+      "id": 61,
       "name": "Gazzotti",
       "lastname": "Marko",
       "nationality_id": 59,
-      "position1_id": 4,
-      "position2_id": 30,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 28,
       "team2_id": 7,
@@ -886,7 +916,7 @@
       "photo": "images/rugby/Players/FRA/Marko-Gazzotti.webp"
     },
     {
-      "id": 60,
+      "id": 62,
       "name": "Glas",
       "lastname": "Stephane",
       "nationality_id": 59,
@@ -901,7 +931,7 @@
       "photo": "images/rugby/Players/FRA/Stephane-Glas.webp"
     },
     {
-      "id": 61,
+      "id": 63,
       "name": "Gros",
       "lastname": "Jean-Baptiste",
       "nationality_id": 59,
@@ -916,7 +946,7 @@
       "photo": "images/rugby/Players/FRA/Jean-Baptiste-Gros.webp"
     },
     {
-      "id": 62,
+      "id": 64,
       "name": "Guillard",
       "lastname": "Mickael",
       "nationality_id": 59,
@@ -931,7 +961,7 @@
       "photo": "images/rugby/Players/FRA/Mickael-Guillard.webp"
     },
     {
-      "id": 63,
+      "id": 65,
       "name": "Guirado",
       "lastname": "Guilhem",
       "nationality_id": 59,
@@ -946,7 +976,7 @@
       "photo": "images/rugby/Players/FRA/Guilhem-Guirado.webp"
     },
     {
-      "id": 64,
+      "id": 66,
       "name": "Harinordoquy",
       "lastname": "Imanol",
       "nationality_id": 59,
@@ -961,7 +991,22 @@
       "photo": "images/rugby/Players/FRA/Imanol-Harinordoquy.webp"
     },
     {
-      "id": 65,
+      "id": 67,
+      "name": "Hastoy",
+      "lastname": "Antoine",
+      "nationality_id": 59,
+      "position1_id": 6,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 13,
+      "team2_id": 6,
+      "team3_id": null,
+      "flag": "images/flags/FRA.png",
+      "active": true,
+      "photo": "images/rugby/Players/FRA/Antoine-Hastoy.webp"
+    },
+    {
+      "id": 68,
       "name": "Heymans",
       "lastname": "Cedric",
       "nationality_id": 59,
@@ -976,7 +1021,7 @@
       "photo": "images/rugby/Players/FRA/Cedric-Heymans.webp"
     },
     {
-      "id": 66,
+      "id": 69,
       "name": "Huget",
       "lastname": "Yoann",
       "nationality_id": 59,
@@ -991,7 +1036,7 @@
       "photo": "images/rugby/Players/FRA/Yoann-Huget.webp"
     },
     {
-      "id": 67,
+      "id": 70,
       "name": "Ibanez",
       "lastname": "Raphael",
       "nationality_id": 59,
@@ -1006,7 +1051,7 @@
       "photo": "images/rugby/Players/FRA/Raphael-Ibanez.webp"
     },
     {
-      "id": 68,
+      "id": 71,
       "name": "Iturria",
       "lastname": "Arthur",
       "nationality_id": 59,
@@ -1021,7 +1066,7 @@
       "photo": "images/rugby/Players/FRA/Arthur-Iturria.webp"
     },
     {
-      "id": 69,
+      "id": 72,
       "name": "Jalibert",
       "lastname": "Matthieu",
       "nationality_id": 59,
@@ -1036,7 +1081,7 @@
       "photo": "images/rugby/Players/FRA/Matthieu-Jalibert.webp"
     },
     {
-      "id": 70,
+      "id": 73,
       "name": "Jaminet",
       "lastname": "Melvyn",
       "nationality_id": 59,
@@ -1051,7 +1096,7 @@
       "photo": "images/rugby/Players/FRA/Melvyn-Jaminet.webp"
     },
     {
-      "id": 71,
+      "id": 74,
       "name": "Jauzion",
       "lastname": "Yannick",
       "nationality_id": 59,
@@ -1066,7 +1111,7 @@
       "photo": "images/rugby/Players/FRA/Yannick-Jauzion.webp"
     },
     {
-      "id": 72,
+      "id": 75,
       "name": "Jegou",
       "lastname": "Oscar",
       "nationality_id": 59,
@@ -1081,7 +1126,7 @@
       "photo": "images/rugby/Players/FRA/Oscar-Jegou.webp"
     },
     {
-      "id": 73,
+      "id": 76,
       "name": "Jelonch",
       "lastname": "Anthony",
       "nationality_id": 59,
@@ -1096,7 +1141,7 @@
       "photo": "images/rugby/Players/FRA/Anthony-Jelonch.webp"
     },
     {
-      "id": 74,
+      "id": 77,
       "name": "Juillet",
       "lastname": "Christophe",
       "nationality_id": 59,
@@ -1111,7 +1156,7 @@
       "photo": "images/rugby/Players/FRA/Christophe-Juillet.webp"
     },
     {
-      "id": 75,
+      "id": 78,
       "name": "Kayser",
       "lastname": "Benjamin",
       "nationality_id": 59,
@@ -1126,7 +1171,7 @@
       "photo": "images/rugby/Players/FRA/Benjamin-Kayser.webp"
     },
     {
-      "id": 76,
+      "id": 79,
       "name": "Lacroix",
       "lastname": "Thierry",
       "nationality_id": 59,
@@ -1141,7 +1186,7 @@
       "photo": "images/rugby/Players/FRA/Thierry-Lacroix.webp"
     },
     {
-      "id": 77,
+      "id": 80,
       "name": "Lamaison",
       "lastname": "Christophe",
       "nationality_id": 59,
@@ -1156,7 +1201,7 @@
       "photo": "images/rugby/Players/FRA/Christophe-Lamaison.webp"
     },
     {
-      "id": 78,
+      "id": 81,
       "name": "Lamboley",
       "lastname": "Gregory",
       "nationality_id": 59,
@@ -1171,7 +1216,7 @@
       "photo": "images/rugby/Players/FRA/Gregory-Lamboley.webp"
     },
     {
-      "id": 79,
+      "id": 82,
       "name": "Lauret",
       "lastname": "Wenceslas",
       "nationality_id": 59,
@@ -1186,7 +1231,7 @@
       "photo": "images/rugby/Players/FRA/Wenceslas-Lauret.webp"
     },
     {
-      "id": 80,
+      "id": 83,
       "name": "Le Garrec",
       "lastname": "Nolann",
       "nationality_id": 59,
@@ -1201,7 +1246,7 @@
       "photo": "images/rugby/Players/FRA/Nolann-Le-Garrec.webp"
     },
     {
-      "id": 81,
+      "id": 84,
       "name": "Le Roux",
       "lastname": "Bernard",
       "nationality_id": 59,
@@ -1216,7 +1261,7 @@
       "photo": "images/rugby/Players/FRA/Bernard-Le-Roux.webp"
     },
     {
-      "id": 82,
+      "id": 85,
       "name": "Lievremont",
       "lastname": "Marc",
       "nationality_id": 59,
@@ -1231,7 +1276,7 @@
       "photo": "images/rugby/Players/FRA/Marc-Lievremont.webp"
     },
     {
-      "id": 83,
+      "id": 86,
       "name": "Lievremont",
       "lastname": "Thomas",
       "nationality_id": 59,
@@ -1246,7 +1291,7 @@
       "photo": "images/rugby/Players/FRA/Thomas-Lievremont.webp"
     },
     {
-      "id": 84,
+      "id": 87,
       "name": "Lopez",
       "lastname": "Camille",
       "nationality_id": 59,
@@ -1261,7 +1306,7 @@
       "photo": "images/rugby/Players/FRA/Camille-Lopez.webp"
     },
     {
-      "id": 85,
+      "id": 88,
       "name": "Lucu",
       "lastname": "Maxime",
       "nationality_id": 59,
@@ -1276,7 +1321,7 @@
       "photo": "images/rugby/Players/FRA/Maxime-Lucu.webp"
     },
     {
-      "id": 86,
+      "id": 89,
       "name": "Macalou",
       "lastname": "Sekou",
       "nationality_id": 59,
@@ -1291,7 +1336,7 @@
       "photo": "images/rugby/Players/FRA/Sekou-Macalou.webp"
     },
     {
-      "id": 87,
+      "id": 90,
       "name": "Machenaud",
       "lastname": "Maxime",
       "nationality_id": 59,
@@ -1306,7 +1351,7 @@
       "photo": "images/rugby/Players/FRA/Maxime-Machenaud.webp"
     },
     {
-      "id": 88,
+      "id": 91,
       "name": "Maestri",
       "lastname": "Yoann",
       "nationality_id": 59,
@@ -1321,7 +1366,7 @@
       "photo": "images/rugby/Players/FRA/Yoann-Maestri.webp"
     },
     {
-      "id": 89,
+      "id": 92,
       "name": "Magne",
       "lastname": "Olivier",
       "nationality_id": 59,
@@ -1336,7 +1381,7 @@
       "photo": "images/rugby/Players/FRA/Olivier-Magne.webp"
     },
     {
-      "id": 90,
+      "id": 93,
       "name": "Marchand",
       "lastname": "Julien",
       "nationality_id": 59,
@@ -1351,7 +1396,7 @@
       "photo": "images/rugby/Players/FRA/Julien-Marchand.webp"
     },
     {
-      "id": 91,
+      "id": 94,
       "name": "Marconnet",
       "lastname": "Sylvain",
       "nationality_id": 59,
@@ -1366,7 +1411,7 @@
       "photo": "images/rugby/Players/FRA/Sylvain-Marconnet.webp"
     },
     {
-      "id": 92,
+      "id": 95,
       "name": "Marsh",
       "lastname": "Tony",
       "nationality_id": 59,
@@ -1381,7 +1426,7 @@
       "photo": "images/rugby/Players/FRA/Tony-Marsh.webp"
     },
     {
-      "id": 93,
+      "id": 96,
       "name": "Martin",
       "lastname": "Remy",
       "nationality_id": 59,
@@ -1396,7 +1441,7 @@
       "photo": "images/rugby/Players/FRA/Remy-Martin.webp"
     },
     {
-      "id": 94,
+      "id": 97,
       "name": "Marty",
       "lastname": "David",
       "nationality_id": 59,
@@ -1411,7 +1456,7 @@
       "photo": "images/rugby/Players/FRA/David-Marty.webp"
     },
     {
-      "id": 95,
+      "id": 98,
       "name": "Mas",
       "lastname": "Nicolas",
       "nationality_id": 59,
@@ -1426,7 +1471,7 @@
       "photo": "images/rugby/Players/FRA/Nicolas-Mas.webp"
     },
     {
-      "id": 96,
+      "id": 99,
       "name": "Mauvaka",
       "lastname": "Peato",
       "nationality_id": 59,
@@ -1441,7 +1486,7 @@
       "photo": "images/rugby/Players/FRA/Peato-Mauvaka.webp"
     },
     {
-      "id": 97,
+      "id": 100,
       "name": "Meafou",
       "lastname": "Emmanuel",
       "nationality_id": 59,
@@ -1456,7 +1501,7 @@
       "photo": "images/rugby/Players/FRA/Emmanuel-Meafou.webp"
     },
     {
-      "id": 98,
+      "id": 101,
       "name": "Medard",
       "lastname": "Maxime",
       "nationality_id": 59,
@@ -1471,7 +1516,7 @@
       "photo": "images/rugby/Players/FRA/Maxime-Medard.webp"
     },
     {
-      "id": 99,
+      "id": 102,
       "name": "Merceron",
       "lastname": "Gerald",
       "nationality_id": 59,
@@ -1486,7 +1531,7 @@
       "photo": "images/rugby/Players/FRA/Gerald-Merceron.webp"
     },
     {
-      "id": 100,
+      "id": 103,
       "name": "Merle",
       "lastname": "Olivier",
       "nationality_id": 59,
@@ -1501,7 +1546,7 @@
       "photo": "images/rugby/Players/FRA/Olivier-Merle.webp"
     },
     {
-      "id": 101,
+      "id": 104,
       "name": "Mermoz",
       "lastname": "Maxime",
       "nationality_id": 59,
@@ -1516,7 +1561,7 @@
       "photo": "images/rugby/Players/FRA/Maxime-Mermoz.webp"
     },
     {
-      "id": 102,
+      "id": 105,
       "name": "Michalak",
       "lastname": "Frederic",
       "nationality_id": 59,
@@ -1531,7 +1576,7 @@
       "photo": "images/rugby/Players/FRA/Frederic-Michalak.webp"
     },
     {
-      "id": 103,
+      "id": 106,
       "name": "Mignoni",
       "lastname": "Pierre",
       "nationality_id": 59,
@@ -1546,7 +1591,7 @@
       "photo": "images/rugby/Players/FRA/Pierre-Mignoni.webp"
     },
     {
-      "id": 104,
+      "id": 107,
       "name": "Milloud",
       "lastname": "Olivier",
       "nationality_id": 59,
@@ -1561,7 +1606,7 @@
       "photo": "images/rugby/Players/FRA/Olivier-Milloud.webp"
     },
     {
-      "id": 105,
+      "id": 108,
       "name": "Moefana",
       "lastname": "Yoram",
       "nationality_id": 59,
@@ -1576,7 +1621,7 @@
       "photo": "images/rugby/Players/FRA/Yoram-Moefana.webp"
     },
     {
-      "id": 106,
+      "id": 109,
       "name": "Nallet",
       "lastname": "Lionel",
       "nationality_id": 59,
@@ -1591,7 +1636,7 @@
       "photo": "images/rugby/Players/FRA/Lionel-Nallet.webp"
     },
     {
-      "id": 107,
+      "id": 110,
       "name": "Ntamack",
       "lastname": "Emile",
       "nationality_id": 59,
@@ -1606,7 +1651,7 @@
       "photo": "images/rugby/Players/FRA/Emile-Ntamack.webp"
     },
     {
-      "id": 108,
+      "id": 111,
       "name": "Ntamack",
       "lastname": "Romain",
       "nationality_id": 59,
@@ -1621,7 +1666,7 @@
       "photo": "images/rugby/Players/FRA/Romain-Ntamack.webp"
     },
     {
-      "id": 109,
+      "id": 112,
       "name": "Nyanga",
       "lastname": "Yannick",
       "nationality_id": 59,
@@ -1636,7 +1681,7 @@
       "photo": "images/rugby/Players/FRA/Yannick-Nyanga.webp"
     },
     {
-      "id": 110,
+      "id": 113,
       "name": "Ollivon",
       "lastname": "Charles",
       "nationality_id": 59,
@@ -1651,7 +1696,7 @@
       "photo": "images/rugby/Players/FRA/Charles-Ollivon.webp"
     },
     {
-      "id": 111,
+      "id": 114,
       "name": "Ouedraogo",
       "lastname": "Fulgence",
       "nationality_id": 59,
@@ -1666,7 +1711,7 @@
       "photo": "images/rugby/Players/FRA/Fulgence-Ouedraogo.webp"
     },
     {
-      "id": 112,
+      "id": 115,
       "name": "Pape",
       "lastname": "Pascal",
       "nationality_id": 59,
@@ -1681,7 +1726,7 @@
       "photo": "images/rugby/Players/FRA/Pascal-Pape.webp"
     },
     {
-      "id": 113,
+      "id": 116,
       "name": "Parra",
       "lastname": "Morgan",
       "nationality_id": 59,
@@ -1696,7 +1741,7 @@
       "photo": "images/rugby/Players/FRA/Morgan-Parra.webp"
     },
     {
-      "id": 114,
+      "id": 117,
       "name": "Pelous",
       "lastname": "Fabien",
       "nationality_id": 59,
@@ -1711,7 +1756,7 @@
       "photo": "images/rugby/Players/FRA/Fabien-Pelous.webp"
     },
     {
-      "id": 115,
+      "id": 118,
       "name": "Penaud",
       "lastname": "Damian",
       "nationality_id": 59,
@@ -1726,7 +1771,7 @@
       "photo": "images/rugby/Players/FRA/Damian-Penaud.webp"
     },
     {
-      "id": 116,
+      "id": 119,
       "name": "Penverne",
       "lastname": "Louis",
       "nationality_id": 59,
@@ -1741,7 +1786,7 @@
       "photo": "images/rugby/Players/FRA/Louis-Penverne.webp"
     },
     {
-      "id": 117,
+      "id": 120,
       "name": "Picamoles",
       "lastname": "Louis",
       "nationality_id": 59,
@@ -1756,7 +1801,7 @@
       "photo": "images/rugby/Players/FRA/Louis-Picamoles.webp"
     },
     {
-      "id": 118,
+      "id": 121,
       "name": "Plisson",
       "lastname": "Jules",
       "nationality_id": 59,
@@ -1771,7 +1816,7 @@
       "photo": "images/rugby/Players/FRA/Jules-Plisson.webp"
     },
     {
-      "id": 119,
+      "id": 122,
       "name": "Poirot",
       "lastname": "Jefferson",
       "nationality_id": 59,
@@ -1786,7 +1831,7 @@
       "photo": "images/rugby/Players/FRA/Jefferson-Poirot.webp"
     },
     {
-      "id": 120,
+      "id": 123,
       "name": "Poitrenaud",
       "lastname": "Clement",
       "nationality_id": 59,
@@ -1801,7 +1846,7 @@
       "photo": "images/rugby/Players/FRA/Clement-Poitrenaud.webp"
     },
     {
-      "id": 121,
+      "id": 124,
       "name": "Poux",
       "lastname": "Jean-Baptiste",
       "nationality_id": 59,
@@ -1816,7 +1861,7 @@
       "photo": "images/rugby/Players/FRA/Jean-Baptiste-Poux.webp"
     },
     {
-      "id": 122,
+      "id": 125,
       "name": "Priso",
       "lastname": "Dany",
       "nationality_id": 59,
@@ -1831,7 +1876,7 @@
       "photo": "images/rugby/Players/FRA/Dany-Priso.webp"
     },
     {
-      "id": 123,
+      "id": 126,
       "name": "Ramos",
       "lastname": "Thomas",
       "nationality_id": 59,
@@ -1846,7 +1891,7 @@
       "photo": "images/rugby/Players/FRA/Thomas-Ramos.webp"
     },
     {
-      "id": 124,
+      "id": 127,
       "name": "Rives",
       "lastname": "Jean-Pierre",
       "nationality_id": 59,
@@ -1861,7 +1906,7 @@
       "photo": "images/rugby/Players/FRA/Jean-Pierre-Rives.webp"
     },
     {
-      "id": 125,
+      "id": 128,
       "name": "Rougerie",
       "lastname": "Aurelien",
       "nationality_id": 59,
@@ -1876,7 +1921,7 @@
       "photo": "images/rugby/Players/FRA/Aurelien-Rougerie.webp"
     },
     {
-      "id": 126,
+      "id": 129,
       "name": "Roumat",
       "lastname": "Alexandre",
       "nationality_id": 59,
@@ -1891,7 +1936,7 @@
       "photo": "images/rugby/Players/FRA/Alexandre-Roumat.webp"
     },
     {
-      "id": 127,
+      "id": 130,
       "name": "Roumat",
       "lastname": "Olivier",
       "nationality_id": 59,
@@ -1906,7 +1951,7 @@
       "photo": "images/rugby/Players/FRA/Olivier-Roumat.webp"
     },
     {
-      "id": 128,
+      "id": 131,
       "name": "Sadourny",
       "lastname": "Jean-Luc",
       "nationality_id": 59,
@@ -1921,7 +1966,7 @@
       "photo": "images/rugby/Players/FRA/Jean-Luc-Sadourny.webp"
     },
     {
-      "id": 129,
+      "id": 132,
       "name": "Saint-Andre",
       "lastname": "Philippe",
       "nationality_id": 59,
@@ -1936,7 +1981,7 @@
       "photo": "images/rugby/Players/FRA/Philippe-Saint-Andre.webp"
     },
     {
-      "id": 130,
+      "id": 133,
       "name": "Sella",
       "lastname": "Philippe",
       "nationality_id": 59,
@@ -1951,7 +1996,7 @@
       "photo": "images/rugby/Players/FRA/Philippe-Sella.webp"
     },
     {
-      "id": 131,
+      "id": 134,
       "name": "Serin",
       "lastname": "Baptiste",
       "nationality_id": 59,
@@ -1966,7 +2011,7 @@
       "photo": "images/rugby/Players/FRA/Baptiste-Serin.webp"
     },
     {
-      "id": 132,
+      "id": 135,
       "name": "Servat",
       "lastname": "William",
       "nationality_id": 59,
@@ -1981,7 +2026,7 @@
       "photo": "images/rugby/Players/FRA/William-Servat.webp"
     },
     {
-      "id": 133,
+      "id": 136,
       "name": "Skrela",
       "lastname": "David",
       "nationality_id": 59,
@@ -1996,7 +2041,7 @@
       "photo": "images/rugby/Players/FRA/David-Skrela.webp"
     },
     {
-      "id": 134,
+      "id": 137,
       "name": "Slimani",
       "lastname": "Rabah",
       "nationality_id": 59,
@@ -2011,7 +2056,7 @@
       "photo": "images/rugby/Players/FRA/Rabah-Slimani.webp"
     },
     {
-      "id": 135,
+      "id": 138,
       "name": "Spedding",
       "lastname": "Scott",
       "nationality_id": 59,
@@ -2026,7 +2071,7 @@
       "photo": "images/rugby/Players/FRA/Scott-Spedding.webp"
     },
     {
-      "id": 136,
+      "id": 139,
       "name": "Szarzewski",
       "lastname": "Dimitri",
       "nationality_id": 59,
@@ -2041,7 +2086,7 @@
       "photo": "images/rugby/Players/FRA/Dimitri-Szarzewski.webp"
     },
     {
-      "id": 137,
+      "id": 140,
       "name": "Taofifenua",
       "lastname": "Romain",
       "nationality_id": 59,
@@ -2056,7 +2101,7 @@
       "photo": "images/rugby/Players/FRA/Romain-Taofifenua.webp"
     },
     {
-      "id": 138,
+      "id": 141,
       "name": "Taofifenua",
       "lastname": "Sebastien",
       "nationality_id": 59,
@@ -2071,7 +2116,7 @@
       "photo": "images/rugby/Players/FRA/Sebastien-Taofifenua.webp"
     },
     {
-      "id": 139,
+      "id": 142,
       "name": "Tatafu",
       "lastname": "Tevita",
       "nationality_id": 59,
@@ -2086,7 +2131,7 @@
       "photo": "images/rugby/Players/FRA/Tevita-Tatafu.webp"
     },
     {
-      "id": 140,
+      "id": 143,
       "name": "Thion",
       "lastname": "Jerome",
       "nationality_id": 59,
@@ -2101,7 +2146,7 @@
       "photo": "images/rugby/Players/FRA/Jerome-Thion.webp"
     },
     {
-      "id": 141,
+      "id": 144,
       "name": "Thomas",
       "lastname": "Teddy",
       "nationality_id": 59,
@@ -2116,7 +2161,7 @@
       "photo": "images/rugby/Players/FRA/Teddy-Thomas.webp"
     },
     {
-      "id": 142,
+      "id": 145,
       "name": "Tournaire",
       "lastname": "Franck",
       "nationality_id": 59,
@@ -2131,7 +2176,7 @@
       "photo": "images/rugby/Players/FRA/Franck-Tournaire.webp"
     },
     {
-      "id": 143,
+      "id": 146,
       "name": "Traille",
       "lastname": "Damien",
       "nationality_id": 59,
@@ -2146,7 +2191,7 @@
       "photo": "images/rugby/Players/FRA/Damien-Traille.webp"
     },
     {
-      "id": 144,
+      "id": 147,
       "name": "Trinh-Duc",
       "lastname": "Francois",
       "nationality_id": 59,
@@ -2161,7 +2206,7 @@
       "photo": "images/rugby/Players/FRA/Francois-Trinh-Duc.webp"
     },
     {
-      "id": 145,
+      "id": 148,
       "name": "Tuifua",
       "lastname": "Patrick",
       "nationality_id": 59,
@@ -2176,7 +2221,7 @@
       "photo": "images/rugby/Players/FRA/Patrick-Tuifua.webp"
     },
     {
-      "id": 146,
+      "id": 149,
       "name": "Tuilagi",
       "lastname": "Posolo",
       "nationality_id": 59,
@@ -2191,7 +2236,7 @@
       "photo": "images/rugby/Players/FRA/Posolo-Tuilagi.webp"
     },
     {
-      "id": 147,
+      "id": 150,
       "name": "Vahaamahina",
       "lastname": "Sebastien",
       "nationality_id": 59,
@@ -2206,7 +2251,7 @@
       "photo": "images/rugby/Players/FRA/Sebastien-Vahaamahina.webp"
     },
     {
-      "id": 148,
+      "id": 151,
       "name": "Vakatawa",
       "lastname": "Virimi",
       "nationality_id": 59,
@@ -2221,7 +2266,7 @@
       "photo": "images/rugby/Players/FRA/Virimi-Vakatawa.webp"
     },
     {
-      "id": 149,
+      "id": 152,
       "name": "Villiere",
       "lastname": "Gabin",
       "nationality_id": 59,
@@ -2236,7 +2281,7 @@
       "photo": "images/rugby/Players/FRA/Gabin-Villiere.webp"
     },
     {
-      "id": 150,
+      "id": 153,
       "name": "Vincent",
       "lastname": "Arthur",
       "nationality_id": 59,
@@ -2251,7 +2296,7 @@
       "photo": "images/rugby/Players/FRA/Arthur-Vincent.webp"
     },
     {
-      "id": 151,
+      "id": 154,
       "name": "Wardi",
       "lastname": "Reda",
       "nationality_id": 59,
@@ -2266,7 +2311,7 @@
       "photo": "images/rugby/Players/FRA/Reda-Wardi.webp"
     },
     {
-      "id": 152,
+      "id": 155,
       "name": "Willemse",
       "lastname": "Paul",
       "nationality_id": 59,
@@ -2281,7 +2326,7 @@
       "photo": "images/rugby/Players/FRA/Paul-Willemse.webp"
     },
     {
-      "id": 153,
+      "id": 156,
       "name": "Woki",
       "lastname": "Cameron",
       "nationality_id": 59,
@@ -2296,7 +2341,7 @@
       "photo": "images/rugby/Players/FRA/Cameron-Woki.webp"
     },
     {
-      "id": 154,
+      "id": 157,
       "name": "Yachvili",
       "lastname": "Dimitri",
       "nationality_id": 59,
@@ -4842,7 +4887,7 @@
       "team2_id": 109,
       "team3_id": null,
       "flag": "images/flags/AUS.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/AUS/Wycliff-Palu.webp"
     },
     {
@@ -7377,7 +7422,7 @@
       "team2_id": null,
       "team3_id": null,
       "flag": "images/flags/SCO.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/SCO/Ryan-Wilson.webp"
     },
     {
@@ -8199,7 +8244,7 @@
       "position2_id": null,
       "sport_id": 1,
       "team1_id": 73,
-      "team2_id": null,
+      "team2_id": 71,
       "team3_id": null,
       "flag": "images/flags/WAL.png",
       "active": true,
@@ -8607,7 +8652,7 @@
       "team2_id": 61,
       "team3_id": null,
       "flag": "images/flags/IRL.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/IRL/Andrew-Conway.webp"
     },
     {
@@ -8622,7 +8667,7 @@
       "team2_id": 60,
       "team3_id": null,
       "flag": "images/flags/IRL.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/IRL/Sean-Cronin.webp"
     },
     {
@@ -8712,7 +8757,7 @@
       "team2_id": null,
       "team3_id": null,
       "flag": "images/flags/IRL.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/IRL/Keith-Earls.webp"
     },
     {
@@ -9252,7 +9297,7 @@
       "team2_id": null,
       "team3_id": null,
       "flag": "images/flags/IRL.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/IRL/Peter-O-Mahony.webp"
     },
     {
@@ -11030,8 +11075,8 @@
       "name": "Cannone",
       "lastname": "Lorenzo",
       "nationality_id": 81,
-      "position1_id": 4,
-      "position2_id": 30,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 98,
       "team2_id": 95,
@@ -12066,7 +12111,7 @@
       "lastname": "Seremaia",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 6,
       "sport_id": 1,
       "team1_id": 9,
       "team2_id": 8,
@@ -12095,8 +12140,8 @@
       "name": "Botia",
       "lastname": "Levani",
       "nationality_id": 57,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 7,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 6,
       "team2_id": null,
@@ -12111,7 +12156,7 @@
       "lastname": "Vilimoni",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 6,
       "sport_id": 1,
       "team1_id": 8,
       "team2_id": null,
@@ -12126,7 +12171,7 @@
       "lastname": "Rupeni",
       "nationality_id": 57,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 32,
       "team2_id": 15,
@@ -12141,7 +12186,7 @@
       "lastname": "Vilimoni",
       "nationality_id": 57,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 33,
       "team2_id": 9,
@@ -12156,7 +12201,7 @@
       "lastname": "Vereniki",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 75,
       "team2_id": 78,
@@ -12171,7 +12216,7 @@
       "lastname": "Vinaya",
       "nationality_id": 57,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 39,
       "team2_id": 5,
@@ -12200,8 +12245,8 @@
       "name": "Koyamaibole",
       "lastname": "Sisa",
       "nationality_id": 57,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 98,
       "team2_id": 80,
@@ -12246,7 +12291,7 @@
       "lastname": "Gabirieli",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 2,
       "team2_id": 14,
@@ -12291,7 +12336,7 @@
       "lastname": "Sireli",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 14,
       "team2_id": null,
@@ -12306,7 +12351,7 @@
       "lastname": "Viliame",
       "nationality_id": 57,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 90,
       "team2_id": 71,
@@ -12351,7 +12396,7 @@
       "lastname": "Caleb",
       "nationality_id": 57,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 39,
       "team2_id": null,
@@ -12366,7 +12411,7 @@
       "lastname": "Nemani",
       "nationality_id": 57,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 30,
       "team2_id": 10,
@@ -12380,8 +12425,8 @@
       "name": "Nagusa",
       "lastname": "Timoci",
       "nationality_id": 57,
-      "position1_id": 8,
-      "position2_id": null,
+      "position1_id": 9,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 63,
       "team2_id": 10,
@@ -12411,7 +12456,7 @@
       "lastname": "Napolioni",
       "nationality_id": 57,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 9,
       "team2_id": 43,
@@ -12426,7 +12471,7 @@
       "lastname": "Waisea",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 4,
       "team2_id": 2,
@@ -12440,8 +12485,8 @@
       "name": "Qera",
       "lastname": "Akapusi",
       "nationality_id": 57,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 73,
       "team2_id": 10,
@@ -12456,7 +12501,7 @@
       "lastname": "Seru",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 33,
       "team2_id": 75,
@@ -12471,7 +12516,7 @@
       "lastname": "Semi",
       "nationality_id": 57,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 7,
       "team2_id": 71,
@@ -12546,7 +12591,7 @@
       "lastname": "Ifereimi",
       "nationality_id": 57,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 109,
       "team2_id": null,
@@ -12576,7 +12621,7 @@
       "lastname": "Waisale",
       "nationality_id": 57,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 112,
       "team2_id": 75,
@@ -12621,7 +12666,7 @@
       "lastname": "Lekima",
       "nationality_id": 57,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 3,
       "sport_id": 1,
       "team1_id": 13,
       "team2_id": null,
@@ -12636,7 +12681,7 @@
       "lastname": "Josua",
       "nationality_id": 57,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 2,
       "team2_id": 3,
@@ -12650,8 +12695,8 @@
       "name": "Tuisue",
       "lastname": "Albert",
       "nationality_id": 57,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 3,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 39,
       "team2_id": 76,
@@ -12756,7 +12801,7 @@
       "lastname": "Stephen",
       "nationality_id": 145,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 31,
       "team2_id": 76,
@@ -12846,7 +12891,7 @@
       "lastname": "Christian",
       "nationality_id": 145,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 41,
       "team2_id": 35,
@@ -12860,8 +12905,8 @@
       "name": "Lee",
       "lastname": "Fritz",
       "nationality_id": 145,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 34,
       "team2_id": 9,
@@ -12876,7 +12921,7 @@
       "lastname": "Brian",
       "nationality_id": 145,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 32,
       "team2_id": 33,
@@ -12891,7 +12936,7 @@
       "lastname": "Steven",
       "nationality_id": 145,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 32,
       "team2_id": 71,
@@ -12921,7 +12966,7 @@
       "lastname": "Tim",
       "nationality_id": 145,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 34,
       "team2_id": 9,
@@ -12936,7 +12981,7 @@
       "lastname": "Opeta",
       "nationality_id": 145,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 91,
       "team2_id": 92,
@@ -12966,7 +13011,7 @@
       "lastname": "Tusi",
       "nationality_id": 145,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 2,
       "team2_id": 107,
@@ -12996,7 +13041,7 @@
       "lastname": "Ulupano",
       "nationality_id": 145,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 18,
       "team2_id": 7,
@@ -13011,7 +13056,7 @@
       "lastname": "Semo",
       "nationality_id": 145,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 85,
       "team2_id": 92,
@@ -13041,7 +13086,7 @@
       "lastname": "Lima",
       "nationality_id": 145,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 33,
       "team2_id": 77,
@@ -13071,7 +13116,7 @@
       "lastname": "Joe",
       "nationality_id": 145,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 8,
       "team2_id": 1,
@@ -13100,8 +13145,8 @@
       "name": "Tuilagi",
       "lastname": "Henry",
       "nationality_id": 145,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 75,
       "team2_id": 11,
@@ -13131,7 +13176,7 @@
       "lastname": "Chris",
       "nationality_id": 145,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 83,
       "team2_id": 71,
@@ -13161,7 +13206,7 @@
       "lastname": "Malakai",
       "nationality_id": 173,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 33,
       "team2_id": 2,
@@ -13191,7 +13236,7 @@
       "lastname": "Pierre",
       "nationality_id": 173,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 100,
       "team2_id": null,
@@ -13205,8 +13250,8 @@
       "name": "Kalamafoni",
       "lastname": "Sione",
       "nationality_id": 173,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 73,
       "team2_id": 75,
@@ -13221,7 +13266,7 @@
       "lastname": "Nili",
       "nationality_id": 173,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 113,
       "team2_id": 78,
@@ -13235,7 +13280,7 @@
       "name": "Lilo",
       "lastname": "Vungakoto",
       "nationality_id": 173,
-      "position1_id": 8,
+      "position1_id": 9,
       "position2_id": null,
       "sport_id": 1,
       "team1_id": 71,
@@ -13250,8 +13295,8 @@
       "name": "Mafi",
       "lastname": "Steve",
       "nationality_id": 173,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 3,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 75,
       "team2_id": 8,
@@ -13266,7 +13311,7 @@
       "lastname": "Finau",
       "nationality_id": 173,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 31,
       "team2_id": 32,
@@ -13356,7 +13401,7 @@
       "lastname": "Kosuke",
       "nationality_id": 83,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 109,
       "team2_id": null,
@@ -13370,8 +13415,8 @@
       "name": "Fakatava",
       "lastname": "Amato",
       "nationality_id": 83,
-      "position1_id": 3,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 3,
       "sport_id": 1,
       "team1_id": 105,
       "team2_id": null,
@@ -13386,7 +13431,7 @@
       "lastname": "Siosaia",
       "nationality_id": 83,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 116,
       "team2_id": 114,
@@ -13476,7 +13521,7 @@
       "lastname": "Takashi",
       "nationality_id": 83,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 109,
       "team2_id": 111,
@@ -13506,7 +13551,7 @@
       "lastname": "Seung-sin",
       "nationality_id": 83,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 100,
       "team2_id": null,
@@ -13520,8 +13565,8 @@
       "name": "Leitch",
       "lastname": "Michael",
       "nationality_id": 83,
-      "position1_id": 4,
-      "position2_id": null,
+      "position1_id": 30,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 108,
       "team2_id": 34,
@@ -13536,7 +13581,7 @@
       "lastname": "Kotaro",
       "nationality_id": 83,
       "position1_id": 9,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 107,
       "team2_id": 116,
@@ -13581,7 +13626,7 @@
       "lastname": "Ryoto",
       "nationality_id": 83,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 6,
       "sport_id": 1,
       "team1_id": 107,
       "team2_id": 116,
@@ -13611,7 +13656,7 @@
       "lastname": "Hirotoki",
       "nationality_id": 83,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 107,
       "team2_id": 111,
@@ -13656,7 +13701,7 @@
       "lastname": "Yu",
       "nationality_id": 83,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 113,
       "team2_id": 116,
@@ -13686,7 +13731,7 @@
       "lastname": "Luke",
       "nationality_id": 83,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 102,
       "team2_id": 114,
@@ -13731,7 +13776,7 @@
       "lastname": "Mamuka",
       "nationality_id": 62,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 3,
       "sport_id": 1,
       "team1_id": 10,
       "team2_id": 2,
@@ -13761,7 +13806,7 @@
       "lastname": "Lasha",
       "nationality_id": 62,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 140,
       "team2_id": null,
@@ -13776,7 +13821,7 @@
       "lastname": "Merab",
       "nationality_id": 62,
       "position1_id": 6,
-      "position2_id": null,
+      "position2_id": 9,
       "sport_id": 1,
       "team1_id": 13,
       "team2_id": null,
@@ -13821,7 +13866,7 @@
       "lastname": "Davit",
       "nationality_id": 62,
       "position1_id": 9,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 3,
       "team2_id": 6,
@@ -13851,7 +13896,7 @@
       "lastname": "Alexander",
       "nationality_id": 62,
       "position1_id": 8,
-      "position2_id": null,
+      "position2_id": 7,
       "sport_id": 1,
       "team1_id": 140,
       "team2_id": null,
@@ -13881,7 +13926,7 @@
       "lastname": "Pedro",
       "nationality_id": 137,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 78,
       "team2_id": 18,
@@ -13941,7 +13986,7 @@
       "lastname": "Rodrigo",
       "nationality_id": 184,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 8,
       "team2_id": null,
@@ -13956,7 +14001,7 @@
       "lastname": "Andres",
       "nationality_id": 184,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 12,
       "team2_id": null,
@@ -13971,7 +14016,7 @@
       "lastname": "Jamie",
       "nationality_id": 32,
       "position1_id": 3,
-      "position2_id": null,
+      "position2_id": 4,
       "sport_id": 1,
       "team1_id": 28,
       "team2_id": 9,
