@@ -87,6 +87,7 @@ def import_players():
                     "team1_id": team1_id,
                     "team2_id": team2_id,
                     "team3_id": team3_id,
+                    "actual_team_id": int(row['actual_club']) if pd.notna(row['actual_club']) else None,
                     "flag": get_flag_path(row['flag']),
                     "active": int(row['active']) == 1,
                     "photo": get_player_photo_path(

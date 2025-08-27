@@ -19,12 +19,15 @@ class Player {
                 t2.team_logo as team2_logo,
                 t3.name as team3,
                 t3.team_logo as team3_logo,
+                actual.name as actual_team,
+                actual.team_logo as actual_team_logo,
                 p.active
             FROM players p
             LEFT JOIN nationalities n ON p.nationality_id = n.id
             LEFT JOIN teams t1 ON p.team1_id = t1.id
             LEFT JOIN teams t2 ON p.team2_id = t2.id
             LEFT JOIN teams t3 ON p.team3_id = t3.id
+            LEFT JOIN teams actual ON p.actual_team_id = actual.id
             LEFT JOIN positions pos1 ON p.position1_id = pos1.id
             LEFT JOIN positions pos2 ON p.position2_id = pos2.id
             LEFT JOIN sports s ON p.sport_id = s.id
@@ -56,12 +59,15 @@ class Player {
                 t2.team_logo as team2_logo,
                 t3.name as team3,
                 t3.team_logo as team3_logo,
+                actual.name as actual_team,
+                actual.team_logo as actual_team_logo,
                 p.active
             FROM players p
             LEFT JOIN nationalities n ON p.nationality_id = n.id
             LEFT JOIN teams t1 ON p.team1_id = t1.id
             LEFT JOIN teams t2 ON p.team2_id = t2.id
             LEFT JOIN teams t3 ON p.team3_id = t3.id
+            LEFT JOIN teams actual ON p.actual_team_id = actual.id
             LEFT JOIN positions pos1 ON p.position1_id = pos1.id
             LEFT JOIN positions pos2 ON p.position2_id = pos2.id
             LEFT JOIN sports s ON p.sport_id = s.id

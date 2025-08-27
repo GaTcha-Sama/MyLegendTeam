@@ -46,6 +46,7 @@ CREATE TABLE players (
     team1_id INTEGER,
     team2_id INTEGER,
     team3_id INTEGER,
+    actual_team_id INTEGER,
     photo TEXT NOT NULL,
     active BOOLEAN NOT NULL,
     FOREIGN KEY (nationality_id) REFERENCES nationalities (id),
@@ -54,5 +55,6 @@ CREATE TABLE players (
     FOREIGN KEY (sport_id) REFERENCES sports (id),
     FOREIGN KEY (team1_id) REFERENCES teams (id),
     FOREIGN KEY (team2_id) REFERENCES teams (id),
-    FOREIGN KEY (team3_id) REFERENCES teams (id)
+    FOREIGN KEY (team3_id) REFERENCES teams (id),
+    FOREIGN KEY (actual_team_id) REFERENCES teams (id)
 );
