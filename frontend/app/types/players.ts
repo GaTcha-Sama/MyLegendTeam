@@ -14,6 +14,8 @@ export interface Player {
   team2_logo: string;
   team3: string;
   team3_logo: string;
+  actual_team: string;
+  actual_team_logo: string;
   active: number;
 }
 

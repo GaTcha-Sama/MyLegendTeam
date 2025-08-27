@@ -5257,9 +5257,9 @@
       "position2_id": 7,
       "sport_id": 1,
       "team1_id": 42,
-      "team2_id": null,
+      "team2_id": 11,
       "team3_id": null,
-      "actual_team_id": null,
+      "actual_team_id": 11,
       "flag": "images/flags/AUS.png",
       "active": true,
       "photo": "images/rugby/Players/AUS/Jordan-Petaia.webp"

@@ -7,6 +7,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
   const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
   const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
+  const [useDefaultActualTeamLogo, setUseDefaultActualTeamLogo] = useState(false);
 
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
@@ -50,6 +51,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
   const teamLogoPath1 = getTeamLogoPath(player.team1_logo);
   const teamLogoPath2 = getTeamLogoPath(player.team2_logo);
   const teamLogoPath3 = getTeamLogoPath(player.team3_logo);
+  const actualTeamLogoPath = getTeamLogoPath(player.actual_team_logo);
 
   // console.log('Player:', player.name, player.lastname);
   // console.log('team1_logo original:', player.team1_logo);
@@ -130,11 +132,30 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
             />
           </div>
         )}
+        
+        {/* Actual team */}
+        {player.actual_team_logo && (
+          <div className="absolute top-1 right-0 w-8">
+            <Image
+              src={useDefaultActualTeamLogo ? '/images/team-default.webp' : `/${actualTeamLogoPath}`}
+              alt={`Logo ${player.actual_team}`}
+              className="object-contain"
+              sizes="24px"
+              height={24}
+              width={24}
+              onError={() => setUseDefaultActualTeamLogo(true)}
+              unoptimized
+            />
+          </div>
+        )}
       </div>
 
       <div className="flex flex-col items-center gap-2 w-full">
+        {/* Career teams */}
+        <div className="text-xs text-center text-gray-200">Career teams</div>
         <div className="flex items-center gap-1 justify-center w-full">
           {player.team1_logo && (
+
             <div 
               className="relative flex-1 h-12 bg-gray-400 rounded-sm p-1 flex items-center justify-center group"
               title={player.team1}

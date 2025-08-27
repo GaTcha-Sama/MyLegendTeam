@@ -43,9 +43,7 @@ export const FormationSlot = ({
 }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
-  const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
-  const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
-  const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
+  const [useDefaultActualTeamLogo, setUseDefaultActualTeamLogo] = useState(false);
 
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
@@ -92,61 +90,24 @@ export const FormationSlot = ({
       return <span className="text-gray-400 italic">{position}</span>;
     }
     const renderTeamLogos = () => {
-      const logos = [];
-      
-      if (player.team1_logo) {
-        logos.push(
-          <div key="team1" className="relative w-6 h-6 rounded-sm p-1">
+      // Afficher seulement le logo de l'équipe actuelle
+      if (player.actual_team_logo) {
+        return (
+          <div className="relative w-6 h-6 rounded-sm p-1">
             <Image
-              src={useDefaultTeamLogo1 ? '/images/team-default.webp' : `/${getTeamLogoPath(player.team1_logo)}`}
-              alt={`Logo ${player.team1}`}
+              src={useDefaultActualTeamLogo ? '/images/team-default.webp' : `/${getTeamLogoPath(player.actual_team_logo)}`}
+              alt={`Logo ${player.actual_team}`}
               fill  
               className="object-contain"
               sizes="24px"
-              onError={() => setUseDefaultTeamLogo1(true)}
+              onError={() => setUseDefaultActualTeamLogo(true)}
               unoptimized
             />
           </div>
         );
       }
       
-      if (player.team2_logo) {
-        logos.push(
-          <div key="team2" className="relative w-6 h-6 rounded-sm p-1">
-            <Image
-              src={useDefaultTeamLogo2 ? '/images/team-default.webp' : `/${getTeamLogoPath(player.team2_logo)}`}
-              alt={`Logo ${player.team2}`}
-              fill  
-              className="object-contain"
-              sizes="24px"
-              onError={() => setUseDefaultTeamLogo2(true)}
-              unoptimized
-            />
-          </div>
-        );
-      }
-      
-      if (player.team3_logo) {
-        logos.push(
-          <div key="team3" className="relative w-6 h-6 rounded-sm p-1">
-            <Image
-              src={useDefaultTeamLogo3 ? '/images/team-default.webp' : `/${getTeamLogoPath(player.team3_logo)}`}
-              alt={`Logo ${player.team3}`}
-              fill  
-              className="object-contain"
-              sizes="24px"
-              onError={() => setUseDefaultTeamLogo3(true)}
-              unoptimized
-            />
-          </div>
-        );
-      }
-
-      return logos.length > 0 ? (
-        <div className="flex flex-col gap-1">
-          {logos}
-        </div>
-      ) : null;
+      return null;
     };
 
     return (
