@@ -81,25 +81,55 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
     return countryNames[countryCode] || countryCode;
   };
 
+  // Convertir selectedTeam en tableau si ce n'est pas déjà le cas
+  const selectedTeams = Array.isArray(selectedTeam) ? selectedTeam : selectedTeam ? [selectedTeam] : [];
+
+  const handleTeamToggle = (team: string) => {
+    const newSelection = selectedTeams.includes(team)
+      ? selectedTeams.filter(t => t !== team)
+      : [...selectedTeams, team];
+    onSelectTeam(newSelection);
+  };
+
+  const getDisplayText = () => {
+    if (selectedTeams.length === 0) return "All teams";
+    if (selectedTeams.length === 1) return selectedTeams[0];
+    if (selectedTeams.length === 2) return selectedTeams.join(", ");
+    return `${selectedTeams.length} teams selected`;
+  };
+
   return (
     <div>
-        <select
-            aria-label="Choose a team"
-            value={selectedTeam}
-            onChange={(e) => onSelectTeam(e.target.value)}
-            className="px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-        >
-            <option value="">All teams</option>
-            {Array.from(teamsByCountry.entries()).map(([countryCode, countryTeams]) => (
-              <optgroup key={countryCode} label={getCountryName(countryCode)}>
-                {countryTeams.map((team) => (
-                  <option key={team} value={team}>
-                    {team}
-                  </option>
-                ))}
-              </optgroup>
+      <select
+        aria-label="Choose teams"
+        value=""
+        onChange={(e) => {
+          if (e.target.value) {
+            handleTeamToggle(e.target.value);
+          }
+        }}
+        className="px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+      >
+        <option value="">{getDisplayText()}</option>
+        {Array.from(teamsByCountry.entries()).map(([countryCode, countryTeams]) => (
+          <optgroup key={countryCode} label={getCountryName(countryCode)}>
+            {countryTeams.map((team) => (
+              <option 
+                key={team} 
+                value={team}
+                className={selectedTeams.includes(team) ? "bg-blue-200 text-blue-800" : "bg-gray-100 text-gray-700"}
+                style={{
+                  backgroundColor: selectedTeams.includes(team) ? '#dbeafe' : 'transparent',
+                  color: selectedTeams.includes(team) ? '#1e40af' : '#374151',
+                  fontWeight: selectedTeams.includes(team) ? 'bold' : 'normal'
+                }}
+              >
+                {selectedTeams.includes(team) ? `✓ ${team}` : team}
+              </option>
             ))}
-        </select>
+          </optgroup>
+        ))}
+      </select>
     </div>
-  )
-}
+  );
+};

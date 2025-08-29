@@ -20,9 +20,9 @@ export const FilterPlayers = ({
       const baseConditions = 
         player.sport.toLowerCase() === selectedSport && 
         !isPlayerInTeam(player.id) &&
-        (selectedNationality === "" || player.nationality === selectedNationality) &&
+        (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
         (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
-        (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam || player.actual_team === selectedTeam) &&
+        (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3) || selectedTeam.includes(player.actual_team)) &&
         (selectedActiveRetired === null || player.active === selectedActiveRetired);
 
       if (searchWords.length === 0) {
@@ -49,9 +49,9 @@ export const FilterPlayers = ({
     const baseConditions = 
       player.sport.toLowerCase() === selectedSport && 
       !isPlayerInTeam(player.id) &&
-      (selectedNationality === "" || player.nationality === selectedNationality) &&
+      (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
       (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
-      (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam || player.actual_team === selectedTeam) &&
+      (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3) || selectedTeam.includes(player.actual_team)) &&
       (selectedActiveRetired === null || player.active === selectedActiveRetired);
 
     const matchesSearch = searchWords.every(word => 
