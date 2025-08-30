@@ -20,7 +20,7 @@ export const PositionSelector = ({
   const ordered = getOrderedPositions(selectedSport.toLowerCase() as Sport, "en");
   const orderMap = new Map<string, number>();
   ordered.forEach((pos, idx) => {
-    const baseName = pos.name.includes("/") ? pos.name.split("/")[1].trim() : pos.name;
+    const baseName = pos.name.includes(" - ") ? pos.name.split(" - ")[1].trim() : pos.name;
     const key = normalize(baseName);
     if (!orderMap.has(key)) orderMap.set(key, idx);
   });
