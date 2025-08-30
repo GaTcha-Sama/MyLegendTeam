@@ -2,18 +2,14 @@ import { TeamSelectorProps } from "../types/teamSelectorProps";
 
 export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSport }: TeamSelectorProps) => {
   
-  // Fonction pour extraire le pays à partir du chemin de l'image
   const extractCountryFromPath = (imagePath: string): string => {
     const pathParts = imagePath.split('/');
-    // Le pays est généralement dans la structure: images/sport/teams/COUNTRY/team.webp
     const countryIndex = pathParts.findIndex(part => part === 'teams') + 1;
     return pathParts[countryIndex] || 'Unknown';
   };
 
-  // Créer un mapping équipe -> pays basé sur les logos des équipes
   const teamToCountryMap = new Map<string, string>();
   
-  // Récupérer toutes les équipes uniques et leurs pays
   const allTeams = new Set<string>();
   players
     .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
@@ -21,7 +17,6 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
       [player.team1, player.team2, player.team3, player.actual_team].forEach(team => {
         if (team) {
           allTeams.add(team);
-          // Essayer de déterminer le pays à partir des logos
           if (player.actual_team_logo && player.actual_team === team) {
             teamToCountryMap.set(team, extractCountryFromPath(player.actual_team_logo));
           } else if (player.team1_logo && player.team1 === team) {
@@ -36,7 +31,6 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
     });
 
   const teams = Array.from(allTeams).sort((a, b) => {
-    // Trier d'abord par pays, puis par nom d'équipe
     const countryA = teamToCountryMap.get(a) || 'Unknown';
     const countryB = teamToCountryMap.get(b) || 'Unknown';
     
@@ -47,7 +41,6 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
     return a.localeCompare(b);
   });
 
-  // Grouper les équipes par pays
   const teamsByCountry = new Map<string, string[]>();
   teams.forEach(team => {
     const country = teamToCountryMap.get(team) || 'Unknown';
@@ -57,7 +50,6 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
     teamsByCountry.get(country)!.push(team);
   });
 
-  // Fonction pour obtenir le nom complet du pays à partir du code
   const getCountryName = (countryCode: string): string => {
     const countryNames: { [key: string]: string } = {
       'FRA': 'France',
@@ -81,7 +73,6 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
     return countryNames[countryCode] || countryCode;
   };
 
-  // Convertir selectedTeam en tableau si ce n'est pas déjà le cas
   const selectedTeams = Array.isArray(selectedTeam) ? selectedTeam : selectedTeam ? [selectedTeam] : [];
 
   const handleTeamToggle = (team: string) => {

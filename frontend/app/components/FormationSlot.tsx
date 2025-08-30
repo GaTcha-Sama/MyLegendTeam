@@ -29,6 +29,41 @@ const getFlagPath = (fullPath: string) =>
 const getTeamLogoPath = (fullPath: string) => 
   getProcessedImagePath(fullPath, 'images/team-default.webp', "of the team logo");
 
+const getSilhouettePath = (positionId: string, sport: string) => {
+  if (sport !== "rugby") return null;
+  
+  const silhouetteRugbyMapping: { [key: string]: string } = {
+    // Main positions
+    "fullback": "15.webp",
+    "wing1": "11-14.webp", 
+    "wing2": "11-14.webp",
+    "center1": "12-13.webp",
+    "center2": "12-13.webp",
+    "flyhalf": "10.webp",
+    "scrumhalf": "9.webp",
+    "number8": "8.webp",
+    "flanker1": "6-7.webp",
+    "flanker2": "6-7.webp",
+    "lock1": "4-5.webp",
+    "lock2": "4-5.webp",
+    "prop1": "1-3.webp",
+    "prop2": "1-3.webp",
+    "hooker": "2.webp",
+    // Substitutes
+    "rugby_substitute1": "sub.webp",
+    "rugby_substitute2": "sub.webp",
+    "rugby_substitute3": "sub.webp",
+    "rugby_substitute4": "sub.webp",
+    "rugby_substitute5": "sub.webp",
+    "rugby_substitute6": "sub.webp",
+    "rugby_substitute7": "sub.webp",
+    "rugby_substitute8": "sub.webp"
+  };
+  
+  const silhouetteFile = silhouetteRugbyMapping[positionId];
+  return silhouetteFile ? `/images/rugby/silhouettes/${silhouetteFile}` : null;
+};
+
 export const FormationSlot = ({ 
   position, 
   player, 
@@ -87,10 +122,29 @@ export const FormationSlot = ({
 
   const renderPlayerContent = () => {
     if (!player) {
+      const silhouettePath = getSilhouettePath(positionId, sport);
+      if (silhouettePath) {
+        return (
+          <div className="flex flex-col items-center w-full h-full">
+            <div className="relative w-full h-full">
+              <Image 
+                src={silhouettePath}
+                alt={`Silhouette ${position}`}
+                fill
+                className="object-contain opacity-60"
+                sizes="100%"
+                unoptimized
+              />
+            </div>
+            <span className="font-semibold text-gray-400 text-xs text-center mt-1">
+              {position}
+            </span>
+          </div>
+        );
+      }
       return <span className="text-gray-400 italic">{position}</span>;
     }
     const renderTeamLogos = () => {
-      // Afficher seulement le logo de l'équipe actuelle
       if (player.actual_team_logo) {
         return (
           <div className="relative w-6 h-6 rounded-sm p-1">

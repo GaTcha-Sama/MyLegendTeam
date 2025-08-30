@@ -22,9 +22,9 @@ export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
-  const [selectedNationality, setSelectedNationality] = useState("");
+  const [selectedNationality, setSelectedNationality] = useState<string[]>([]);
   const [selectedPosition, setSelectedPosition] = useState("");
-  const [selectedTeam, setSelectedTeam] = useState("");
+  const [selectedTeam, setSelectedTeam] = useState<string[]>([]);
   const [selectedActiveRetired, setSelectedActiveRetired] = useState<boolean | null>(null);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -58,9 +58,9 @@ export default function DreamTeamBuilder() {
   }, []);
 
   const resetSelectedFilters = () => {
-    setSelectedNationality("");
+    setSelectedNationality([]);
     setSelectedPosition("");
-    setSelectedTeam("");
+    setSelectedTeam([]);
     setSelectedActiveRetired(null);
     setFilteredPlayers([]);
     setCurrentPage(1);
@@ -176,9 +176,9 @@ export default function DreamTeamBuilder() {
     .filter(player => {
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&
-             (selectedNationality === "" || player.nationality === selectedNationality) &&
+             (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
              (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
-             (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam) &&
+             (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3)) &&
              (selectedActiveRetired === null || player.active === (selectedActiveRetired ? 1 : 0))
     }))
     .sort((a, b) => {
@@ -200,7 +200,7 @@ export default function DreamTeamBuilder() {
     currentPage * playersPerPage
   );
 
-  const hasActiveFilters = selectedNationality !== "" || selectedPosition !== "" || selectedTeam !== "" || selectedActiveRetired !== null;
+  const hasActiveFilters = selectedNationality.length > 0 || selectedPosition !== "" || selectedTeam.length > 0 || selectedActiveRetired !== null;
 
   const handleDragStart = (player: PlayerType) => {
     setDraggedPlayer(player);

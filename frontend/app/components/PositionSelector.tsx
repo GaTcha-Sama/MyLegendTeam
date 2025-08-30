@@ -8,11 +8,10 @@ export const PositionSelector = ({
   players,
   selectedSport,
 }: PositionSelectorProps) => {
-  // Récupérer toutes les positions uniques (position1 et position2)
   const allPositions = players
     .filter((p) => p.sport.toLowerCase() === selectedSport.toLowerCase())
     .flatMap((p) => [p.position1, p.position2])
-    .filter((pos) => pos && pos.trim() !== ""); // Filtrer les positions vides
+    .filter((pos) => pos && pos.trim() !== "");
 
   const existingPositions = Array.from(new Set(allPositions));
 

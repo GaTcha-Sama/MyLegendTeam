@@ -2,7 +2,6 @@ import { Sport } from "../types/sports";
 import { SportSelectorProps } from "../types/sportSelectorProps";
 
 export const SportSelector = ({ selectedSport, onSelectSport, players }: SportSelectorProps) => {
-  // Extraire les sports uniques des joueurs
   const availableSports = Array.from(new Set(players.map(player => player.sport.toLowerCase()))).sort();
 
   return (
