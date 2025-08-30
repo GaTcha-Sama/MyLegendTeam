@@ -131,18 +131,18 @@ export const FormationSlot = ({
                 src={silhouettePath}
                 alt={`Silhouette ${position}`}
                 fill
-                className="object-contain opacity-60"
+                className="object-contain opacity-50 hover:opacity-100 transition-opacity duration-200"
                 sizes="100%"
                 unoptimized
               />
             </div>
-            <span className="font-semibold text-gray-400 text-xs text-center mt-1">
+            <span className="font-semibold text-black text-xs text-center mt-1">
               {position}
             </span>
           </div>
         );
       }
-      return <span className="text-gray-400 italic">{position}</span>;
+      return <span className="text-black italic">{position}</span>;
     }
     const renderTeamLogos = () => {
       if (player.actual_team_logo) {
