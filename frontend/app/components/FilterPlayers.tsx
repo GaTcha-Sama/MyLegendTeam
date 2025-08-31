@@ -9,7 +9,7 @@ export const FilterPlayers = ({
   selectedNationality,
   selectedPosition,
   selectedTeam,
-  selectedActiveRetired
+  selectedActiveRetiredStared
 }: FilterPlayersProps) => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -17,13 +17,21 @@ export const FilterPlayers = ({
     const searchWords = searchTerm.toLowerCase().split(' ').filter(word => word.length > 0);
 
     const filteredPlayers = players.filter(player => {
+      let activeRetiredLegendaryCondition = true;
+      
+      if (selectedActiveRetiredStared === "legendary") {
+        activeRetiredLegendaryCondition = player.legendary_player === 1;
+      } else if (selectedActiveRetiredStared !== null) {
+        activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
+      }
+
       const baseConditions = 
         player.sport.toLowerCase() === selectedSport && 
         !isPlayerInTeam(player.id) &&
         (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
         (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
         (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3) || selectedTeam.includes(player.actual_team)) &&
-        (selectedActiveRetired === null || player.active === selectedActiveRetired);
+        activeRetiredLegendaryCondition;
 
       if (searchWords.length === 0) {
         return baseConditions;
@@ -38,7 +46,7 @@ export const FilterPlayers = ({
     });
 
     onFilterChange(filteredPlayers);
-  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, selectedActiveRetired, searchTerm, onFilterChange]);
+  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, selectedActiveRetiredStared, searchTerm, onFilterChange]);
 
   const resetSearch = () => {
     setSearchTerm('');
@@ -46,13 +54,22 @@ export const FilterPlayers = ({
 
   const showNoResults = searchTerm.length >= 3 && players.filter(player => {
     const searchWords = searchTerm.toLowerCase().split(' ').filter(word => word.length > 0);
+    
+    let activeRetiredLegendaryCondition = true;
+    
+    if (selectedActiveRetiredStared === "legendary") {
+      activeRetiredLegendaryCondition = player.legendary_player === 1;
+    } else if (selectedActiveRetiredStared !== null) {
+      activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
+    }
+
     const baseConditions = 
       player.sport.toLowerCase() === selectedSport && 
       !isPlayerInTeam(player.id) &&
       (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
       (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
       (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3) || selectedTeam.includes(player.actual_team)) &&
-      (selectedActiveRetired === null || player.active === selectedActiveRetired);
+      activeRetiredLegendaryCondition;
 
     const matchesSearch = searchWords.every(word => 
       player.name.toLowerCase().includes(word) ||

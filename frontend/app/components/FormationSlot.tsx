@@ -193,8 +193,18 @@ export const FormationSlot = ({
             {renderTeamLogos()}
           </div>
         </div>
-        <span className="font-semibold text-gray-800 text-xs text-center">
-          {`${player.lastname} ${player.name}`}
+        <span className="font-semibold text-gray-800 text-xs text-center flex items-center justify-center gap-1">
+          <span>{`${player.lastname} ${player.name}`}</span>
+          {player.legendary_player === 1 && (
+            <Image
+              src="/images/yellow-star.webp"
+              alt="Legendary player"
+              width={16}
+              height={16}
+              className="object-contain"
+              unoptimized
+            />
+          )}
         </span>
         <button
           onClick={() => onDropPlayer(position, null)}

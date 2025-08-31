@@ -9,7 +9,7 @@ import { SportSelector } from "./components/SportSelector";
 import { NationalitySelector } from "./components/NationalitySelector";
 import { TeamSelector } from "./components/TeamSelector";
 import { PositionSelector } from "./components/PositionSelector";
-import { ActiveRetiredSelector } from "./components/ActiveRetiredSelector";
+import { ActiveRetiredStaredSelector } from "./components/ActiveRetiredStaredSelector";
 import { FilterPlayers } from "./components/FilterPlayers";
 import { SavedTeamsModal } from "./components/SavedTeamsModal";
 import { fetchPlayers } from "../lib/api";
@@ -25,7 +25,7 @@ export default function DreamTeamBuilder() {
   const [selectedNationality, setSelectedNationality] = useState<string[]>([]);
   const [selectedPosition, setSelectedPosition] = useState("");
   const [selectedTeam, setSelectedTeam] = useState<string[]>([]);
-  const [selectedActiveRetired, setSelectedActiveRetired] = useState<boolean | null>(null);
+  const [selectedActiveRetiredStared, setSelectedActiveRetiredStared] = useState<number | null | "legendary">(null);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [playersPerPage] = useState(9);
@@ -61,7 +61,7 @@ export default function DreamTeamBuilder() {
     setSelectedNationality([]);
     setSelectedPosition("");
     setSelectedTeam([]);
-    setSelectedActiveRetired(null);
+    setSelectedActiveRetiredStared(null);
     setFilteredPlayers([]);
     setCurrentPage(1);
   };
@@ -76,7 +76,7 @@ export default function DreamTeamBuilder() {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedActiveRetired]);
+  }, [selectedActiveRetiredStared]);
 
   useEffect(() => {
     setCurrentPage(1);
@@ -174,15 +174,22 @@ export default function DreamTeamBuilder() {
 
   const playersToShow = (filteredPlayers.length > 0 ? filteredPlayers : players
     .filter(player => {
+      let activeRetiredLegendaryCondition = true;
+      
+      if (selectedActiveRetiredStared === "legendary") {
+        activeRetiredLegendaryCondition = player.legendary_player === 1;
+      } else if (selectedActiveRetiredStared !== null) {
+        activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
+      }
+
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&
              (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
              (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
              (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3)) &&
-             (selectedActiveRetired === null || player.active === (selectedActiveRetired ? 1 : 0))
+             activeRetiredLegendaryCondition;
     }))
     .sort((a, b) => {
-      // Si une position est sélectionnée, trier par priorité de position
       if (selectedPosition !== "") {
         const aIsPrimary = a.position1 === selectedPosition;
         const bIsPrimary = b.position1 === selectedPosition;
@@ -191,7 +198,6 @@ export default function DreamTeamBuilder() {
         if (!aIsPrimary && bIsPrimary) return 1;
       }
       
-      // Sinon, trier par nom
       return a.name.localeCompare(b.name);
     });
 
@@ -200,7 +206,7 @@ export default function DreamTeamBuilder() {
     currentPage * playersPerPage
   );
 
-  const hasActiveFilters = selectedNationality.length > 0 || selectedPosition !== "" || selectedTeam.length > 0 || selectedActiveRetired !== null;
+  const hasActiveFilters = selectedNationality.length > 0 || selectedPosition !== "" || selectedTeam.length > 0 || selectedActiveRetiredStared !== null;
 
   const handleDragStart = (player: PlayerType) => {
     setDraggedPlayer(player);
@@ -235,7 +241,12 @@ export default function DreamTeamBuilder() {
               </div>
               <div className="flex gap-3 justify-around">
                 <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
-                <ActiveRetiredSelector selectedActiveRetired={selectedActiveRetired as number | null} onSelectActiveRetired={setSelectedActiveRetired as (activeRetired: number | null) => void} players={players} selectedSport={selectedSport} />
+                <ActiveRetiredStaredSelector 
+                  selectedActiveRetiredStared={selectedActiveRetiredStared} 
+                  onSelectActiveRetiredStared={setSelectedActiveRetiredStared} 
+                  players={players} 
+                  selectedSport={selectedSport} 
+                />
                 <FilterPlayers 
                   onFilterChange={setFilteredPlayers}
                   players={players}
@@ -244,7 +255,7 @@ export default function DreamTeamBuilder() {
                   selectedNationality={selectedNationality}
                   selectedPosition={selectedPosition}
                   selectedTeam={selectedTeam}
-                  selectedActiveRetired={selectedActiveRetired as number | null} 
+                  selectedActiveRetiredStared={selectedActiveRetiredStared} 
                 />
               </div>
             </div>
@@ -298,7 +309,7 @@ export default function DreamTeamBuilder() {
                     theme={currentTheme} 
                     onDragStart={() => handleDragStart(player)}
                     onDragEnd={handleDragEnd}
-                    selectedPosition={selectedPosition} // Nouvelle prop
+                    selectedPosition={selectedPosition}
                   />
                 ))
               )}

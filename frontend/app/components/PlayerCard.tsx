@@ -106,8 +106,18 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
         </div>
       )}
 
-      <div className="text-sm font-bold mb-3 text-center">
-        {`${player.lastname} ${player.name}`}
+      <div className="text-sm font-bold mb-1 text-center flex items-center justify-center gap-2">
+        <span>{`${player.lastname} ${player.name}`}</span>
+        {player.legendary_player === 1 && (
+          <Image
+            src="/images/yellow-star.webp"
+            alt="Legendary player"
+            width={20}
+            height={20}
+            className="object-contain mb-1"
+            unoptimized
+          />
+        )}
       </div>
 
       <div className="relative w-full aspect-square mb-3 flex-grow bg-white rounded-lg">

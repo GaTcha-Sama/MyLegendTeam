@@ -21,6 +21,7 @@ class Player {
                 t3.team_logo as team3_logo,
                 actual.name as actual_team,
                 actual.team_logo as actual_team_logo,
+                p.legendary_player,
                 p.active
             FROM players p
             LEFT JOIN nationalities n ON p.nationality_id = n.id
@@ -61,6 +62,7 @@ class Player {
                 t3.team_logo as team3_logo,
                 actual.name as actual_team,
                 actual.team_logo as actual_team_logo,
+                p.legendary_player,
                 p.active
             FROM players p
             LEFT JOIN nationalities n ON p.nationality_id = n.id

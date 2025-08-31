@@ -107,6 +107,7 @@ const initDatabase = async () => {
                     'team2_id', 
                     'team3_id', 
                     'actual_team_id',
+                    'legendary_player',
                     'photo',
                     'active'
                 ]);

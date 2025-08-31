@@ -1,12 +1,12 @@
 import { Player } from './players';
 
 export interface FilterPlayersProps {
-  onFilterChange: (filteredPlayers: Player[]) => void;
+  onFilterChange: (players: Player[]) => void;
   players: Player[];
   selectedSport: string;
   isPlayerInTeam: (playerId: number) => boolean;
   selectedNationality: string[];
   selectedPosition: string;
   selectedTeam: string[];
-  selectedActiveRetired: number | null;
+  selectedActiveRetiredStared: number | null | "legendary";
 }
