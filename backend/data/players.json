@@ -3259,7 +3259,7 @@
       "team2_id": 33,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/NZL.png",
       "active": false,
       "photo": "images/rugby/Players/NZL/Andrew-Hore.webp"
@@ -3378,7 +3378,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": 30,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/NZL.png",
       "active": true,
       "photo": "images/rugby/Players/NZL/Will-Jordan.webp"
@@ -3956,7 +3956,7 @@
       "team2_id": 81,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/NZL.png",
       "active": false,
       "photo": "images/rugby/Players/NZL/Taine-Randell.webp"
@@ -4058,7 +4058,7 @@
       "team2_id": 14,
       "team3_id": 5,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/NZL.png",
       "active": false,
       "photo": "images/rugby/Players/NZL/Joe-Rokocoko.webp"
@@ -4313,7 +4313,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": 30,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/NZL.png",
       "active": true,
       "photo": "images/rugby/Players/NZL/Codie-Taylor.webp"
@@ -4534,7 +4534,7 @@
       "team2_id": 30,
       "team3_id": 34,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/NZL.png",
       "active": false,
       "photo": "images/rugby/Players/NZL/Sonny-Bill-Williams.webp"
@@ -4670,7 +4670,7 @@
       "team2_id": 77,
       "team3_id": 5,
       "actual_team_id": 43,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/AUS.png",
       "active": true,
       "photo": "images/rugby/Players/AUS/Kurtley-Beale.webp"
@@ -5214,7 +5214,7 @@
       "team2_id": 106,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/AUS.png",
       "active": false,
       "photo": "images/rugby/Players/AUS/Toutai-Kefu.webp"
@@ -5724,7 +5724,7 @@
       "team2_id": 16,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/AUS.png",
       "active": false,
       "photo": "images/rugby/Players/AUS/Joe-Roff.webp"
@@ -5775,7 +5775,7 @@
       "team2_id": 43,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/AUS.png",
       "active": false,
       "photo": "images/rugby/Players/AUS/Nathan-Sharpe.webp"
@@ -5945,7 +5945,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/AUS.png",
       "active": false,
       "photo": "images/rugby/Players/AUS/Ben-Tune.webp"
@@ -6251,7 +6251,7 @@
       "team2_id": 10,
       "team3_id": 54,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/RSA.png",
       "active": false,
       "photo": "images/rugby/Players/RSA/Bismarck-Du-Plessis.webp"
@@ -6642,7 +6642,7 @@
       "team2_id": 77,
       "team3_id": 54,
       "actual_team_id": 54,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/RSA.png",
       "active": true,
       "photo": "images/rugby/Players/RSA/Willie-Le-Roux.webp"
@@ -6914,7 +6914,7 @@
       "team2_id": 81,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/RSA.png",
       "active": false,
       "photo": "images/rugby/Players/RSA/Francois-Pienaar.webp"
@@ -6965,7 +6965,7 @@
       "team2_id": 10,
       "team3_id": 75,
       "actual_team_id": 75,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/RSA.png",
       "active": true,
       "photo": "images/rugby/Players/RSA/Handre-Pollard.webp"
@@ -8376,7 +8376,7 @@
       "team2_id": 17,
       "team3_id": 8,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/SCO.png",
       "active": false,
       "photo": "images/rugby/Players/SCO/Gregor-Townsend.webp"
@@ -8648,7 +8648,7 @@
       "team2_id": 87,
       "team3_id": 86,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": false,
       "photo": "images/rugby/Players/WAL/Colin-Charvis.webp"
@@ -8716,7 +8716,7 @@
       "team2_id": 9,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": false,
       "photo": "images/rugby/Players/WAL/Jonathan-Davies.webp"
@@ -9311,7 +9311,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": false,
       "photo": "images/rugby/Players/WAL/Ken-Owens.webp"
@@ -10008,7 +10008,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/IRL.png",
       "active": false,
       "photo": "images/rugby/Players/IRL/Keith-Earls.webp"
@@ -10144,7 +10144,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/IRL.png",
       "active": false,
       "photo": "images/rugby/Players/IRL/Jamie-Heaslip.webp"
@@ -10263,7 +10263,7 @@
       "team2_id": 76,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/IRL.png",
       "active": false,
       "photo": "images/rugby/Players/IRL/David-Humphreys.webp"
@@ -10297,7 +10297,7 @@
       "team2_id": 43,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/IRL.png",
       "active": false,
       "photo": "images/rugby/Players/IRL/Rob-Kearney.webp"
@@ -10501,7 +10501,7 @@
       "team2_id": 76,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/IRL.png",
       "active": false,
       "photo": "images/rugby/Players/IRL/Sean-O-Brien.webp"
@@ -11113,7 +11113,7 @@
       "team2_id": 74,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Danny-Care.webp"
@@ -11198,7 +11198,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Dan-Cole.webp"
@@ -11538,7 +11538,7 @@
       "team2_id": 79,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Ben-Foden.webp"
@@ -11657,7 +11657,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Jeremy-Guscott.webp"
@@ -11674,7 +11674,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Dylan-Hartley.webp"
@@ -11861,7 +11861,7 @@
       "team2_id": 17,
       "team3_id": null,
       "actual_team_id": 17,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": true,
       "photo": "images/rugby/Players/ENG/Courtney-Lawes.webp"
@@ -11980,7 +11980,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Joe-Marler.webp"
@@ -12218,7 +12218,7 @@
       "team2_id": 127,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Chris-Robshaw.webp"
@@ -12269,7 +12269,7 @@
       "team2_id": 77,
       "team3_id": 2,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Simon-Shaw.webp"
@@ -12422,7 +12422,7 @@
       "team2_id": 17,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Steve-Thompson.webp"
@@ -12507,7 +12507,7 @@
       "team2_id": 77,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ENG.png",
       "active": false,
       "photo": "images/rugby/Players/ENG/Phil-Vickery.webp"
@@ -12711,7 +12711,7 @@
       "team2_id": 4,
       "team3_id": 96,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/ITA.png",
       "active": false,
       "photo": "images/rugby/Players/ITA/Mauro-Bergamasco.webp"
@@ -14054,7 +14054,7 @@
       "team2_id": 15,
       "team3_id": 1,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/FJI.png",
       "active": false,
       "photo": "images/rugby/Players/FJI/Rupeni-Caucaunibuca.webp"
@@ -14326,7 +14326,7 @@
       "team2_id": 10,
       "team3_id": 75,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/FJI.png",
       "active": false,
       "photo": "images/rugby/Players/FJI/Nemani-Nadolo.webp"
@@ -14360,7 +14360,7 @@
       "team2_id": 5,
       "team3_id": 8,
       "actual_team_id": 8,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/FJI.png",
       "active": true,
       "photo": "images/rugby/Players/FJI/Leone-Nakarawa.webp"
@@ -15346,7 +15346,7 @@
       "team2_id": 32,
       "team3_id": 1,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/TGA.png",
       "active": false,
       "photo": "images/rugby/Players/TGA/Finau-Maka.webp"
