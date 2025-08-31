@@ -17,6 +17,7 @@ import { Player as PlayerType } from "./types/players";
 import { SavedTeam } from "./types/savedTeam";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { formationCoordsPixels } from "./styles/formationCoordsPixels";
+import { LegendaryLimitModal } from "./components/LegendaryLimitModal";
 
 export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
@@ -35,6 +36,8 @@ export default function DreamTeamBuilder() {
   const [savedTeams, setSavedTeams] = useState<SavedTeam[]>([]);
   const [savedTeamsCount, setSavedTeamsCount] = useState(0);
   const [draggedPlayer, setDraggedPlayer] = useState<PlayerType | null>(null);
+  const [showLegendaryModal, setShowLegendaryModal] = useState(false);
+  const [enforceLegendaryLimit, setEnforceLegendaryLimit] = useState(false);
 
   useEffect(() => {
     const loadPlayers = async () => {
@@ -100,6 +103,19 @@ export default function DreamTeamBuilder() {
       return;
     }
 
+    // Vérifier la limite des joueurs légendaires AVANT de placer le joueur
+    if (enforceLegendaryLimit && player.legendary_player === 1) {
+      const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
+        teamPlayer && teamPlayer.legendary_player === 1
+      ).length;
+      
+      // Si on essaie de placer un joueur légendaire et qu'on a déjà 5, bloquer
+      if (currentLegendaryCount >= 5) {
+        alert("Vous ne pouvez pas placer plus de 5 joueurs légendaires !");
+        return;
+      }
+    }
+
     setTeam(prev => {
       const newTeam = { ...prev };
       
@@ -124,6 +140,27 @@ export default function DreamTeamBuilder() {
       
       return newTeam;
     });
+  };
+
+  // Vérifier si on a atteint la limite de 5 joueurs légendaires
+  useEffect(() => {
+    const legendaryPlayersCount = Object.values(team).filter(player => 
+      player && player.legendary_player === 1
+    ).length;
+
+    if (legendaryPlayersCount >= 5 && !enforceLegendaryLimit) {
+      setShowLegendaryModal(true);
+    }
+  }, [team, enforceLegendaryLimit]);
+
+  const handleLegendaryLimitConfirm = () => {
+    setEnforceLegendaryLimit(true);
+    setShowLegendaryModal(false);
+  };
+
+  const handleLegendaryLimitCancel = () => {
+    setEnforceLegendaryLimit(false);
+    setShowLegendaryModal(false);
   };
 
   const resetTeam = () => {
@@ -256,6 +293,8 @@ export default function DreamTeamBuilder() {
                   selectedPosition={selectedPosition}
                   selectedTeam={selectedTeam}
                   selectedActiveRetiredStared={selectedActiveRetiredStared} 
+                  enforceLegendaryLimit={enforceLegendaryLimit}
+                  team={team}
                 />
               </div>
             </div>
@@ -400,6 +439,8 @@ export default function DreamTeamBuilder() {
                       if (slotPlayer) handleDragStart(slotPlayer);
                     }}
                     onDragEnd={handleDragEnd}
+                    enforceLegendaryLimit={enforceLegendaryLimit}
+                    team={team}
                   />
                 </div>
               );
@@ -415,6 +456,11 @@ export default function DreamTeamBuilder() {
           setIsModalOpen(false);
         }}
         onDeleteTeam={deleteTeam}
+      />
+      <LegendaryLimitModal
+        isOpen={showLegendaryModal}
+        onConfirm={handleLegendaryLimitConfirm}
+        onCancel={handleLegendaryLimitCancel}
       />
     </DndProvider>
   );

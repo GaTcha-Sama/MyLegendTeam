@@ -12,4 +12,6 @@ export interface FormationSlotProps {
   draggedPlayer?: PlayerType | null;
   onDragStart?: () => void;
   onDragEnd?: () => void;
+  enforceLegendaryLimit: boolean;
+  team: { [key: string]: PlayerType | null };
 }

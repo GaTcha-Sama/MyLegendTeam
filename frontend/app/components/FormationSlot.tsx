@@ -74,7 +74,9 @@ export const FormationSlot = ({
   sport,
   draggedPlayer,
   onDragStart,
-  onDragEnd
+  onDragEnd,
+  enforceLegendaryLimit,
+  team
 }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
@@ -104,6 +106,18 @@ export const FormationSlot = ({
       onDropPlayer(position, item);
     },
     canDrop: (item: PlayerType) => {
+      // Vérifier d'abord si c'est un joueur légendaire et si la limite est appliquée
+      if (enforceLegendaryLimit && item.legendary_player === 1) {
+        const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
+          teamPlayer && teamPlayer.legendary_player === 1
+        ).length;
+        
+        // Bloquer si on a déjà 5 joueurs légendaires
+        if (currentLegendaryCount >= 5) {
+          return false;
+        }
+      }
+      
       return canPlayerBePlacedOnSlot(item, positionId, sport);
     },
     collect: (monitor) => ({ 

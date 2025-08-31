@@ -9,7 +9,9 @@ export const FilterPlayers = ({
   selectedNationality,
   selectedPosition,
   selectedTeam,
-  selectedActiveRetiredStared
+  selectedActiveRetiredStared,
+  enforceLegendaryLimit,
+  team
 }: FilterPlayersProps) => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -23,6 +25,17 @@ export const FilterPlayers = ({
         activeRetiredLegendaryCondition = player.legendary_player === 1;
       } else if (selectedActiveRetiredStared !== null) {
         activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
+      }
+
+      // Vérifier la limite des joueurs légendaires
+      if (enforceLegendaryLimit && player.legendary_player === 1) {
+        const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
+          teamPlayer && teamPlayer.legendary_player === 1
+        ).length;
+        
+        if (currentLegendaryCount >= 5) {
+          return false;
+        }
       }
 
       const baseConditions = 
@@ -46,7 +59,7 @@ export const FilterPlayers = ({
     });
 
     onFilterChange(filteredPlayers);
-  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, selectedActiveRetiredStared, searchTerm, onFilterChange]);
+  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, selectedActiveRetiredStared, searchTerm, onFilterChange, enforceLegendaryLimit, team]);
 
   const resetSearch = () => {
     setSearchTerm('');
@@ -62,6 +75,17 @@ export const FilterPlayers = ({
       activeRetiredLegendaryCondition = player.legendary_player === 1;
     } else if (selectedActiveRetiredStared !== null) {
       activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
+    }
+
+    // Vérifier la limite des joueurs légendaires
+    if (enforceLegendaryLimit && player.legendary_player === 1) {
+      const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
+        teamPlayer && teamPlayer.legendary_player === 1
+      ).length;
+      
+      if (currentLegendaryCount >= 5) {
+        return false;
+      }
     }
 
     const baseConditions = 
