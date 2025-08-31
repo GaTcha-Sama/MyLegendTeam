@@ -50,6 +50,7 @@ export const FilterPlayers = ({
 
   const resetSearch = () => {
     setSearchTerm('');
+    onFilterChange([]);
   };
 
   const showNoResults = searchTerm.length >= 3 && players.filter(player => {

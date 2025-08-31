@@ -32,7 +32,7 @@ export const ActiveRetiredStaredSelector: React.FC<ActiveRetiredStaredSelectorPr
     >
       <option value="active">Active</option>
       <option value="retired">Retired</option>
-      <option value="legendary">Only the GOATs</option>
+      <option value="legendary">Only the greatest</option>
       <option value="all">All players</option>
     </select>
   );
