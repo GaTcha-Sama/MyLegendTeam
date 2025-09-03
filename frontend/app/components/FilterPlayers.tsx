@@ -10,7 +10,6 @@ export const FilterPlayers = ({
   selectedPosition,
   selectedTeam,
   selectedActiveRetiredStared,
-  enforceLegendaryLimit,
   team
 }: FilterPlayersProps) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -27,16 +26,7 @@ export const FilterPlayers = ({
         activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
       }
 
-      // Vérifier la limite des joueurs légendaires
-      if (enforceLegendaryLimit && player.legendary_player === 1) {
-        const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
-          teamPlayer && teamPlayer.legendary_player === 1
-        ).length;
-        
-        if (currentLegendaryCount >= 5) {
-          return false;
-        }
-      }
+      // Ne plus masquer les joueurs légendaires, ils seront désactivés dans PlayerCard
 
       const baseConditions = 
         player.sport.toLowerCase() === selectedSport && 
@@ -59,7 +49,7 @@ export const FilterPlayers = ({
     });
 
     onFilterChange(filteredPlayers);
-  }, [players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, selectedActiveRetiredStared, searchTerm, onFilterChange, enforceLegendaryLimit, team]);
+  }, [searchTerm, players, selectedSport, isPlayerInTeam, selectedNationality, selectedPosition, selectedTeam, selectedActiveRetiredStared, team, onFilterChange]);
 
   const resetSearch = () => {
     setSearchTerm('');
@@ -77,16 +67,7 @@ export const FilterPlayers = ({
       activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
     }
 
-    // Vérifier la limite des joueurs légendaires
-    if (enforceLegendaryLimit && player.legendary_player === 1) {
-      const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
-        teamPlayer && teamPlayer.legendary_player === 1
-      ).length;
-      
-      if (currentLegendaryCount >= 5) {
-        return false;
-      }
-    }
+    // Ne plus masquer les joueurs légendaires
 
     const baseConditions = 
       player.sport.toLowerCase() === selectedSport && 
@@ -95,6 +76,10 @@ export const FilterPlayers = ({
       (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
       (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3) || selectedTeam.includes(player.actual_team)) &&
       activeRetiredLegendaryCondition;
+
+    if (searchWords.length === 0) {
+      return baseConditions;
+    }
 
     const matchesSearch = searchWords.every(word => 
       player.name.toLowerCase().includes(word) ||

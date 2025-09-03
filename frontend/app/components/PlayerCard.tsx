@@ -3,7 +3,7 @@ import { PlayerCardProps } from "../types/playerCardProps";
 import Image from "next/image";
 import { useState } from "react";
 
-export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosition }: PlayerCardProps) => {
+export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosition, isDisabled }: PlayerCardProps) => {
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
   const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
   const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
@@ -12,9 +12,11 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
     item: () => {
+      if (isDisabled) return {}; // Ne pas permettre le drag si désactivé
       onDragStart?.();
       return player;
     },
+    canDrag: !isDisabled, // Empêcher le drag si désactivé
     end: () => {
       onDragEnd?.();
     },
@@ -86,7 +88,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
         shadow-md 
         transition-all 
         duration-200 
-        cursor-pointer 
         flex 
         flex-col 
         items-center 
@@ -95,6 +96,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
         w-full
         ${isDragging ? "opacity-50" : ""}
         ${getPositionStyle()}
+        ${isDisabled ? "opacity-50 grayscale cursor-not-allowed" : "cursor-pointer"}
       `}
     >
       {/* Indicateur de position si une position est sélectionnée */}
@@ -165,7 +167,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
         <div className="text-xs text-center text-gray-200">Career teams</div>
         <div className="flex items-center gap-1 justify-center w-full">
           {player.team1_logo && (
-
             <div 
               className="relative flex-1 h-12 bg-gray-400 rounded-sm p-1 flex items-center justify-center group"
               title={player.team1}

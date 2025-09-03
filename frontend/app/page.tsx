@@ -109,8 +109,13 @@ export default function DreamTeamBuilder() {
         teamPlayer && teamPlayer.legendary_player === 1
       ).length;
       
+      // Vérifier si le joueur à la position de destination est déjà légendaire
+      const playerAtDestination = team[position];
+      const isReplacingLegendaryWithLegendary = playerAtDestination && playerAtDestination.legendary_player === 1;
+      
       // Si on essaie de placer un joueur légendaire et qu'on a déjà 5, bloquer
-      if (currentLegendaryCount >= 5) {
+      // SAUF si on remplace un joueur légendaire par un autre joueur légendaire
+      if (currentLegendaryCount >= 5 && !isReplacingLegendaryWithLegendary) {
         alert("Vous ne pouvez pas placer plus de 5 joueurs légendaires !");
         return;
       }
@@ -165,6 +170,7 @@ export default function DreamTeamBuilder() {
 
   const resetTeam = () => {
     setTeam({});
+    setEnforceLegendaryLimit(false); // Réinitialiser la limite des joueurs légendaires
   };
 
   const saveTeam = () => {
@@ -218,6 +224,8 @@ export default function DreamTeamBuilder() {
       } else if (selectedActiveRetiredStared !== null) {
         activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
       }
+
+      // Ne plus masquer les joueurs légendaires, ils seront désactivés dans PlayerCard
 
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&
@@ -341,16 +349,26 @@ export default function DreamTeamBuilder() {
                   Please try again with different filters
                 </div>
               ) : (
-                paginatedPlayers.map((player) => (
-                  <PlayerCard 
-                    key={player.id} 
-                    player={player} 
-                    theme={currentTheme} 
-                    onDragStart={() => handleDragStart(player)}
-                    onDragEnd={handleDragEnd}
-                    selectedPosition={selectedPosition}
-                  />
-                ))
+                paginatedPlayers.map((player) => {
+                  // Déterminer si le joueur doit être désactivé
+                  const isDisabled = enforceLegendaryLimit && 
+                                     player.legendary_player === 1 && 
+                                     Object.values(team).filter(teamPlayer => 
+                                       teamPlayer && teamPlayer.legendary_player === 1
+                                     ).length >= 5;
+
+                  return (
+                    <PlayerCard 
+                      key={player.id} 
+                      player={player} 
+                      theme={currentTheme} 
+                      onDragStart={() => handleDragStart(player)}
+                      onDragEnd={handleDragEnd}
+                      selectedPosition={selectedPosition}
+                      isDisabled={isDisabled}
+                    />
+                  );
+                })
               )}
             </div>
             

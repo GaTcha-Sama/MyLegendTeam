@@ -112,8 +112,13 @@ export const FormationSlot = ({
           teamPlayer && teamPlayer.legendary_player === 1
         ).length;
         
+        // Vérifier si le joueur à cette position est déjà légendaire
+        const playerAtThisPosition = team[positionId];
+        const isReplacingLegendaryWithLegendary = playerAtThisPosition && playerAtThisPosition.legendary_player === 1;
+        
         // Bloquer si on a déjà 5 joueurs légendaires
-        if (currentLegendaryCount >= 5) {
+        // SAUF si on remplace un joueur légendaire par un autre joueur légendaire
+        if (currentLegendaryCount >= 5 && !isReplacingLegendaryWithLegendary) {
           return false;
         }
       }
