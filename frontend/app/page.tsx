@@ -31,7 +31,6 @@ export default function DreamTeamBuilder() {
   const [currentPage, setCurrentPage] = useState(1);
   const [playersPerPage] = useState(9);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const [team, setTeam] = useState<{ [key: string]: PlayerType | null }>({});
   const [savedTeams, setSavedTeams] = useState<SavedTeam[]>([]);
   const [savedTeamsCount, setSavedTeamsCount] = useState(0);
@@ -103,18 +102,14 @@ export default function DreamTeamBuilder() {
       return;
     }
 
-    // Vérifier la limite des joueurs légendaires AVANT de placer le joueur
     if (enforceLegendaryLimit && player.legendary_player === 1) {
       const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
         teamPlayer && teamPlayer.legendary_player === 1
       ).length;
       
-      // Vérifier si le joueur à la position de destination est déjà légendaire
       const playerAtDestination = team[position];
       const isReplacingLegendaryWithLegendary = playerAtDestination && playerAtDestination.legendary_player === 1;
       
-      // Si on essaie de placer un joueur légendaire et qu'on a déjà 5, bloquer
-      // SAUF si on remplace un joueur légendaire par un autre joueur légendaire
       if (currentLegendaryCount >= 5 && !isReplacingLegendaryWithLegendary) {
         alert("Vous ne pouvez pas placer plus de 5 joueurs légendaires !");
         return;
@@ -215,7 +210,7 @@ export default function DreamTeamBuilder() {
 
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
 
-  const playersToShow = (filteredPlayers.length > 0 ? filteredPlayers : players
+  const playersToShow = (filteredPlayers.length > 0 ? filteredPlayers.filter(player => !isPlayerInTeam(player.id)) : players
     .filter(player => {
       let activeRetiredLegendaryCondition = true;
       
@@ -224,8 +219,6 @@ export default function DreamTeamBuilder() {
       } else if (selectedActiveRetiredStared !== null) {
         activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
       }
-
-      // Ne plus masquer les joueurs légendaires, ils seront désactivés dans PlayerCard
 
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&

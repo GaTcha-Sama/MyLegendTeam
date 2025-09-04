@@ -16,7 +16,7 @@ export const LegendaryLimitModal = ({ isOpen, onConfirm, onCancel }: LegendaryLi
         ⚠️ Legendary players limit reached ⚠️​
         </h3>
         <p className="text-white mb-6 leading-relaxed text-center">
-          You have placed 5 legendary players. Do you want to respect this limit or you just want to continue ? 😁​
+          This is for the gamers ! You have placed 5 legendary players. Do you want to respect this limit or you just want to continue ? 😁​
         </p>
         <div className="flex gap-3 justify-end">
           <button
