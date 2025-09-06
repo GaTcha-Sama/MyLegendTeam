@@ -43,6 +43,5 @@ A modern web application for building dream teams across multiple sports discipl
 ### Infrastructure
 - **Docker** - Containerization
 - **Docker Compose** - Multi-container orchestration
-- **Vercel** - Frontend deployment ready
-
-## 📁 Project Structure
+- **Vercel** - Frontend deployment
+- **Render** - Backend deployment
