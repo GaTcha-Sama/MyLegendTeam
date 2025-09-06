@@ -26,8 +26,6 @@ export const FilterPlayers = ({
         activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
       }
 
-      // Ne plus masquer les joueurs légendaires, ils seront désactivés dans PlayerCard
-
       const baseConditions = 
         player.sport.toLowerCase() === selectedSport && 
         !isPlayerInTeam(player.id) &&
@@ -66,8 +64,6 @@ export const FilterPlayers = ({
     } else if (selectedActiveRetiredStared !== null) {
       activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
     }
-
-    // Ne plus masquer les joueurs légendaires
 
     const baseConditions = 
       player.sport.toLowerCase() === selectedSport && 

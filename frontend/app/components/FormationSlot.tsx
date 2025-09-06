@@ -106,18 +106,14 @@ export const FormationSlot = ({
       onDropPlayer(position, item);
     },
     canDrop: (item: PlayerType) => {
-      // Vérifier d'abord si c'est un joueur légendaire et si la limite est appliquée
       if (enforceLegendaryLimit && item.legendary_player === 1) {
         const currentLegendaryCount = Object.values(team).filter(teamPlayer => 
           teamPlayer && teamPlayer.legendary_player === 1
         ).length;
         
-        // Vérifier si le joueur à cette position est déjà légendaire
         const playerAtThisPosition = team[positionId];
         const isReplacingLegendaryWithLegendary = playerAtThisPosition && playerAtThisPosition.legendary_player === 1;
         
-        // Bloquer si on a déjà 5 joueurs légendaires
-        // SAUF si on remplace un joueur légendaire par un autre joueur légendaire
         if (currentLegendaryCount >= 5 && !isReplacingLegendaryWithLegendary) {
           return false;
         }

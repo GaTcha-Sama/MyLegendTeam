@@ -142,7 +142,6 @@ export default function DreamTeamBuilder() {
     });
   };
 
-  // Vérifier si on a atteint la limite de 5 joueurs légendaires
   useEffect(() => {
     const legendaryPlayersCount = Object.values(team).filter(player => 
       player && player.legendary_player === 1
@@ -165,7 +164,7 @@ export default function DreamTeamBuilder() {
 
   const resetTeam = () => {
     setTeam({});
-    setEnforceLegendaryLimit(false); // Réinitialiser la limite des joueurs légendaires
+    setEnforceLegendaryLimit(false); 
   };
 
   const saveTeam = () => {
@@ -343,7 +342,6 @@ export default function DreamTeamBuilder() {
                 </div>
               ) : (
                 paginatedPlayers.map((player) => {
-                  // Déterminer si le joueur doit être désactivé
                   const isDisabled = enforceLegendaryLimit && 
                                      player.legendary_player === 1 && 
                                      Object.values(team).filter(teamPlayer => 
