@@ -19,8 +19,9 @@ const Login = () => {
       localStorage.setItem('token', token);
       if (user?.username) localStorage.setItem('username', user.username);
       router.push('/');
-    } catch (e: any) {
-      setErr(e?.response?.data?.error || "Erreur de connexion");
+    } catch (e: unknown) {
+      const error = e as { response?: { data?: { error?: string } } };
+      setErr(error?.response?.data?.error || "Erreur de connexion");
     } finally {
       setLoading(false);
     }
