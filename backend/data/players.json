@@ -63,7 +63,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": 6,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/FRA.png",
       "active": true,
       "photo": "images/rugby/Players/FRA/Uini-Atonio.webp"
@@ -1100,7 +1100,7 @@
       "team2_id": 2,
       "team3_id": 10,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/FRA.png",
       "active": false,
       "photo": "images/rugby/Players/FRA/Guilhem-Guirado.webp"
@@ -1338,7 +1338,7 @@
       "team2_id": 74,
       "team3_id": 81,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/FRA.png",
       "active": false,
       "photo": "images/rugby/Players/FRA/Thierry-Lacroix.webp"
@@ -1355,7 +1355,7 @@
       "team2_id": 17,
       "team3_id": 15,
       "actual_team_id": null,
-      "legendary_player": 1,
+      "legendary_player": null,
       "flag": "images/flags/FRA.png",
       "active": false,
       "photo": "images/rugby/Players/FRA/Christophe-Lamaison.webp"
@@ -1916,7 +1916,7 @@
       "team2_id": 2,
       "team3_id": null,
       "actual_team_id": 2,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/FRA.png",
       "active": true,
       "photo": "images/rugby/Players/FRA/Charles-Ollivon.webp"
