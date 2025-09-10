@@ -7,5 +7,5 @@ export interface PlayerCardProps {
   onDragStart?: () => void;
   onDragEnd?: () => void;
   selectedPosition?: string;
-  isDisabled?: boolean; // Nouvelle prop pour désactiver la carte
+  isDisabled?: boolean; 
 }

@@ -1,5 +1,5 @@
 // export type Sport = "football" | "basketball" | "hockey" | "handball" | "rugby";
-export type Sport = "rugby";
+export type Sport = "rugby" | "basketball";
 
 export type Theme = {
   primary: string;
@@ -17,13 +17,13 @@ export const sportThemes: Record<Sport, Theme> = {
   //   crossHover: "hover:bg-red-600",
   //   sportType: "foot"
   // },
-  // basketball: {
-  //   primary: "from-orange-400 to-orange-700",
-  //   hover: "hover:from-orange-700 hover:to-orange-800",
-  //   cross: "bg-red-500",
-  //   crossHover: "hover:bg-red-600",
-  //   sportType: "basket"
-  // },
+  basketball: {
+    primary: "from-orange-400 to-orange-700",
+    hover: "hover:from-orange-700 hover:to-orange-800",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
+    sportType: "basket"
+  },
   // hockey: {
   //   primary: "from-sky-400 to-sky-700",
   //   hover: "hover:from-sky-700 hover:to-sky-800",
@@ -75,18 +75,18 @@ export const sportPositions: Record<Sport, Position[]> = {
   //   { id: "football_substitute4", name: "Substitute 4", order: 15, translations: { fr: "Remplaçant 4" } },
   //   { id: "football_substitute5", name: "Substitute 5", order: 16, translations: { fr: "Remplaçant 5" } },    
   // ],
-  // basketball: [
-  //   { id: "point", name: "Point Guard", order: 1, translations: { fr: "Meneur" } },
-  //   { id: "shooting", name: "Shooting Guard", order: 2, translations: { fr: "Arrière" } },
-  //   { id: "small", name: "Small Forward", order: 3, translations: { fr: "Ailier" } },
-  //   { id: "power", name: "Power Forward", order: 4, translations: { fr: "Ailier fort" } },
-  //   { id: "center", name: "Center", order: 5, translations: { fr: "Pivot" } },
-  //   { id: "basketball_substitute1", name: "Substitute 1", order: 6, translations: { fr: "Remplaçant 1" } },
-  //   { id: "basketball_substitute2", name: "Substitute 2", order: 7, translations: { fr: "Remplaçant 2" } },
-  //   { id: "basketball_substitute3", name: "Substitute 3", order: 8, translations: { fr: "Remplaçant 3" } },
-  //   { id: "basketball_substitute4", name: "Substitute 4", order: 9, translations: { fr: "Remplaçant 4" } },
-  //   { id: "basketball_substitute5", name: "Substitute 5", order: 10, translations: { fr: "Remplaçant 5" } },
-  // ],
+  basketball: [
+    { id: "point", name: "Point Guard", order: 1, translations: { fr: "Meneur" } },
+    { id: "shooting", name: "Shooting Guard", order: 2, translations: { fr: "Arrière" } },
+    { id: "small", name: "Small Forward", order: 3, translations: { fr: "Ailier" } },
+    { id: "power", name: "Power Forward", order: 4, translations: { fr: "Ailier fort" } },
+    { id: "center", name: "Center", order: 5, translations: { fr: "Pivot" } },
+    { id: "basketball_substitute1", name: "Substitute 1", order: 6, translations: { fr: "Remplaçant 1" } },
+    { id: "basketball_substitute2", name: "Substitute 2", order: 7, translations: { fr: "Remplaçant 2" } },
+    { id: "basketball_substitute3", name: "Substitute 3", order: 8, translations: { fr: "Remplaçant 3" } },
+    { id: "basketball_substitute4", name: "Substitute 4", order: 9, translations: { fr: "Remplaçant 4" } },
+    { id: "basketball_substitute5", name: "Substitute 5", order: 10, translations: { fr: "Remplaçant 5" } },
+  ],
   // hockey: [
   //   { id: "forward1", name: "Left Wing", order: 1, translations: { fr: "Ailier gauche" } },
   //   { id: "forward2", name: "Center", order: 2, translations: { fr: "Centre" } },

@@ -22,7 +22,7 @@ import { LegendaryLimitModal } from "./components/LegendaryLimitModal";
 export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
+  const [selectedSport, setSelectedSport] = useState<Sport>("basketball");
   const [selectedNationality, setSelectedNationality] = useState<string[]>([]);
   const [selectedPosition, setSelectedPosition] = useState("");
   const [selectedTeam, setSelectedTeam] = useState<string[]>([]);
@@ -111,7 +111,7 @@ export default function DreamTeamBuilder() {
       const isReplacingLegendaryWithLegendary = playerAtDestination && playerAtDestination.legendary_player === 1;
       
       if (currentLegendaryCount >= 5 && !isReplacingLegendaryWithLegendary) {
-        alert("Vous ne pouvez pas placer plus de 5 joueurs légendaires !");
+        alert("You can't place more than 5 legendary players !");
         return;
       }
     }
@@ -404,18 +404,18 @@ export default function DreamTeamBuilder() {
               position: "relative",
               width: 1200,
               height: 900,
-              background: "url('/images/rugby-field.webp') no-repeat center/cover",
-              // background: selectedSport === "rugby"
-              //   ? 'url("/images/rugby-field.webp") no-repeat center/cover'
+              // background: "url('/images/rugby-field.webp') no-repeat center/cover",
+               background: selectedSport === "rugby"
+                 ? 'url("/images/rugby-field.webp") no-repeat center/cover'
               //   : selectedSport === "football"
               //   ? 'url("/images/foot-field.webp") no-repeat center/cover'
-              //   : selectedSport === "basketball"
-              //   ? 'url("/images/basket-field.webp") no-repeat center/cover'
+                 : selectedSport === "basketball"
+                 ? 'url("/images/basket-field.webp") no-repeat center/cover'
               //   : selectedSport === "hockey"
               //   ? 'url("/images/hockey-field.webp") no-repeat center/cover'
               //   : selectedSport === "handball"
               //   ? 'url("/images/handball-field.webp") no-repeat center/cover'
-              //   : ""
+                 : ""
             }}
           >
             {sportPositions[selectedSport].map((position) => {

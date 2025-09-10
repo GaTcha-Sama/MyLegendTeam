@@ -74,7 +74,7 @@ const processDirectory = async (dirPath) => {
         await processDirectory(fullPath);
       } else if (stat.isFile()) {
         const ext = path.extname(item).toLowerCase();
-        if (['.png', '.jpg', '.jpeg'].includes(ext)) {
+        if (['.png', '.jpg', '.jpeg', '.avif'].includes(ext)) {
           totalImages++;
           const outputPath = fullPath.replace(ext, '.webp');
           await optimizeImage(fullPath, outputPath);

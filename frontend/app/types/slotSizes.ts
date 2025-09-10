@@ -6,10 +6,10 @@ export interface SlotSize {
 }
 
 export const slotSizes: Record<Sport, SlotSize> = {
-  // basketball: {
-  //   width: "w-36", 
-  //   height: "h-46"
-  // },
+  basketball: {
+    width: "w-36", 
+    height: "h-46"
+  },
   rugby: {
     width: "w-30",
     height: "h-40"
