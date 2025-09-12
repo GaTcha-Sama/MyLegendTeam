@@ -52,7 +52,7 @@ export default function DreamTeamBuilder() {
     };
 
     loadPlayers();
-  }, []); // Supprimer selectedSport de la dépendance
+  }, []);
 
   useEffect(() => {
     const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');

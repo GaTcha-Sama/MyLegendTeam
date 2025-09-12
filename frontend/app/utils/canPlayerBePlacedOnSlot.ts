@@ -15,9 +15,18 @@ export const rugbyPositionSlotMapping: Record<string, string[]> = {
   "Full back": ["fullback", "rugby_substitute8"]
 };
 
+// Mapping des positions de joueurs vers les slots autorisés pour le basketball
+export const basketballPositionSlotMapping: Record<string, string[]> = {
+  "Point guard": ["point", "basketball_substitute1"],
+  "Shooting guard": ["shooting", "basketball_substitute2"],
+  "Small forward": ["small", "basketball_substitute3"],
+  "Power forward": ["power", "basketball_substitute4"],
+  "Center": ["center", "basketball_substitute5"]
+};
+
 // Fonction pour vérifier si un joueur peut être placé sur un slot
 export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: Sport): boolean => {
-  if (sport === "rugby") {
+  if (sport === "rugby" || sport === "basketball") {
     // Les slots de substitution sont toujours disponibles pour toutes les positions
     if (slotId.startsWith("rugby_substitute")) {
       return true;
@@ -29,7 +38,7 @@ export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: S
     
     // Vérifier position1
     if (position1) {
-      const allowedSlots1 = rugbyPositionSlotMapping[position1];
+      const allowedSlots1 = sport === "rugby" ? rugbyPositionSlotMapping[position1] : basketballPositionSlotMapping[position1];
       if (allowedSlots1 && allowedSlots1.includes(slotId)) {
         return true;
       }
@@ -37,7 +46,7 @@ export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: S
     
     // Vérifier position2
     if (position2) {
-      const allowedSlots2 = rugbyPositionSlotMapping[position2];
+      const allowedSlots2 = sport === "rugby" ? rugbyPositionSlotMapping[position2] : basketballPositionSlotMapping[position2];
       if (allowedSlots2 && allowedSlots2.includes(slotId)) {
         return true;
       }
@@ -46,6 +55,6 @@ export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: S
     return false;
   }
   
-  // Pour les autres sports, retourner true par défaut (pas de restriction implémentée)
+  // Pour les autres sports, retourner true par défaut (pas de restriction implémentée pour le moment)
   return true;
 };
