@@ -1,8 +1,9 @@
 import { Sport } from "../types/sports";
 import { SportSelectorProps } from "../types/sportSelectorProps";
 
-export const SportSelector = ({ selectedSport, onSelectSport, players }: SportSelectorProps) => {
-  const availableSports = Array.from(new Set(players.map(player => player.sport.toLowerCase()))).sort();
+export const SportSelector = ({ selectedSport, onSelectSport }: SportSelectorProps) => {
+  // Utiliser tous les sports définis dans le type Sport au lieu de se baser sur les joueurs chargés
+  const availableSports: Sport[] = ["rugby", "basketball"];
 
   return (
     <select

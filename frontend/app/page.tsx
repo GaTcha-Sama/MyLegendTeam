@@ -41,8 +41,8 @@ export default function DreamTeamBuilder() {
   useEffect(() => {
     const loadPlayers = async () => {
       try {
-        const playersData = await fetchPlayers(selectedSport);
-        
+        // Charger tous les joueurs au lieu de seulement ceux du sport sélectionné
+        const playersData = await fetchPlayers(); // Pas de paramètre sport
         setPlayers(playersData);
       } catch (error) {
         console.error("Error loading players:", error);
@@ -52,7 +52,7 @@ export default function DreamTeamBuilder() {
     };
 
     loadPlayers();
-  }, [selectedSport]);
+  }, []); // Supprimer selectedSport de la dépendance
 
   useEffect(() => {
     const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
