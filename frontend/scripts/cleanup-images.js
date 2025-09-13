@@ -13,7 +13,7 @@ const removeOriginalImages = (dirPath) => {
       removeOriginalImages(fullPath);
     } else if (stat.isFile()) {
       const ext = path.extname(item).toLowerCase();
-      if (['.png', '.jpg', '.jpeg'].includes(ext)) {
+      if (['.png', '.jpg', '.jpeg', '.avif'].includes(ext)) {
         const webpPath = fullPath.replace(ext, '.webp');
         if (fs.existsSync(webpPath)) {
           fs.unlinkSync(fullPath);

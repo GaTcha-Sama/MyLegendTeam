@@ -18,8 +18,10 @@ import { SavedTeam } from "./types/savedTeam";
 import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { formationCoordsPixels } from "./styles/formationCoordsPixels";
 import { LegendaryLimitModal } from "./components/LegendaryLimitModal";
+import { useRouter } from "next/navigation";
 
 export default function DreamTeamBuilder() {
+  const router = useRouter();
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedSport, setSelectedSport] = useState<Sport>("basketball");
@@ -41,8 +43,7 @@ export default function DreamTeamBuilder() {
   useEffect(() => {
     const loadPlayers = async () => {
       try {
-        // Charger tous les joueurs au lieu de seulement ceux du sport sélectionné
-        const playersData = await fetchPlayers(); // Pas de paramètre sport
+        const playersData = await fetchPlayers(); 
         setPlayers(playersData);
       } catch (error) {
         console.error("Error loading players:", error);
@@ -168,6 +169,13 @@ export default function DreamTeamBuilder() {
   };
 
   const saveTeam = () => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      alert("Vous devez vous connecter pour pouvoir enregistrer votre équipe !");
+      router.push('/login');
+      return;
+    }
+
     const teamPlayers = Object.values(team).filter(Boolean);
     if (teamPlayers.length === 0) {
       alert("Your team is empty !");

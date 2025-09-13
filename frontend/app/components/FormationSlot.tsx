@@ -30,7 +30,7 @@ const getTeamLogoPath = (fullPath: string) =>
   getProcessedImagePath(fullPath, 'images/team-default.webp', "of the team logo");
 
 const getSilhouettePath = (positionId: string, sport: string) => {
-  if (sport !== "rugby") return null;
+  if (sport !== "rugby" && sport !== "basketball") return null;
   
   const silhouetteRugbyMapping: { [key: string]: string } = {
     // Main positions
@@ -59,9 +59,25 @@ const getSilhouettePath = (positionId: string, sport: string) => {
     "rugby_substitute7": "sub.webp",
     "rugby_substitute8": "sub.webp"
   };
+
+  const silhouetteBasketballMapping: { [key: string]: string } = {
+    "point": "pg.webp",
+    "shooting": "sg.webp",
+    "small": "sf.webp",
+    "power": "pf.webp",
+    "center": "ce.webp",
+    "basketball_substitute1": "sub.webp",
+    "basketball_substitute2": "sub.webp",
+    "basketball_substitute3": "sub.webp",
+    "basketball_substitute4": "sub.webp",
+    "basketball_substitute5": "sub.webp"
+  };
   
-  const silhouetteFile = silhouetteRugbyMapping[positionId];
-  return silhouetteFile ? `/images/rugby/silhouettes/${silhouetteFile}` : null;
+  let silhouetteFile = silhouetteRugbyMapping[positionId];
+  if (sport === "basketball") {
+    silhouetteFile = silhouetteBasketballMapping[positionId];
+  }
+  return silhouetteFile ? `/images/${sport}/silhouettes/${silhouetteFile}` : null;
 };
 
 export const FormationSlot = ({ 

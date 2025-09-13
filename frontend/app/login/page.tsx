@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { loginUser } from '../../lib/api';
+import Link from 'next/link';
 
 const Login = () => {
   const router = useRouter();
@@ -21,31 +22,42 @@ const Login = () => {
       router.push('/');
     } catch (e: unknown) {
       const error = e as { response?: { data?: { error?: string } } };
-      setErr(error?.response?.data?.error || "Erreur de connexion");
+      setErr(error?.response?.data?.error || "Login error");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <form onSubmit={onSubmit} className="bg-white p-6 rounded shadow-md w-full max-w-sm">
-        <h1 className="text-2xl mb-4 font-bold text-black">Connexion</h1>
-        {err && <div className="mb-3 text-red-600">{err}</div>}
-        <label className="block mb-2">
-          <span className="text-sm text-black">Email</span>
-          <input type="email" required value={email} onChange={e=>setEmail(e.target.value)}
-                 className="w-full border p-2 rounded text-black" />
-        </label>
-        <label className="block mb-4">
-          <span className="text-sm text-black">Mot de passe</span>
-          <input type="password" required value={password} onChange={e=>setPassword(e.target.value)}
-                 className="w-full border p-2 rounded text-black" />
-        </label>
-        <button disabled={loading} className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-60">
-          {loading ? 'Connexion...' : 'Se connecter'}
-        </button>
-      </form>
+    <div 
+      className="min-h-screen flex items-center justify-center p-4"
+      style={{
+        backgroundImage: 'url("/images/bg-login-register.webp")',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg w-full max-w-sm">
+        <form onSubmit={onSubmit}>
+          <h1 className="text-2xl mb-4 font-bold text-black flex justify-center">Login</h1>
+          {err && <div className="mb-3 text-red-600">{err}</div>}
+          <label className="block mb-2">
+            <span className="text-sm text-black">Email address</span>
+            <input type="email" required value={email} onChange={e=>setEmail(e.target.value)}
+                   className="w-full border p-2 rounded text-black" />
+          </label>
+          <label className="block mb-4">
+            <span className="text-sm text-black">Password</span>
+            <input type="password" required value={password} onChange={e=>setPassword(e.target.value)}
+                   className="w-full border p-2 rounded text-black" />
+          </label>
+          <button disabled={loading} className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-60">
+            {loading ? 'Connexion...' : 'Login'}
+          </button>
+          <p className="text-sm text-black mt-4 flex justify-center">Don&apos;t have an account? <Link href="/register" className="text-blue-500 hover:text-blue-700 ml-2">Register</Link></p>
+        </form>
+      </div>
     </div>
   );
 };

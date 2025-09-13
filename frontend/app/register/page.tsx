@@ -29,12 +29,20 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+    <div 
+      className="min-h-screen flex items-center justify-center p-4"
+      style={{
+        backgroundImage: 'url("/images/bg-login-register.webp")',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <form onSubmit={onSubmit} className="bg-white p-6 rounded shadow-md w-full max-w-sm">
-        <h1 className="text-2xl mb-4 font-bold text-black">Inscription</h1>
+        <h1 className="text-2xl mb-4 font-bold text-black flex justify-center">Register</h1>
         {err && <div className="mb-3 text-red-600">{err}</div>}
         <label className="block mb-2">
-          <span className="text-sm text-black">Email</span>
+          <span className="text-sm text-black">Email address</span>
           <input type="email" required value={email} onChange={e=>setEmail(e.target.value)}
                  className="w-full border p-2 rounded text-black" />
         </label>
@@ -44,12 +52,12 @@ const Register = () => {
                  className="w-full border p-2 rounded text-black" />
         </label>
         <label className="block mb-4">
-          <span className="text-sm text-black">Mot de passe</span>
+          <span className="text-sm text-black">Password</span>
           <input type="password" required value={password} onChange={e=>setPassword(e.target.value)}
                  className="w-full border p-2 rounded text-black" />
         </label>
         <button disabled={loading} className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-60">
-          {loading ? 'Inscription...' : "S'inscrire"}
+          {loading ? 'Inscription...' : "Register"}
         </button>
       </form>
     </div>
