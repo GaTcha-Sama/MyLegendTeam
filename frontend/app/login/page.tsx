@@ -55,7 +55,7 @@ const Login = () => {
           <button disabled={loading} className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-60">
             {loading ? 'Connexion...' : 'Login'}
           </button>
-          <p className="text-sm text-black mt-4 flex justify-center">Don&apos;t have an account? <Link href="/register" className="text-blue-500 hover:text-blue-700 ml-2">Register</Link></p>
+          <p className="text-sm text-black mt-4 flex justify-center">Don&apos;t have an account? <Link href="/register" className="text-blue-500 hover:text-blue-700 ml-2">Register here</Link></p>
         </form>
       </div>
     </div>
