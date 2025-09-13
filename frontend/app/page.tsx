@@ -39,6 +39,7 @@ export default function DreamTeamBuilder() {
   const [draggedPlayer, setDraggedPlayer] = useState<PlayerType | null>(null);
   const [showLegendaryModal, setShowLegendaryModal] = useState(false);
   const [enforceLegendaryLimit, setEnforceLegendaryLimit] = useState(false);
+  const [resetKey, setResetKey] = useState(0);
 
   useEffect(() => {
     const loadPlayers = async () => {
@@ -67,6 +68,7 @@ export default function DreamTeamBuilder() {
     setSelectedActiveRetiredStared(null);
     setFilteredPlayers([]);
     setCurrentPage(1);
+    setResetKey(prev => prev + 1); 
   };
 
   useEffect(() => {
@@ -293,6 +295,7 @@ export default function DreamTeamBuilder() {
                   selectedSport={selectedSport} 
                 />
                 <FilterPlayers 
+                  key={resetKey} // Cette clé force la réinitialisation du composant
                   onFilterChange={setFilteredPlayers}
                   players={players}
                   selectedSport={selectedSport}
