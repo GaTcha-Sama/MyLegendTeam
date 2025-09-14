@@ -173,7 +173,7 @@ export default function DreamTeamBuilder() {
   const saveTeam = () => {
     const token = localStorage.getItem('token');
     if (!token) {
-      alert("Vous devez vous connecter pour pouvoir enregistrer votre équipe !");
+      alert("You must be logged in to save a team !");
       router.push('/login');
       return;
     }
@@ -200,6 +200,16 @@ export default function DreamTeamBuilder() {
     setSavedTeams(updatedTeams);
     localStorage.setItem('savedTeams', JSON.stringify(updatedTeams));
     alert("Team saved !");
+  };
+
+  const handleLoadTeam = () => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      alert("You must be logged in to load a team !");
+      router.push('/login');
+      return;
+    }
+    setIsModalOpen(true);
   };
 
   const loadTeam = (teamId: string) => {
@@ -391,7 +401,7 @@ export default function DreamTeamBuilder() {
                 Save Team
               </button>
               <button
-                onClick={() => setIsModalOpen(true)}
+                onClick={handleLoadTeam}
                 className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer relative"
               >
                 Load Team
