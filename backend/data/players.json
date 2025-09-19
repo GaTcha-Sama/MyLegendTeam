@@ -1425,7 +1425,7 @@
       "actual_team_id": 5,
       "legendary_player": null,
       "flag": "images/flags/FRA.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/FRA/Bernard-Le-Roux.webp"
     },
     {
@@ -2632,7 +2632,7 @@
       "actual_team_id": 10,
       "legendary_player": null,
       "flag": "images/flags/FRA.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/FRA/Paul-Willemse.webp"
     },
     {

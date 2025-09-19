@@ -58,6 +58,7 @@ export default function DreamTeamBuilder() {
 
   useEffect(() => {
     const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
+    setSavedTeams(teams);
     setSavedTeamsCount(teams.length);
   }, []);
 
@@ -205,7 +206,7 @@ export default function DreamTeamBuilder() {
   const handleLoadTeam = () => {
     const token = localStorage.getItem('token');
     if (!token) {
-      alert("You must be logged in to load a team !");
+      alert("Vous devez vous connecter pour pouvoir charger une équipe !");
       router.push('/login');
       return;
     }
