@@ -86,6 +86,10 @@ export default function DreamTeamBuilder() {
 
   useEffect(() => {
     setCurrentPage(1);
+    setSelectedNationality([]);
+    setSelectedPosition("");
+    setSelectedTeam([]);
+    setSelectedActiveRetiredStared(null);
   }, [selectedSport]);
 
   useEffect(() => {
