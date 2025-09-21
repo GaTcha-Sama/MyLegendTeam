@@ -41,6 +41,7 @@ export default function DreamTeamBuilder() {
   const [draggedPlayer, setDraggedPlayer] = useState<PlayerType | null>(null);
   const [showLegendaryModal, setShowLegendaryModal] = useState(false);
   const [enforceLegendaryLimit, setEnforceLegendaryLimit] = useState(false);
+  const [hasChosenNoLimit, setHasChosenNoLimit] = useState(false);
   const [resetKey, setResetKey] = useState(0);
 
   useEffect(() => {
@@ -157,10 +158,10 @@ export default function DreamTeamBuilder() {
       player && player.legendary_player === 1
     ).length;
 
-    if (legendaryPlayersCount >= 5 && !enforceLegendaryLimit) {
+    if (legendaryPlayersCount >= 5 && !enforceLegendaryLimit && !hasChosenNoLimit) {
       setShowLegendaryModal(true);
     }
-  }, [team, enforceLegendaryLimit]);
+  }, [team, enforceLegendaryLimit, hasChosenNoLimit]);
 
   const handleLegendaryLimitConfirm = () => {
     setEnforceLegendaryLimit(true);
@@ -169,12 +170,14 @@ export default function DreamTeamBuilder() {
 
   const handleLegendaryLimitCancel = () => {
     setEnforceLegendaryLimit(false);
+    setHasChosenNoLimit(true);
     setShowLegendaryModal(false);
   };
 
   const resetTeam = () => {
     setTeam({});
-    setEnforceLegendaryLimit(false); 
+    setEnforceLegendaryLimit(false);
+    setHasChosenNoLimit(false);
   };
 
   const saveTeam = () => {
@@ -296,8 +299,6 @@ export default function DreamTeamBuilder() {
     const playerPositions = getPlayerPositionsForSlot(positionId, selectedSport);
     
     if (playerPositions.length > 0) {
-        // on peut soit prendre la première, soit laisser l'utilisateur choisir
-      // Pour l'instant, on prend la première position disponible
       const firstPosition = playerPositions[0];
       setSelectedPosition(firstPosition);
     }
