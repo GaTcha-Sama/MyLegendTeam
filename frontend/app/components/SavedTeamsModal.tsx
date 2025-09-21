@@ -11,7 +11,6 @@ interface SavedTeamsModalProps {
 export const SavedTeamsModal = ({ isOpen, onClose, onLoadTeam, onDeleteTeam }: SavedTeamsModalProps) => {
   const [savedTeams, setSavedTeams] = useState<SavedTeam[]>([]);
 
-  // Charger les équipes sauvegardées quand le modal s'ouvre
   useEffect(() => {
     if (isOpen) {
       const teams = JSON.parse(localStorage.getItem('savedTeams') || '[]');
@@ -35,7 +34,7 @@ export const SavedTeamsModal = ({ isOpen, onClose, onLoadTeam, onDeleteTeam }: S
           <h2 className="text-2xl font-bold text-black">Saved Teams</h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+            className="text-gray-500 hover:text-gray-700 text-2xl font-bold cursor-pointer"
           >
             ×
           </button>
@@ -59,13 +58,13 @@ export const SavedTeamsModal = ({ isOpen, onClose, onLoadTeam, onDeleteTeam }: S
                 <div className="flex gap-2">
                   <button
                     onClick={() => onLoadTeam(team.id)}
-                    className="px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm transition-colors"
+                    className="px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm transition-colors cursor-pointer"
                   >
                     Load
                   </button>
                   <button
                     onClick={() => handleDeleteTeam(team.id)}
-                    className="px-3 py-1 bg-red-500 hover:bg-red-600 text-white rounded text-sm transition-colors"
+                    className="px-3 py-1 bg-red-500 hover:bg-red-600 text-white rounded text-sm transition-colors cursor-pointer"
                   >
                     Delete
                   </button>

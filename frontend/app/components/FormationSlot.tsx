@@ -4,6 +4,7 @@ import { Player as PlayerType } from "../types/players";
 import { slotSizes } from "../types/slotSizes";
 import { canPlayerBePlacedOnSlot } from "../utils/canPlayerBePlacedOnSlot";
 import { FormationSlotProps } from "../types/formationSlotProps";
+import { Sport } from "../types/sports";
 import Image from "next/image";
 
 const getProcessedImagePath = (fullPath: string, defaultPath: string, errorType: string = "image") => {
@@ -33,7 +34,6 @@ const getSilhouettePath = (positionId: string, sport: string) => {
   if (sport !== "rugby" && sport !== "basketball") return null;
   
   const silhouetteRugbyMapping: { [key: string]: string } = {
-    // Main positions
     "fullback": "15.webp",
     "wing1": "11-14.webp", 
     "wing2": "11-14.webp",
@@ -49,7 +49,6 @@ const getSilhouettePath = (positionId: string, sport: string) => {
     "prop1": "1-3.webp",
     "prop2": "1-3.webp",
     "hooker": "2.webp",
-    // Substitutes
     "rugby_substitute1": "sub.webp",
     "rugby_substitute2": "sub.webp",
     "rugby_substitute3": "sub.webp",
@@ -80,6 +79,52 @@ const getSilhouettePath = (positionId: string, sport: string) => {
   return silhouetteFile ? `/images/${sport}/silhouettes/${silhouetteFile}` : null;
 };
 
+export const getPlayerPositionsForSlot = (slotId: string, sport: Sport): string[] => {
+  if (sport === "rugby") {
+    if (slotId.startsWith("rugby_substitute")) {
+      return ["Prop", "Hooker", "Lock", "Flanker", "Number 8", "Scrum half", "Fly half", "Wing", "Center", "Full back"];
+    }
+    
+    const slotToPositionMapping: Record<string, string[]> = {
+      "prop1": ["Prop"],
+      "prop2": ["Prop"],
+      "hooker": ["Hooker"],
+      "lock1": ["Lock"],
+      "lock2": ["Lock"],
+      "flanker1": ["Flanker"],
+      "flanker2": ["Flanker"],
+      "number8": ["Number 8"],
+      "scrumhalf": ["Scrum half"],
+      "flyhalf": ["Fly half"],
+      "wing1": ["Wing"],
+      "wing2": ["Wing"],
+      "center1": ["Center"],
+      "center2": ["Center"],
+      "fullback": ["Full back"]
+    };
+    
+    return slotToPositionMapping[slotId] || [];
+  }
+  
+  if (sport === "basketball") {
+    if (slotId.startsWith("basketball_substitute")) {
+      return ["Point guard", "Shooting guard", "Small forward", "Power forward", "Center"];
+    }
+    
+    const slotToPositionMapping: Record<string, string[]> = {
+      "point": ["Point guard"],
+      "shooting": ["Shooting guard"],
+      "small": ["Small forward"],
+      "power": ["Power forward"],
+      "center": ["Center"]
+    };
+    
+    return slotToPositionMapping[slotId] || [];
+  }
+  
+  return [];
+};
+
 export const FormationSlot = ({ 
   position, 
   player, 
@@ -92,7 +137,8 @@ export const FormationSlot = ({
   onDragStart,
   onDragEnd,
   enforceLegendaryLimit,
-  team
+  team,
+  onSlotClick
 }: FormationSlotProps) => {
   const [useDefaultImage, setUseDefaultImage] = useState(false);
   const [useDefaultFlag, setUseDefaultFlag] = useState(false);
@@ -249,10 +295,17 @@ export const FormationSlot = ({
     );
   };
 
+  const handleSlotClick = () => {
+    if (onSlotClick) {
+      onSlotClick(positionId);
+    }
+  };
+
   return (
     <div
       ref={ref}
       data-position={positionId}
+      onClick={handleSlotClick}
       className={`
         ${slotSizes[sport].width} ${slotSizes[sport].height}
         border-2 rounded-sm 

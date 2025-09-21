@@ -19,6 +19,7 @@ import { Sport, sportThemes, sportPositions } from "./types/sports";
 import { formationCoordsPixels } from "./styles/formationCoordsPixels";
 import { LegendaryLimitModal } from "./components/LegendaryLimitModal";
 import { useRouter } from "next/navigation";
+import { getPlayerPositionsForSlot } from "./utils/canPlayerBePlacedOnSlot";
 
 export default function DreamTeamBuilder() {
   const router = useRouter();
@@ -278,10 +279,19 @@ export default function DreamTeamBuilder() {
     setDraggedPlayer(null);
   };
 
+  const handleSlotClick = (positionId: string) => {
+    const playerPositions = getPlayerPositionsForSlot(positionId, selectedSport);
+    
+    if (playerPositions.length > 0) {
+      // on peut soit prendre la première, soit laisser l'utilisateur choisir
+      const firstPosition = playerPositions[0];
+      setSelectedPosition(firstPosition);
+    }
+  };
+
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-600 to-gray-300">
-        {/* Sidebar with the list of players */}
         <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
           <div className="flex flex-col gap-4">
             <div className="flex justify-between items-center border-b pb-3 border-black">
@@ -310,7 +320,7 @@ export default function DreamTeamBuilder() {
                   selectedSport={selectedSport} 
                 />
                 <FilterPlayers 
-                  key={resetKey} // Cette clé force la réinitialisation du composant
+                  key={resetKey}
                   onFilterChange={setFilteredPlayers}
                   players={players}
                   selectedSport={selectedSport}
@@ -476,6 +486,7 @@ export default function DreamTeamBuilder() {
                     onDragEnd={handleDragEnd}
                     enforceLegendaryLimit={enforceLegendaryLimit}
                     team={team}
+                    onSlotClick={handleSlotClick}
                   />
                 </div>
               );
