@@ -26,7 +26,7 @@ export default function DreamTeamBuilder() {
   const router = useRouter();
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedSport, setSelectedSport] = useState<Sport>("basketball");
+  const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState("");
   const [selectedTeam, setSelectedTeam] = useState<string>("");
