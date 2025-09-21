@@ -20,6 +20,7 @@ import { formationCoordsPixels } from "./styles/formationCoordsPixels";
 import { LegendaryLimitModal } from "./components/LegendaryLimitModal";
 import { useRouter } from "next/navigation";
 import { getPlayerPositionsForSlot } from "./utils/canPlayerBePlacedOnSlot";
+import { isNationalityGroup, getNationalitiesInGroup, NationalityGroup } from "./types/nationalityGroups";
 
 export default function DreamTeamBuilder() {
   const router = useRouter();
@@ -245,9 +246,21 @@ export default function DreamTeamBuilder() {
         activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
       }
 
+      // Logique de filtrage par nationalité (incluant les groupes)
+      let nationalityCondition = true;
+      if (selectedNationality !== "") {
+        if (isNationalityGroup(selectedNationality)) {
+          // Si c'est un groupe, vérifier si la nationalité du joueur est dans le groupe
+          nationalityCondition = getNationalitiesInGroup(selectedNationality as NationalityGroup).includes(player.nationality);
+        } else {
+          // Si c'est une nationalité individuelle, vérification directe
+          nationalityCondition = player.nationality === selectedNationality;
+        }
+      }
+
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&
-             (selectedNationality === "" || player.nationality === selectedNationality) &&
+             nationalityCondition &&
              (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
              (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam || player.actual_team === selectedTeam) &&
              activeRetiredLegendaryCondition;

@@ -1,4 +1,5 @@
 import { NationalitySelectorProps } from "../types/nationalitySelectorProps";
+import { nationalityGroups } from "../types/nationalityGroups";
 
 export const NationalitySelector = ({ selectedNationality, onSelectNationality, players, selectedSport }: NationalitySelectorProps) => {
   
@@ -23,6 +24,24 @@ export const NationalitySelector = ({ selectedNationality, onSelectNationality, 
         className="px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
       >
         <option value="">All nationalities</option>
+        
+        {/* Groupes de nationalités spéciaux */}
+        {Object.keys(nationalityGroups).map((groupName) => (
+          <option 
+            key={groupName} 
+            value={groupName}
+            style={{ fontWeight: 'bold', backgroundColor: '#f0f0f0' }}
+          >
+            {groupName}
+          </option>
+        ))}
+        
+        {/* Séparateur visuel */}
+        <option disabled style={{ fontStyle: 'italic', color: '#666' }}>
+          ────────────────
+        </option>
+        
+        {/* Nationalités individuelles */}
         {nationalities.map((nationality) => (
           <option 
             key={nationality} 
