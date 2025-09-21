@@ -26,9 +26,9 @@ export default function DreamTeamBuilder() {
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedSport, setSelectedSport] = useState<Sport>("basketball");
-  const [selectedNationality, setSelectedNationality] = useState<string[]>([]);
+  const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState("");
-  const [selectedTeam, setSelectedTeam] = useState<string[]>([]);
+  const [selectedTeam, setSelectedTeam] = useState<string>("");
   const [selectedActiveRetiredStared, setSelectedActiveRetiredStared] = useState<number | null | "legendary">(null);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -64,9 +64,9 @@ export default function DreamTeamBuilder() {
   }, []);
 
   const resetSelectedFilters = () => {
-    setSelectedNationality([]);
+    setSelectedNationality("");
     setSelectedPosition("");
-    setSelectedTeam([]);
+    setSelectedTeam("");
     setSelectedActiveRetiredStared(null);
     setFilteredPlayers([]);
     setCurrentPage(1);
@@ -87,9 +87,9 @@ export default function DreamTeamBuilder() {
 
   useEffect(() => {
     setCurrentPage(1);
-    setSelectedNationality([]);
+    setSelectedNationality("");
     setSelectedPosition("");
-    setSelectedTeam([]);
+    setSelectedTeam("");
     setSelectedActiveRetiredStared(null);
   }, [selectedSport]);
 
@@ -247,9 +247,9 @@ export default function DreamTeamBuilder() {
 
       return player.sport.toLowerCase() === selectedSport && 
              !isPlayerInTeam(player.id) &&
-             (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
+             (selectedNationality === "" || player.nationality === selectedNationality) &&
              (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
-             (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3)) &&
+             (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam || player.actual_team === selectedTeam) &&
              activeRetiredLegendaryCondition;
     }))
     .sort((a, b) => {
@@ -269,7 +269,7 @@ export default function DreamTeamBuilder() {
     currentPage * playersPerPage
   );
 
-  const hasActiveFilters = selectedNationality.length > 0 || selectedPosition !== "" || selectedTeam.length > 0 || selectedActiveRetiredStared !== null;
+  const hasActiveFilters = selectedNationality !== "" || selectedPosition !== "" || selectedTeam !== "" || selectedActiveRetiredStared !== null;
 
   const handleDragStart = (player: PlayerType) => {
     setDraggedPlayer(player);
@@ -283,7 +283,8 @@ export default function DreamTeamBuilder() {
     const playerPositions = getPlayerPositionsForSlot(positionId, selectedSport);
     
     if (playerPositions.length > 0) {
-      // on peut soit prendre la première, soit laisser l'utilisateur choisir
+        // on peut soit prendre la première, soit laisser l'utilisateur choisir
+      // Pour l'instant, on prend la première position disponible
       const firstPosition = playerPositions[0];
       setSelectedPosition(firstPosition);
     }
@@ -292,6 +293,7 @@ export default function DreamTeamBuilder() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-600 to-gray-300">
+        {/* Sidebar with the list of players */}
         <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
           <div className="flex flex-col gap-4">
             <div className="flex justify-between items-center border-b pb-3 border-black">
@@ -320,7 +322,7 @@ export default function DreamTeamBuilder() {
                   selectedSport={selectedSport} 
                 />
                 <FilterPlayers 
-                  key={resetKey}
+                  key={resetKey} // Cette clé force la réinitialisation du composant
                   onFilterChange={setFilteredPlayers}
                   players={players}
                   selectedSport={selectedSport}

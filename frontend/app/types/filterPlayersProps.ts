@@ -5,9 +5,9 @@ export interface FilterPlayersProps {
   players: Player[];
   selectedSport: string;
   isPlayerInTeam: (playerId: number) => boolean;
-  selectedNationality: string[];
+  selectedNationality: string;
   selectedPosition: string;
-  selectedTeam: string[];
+  selectedTeam: string;
   selectedActiveRetiredStared: number | null | "legendary";
   enforceLegendaryLimit: boolean;
   team: { [key: string]: Player | null };
