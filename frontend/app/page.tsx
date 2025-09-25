@@ -306,9 +306,28 @@ export default function DreamTeamBuilder() {
 
   return (
     <DndProvider backend={HTML5Backend}>
+      {/* Ajout d'un header SEO-friendly */}
+      <header className="bg-gradient-to-r from-black to-black text-white py-8 mb-6">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-4xl font-bold mb-4">
+            Create your legend team
+          </h1>
+          <p className="text-xl md:text-2xl mb-6">
+            More than 1000 professional players from rugby, basketball, football and more !
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <span className="bg-black/20 px-3 py-1 rounded-full">🏉 Rugby</span>
+            <span className="bg-black/20 px-3 py-1 rounded-full">🏀 Basketball</span>
+            <span className="bg-black/20 px-3 py-1 rounded-full">⚽ Football</span>
+            <span className="bg-black/20 px-3 py-1 rounded-full">🏒 Ice Hockey</span>
+            <span className="bg-black/20 px-3 py-1 rounded-full">🤾 Handball</span>
+          </div>
+        </div>
+      </header>
+
       <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-600 to-gray-300">
         {/* Sidebar with the list of players */}
-        <div className="w-1/3 p-6 bg-white rounded-xl shadow-lg mr-6">
+        <div className="w-1/3 p-6 bg-slate-200 border-2 border-white rounded-xl shadow-lg mr-6">
           <div className="flex flex-col gap-4">
             <div className="flex justify-between items-center border-b pb-3 border-black">
               <h2 className="text-2xl font-bold text-gray-800">
@@ -336,7 +355,7 @@ export default function DreamTeamBuilder() {
                   selectedSport={selectedSport} 
                 />
                 <FilterPlayers 
-                  key={resetKey} // Cette clé force la réinitialisation du composant
+                  key={resetKey}
                   onFilterChange={setFilteredPlayers}
                   players={players}
                   selectedSport={selectedSport}
@@ -355,7 +374,7 @@ export default function DreamTeamBuilder() {
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer"
+                className="px-3 py-1 rounded bg-gray-500 text-white disabled:opacity-50 cursor-pointer"
               >
                 Previous
               </button>
@@ -510,6 +529,40 @@ export default function DreamTeamBuilder() {
           </div>
         </div>
       </div>
+      
+      {/* Ajout d'une section de contenu SEO */}
+      <section className="bg-black py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">
+            Why choose My Legend Team ?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">🏉</div>
+              <h3 className="text-xl font-semibold mb-2">Interface intuitive</h3>
+              <p className="text-white">
+                Drag and drop your players to create your formation in a few clicks
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">🏀</div>
+              <h3 className="text-xl font-semibold mb-2">Joueurs légendaires</h3>
+              <p className="text-white">
+                Complete database with the greatest players in history
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-4">💾</div>
+              <h3 className="text-xl font-semibold mb-2">Sauvegarde facile</h3>
+              <p className="text-white">
+                Save and share your favorite teams
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* ... existing modals ... */}
       <SavedTeamsModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
