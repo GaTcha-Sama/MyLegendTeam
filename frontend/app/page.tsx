@@ -26,7 +26,7 @@ export default function DreamTeamBuilder() {
   const router = useRouter();
   const [players, setPlayers] = useState<PlayerType[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedSport, setSelectedSport] = useState<Sport>("basketball");
+  const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState("");
   const [selectedTeam, setSelectedTeam] = useState<string>("");
@@ -307,7 +307,7 @@ export default function DreamTeamBuilder() {
   return (
     <DndProvider backend={HTML5Backend}>
       {/* Ajout d'un header SEO-friendly */}
-      <header className="bg-gradient-to-r from-black to-black text-white py-8 mb-6">
+      <header className="bg-[#191713] text-white py-8 mb-6">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-4xl font-bold mb-4">
             Create your legend team
@@ -337,7 +337,7 @@ export default function DreamTeamBuilder() {
               onClick={resetSelectedFilters}
               className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
             >
-              Reset Filters
+              ✖️​ Reset Filters
             </button>
             </div>
             <div className="flex flex-col max-w-full">
@@ -405,7 +405,13 @@ export default function DreamTeamBuilder() {
             </div>
             <div className="grid grid-cols-3 gap-4">
               {loading ? (
-                <div className="text-center py-4 col-span-3 text-black">Loading players...</div>
+                <div className="text-center py-4 col-span-3 text-black">
+                  Loading players... 💿​ <br/>
+                  Players are getting out of the locker room in 3, 2, 1... <br/>
+                  Oh wait, there are some players who are not ready yet... <br/>
+                  The mates have to go to the toilet... 🚽 <br/>
+                  Here they come now ! 🎺​📣​              
+                </div>
               ) : playersToShow.length === 0 && hasActiveFilters ? (
                 <div className="text-center py-4 col-span-3 text-red-600 font-semibold">
                   No players found with these filters<br/>
@@ -448,13 +454,13 @@ export default function DreamTeamBuilder() {
                 onClick={saveTeam}
                 className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors cursor-pointer"
               >
-                Save Team
+                💾 Save Team
               </button>
               <button
                 onClick={handleLoadTeam}
                 className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer relative"
               >
-                Load Team
+                📁​ Load Team
                 {savedTeamsCount > 0 && (
                   <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                     {savedTeamsCount}
@@ -465,7 +471,7 @@ export default function DreamTeamBuilder() {
                 onClick={resetTeam}
                 className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
               >
-                Reset Team
+                ✖️​ Reset Team
               </button>
             </div>
           </div>
@@ -531,7 +537,7 @@ export default function DreamTeamBuilder() {
       </div>
       
       {/* Ajout d'une section de contenu SEO */}
-      <section className="bg-black py-12">
+      <section className="bg-[#191713] py-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
             Why choose My Legend Team ?
@@ -539,21 +545,21 @@ export default function DreamTeamBuilder() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl mb-4">🏉</div>
-              <h3 className="text-xl font-semibold mb-2">Interface intuitive</h3>
+              <h3 className="text-xl font-semibold mb-2">Intuitive interface</h3>
               <p className="text-white">
                 Drag and drop your players to create your formation in a few clicks
               </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">🏀</div>
-              <h3 className="text-xl font-semibold mb-2">Joueurs légendaires</h3>
+              <h3 className="text-xl font-semibold mb-2">Legendary players</h3>
               <p className="text-white">
                 Complete database with the greatest players in history
               </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">💾</div>
-              <h3 className="text-xl font-semibold mb-2">Sauvegarde facile</h3>
+              <h3 className="text-xl font-semibold mb-2">Easy to save</h3>
               <p className="text-white">
                 Save and share your favorite teams
               </p>
