@@ -284,7 +284,10 @@ export const FormationSlot = ({
           )}
         </span>
         <button
-          onClick={() => onDropPlayer(position, null)}
+          onClick={(e) => {
+            e.stopPropagation();
+            onDropPlayer(position, null);
+          }}
           className={`absolute -top-2 -right-2 ${theme.cross} ${theme.crossHover} text-white rounded-full w-6 h-6 
           flex items-center justify-center opacity-0 group-hover:opacity-100 
           transition-opacity duration-200`}

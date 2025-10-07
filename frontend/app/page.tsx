@@ -309,18 +309,18 @@ export default function DreamTeamBuilder() {
       {/* Ajout d'un header SEO-friendly */}
       <header className="bg-[#191713] text-white py-8 mb-6">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-4xl font-bold mb-4">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4">
             Create your legend team
           </h1>
-          <p className="text-xl md:text-2xl mb-6">
+          <p className="text-lg md:text-2xl mb-6">
             More than 1000 professional players from rugby, basketball, football and more !
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <span className="bg-black/20 px-3 py-1 rounded-full">🏉 Rugby</span>
             <span className="bg-black/20 px-3 py-1 rounded-full">🏀 Basketball</span>
-            <span className="bg-black/20 px-3 py-1 rounded-full">⚽ Football</span>
-            <span className="bg-black/20 px-3 py-1 rounded-full">🏒 Ice Hockey</span>
-            <span className="bg-black/20 px-3 py-1 rounded-full">🤾 Handball</span>
+            {/* <span className="bg-black/20 px-3 py-1 rounded-full">⚽ Football</span> */}
+            {/* <span className="bg-black/20 px-3 py-1 rounded-full">🏒 Ice Hockey</span> */}
+            {/* <span className="bg-black/20 px-3 py-1 rounded-full">🤾 Handball</span> */}
           </div>
         </div>
       </header>
