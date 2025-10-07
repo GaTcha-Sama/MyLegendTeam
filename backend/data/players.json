@@ -8843,6 +8843,23 @@
     {
       "id": 806,
       "name": "Brown",
+      "lastname": "Gregor",
+      "nationality_id": 193,
+      "position1_id": 4,
+      "position2_id": 3,
+      "sport_id": 1,
+      "team1_id": 91,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 91,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Gregor-Brown.webp"
+    },
+    {
+      "id": 807,
+      "name": "Brown",
       "lastname": "Kelly",
       "nationality_id": 193,
       "position1_id": 4,
@@ -8858,7 +8875,7 @@
       "photo": "images/rugby/Players/SCO/Kelly-Brown.webp"
     },
     {
-      "id": 807,
+      "id": 808,
       "name": "Bulloch",
       "lastname": "Gordon",
       "nationality_id": 193,
@@ -8875,7 +8892,7 @@
       "photo": "images/rugby/Players/SCO/Gordon-Bulloch.webp"
     },
     {
-      "id": 808,
+      "id": 809,
       "name": "Burnell",
       "lastname": "Paul",
       "nationality_id": 193,
@@ -8892,7 +8909,7 @@
       "photo": "images/rugby/Players/SCO/Paul-Burnell.webp"
     },
     {
-      "id": 809,
+      "id": 810,
       "name": "Chalmers",
       "lastname": "Craig",
       "nationality_id": 193,
@@ -8909,7 +8926,7 @@
       "photo": "images/rugby/Players/SCO/Craig-Chalmers.webp"
     },
     {
-      "id": 810,
+      "id": 811,
       "name": "Cusiter",
       "lastname": "Chris",
       "nationality_id": 193,
@@ -8926,7 +8943,7 @@
       "photo": "images/rugby/Players/SCO/Chris-Cusiter.webp"
     },
     {
-      "id": 811,
+      "id": 812,
       "name": "Darge",
       "lastname": "Rory",
       "nationality_id": 193,
@@ -8943,7 +8960,7 @@
       "photo": "images/rugby/Players/SCO/Rory-Darge.webp"
     },
     {
-      "id": 812,
+      "id": 813,
       "name": "Dempsey",
       "lastname": "Jack",
       "nationality_id": 193,
@@ -8960,7 +8977,24 @@
       "photo": "images/rugby/Players/SCO/Jack-Dempsey.webp"
     },
     {
-      "id": 813,
+      "id": 814,
+      "name": "Denton",
+      "lastname": "David",
+      "nationality_id": 193,
+      "position1_id": 30,
+      "position2_id": 4,
+      "sport_id": 1,
+      "team1_id": 90,
+      "team2_id": 70,
+      "team3_id": 83,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/David-Denton.webp"
+    },
+    {
+      "id": 815,
       "name": "Dickinson",
       "lastname": "Alasdair",
       "nationality_id": 193,
@@ -8977,7 +9011,24 @@
       "photo": "images/rugby/Players/SCO/Alasdair-Dickinson.webp"
     },
     {
-      "id": 814,
+      "id": 816,
+      "name": "Douglas",
+      "lastname": "Bruce",
+      "nationality_id": 193,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 10,
+      "team2_id": 83,
+      "team3_id": 71,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Bruce-Douglas.webp"
+    },
+    {
+      "id": 817,
       "name": "Fagerson",
       "lastname": "Matt",
       "nationality_id": 193,
@@ -8994,7 +9045,7 @@
       "photo": "images/rugby/Players/SCO/Matt-Fagerson.webp"
     },
     {
-      "id": 815,
+      "id": 818,
       "name": "Fagerson",
       "lastname": "Zander",
       "nationality_id": 193,
@@ -9011,7 +9062,7 @@
       "photo": "images/rugby/Players/SCO/Zander-Fagerson.webp"
     },
     {
-      "id": 816,
+      "id": 819,
       "name": "Ford",
       "lastname": "Ross",
       "nationality_id": 193,
@@ -9028,7 +9079,24 @@
       "photo": "images/rugby/Players/SCO/Ross-Ford.webp"
     },
     {
-      "id": 817,
+      "id": 820,
+      "name": "Gilchrist",
+      "lastname": "Grant",
+      "nationality_id": 193,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 90,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 90,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Grant-Gilchrist.webp"
+    },
+    {
+      "id": 821,
       "name": "Graham",
       "lastname": "Darcy",
       "nationality_id": 193,
@@ -9045,7 +9113,7 @@
       "photo": "images/rugby/Players/SCO/Darcy-Graham.webp"
     },
     {
-      "id": 818,
+      "id": 822,
       "name": "Gray",
       "lastname": "Jonny",
       "nationality_id": 193,
@@ -9062,7 +9130,7 @@
       "photo": "images/rugby/Players/SCO/Jonny-Gray.webp"
     },
     {
-      "id": 819,
+      "id": 823,
       "name": "Gray",
       "lastname": "Richie",
       "nationality_id": 193,
@@ -9079,7 +9147,7 @@
       "photo": "images/rugby/Players/SCO/Richie-Gray.webp"
     },
     {
-      "id": 820,
+      "id": 824,
       "name": "Grimes",
       "lastname": "Stuart",
       "nationality_id": 193,
@@ -9096,7 +9164,7 @@
       "photo": "images/rugby/Players/SCO/Stuart-Grimes.webp"
     },
     {
-      "id": 821,
+      "id": 825,
       "name": "Hall",
       "lastname": "Dougie",
       "nationality_id": 193,
@@ -9113,7 +9181,41 @@
       "photo": "images/rugby/Players/SCO/Dougie-Hall.webp"
     },
     {
-      "id": 822,
+      "id": 826,
+      "name": "Hamilton",
+      "lastname": "Jim",
+      "nationality_id": 193,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 75,
+      "team2_id": 73,
+      "team3_id": 81,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Jim-Hamilton.webp"
+    },
+    {
+      "id": 827,
+      "name": "Harris",
+      "lastname": "Chris",
+      "nationality_id": 193,
+      "position1_id": 7,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 78,
+      "team2_id": 73,
+      "team3_id": 70,
+      "actual_team_id": 70,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Chris-Harris.webp"
+    },
+    {
+      "id": 828,
       "name": "Hastings",
       "lastname": "Gavin",
       "nationality_id": 193,
@@ -9130,7 +9232,7 @@
       "photo": "images/rugby/Players/SCO/Gavin-Hastings.webp"
     },
     {
-      "id": 823,
+      "id": 829,
       "name": "Hastings",
       "lastname": "Scott",
       "nationality_id": 193,
@@ -9147,7 +9249,7 @@
       "photo": "images/rugby/Players/SCO/Scott-Hastings.webp"
     },
     {
-      "id": 824,
+      "id": 830,
       "name": "Henderson",
       "lastname": "Andrew",
       "nationality_id": 193,
@@ -9164,7 +9266,7 @@
       "photo": "images/rugby/Players/SCO/Andrew-Henderson.webp"
     },
     {
-      "id": 825,
+      "id": 831,
       "name": "Hilton",
       "lastname": "Dave",
       "nationality_id": 193,
@@ -9181,7 +9283,7 @@
       "photo": "images/rugby/Players/SCO/Dave-Hilton.webp"
     },
     {
-      "id": 826,
+      "id": 832,
       "name": "Hines",
       "lastname": "Nathan",
       "nationality_id": 193,
@@ -9198,7 +9300,7 @@
       "photo": "images/rugby/Players/SCO/Nathan-Hines.webp"
     },
     {
-      "id": 827,
+      "id": 833,
       "name": "Hogg",
       "lastname": "Ally",
       "nationality_id": 193,
@@ -9215,7 +9317,7 @@
       "photo": "images/rugby/Players/SCO/Ally-Hogg.webp"
     },
     {
-      "id": 828,
+      "id": 834,
       "name": "Hogg",
       "lastname": "Stuart",
       "nationality_id": 193,
@@ -9232,7 +9334,58 @@
       "photo": "images/rugby/Players/SCO/Stuart-Hogg.webp"
     },
     {
-      "id": 829,
+      "id": 835,
+      "name": "Horne",
+      "lastname": "George",
+      "nationality_id": 193,
+      "position1_id": 5,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 82,
+      "team2_id": 91,
+      "team3_id": null,
+      "actual_team_id": 91,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/George-Horne.webp"
+    },
+    {
+      "id": 836,
+      "name": "Horne",
+      "lastname": "Peter",
+      "nationality_id": 193,
+      "position1_id": 7,
+      "position2_id": 6,
+      "sport_id": 1,
+      "team1_id": 91,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Peter-Horne.webp"
+    },
+    {
+      "id": 837,
+      "name": "Hurd",
+      "lastname": "Will",
+      "nationality_id": 193,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 75,
+      "team2_id": 67,
+      "team3_id": null,
+      "actual_team_id": 75,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Will-Hurd.webp"
+    },
+    {
+      "id": 838,
       "name": "Jacobsen",
       "lastname": "Allan",
       "nationality_id": 193,
@@ -9249,7 +9402,7 @@
       "photo": "images/rugby/Players/SCO/Allan-Jacobsen.webp"
     },
     {
-      "id": 830,
+      "id": 839,
       "name": "Jones",
       "lastname": "Huw",
       "nationality_id": 193,
@@ -9266,7 +9419,7 @@
       "photo": "images/rugby/Players/SCO/Huw-Jones.webp"
     },
     {
-      "id": 831,
+      "id": 840,
       "name": "Jordan",
       "lastname": "Tom",
       "nationality_id": 193,
@@ -9283,7 +9436,7 @@
       "photo": "images/rugby/Players/SCO/Tom-Jordan.webp"
     },
     {
-      "id": 832,
+      "id": 841,
       "name": "Kellock",
       "lastname": "Alastair",
       "nationality_id": 193,
@@ -9300,7 +9453,24 @@
       "photo": "images/rugby/Players/SCO/Alastair-Kellock.webp"
     },
     {
-      "id": 833,
+      "id": 842,
+      "name": "Kerr",
+      "lastname": "Gavin",
+      "nationality_id": 193,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 68,
+      "team2_id": 92,
+      "team3_id": 90,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Gavin-Kerr.webp"
+    },
+    {
+      "id": 843,
       "name": "Kinghorn",
       "lastname": "Blair",
       "nationality_id": 193,
@@ -9317,7 +9487,7 @@
       "photo": "images/rugby/Players/SCO/Blair-Kinghorn.webp"
     },
     {
-      "id": 834,
+      "id": 844,
       "name": "Laidlaw",
       "lastname": "Greig",
       "nationality_id": 193,
@@ -9334,7 +9504,7 @@
       "photo": "images/rugby/Players/SCO/Greig-Laidlaw.webp"
     },
     {
-      "id": 835,
+      "id": 845,
       "name": "Lamont",
       "lastname": "Rory",
       "nationality_id": 193,
@@ -9351,7 +9521,7 @@
       "photo": "images/rugby/Players/SCO/Rory-Lamont.webp"
     },
     {
-      "id": 836,
+      "id": 846,
       "name": "Lamont",
       "lastname": "Sean",
       "nationality_id": 193,
@@ -9368,7 +9538,24 @@
       "photo": "images/rugby/Players/SCO/Sean-Lamont.webp"
     },
     {
-      "id": 837,
+      "id": 847,
+      "name": "Lawson",
+      "lastname": "Scott",
+      "nationality_id": 193,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 91,
+      "team2_id": 73,
+      "team3_id": 78,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Scott-Lawson.webp"
+    },
+    {
+      "id": 848,
       "name": "Logan",
       "lastname": "Kenny",
       "nationality_id": 193,
@@ -9385,7 +9572,7 @@
       "photo": "images/rugby/Players/SCO/Kenny-Logan.webp"
     },
     {
-      "id": 838,
+      "id": 849,
       "name": "Maitland",
       "lastname": "Sean",
       "nationality_id": 193,
@@ -9402,7 +9589,41 @@
       "photo": "images/rugby/Players/SCO/Sean-Maitland.webp"
     },
     {
-      "id": 839,
+      "id": 850,
+      "name": "McDowall",
+      "lastname": "Stafford",
+      "nationality_id": 193,
+      "position1_id": 7,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 91,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 91,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Stafford-McDowall.webp"
+    },
+    {
+      "id": 851,
+      "name": "McInally",
+      "lastname": "Stuart",
+      "nationality_id": 193,
+      "position1_id": 2,
+      "position2_id": 4,
+      "sport_id": 1,
+      "team1_id": 90,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Stuart-McInally.webp"
+    },
+    {
+      "id": 852,
       "name": "Metcalfe",
       "lastname": "Glenn",
       "nationality_id": 193,
@@ -9419,7 +9640,7 @@
       "photo": "images/rugby/Players/SCO/Glenn-Metcalfe.webp"
     },
     {
-      "id": 840,
+      "id": 853,
       "name": "Morrison",
       "lastname": "Graeme",
       "nationality_id": 193,
@@ -9436,7 +9657,24 @@
       "photo": "images/rugby/Players/SCO/Graeme-Morrison.webp"
     },
     {
-      "id": 841,
+      "id": 854,
+      "name": "Murray",
+      "lastname": "Euan",
+      "nationality_id": 193,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 91,
+      "team2_id": 79,
+      "team3_id": 78,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Euan-Murray.webp"
+    },
+    {
+      "id": 855,
       "name": "Murray",
       "lastname": "Scott",
       "nationality_id": 193,
@@ -9453,7 +9691,7 @@
       "photo": "images/rugby/Players/SCO/Scott-Murray.webp"
     },
     {
-      "id": 842,
+      "id": 856,
       "name": "Nel",
       "lastname": "WP",
       "nationality_id": 193,
@@ -9470,7 +9708,7 @@
       "photo": "images/rugby/Players/SCO/WP-Nel.webp"
     },
     {
-      "id": 843,
+      "id": 857,
       "name": "Parks",
       "lastname": "Dan",
       "nationality_id": 193,
@@ -9487,7 +9725,7 @@
       "photo": "images/rugby/Players/SCO/Dan-Parks.webp"
     },
     {
-      "id": 844,
+      "id": 858,
       "name": "Paterson",
       "lastname": "Chris",
       "nationality_id": 193,
@@ -9504,7 +9742,24 @@
       "photo": "images/rugby/Players/SCO/Chris-Paterson.webp"
     },
     {
-      "id": 845,
+      "id": 859,
+      "name": "Petrie",
+      "lastname": "Jon",
+      "nationality_id": 193,
+      "position1_id": 4,
+      "position2_id": 30,
+      "sport_id": 1,
+      "team1_id": 24,
+      "team2_id": 91,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Jon-Petrie.webp"
+    },
+    {
+      "id": 860,
       "name": "Price",
       "lastname": "Ali",
       "nationality_id": 193,
@@ -9521,7 +9776,7 @@
       "photo": "images/rugby/Players/SCO/Ali-Price.webp"
     },
     {
-      "id": 846,
+      "id": 861,
       "name": "Redpath",
       "lastname": "Bryan",
       "nationality_id": 193,
@@ -9538,7 +9793,24 @@
       "photo": "images/rugby/Players/SCO/Bryan-Redpath.webp"
     },
     {
-      "id": 847,
+      "id": 862,
+      "name": "Reid",
+      "lastname": "Gordon",
+      "nationality_id": 193,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 91,
+      "team2_id": 76,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": false,
+      "photo": "images/rugby/Players/SCO/Gordon-Reid.webp"
+    },
+    {
+      "id": 863,
       "name": "Ritchie",
       "lastname": "Jamie",
       "nationality_id": 193,
@@ -9555,7 +9827,24 @@
       "photo": "images/rugby/Players/SCO/Jamie-Ritchie.webp"
     },
     {
-      "id": 848,
+      "id": 864,
+      "name": "Rowe",
+      "lastname": "Kyle",
+      "nationality_id": 193,
+      "position1_id": 8,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 76,
+      "team2_id": 91,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Kyle-Rowe.webp"
+    },
+    {
+      "id": 865,
       "name": "Russell",
       "lastname": "Finn",
       "nationality_id": 193,
@@ -9572,7 +9861,7 @@
       "photo": "images/rugby/Players/SCO/Finn-Russell.webp"
     },
     {
-      "id": 849,
+      "id": 866,
       "name": "Schoeman",
       "lastname": "Pierre",
       "nationality_id": 193,
@@ -9589,7 +9878,7 @@
       "photo": "images/rugby/Players/SCO/Pierre-Schoeman.webp"
     },
     {
-      "id": 850,
+      "id": 867,
       "name": "Seymour",
       "lastname": "Tommy",
       "nationality_id": 193,
@@ -9606,7 +9895,7 @@
       "photo": "images/rugby/Players/SCO/Tommy-Seymour.webp"
     },
     {
-      "id": 851,
+      "id": 868,
       "name": "Skinner",
       "lastname": "Sam",
       "nationality_id": 193,
@@ -9623,7 +9912,7 @@
       "photo": "images/rugby/Players/SCO/Sam-Skinner.webp"
     },
     {
-      "id": 852,
+      "id": 869,
       "name": "Smith",
       "lastname": "Tom",
       "nationality_id": 193,
@@ -9640,7 +9929,7 @@
       "photo": "images/rugby/Players/SCO/Tom-Smith.webp"
     },
     {
-      "id": 853,
+      "id": 870,
       "name": "Sole",
       "lastname": "David",
       "nationality_id": 193,
@@ -9657,7 +9946,7 @@
       "photo": "images/rugby/Players/SCO/David-Sole.webp"
     },
     {
-      "id": 854,
+      "id": 871,
       "name": "Southwell",
       "lastname": "Hugo",
       "nationality_id": 193,
@@ -9674,7 +9963,7 @@
       "photo": "images/rugby/Players/SCO/Hugo-Southwell.webp"
     },
     {
-      "id": 855,
+      "id": 872,
       "name": "Stanger",
       "lastname": "Tony",
       "nationality_id": 193,
@@ -9691,7 +9980,24 @@
       "photo": "images/rugby/Players/SCO/Tony-Stanger.webp"
     },
     {
-      "id": 856,
+      "id": 873,
+      "name": "Steyn",
+      "lastname": "Kyle",
+      "nationality_id": 193,
+      "position1_id": 8,
+      "position2_id": 7,
+      "sport_id": 1,
+      "team1_id": 91,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 91,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Kyle-Steyn.webp"
+    },
+    {
+      "id": 874,
       "name": "Strokosch",
       "lastname": "Alasdair",
       "nationality_id": 193,
@@ -9708,7 +10014,24 @@
       "photo": "images/rugby/Players/SCO/Alasdair-Strokosch.webp"
     },
     {
-      "id": 857,
+      "id": 875,
+      "name": "Sutherland",
+      "lastname": "Rory",
+      "nationality_id": 193,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 90,
+      "team2_id": 83,
+      "team3_id": 91,
+      "actual_team_id": 91,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Rory-Sutherland.webp"
+    },
+    {
+      "id": 876,
       "name": "Taylor",
       "lastname": "Simon",
       "nationality_id": 193,
@@ -9725,7 +10048,7 @@
       "photo": "images/rugby/Players/SCO/Simon-Taylor.webp"
     },
     {
-      "id": 858,
+      "id": 877,
       "name": "Townsend",
       "lastname": "Gregor",
       "nationality_id": 193,
@@ -9742,7 +10065,7 @@
       "photo": "images/rugby/Players/SCO/Gregor-Townsend.webp"
     },
     {
-      "id": 859,
+      "id": 878,
       "name": "Tuipulotu",
       "lastname": "Sione",
       "nationality_id": 193,
@@ -9759,7 +10082,24 @@
       "photo": "images/rugby/Players/SCO/Sione-Tuipulotu.webp"
     },
     {
-      "id": 860,
+      "id": 879,
+      "name": "Turner",
+      "lastname": "George",
+      "nationality_id": 193,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 90,
+      "team2_id": 82,
+      "team3_id": 91,
+      "actual_team_id": 100,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/George-Turner.webp"
+    },
+    {
+      "id": 880,
       "name": "Van Der Merwe",
       "lastname": "Duhan",
       "nationality_id": 193,
@@ -9776,7 +10116,7 @@
       "photo": "images/rugby/Players/SCO/Duhan-Van-Der-Merwe.webp"
     },
     {
-      "id": 861,
+      "id": 881,
       "name": "Watson",
       "lastname": "Hamish",
       "nationality_id": 193,
@@ -9793,7 +10133,7 @@
       "photo": "images/rugby/Players/SCO/Hamish-Watson.webp"
     },
     {
-      "id": 862,
+      "id": 882,
       "name": "Weir",
       "lastname": "Doddie",
       "nationality_id": 193,
@@ -9810,7 +10150,7 @@
       "photo": "images/rugby/Players/SCO/Doddie-Weir.webp"
     },
     {
-      "id": 863,
+      "id": 883,
       "name": "White",
       "lastname": "Ben",
       "nationality_id": 193,
@@ -9827,7 +10167,7 @@
       "photo": "images/rugby/Players/SCO/Ben-White.webp"
     },
     {
-      "id": 864,
+      "id": 884,
       "name": "White",
       "lastname": "Jason",
       "nationality_id": 193,
@@ -9844,7 +10184,7 @@
       "photo": "images/rugby/Players/SCO/Jason-White.webp"
     },
     {
-      "id": 865,
+      "id": 885,
       "name": "Wilson",
       "lastname": "Ryan",
       "nationality_id": 193,
@@ -10518,7 +10858,7 @@
       "team2_id": 85,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": false,
       "photo": "images/rugby/Players/WAL/Neil-Jenkins.webp"
@@ -10603,7 +10943,7 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": false,
       "photo": "images/rugby/Players/WAL/Duncan-Jones.webp"
@@ -10773,7 +11113,7 @@
       "team2_id": 5,
       "team3_id": 87,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": false,
       "photo": "images/rugby/Players/WAL/Dan-Lydiate.webp"
@@ -10790,7 +11130,7 @@
       "team2_id": 87,
       "team3_id": null,
       "actual_team_id": 87,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": true,
       "photo": "images/rugby/Players/WAL/Jac-Morgan.webp"
@@ -11011,7 +11351,7 @@
       "team2_id": 71,
       "team3_id": null,
       "actual_team_id": 71,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": true,
       "photo": "images/rugby/Players/WAL/Louis-Rees-Zammit.webp"
@@ -11283,7 +11623,7 @@
       "team2_id": 81,
       "team3_id": null,
       "actual_team_id": 81,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/WAL.png",
       "active": true,
       "photo": "images/rugby/Players/WAL/Liam-Williams.webp"
@@ -12990,6 +13330,23 @@
     },
     {
       "id": 1409,
+      "name": "Bracken",
+      "lastname": "Kyran",
+      "nationality_id": 198,
+      "position1_id": 5,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 71,
+      "team2_id": 81,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Kyran-Bracken.webp"
+    },
+    {
+      "id": 1410,
       "name": "Brown",
       "lastname": "Mike",
       "nationality_id": 198,
@@ -13006,7 +13363,7 @@
       "photo": "images/rugby/Players/ENG/Mike-Brown.webp"
     },
     {
-      "id": 1410,
+      "id": 1411,
       "name": "Burgess",
       "lastname": "Sam",
       "nationality_id": 198,
@@ -13023,7 +13380,7 @@
       "photo": "images/rugby/Players/ENG/Sam-Burgess.webp"
     },
     {
-      "id": 1411,
+      "id": 1412,
       "name": "Care",
       "lastname": "Danny",
       "nationality_id": 198,
@@ -13040,7 +13397,7 @@
       "photo": "images/rugby/Players/ENG/Danny-Care.webp"
     },
     {
-      "id": 1412,
+      "id": 1413,
       "name": "Carling",
       "lastname": "Will",
       "nationality_id": 198,
@@ -13057,7 +13414,7 @@
       "photo": "images/rugby/Players/ENG/Will-Carling.webp"
     },
     {
-      "id": 1413,
+      "id": 1414,
       "name": "Catt",
       "lastname": "Mike",
       "nationality_id": 198,
@@ -13074,7 +13431,7 @@
       "photo": "images/rugby/Players/ENG/Mike-Catt.webp"
     },
     {
-      "id": 1414,
+      "id": 1415,
       "name": "Chessum",
       "lastname": "Ollie",
       "nationality_id": 198,
@@ -13091,7 +13448,24 @@
       "photo": "images/rugby/Players/ENG/Ollie-Chessum.webp"
     },
     {
-      "id": 1415,
+      "id": 1416,
+      "name": "Clarke",
+      "lastname": "Ben",
+      "nationality_id": 198,
+      "position1_id": 30,
+      "position2_id": 4,
+      "sport_id": 1,
+      "team1_id": 70,
+      "team2_id": 83,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Ben-Clarke.webp"
+    },
+    {
+      "id": 1417,
       "name": "Cohen",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13108,7 +13482,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Cohen.webp"
     },
     {
-      "id": 1416,
+      "id": 1418,
       "name": "Cole",
       "lastname": "Dan",
       "nationality_id": 198,
@@ -13125,7 +13499,7 @@
       "photo": "images/rugby/Players/ENG/Dan-Cole.webp"
     },
     {
-      "id": 1417,
+      "id": 1419,
       "name": "Coles",
       "lastname": "Alex",
       "nationality_id": 198,
@@ -13142,7 +13516,7 @@
       "photo": "images/rugby/Players/ENG/Alex-Coles.webp"
     },
     {
-      "id": 1418,
+      "id": 1420,
       "name": "Corry",
       "lastname": "Martin",
       "nationality_id": 198,
@@ -13159,7 +13533,7 @@
       "photo": "images/rugby/Players/ENG/Martin-Corry.webp"
     },
     {
-      "id": 1419,
+      "id": 1421,
       "name": "Cowan-Dickie",
       "lastname": "Luke",
       "nationality_id": 198,
@@ -13176,7 +13550,24 @@
       "photo": "images/rugby/Players/ENG/Luke-Cowan-Dickie.webp"
     },
     {
-      "id": 1420,
+      "id": 1422,
+      "name": "Croft",
+      "lastname": "Tom",
+      "nationality_id": 198,
+      "position1_id": 4,
+      "position2_id": 3,
+      "sport_id": 1,
+      "team1_id": 75,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Tom-Croft.webp"
+    },
+    {
+      "id": 1423,
       "name": "Cueto",
       "lastname": "Mark",
       "nationality_id": 198,
@@ -13193,7 +13584,7 @@
       "photo": "images/rugby/Players/ENG/Mark-Cueto.webp"
     },
     {
-      "id": 1421,
+      "id": 1424,
       "name": "Cunningham-South",
       "lastname": "Chandler",
       "nationality_id": 198,
@@ -13210,7 +13601,7 @@
       "photo": "images/rugby/Players/ENG/Chandler-Cunningham-South.webp"
     },
     {
-      "id": 1422,
+      "id": 1425,
       "name": "Curry",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13227,7 +13618,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Curry.webp"
     },
     {
-      "id": 1423,
+      "id": 1426,
       "name": "Curry",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -13244,7 +13635,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Curry.webp"
     },
     {
-      "id": 1424,
+      "id": 1427,
       "name": "Dallaglio",
       "lastname": "Lawrence",
       "nationality_id": 198,
@@ -13261,7 +13652,7 @@
       "photo": "images/rugby/Players/ENG/Lawrence-Dallaglio.webp"
     },
     {
-      "id": 1425,
+      "id": 1428,
       "name": "Daly",
       "lastname": "Elliot",
       "nationality_id": 198,
@@ -13278,7 +13669,7 @@
       "photo": "images/rugby/Players/ENG/Elliot-Daly.webp"
     },
     {
-      "id": 1426,
+      "id": 1429,
       "name": "Dan",
       "lastname": "Theo",
       "nationality_id": 198,
@@ -13295,7 +13686,7 @@
       "photo": "images/rugby/Players/ENG/Theo-Dan.webp"
     },
     {
-      "id": 1427,
+      "id": 1430,
       "name": "Dawson",
       "lastname": "Matt",
       "nationality_id": 198,
@@ -13312,7 +13703,7 @@
       "photo": "images/rugby/Players/ENG/Matt-Dawson.webp"
     },
     {
-      "id": 1428,
+      "id": 1431,
       "name": "De Glanville",
       "lastname": "Phil",
       "nationality_id": 198,
@@ -13329,7 +13720,7 @@
       "photo": "images/rugby/Players/ENG/Phil-De-Glanville.webp"
     },
     {
-      "id": 1429,
+      "id": 1432,
       "name": "Dombrandt",
       "lastname": "Alex",
       "nationality_id": 198,
@@ -13346,7 +13737,7 @@
       "photo": "images/rugby/Players/ENG/Alex-Dombrandt.webp"
     },
     {
-      "id": 1430,
+      "id": 1433,
       "name": "Earl",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13363,7 +13754,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Earl.webp"
     },
     {
-      "id": 1431,
+      "id": 1434,
       "name": "Easter",
       "lastname": "Nick",
       "nationality_id": 198,
@@ -13380,7 +13771,7 @@
       "photo": "images/rugby/Players/ENG/Nick-Easter.webp"
     },
     {
-      "id": 1432,
+      "id": 1435,
       "name": "Farrell",
       "lastname": "Owen",
       "nationality_id": 198,
@@ -13397,7 +13788,7 @@
       "photo": "images/rugby/Players/ENG/Owen-Farrell.webp"
     },
     {
-      "id": 1433,
+      "id": 1436,
       "name": "Fasogbon",
       "lastname": "Afolabi",
       "nationality_id": 198,
@@ -13414,7 +13805,7 @@
       "photo": "images/rugby/Players/ENG/Afolabi-Fasogbon.webp"
     },
     {
-      "id": 1434,
+      "id": 1437,
       "name": "Feyi-Waboso",
       "lastname": "Immanuel",
       "nationality_id": 198,
@@ -13431,7 +13822,7 @@
       "photo": "images/rugby/Players/ENG/Immanuel-Feyi-Waboso.webp"
     },
     {
-      "id": 1435,
+      "id": 1438,
       "name": "Flood",
       "lastname": "Toby",
       "nationality_id": 198,
@@ -13448,7 +13839,7 @@
       "photo": "images/rugby/Players/ENG/Toby-Flood.webp"
     },
     {
-      "id": 1436,
+      "id": 1439,
       "name": "Foden",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13465,7 +13856,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Foden.webp"
     },
     {
-      "id": 1437,
+      "id": 1440,
       "name": "Ford",
       "lastname": "George",
       "nationality_id": 198,
@@ -13482,7 +13873,7 @@
       "photo": "images/rugby/Players/ENG/George-Ford.webp"
     },
     {
-      "id": 1438,
+      "id": 1441,
       "name": "Freeman",
       "lastname": "Tommy",
       "nationality_id": 198,
@@ -13499,7 +13890,7 @@
       "photo": "images/rugby/Players/ENG/Tommy-Freeman.webp"
     },
     {
-      "id": 1439,
+      "id": 1442,
       "name": "Genge",
       "lastname": "Ellis",
       "nationality_id": 198,
@@ -13516,7 +13907,7 @@
       "photo": "images/rugby/Players/ENG/Ellis-Genge.webp"
     },
     {
-      "id": 1440,
+      "id": 1443,
       "name": "George",
       "lastname": "Jamie",
       "nationality_id": 198,
@@ -13533,7 +13924,7 @@
       "photo": "images/rugby/Players/ENG/Jamie-George.webp"
     },
     {
-      "id": 1441,
+      "id": 1444,
       "name": "Greenwood",
       "lastname": "Will",
       "nationality_id": 198,
@@ -13550,7 +13941,7 @@
       "photo": "images/rugby/Players/ENG/Will-Greenwood.webp"
     },
     {
-      "id": 1442,
+      "id": 1445,
       "name": "Grewcock",
       "lastname": "Danny",
       "nationality_id": 198,
@@ -13567,7 +13958,7 @@
       "photo": "images/rugby/Players/ENG/Danny-Grewcock.webp"
     },
     {
-      "id": 1443,
+      "id": 1446,
       "name": "Guscott",
       "lastname": "Jeremy",
       "nationality_id": 198,
@@ -13584,7 +13975,7 @@
       "photo": "images/rugby/Players/ENG/Jeremy-Guscott.webp"
     },
     {
-      "id": 1444,
+      "id": 1447,
       "name": "Hartley",
       "lastname": "Dylan",
       "nationality_id": 198,
@@ -13601,7 +13992,7 @@
       "photo": "images/rugby/Players/ENG/Dylan-Hartley.webp"
     },
     {
-      "id": 1445,
+      "id": 1448,
       "name": "Haskell",
       "lastname": "James",
       "nationality_id": 198,
@@ -13618,7 +14009,24 @@
       "photo": "images/rugby/Players/ENG/James-Haskell.webp"
     },
     {
-      "id": 1446,
+      "id": 1449,
+      "name": "Healey",
+      "lastname": "Austin",
+      "nationality_id": 198,
+      "position1_id": 5,
+      "position2_id": 8,
+      "sport_id": 1,
+      "team1_id": 75,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Austin-Healey.webp"
+    },
+    {
+      "id": 1450,
       "name": "Heyes",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -13635,7 +14043,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Heyes.webp"
     },
     {
-      "id": 1447,
+      "id": 1451,
       "name": "Hill",
       "lastname": "Richard",
       "nationality_id": 198,
@@ -13652,7 +14060,7 @@
       "photo": "images/rugby/Players/ENG/Richard-Hill.webp"
     },
     {
-      "id": 1448,
+      "id": 1452,
       "name": "Itoje",
       "lastname": "Maro",
       "nationality_id": 198,
@@ -13669,7 +14077,7 @@
       "photo": "images/rugby/Players/ENG/Maro-Itoje.webp"
     },
     {
-      "id": 1449,
+      "id": 1453,
       "name": "Isiekwe",
       "lastname": "Nick",
       "nationality_id": 198,
@@ -13686,7 +14094,7 @@
       "photo": "images/rugby/Players/ENG/Nick-Isiekwe.webp"
     },
     {
-      "id": 1450,
+      "id": 1454,
       "name": "Johnson",
       "lastname": "Martin",
       "nationality_id": 198,
@@ -13703,7 +14111,7 @@
       "photo": "images/rugby/Players/ENG/Martin-Johnson.webp"
     },
     {
-      "id": 1451,
+      "id": 1455,
       "name": "Joseph",
       "lastname": "Jonathan",
       "nationality_id": 198,
@@ -13720,7 +14128,7 @@
       "photo": "images/rugby/Players/ENG/Jonathan-Joseph.webp"
     },
     {
-      "id": 1452,
+      "id": 1456,
       "name": "Kay",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13737,7 +14145,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Kay.webp"
     },
     {
-      "id": 1453,
+      "id": 1457,
       "name": "Kruis",
       "lastname": "George",
       "nationality_id": 198,
@@ -13754,7 +14162,7 @@
       "photo": "images/rugby/Players/ENG/George-Kruis.webp"
     },
     {
-      "id": 1454,
+      "id": 1458,
       "name": "Launchbury",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -13771,7 +14179,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Launchbury.webp"
     },
     {
-      "id": 1455,
+      "id": 1459,
       "name": "Lawes",
       "lastname": "Courtney",
       "nationality_id": 198,
@@ -13788,7 +14196,7 @@
       "photo": "images/rugby/Players/ENG/Courtney-Lawes.webp"
     },
     {
-      "id": 1456,
+      "id": 1460,
       "name": "Lawrence",
       "lastname": "Ollie",
       "nationality_id": 198,
@@ -13805,7 +14213,7 @@
       "photo": "images/rugby/Players/ENG/Ollie-Lawrence.webp"
     },
     {
-      "id": 1457,
+      "id": 1461,
       "name": "Leonard",
       "lastname": "Jason",
       "nationality_id": 198,
@@ -13822,7 +14230,7 @@
       "photo": "images/rugby/Players/ENG/Jason-Leonard.webp"
     },
     {
-      "id": 1458,
+      "id": 1462,
       "name": "Lewsey",
       "lastname": "Josh",
       "nationality_id": 198,
@@ -13839,7 +14247,7 @@
       "photo": "images/rugby/Players/ENG/Josh-Lewsey.webp"
     },
     {
-      "id": 1459,
+      "id": 1463,
       "name": "Ludlam",
       "lastname": "Lewis",
       "nationality_id": 198,
@@ -13856,7 +14264,7 @@
       "photo": "images/rugby/Players/ENG/Lewis-Ludlam.webp"
     },
     {
-      "id": 1460,
+      "id": 1464,
       "name": "Luger",
       "lastname": "Dan",
       "nationality_id": 198,
@@ -13873,7 +14281,7 @@
       "photo": "images/rugby/Players/ENG/Dan-Luger.webp"
     },
     {
-      "id": 1461,
+      "id": 1465,
       "name": "Marchant",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -13890,7 +14298,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Marchant.webp"
     },
     {
-      "id": 1462,
+      "id": 1466,
       "name": "Marler",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -13907,7 +14315,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Marler.webp"
     },
     {
-      "id": 1463,
+      "id": 1467,
       "name": "May",
       "lastname": "Jonny",
       "nationality_id": 198,
@@ -13924,7 +14332,7 @@
       "photo": "images/rugby/Players/ENG/Jonny-May.webp"
     },
     {
-      "id": 1464,
+      "id": 1468,
       "name": "Mears",
       "lastname": "Lee",
       "nationality_id": 198,
@@ -13941,7 +14349,7 @@
       "photo": "images/rugby/Players/ENG/Lee-Mears.webp"
     },
     {
-      "id": 1465,
+      "id": 1469,
       "name": "Mercer",
       "lastname": "Zach",
       "nationality_id": 198,
@@ -13958,7 +14366,7 @@
       "photo": "images/rugby/Players/ENG/Zach-Mercer.webp"
     },
     {
-      "id": 1466,
+      "id": 1470,
       "name": "Mitchell",
       "lastname": "Alex",
       "nationality_id": 198,
@@ -13975,7 +14383,7 @@
       "photo": "images/rugby/Players/ENG/Alex-Mitchell.webp"
     },
     {
-      "id": 1467,
+      "id": 1471,
       "name": "Moody",
       "lastname": "Lewis",
       "nationality_id": 198,
@@ -13992,7 +14400,7 @@
       "photo": "images/rugby/Players/ENG/Lewis-Moody.webp"
     },
     {
-      "id": 1468,
+      "id": 1472,
       "name": "Moore",
       "lastname": "Brian",
       "nationality_id": 198,
@@ -14009,7 +14417,24 @@
       "photo": "images/rugby/Players/ENG/Brian-Moore.webp"
     },
     {
-      "id": 1469,
+      "id": 1473,
+      "name": "Noon",
+      "lastname": "Jamie",
+      "nationality_id": 198,
+      "position1_id": 7,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 78,
+      "team2_id": 17,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Jamie-Noon.webp"
+    },
+    {
+      "id": 1474,
       "name": "Nowell",
       "lastname": "Jack",
       "nationality_id": 198,
@@ -14026,7 +14451,7 @@
       "photo": "images/rugby/Players/ENG/Jack-Nowell.webp"
     },
     {
-      "id": 1470,
+      "id": 1475,
       "name": "Opoku-Fordjour",
       "lastname": "Asher",
       "nationality_id": 198,
@@ -14043,7 +14468,24 @@
       "photo": "images/rugby/Players/ENG/Asher-Opoku-Fordjour.webp"
     },
     {
-      "id": 1471,
+      "id": 1476,
+      "name": "Palmer",
+      "lastname": "Tom",
+      "nationality_id": 198,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 68,
+      "team2_id": 77,
+      "team3_id": 4,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Tom-Palmer.webp"
+    },
+    {
+      "id": 1477,
       "name": "Perry",
       "lastname": "Shaun",
       "nationality_id": 198,
@@ -14060,7 +14502,7 @@
       "photo": "images/rugby/Players/ENG/Shaun-Perry.webp"
     },
     {
-      "id": 1472,
+      "id": 1478,
       "name": "Pollock",
       "lastname": "Henry",
       "nationality_id": 198,
@@ -14077,7 +14519,24 @@
       "photo": "images/rugby/Players/ENG/Henry-Pollock.webp"
     },
     {
-      "id": 1473,
+      "id": 1479,
+      "name": "Regan",
+      "lastname": "Mark",
+      "nationality_id": 198,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 70,
+      "team2_id": 68,
+      "team3_id": 71,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Mark-Regan.webp"
+    },
+    {
+      "id": 1480,
       "name": "Ribbans",
       "lastname": "David",
       "nationality_id": 198,
@@ -14094,7 +14553,7 @@
       "photo": "images/rugby/Players/ENG/David-Ribbans.webp"
     },
     {
-      "id": 1474,
+      "id": 1481,
       "name": "Richards",
       "lastname": "Dean",
       "nationality_id": 198,
@@ -14111,7 +14570,7 @@
       "photo": "images/rugby/Players/ENG/Dean-Richards.webp"
     },
     {
-      "id": 1475,
+      "id": 1482,
       "name": "Robinson",
       "lastname": "Jason",
       "nationality_id": 198,
@@ -14128,7 +14587,7 @@
       "photo": "images/rugby/Players/ENG/Jason-Robinson.webp"
     },
     {
-      "id": 1476,
+      "id": 1483,
       "name": "Robshaw",
       "lastname": "Chris",
       "nationality_id": 198,
@@ -14145,7 +14604,7 @@
       "photo": "images/rugby/Players/ENG/Chris-Robshaw.webp"
     },
     {
-      "id": 1477,
+      "id": 1484,
       "name": "Rodber",
       "lastname": "Tim",
       "nationality_id": 198,
@@ -14162,7 +14621,7 @@
       "photo": "images/rugby/Players/ENG/Tim-Rodber.webp"
     },
     {
-      "id": 1478,
+      "id": 1485,
       "name": "Roebuck",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -14179,7 +14638,24 @@
       "photo": "images/rugby/Players/ENG/Tom-Roebuck.webp"
     },
     {
-      "id": 1479,
+      "id": 1486,
+      "name": "Rowntree",
+      "lastname": "Graham",
+      "nationality_id": 198,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 75,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Graham-Rowntree.webp"
+    },
+    {
+      "id": 1487,
       "name": "Shaw",
       "lastname": "Simon",
       "nationality_id": 198,
@@ -14196,7 +14672,7 @@
       "photo": "images/rugby/Players/ENG/Simon-Shaw.webp"
     },
     {
-      "id": 1480,
+      "id": 1488,
       "name": "Sheridan",
       "lastname": "Andrew",
       "nationality_id": 198,
@@ -14213,7 +14689,7 @@
       "photo": "images/rugby/Players/ENG/Andrew-Sheridan.webp"
     },
     {
-      "id": 1481,
+      "id": 1489,
       "name": "Simmonds",
       "lastname": "Sam",
       "nationality_id": 198,
@@ -14230,7 +14706,7 @@
       "photo": "images/rugby/Players/ENG/Sam-Simmonds.webp"
     },
     {
-      "id": 1482,
+      "id": 1490,
       "name": "Sinkler",
       "lastname": "Kyle",
       "nationality_id": 198,
@@ -14247,7 +14723,7 @@
       "photo": "images/rugby/Players/ENG/Kyle-Sinkler.webp"
     },
     {
-      "id": 1483,
+      "id": 1491,
       "name": "Slade",
       "lastname": "Henry",
       "nationality_id": 198,
@@ -14264,7 +14740,7 @@
       "photo": "images/rugby/Players/ENG/Henry-Slade.webp"
     },
     {
-      "id": 1484,
+      "id": 1492,
       "name": "Smith",
       "lastname": "Fin",
       "nationality_id": 198,
@@ -14281,7 +14757,7 @@
       "photo": "images/rugby/Players/ENG/Fin-Smith.webp"
     },
     {
-      "id": 1485,
+      "id": 1493,
       "name": "Smith",
       "lastname": "Marcus",
       "nationality_id": 198,
@@ -14298,7 +14774,24 @@
       "photo": "images/rugby/Players/ENG/Marcus-Smith.webp"
     },
     {
-      "id": 1486,
+      "id": 1494,
+      "name": "Stevens",
+      "lastname": "Matt",
+      "nationality_id": 198,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 70,
+      "team2_id": 81,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Matt-Stevens.webp"
+    },
+    {
+      "id": 1495,
       "name": "Steward",
       "lastname": "Freddie",
       "nationality_id": 198,
@@ -14315,7 +14808,7 @@
       "photo": "images/rugby/Players/ENG/Freddie-Steward.webp"
     },
     {
-      "id": 1487,
+      "id": 1496,
       "name": "Stuart",
       "lastname": "Will",
       "nationality_id": 198,
@@ -14332,7 +14825,41 @@
       "photo": "images/rugby/Players/ENG/Will-Stuart.webp"
     },
     {
-      "id": 1488,
+      "id": 1497,
+      "name": "Tait",
+      "lastname": "Mathew",
+      "nationality_id": 198,
+      "position1_id": 7,
+      "position2_id": 9,
+      "sport_id": 1,
+      "team1_id": 78,
+      "team2_id": 80,
+      "team3_id": 75,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Mathew-Tait.webp"
+    },
+    {
+      "id": 1498,
+      "name": "Tindall",
+      "lastname": "Mike",
+      "nationality_id": 198,
+      "position1_id": 7,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 70,
+      "team2_id": 73,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Mike-Tindall.webp"
+    },
+    {
+      "id": 1499,
       "name": "Thompson",
       "lastname": "Steve",
       "nationality_id": 198,
@@ -14349,7 +14876,7 @@
       "photo": "images/rugby/Players/ENG/Steve-Thompson.webp"
     },
     {
-      "id": 1489,
+      "id": 1500,
       "name": "Tuilagi",
       "lastname": "Manu",
       "nationality_id": 198,
@@ -14366,7 +14893,7 @@
       "photo": "images/rugby/Players/ENG/Manu-Tuilagi.webp"
     },
     {
-      "id": 1490,
+      "id": 1501,
       "name": "Underhill",
       "lastname": "Sam",
       "nationality_id": 198,
@@ -14383,7 +14910,7 @@
       "photo": "images/rugby/Players/ENG/Sam-Underhill.webp"
     },
     {
-      "id": 1491,
+      "id": 1502,
       "name": "Underwood",
       "lastname": "Rory",
       "nationality_id": 198,
@@ -14400,7 +14927,7 @@
       "photo": "images/rugby/Players/ENG/Rory-Underwood.webp"
     },
     {
-      "id": 1492,
+      "id": 1503,
       "name": "van Poortvliet",
       "lastname": "Jack",
       "nationality_id": 198,
@@ -14417,7 +14944,7 @@
       "photo": "images/rugby/Players/ENG/Jack-van-Poortvliet.webp"
     },
     {
-      "id": 1493,
+      "id": 1504,
       "name": "Vickery",
       "lastname": "Phil",
       "nationality_id": 198,
@@ -14434,7 +14961,7 @@
       "photo": "images/rugby/Players/ENG/Phil-Vickery.webp"
     },
     {
-      "id": 1494,
+      "id": 1505,
       "name": "Vunipola",
       "lastname": "Billy",
       "nationality_id": 198,
@@ -14451,7 +14978,7 @@
       "photo": "images/rugby/Players/ENG/Billy-Vunipola.webp"
     },
     {
-      "id": 1495,
+      "id": 1506,
       "name": "Vunipola",
       "lastname": "Mako",
       "nationality_id": 198,
@@ -14468,7 +14995,7 @@
       "photo": "images/rugby/Players/ENG/Mako-Vunipola.webp"
     },
     {
-      "id": 1496,
+      "id": 1507,
       "name": "Watson",
       "lastname": "Anthony",
       "nationality_id": 198,
@@ -14485,7 +15012,24 @@
       "photo": "images/rugby/Players/ENG/Anthony-Watson.webp"
     },
     {
-      "id": 1497,
+      "id": 1508,
+      "name": "White",
+      "lastname": "Julian",
+      "nationality_id": 198,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 81,
+      "team2_id": 71,
+      "team3_id": 75,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Julian-White.webp"
+    },
+    {
+      "id": 1509,
       "name": "Wilkinson",
       "lastname": "Jonny",
       "nationality_id": 198,
@@ -14502,7 +15046,7 @@
       "photo": "images/rugby/Players/ENG/Jonny-Wilkinson.webp"
     },
     {
-      "id": 1498,
+      "id": 1510,
       "name": "Willis",
       "lastname": "Jack",
       "nationality_id": 198,
@@ -14519,7 +15063,7 @@
       "photo": "images/rugby/Players/ENG/Jack-Willis.webp"
     },
     {
-      "id": 1499,
+      "id": 1511,
       "name": "Willis",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -14536,7 +15080,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Willis.webp"
     },
     {
-      "id": 1500,
+      "id": 1512,
       "name": "Wilson",
       "lastname": "Dave",
       "nationality_id": 198,
@@ -14553,7 +15097,24 @@
       "photo": "images/rugby/Players/ENG/Dave-Wilson.webp"
     },
     {
-      "id": 1501,
+      "id": 1513,
+      "name": "Wood",
+      "lastname": "Tom",
+      "nationality_id": 198,
+      "position1_id": 4,
+      "position2_id": 30,
+      "sport_id": 1,
+      "team1_id": 83,
+      "team2_id": 79,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": false,
+      "photo": "images/rugby/Players/ENG/Tom-Wood.webp"
+    },
+    {
+      "id": 1514,
       "name": "Worsley",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -14570,7 +15131,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Worsley.webp"
     },
     {
-      "id": 1502,
+      "id": 1515,
       "name": "Youngs",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -14656,6 +15217,23 @@
     },
     {
       "id": 1604,
+      "name": "Bigi",
+      "lastname": "Luca",
+      "nationality_id": 81,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 98,
+      "team2_id": 95,
+      "team3_id": 96,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Luca-Bigi.webp"
+    },
+    {
+      "id": 1605,
       "name": "Bortolami",
       "lastname": "Marco",
       "nationality_id": 81,
@@ -14672,7 +15250,7 @@
       "photo": "images/rugby/Players/ITA/Marco-Bortolami.webp"
     },
     {
-      "id": 1605,
+      "id": 1606,
       "name": "Brex",
       "lastname": "Juan Ignacio",
       "nationality_id": 81,
@@ -14689,7 +15267,7 @@
       "photo": "images/rugby/Players/ITA/Juan-Ignacio-Brex.webp"
     },
     {
-      "id": 1606,
+      "id": 1607,
       "name": "Campagnaro",
       "lastname": "Michele",
       "nationality_id": 81,
@@ -14706,7 +15284,7 @@
       "photo": "images/rugby/Players/ITA/Michele-Campagnaro.webp"
     },
     {
-      "id": 1607,
+      "id": 1608,
       "name": "Canale",
       "lastname": "Gonzalo",
       "nationality_id": 81,
@@ -14723,7 +15301,7 @@
       "photo": "images/rugby/Players/ITA/Gonzalo-Canale.webp"
     },
     {
-      "id": 1608,
+      "id": 1609,
       "name": "Cannone",
       "lastname": "Lorenzo",
       "nationality_id": 81,
@@ -14740,7 +15318,24 @@
       "photo": "images/rugby/Players/ITA/Lorenzo-Cannone.webp"
     },
     {
-      "id": 1609,
+      "id": 1610,
+      "name": "Cannone",
+      "lastname": "Niccolo",
+      "nationality_id": 81,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 98,
+      "team2_id": 95,
+      "team3_id": null,
+      "actual_team_id": 95,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Niccolo-Cannone.webp"
+    },
+    {
+      "id": 1611,
       "name": "Capuozzo",
       "lastname": "Ange",
       "nationality_id": 81,
@@ -14757,7 +15352,7 @@
       "photo": "images/rugby/Players/ITA/Ange-Capuozzo.webp"
     },
     {
-      "id": 1610,
+      "id": 1612,
       "name": "Castrogiovanni",
       "lastname": "Martin",
       "nationality_id": 81,
@@ -14774,7 +15369,7 @@
       "photo": "images/rugby/Players/ITA/Martin-Castrogiovanni.webp"
     },
     {
-      "id": 1611,
+      "id": 1613,
       "name": "Checchinato",
       "lastname": "Carlo",
       "nationality_id": 81,
@@ -14791,7 +15386,58 @@
       "photo": "images/rugby/Players/ITA/Carlo-Checchinato.webp"
     },
     {
-      "id": 1612,
+      "id": 1614,
+      "name": "Cittadini",
+      "lastname": "Lorenzo",
+      "nationality_id": 81,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 97,
+      "team2_id": 95,
+      "team3_id": 77,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Lorenzo-Cittadini.webp"
+    },
+    {
+      "id": 1615,
+      "name": "Del Fava",
+      "lastname": "Carlo",
+      "nationality_id": 81,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 20,
+      "team2_id": 63,
+      "team3_id": 78,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Carlo-Del-Fava.webp"
+    },
+    {
+      "id": 1616,
+      "name": "Dellape",
+      "lastname": "Santiago",
+      "nationality_id": 81,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 95,
+      "team2_id": 15,
+      "team3_id": 16,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Santiago-Dellape.webp"
+    },
+    {
+      "id": 1617,
       "name": "Dominguez",
       "lastname": "Diego",
       "nationality_id": 81,
@@ -14808,7 +15454,7 @@
       "photo": "images/rugby/Players/ITA/Diego-Dominguez.webp"
     },
     {
-      "id": 1613,
+      "id": 1618,
       "name": "Ferrari",
       "lastname": "Simone",
       "nationality_id": 81,
@@ -14825,7 +15471,92 @@
       "photo": "images/rugby/Players/ITA/Simone-Ferrari.webp"
     },
     {
-      "id": 1614,
+      "id": 1619,
+      "name": "Festuccia",
+      "lastname": "Carlo",
+      "nationality_id": 81,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 5,
+      "team2_id": 96,
+      "team3_id": 77,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Carlo-Festuccia.webp"
+    },
+    {
+      "id": 1620,
+      "name": "Fischetti",
+      "lastname": "Danilo",
+      "nationality_id": 81,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 96,
+      "team2_id": 76,
+      "team3_id": 79,
+      "actual_team_id": 79,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Danilo-Fischetti.webp"
+    },
+    {
+      "id": 1621,
+      "name": "Fuser",
+      "lastname": "Marco",
+      "nationality_id": 81,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 95,
+      "team2_id": 78,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Marco-Fuser.webp"
+    },
+    {
+      "id": 1622,
+      "name": "Canna",
+      "lastname": "Carlo",
+      "nationality_id": 81,
+      "position1_id": 6,
+      "position2_id": 7,
+      "sport_id": 1,
+      "team1_id": 96,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Carlo-Canna.webp"
+    },
+    {
+      "id": 1623,
+      "name": "Garbisi",
+      "lastname": "Alessandro",
+      "nationality_id": 81,
+      "position1_id": 5,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 95,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 95,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Alessandro-Garbisi.webp"
+    },
+    {
+      "id": 1624,
       "name": "Garbisi",
       "lastname": "Paolo",
       "nationality_id": 81,
@@ -14842,7 +15573,24 @@
       "photo": "images/rugby/Players/ITA/Paolo-Garbisi.webp"
     },
     {
-      "id": 1615,
+      "id": 1625,
+      "name": "Geldenhuys",
+      "lastname": "Quintin",
+      "nationality_id": 81,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 96,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Quintin-Geldenhuys.webp"
+    },
+    {
+      "id": 1626,
       "name": "Ghiraldini",
       "lastname": "Leonardo",
       "nationality_id": 81,
@@ -14859,7 +15607,7 @@
       "photo": "images/rugby/Players/ITA/Leonardo-Ghiraldini.webp"
     },
     {
-      "id": 1616,
+      "id": 1627,
       "name": "Giovanelli",
       "lastname": "Massimo",
       "nationality_id": 81,
@@ -14876,7 +15624,24 @@
       "photo": "images/rugby/Players/ITA/Massimo-Giovanelli.webp"
     },
     {
-      "id": 1617,
+      "id": 1628,
+      "name": "Gori",
+      "lastname": "Edoardo",
+      "nationality_id": 81,
+      "position1_id": 5,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 95,
+      "team2_id": 24,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Edoardo-Gori.webp"
+    },
+    {
+      "id": 1629,
       "name": "Ioane",
       "lastname": "Monty",
       "nationality_id": 81,
@@ -14893,7 +15658,7 @@
       "photo": "images/rugby/Players/ITA/Monty-Ioane.webp"
     },
     {
-      "id": 1618,
+      "id": 1630,
       "name": "Lamaro",
       "lastname": "Michele",
       "nationality_id": 81,
@@ -14910,7 +15675,7 @@
       "photo": "images/rugby/Players/ITA/Michele-Lamaro.webp"
     },
     {
-      "id": 1619,
+      "id": 1631,
       "name": "Lo Cicero",
       "lastname": "Andrea",
       "nationality_id": 81,
@@ -14927,7 +15692,24 @@
       "photo": "images/rugby/Players/ITA/Andrea-Lo-Cicero.webp"
     },
     {
-      "id": 1620,
+      "id": 1632,
+      "name": "Lovotti",
+      "lastname": "Andrea",
+      "nationality_id": 81,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 97,
+      "team2_id": 96,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Andrea-Lovotti.webp"
+    },
+    {
+      "id": 1633,
       "name": "Masi",
       "lastname": "Andrea",
       "nationality_id": 81,
@@ -14944,7 +15726,7 @@
       "photo": "images/rugby/Players/ITA/Andrea-Masi.webp"
     },
     {
-      "id": 1621,
+      "id": 1634,
       "name": "McLean",
       "lastname": "Luke",
       "nationality_id": 81,
@@ -14961,7 +15743,7 @@
       "photo": "images/rugby/Players/ITA/Luke-McLean.webp"
     },
     {
-      "id": 1622,
+      "id": 1635,
       "name": "Menoncello",
       "lastname": "Tommaso",
       "nationality_id": 81,
@@ -14978,7 +15760,24 @@
       "photo": "images/rugby/Players/ITA/Tommaso-Menoncello.webp"
     },
     {
-      "id": 1623,
+      "id": 1636,
+      "name": "Morisi",
+      "lastname": "Luca",
+      "nationality_id": 81,
+      "position1_id": 7,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 95,
+      "team2_id": 76,
+      "team3_id": 96,
+      "actual_team_id": 96,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Luca-Morisi.webp"
+    },
+    {
+      "id": 1637,
       "name": "Negri",
       "lastname": "Sebastian",
       "nationality_id": 81,
@@ -14995,7 +15794,24 @@
       "photo": "images/rugby/Players/ITA/Sebastian-Negri.webp"
     },
     {
-      "id": 1624,
+      "id": 1638,
+      "name": "Nicotera",
+      "lastname": "Giacomo",
+      "nationality_id": 81,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 95,
+      "team2_id": 4,
+      "team3_id": null,
+      "actual_team_id": 4,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Giacomo-Nicotera.webp"
+    },
+    {
+      "id": 1639,
       "name": "Ongaro",
       "lastname": "Fabio",
       "nationality_id": 81,
@@ -15012,7 +15828,75 @@
       "photo": "images/rugby/Players/ITA/Fabio-Ongaro.webp"
     },
     {
-      "id": 1625,
+      "id": 1640,
+      "name": "Orquera",
+      "lastname": "Luciano",
+      "nationality_id": 81,
+      "position1_id": 6,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 17,
+      "team2_id": 96,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Luciano-Orquera.webp"
+    },
+    {
+      "id": 1641,
+      "name": "Padovani",
+      "lastname": "Edoardo",
+      "nationality_id": 81,
+      "position1_id": 9,
+      "position2_id": 6,
+      "sport_id": 1,
+      "team1_id": 96,
+      "team2_id": 95,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Edoardo-Padovani.webp"
+    },
+    {
+      "id": 1642,
+      "name": "Page-Relo",
+      "lastname": "Martin",
+      "nationality_id": 81,
+      "position1_id": 5,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 1,
+      "team2_id": 3,
+      "team3_id": 7,
+      "actual_team_id": 7,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Martin-Page-Relo.webp"
+    },
+    {
+      "id": 1643,
+      "name": "Palazzani",
+      "lastname": "Guglielmo",
+      "nationality_id": 81,
+      "position1_id": 5,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 96,
+      "team2_id": 97,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Guglielmo-Palazzani.webp"
+    },
+    {
+      "id": 1644,
       "name": "Parisse",
       "lastname": "Sergio",
       "nationality_id": 81,
@@ -15029,7 +15913,7 @@
       "photo": "images/rugby/Players/ITA/Sergio-Parisse.webp"
     },
     {
-      "id": 1626,
+      "id": 1645,
       "name": "Perugini",
       "lastname": "Salvatore",
       "nationality_id": 81,
@@ -15046,7 +15930,7 @@
       "photo": "images/rugby/Players/ITA/Salvatore-Perugini.webp"
     },
     {
-      "id": 1627,
+      "id": 1646,
       "name": "Ruzza",
       "lastname": "Federico",
       "nationality_id": 81,
@@ -15063,7 +15947,41 @@
       "photo": "images/rugby/Players/ITA/Federico-Ruzza.webp"
     },
     {
-      "id": 1628,
+      "id": 1647,
+      "name": "Spagnolo",
+      "lastname": "Mirco",
+      "nationality_id": 81,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 98,
+      "team2_id": 95,
+      "team3_id": null,
+      "actual_team_id": 95,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Mirco-Spagnolo.webp"
+    },
+    {
+      "id": 1648,
+      "name": "Steyn",
+      "lastname": "Braam",
+      "nationality_id": 81,
+      "position1_id": 4,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 97,
+      "team2_id": 95,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Braam-Steyn.webp"
+    },
+    {
+      "id": 1649,
       "name": "Stoica",
       "lastname": "Alessandro",
       "nationality_id": 81,
@@ -15080,7 +15998,7 @@
       "photo": "images/rugby/Players/ITA/Alessandro-Stoica.webp"
     },
     {
-      "id": 1629,
+      "id": 1650,
       "name": "Troncon",
       "lastname": "Alessandro",
       "nationality_id": 81,
@@ -15097,7 +16015,7 @@
       "photo": "images/rugby/Players/ITA/Alessandro-Troncon.webp"
     },
     {
-      "id": 1630,
+      "id": 1651,
       "name": "Vaccari",
       "lastname": "Paolo",
       "nationality_id": 81,
@@ -15114,7 +16032,58 @@
       "photo": "images/rugby/Players/ITA/Paolo-Vaccari.webp"
     },
     {
-      "id": 1631,
+      "id": 1652,
+      "name": "Varney",
+      "lastname": "Stephen",
+      "nationality_id": 81,
+      "position1_id": 5,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 73,
+      "team2_id": 12,
+      "team3_id": 72,
+      "actual_team_id": 72,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Stephen-Varney.webp"
+    },
+    {
+      "id": 1653,
+      "name": "Venditti",
+      "lastname": "Giovanbattista",
+      "nationality_id": 81,
+      "position1_id": 8,
+      "position2_id": 7,
+      "sport_id": 1,
+      "team1_id": 96,
+      "team2_id": 78,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": false,
+      "photo": "images/rugby/Players/ITA/Giovanbattista-Venditti.webp"
+    },
+    {
+      "id": 1654,
+      "name": "Vintcent",
+      "lastname": "Ross",
+      "nationality_id": 81,
+      "position1_id": 4,
+      "position2_id": 30,
+      "sport_id": 1,
+      "team1_id": 72,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 72,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Ross-Vintcent.webp"
+    },
+    {
+      "id": 1655,
       "name": "Zanni",
       "lastname": "Alessandro",
       "nationality_id": 81,
@@ -15129,6 +16098,23 @@
       "flag": "images/flags/ITA.png",
       "active": false,
       "photo": "images/rugby/Players/ITA/Alessandro-Zanni.webp"
+    },
+    {
+      "id": 1656,
+      "name": "Zuliani",
+      "lastname": "Manuel",
+      "nationality_id": 81,
+      "position1_id": 4,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 95,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 95,
+      "legendary_player": null,
+      "flag": "images/flags/ITA.png",
+      "active": true,
+      "photo": "images/rugby/Players/ITA/Manuel-Zuliani.webp"
     },
     {
       "id": 1700,
@@ -16288,6 +17274,23 @@
     },
     {
       "id": 1804,
+      "name": "Canakaivata",
+      "lastname": "Elia",
+      "nationality_id": 57,
+      "position1_id": 4,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 39,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 39,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Elia-Canakaivata.webp"
+    },
+    {
+      "id": 1805,
       "name": "Caucaunibuca",
       "lastname": "Rupeni",
       "nationality_id": 57,
@@ -16304,7 +17307,7 @@
       "photo": "images/rugby/Players/FJI/Rupeni-Caucaunibuca.webp"
     },
     {
-      "id": 1805,
+      "id": 1806,
       "name": "Delasau",
       "lastname": "Vilimoni",
       "nationality_id": 57,
@@ -16321,7 +17324,7 @@
       "photo": "images/rugby/Players/FJI/Vilimoni-Delasau.webp"
     },
     {
-      "id": 1806,
+      "id": 1807,
       "name": "Goneva",
       "lastname": "Vereniki",
       "nationality_id": 57,
@@ -16338,7 +17341,7 @@
       "photo": "images/rugby/Players/FJI/Vereniki-Goneva.webp"
     },
     {
-      "id": 1807,
+      "id": 1808,
       "name": "Habosi",
       "lastname": "Vinaya",
       "nationality_id": 57,
@@ -16355,7 +17358,24 @@
       "photo": "images/rugby/Players/FJI/Vinaya-Habosi.webp"
     },
     {
-      "id": 1808,
+      "id": 1809,
+      "name": "Ikanivere",
+      "lastname": "Tevita",
+      "nationality_id": 57,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 39,
+      "team2_id": 104,
+      "team3_id": null,
+      "actual_team_id": 104,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Tevita-Ikanivere.webp"
+    },
+    {
+      "id": 1810,
       "name": "Koto",
       "lastname": "Sunia",
       "nationality_id": 57,
@@ -16372,7 +17392,7 @@
       "photo": "images/rugby/Players/FJI/Sunia-Koto.webp"
     },
     {
-      "id": 1809,
+      "id": 1811,
       "name": "Koyamaibole",
       "lastname": "Sisa",
       "nationality_id": 57,
@@ -16389,7 +17409,7 @@
       "photo": "images/rugby/Players/FJI/Sisa-Koyamaibole.webp"
     },
     {
-      "id": 1810,
+      "id": 1812,
       "name": "Kuruvoli",
       "lastname": "Simione",
       "nationality_id": 57,
@@ -16406,7 +17426,7 @@
       "photo": "images/rugby/Players/FJI/Simione-Kuruvoli.webp"
     },
     {
-      "id": 1811,
+      "id": 1813,
       "name": "Little",
       "lastname": "Nicky",
       "nationality_id": 57,
@@ -16423,7 +17443,7 @@
       "photo": "images/rugby/Players/FJI/Nicky-Little.webp"
     },
     {
-      "id": 1812,
+      "id": 1814,
       "name": "Lomani",
       "lastname": "Frank",
       "nationality_id": 57,
@@ -16440,7 +17460,7 @@
       "photo": "images/rugby/Players/FJI/Frank-Lomani.webp"
     },
     {
-      "id": 1813,
+      "id": 1815,
       "name": "Lovobalavu",
       "lastname": "Gabirieli",
       "nationality_id": 57,
@@ -16457,7 +17477,7 @@
       "photo": "images/rugby/Players/FJI/Gabirieli-Lovobalavu.webp"
     },
     {
-      "id": 1814,
+      "id": 1816,
       "name": "Ma'afu",
       "lastname": "Campese",
       "nationality_id": 57,
@@ -16474,7 +17494,7 @@
       "photo": "images/rugby/Players/FJI/Campese-Ma-afu.webp"
     },
     {
-      "id": 1815,
+      "id": 1817,
       "name": "Manu",
       "lastname": "Deacon",
       "nationality_id": 57,
@@ -16491,7 +17511,7 @@
       "photo": "images/rugby/Players/FJI/Deacon-Manu.webp"
     },
     {
-      "id": 1816,
+      "id": 1818,
       "name": "Maqala",
       "lastname": "Sireli",
       "nationality_id": 57,
@@ -16508,7 +17528,7 @@
       "photo": "images/rugby/Players/FJI/Sireli-Maqala.webp"
     },
     {
-      "id": 1817,
+      "id": 1819,
       "name": "Mata",
       "lastname": "Viliame",
       "nationality_id": 57,
@@ -16525,7 +17545,7 @@
       "photo": "images/rugby/Players/FJI/Viliame-Mata.webp"
     },
     {
-      "id": 1818,
+      "id": 1820,
       "name": "Matavesi",
       "lastname": "Samuel",
       "nationality_id": 57,
@@ -16542,12 +17562,12 @@
       "photo": "images/rugby/Players/FJI/Samuel-Matavesi.webp"
     },
     {
-      "id": 1819,
+      "id": 1821,
       "name": "Matawalu",
       "lastname": "Nikola",
       "nationality_id": 57,
       "position1_id": 5,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 91,
       "team2_id": 70,
@@ -16559,7 +17579,41 @@
       "photo": "images/rugby/Players/FJI/Nikola-Matawalu.webp"
     },
     {
-      "id": 1820,
+      "id": 1822,
+      "name": "Mayanavanua",
+      "lastname": "Temo",
+      "nationality_id": 57,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 3,
+      "team2_id": 79,
+      "team3_id": 39,
+      "actual_team_id": 39,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Temo-Mayanavanua.webp"
+    },
+    {
+      "id": 1823,
+      "name": "Mawi",
+      "lastname": "Eroni",
+      "nationality_id": 57,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 39,
+      "team2_id": 81,
+      "team3_id": null,
+      "actual_team_id": 81,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Eroni-Mawi.webp"
+    },
+    {
+      "id": 1824,
       "name": "Muntz",
       "lastname": "Caleb",
       "nationality_id": 57,
@@ -16576,7 +17630,24 @@
       "photo": "images/rugby/Players/FJI/Caleb-Muntz.webp"
     },
     {
-      "id": 1821,
+      "id": 1825,
+      "name": "Murimurivalu",
+      "lastname": "Kini",
+      "nationality_id": 57,
+      "position1_id": 8,
+      "position2_id": 9,
+      "sport_id": 1,
+      "team1_id": 9,
+      "team2_id": 6,
+      "team3_id": 75,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": false,
+      "photo": "images/rugby/Players/FJI/Kini-Murimurivalu.webp"
+    },
+    {
+      "id": 1826,
       "name": "Nadolo",
       "lastname": "Nemani",
       "nationality_id": 57,
@@ -16593,7 +17664,7 @@
       "photo": "images/rugby/Players/FJI/Nemani-Nadolo.webp"
     },
     {
-      "id": 1822,
+      "id": 1827,
       "name": "Nagusa",
       "lastname": "Timoci",
       "nationality_id": 57,
@@ -16610,7 +17681,7 @@
       "photo": "images/rugby/Players/FJI/Timoci-Nagusa.webp"
     },
     {
-      "id": 1823,
+      "id": 1828,
       "name": "Nasilasila",
       "lastname": "Isoa",
       "nationality_id": 57,
@@ -16627,7 +17698,7 @@
       "photo": "images/rugby/Players/FJI/Isoa-Nasilasila.webp"
     },
     {
-      "id": 1824,
+      "id": 1829,
       "name": "Nakarawa",
       "lastname": "Leone",
       "nationality_id": 57,
@@ -16644,7 +17715,7 @@
       "photo": "images/rugby/Players/FJI/Leone-Nakarawa.webp"
     },
     {
-      "id": 1825,
+      "id": 1830,
       "name": "Nalaga",
       "lastname": "Napolioni",
       "nationality_id": 57,
@@ -16661,7 +17732,7 @@
       "photo": "images/rugby/Players/FJI/Napolioni-Nalaga.webp"
     },
     {
-      "id": 1826,
+      "id": 1831,
       "name": "Nayacalevu",
       "lastname": "Waisea",
       "nationality_id": 57,
@@ -16678,7 +17749,7 @@
       "photo": "images/rugby/Players/FJI/Waisea-Nayacalevu.webp"
     },
     {
-      "id": 1827,
+      "id": 1832,
       "name": "Qera",
       "lastname": "Akapusi",
       "nationality_id": 57,
@@ -16695,7 +17766,7 @@
       "photo": "images/rugby/Players/FJI/Akapusi-Qera.webp"
     },
     {
-      "id": 1828,
+      "id": 1833,
       "name": "Rabeni",
       "lastname": "Seru",
       "nationality_id": 57,
@@ -16712,7 +17783,7 @@
       "photo": "images/rugby/Players/FJI/Seru-Rabeni.webp"
     },
     {
-      "id": 1829,
+      "id": 1834,
       "name": "Radradra",
       "lastname": "Semi",
       "nationality_id": 57,
@@ -16729,7 +17800,7 @@
       "photo": "images/rugby/Players/FJI/Semi-Radradra.webp"
     },
     {
-      "id": 1830,
+      "id": 1835,
       "name": "Ratuniyarama",
       "lastname": "Api",
       "nationality_id": 57,
@@ -16746,7 +17817,7 @@
       "photo": "images/rugby/Players/FJI/Api-Ratuniyarama.webp"
     },
     {
-      "id": 1831,
+      "id": 1836,
       "name": "Rauluni",
       "lastname": "Jacob",
       "nationality_id": 57,
@@ -16763,7 +17834,7 @@
       "photo": "images/rugby/Players/FJI/Jacob-Rauluni.webp"
     },
     {
-      "id": 1832,
+      "id": 1837,
       "name": "Rauluni",
       "lastname": "Mosese",
       "nationality_id": 57,
@@ -16780,7 +17851,7 @@
       "photo": "images/rugby/Players/FJI/Mosese-Rauluni.webp"
     },
     {
-      "id": 1833,
+      "id": 1838,
       "name": "Ravai",
       "lastname": "Peni",
       "nationality_id": 57,
@@ -16797,7 +17868,7 @@
       "photo": "images/rugby/Players/FJI/Peni-Ravai.webp"
     },
     {
-      "id": 1834,
+      "id": 1839,
       "name": "Ravouvou",
       "lastname": "Kalaveti",
       "nationality_id": 57,
@@ -16814,7 +17885,24 @@
       "photo": "images/rugby/Players/FJI/Kalaveti-Ravouvou.webp"
     },
     {
-      "id": 1835,
+      "id": 1840,
+      "name": "Ravutaumada",
+      "lastname": "Selestino",
+      "nationality_id": 57,
+      "position1_id": 8,
+      "position2_id": 9,
+      "sport_id": 1,
+      "team1_id": 39,
+      "team2_id": 5,
+      "team3_id": null,
+      "actual_team_id": 5,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Selestino-Ravutaumada.webp"
+    },
+    {
+      "id": 1841,
       "name": "Rawaqa",
       "lastname": "Ifereimi",
       "nationality_id": 57,
@@ -16831,7 +17919,7 @@
       "photo": "images/rugby/Players/FJI/Ifereimi-Rawaqa.webp"
     },
     {
-      "id": 1836,
+      "id": 1842,
       "name": "Saulo",
       "lastname": "Manasa",
       "nationality_id": 57,
@@ -16848,7 +17936,7 @@
       "photo": "images/rugby/Players/FJI/Manasa-Saulo.webp"
     },
     {
-      "id": 1837,
+      "id": 1843,
       "name": "Serevi",
       "lastname": "Waisale",
       "nationality_id": 57,
@@ -16865,7 +17953,7 @@
       "photo": "images/rugby/Players/FJI/Waisale-Serevi.webp"
     },
     {
-      "id": 1838,
+      "id": 1844,
       "name": "Smith",
       "lastname": "Greg",
       "nationality_id": 57,
@@ -16882,7 +17970,7 @@
       "photo": "images/rugby/Players/FJI/Greg-Smith.webp"
     },
     {
-      "id": 1839,
+      "id": 1845,
       "name": "Tagi",
       "lastname": "Luke",
       "nationality_id": 57,
@@ -16899,7 +17987,7 @@
       "photo": "images/rugby/Players/FJI/Luke-Tagi.webp"
     },
     {
-      "id": 1840,
+      "id": 1846,
       "name": "Tagitagivalu",
       "lastname": "Lekima",
       "nationality_id": 57,
@@ -16916,7 +18004,41 @@
       "photo": "images/rugby/Players/FJI/Lekima-Tagitagivalu.webp"
     },
     {
-      "id": 1841,
+      "id": 1847,
+      "name": "Tawake",
+      "lastname": "Samu",
+      "nationality_id": 57,
+      "position1_id": 1,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 39,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 39,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Samu-Tawake.webp"
+    },
+    {
+      "id": 1848,
+      "name": "Tuapati",
+      "lastname": "Talemaitoga",
+      "nationality_id": 57,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 21,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": false,
+      "photo": "images/rugby/Players/FJI/Talemaitoga-Tuapati.webp"
+    },
+    {
+      "id": 1849,
       "name": "Tuisova",
       "lastname": "Josua",
       "nationality_id": 57,
@@ -16933,7 +18055,7 @@
       "photo": "images/rugby/Players/FJI/Josua-Tuisova.webp"
     },
     {
-      "id": 1842,
+      "id": 1850,
       "name": "Tuisue",
       "lastname": "Albert",
       "nationality_id": 57,
@@ -16950,7 +18072,7 @@
       "photo": "images/rugby/Players/FJI/Albert-Tuisue.webp"
     },
     {
-      "id": 1843,
+      "id": 1851,
       "name": "Veitayaki",
       "lastname": "Joeli",
       "nationality_id": 57,
@@ -16967,7 +18089,41 @@
       "photo": "images/rugby/Players/FJI/Joeli-Veitayaki.webp"
     },
     {
-      "id": 1844,
+      "id": 1852,
+      "name": "Vocevoce",
+      "lastname": "Mesake",
+      "nationality_id": 57,
+      "position1_id": 3,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 39,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 39,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Mesake-Vocevoce.webp"
+    },
+    {
+      "id": 1853,
+      "name": "Volavola",
+      "lastname": "Ben",
+      "nationality_id": 57,
+      "position1_id": 6,
+      "position2_id": 9,
+      "sport_id": 1,
+      "team1_id": 5,
+      "team2_id": 11,
+      "team3_id": 75,
+      "actual_team_id": 75,
+      "legendary_player": null,
+      "flag": "images/flags/FJI.png",
+      "active": true,
+      "photo": "images/rugby/Players/FJI/Ben-Volavola.webp"
+    },
+    {
+      "id": 1854,
       "name": "Wainiqolo",
       "lastname": "Jiuta",
       "nationality_id": 57,
@@ -16984,7 +18140,7 @@
       "photo": "images/rugby/Players/FJI/Jiuta-Wainiqolo.webp"
     },
     {
-      "id": 1845,
+      "id": 1855,
       "name": "Waqaniburotu",
       "lastname": "Dominiko",
       "nationality_id": 57,
@@ -17001,7 +18157,7 @@
       "photo": "images/rugby/Players/FJI/Dominiko-Waqaniburotu.webp"
     },
     {
-      "id": 1846,
+      "id": 1856,
       "name": "Yato",
       "lastname": "Peceli",
       "nationality_id": 57,
