@@ -307,35 +307,35 @@ export default function DreamTeamBuilder() {
   return (
     <DndProvider backend={HTML5Backend}>
       {/* Ajout d'un header SEO-friendly */}
-      <header className="bg-[#191713] text-white py-8 mb-6">
+      <header className="bg-[#191713] text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-2xl md:text-4xl font-bold mb-4">
-            Create your legend team
+          <h1 className="text-xl md:text-2xl font-bold mb-4 font-[family-name:var(--font-title)]">
+            Become the best coach in the world !
           </h1>
-          <p className="text-lg md:text-2xl mb-6">
-            More than 1000 professional players from rugby, basketball, football and more !
+          <p className="text-lg md:text-xl mb-6 font-[family-name:var(--font-title)]">
+            Create your legend team with more than 1000 professional players from rugby, basketball and more to come !
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span className="bg-black/20 px-3 py-1 rounded-full">🏉 Rugby</span>
-            <span className="bg-black/20 px-3 py-1 rounded-full">🏀 Basketball</span>
-            {/* <span className="bg-black/20 px-3 py-1 rounded-full">⚽ Football</span> */}
-            {/* <span className="bg-black/20 px-3 py-1 rounded-full">🏒 Ice Hockey</span> */}
-            {/* <span className="bg-black/20 px-3 py-1 rounded-full">🤾 Handball</span> */}
+            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🏉 Rugby</span>
+            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🏀 Basketball</span>
+            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">⚽ Football (incoming)</span>
+            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🏒 Ice Hockey (incoming)</span>
+            {/* <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🤾 Handball</span> */}
           </div>
         </div>
       </header>
 
       <div className="flex p-6 min-h-screen bg-gradient-to-br from-gray-600 to-gray-300">
         {/* Sidebar with the list of players */}
-        <div className="w-1/3 p-6 bg-slate-200 border-2 border-white rounded-xl shadow-lg mr-6">
+        <div className="w-1/3 p-4 bg-slate-200 border-2 border-white rounded-xl shadow-lg mr-6">
           <div className="flex flex-col gap-4">
             <div className="flex justify-between items-center border-b pb-3 border-black">
-              <h2 className="text-2xl font-bold text-gray-800">
+              <h2 className="text-2xl font-bold text-gray-800 font-[family-name:var(--font-title)]">
                 Available Players
               </h2>
               <button
               onClick={resetSelectedFilters}
-              className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
+              className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer font-[family-name:var(--font-title)]"
             >
               ✖️​ Reset Filters
             </button>
@@ -374,7 +374,7 @@ export default function DreamTeamBuilder() {
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-3 py-1 rounded bg-gray-500 text-white disabled:opacity-50 cursor-pointer"
+                className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer font-[family-name:var(--font-title)]"
               >
                 Previous
               </button>
@@ -398,14 +398,14 @@ export default function DreamTeamBuilder() {
               <button
                 onClick={() => setCurrentPage((p) => Math.min(Math.ceil(playersToShow.length / playersPerPage), p + 1))}
                 disabled={currentPage === Math.ceil(playersToShow.length / playersPerPage)}
-                className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer"
+                className="px-3 py-1 rounded bg-gray-800 text-white disabled:opacity-50 cursor-pointer font-[family-name:var(--font-title)]"
               >
                 Next
               </button>
             </div>
             <div className="grid grid-cols-3 gap-4">
               {loading ? (
-                <div className="text-center py-4 col-span-3 text-black">
+                <div className="text-center py-4 col-span-3 text-black font-[family-name:var(--font-title)]">
                   Loading players... 💿​ <br/>
                   Players are getting out of the locker room in 3, 2, 1... <br/>
                   Oh wait, there are some players who are not ready yet... <br/>
@@ -413,7 +413,7 @@ export default function DreamTeamBuilder() {
                   Here they come now ! 🎺​📣​              
                 </div>
               ) : playersToShow.length === 0 && hasActiveFilters ? (
-                <div className="text-center py-4 col-span-3 text-red-600 font-semibold">
+                <div className="text-center py-4 col-span-3 text-red-600 font-semibold font-[family-name:var(--font-title)]">
                   No players found with these filters<br/>
                   Please try again with different filters
                 </div>
@@ -446,19 +446,19 @@ export default function DreamTeamBuilder() {
         {/* Field */}
         <div className="flex-1 p-4 bg-white rounded-xl shadow-lg">
           <div className="flex justify-between items-center mb-4 text-gray-800 border-b pb-3">
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold font-[family-name:var(--font-title)]">
               My Legend Team for {selectedSport}
             </h2>
             <div className="flex gap-2">
               <button
                 onClick={saveTeam}
-                className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors cursor-pointer"
+                className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors cursor-pointer font-[family-name:var(--font-title)]"
               >
                 💾 Save Team
               </button>
               <button
                 onClick={handleLoadTeam}
-                className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer relative"
+                className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer relative font-[family-name:var(--font-title)]"
               >
                 📁​ Load Team
                 {savedTeamsCount > 0 && (
@@ -469,7 +469,7 @@ export default function DreamTeamBuilder() {
               </button>
               <button
                 onClick={resetTeam}
-                className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer"
+                className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors cursor-pointer font-[family-name:var(--font-title)]"
               >
                 ✖️​ Reset Team
               </button>
@@ -539,27 +539,27 @@ export default function DreamTeamBuilder() {
       {/* Ajout d'une section de contenu SEO */}
       <section className="bg-[#191713] py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">
+          <h2 className="text-3xl font-bold text-center mb-8 font-[family-name:var(--font-title)]">
             Why choose My Legend Team ?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-4xl mb-4">🏉</div>
-              <h3 className="text-xl font-semibold mb-2">Intuitive interface</h3>
+              <h3 className="text-xl font-semibold mb-2 font-[family-name:var(--font-title)]">Intuitive interface</h3>
               <p className="text-white">
                 Drag and drop your players to create your formation in a few clicks
               </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">🏀</div>
-              <h3 className="text-xl font-semibold mb-2">Legendary players</h3>
+              <h3 className="text-xl font-semibold mb-2 font-[family-name:var(--font-title)]">Legendary players</h3>
               <p className="text-white">
                 Complete database with the greatest players in history
               </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">💾</div>
-              <h3 className="text-xl font-semibold mb-2">Easy to save</h3>
+              <h3 className="text-xl font-semibold mb-2 font-[family-name:var(--font-title)]">Easy to save</h3>
               <p className="text-white">
                 Save and share your favorite teams
               </p>

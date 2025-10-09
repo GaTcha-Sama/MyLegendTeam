@@ -39,25 +39,25 @@ const Register = () => {
       }}
     >
       <form onSubmit={onSubmit} className="bg-white p-6 rounded shadow-md w-full max-w-sm">
-        <h1 className="text-2xl mb-4 font-bold text-black flex justify-center">Register</h1>
+        <h1 className="text-2xl mb-4 font-bold text-black flex justify-center font-[family-name:var(--font-title)]">Register</h1>
         {err && <div className="mb-3 text-red-600">{err}</div>}
         <label className="block mb-2">
-          <span className="text-sm text-black">Email address</span>
+          <span className="text-sm text-black font-[family-name:var(--font-title)]">Email address</span>
           <input type="email" required value={email} onChange={e=>setEmail(e.target.value)}
                  className="w-full border p-2 rounded text-black" />
         </label>
         <label className="block mb-2">
-          <span className="text-sm text-black">Username</span>
+          <span className="text-sm text-black font-[family-name:var(--font-title)]">Username</span>
           <input type="text" required value={username} onChange={e=>setUsername(e.target.value)}
                  className="w-full border p-2 rounded text-black" />
         </label>
         <label className="block mb-4">
-          <span className="text-sm text-black">Password</span>
+          <span className="text-sm text-black font-[family-name:var(--font-title)]">Password</span>
           <input type="password" required value={password} onChange={e=>setPassword(e.target.value)}
                  className="w-full border p-2 rounded text-black" />
         </label>
-        <button disabled={loading} className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-60">
-          {loading ? 'Inscription...' : "Register"}
+        <button disabled={loading} className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-60 font-[family-name:var(--font-title)]">
+          {loading ? 'Inscription...' : "Let's go !"}
         </button>
       </form>
     </div>
