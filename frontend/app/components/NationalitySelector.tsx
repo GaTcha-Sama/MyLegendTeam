@@ -21,7 +21,7 @@ export const NationalitySelector = ({ selectedNationality, onSelectNationality, 
         aria-label="Choose nationality"
         value={selectedNationality || ""}
         onChange={(e) => handleNationalityChange(e.target.value)}
-        className="px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+        className="px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent font-[family-name:var(--font-title)]"
       >
         <option value="">All nationalities</option>
         
