@@ -55,19 +55,9 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
   const teamLogoPath3 = getTeamLogoPath(player.team3_logo);
   const actualTeamLogoPath = getTeamLogoPath(player.actual_team_logo);
 
-  // console.log('Player:', player.name, player.lastname);
-  // console.log('team1_logo original:', player.team1_logo);
-  // console.log('teamLogoPath1 traité:', teamLogoPath1);
-  // console.log('team2_logo original:', player.team2_logo);
-  // console.log('teamLogoPath2 traité:', teamLogoPath2);
-  // console.log('team3_logo original:', player.team3_logo);
-  // console.log('teamLogoPath3 traité:', teamLogoPath3);
-
-  // Déterminer si le joueur a la position sélectionnée en position1 ou position2
   const isPrimaryPosition = selectedPosition && player.position1 === selectedPosition;
   const isSecondaryPosition = selectedPosition && player.position2 === selectedPosition;
   
-  // Déterminer la classe de style selon la position
   const getPositionStyle = () => {
     if (isPrimaryPosition) {
       return "ring-4 ring-yellow-400 ring-opacity-80 shadow-lg";
