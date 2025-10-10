@@ -5,7 +5,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { PlayerCard } from "./components/PlayerCard";
 import { FormationSlot } from "./components/FormationSlot";
-import { SportSelector } from "./components/SportSelector";
+// import { SportSelector } from "./components/SportSelector";
 import { NationalitySelector } from "./components/NationalitySelector";
 import { TeamSelector } from "./components/TeamSelector";
 import { PositionSelector } from "./components/PositionSelector";
@@ -29,11 +29,11 @@ export default function DreamTeamBuilder() {
   const [selectedSport, setSelectedSport] = useState<Sport>("rugby");
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState("");
-  const [selectedTeam, setSelectedTeam] = useState<string>("");
+  const [selectedTeam, setSelectedTeam] = useState("");
   const [selectedActiveRetiredStared, setSelectedActiveRetiredStared] = useState<number | null | "legendary">(null);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [playersPerPage] = useState(9);
+  const [playersPerPage] = useState(6);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [team, setTeam] = useState<{ [key: string]: PlayerType | null }>({});
   const [savedTeams, setSavedTeams] = useState<SavedTeam[]>([]);
@@ -316,11 +316,28 @@ export default function DreamTeamBuilder() {
             Create your legend team with more than 1000 professional players from rugby, basketball and more to come !
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🏉 Rugby</span>
-            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🏀 Basketball</span>
-            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">⚽ Football (incoming)</span>
-            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🏒 Ice Hockey (incoming)</span>
-            {/* <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)]">🤾 Handball</span> */}
+            <button 
+              onClick={() => setSelectedSport("rugby")}
+              className={`px-4 py-2 rounded-full font-[family-name:var(--font-title)] transition-all cursor-pointer ${
+                selectedSport === "rugby" ? "bg-green-600/80 ring-2 ring-white" : "bg-black/20 hover:bg-black/30"
+              }`}
+            >
+              🏉 Rugby
+            </button>
+            <button 
+              onClick={() => setSelectedSport("basketball")}
+              className={`px-3 py-1 rounded-full font-[family-name:var(--font-title)] transition-all cursor-pointer ${
+                selectedSport === "basketball" ? "bg-orange-600/80 ring-2 ring-white" : "bg-black/20 hover:bg-black/30"
+              }`}
+            >
+              🏀 Basketball
+            </button>
+            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)] opacity-50 cursor-not-allowed">
+              ⚽ Football
+            </span>
+            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)] opacity-50 cursor-not-allowed">
+              🏒 Ice Hockey
+            </span>
           </div>
         </div>
       </header>
@@ -340,33 +357,69 @@ export default function DreamTeamBuilder() {
               ✖️​ Reset Filters
             </button>
             </div>
-            <div className="flex flex-col max-w-full">
-              <div className="flex gap-3 justify-around">
-                <SportSelector selectedSport={selectedSport} onSelectSport={setSelectedSport} players={players} />
-                <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
-                <TeamSelector selectedTeam={selectedTeam} onSelectTeam={setSelectedTeam} players={players} selectedSport={selectedSport} />
-              </div>
-              <div className="flex gap-3 justify-around">
-                <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
-                <ActiveRetiredStaredSelector 
-                  selectedActiveRetiredStared={selectedActiveRetiredStared} 
-                  onSelectActiveRetiredStared={setSelectedActiveRetiredStared} 
-                  players={players} 
-                  selectedSport={selectedSport} 
-                />
-                <FilterPlayers 
-                  key={resetKey}
-                  onFilterChange={setFilteredPlayers}
-                  players={players}
-                  selectedSport={selectedSport}
-                  isPlayerInTeam={isPlayerInTeam}
-                  selectedNationality={selectedNationality}
-                  selectedPosition={selectedPosition}
-                  selectedTeam={selectedTeam}
-                  selectedActiveRetiredStared={selectedActiveRetiredStared} 
-                  enforceLegendaryLimit={enforceLegendaryLimit}
-                  team={team}
-                />
+            <div className="flex flex-col w-full">
+              <div className="flex flex-col w-full">
+                <div className="flex gap-4 items-center">
+                  <div className="w-full sm:w-1/2">
+                    <p className="text-black font-[family-name:var(--font-title)] mb-4">Choose a nationality :</p>
+                  </div>
+                  <div className="w-full sm:w-1/2">
+                    <NationalitySelector selectedNationality={selectedNationality} onSelectNationality={setSelectedNationality} players={players} selectedSport={selectedSport} />
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-center">
+                  <div className="w-full sm:w-1/2">
+                    <p className="text-black font-[family-name:var(--font-title)] mb-4">Choose a team :</p>
+                  </div>
+                  <div className="w-full sm:w-1/2">
+                    <TeamSelector selectedTeam={selectedTeam} onSelectTeam={setSelectedTeam} players={players} selectedSport={selectedSport} />
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-center">
+                  <div className="w-full sm:w-1/2">
+                    <p className="text-black font-[family-name:var(--font-title)] mb-4">Choose a position :</p>
+                  </div>
+                  <div className="w-full sm:w-1/2">
+                    <PositionSelector selectedPosition={selectedPosition} onSelectPosition={setSelectedPosition} players={players} selectedSport={selectedSport} />
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-center">
+                  <div className="w-full sm:w-1/2">
+                    <p className="text-black font-[family-name:var(--font-title)] mb-4">Choose a status :</p>
+                  </div>
+                  <div className="w-full sm:w-1/2">
+                    <ActiveRetiredStaredSelector 
+                      selectedActiveRetiredStared={selectedActiveRetiredStared} 
+                      onSelectActiveRetiredStared={setSelectedActiveRetiredStared} 
+                      players={players} 
+                      selectedSport={selectedSport} 
+                    />
+                  </div>
+                </div>
+                
+                <div className="flex gap-4 items-center">
+                  <div className="w-full sm:w-1/2">
+                    <p className="text-black font-[family-name:var(--font-title)]">Choose a name or firstname :</p>
+                  </div>
+                  <div className="w-full sm:w-1/2">
+                    <FilterPlayers 
+                      key={resetKey}
+                      onFilterChange={setFilteredPlayers}
+                      players={players}
+                      selectedSport={selectedSport}
+                      isPlayerInTeam={isPlayerInTeam}
+                      selectedNationality={selectedNationality}
+                      selectedPosition={selectedPosition}
+                      selectedTeam={selectedTeam}
+                      selectedActiveRetiredStared={selectedActiveRetiredStared} 
+                      enforceLegendaryLimit={enforceLegendaryLimit}
+                      team={team}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             {/* Grid of players */}

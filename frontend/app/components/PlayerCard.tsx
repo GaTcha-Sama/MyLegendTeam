@@ -99,7 +99,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
       )}
 
       <div className="text-sm font-bold mb-1 text-center flex items-center justify-center gap-2">
-        <span>{`${player.lastname} ${player.name}`}</span>
+        <span className="font-[family-name:var(--font-title)]">{`${player.lastname} ${player.name}`}</span>
         {player.legendary_player === 1 && (
           <Image
             src="/images/yellow-star.webp"
@@ -154,7 +154,7 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
 
       <div className="flex flex-col items-center gap-2 w-full">
         {/* Career teams */}
-        <div className="text-xs text-center text-gray-200">Career teams</div>
+        <div className="text-xs text-center text-gray-200 font-[family-name:var(--font-title)]">Career teams</div>
         <div className="flex items-center gap-1 justify-center w-full">
           {player.team1_logo && (
             <div 
