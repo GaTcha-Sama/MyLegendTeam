@@ -4,31 +4,8 @@ import { Player as PlayerType } from "../types/players";
 import { slotSizes } from "../types/slotSizes";
 import { canPlayerBePlacedOnSlot } from "../utils/canPlayerBePlacedOnSlot";
 import { FormationSlotProps } from "../types/formationSlotProps";
-import { Sport } from "../types/sports";
+import { getPortraitPath, getFlagPath, getTeamLogoPath } from "../utils/imageHelpers";
 import Image from "next/image";
-
-const getProcessedImagePath = (fullPath: string, defaultPath: string, errorType: string = "image") => {
-  try {
-    if (!fullPath) return defaultPath;
-    
-    const normalizedPath = fullPath.replace(/\\/g, '/');
-    const cleanPath = normalizedPath.replace(/^public\//, '');
-    const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-    return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
-  } catch (error) {
-    console.error(`Erreur lors du traitement du chemin ${errorType}:`, error);
-    return defaultPath;
-  }
-};
-
-const getPortraitPath = (fullPath: string) => 
-  getProcessedImagePath(fullPath, 'images/portrait-default.webp', "of the player");
-
-const getFlagPath = (fullPath: string) => 
-  getProcessedImagePath(fullPath, 'images/default-flag.webp', "of the flag");
-
-const getTeamLogoPath = (fullPath: string) => 
-  getProcessedImagePath(fullPath, 'images/team-default.webp', "of the team logo");
 
 const getSilhouettePath = (positionId: string, sport: string) => {
   if (sport !== "rugby" && sport !== "basketball") return null;
@@ -77,50 +54,6 @@ const getSilhouettePath = (positionId: string, sport: string) => {
     silhouetteFile = silhouetteBasketballMapping[positionId];
   }
   return silhouetteFile ? `/images/${sport}/silhouettes/${silhouetteFile}` : null;
-};
-
-export const getPlayerPositionsForSlot = (slotId: string, sport: Sport): string[] => {
-  if (sport === "rugby") {
-    if (slotId.startsWith("rugby_substitute")) {
-      return ["Prop", "Hooker", "Lock", "Flanker", "Number 8", "Scrum half", "Fly half", "Wing", "Center", "Full back"];
-    }
-    
-    const slotToPositionMapping: Record<string, string[]> = {
-      "prop1": ["Prop"],
-      "prop2": ["Prop"],
-      "hooker": ["Hooker"],
-      "lock1": ["Lock"],
-      "lock2": ["Lock"],
-      "flanker1": ["Flanker"],
-      "flanker2": ["Flanker"],
-      "number8": ["Number 8"],
-      "scrumhalf": ["Scrum half"],
-      "flyhalf": ["Fly half"],
-      "wing1": ["Wing"],
-      "wing2": ["Wing"],
-      "center1": ["Center"],
-      "center2": ["Center"],
-      "fullback": ["Full back"]
-    };    
-    return slotToPositionMapping[slotId] || [];
-  }
-  
-  if (sport === "basketball") {
-    if (slotId.startsWith("basketball_substitute")) {
-      return ["Point guard", "Shooting guard", "Small forward", "Power forward", "Center"];
-    }
-    
-    const slotToPositionMapping: Record<string, string[]> = {
-      "point": ["Point guard"],
-      "shooting": ["Shooting guard"],
-      "small": ["Small forward"],
-      "power": ["Power forward"],
-      "center": ["Center"]
-    };
-    
-    return slotToPositionMapping[slotId] || [];
-  }  
-  return [];
 };
 
 export const FormationSlot = ({ 

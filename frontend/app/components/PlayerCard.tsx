@@ -2,6 +2,7 @@ import { useDrag } from "react-dnd";
 import { PlayerCardProps } from "../types/playerCardProps";
 import Image from "next/image";
 import { useState } from "react";
+import { getPortraitPath, getFlagPath, getTeamLogoPath } from "../utils/imageHelpers";
 
 export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosition, isDisabled }: PlayerCardProps) => {
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
@@ -24,29 +25,6 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
       isDragging: monitor.isDragging(),
     }),
   });
-
-  const getProcessedImagePath = (fullPath: string, defaultPath: string, errorType: string = "image") => {
-    try {
-      if (!fullPath) return defaultPath;
-
-      const normalizedPath = fullPath.replace(/\\/g, '/');
-      const cleanPath = normalizedPath.replace(/^public\//, '');
-      const webpPath = cleanPath.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-      return webpPath.startsWith('/') ? webpPath.substring(1) : webpPath;
-    } catch (error) {
-      console.error(`Erreur lors du traitement du chemin ${errorType}:`, error);
-      return defaultPath;
-    }
-  };
-  
-  const getPortraitPath = (fullPath: string) => 
-    getProcessedImagePath(fullPath, 'images/portrait-default.webp', "of the player");
-  
-  const getFlagPath = (fullPath: string) => 
-    getProcessedImagePath(fullPath, 'images/default-flag.webp', "of the flag");
-  
-  const getTeamLogoPath = (fullPath: string) => 
-    getProcessedImagePath(fullPath, 'images/team-default.webp', "of the team logo");
 
   const imagePath = getPortraitPath(player.photo);
   const flagPath = getFlagPath(player.flag);
