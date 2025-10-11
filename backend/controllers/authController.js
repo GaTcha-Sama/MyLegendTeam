@@ -50,7 +50,7 @@ exports.login = (req, res) => {
   if (!email || !password) return res.status(400).json({ error: 'Email et mot de passe sont requis' });
 
   User.findByEmail(email, async (err, user) => {
-    if (err) return res.status(500).json({ error: 'Server error' });
+    if (err) return res.status(500).json({ error: 'Erreur serveur' });
     if (!user) return res.status(401).json({ error: 'Identifiants invalides' });
 
     const ok = await bcrypt.compare(password, user.password_hash);
@@ -59,34 +59,4 @@ exports.login = (req, res) => {
     const token = signToken({ id: user.id, email: user.email, username: user.username });
     res.json({ token, user: { id: user.id, email: user.email, username: user.username } });
   });
-};
-
-exports.googleAuth = async (req, res) => {
-  try {
-    const { email, given_name, family_name, sub: googleId } = req.user;
-    
-    User.findByEmail(email, async (err, existingUser) => {
-      if (err) return res.status(500).json({ error: 'Server error' });
-      
-      if (existingUser) {
-        const token = signToken(existingUser);
-        return res.redirect(`${process.env.FRONTEND_URL}/auth/google/callback?token=${token}&username=${existingUser.username}&email=${existingUser.email}`);
-      } else {
-        const username = email.split('@')[0];
-        
-        const randomPassword = Math.random().toString(36).slice(-16);
-        const salt = await bcrypt.genSalt(10);
-        const hash = await bcrypt.hash(randomPassword, salt);
-        
-        User.create(email, hash, username, (createErr, created) => {
-          if (createErr) return res.status(500).json({ error: 'Creation error' });
-          
-          const token = signToken(created);
-          return res.redirect(`${process.env.FRONTEND_URL}?token=${token}&username=${created.username}&email=${created.email}`);
-        });
-      }
-    });
-  } catch (error) {
-    res.status(500).json({ error: 'Google authentication error' });
-  }
 };
