@@ -9,7 +9,6 @@ export const Navbar = () => {
   const [username, setUsername] = useState<string | null>(null);
   const router = useRouter();
   const pathname = usePathname();
-  const isAuthPage = pathname?.startsWith('/login') || pathname?.startsWith('/register');
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -50,13 +49,9 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center relative mt-5">
           <div className="absolute left-0 flex items-center">
-            {isAuthPage ? (
+            <Link href="/" aria-label="Accueil">
               <Image src="/favicon.ico" alt="My Legend Team" width={100} height={100} />
-            ) : (
-              <Link href="/" aria-label="Accueil">
-                <Image src="/favicon.ico" alt="My Legend Team" width={100} height={100} />
-              </Link>
-            )}
+            </Link>
           </div>
           
           <div className="flex-1 flex justify-center">

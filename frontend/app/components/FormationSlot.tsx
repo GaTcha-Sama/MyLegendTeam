@@ -101,8 +101,7 @@ export const getPlayerPositionsForSlot = (slotId: string, sport: Sport): string[
       "center1": ["Center"],
       "center2": ["Center"],
       "fullback": ["Full back"]
-    };
-    
+    };    
     return slotToPositionMapping[slotId] || [];
   }
   
@@ -120,8 +119,7 @@ export const getPlayerPositionsForSlot = (slotId: string, sport: Sport): string[
     };
     
     return slotToPositionMapping[slotId] || [];
-  }
-  
+  }  
   return [];
 };
 
@@ -213,7 +211,7 @@ export const FormationSlot = ({
                 unoptimized
               />
             </div>
-            <span className="font-semibold text-black text-xs text-center mt-1">
+            <span className="font-semibold text-black text-xs text-center mt-1 font-[family-name:var(--font-title)]">
               {position}
             </span>
           </div>
@@ -270,7 +268,7 @@ export const FormationSlot = ({
             {renderTeamLogos()}
           </div>
         </div>
-        <span className="font-semibold text-gray-800 text-xs text-center flex items-center justify-center gap-1">
+        <span className="font-semibold text-gray-800 text-xs text-center flex items-center justify-center gap-1 font-[family-name:var(--font-title)]">
           <span>{`${player.lastname} ${player.name}`}</span>
           {player.legendary_player === 1 && (
             <Image

@@ -3,6 +3,7 @@ import { ActiveRetiredStaredSelectorProps } from "../types/activeRetiredStaredSe
 export const ActiveRetiredStaredSelector: React.FC<ActiveRetiredStaredSelectorProps> = ({
   selectedActiveRetiredStared,
   onSelectActiveRetiredStared,
+  selectedSport,
 }) => {
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
@@ -30,10 +31,10 @@ export const ActiveRetiredStaredSelector: React.FC<ActiveRetiredStaredSelectorPr
       onChange={handleChange}
       className="w-full px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent font-[family-name:var(--font-title)]"
     >
+      <option value="all">All {selectedSport} players</option>
       <option value="active">Active</option>
       <option value="retired">Retired</option>
       <option value="legendary">Only the greatest</option>
-      <option value="all">All players</option>
     </select>
   );
 };
