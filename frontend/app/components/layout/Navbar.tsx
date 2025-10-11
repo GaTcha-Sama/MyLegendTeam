@@ -49,7 +49,6 @@ export const Navbar = () => {
     <div className="bg-[#191713] py-4">
       <div className="container mx-auto px-4">
         <div className="flex items-center relative mt-5">
-          {/* Logo à gauche - positionnement absolu pour le pousser vraiment à gauche */}
           <div className="absolute left-0 flex items-center">
             {isAuthPage ? (
               <Image src="/favicon.ico" alt="My Legend Team" width={100} height={100} />
@@ -60,21 +59,26 @@ export const Navbar = () => {
             )}
           </div>
           
-          {/* Titre parfaitement centré */}
           <div className="flex-1 flex justify-center">
             <h1 className="text-5xl font-bold text-yellow-500 font-[family-name:var(--font-title)]">My Legend Team</h1>
           </div>
           
-          {/* Boutons à droite - positionnement absolu pour les pousser vraiment à droite */}
           <div className="absolute right-0 flex space-x-4 items-center">
             {username ? (
               <>
-                <span className="text-yellow-500 flex items-center gap-2 border-2 border-yellow-500 rounded-3xl px-6 py-3 font-[family-name:var(--font-title)]">
+                <span className="text-yellow-500 flex flex-col items-center gap-1 border-2 border-yellow-500 rounded-3xl px-6 py-3 font-[family-name:var(--font-title)]">
+                <div className="flex items-center gap-2">
                   Welcome <span className="text-blue-500 font-bold">{username}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-blue-500">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-                    </svg>
-                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-blue-500">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                  </svg>
+                </div>
+                {typeof window !== 'undefined' && localStorage.getItem('email') && (
+                  <div className="text-gray-400 text-sm">
+                    {localStorage.getItem('email')}
+                  </div>
+                )}
+              </span>
                 <button onClick={handleLogout} className="bg-yellow-500 gap-2 text-black hover:bg-yellow-700 rounded-3xl px-6 py-3 cursor-pointer flex items-center font-[family-name:var(--font-title)]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />

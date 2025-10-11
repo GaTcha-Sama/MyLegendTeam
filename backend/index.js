@@ -72,3 +72,17 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
+
+// GOOGLE AUTH
+const passport = require('./config/passport');
+
+app.use(passport.initialize());
+
+app.get('/api/auth/google',
+  passport.authenticate('google', { scope: ['profile', 'email'] })
+);
+
+app.get('/api/auth/google/callback',
+  passport.authenticate('google', { session: false }),
+  authController.googleAuth
+);

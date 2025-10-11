@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { registerUser } from '../../lib/api';
+import Link from 'next/link';
+import GoogleAuthButton from '../components/GoogleOAuthButton';
 
 const Register = () => {
   const router = useRouter();
@@ -59,6 +61,10 @@ const Register = () => {
         <button disabled={loading} className="w-full bg-black text-white py-2 rounded cursor-pointer disabled:opacity-60 font-[family-name:var(--font-title)]">
           {loading ? 'Inscription...' : "Let's go !"}
         </button>
+        <p className="text-sm text-black mt-4 flex justify-center font-[family-name:var(--font-title)]">Already have an account? <Link href="/login" className="text-blue-500 hover:text-blue-700 ml-2">Login here</Link></p>
+        <div className="mt-4">
+          <GoogleAuthButton />
+        </div>
       </form>
     </div>
   );

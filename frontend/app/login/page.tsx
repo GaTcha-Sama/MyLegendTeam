@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { loginUser } from '../../lib/api';
 import Link from 'next/link';
+import GoogleAuthButton from '../components/GoogleOAuthButton';
 
 const Login = () => {
   const router = useRouter();
@@ -56,6 +57,9 @@ const Login = () => {
             {loading ? 'Connexion...' : 'Let\'s go !'}
           </button>
           <p className="text-sm text-black mt-4 flex justify-center font-[family-name:var(--font-title)]">Don&apos;t have an account? <Link href="/register" className="text-blue-500 hover:text-blue-700 ml-2">Register here</Link></p>
+          <div className="mt-4">
+            <GoogleAuthButton />
+          </div>
         </form>
       </div>
     </div>
