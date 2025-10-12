@@ -18,8 +18,27 @@ const runQuery = (db, query) => {
     });
 };
 
+// Fonction pour récupérer des données
+const getAllRows = (db, query) => {
+    return new Promise((resolve, reject) => {
+        db.all(query, [], (err, rows) => {
+            if (err) {
+                console.error('Erreur de récupération:', err);
+                reject(err);
+            } else {
+                resolve(rows);
+            }
+        });
+    });
+};
+
 // Fonction pour insérer les données
 const insertData = async (db, tableName, data, columns) => {
+    if (!data || data.length === 0) {
+        console.log(`Aucune donnée à insérer dans ${tableName}`);
+        return;
+    }
+
     const placeholders = columns.map(() => '?').join(',');
     const stmt = db.prepare(`
         INSERT INTO ${tableName} (${columns.join(',')})
@@ -48,10 +67,55 @@ const insertData = async (db, tableName, data, columns) => {
     });
 };
 
+// Fonction pour sauvegarder les users existants
+const backupUsers = async () => {
+    if (!fs.existsSync(dbPath)) {
+        console.log('Aucune base de données existante, pas de users à sauvegarder');
+        return [];
+    }
+
+    return new Promise((resolve, reject) => {
+        const db = new sqlite3.Database(dbPath, async (err) => {
+            if (err) {
+                console.error('Erreur d\'ouverture de la base de données:', err);
+                resolve([]); // Continue même si erreur
+                return;
+            }
+
+            try {
+                // Vérifier si la table users existe
+                const tableExists = await getAllRows(db, 
+                    "SELECT name FROM sqlite_master WHERE type='table' AND name='users'"
+                );
+
+                if (tableExists.length === 0) {
+                    console.log('Table users inexistante, pas de sauvegarde nécessaire');
+                    db.close();
+                    resolve([]);
+                    return;
+                }
+
+                const users = await getAllRows(db, 'SELECT * FROM users');
+                console.log(`${users.length} user(s) sauvegardé(s)`);
+                db.close();
+                resolve(users);
+            } catch (error) {
+                console.error('Erreur lors de la sauvegarde des users:', error);
+                db.close();
+                resolve([]); // Continue même si erreur
+            }
+        });
+    });
+};
+
 const initDatabase = async () => {
+    // Sauvegarde les users avant de supprimer la base
+    const savedUsers = await backupUsers();
+
     // Supprime la base de données existante si elle existe
     if (fs.existsSync(dbPath)) {
         fs.unlinkSync(dbPath);
+        console.log('Ancienne base de données supprimée');
     }
 
     return new Promise((resolve, reject) => {
@@ -112,6 +176,18 @@ const initDatabase = async () => {
                     'active'
                 ]);
                 console.log('Joueurs insérés');
+
+                // Restauration des users sauvegardés
+                if (savedUsers.length > 0) {
+                    await insertData(db, 'users', savedUsers, [
+                        'id',
+                        'username',
+                        'password_hash',
+                        'email',
+                        'created_at'
+                    ]);
+                    console.log(`${savedUsers.length} user(s) restauré(s)`);
+                }
 
                 console.log('Base de données initialisée avec succès !');
                 resolve();

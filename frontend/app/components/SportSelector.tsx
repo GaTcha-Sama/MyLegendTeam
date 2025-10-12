@@ -3,7 +3,7 @@ import { SportSelectorProps } from "../types/sportSelectorProps";
 
 export const SportSelector = ({ selectedSport, onSelectSport }: SportSelectorProps) => {
   // Utiliser tous les sports définis dans le type Sport au lieu de se baser sur les joueurs chargés
-  const availableSports: Sport[] = ["rugby", "basketball"];
+  const availableSports: Sport[] = ["rugby", "basketball", "football"];
 
   return (
     <select

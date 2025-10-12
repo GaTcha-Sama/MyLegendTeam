@@ -7,8 +7,8 @@ def get_sport_folder(sport_id):
     """Retourne le nom du dossier du sport basé sur son ID"""
     sports_mapping = {
         1: "rugby",
-        # 3: "football",
         2: "basketball",
+        3: "football",
         # 4: "handball",
         # 5: "hockey"
     }
@@ -51,7 +51,7 @@ def import_players():
     sport_files = {
         1: 'rugby_players.ods',
         2: 'basketball_players.ods',
-        # 3: 'football_players.ods',
+        3: 'football_players.ods',
         # 4: 'handball_players.ods',
         # 5: 'hockey_players.ods'
     }

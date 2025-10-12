@@ -22,9 +22,16 @@ export const basketballPositionSlotMapping: Record<string, string[]> = {
   "Center": ["center", "basketball_substitute5"]
 };
 
+export const footballPositionSlotMapping: Record<string, string[]> = {
+  "Goalkeeper": ["goalkeeper", "football_substitute1"],
+  "Defender": ["defender1", "defender2", "defender3", "defender4", "football_substitute2"],
+  "Midfielder": ["midfielder1", "midfielder2", "midfielder3", "football_substitute3", "football_substitute4"],
+  "Forward": ["forward1", "forward2", "forward3", "football_substitute5"]
+};
+
 export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: Sport): boolean => {
-  if (sport === "rugby" || sport === "basketball") {
-    if (slotId.startsWith("rugby_substitute")) {
+  if (sport === "rugby" || sport === "basketball" || sport === "football") {
+    if (slotId.startsWith("rugby_substitute") || slotId.startsWith("basketball_substitute") || slotId.startsWith("football_substitute")) {
       return true;
     }
     
@@ -32,14 +39,26 @@ export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: S
     const position2 = player.position2;
     
     if (position1) {
-      const allowedSlots1 = sport === "rugby" ? rugbyPositionSlotMapping[position1] : basketballPositionSlotMapping[position1];
+      const allowedSlots1 = sport === "rugby" 
+        ? rugbyPositionSlotMapping[position1] 
+        : sport === "basketball"
+        ? basketballPositionSlotMapping[position1]
+        : sport === "football"
+        ? footballPositionSlotMapping[position1]
+        : [];
       if (allowedSlots1 && allowedSlots1.includes(slotId)) {
         return true;
       }
     }
     
     if (position2) {
-      const allowedSlots2 = sport === "rugby" ? rugbyPositionSlotMapping[position2] : basketballPositionSlotMapping[position2];
+      const allowedSlots2 = sport === "rugby" 
+        ? rugbyPositionSlotMapping[position2] 
+        : sport === "basketball"
+        ? basketballPositionSlotMapping[position2]
+        : sport === "football"
+        ? footballPositionSlotMapping[position2]
+        : [];
       if (allowedSlots2 && allowedSlots2.includes(slotId)) {
         return true;
       }
@@ -89,6 +108,28 @@ export const getPlayerPositionsForSlot = (slotId: string, sport: Sport): string[
       "small": ["Small forward"],
       "power": ["Power forward"],
       "center": ["Center"]
+    };
+    
+    return slotToPositionMapping[slotId] || [];
+  }
+
+  if (sport === "football") {
+    if (slotId.startsWith("football_substitute")) {
+      return ["Goalkeeper", "Defender", "Midfielder", "Forward"];
+    }
+    
+    const slotToPositionMapping: Record<string, string[]> = {
+      "goalkeeper": ["Goalkeeper"],
+      "defender3": ["Defender"],
+      "defender1": ["Defender"],
+      "defender2": ["Defender"],
+      "defender4": ["Defender"],
+      "midfielder1": ["Midfielder"],
+      "midfielder2": ["Midfielder"],
+      "midfielder3": ["Midfielder"],
+      "forward1": ["Forward"],
+      "forward2": ["Forward"],
+      "forward3": ["Forward"]
     };
     
     return slotToPositionMapping[slotId] || [];

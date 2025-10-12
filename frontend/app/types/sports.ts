@@ -1,5 +1,5 @@
 // export type Sport = "football" | "basketball" | "hockey" | "handball" | "rugby";
-export type Sport = "rugby" | "basketball";
+export type Sport = "rugby" | "basketball" | "football";
 
 export type Theme = {
   primary: string;
@@ -10,13 +10,13 @@ export type Theme = {
 };
 
 export const sportThemes: Record<Sport, Theme> = {
-  // football: {
-  //   primary: "from-emerald-500 to-emerald-600",
-  //   hover: "hover:from-emerald-600 hover:to-emerald-700",
-  //   cross: "bg-red-500",
-  //   crossHover: "hover:bg-red-600",
-  //   sportType: "foot"
-  // },
+  football: {
+    primary: "from-emerald-500 to-emerald-600",
+    hover: "hover:from-emerald-600 hover:to-emerald-700",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
+    sportType: "foot"
+  },
   basketball: {
     primary: "from-orange-400 to-orange-700",
     hover: "hover:from-orange-700 hover:to-orange-800",
@@ -57,24 +57,24 @@ export type Position = {
 };
 
 export const sportPositions: Record<Sport, Position[]> = {
-  // football: [
-  //   { id: "goalkeeper", name: "Goalkeeper", order: 1, translations: { fr: "Gardien" } },
-  //   { id: "defender3", name: "Left Back", order: 2, translations: { fr: "Arrière gauche" } },
-  //   { id: "defender1", name: "Central Defender", order: 3, translations: { fr: "Défenseur central" } },
-  //   { id: "defender2", name: "Central Defender", order: 4, translations: { fr: "Défenseur central" } },
-  //   { id: "defender4", name: "Right Back", order: 5, translations: { fr: "Arrière droit" } },
-  //   { id: "midfielder1", name: "Defensive Midfielder", order: 6, translations: { fr: "Milieu défensif" } },
-  //   { id: "midfielder2", name: "Central Midfielder", order: 7, translations: { fr: "Milieu central" } },
-  //   { id: "midfielder3", name: "Attacking Midfielder", order: 8, translations: { fr: "Milieu offensif" } },
-  //   { id: "forward1", name: "Left Winger", order: 9, translations: { fr: "Ailier gauche" } },
-  //   { id: "forward2", name: "Striker", order: 10, translations: { fr: "Attaquant" } },
-  //   { id: "forward3", name: "Right Winger", order: 11, translations: { fr: "Ailier droit" } },
-  //   { id: "football_substitute1", name: "Substitute 1", order: 12, translations: { fr: "Remplaçant 1" } },
-  //   { id: "football_substitute2", name: "Substitute 2", order: 13, translations: { fr: "Remplaçant 2" } },
-  //   { id: "football_substitute3", name: "Substitute 3", order: 14, translations: { fr: "Remplaçant 3" } },
-  //   { id: "football_substitute4", name: "Substitute 4", order: 15, translations: { fr: "Remplaçant 4" } },
-  //   { id: "football_substitute5", name: "Substitute 5", order: 16, translations: { fr: "Remplaçant 5" } },    
-  // ],
+  football: [
+    { id: "goalkeeper", name: "Goalkeeper", order: 1, translations: { fr: "Gardien" } },
+    { id: "defender3", name: "Left Back", order: 2, translations: { fr: "Arrière gauche" } },
+    { id: "defender1", name: "Central Defender", order: 3, translations: { fr: "Défenseur central" } },
+    { id: "defender2", name: "Central Defender", order: 4, translations: { fr: "Défenseur central" } },
+    { id: "defender4", name: "Right Back", order: 5, translations: { fr: "Arrière droit" } },
+    { id: "midfielder1", name: "Defensive Midfielder", order: 6, translations: { fr: "Milieu défensif" } },
+    { id: "midfielder2", name: "Central Midfielder", order: 7, translations: { fr: "Milieu central" } },
+    { id: "midfielder3", name: "Attacking Midfielder", order: 8, translations: { fr: "Milieu offensif" } },
+    { id: "forward1", name: "Left Winger", order: 9, translations: { fr: "Ailier gauche" } },
+    { id: "forward2", name: "Striker", order: 10, translations: { fr: "Attaquant" } },
+    { id: "forward3", name: "Right Winger", order: 11, translations: { fr: "Ailier droit" } },
+    { id: "football_substitute1", name: "Substitute 1", order: 12, translations: { fr: "Remplaçant 1" } },
+    { id: "football_substitute2", name: "Substitute 2", order: 13, translations: { fr: "Remplaçant 2" } },
+    { id: "football_substitute3", name: "Substitute 3", order: 14, translations: { fr: "Remplaçant 3" } },
+    { id: "football_substitute4", name: "Substitute 4", order: 15, translations: { fr: "Remplaçant 4" } },
+    { id: "football_substitute5", name: "Substitute 5", order: 16, translations: { fr: "Remplaçant 5" } },    
+  ],
   basketball: [
     { id: "point", name: "Point Guard", order: 1, translations: { fr: "Meneur" } },
     { id: "shooting", name: "Shooting Guard", order: 2, translations: { fr: "Arrière" } },

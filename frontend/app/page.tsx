@@ -332,9 +332,14 @@ export default function DreamTeamBuilder() {
             >
               🏀 Basketball
             </button>
-            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)] opacity-50 cursor-not-allowed">
+            <button 
+              onClick={() => setSelectedSport("football")}
+              className={`px-3 py-1 rounded-full font-[family-name:var(--font-title)] transition-all cursor-pointer ${
+                selectedSport === "football" ? "bg-blue-600/80 ring-2 ring-white" : "bg-black/20 hover:bg-black/30"
+              }`}
+            >
               ⚽ Football
-            </span>
+            </button>
             <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)] opacity-50 cursor-not-allowed">
               🏒 Ice Hockey
             </span>
@@ -536,9 +541,9 @@ export default function DreamTeamBuilder() {
               height: 900,
               // background: "url('/images/rugby-field.webp') no-repeat center/cover",
                background: selectedSport === "rugby"
-                 ? 'url("/images/rugby-field.webp") no-repeat center/cover'
-              //   : selectedSport === "football"
-              //   ? 'url("/images/foot-field.webp") no-repeat center/cover'
+                  ? 'url("/images/rugby-field.webp") no-repeat center/cover'
+                   : selectedSport === "football"
+                  ? 'url("/images/foot-field.webp") no-repeat center/cover'
                  : selectedSport === "basketball"
                  ? 'url("/images/basket-field.webp") no-repeat center/cover'
               //   : selectedSport === "hockey"
