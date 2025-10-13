@@ -1,7 +1,10 @@
 import axios from 'axios';
 import { Player } from "../app/types/players";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000";
+// Configuration pour dev/prod
+const API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? "https://mylegendteam.onrender.com" 
+  : (process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000");
 
 if (typeof window !== 'undefined') {
   axios.interceptors.request.use((config) => {

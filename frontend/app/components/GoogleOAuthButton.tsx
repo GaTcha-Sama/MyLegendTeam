@@ -8,7 +8,10 @@ interface GoogleOAuthButtonProps {
 function GoogleOAuthButton({ onError }: GoogleOAuthButtonProps) {
   const handleGoogleLogin = async () => {
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+      // Configuration pour dev/prod
+      const backendUrl = process.env.NODE_ENV === 'production' 
+        ? 'https://mylegendteam.onrender.com' 
+        : (process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000');
       window.location.href = `${backendUrl}/api/auth/google`;
     } catch (error) {
       if (onError) onError(error as string || 'Error connecting with Google');
