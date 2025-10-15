@@ -8927,6 +8927,23 @@
     },
     {
       "id": 811,
+      "name": "Cherry",
+      "lastname": "Dave",
+      "nationality_id": 193,
+      "position1_id": 2,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 82,
+      "team2_id": 90,
+      "team3_id": 12,
+      "actual_team_id": 12,
+      "legendary_player": null,
+      "flag": "images/flags/SCO.png",
+      "active": true,
+      "photo": "images/rugby/Players/SCO/Dave-Cherry.webp"
+    },
+    {
+      "id": 812,
       "name": "Cusiter",
       "lastname": "Chris",
       "nationality_id": 193,
@@ -8943,7 +8960,7 @@
       "photo": "images/rugby/Players/SCO/Chris-Cusiter.webp"
     },
     {
-      "id": 812,
+      "id": 813,
       "name": "Darge",
       "lastname": "Rory",
       "nationality_id": 193,
@@ -8960,7 +8977,7 @@
       "photo": "images/rugby/Players/SCO/Rory-Darge.webp"
     },
     {
-      "id": 813,
+      "id": 814,
       "name": "Dempsey",
       "lastname": "Jack",
       "nationality_id": 193,
@@ -8977,7 +8994,7 @@
       "photo": "images/rugby/Players/SCO/Jack-Dempsey.webp"
     },
     {
-      "id": 814,
+      "id": 815,
       "name": "Denton",
       "lastname": "David",
       "nationality_id": 193,
@@ -8994,7 +9011,7 @@
       "photo": "images/rugby/Players/SCO/David-Denton.webp"
     },
     {
-      "id": 815,
+      "id": 816,
       "name": "Dickinson",
       "lastname": "Alasdair",
       "nationality_id": 193,
@@ -9011,7 +9028,7 @@
       "photo": "images/rugby/Players/SCO/Alasdair-Dickinson.webp"
     },
     {
-      "id": 816,
+      "id": 817,
       "name": "Douglas",
       "lastname": "Bruce",
       "nationality_id": 193,
@@ -9028,7 +9045,7 @@
       "photo": "images/rugby/Players/SCO/Bruce-Douglas.webp"
     },
     {
-      "id": 817,
+      "id": 818,
       "name": "Fagerson",
       "lastname": "Matt",
       "nationality_id": 193,
@@ -9045,7 +9062,7 @@
       "photo": "images/rugby/Players/SCO/Matt-Fagerson.webp"
     },
     {
-      "id": 818,
+      "id": 819,
       "name": "Fagerson",
       "lastname": "Zander",
       "nationality_id": 193,
@@ -9062,7 +9079,7 @@
       "photo": "images/rugby/Players/SCO/Zander-Fagerson.webp"
     },
     {
-      "id": 819,
+      "id": 820,
       "name": "Ford",
       "lastname": "Ross",
       "nationality_id": 193,
@@ -9079,7 +9096,7 @@
       "photo": "images/rugby/Players/SCO/Ross-Ford.webp"
     },
     {
-      "id": 820,
+      "id": 821,
       "name": "Gilchrist",
       "lastname": "Grant",
       "nationality_id": 193,
@@ -9096,7 +9113,7 @@
       "photo": "images/rugby/Players/SCO/Grant-Gilchrist.webp"
     },
     {
-      "id": 821,
+      "id": 822,
       "name": "Graham",
       "lastname": "Darcy",
       "nationality_id": 193,
@@ -9113,7 +9130,7 @@
       "photo": "images/rugby/Players/SCO/Darcy-Graham.webp"
     },
     {
-      "id": 822,
+      "id": 823,
       "name": "Gray",
       "lastname": "Jonny",
       "nationality_id": 193,
@@ -9130,7 +9147,7 @@
       "photo": "images/rugby/Players/SCO/Jonny-Gray.webp"
     },
     {
-      "id": 823,
+      "id": 824,
       "name": "Gray",
       "lastname": "Richie",
       "nationality_id": 193,
@@ -9147,7 +9164,7 @@
       "photo": "images/rugby/Players/SCO/Richie-Gray.webp"
     },
     {
-      "id": 824,
+      "id": 825,
       "name": "Grimes",
       "lastname": "Stuart",
       "nationality_id": 193,
@@ -9164,7 +9181,7 @@
       "photo": "images/rugby/Players/SCO/Stuart-Grimes.webp"
     },
     {
-      "id": 825,
+      "id": 826,
       "name": "Hall",
       "lastname": "Dougie",
       "nationality_id": 193,
@@ -9181,7 +9198,7 @@
       "photo": "images/rugby/Players/SCO/Dougie-Hall.webp"
     },
     {
-      "id": 826,
+      "id": 827,
       "name": "Hamilton",
       "lastname": "Jim",
       "nationality_id": 193,
@@ -9198,7 +9215,7 @@
       "photo": "images/rugby/Players/SCO/Jim-Hamilton.webp"
     },
     {
-      "id": 827,
+      "id": 828,
       "name": "Harris",
       "lastname": "Chris",
       "nationality_id": 193,
@@ -9215,7 +9232,7 @@
       "photo": "images/rugby/Players/SCO/Chris-Harris.webp"
     },
     {
-      "id": 828,
+      "id": 829,
       "name": "Hastings",
       "lastname": "Gavin",
       "nationality_id": 193,
@@ -9232,7 +9249,7 @@
       "photo": "images/rugby/Players/SCO/Gavin-Hastings.webp"
     },
     {
-      "id": 829,
+      "id": 830,
       "name": "Hastings",
       "lastname": "Scott",
       "nationality_id": 193,
@@ -9249,7 +9266,7 @@
       "photo": "images/rugby/Players/SCO/Scott-Hastings.webp"
     },
     {
-      "id": 830,
+      "id": 831,
       "name": "Henderson",
       "lastname": "Andrew",
       "nationality_id": 193,
@@ -9266,7 +9283,7 @@
       "photo": "images/rugby/Players/SCO/Andrew-Henderson.webp"
     },
     {
-      "id": 831,
+      "id": 832,
       "name": "Hilton",
       "lastname": "Dave",
       "nationality_id": 193,
@@ -9283,7 +9300,7 @@
       "photo": "images/rugby/Players/SCO/Dave-Hilton.webp"
     },
     {
-      "id": 832,
+      "id": 833,
       "name": "Hines",
       "lastname": "Nathan",
       "nationality_id": 193,
@@ -9300,7 +9317,7 @@
       "photo": "images/rugby/Players/SCO/Nathan-Hines.webp"
     },
     {
-      "id": 833,
+      "id": 834,
       "name": "Hogg",
       "lastname": "Ally",
       "nationality_id": 193,
@@ -9317,7 +9334,7 @@
       "photo": "images/rugby/Players/SCO/Ally-Hogg.webp"
     },
     {
-      "id": 834,
+      "id": 835,
       "name": "Hogg",
       "lastname": "Stuart",
       "nationality_id": 193,
@@ -9334,7 +9351,7 @@
       "photo": "images/rugby/Players/SCO/Stuart-Hogg.webp"
     },
     {
-      "id": 835,
+      "id": 836,
       "name": "Horne",
       "lastname": "George",
       "nationality_id": 193,
@@ -9351,7 +9368,7 @@
       "photo": "images/rugby/Players/SCO/George-Horne.webp"
     },
     {
-      "id": 836,
+      "id": 837,
       "name": "Horne",
       "lastname": "Peter",
       "nationality_id": 193,
@@ -9368,7 +9385,7 @@
       "photo": "images/rugby/Players/SCO/Peter-Horne.webp"
     },
     {
-      "id": 837,
+      "id": 838,
       "name": "Hurd",
       "lastname": "Will",
       "nationality_id": 193,
@@ -9385,7 +9402,7 @@
       "photo": "images/rugby/Players/SCO/Will-Hurd.webp"
     },
     {
-      "id": 838,
+      "id": 839,
       "name": "Jacobsen",
       "lastname": "Allan",
       "nationality_id": 193,
@@ -9402,7 +9419,7 @@
       "photo": "images/rugby/Players/SCO/Allan-Jacobsen.webp"
     },
     {
-      "id": 839,
+      "id": 840,
       "name": "Jones",
       "lastname": "Huw",
       "nationality_id": 193,
@@ -9419,7 +9436,7 @@
       "photo": "images/rugby/Players/SCO/Huw-Jones.webp"
     },
     {
-      "id": 840,
+      "id": 841,
       "name": "Jordan",
       "lastname": "Tom",
       "nationality_id": 193,
@@ -9436,7 +9453,7 @@
       "photo": "images/rugby/Players/SCO/Tom-Jordan.webp"
     },
     {
-      "id": 841,
+      "id": 842,
       "name": "Kellock",
       "lastname": "Alastair",
       "nationality_id": 193,
@@ -9453,7 +9470,7 @@
       "photo": "images/rugby/Players/SCO/Alastair-Kellock.webp"
     },
     {
-      "id": 842,
+      "id": 843,
       "name": "Kerr",
       "lastname": "Gavin",
       "nationality_id": 193,
@@ -9470,7 +9487,7 @@
       "photo": "images/rugby/Players/SCO/Gavin-Kerr.webp"
     },
     {
-      "id": 843,
+      "id": 844,
       "name": "Kinghorn",
       "lastname": "Blair",
       "nationality_id": 193,
@@ -9487,7 +9504,7 @@
       "photo": "images/rugby/Players/SCO/Blair-Kinghorn.webp"
     },
     {
-      "id": 844,
+      "id": 845,
       "name": "Laidlaw",
       "lastname": "Greig",
       "nationality_id": 193,
@@ -9504,7 +9521,7 @@
       "photo": "images/rugby/Players/SCO/Greig-Laidlaw.webp"
     },
     {
-      "id": 845,
+      "id": 846,
       "name": "Lamont",
       "lastname": "Rory",
       "nationality_id": 193,
@@ -9521,7 +9538,7 @@
       "photo": "images/rugby/Players/SCO/Rory-Lamont.webp"
     },
     {
-      "id": 846,
+      "id": 847,
       "name": "Lamont",
       "lastname": "Sean",
       "nationality_id": 193,
@@ -9538,7 +9555,7 @@
       "photo": "images/rugby/Players/SCO/Sean-Lamont.webp"
     },
     {
-      "id": 847,
+      "id": 848,
       "name": "Lawson",
       "lastname": "Scott",
       "nationality_id": 193,
@@ -9555,7 +9572,7 @@
       "photo": "images/rugby/Players/SCO/Scott-Lawson.webp"
     },
     {
-      "id": 848,
+      "id": 849,
       "name": "Logan",
       "lastname": "Kenny",
       "nationality_id": 193,
@@ -9572,7 +9589,7 @@
       "photo": "images/rugby/Players/SCO/Kenny-Logan.webp"
     },
     {
-      "id": 849,
+      "id": 850,
       "name": "Maitland",
       "lastname": "Sean",
       "nationality_id": 193,
@@ -9589,7 +9606,7 @@
       "photo": "images/rugby/Players/SCO/Sean-Maitland.webp"
     },
     {
-      "id": 850,
+      "id": 851,
       "name": "McDowall",
       "lastname": "Stafford",
       "nationality_id": 193,
@@ -9606,7 +9623,7 @@
       "photo": "images/rugby/Players/SCO/Stafford-McDowall.webp"
     },
     {
-      "id": 851,
+      "id": 852,
       "name": "McInally",
       "lastname": "Stuart",
       "nationality_id": 193,
@@ -9623,7 +9640,7 @@
       "photo": "images/rugby/Players/SCO/Stuart-McInally.webp"
     },
     {
-      "id": 852,
+      "id": 853,
       "name": "Metcalfe",
       "lastname": "Glenn",
       "nationality_id": 193,
@@ -9640,7 +9657,7 @@
       "photo": "images/rugby/Players/SCO/Glenn-Metcalfe.webp"
     },
     {
-      "id": 853,
+      "id": 854,
       "name": "Morrison",
       "lastname": "Graeme",
       "nationality_id": 193,
@@ -9657,7 +9674,7 @@
       "photo": "images/rugby/Players/SCO/Graeme-Morrison.webp"
     },
     {
-      "id": 854,
+      "id": 855,
       "name": "Murray",
       "lastname": "Euan",
       "nationality_id": 193,
@@ -9674,7 +9691,7 @@
       "photo": "images/rugby/Players/SCO/Euan-Murray.webp"
     },
     {
-      "id": 855,
+      "id": 856,
       "name": "Murray",
       "lastname": "Scott",
       "nationality_id": 193,
@@ -9691,7 +9708,7 @@
       "photo": "images/rugby/Players/SCO/Scott-Murray.webp"
     },
     {
-      "id": 856,
+      "id": 857,
       "name": "Nel",
       "lastname": "WP",
       "nationality_id": 193,
@@ -9708,7 +9725,7 @@
       "photo": "images/rugby/Players/SCO/WP-Nel.webp"
     },
     {
-      "id": 857,
+      "id": 858,
       "name": "Parks",
       "lastname": "Dan",
       "nationality_id": 193,
@@ -9725,7 +9742,7 @@
       "photo": "images/rugby/Players/SCO/Dan-Parks.webp"
     },
     {
-      "id": 858,
+      "id": 859,
       "name": "Paterson",
       "lastname": "Chris",
       "nationality_id": 193,
@@ -9742,7 +9759,7 @@
       "photo": "images/rugby/Players/SCO/Chris-Paterson.webp"
     },
     {
-      "id": 859,
+      "id": 860,
       "name": "Petrie",
       "lastname": "Jon",
       "nationality_id": 193,
@@ -9759,7 +9776,7 @@
       "photo": "images/rugby/Players/SCO/Jon-Petrie.webp"
     },
     {
-      "id": 860,
+      "id": 861,
       "name": "Price",
       "lastname": "Ali",
       "nationality_id": 193,
@@ -9776,7 +9793,7 @@
       "photo": "images/rugby/Players/SCO/Ali-Price.webp"
     },
     {
-      "id": 861,
+      "id": 862,
       "name": "Redpath",
       "lastname": "Bryan",
       "nationality_id": 193,
@@ -9793,7 +9810,7 @@
       "photo": "images/rugby/Players/SCO/Bryan-Redpath.webp"
     },
     {
-      "id": 862,
+      "id": 863,
       "name": "Reid",
       "lastname": "Gordon",
       "nationality_id": 193,
@@ -9810,7 +9827,7 @@
       "photo": "images/rugby/Players/SCO/Gordon-Reid.webp"
     },
     {
-      "id": 863,
+      "id": 864,
       "name": "Ritchie",
       "lastname": "Jamie",
       "nationality_id": 193,
@@ -9827,7 +9844,7 @@
       "photo": "images/rugby/Players/SCO/Jamie-Ritchie.webp"
     },
     {
-      "id": 864,
+      "id": 865,
       "name": "Rowe",
       "lastname": "Kyle",
       "nationality_id": 193,
@@ -9844,7 +9861,7 @@
       "photo": "images/rugby/Players/SCO/Kyle-Rowe.webp"
     },
     {
-      "id": 865,
+      "id": 866,
       "name": "Russell",
       "lastname": "Finn",
       "nationality_id": 193,
@@ -9861,7 +9878,7 @@
       "photo": "images/rugby/Players/SCO/Finn-Russell.webp"
     },
     {
-      "id": 866,
+      "id": 867,
       "name": "Schoeman",
       "lastname": "Pierre",
       "nationality_id": 193,
@@ -9878,7 +9895,7 @@
       "photo": "images/rugby/Players/SCO/Pierre-Schoeman.webp"
     },
     {
-      "id": 867,
+      "id": 868,
       "name": "Seymour",
       "lastname": "Tommy",
       "nationality_id": 193,
@@ -9895,7 +9912,7 @@
       "photo": "images/rugby/Players/SCO/Tommy-Seymour.webp"
     },
     {
-      "id": 868,
+      "id": 869,
       "name": "Skinner",
       "lastname": "Sam",
       "nationality_id": 193,
@@ -9912,7 +9929,7 @@
       "photo": "images/rugby/Players/SCO/Sam-Skinner.webp"
     },
     {
-      "id": 869,
+      "id": 870,
       "name": "Smith",
       "lastname": "Tom",
       "nationality_id": 193,
@@ -9929,7 +9946,7 @@
       "photo": "images/rugby/Players/SCO/Tom-Smith.webp"
     },
     {
-      "id": 870,
+      "id": 871,
       "name": "Sole",
       "lastname": "David",
       "nationality_id": 193,
@@ -9946,7 +9963,7 @@
       "photo": "images/rugby/Players/SCO/David-Sole.webp"
     },
     {
-      "id": 871,
+      "id": 872,
       "name": "Southwell",
       "lastname": "Hugo",
       "nationality_id": 193,
@@ -9963,7 +9980,7 @@
       "photo": "images/rugby/Players/SCO/Hugo-Southwell.webp"
     },
     {
-      "id": 872,
+      "id": 873,
       "name": "Stanger",
       "lastname": "Tony",
       "nationality_id": 193,
@@ -9980,7 +9997,7 @@
       "photo": "images/rugby/Players/SCO/Tony-Stanger.webp"
     },
     {
-      "id": 873,
+      "id": 874,
       "name": "Steyn",
       "lastname": "Kyle",
       "nationality_id": 193,
@@ -9997,7 +10014,7 @@
       "photo": "images/rugby/Players/SCO/Kyle-Steyn.webp"
     },
     {
-      "id": 874,
+      "id": 875,
       "name": "Strokosch",
       "lastname": "Alasdair",
       "nationality_id": 193,
@@ -10014,7 +10031,7 @@
       "photo": "images/rugby/Players/SCO/Alasdair-Strokosch.webp"
     },
     {
-      "id": 875,
+      "id": 876,
       "name": "Sutherland",
       "lastname": "Rory",
       "nationality_id": 193,
@@ -10031,7 +10048,7 @@
       "photo": "images/rugby/Players/SCO/Rory-Sutherland.webp"
     },
     {
-      "id": 876,
+      "id": 877,
       "name": "Taylor",
       "lastname": "Simon",
       "nationality_id": 193,
@@ -10048,7 +10065,7 @@
       "photo": "images/rugby/Players/SCO/Simon-Taylor.webp"
     },
     {
-      "id": 877,
+      "id": 878,
       "name": "Townsend",
       "lastname": "Gregor",
       "nationality_id": 193,
@@ -10065,7 +10082,7 @@
       "photo": "images/rugby/Players/SCO/Gregor-Townsend.webp"
     },
     {
-      "id": 878,
+      "id": 879,
       "name": "Tuipulotu",
       "lastname": "Sione",
       "nationality_id": 193,
@@ -10082,7 +10099,7 @@
       "photo": "images/rugby/Players/SCO/Sione-Tuipulotu.webp"
     },
     {
-      "id": 879,
+      "id": 880,
       "name": "Turner",
       "lastname": "George",
       "nationality_id": 193,
@@ -10099,7 +10116,7 @@
       "photo": "images/rugby/Players/SCO/George-Turner.webp"
     },
     {
-      "id": 880,
+      "id": 881,
       "name": "Van Der Merwe",
       "lastname": "Duhan",
       "nationality_id": 193,
@@ -10116,7 +10133,7 @@
       "photo": "images/rugby/Players/SCO/Duhan-Van-Der-Merwe.webp"
     },
     {
-      "id": 881,
+      "id": 882,
       "name": "Watson",
       "lastname": "Hamish",
       "nationality_id": 193,
@@ -10133,7 +10150,7 @@
       "photo": "images/rugby/Players/SCO/Hamish-Watson.webp"
     },
     {
-      "id": 882,
+      "id": 883,
       "name": "Weir",
       "lastname": "Doddie",
       "nationality_id": 193,
@@ -10150,7 +10167,7 @@
       "photo": "images/rugby/Players/SCO/Doddie-Weir.webp"
     },
     {
-      "id": 883,
+      "id": 884,
       "name": "White",
       "lastname": "Ben",
       "nationality_id": 193,
@@ -10167,7 +10184,7 @@
       "photo": "images/rugby/Players/SCO/Ben-White.webp"
     },
     {
-      "id": 884,
+      "id": 885,
       "name": "White",
       "lastname": "Jason",
       "nationality_id": 193,
@@ -10184,7 +10201,7 @@
       "photo": "images/rugby/Players/SCO/Jason-White.webp"
     },
     {
-      "id": 885,
+      "id": 886,
       "name": "Wilson",
       "lastname": "Ryan",
       "nationality_id": 193,
