@@ -9,8 +9,8 @@ def get_sport_folder(sport_id):
         1: "rugby",
         2: "basketball",
         3: "football",
-        # 4: "handball",
-        # 5: "hockey"
+        4: "hockey",
+        # 5: "handball"
     }
     return sports_mapping.get(sport_id, "unknown")
 
@@ -52,8 +52,8 @@ def import_players():
         1: 'rugby_players.ods',
         2: 'basketball_players.ods',
         3: 'football_players.ods',
-        # 4: 'handball_players.ods',
-        # 5: 'hockey_players.ods'
+        4: 'hockey_players.ods',
+        # 5: 'handball_players.ods'
     }
     
     for sport_id, filename in sport_files.items():

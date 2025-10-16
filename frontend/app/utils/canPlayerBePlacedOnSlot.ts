@@ -29,9 +29,15 @@ export const footballPositionSlotMapping: Record<string, string[]> = {
   "Forward": ["forward1", "forward2", "forward3", "football_substitute5"]
 };
 
+export const hockeyPositionSlotMapping: Record<string, string[]> = {
+  "Forward": ["forward1", "forward2", "forward3", "forward4", "forward5", "forward6", "forward7", "forward8", "forward9", "forward10", "forward11", "forward12"],
+  "Defense": ["defense1", "defense2", "defense3", "defense4", "defense5", "defense6"],
+  "Goalie": ["goalie1", "goalie2"]
+};
+
 export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: Sport): boolean => {
-  if (sport === "rugby" || sport === "basketball" || sport === "football") {
-    if (slotId.startsWith("rugby_substitute") || slotId.startsWith("basketball_substitute") || slotId.startsWith("football_substitute")) {
+  if (sport === "rugby" || sport === "basketball" || sport === "football" || sport === "hockey") {
+    if (slotId.startsWith("rugby_substitute") || slotId.startsWith("basketball_substitute") || slotId.startsWith("football_substitute") || slotId.startsWith("hockey_substitute")) {
       return true;
     }
     
@@ -45,6 +51,8 @@ export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: S
         ? basketballPositionSlotMapping[position1]
         : sport === "football"
         ? footballPositionSlotMapping[position1]
+        : sport === "hockey"
+        ? hockeyPositionSlotMapping[position1]
         : [];
       if (allowedSlots1 && allowedSlots1.includes(slotId)) {
         return true;
@@ -58,6 +66,8 @@ export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: S
         ? basketballPositionSlotMapping[position2]
         : sport === "football"
         ? footballPositionSlotMapping[position2]
+        : sport === "hockey"
+        ? hockeyPositionSlotMapping[position2]
         : [];
       if (allowedSlots2 && allowedSlots2.includes(slotId)) {
         return true;
@@ -134,5 +144,37 @@ export const getPlayerPositionsForSlot = (slotId: string, sport: Sport): string[
     
     return slotToPositionMapping[slotId] || [];
   }
+
+  if (sport === "hockey") {
+    if (slotId.startsWith("hockey_substitute")) {
+      return ["Forward", "Defense", "Goalie"];
+    }
+    
+    const slotToPositionMapping: Record<string, string[]> = {
+      "forward1": ["Forward"],
+      "forward2": ["Forward"],
+      "forward3": ["Forward"],
+      "forward4": ["Forward"],
+      "forward5": ["Forward"],
+      "forward6": ["Forward"],
+      "forward7": ["Forward"],
+      "forward8": ["Forward"],
+      "forward9": ["Forward"],
+      "forward10": ["Forward"],
+      "forward11": ["Forward"],
+      "forward12": ["Forward"],
+      "defense1": ["Defense"],
+      "defense2": ["Defense"],
+      "defense3": ["Defense"],
+      "defense4": ["Defense"],
+      "defense5": ["Defense"],
+      "defense6": ["Defense"],
+      "goalie1": ["Goalie"],
+      "goalie2": ["Goalie"]
+    };
+    
+    return slotToPositionMapping[slotId] || [];
+  }
+  
   return [];
 };

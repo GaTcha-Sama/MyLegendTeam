@@ -98,57 +98,57 @@
     {
       "id": 19,
       "name": "Goalkeeper",
-      "sport_id": 4
+      "sport_id": 5
     },
     {
       "id": 20,
       "name": "Defender",
-      "sport_id": 4
+      "sport_id": 5
     },
     {
       "id": 21,
       "name": "Wing",
-      "sport_id": 4
+      "sport_id": 5
     },
     {
       "id": 22,
       "name": "Pivot",
-      "sport_id": 4
+      "sport_id": 5
     },
     {
       "id": 23,
       "name": "Center",
-      "sport_id": 4
+      "sport_id": 5
     },
     {
       "id": 24,
       "name": "Back",
-      "sport_id": 4
+      "sport_id": 5
     },
     {
       "id": 25,
       "name": "Goalkeeper",
-      "sport_id": 5 
+      "sport_id": 4 
     },  
     {
       "id": 26,
       "name": "Defender",
-      "sport_id": 5
+      "sport_id": 4
     },
     {
       "id": 27,
       "name": "Left wing",
-      "sport_id": 5
+      "sport_id": 4
     },    
     {
       "id": 28,
       "name": "Center",
-      "sport_id": 5
+      "sport_id": 4
     },
     {
       "id": 29,
       "name": "Right wing",
-      "sport_id": 5
+      "sport_id": 4
     }
   ]
 }

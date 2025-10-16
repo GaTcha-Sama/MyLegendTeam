@@ -1,5 +1,5 @@
 // export type Sport = "football" | "basketball" | "hockey" | "handball" | "rugby";
-export type Sport = "rugby" | "basketball" | "football";
+export type Sport = "rugby" | "basketball" | "football" | "hockey";
 
 export type Theme = {
   primary: string;
@@ -24,13 +24,13 @@ export const sportThemes: Record<Sport, Theme> = {
     crossHover: "hover:bg-red-600",
     sportType: "basket"
   },
-  // hockey: {
-  //   primary: "from-sky-400 to-sky-700",
-  //   hover: "hover:from-sky-700 hover:to-sky-800",
-  //   cross: "bg-red-500",
-  //   crossHover: "hover:bg-red-600",
-  //   sportType: "hockey"
-  // },
+  hockey: {
+    primary: "from-sky-400 to-sky-700",
+    hover: "hover:from-sky-700 hover:to-sky-800",
+    cross: "bg-red-500",
+    crossHover: "hover:bg-red-600",
+    sportType: "hockey"
+  },
   // handball: {
   //   primary: "from-sky-300 to-sky-400",
   //   hover: "hover:from-sky-400 hover:to-sky-500",
@@ -87,30 +87,28 @@ export const sportPositions: Record<Sport, Position[]> = {
     { id: "basketball_substitute4", name: "Substitute 4", order: 9, translations: { fr: "Remplaçant 4" } },
     { id: "basketball_substitute5", name: "Substitute 5", order: 10, translations: { fr: "Remplaçant 5" } },
   ],
-  // hockey: [
-  //   { id: "forward1", name: "Left Wing", order: 1, translations: { fr: "Ailier gauche" } },
-  //   { id: "forward2", name: "Center", order: 2, translations: { fr: "Centre" } },
-  //   { id: "forward3", name: "Right Wing", order: 3, translations: { fr: "Ailier droit" } },  
-  //   { id: "forward4", name: "Left Wing", order: 4, translations: { fr: "Ailier gauche" } },
-  //   { id: "forward5", name: "Center", order: 5, translations: { fr: "Centre" } },
-  //   { id: "forward6", name: "Right Wing", order: 6, translations: { fr: "Ailier droit" } }, 
-  //   { id: "forward7", name: "Left Wing", order: 7, translations: { fr: "Ailier gauche" } },
-  //   { id: "forward8", name: "Center", order: 8, translations: { fr: "Centre" } },
-  //   { id: "forward9", name: "Right Wing", order: 9, translations: { fr: "Ailier droit" } }, 
-  //   { id: "forward10", name: "Left Wing", order: 10, translations: { fr: "Ailier gauche" } },
-  //   { id: "forward11", name: "Center", order: 11, translations: { fr: "Centre" } },
-  //   { id: "forward12", name: "Right Wing", order: 12, translations: { fr: "Ailier droit" } },  
-  //   { id: "defense1", name: "Defenseman", order: 13, translations: { fr: "Défenseur" } },
-  //   { id: "defense2", name: "Defenseman", order: 14, translations: { fr: "Défenseur" } },
-  //   { id: "defense3", name: "Defenseman", order: 15, translations: { fr: "Défenseur" } },
-  //   { id: "defense4", name: "Defenseman", or
-
-// La fonction canPlayerBePlacedOnSlot et rugbyPositionSlotMapping ont été déplacées vers components/utils.ts der: 16, translations: { fr: "Défenseur" } },
-  //   { id: "defense5", name: "Defenseman", order: 17, translations: { fr: "Défenseur" } },
-  //   { id: "defense6", name: "Defenseman", order: 18, translations: { fr: "Défenseur" } },
-  //   { id: "goalie1", name: "Goalie", order: 19, translations: { fr: "Gardien" } },
-  //   { id: "goalie2", name: "Goalie", order: 20, translations: { fr: "Gardien" } },
-  // ],
+  hockey: [
+    { id: "forward1", name: "Left Wing", order: 1, translations: { fr: "Ailier gauche" } },
+    { id: "forward2", name: "Center", order: 2, translations: { fr: "Centre" } },
+    { id: "forward3", name: "Right Wing", order: 3, translations: { fr: "Ailier droit" } },  
+    { id: "forward4", name: "Left Wing", order: 4, translations: { fr: "Ailier gauche" } },
+    { id: "forward5", name: "Center", order: 5, translations: { fr: "Centre" } },
+    { id: "forward6", name: "Right Wing", order: 6, translations: { fr: "Ailier droit" } }, 
+    { id: "forward7", name: "Left Wing", order: 7, translations: { fr: "Ailier gauche" } },
+    { id: "forward8", name: "Center", order: 8, translations: { fr: "Centre" } },
+    { id: "forward9", name: "Right Wing", order: 9, translations: { fr: "Ailier droit" } }, 
+    { id: "forward10", name: "Left Wing", order: 10, translations: { fr: "Ailier gauche" } },
+    { id: "forward11", name: "Center", order: 11, translations: { fr: "Centre" } },
+    { id: "forward12", name: "Right Wing", order: 12, translations: { fr: "Ailier droit" } },  
+    { id: "defense1", name: "Defenseman", order: 13, translations: { fr: "Défenseur" } },
+    { id: "defense2", name: "Defenseman", order: 14, translations: { fr: "Défenseur" } },
+    { id: "defense3", name: "Defenseman", order: 15, translations: { fr: "Défenseur" } },
+    { id: "defense4", name: "Defenseman", order: 16, translations: { fr: "Défenseur" } },
+    { id: "defense5", name: "Defenseman", order: 17, translations: { fr: "Défenseur" } },
+    { id: "defense6", name: "Defenseman", order: 18, translations: { fr: "Défenseur" } },
+    { id: "goalie1", name: "Goalie", order: 19, translations: { fr: "Gardien" } },
+    { id: "goalie2", name: "Goalie", order: 20, translations: { fr: "Gardien" } },
+  ],
   // handball: [
   //   { id: "goalkeeper", name: "Left Wing", order: 1, translations: { fr: "Gardien" } },
   //   { id: "leftwing", name: "Left Wing", order: 2, translations: { fr: "Ailier gauche" } },

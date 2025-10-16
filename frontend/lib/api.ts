@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { Player } from "../app/types/players";
 
-// Configuration pour dev/prod
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
   ? "https://mylegendteam.onrender.com" 
   : (process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000");

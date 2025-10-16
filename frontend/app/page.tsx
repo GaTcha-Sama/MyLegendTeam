@@ -340,9 +340,14 @@ export default function DreamTeamBuilder() {
             >
               ⚽ Football
             </button>
-            <span className="bg-black/20 px-3 py-1 rounded-full font-[family-name:var(--font-title)] opacity-50 cursor-not-allowed">
+                <button 
+              onClick={() => setSelectedSport("hockey")}
+              className={`px-3 py-1 rounded-full font-[family-name:var(--font-title)] transition-all cursor-pointer ${
+                selectedSport === "hockey" ? "bg-sky-600/80 ring-2 ring-white" : "bg-black/20 hover:bg-black/30"
+              }`}
+            >
               🏒 Ice Hockey
-            </span>
+            </button>
           </div>
         </div>
       </header>
@@ -466,8 +471,8 @@ export default function DreamTeamBuilder() {
                 <div className="text-center py-4 col-span-3 text-black font-[family-name:var(--font-title)]">
                   Loading players... 💿​ <br/>
                   Players are getting out of the locker room in 3, 2, 1... <br/>
-                  Oh wait, there are some players who are not ready yet... <br/>
-                  The mates have to go to the toilet... 🚽 <br/>
+                  Oh wait, there&apos;re some players who ain&apos;t ready yet... <br/>
+                  The mates have forgotten their jerseys... 🤣 <br/>
                   Here they come now ! 🎺​📣​              
                 </div>
               ) : playersToShow.length === 0 && hasActiveFilters ? (
@@ -541,13 +546,13 @@ export default function DreamTeamBuilder() {
               height: 900,
               // background: "url('/images/rugby-field.webp') no-repeat center/cover",
                background: selectedSport === "rugby"
-                  ? 'url("/images/rugby-field.webp") no-repeat center/cover'
+                    ? 'url("/images/rugby-field.webp") no-repeat center/cover'
                    : selectedSport === "football"
                   ? 'url("/images/foot-field.webp") no-repeat center/cover'
-                 : selectedSport === "basketball"
-                 ? 'url("/images/basket-field.webp") no-repeat center/cover'
-              //   : selectedSport === "hockey"
-              //   ? 'url("/images/hockey-field.webp") no-repeat center/cover'
+                  : selectedSport === "basketball"
+                  ? 'url("/images/basket-field.webp") no-repeat center/cover'
+                  : selectedSport === "hockey"
+                  ? 'url("/images/hockey-field.webp") no-repeat center/cover'
               //   : selectedSport === "handball"
               //   ? 'url("/images/handball-field.webp") no-repeat center/cover'
                  : ""
