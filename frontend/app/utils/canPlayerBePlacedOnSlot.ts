@@ -33,7 +33,7 @@ export const hockeyPositionSlotMapping: Record<string, string[]> = {
   "Left wing": ["forward1", "forward4", "forward7", "forward10"],
   "Center": ["forward2", "forward5", "forward8", "forward11"],
   "Right wing": ["forward3", "forward6", "forward9", "forward12"],
-  "Defender": ["defense1", "defense2", "defense3", "defense4", "defense5", "defense6"],
+  "Defender": ["defense1", "defense2", "defense3", "defense4", "defense5", "defense6"], 
   "Goalkeeper": ["goalie1", "goalie2"]
 };
 
