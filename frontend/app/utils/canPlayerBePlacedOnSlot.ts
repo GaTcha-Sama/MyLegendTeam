@@ -30,9 +30,11 @@ export const footballPositionSlotMapping: Record<string, string[]> = {
 };
 
 export const hockeyPositionSlotMapping: Record<string, string[]> = {
-  "Forward": ["forward1", "forward2", "forward3", "forward4", "forward5", "forward6", "forward7", "forward8", "forward9", "forward10", "forward11", "forward12"],
-  "Defense": ["defense1", "defense2", "defense3", "defense4", "defense5", "defense6"],
-  "Goalie": ["goalie1", "goalie2"]
+  "Left wing": ["forward1", "forward4", "forward7", "forward10"],
+  "Center": ["forward2", "forward5", "forward8", "forward11"],
+  "Right wing": ["forward3", "forward6", "forward9", "forward12"],
+  "Defender": ["defense1", "defense2", "defense3", "defense4", "defense5", "defense6"],
+  "Goalkeeper": ["goalie1", "goalie2"]
 };
 
 export const canPlayerBePlacedOnSlot = (player: Player, slotId: string, sport: Sport): boolean => {
@@ -147,30 +149,30 @@ export const getPlayerPositionsForSlot = (slotId: string, sport: Sport): string[
 
   if (sport === "hockey") {
     if (slotId.startsWith("hockey_substitute")) {
-      return ["Forward", "Defense", "Goalie"];
+      return ["Left wing", "Center", "Right wing", "Defender", "Goalkeeper"];
     }
     
     const slotToPositionMapping: Record<string, string[]> = {
-      "forward1": ["Forward"],
-      "forward2": ["Forward"],
-      "forward3": ["Forward"],
-      "forward4": ["Forward"],
-      "forward5": ["Forward"],
-      "forward6": ["Forward"],
-      "forward7": ["Forward"],
-      "forward8": ["Forward"],
-      "forward9": ["Forward"],
-      "forward10": ["Forward"],
-      "forward11": ["Forward"],
-      "forward12": ["Forward"],
-      "defense1": ["Defense"],
-      "defense2": ["Defense"],
-      "defense3": ["Defense"],
-      "defense4": ["Defense"],
-      "defense5": ["Defense"],
-      "defense6": ["Defense"],
-      "goalie1": ["Goalie"],
-      "goalie2": ["Goalie"]
+      "forward1": ["Left wing", "Center", "Right wing"],
+      "forward2": ["Left wing", "Center", "Right wing"],
+      "forward3": ["Left wing", "Center", "Right wing"],
+      "forward4": ["Left wing", "Center", "Right wing"],
+      "forward5": ["Left wing", "Center", "Right wing"],
+      "forward6": ["Left wing", "Center", "Right wing"],
+      "forward7": ["Left wing", "Center", "Right wing"],
+      "forward8": ["Left wing", "Center", "Right wing"],
+      "forward9": ["Left wing", "Center", "Right wing"],
+      "forward10": ["Left wing", "Center", "Right wing"],
+      "forward11": ["Left wing", "Center", "Right wing"],
+      "forward12": ["Left wing", "Center", "Right wing"],
+      "defense1": ["Defender"],
+      "defense2": ["Defender"],
+      "defense3": ["Defender"],
+      "defense4": ["Defender"],
+      "defense5": ["Defender"],
+      "defense6": ["Defender"],
+      "goalie1": ["Goalkeeper"],
+      "goalie2": ["Goalkeeper"]
     };
     
     return slotToPositionMapping[slotId] || [];
