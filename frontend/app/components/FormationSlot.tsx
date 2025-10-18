@@ -8,7 +8,7 @@ import { getPortraitPath, getFlagPath, getTeamLogoPath } from "../utils/imageHel
 import Image from "next/image";
 
 const getSilhouettePath = (positionId: string, sport: string) => {
-  if (sport !== "rugby" && sport !== "basketball") return null;
+  if (sport !== "rugby" && sport !== "basketball" && sport !== "hockey") return null;
   
   const silhouetteRugbyMapping: { [key: string]: string } = {
     "fullback": "15.webp",
@@ -48,10 +48,36 @@ const getSilhouettePath = (positionId: string, sport: string) => {
     "basketball_substitute4": "sub.webp",
     "basketball_substitute5": "sub.webp"
   };
+
+  const silhouetteIceHockeyMapping: { [key: string]: string } = {
+    "goalie1": "gk.webp",
+    "goalie2": "gk.webp",
+    "defense1": "def.webp",
+    "defense2": "def.webp",
+    "defense3": "def.webp",
+    "defense4": "def.webp",
+    "defense5": "def.webp",
+    "defense6": "def.webp",
+    "forward1": "wing.webp",
+    "forward2": "center.webp",
+    "forward3": "wing.webp",
+    "forward4": "wing.webp",
+    "forward5": "center.webp",
+    "forward6": "wing.webp",
+    "forward7": "wing.webp",
+    "forward8": "center.webp",
+    "forward9": "wing.webp",
+    "forward10": "wing.webp",
+    "forward11": "center.webp",
+    "forward12": "wing.webp",
+  };
   
   let silhouetteFile = silhouetteRugbyMapping[positionId];
   if (sport === "basketball") {
     silhouetteFile = silhouetteBasketballMapping[positionId];
+  }
+  if (sport === "hockey") {
+    silhouetteFile = silhouetteIceHockeyMapping[positionId];
   }
   return silhouetteFile ? `/images/${sport}/silhouettes/${silhouetteFile}` : null;
 };
