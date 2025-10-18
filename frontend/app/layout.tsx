@@ -92,7 +92,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'RsSppRftB7mNjUp0rQeUJVIpjtp7woT5xO96y3-3-zw',
     yandex: 'your-yandex-verification-code',
     yahoo: 'your-yahoo-verification-code',
   },
