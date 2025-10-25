@@ -11179,8 +11179,8 @@
       "sport_id": 1,
       "team1_id": 73,
       "team2_id": 86,
-      "team3_id": 17,
-      "actual_team_id": 17,
+      "team3_id": 87,
+      "actual_team_id": 87,
       "legendary_player": null,
       "flag": "images/flags/WAL.png",
       "active": true,
@@ -13398,6 +13398,23 @@
     },
     {
       "id": 1412,
+      "name": "Caluori",
+      "lastname": "Noah",
+      "nationality_id": 198,
+      "position1_id": 8,
+      "position2_id": null,
+      "sport_id": 1,
+      "team1_id": 81,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 81,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": true,
+      "photo": "images/rugby/Players/ENG/Noah-Caluori.webp"
+    },
+    {
+      "id": 1413,
       "name": "Care",
       "lastname": "Danny",
       "nationality_id": 198,
@@ -13414,7 +13431,7 @@
       "photo": "images/rugby/Players/ENG/Danny-Care.webp"
     },
     {
-      "id": 1413,
+      "id": 1414,
       "name": "Carling",
       "lastname": "Will",
       "nationality_id": 198,
@@ -13431,7 +13448,7 @@
       "photo": "images/rugby/Players/ENG/Will-Carling.webp"
     },
     {
-      "id": 1414,
+      "id": 1415,
       "name": "Catt",
       "lastname": "Mike",
       "nationality_id": 198,
@@ -13448,7 +13465,7 @@
       "photo": "images/rugby/Players/ENG/Mike-Catt.webp"
     },
     {
-      "id": 1415,
+      "id": 1416,
       "name": "Chessum",
       "lastname": "Ollie",
       "nationality_id": 198,
@@ -13465,7 +13482,7 @@
       "photo": "images/rugby/Players/ENG/Ollie-Chessum.webp"
     },
     {
-      "id": 1416,
+      "id": 1417,
       "name": "Clarke",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13482,7 +13499,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Clarke.webp"
     },
     {
-      "id": 1417,
+      "id": 1418,
       "name": "Cohen",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13499,7 +13516,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Cohen.webp"
     },
     {
-      "id": 1418,
+      "id": 1419,
       "name": "Cole",
       "lastname": "Dan",
       "nationality_id": 198,
@@ -13516,7 +13533,7 @@
       "photo": "images/rugby/Players/ENG/Dan-Cole.webp"
     },
     {
-      "id": 1419,
+      "id": 1420,
       "name": "Coles",
       "lastname": "Alex",
       "nationality_id": 198,
@@ -13533,7 +13550,7 @@
       "photo": "images/rugby/Players/ENG/Alex-Coles.webp"
     },
     {
-      "id": 1420,
+      "id": 1421,
       "name": "Corry",
       "lastname": "Martin",
       "nationality_id": 198,
@@ -13550,7 +13567,7 @@
       "photo": "images/rugby/Players/ENG/Martin-Corry.webp"
     },
     {
-      "id": 1421,
+      "id": 1422,
       "name": "Cowan-Dickie",
       "lastname": "Luke",
       "nationality_id": 198,
@@ -13567,7 +13584,7 @@
       "photo": "images/rugby/Players/ENG/Luke-Cowan-Dickie.webp"
     },
     {
-      "id": 1422,
+      "id": 1423,
       "name": "Croft",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -13584,7 +13601,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Croft.webp"
     },
     {
-      "id": 1423,
+      "id": 1424,
       "name": "Cueto",
       "lastname": "Mark",
       "nationality_id": 198,
@@ -13601,7 +13618,7 @@
       "photo": "images/rugby/Players/ENG/Mark-Cueto.webp"
     },
     {
-      "id": 1424,
+      "id": 1425,
       "name": "Cunningham-South",
       "lastname": "Chandler",
       "nationality_id": 198,
@@ -13618,7 +13635,7 @@
       "photo": "images/rugby/Players/ENG/Chandler-Cunningham-South.webp"
     },
     {
-      "id": 1425,
+      "id": 1426,
       "name": "Curry",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13635,7 +13652,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Curry.webp"
     },
     {
-      "id": 1426,
+      "id": 1427,
       "name": "Curry",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -13652,7 +13669,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Curry.webp"
     },
     {
-      "id": 1427,
+      "id": 1428,
       "name": "Dallaglio",
       "lastname": "Lawrence",
       "nationality_id": 198,
@@ -13669,7 +13686,7 @@
       "photo": "images/rugby/Players/ENG/Lawrence-Dallaglio.webp"
     },
     {
-      "id": 1428,
+      "id": 1429,
       "name": "Daly",
       "lastname": "Elliot",
       "nationality_id": 198,
@@ -13686,7 +13703,7 @@
       "photo": "images/rugby/Players/ENG/Elliot-Daly.webp"
     },
     {
-      "id": 1429,
+      "id": 1430,
       "name": "Dan",
       "lastname": "Theo",
       "nationality_id": 198,
@@ -13703,7 +13720,7 @@
       "photo": "images/rugby/Players/ENG/Theo-Dan.webp"
     },
     {
-      "id": 1430,
+      "id": 1431,
       "name": "Dawson",
       "lastname": "Matt",
       "nationality_id": 198,
@@ -13720,7 +13737,7 @@
       "photo": "images/rugby/Players/ENG/Matt-Dawson.webp"
     },
     {
-      "id": 1431,
+      "id": 1432,
       "name": "De Glanville",
       "lastname": "Phil",
       "nationality_id": 198,
@@ -13737,7 +13754,7 @@
       "photo": "images/rugby/Players/ENG/Phil-De-Glanville.webp"
     },
     {
-      "id": 1432,
+      "id": 1433,
       "name": "Dombrandt",
       "lastname": "Alex",
       "nationality_id": 198,
@@ -13754,7 +13771,7 @@
       "photo": "images/rugby/Players/ENG/Alex-Dombrandt.webp"
     },
     {
-      "id": 1433,
+      "id": 1434,
       "name": "Earl",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13771,7 +13788,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Earl.webp"
     },
     {
-      "id": 1434,
+      "id": 1435,
       "name": "Easter",
       "lastname": "Nick",
       "nationality_id": 198,
@@ -13788,7 +13805,7 @@
       "photo": "images/rugby/Players/ENG/Nick-Easter.webp"
     },
     {
-      "id": 1435,
+      "id": 1436,
       "name": "Farrell",
       "lastname": "Owen",
       "nationality_id": 198,
@@ -13805,7 +13822,7 @@
       "photo": "images/rugby/Players/ENG/Owen-Farrell.webp"
     },
     {
-      "id": 1436,
+      "id": 1437,
       "name": "Fasogbon",
       "lastname": "Afolabi",
       "nationality_id": 198,
@@ -13822,7 +13839,7 @@
       "photo": "images/rugby/Players/ENG/Afolabi-Fasogbon.webp"
     },
     {
-      "id": 1437,
+      "id": 1438,
       "name": "Feyi-Waboso",
       "lastname": "Immanuel",
       "nationality_id": 198,
@@ -13839,7 +13856,7 @@
       "photo": "images/rugby/Players/ENG/Immanuel-Feyi-Waboso.webp"
     },
     {
-      "id": 1438,
+      "id": 1439,
       "name": "Flood",
       "lastname": "Toby",
       "nationality_id": 198,
@@ -13856,7 +13873,7 @@
       "photo": "images/rugby/Players/ENG/Toby-Flood.webp"
     },
     {
-      "id": 1439,
+      "id": 1440,
       "name": "Foden",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -13873,7 +13890,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Foden.webp"
     },
     {
-      "id": 1440,
+      "id": 1441,
       "name": "Ford",
       "lastname": "George",
       "nationality_id": 198,
@@ -13890,7 +13907,7 @@
       "photo": "images/rugby/Players/ENG/George-Ford.webp"
     },
     {
-      "id": 1441,
+      "id": 1442,
       "name": "Freeman",
       "lastname": "Tommy",
       "nationality_id": 198,
@@ -13907,7 +13924,7 @@
       "photo": "images/rugby/Players/ENG/Tommy-Freeman.webp"
     },
     {
-      "id": 1442,
+      "id": 1443,
       "name": "Genge",
       "lastname": "Ellis",
       "nationality_id": 198,
@@ -13924,7 +13941,7 @@
       "photo": "images/rugby/Players/ENG/Ellis-Genge.webp"
     },
     {
-      "id": 1443,
+      "id": 1444,
       "name": "George",
       "lastname": "Jamie",
       "nationality_id": 198,
@@ -13941,7 +13958,7 @@
       "photo": "images/rugby/Players/ENG/Jamie-George.webp"
     },
     {
-      "id": 1444,
+      "id": 1445,
       "name": "Greenwood",
       "lastname": "Will",
       "nationality_id": 198,
@@ -13958,7 +13975,7 @@
       "photo": "images/rugby/Players/ENG/Will-Greenwood.webp"
     },
     {
-      "id": 1445,
+      "id": 1446,
       "name": "Grewcock",
       "lastname": "Danny",
       "nationality_id": 198,
@@ -13975,7 +13992,7 @@
       "photo": "images/rugby/Players/ENG/Danny-Grewcock.webp"
     },
     {
-      "id": 1446,
+      "id": 1447,
       "name": "Guscott",
       "lastname": "Jeremy",
       "nationality_id": 198,
@@ -13992,7 +14009,7 @@
       "photo": "images/rugby/Players/ENG/Jeremy-Guscott.webp"
     },
     {
-      "id": 1447,
+      "id": 1448,
       "name": "Hartley",
       "lastname": "Dylan",
       "nationality_id": 198,
@@ -14009,7 +14026,7 @@
       "photo": "images/rugby/Players/ENG/Dylan-Hartley.webp"
     },
     {
-      "id": 1448,
+      "id": 1449,
       "name": "Haskell",
       "lastname": "James",
       "nationality_id": 198,
@@ -14026,7 +14043,7 @@
       "photo": "images/rugby/Players/ENG/James-Haskell.webp"
     },
     {
-      "id": 1449,
+      "id": 1450,
       "name": "Healey",
       "lastname": "Austin",
       "nationality_id": 198,
@@ -14043,7 +14060,7 @@
       "photo": "images/rugby/Players/ENG/Austin-Healey.webp"
     },
     {
-      "id": 1450,
+      "id": 1451,
       "name": "Heyes",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -14060,7 +14077,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Heyes.webp"
     },
     {
-      "id": 1451,
+      "id": 1452,
       "name": "Hill",
       "lastname": "Richard",
       "nationality_id": 198,
@@ -14077,7 +14094,7 @@
       "photo": "images/rugby/Players/ENG/Richard-Hill.webp"
     },
     {
-      "id": 1452,
+      "id": 1453,
       "name": "Itoje",
       "lastname": "Maro",
       "nationality_id": 198,
@@ -14094,7 +14111,7 @@
       "photo": "images/rugby/Players/ENG/Maro-Itoje.webp"
     },
     {
-      "id": 1453,
+      "id": 1454,
       "name": "Isiekwe",
       "lastname": "Nick",
       "nationality_id": 198,
@@ -14111,7 +14128,7 @@
       "photo": "images/rugby/Players/ENG/Nick-Isiekwe.webp"
     },
     {
-      "id": 1454,
+      "id": 1455,
       "name": "Johnson",
       "lastname": "Martin",
       "nationality_id": 198,
@@ -14128,7 +14145,7 @@
       "photo": "images/rugby/Players/ENG/Martin-Johnson.webp"
     },
     {
-      "id": 1455,
+      "id": 1456,
       "name": "Joseph",
       "lastname": "Jonathan",
       "nationality_id": 198,
@@ -14145,7 +14162,7 @@
       "photo": "images/rugby/Players/ENG/Jonathan-Joseph.webp"
     },
     {
-      "id": 1456,
+      "id": 1457,
       "name": "Kay",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -14162,7 +14179,7 @@
       "photo": "images/rugby/Players/ENG/Ben-Kay.webp"
     },
     {
-      "id": 1457,
+      "id": 1458,
       "name": "Kruis",
       "lastname": "George",
       "nationality_id": 198,
@@ -14179,7 +14196,7 @@
       "photo": "images/rugby/Players/ENG/George-Kruis.webp"
     },
     {
-      "id": 1458,
+      "id": 1459,
       "name": "Launchbury",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -14196,7 +14213,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Launchbury.webp"
     },
     {
-      "id": 1459,
+      "id": 1460,
       "name": "Lawes",
       "lastname": "Courtney",
       "nationality_id": 198,
@@ -14213,7 +14230,7 @@
       "photo": "images/rugby/Players/ENG/Courtney-Lawes.webp"
     },
     {
-      "id": 1460,
+      "id": 1461,
       "name": "Lawrence",
       "lastname": "Ollie",
       "nationality_id": 198,
@@ -14230,7 +14247,7 @@
       "photo": "images/rugby/Players/ENG/Ollie-Lawrence.webp"
     },
     {
-      "id": 1461,
+      "id": 1462,
       "name": "Leonard",
       "lastname": "Jason",
       "nationality_id": 198,
@@ -14247,7 +14264,7 @@
       "photo": "images/rugby/Players/ENG/Jason-Leonard.webp"
     },
     {
-      "id": 1462,
+      "id": 1463,
       "name": "Lewsey",
       "lastname": "Josh",
       "nationality_id": 198,
@@ -14264,7 +14281,7 @@
       "photo": "images/rugby/Players/ENG/Josh-Lewsey.webp"
     },
     {
-      "id": 1463,
+      "id": 1464,
       "name": "Ludlam",
       "lastname": "Lewis",
       "nationality_id": 198,
@@ -14281,7 +14298,7 @@
       "photo": "images/rugby/Players/ENG/Lewis-Ludlam.webp"
     },
     {
-      "id": 1464,
+      "id": 1465,
       "name": "Luger",
       "lastname": "Dan",
       "nationality_id": 198,
@@ -14298,7 +14315,7 @@
       "photo": "images/rugby/Players/ENG/Dan-Luger.webp"
     },
     {
-      "id": 1465,
+      "id": 1466,
       "name": "Marchant",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -14315,7 +14332,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Marchant.webp"
     },
     {
-      "id": 1466,
+      "id": 1467,
       "name": "Marler",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -14332,7 +14349,24 @@
       "photo": "images/rugby/Players/ENG/Joe-Marler.webp"
     },
     {
-      "id": 1467,
+      "id": 1468,
+      "name": "Martin",
+      "lastname": "George",
+      "nationality_id": 198,
+      "position1_id": 3,
+      "position2_id": 4,
+      "sport_id": 1,
+      "team1_id": 75,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 75,
+      "legendary_player": null,
+      "flag": "images/flags/ENG.png",
+      "active": true,
+      "photo": "images/rugby/Players/ENG/George-Martin.webp"
+    },
+    {
+      "id": 1469,
       "name": "May",
       "lastname": "Jonny",
       "nationality_id": 198,
@@ -14349,7 +14383,7 @@
       "photo": "images/rugby/Players/ENG/Jonny-May.webp"
     },
     {
-      "id": 1468,
+      "id": 1470,
       "name": "Mears",
       "lastname": "Lee",
       "nationality_id": 198,
@@ -14366,7 +14400,7 @@
       "photo": "images/rugby/Players/ENG/Lee-Mears.webp"
     },
     {
-      "id": 1469,
+      "id": 1471,
       "name": "Mercer",
       "lastname": "Zach",
       "nationality_id": 198,
@@ -14383,7 +14417,7 @@
       "photo": "images/rugby/Players/ENG/Zach-Mercer.webp"
     },
     {
-      "id": 1470,
+      "id": 1472,
       "name": "Mitchell",
       "lastname": "Alex",
       "nationality_id": 198,
@@ -14400,7 +14434,7 @@
       "photo": "images/rugby/Players/ENG/Alex-Mitchell.webp"
     },
     {
-      "id": 1471,
+      "id": 1473,
       "name": "Moody",
       "lastname": "Lewis",
       "nationality_id": 198,
@@ -14417,7 +14451,7 @@
       "photo": "images/rugby/Players/ENG/Lewis-Moody.webp"
     },
     {
-      "id": 1472,
+      "id": 1474,
       "name": "Moore",
       "lastname": "Brian",
       "nationality_id": 198,
@@ -14434,7 +14468,7 @@
       "photo": "images/rugby/Players/ENG/Brian-Moore.webp"
     },
     {
-      "id": 1473,
+      "id": 1475,
       "name": "Noon",
       "lastname": "Jamie",
       "nationality_id": 198,
@@ -14451,7 +14485,7 @@
       "photo": "images/rugby/Players/ENG/Jamie-Noon.webp"
     },
     {
-      "id": 1474,
+      "id": 1476,
       "name": "Nowell",
       "lastname": "Jack",
       "nationality_id": 198,
@@ -14468,7 +14502,7 @@
       "photo": "images/rugby/Players/ENG/Jack-Nowell.webp"
     },
     {
-      "id": 1475,
+      "id": 1477,
       "name": "Opoku-Fordjour",
       "lastname": "Asher",
       "nationality_id": 198,
@@ -14485,7 +14519,7 @@
       "photo": "images/rugby/Players/ENG/Asher-Opoku-Fordjour.webp"
     },
     {
-      "id": 1476,
+      "id": 1478,
       "name": "Palmer",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -14502,7 +14536,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Palmer.webp"
     },
     {
-      "id": 1477,
+      "id": 1479,
       "name": "Perry",
       "lastname": "Shaun",
       "nationality_id": 198,
@@ -14519,7 +14553,7 @@
       "photo": "images/rugby/Players/ENG/Shaun-Perry.webp"
     },
     {
-      "id": 1478,
+      "id": 1480,
       "name": "Pollock",
       "lastname": "Henry",
       "nationality_id": 198,
@@ -14536,7 +14570,7 @@
       "photo": "images/rugby/Players/ENG/Henry-Pollock.webp"
     },
     {
-      "id": 1479,
+      "id": 1481,
       "name": "Regan",
       "lastname": "Mark",
       "nationality_id": 198,
@@ -14553,7 +14587,7 @@
       "photo": "images/rugby/Players/ENG/Mark-Regan.webp"
     },
     {
-      "id": 1480,
+      "id": 1482,
       "name": "Ribbans",
       "lastname": "David",
       "nationality_id": 198,
@@ -14570,7 +14604,7 @@
       "photo": "images/rugby/Players/ENG/David-Ribbans.webp"
     },
     {
-      "id": 1481,
+      "id": 1483,
       "name": "Richards",
       "lastname": "Dean",
       "nationality_id": 198,
@@ -14587,7 +14621,7 @@
       "photo": "images/rugby/Players/ENG/Dean-Richards.webp"
     },
     {
-      "id": 1482,
+      "id": 1484,
       "name": "Robinson",
       "lastname": "Jason",
       "nationality_id": 198,
@@ -14604,7 +14638,7 @@
       "photo": "images/rugby/Players/ENG/Jason-Robinson.webp"
     },
     {
-      "id": 1483,
+      "id": 1485,
       "name": "Robshaw",
       "lastname": "Chris",
       "nationality_id": 198,
@@ -14621,7 +14655,7 @@
       "photo": "images/rugby/Players/ENG/Chris-Robshaw.webp"
     },
     {
-      "id": 1484,
+      "id": 1486,
       "name": "Rodber",
       "lastname": "Tim",
       "nationality_id": 198,
@@ -14638,7 +14672,7 @@
       "photo": "images/rugby/Players/ENG/Tim-Rodber.webp"
     },
     {
-      "id": 1485,
+      "id": 1487,
       "name": "Roebuck",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -14655,7 +14689,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Roebuck.webp"
     },
     {
-      "id": 1486,
+      "id": 1488,
       "name": "Rowntree",
       "lastname": "Graham",
       "nationality_id": 198,
@@ -14672,7 +14706,7 @@
       "photo": "images/rugby/Players/ENG/Graham-Rowntree.webp"
     },
     {
-      "id": 1487,
+      "id": 1489,
       "name": "Shaw",
       "lastname": "Simon",
       "nationality_id": 198,
@@ -14689,7 +14723,7 @@
       "photo": "images/rugby/Players/ENG/Simon-Shaw.webp"
     },
     {
-      "id": 1488,
+      "id": 1490,
       "name": "Sheridan",
       "lastname": "Andrew",
       "nationality_id": 198,
@@ -14706,7 +14740,7 @@
       "photo": "images/rugby/Players/ENG/Andrew-Sheridan.webp"
     },
     {
-      "id": 1489,
+      "id": 1491,
       "name": "Simmonds",
       "lastname": "Sam",
       "nationality_id": 198,
@@ -14723,7 +14757,7 @@
       "photo": "images/rugby/Players/ENG/Sam-Simmonds.webp"
     },
     {
-      "id": 1490,
+      "id": 1492,
       "name": "Sinkler",
       "lastname": "Kyle",
       "nationality_id": 198,
@@ -14740,7 +14774,7 @@
       "photo": "images/rugby/Players/ENG/Kyle-Sinkler.webp"
     },
     {
-      "id": 1491,
+      "id": 1493,
       "name": "Slade",
       "lastname": "Henry",
       "nationality_id": 198,
@@ -14757,7 +14791,7 @@
       "photo": "images/rugby/Players/ENG/Henry-Slade.webp"
     },
     {
-      "id": 1492,
+      "id": 1494,
       "name": "Smith",
       "lastname": "Fin",
       "nationality_id": 198,
@@ -14774,7 +14808,7 @@
       "photo": "images/rugby/Players/ENG/Fin-Smith.webp"
     },
     {
-      "id": 1493,
+      "id": 1495,
       "name": "Smith",
       "lastname": "Marcus",
       "nationality_id": 198,
@@ -14791,7 +14825,7 @@
       "photo": "images/rugby/Players/ENG/Marcus-Smith.webp"
     },
     {
-      "id": 1494,
+      "id": 1496,
       "name": "Stevens",
       "lastname": "Matt",
       "nationality_id": 198,
@@ -14808,7 +14842,7 @@
       "photo": "images/rugby/Players/ENG/Matt-Stevens.webp"
     },
     {
-      "id": 1495,
+      "id": 1497,
       "name": "Steward",
       "lastname": "Freddie",
       "nationality_id": 198,
@@ -14825,7 +14859,7 @@
       "photo": "images/rugby/Players/ENG/Freddie-Steward.webp"
     },
     {
-      "id": 1496,
+      "id": 1498,
       "name": "Stuart",
       "lastname": "Will",
       "nationality_id": 198,
@@ -14842,7 +14876,7 @@
       "photo": "images/rugby/Players/ENG/Will-Stuart.webp"
     },
     {
-      "id": 1497,
+      "id": 1499,
       "name": "Tait",
       "lastname": "Mathew",
       "nationality_id": 198,
@@ -14859,7 +14893,7 @@
       "photo": "images/rugby/Players/ENG/Mathew-Tait.webp"
     },
     {
-      "id": 1498,
+      "id": 1500,
       "name": "Tindall",
       "lastname": "Mike",
       "nationality_id": 198,
@@ -14876,7 +14910,7 @@
       "photo": "images/rugby/Players/ENG/Mike-Tindall.webp"
     },
     {
-      "id": 1499,
+      "id": 1501,
       "name": "Thompson",
       "lastname": "Steve",
       "nationality_id": 198,
@@ -14893,7 +14927,7 @@
       "photo": "images/rugby/Players/ENG/Steve-Thompson.webp"
     },
     {
-      "id": 1500,
+      "id": 1502,
       "name": "Tuilagi",
       "lastname": "Manu",
       "nationality_id": 198,
@@ -14910,7 +14944,7 @@
       "photo": "images/rugby/Players/ENG/Manu-Tuilagi.webp"
     },
     {
-      "id": 1501,
+      "id": 1503,
       "name": "Underhill",
       "lastname": "Sam",
       "nationality_id": 198,
@@ -14927,7 +14961,7 @@
       "photo": "images/rugby/Players/ENG/Sam-Underhill.webp"
     },
     {
-      "id": 1502,
+      "id": 1504,
       "name": "Underwood",
       "lastname": "Rory",
       "nationality_id": 198,
@@ -14944,7 +14978,7 @@
       "photo": "images/rugby/Players/ENG/Rory-Underwood.webp"
     },
     {
-      "id": 1503,
+      "id": 1505,
       "name": "van Poortvliet",
       "lastname": "Jack",
       "nationality_id": 198,
@@ -14961,7 +14995,7 @@
       "photo": "images/rugby/Players/ENG/Jack-van-Poortvliet.webp"
     },
     {
-      "id": 1504,
+      "id": 1506,
       "name": "Vickery",
       "lastname": "Phil",
       "nationality_id": 198,
@@ -14978,7 +15012,7 @@
       "photo": "images/rugby/Players/ENG/Phil-Vickery.webp"
     },
     {
-      "id": 1505,
+      "id": 1507,
       "name": "Vunipola",
       "lastname": "Billy",
       "nationality_id": 198,
@@ -14995,7 +15029,7 @@
       "photo": "images/rugby/Players/ENG/Billy-Vunipola.webp"
     },
     {
-      "id": 1506,
+      "id": 1508,
       "name": "Vunipola",
       "lastname": "Mako",
       "nationality_id": 198,
@@ -15012,7 +15046,7 @@
       "photo": "images/rugby/Players/ENG/Mako-Vunipola.webp"
     },
     {
-      "id": 1507,
+      "id": 1509,
       "name": "Watson",
       "lastname": "Anthony",
       "nationality_id": 198,
@@ -15029,7 +15063,7 @@
       "photo": "images/rugby/Players/ENG/Anthony-Watson.webp"
     },
     {
-      "id": 1508,
+      "id": 1510,
       "name": "White",
       "lastname": "Julian",
       "nationality_id": 198,
@@ -15046,7 +15080,7 @@
       "photo": "images/rugby/Players/ENG/Julian-White.webp"
     },
     {
-      "id": 1509,
+      "id": 1511,
       "name": "Wilkinson",
       "lastname": "Jonny",
       "nationality_id": 198,
@@ -15063,7 +15097,7 @@
       "photo": "images/rugby/Players/ENG/Jonny-Wilkinson.webp"
     },
     {
-      "id": 1510,
+      "id": 1512,
       "name": "Willis",
       "lastname": "Jack",
       "nationality_id": 198,
@@ -15080,7 +15114,7 @@
       "photo": "images/rugby/Players/ENG/Jack-Willis.webp"
     },
     {
-      "id": 1511,
+      "id": 1513,
       "name": "Willis",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -15097,7 +15131,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Willis.webp"
     },
     {
-      "id": 1512,
+      "id": 1514,
       "name": "Wilson",
       "lastname": "Dave",
       "nationality_id": 198,
@@ -15114,7 +15148,7 @@
       "photo": "images/rugby/Players/ENG/Dave-Wilson.webp"
     },
     {
-      "id": 1513,
+      "id": 1515,
       "name": "Wood",
       "lastname": "Tom",
       "nationality_id": 198,
@@ -15131,7 +15165,7 @@
       "photo": "images/rugby/Players/ENG/Tom-Wood.webp"
     },
     {
-      "id": 1514,
+      "id": 1516,
       "name": "Worsley",
       "lastname": "Joe",
       "nationality_id": 198,
@@ -15148,7 +15182,7 @@
       "photo": "images/rugby/Players/ENG/Joe-Worsley.webp"
     },
     {
-      "id": 1515,
+      "id": 1517,
       "name": "Youngs",
       "lastname": "Ben",
       "nationality_id": 198,
@@ -18677,7 +18711,7 @@
       "team1_id": 32,
       "team2_id": 62,
       "team3_id": 1,
-      "actual_team_id": 1,
+      "actual_team_id": 32,
       "legendary_player": null,
       "flag": "images/flags/TGA.png",
       "active": true,
@@ -19637,15 +19671,32 @@
     },
     {
       "id": 4001,
+      "name": "Adebayo",
+      "lastname": "Bam",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": 13,
+      "sport_id": 2,
+      "team1_id": 315,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 315,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Bam-Adebayo.webp"
+    },
+    {
+      "id": 4002,
       "name": "Aldridge",
       "lastname": "LaMarcus",
       "nationality_id": 183,
       "position1_id": 13,
-      "position2_id": null,
+      "position2_id": 14,
       "sport_id": 2,
       "team1_id": 324,
       "team2_id": 326,
-      "team3_id": null,
+      "team3_id": 302,
       "actual_team_id": null,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
@@ -19653,7 +19704,7 @@
       "photo": "images/basketball/Players/USA/LaMarcus-Aldridge.webp"
     },
     {
-      "id": 4002,
+      "id": 4003,
       "name": "Allen",
       "lastname": "Ray",
       "nationality_id": 183,
@@ -19664,13 +19715,30 @@
       "team2_id": 301,
       "team3_id": 315,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Ray-Allen.webp"
     },
     {
-      "id": 4003,
+      "id": 4004,
+      "name": "Allen",
+      "lastname": "Jarrett",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 302,
+      "team2_id": 305,
+      "team3_id": null,
+      "actual_team_id": 305,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Jarrett-Allen.webp"
+    },
+    {
+      "id": 4005,
       "name": "Anthony",
       "lastname": "Carmelo",
       "nationality_id": 183,
@@ -19679,15 +19747,83 @@
       "sport_id": 2,
       "team1_id": 307,
       "team2_id": 319,
-      "team3_id": null,
+      "team3_id": 324,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Carmelo-Anthony.webp"
     },
     {
-      "id": 4004,
+      "id": 4006,
+      "name": "Archibald",
+      "lastname": "Nate",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 325,
+      "team2_id": 301,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Nate-Archibald.webp"
+    },
+    {
+      "id": 4007,
+      "name": "Ball",
+      "lastname": "LaMelo",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 303,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 303,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/LaMelo-Ball.webp"
+    },
+    {
+      "id": 4008,
+      "name": "Banchero",
+      "lastname": "Paolo",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 321,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 321,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Paolo-Banchero.webp"
+    },
+    {
+      "id": 4009,
+      "name": "Bane",
+      "lastname": "Desmond",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 314,
+      "team2_id": 321,
+      "team3_id": null,
+      "actual_team_id": 321,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Desmond-Bane.webp"
+    },
+    {
+      "id": 4010,
       "name": "Barkley",
       "lastname": "Charles",
       "nationality_id": 183,
@@ -19698,13 +19834,30 @@
       "team2_id": 323,
       "team3_id": 310,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Charles-Barkley.webp"
     },
     {
-      "id": 4005,
+      "id": 4011,
+      "name": "Barnes",
+      "lastname": "Scottie",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": 11,
+      "sport_id": 2,
+      "team1_id": 328,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 328,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Scottie-Barnes.webp"
+    },
+    {
+      "id": 4012,
       "name": "Barry",
       "lastname": "Rick",
       "nationality_id": 183,
@@ -19715,13 +19868,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Rick-Barry.webp"
     },
     {
-      "id": 4006,
+      "id": 4013,
       "name": "Baylor",
       "lastname": "Elgin",
       "nationality_id": 183,
@@ -19732,13 +19885,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Elgin-Baylor.webp"
     },
     {
-      "id": 4007,
+      "id": 4014,
       "name": "Beal",
       "lastname": "Bradley",
       "nationality_id": 183,
@@ -19747,15 +19900,15 @@
       "sport_id": 2,
       "team1_id": 330,
       "team2_id": 323,
-      "team3_id": null,
-      "actual_team_id": 323,
+      "team3_id": 312,
+      "actual_team_id": 312,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/Bradley-Beal.webp"
     },
     {
-      "id": 4008,
+      "id": 4015,
       "name": "Billups",
       "lastname": "Chauncey",
       "nationality_id": 183,
@@ -19772,7 +19925,7 @@
       "photo": "images/basketball/Players/USA/Chauncey-Billups.webp"
     },
     {
-      "id": 4009,
+      "id": 4016,
       "name": "Bird",
       "lastname": "Larry",
       "nationality_id": 183,
@@ -19789,7 +19942,24 @@
       "photo": "images/basketball/Players/USA/Larry-Bird.webp"
     },
     {
-      "id": 4010,
+      "id": 4017,
+      "name": "Blaylock",
+      "lastname": "Mookie",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 332,
+      "team2_id": 300,
+      "team3_id": 309,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Mookie-Blaylock.webp"
+    },
+    {
+      "id": 4018,
       "name": "Bogues",
       "lastname": "Muggsy",
       "nationality_id": 183,
@@ -19806,7 +19976,7 @@
       "photo": "images/basketball/Players/USA/Muggsy-Bogues.webp"
     },
     {
-      "id": 4011,
+      "id": 4019,
       "name": "Booker",
       "lastname": "Devin",
       "nationality_id": 183,
@@ -19823,7 +19993,7 @@
       "photo": "images/basketball/Players/USA/Devin-Booker.webp"
     },
     {
-      "id": 4012,
+      "id": 4020,
       "name": "Bosh",
       "lastname": "Chris",
       "nationality_id": 183,
@@ -19840,7 +20010,58 @@
       "photo": "images/basketball/Players/USA/Chris-Bosh.webp"
     },
     {
-      "id": 4013,
+      "id": 4021,
+      "name": "Brand",
+      "lastname": "Elton",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 304,
+      "team2_id": 312,
+      "team3_id": 322,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Elton-Brand.webp"
+    },
+    {
+      "id": 4022,
+      "name": "Bridges",
+      "lastname": "Mikal",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 323,
+      "team2_id": 302,
+      "team3_id": 319,
+      "actual_team_id": 319,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Mikal-Bridges.webp"
+    },
+    {
+      "id": 4023,
+      "name": "Brogdon",
+      "lastname": "Malcolm",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": 11,
+      "sport_id": 2,
+      "team1_id": 316,
+      "team2_id": 311,
+      "team3_id": 301,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Malcolm-Brogdon.webp"
+    },
+    {
+      "id": 4024,
       "name": "Brown",
       "lastname": "Jaylen",
       "nationality_id": 183,
@@ -19857,7 +20078,7 @@
       "photo": "images/basketball/Players/USA/Jaylen-Brown.webp"
     },
     {
-      "id": 4014,
+      "id": 4025,
       "name": "Brunson",
       "lastname": "Jalen",
       "nationality_id": 183,
@@ -19874,12 +20095,12 @@
       "photo": "images/basketball/Players/USA/Jalen-Brunson.webp"
     },
     {
-      "id": 4015,
+      "id": 4026,
       "name": "Bryant",
       "lastname": "Kobe",
       "nationality_id": 183,
       "position1_id": 11,
-      "position2_id": null,
+      "position2_id": 12,
       "sport_id": 2,
       "team1_id": 313,
       "team2_id": null,
@@ -19891,12 +20112,12 @@
       "photo": "images/basketball/Players/USA/Kobe-Bryant.webp"
     },
     {
-      "id": 4016,
+      "id": 4027,
       "name": "Butler",
       "lastname": "Jimmy",
       "nationality_id": 183,
-      "position1_id": 11,
-      "position2_id": 12,
+      "position1_id": 12,
+      "position2_id": 11,
       "sport_id": 2,
       "team1_id": 304,
       "team2_id": 315,
@@ -19908,16 +20129,33 @@
       "photo": "images/basketball/Players/USA/Jimmy-Butler.webp"
     },
     {
-      "id": 4017,
+      "id": 4028,
+      "name": "Camby",
+      "lastname": "Marcus",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 328,
+      "team2_id": 319,
+      "team3_id": 307,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Marcus-Camby.webp"
+    },
+    {
+      "id": 4029,
       "name": "Carter",
       "lastname": "Vince",
       "nationality_id": 183,
       "position1_id": 11,
-      "position2_id": null,
+      "position2_id": 12,
       "sport_id": 2,
       "team1_id": 328,
       "team2_id": 332,
-      "team3_id": null,
+      "team3_id": 306,
       "actual_team_id": null,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
@@ -19925,7 +20163,24 @@
       "photo": "images/basketball/Players/USA/Vince-Carter.webp"
     },
     {
-      "id": 4018,
+      "id": 4030,
+      "name": "Cassell",
+      "lastname": "Sam",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 332,
+      "team2_id": 316,
+      "team3_id": 317,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Sam-Cassell.webp"
+    },
+    {
+      "id": 4031,
       "name": "Chamberlain",
       "lastname": "Wilt",
       "nationality_id": 183,
@@ -19942,7 +20197,41 @@
       "photo": "images/basketball/Players/USA/Wilt-Chamberlain.webp"
     },
     {
-      "id": 4019,
+      "id": 4032,
+      "name": "Chandler",
+      "lastname": "Tyson",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 303,
+      "team2_id": 306,
+      "team3_id": 319,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Tyson-Chandler.webp"
+    },
+    {
+      "id": 4033,
+      "name": "Collins",
+      "lastname": "John",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 300,
+      "team2_id": 329,
+      "team3_id": 312,
+      "actual_team_id": 312,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/John-Collins.webp"
+    },
+    {
+      "id": 4034,
       "name": "Conley",
       "lastname": "Mike",
       "nationality_id": 183,
@@ -19959,7 +20248,7 @@
       "photo": "images/basketball/Players/USA/Mike-Conley.webp"
     },
     {
-      "id": 4020,
+      "id": 4035,
       "name": "Cousy",
       "lastname": "Bob",
       "nationality_id": 183,
@@ -19970,13 +20259,30 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Bob-Cousy.webp"
     },
     {
-      "id": 4021,
+      "id": 4036,
+      "name": "Cunningham",
+      "lastname": "Cade",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 308,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 308,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Cade-Cunningham.webp"
+    },
+    {
+      "id": 4037,
       "name": "Curry",
       "lastname": "Stephen",
       "nationality_id": 183,
@@ -19993,7 +20299,24 @@
       "photo": "images/basketball/Players/USA/Stephen-Curry.webp"
     },
     {
-      "id": 4022,
+      "id": 4038,
+      "name": "Dantley",
+      "lastname": "Adrian",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 313,
+      "team2_id": 329,
+      "team3_id": 308,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Adrian-Dantley.webp"
+    },
+    {
+      "id": 4039,
       "name": "Davis",
       "lastname": "Anthony",
       "nationality_id": 183,
@@ -20004,13 +20327,13 @@
       "team2_id": 313,
       "team3_id": 306,
       "actual_team_id": 306,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/Anthony-Davis.webp"
     },
     {
-      "id": 4023,
+      "id": 4040,
       "name": "Davis",
       "lastname": "Baron",
       "nationality_id": 183,
@@ -20019,7 +20342,7 @@
       "sport_id": 2,
       "team1_id": 303,
       "team2_id": 309,
-      "team3_id": null,
+      "team3_id": 312,
       "actual_team_id": null,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
@@ -20027,16 +20350,16 @@
       "photo": "images/basketball/Players/USA/Baron-Davis.webp"
     },
     {
-      "id": 4024,
+      "id": 4041,
       "name": "DeRozan",
       "lastname": "DeMar",
       "nationality_id": 183,
       "position1_id": 11,
-      "position2_id": null,
+      "position2_id": 12,
       "sport_id": 2,
       "team1_id": 328,
-      "team2_id": 304,
-      "team3_id": 325,
+      "team2_id": 326,
+      "team3_id": 304,
       "actual_team_id": 325,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
@@ -20044,7 +20367,24 @@
       "photo": "images/basketball/Players/USA/DeMar-DeRozan.webp"
     },
     {
-      "id": 4025,
+      "id": 4042,
+      "name": "Dinwiddie",
+      "lastname": "Spencer",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": 11,
+      "sport_id": 2,
+      "team1_id": 302,
+      "team2_id": 330,
+      "team3_id": 306,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Spencer-Dinwiddie.webp"
+    },
+    {
+      "id": 4043,
       "name": "Drexler",
       "lastname": "Clyde",
       "nationality_id": 183,
@@ -20055,13 +20395,13 @@
       "team2_id": 310,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Clyde-Drexler.webp"
     },
     {
-      "id": 4026,
+      "id": 4044,
       "name": "Dumars",
       "lastname": "Joe",
       "nationality_id": 183,
@@ -20078,7 +20418,7 @@
       "photo": "images/basketball/Players/USA/Joe-Dumars.webp"
     },
     {
-      "id": 4027,
+      "id": 4045,
       "name": "Duncan",
       "lastname": "Tim",
       "nationality_id": 183,
@@ -20095,7 +20435,7 @@
       "photo": "images/basketball/Players/USA/Tim-Duncan.webp"
     },
     {
-      "id": 4028,
+      "id": 4046,
       "name": "Durant",
       "lastname": "Kevin",
       "nationality_id": 183,
@@ -20112,24 +20452,7 @@
       "photo": "images/basketball/Players/USA/Kevin-Durant.webp"
     },
     {
-      "id": 4029,
-      "name": "English",
-      "lastname": "Alex",
-      "nationality_id": 183,
-      "position1_id": 12,
-      "position2_id": null,
-      "sport_id": 2,
-      "team1_id": 306,
-      "team2_id": null,
-      "team3_id": null,
-      "actual_team_id": null,
-      "legendary_player": null,
-      "flag": "images/flags/USA.png",
-      "active": false,
-      "photo": "images/basketball/Players/USA/Alex-English.webp"
-    },
-    {
-      "id": 4030,
+      "id": 4047,
       "name": "Edwards",
       "lastname": "Anthony",
       "nationality_id": 183,
@@ -20146,7 +20469,24 @@
       "photo": "images/basketball/Players/USA/Anthony-Edwards.webp"
     },
     {
-      "id": 4031,
+      "id": 4048,
+      "name": "English",
+      "lastname": "Alex",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 306,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Alex-English.webp"
+    },
+    {
+      "id": 4049,
       "name": "Erving",
       "lastname": "Julius",
       "nationality_id": 183,
@@ -20163,7 +20503,7 @@
       "photo": "images/basketball/Players/USA/Julius-Erving.webp"
     },
     {
-      "id": 4032,
+      "id": 4050,
       "name": "Ewing",
       "lastname": "Patrick",
       "nationality_id": 183,
@@ -20174,13 +20514,47 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Patrick-Ewing.webp"
     },
     {
-      "id": 4033,
+      "id": 4051,
+      "name": "Flagg",
+      "lastname": "Cooper",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 306,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 306,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Cooper-Flagg.webp"
+    },
+    {
+      "id": 4052,
+      "name": "Fox",
+      "lastname": "DeAaron",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 325,
+      "team2_id": 326,
+      "team3_id": null,
+      "actual_team_id": 326,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/DeAaron-Fox.webp"
+    },
+    {
+      "id": 4053,
       "name": "Frazier",
       "lastname": "Walt",
       "nationality_id": 183,
@@ -20191,13 +20565,30 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Walt-Frazier.webp"
     },
     {
-      "id": 4034,
+      "id": 4054,
+      "name": "Garland",
+      "lastname": "Darius",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 305,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 305,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Darius-Garland.webp"
+    },
+    {
+      "id": 4055,
       "name": "Garnett",
       "lastname": "Kevin",
       "nationality_id": 183,
@@ -20214,7 +20605,7 @@
       "photo": "images/basketball/Players/USA/Kevin-Garnett.webp"
     },
     {
-      "id": 4035,
+      "id": 4056,
       "name": "George",
       "lastname": "Paul",
       "nationality_id": 183,
@@ -20231,7 +20622,7 @@
       "photo": "images/basketball/Players/USA/Paul-George.webp"
     },
     {
-      "id": 4036,
+      "id": 4057,
       "name": "Gervin",
       "lastname": "George",
       "nationality_id": 183,
@@ -20242,13 +20633,81 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/George-Gervin.webp"
     },
     {
-      "id": 4037,
+      "id": 4058,
+      "name": "Gordon",
+      "lastname": "Aaron",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 321,
+      "team2_id": 307,
+      "team3_id": null,
+      "actual_team_id": 307,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Aaron-Gordon.webp"
+    },
+    {
+      "id": 4059,
+      "name": "Green",
+      "lastname": "Draymond",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 309,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 309,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Draymond-Green.webp"
+    },
+    {
+      "id": 4060,
+      "name": "Green",
+      "lastname": "Jalen",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 310,
+      "team2_id": 323,
+      "team3_id": null,
+      "actual_team_id": 323,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Jalen-Green.webp"
+    },
+    {
+      "id": 4061,
+      "name": "Greer",
+      "lastname": "Hal",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 10,
+      "sport_id": 2,
+      "team1_id": 322,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Hal-Greer.webp"
+    },
+    {
+      "id": 4062,
       "name": "Griffin",
       "lastname": "Blake",
       "nationality_id": 183,
@@ -20256,7 +20715,7 @@
       "position2_id": null,
       "sport_id": 2,
       "team1_id": 312,
-      "team2_id": null,
+      "team2_id": 308,
       "team3_id": null,
       "actual_team_id": null,
       "legendary_player": null,
@@ -20265,7 +20724,58 @@
       "photo": "images/basketball/Players/USA/Blake-Griffin.webp"
     },
     {
-      "id": 4038,
+      "id": 4063,
+      "name": "Haliburton",
+      "lastname": "Tyrese",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 325,
+      "team2_id": 311,
+      "team3_id": null,
+      "actual_team_id": 311,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Tyrese-Haliburton.webp"
+    },
+    {
+      "id": 4064,
+      "name": "Hamilton",
+      "lastname": "Richard",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 330,
+      "team2_id": 308,
+      "team3_id": 304,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Richard-Hamilton.webp"
+    },
+    {
+      "id": 4065,
+      "name": "Hardaway",
+      "lastname": "Anfernee",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 321,
+      "team2_id": 323,
+      "team3_id": 319,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Anfernee-Hardaway.webp"
+    },
+    {
+      "id": 4066,
       "name": "Harden",
       "lastname": "James",
       "nationality_id": 183,
@@ -20276,13 +20786,30 @@
       "team2_id": 310,
       "team3_id": 312,
       "actual_team_id": 312,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/James-Harden.webp"
     },
     {
-      "id": 4039,
+      "id": 4067,
+      "name": "Harris",
+      "lastname": "Tobias",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 321,
+      "team2_id": 308,
+      "team3_id": 322,
+      "actual_team_id": 308,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Tobias-Harris.webp"
+    },
+    {
+      "id": 4068,
       "name": "Havlicek",
       "lastname": "John",
       "nationality_id": 183,
@@ -20293,13 +20820,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/John-Havlicek.webp"
     },
     {
-      "id": 4040,
+      "id": 4069,
       "name": "Hayes",
       "lastname": "Elvin",
       "nationality_id": 183,
@@ -20310,13 +20837,30 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Elvin-Hayes.webp"
     },
     {
-      "id": 4041,
+      "id": 4070,
+      "name": "Herro",
+      "lastname": "Tyler",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 315,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 315,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Tyler-Herro.webp"
+    },
+    {
+      "id": 4071,
       "name": "Hill",
       "lastname": "Grant",
       "nationality_id": 183,
@@ -20333,7 +20877,7 @@
       "photo": "images/basketball/Players/USA/Grant-Hill.webp"
     },
     {
-      "id": 4042,
+      "id": 4072,
       "name": "Holiday",
       "lastname": "Jrue",
       "nationality_id": 183,
@@ -20343,14 +20887,48 @@
       "team1_id": 318,
       "team2_id": 316,
       "team3_id": 301,
-      "actual_team_id": 301,
+      "actual_team_id": 324,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/Jrue-Holiday.webp"
     },
     {
-      "id": 4043,
+      "id": 4073,
+      "name": "Holmgren",
+      "lastname": "Chet",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 320,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 320,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Chet-Holmgren.webp"
+    },
+    {
+      "id": 4074,
+      "name": "Horry",
+      "lastname": "Robert",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 310,
+      "team2_id": 313,
+      "team3_id": 326,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Robert-Horry.webp"
+    },
+    {
+      "id": 4075,
       "name": "Houston",
       "lastname": "Allan",
       "nationality_id": 183,
@@ -20367,7 +20945,7 @@
       "photo": "images/basketball/Players/USA/Allan-Houston.webp"
     },
     {
-      "id": 4044,
+      "id": 4076,
       "name": "Howard",
       "lastname": "Dwight",
       "nationality_id": 183,
@@ -20384,7 +20962,24 @@
       "photo": "images/basketball/Players/USA/Dwight-Howard.webp"
     },
     {
-      "id": 4045,
+      "id": 4077,
+      "name": "Ingram",
+      "lastname": "Brandon",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": 13,
+      "sport_id": 2,
+      "team1_id": 313,
+      "team2_id": 318,
+      "team3_id": 328,
+      "actual_team_id": 328,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Brandon-Ingram.webp"
+    },
+    {
+      "id": 4078,
       "name": "Irving",
       "lastname": "Kyrie",
       "nationality_id": 183,
@@ -20401,7 +20996,7 @@
       "photo": "images/basketball/Players/USA/Kyrie-Irving.webp"
     },
     {
-      "id": 4046,
+      "id": 4079,
       "name": "Iverson",
       "lastname": "Allen",
       "nationality_id": 183,
@@ -20418,7 +21013,41 @@
       "photo": "images/basketball/Players/USA/Allen-Iverson.webp"
     },
     {
-      "id": 4047,
+      "id": 4080,
+      "name": "Jackson",
+      "lastname": "Mark",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 319,
+      "team2_id": 311,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Mark-Jackson.webp"
+    },
+    {
+      "id": 4081,
+      "name": "Jackson Jr",
+      "lastname": "Jaren",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 314,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 314,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Jaren-Jackson-Jr.webp"
+    },
+    {
+      "id": 4082,
       "name": "James",
       "lastname": "LeBron",
       "nationality_id": 183,
@@ -20435,12 +21064,12 @@
       "photo": "images/basketball/Players/USA/LeBron-James.webp"
     },
     {
-      "id": 4048,
+      "id": 4083,
       "name": "Jamison",
       "lastname": "Antawn",
       "nationality_id": 183,
       "position1_id": 13,
-      "position2_id": null,
+      "position2_id": 12,
       "sport_id": 2,
       "team1_id": 330,
       "team2_id": 309,
@@ -20452,7 +21081,7 @@
       "photo": "images/basketball/Players/USA/Antawn-Jamison.webp"
     },
     {
-      "id": 4049,
+      "id": 4084,
       "name": "Johnson",
       "lastname": "Kevin",
       "nationality_id": 183,
@@ -20469,7 +21098,7 @@
       "photo": "images/basketball/Players/USA/Kevin-Johnson.webp"
     },
     {
-      "id": 4050,
+      "id": 4085,
       "name": "Johnson",
       "lastname": "Larry",
       "nationality_id": 183,
@@ -20486,12 +21115,12 @@
       "photo": "images/basketball/Players/USA/Larry-Johnson.webp"
     },
     {
-      "id": 4051,
+      "id": 4086,
       "name": "Johnson",
       "lastname": "Magic",
       "nationality_id": 183,
       "position1_id": 10,
-      "position2_id": 14,
+      "position2_id": null,
       "sport_id": 2,
       "team1_id": 313,
       "team2_id": null,
@@ -20503,7 +21132,58 @@
       "photo": "images/basketball/Players/USA/Magic-Johnson.webp"
     },
     {
-      "id": 4052,
+      "id": 4087,
+      "name": "Johnson",
+      "lastname": "Cameron",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": 13,
+      "sport_id": 2,
+      "team1_id": 323,
+      "team2_id": 302,
+      "team3_id": 307,
+      "actual_team_id": 307,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Cameron-Johnson.webp"
+    },
+    {
+      "id": 4088,
+      "name": "Johnson",
+      "lastname": "Joe",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 323,
+      "team2_id": 300,
+      "team3_id": 302,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Joe-Johnson.webp"
+    },
+    {
+      "id": 4089,
+      "name": "Jones",
+      "lastname": "Eddie",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 313,
+      "team2_id": 315,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Eddie-Jones.webp"
+    },
+    {
+      "id": 4090,
       "name": "Jordan",
       "lastname": "Michael",
       "nationality_id": 183,
@@ -20520,7 +21200,24 @@
       "photo": "images/basketball/Players/USA/Michael-Jordan.webp"
     },
     {
-      "id": 4053,
+      "id": 4091,
+      "name": "Jordan",
+      "lastname": "DeAndre",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 314,
+      "team2_id": 302,
+      "team3_id": 318,
+      "actual_team_id": 318,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/DeAndre-Jordan.webp"
+    },
+    {
+      "id": 4092,
       "name": "Kemp",
       "lastname": "Shawn",
       "nationality_id": 183,
@@ -20528,7 +21225,7 @@
       "position2_id": null,
       "sport_id": 2,
       "team1_id": 327,
-      "team2_id": null,
+      "team2_id": 305,
       "team3_id": null,
       "actual_team_id": null,
       "legendary_player": null,
@@ -20537,7 +21234,24 @@
       "photo": "images/basketball/Players/USA/Shawn-Kemp.webp"
     },
     {
-      "id": 4054,
+      "id": 4093,
+      "name": "Kessler",
+      "lastname": "Walker",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 329,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 329,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Walker-Kessler.webp"
+    },
+    {
+      "id": 4094,
       "name": "Kidd",
       "lastname": "Jason",
       "nationality_id": 183,
@@ -20548,13 +21262,30 @@
       "team2_id": 332,
       "team3_id": 306,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Jason-Kidd.webp"
     },
     {
-      "id": 4055,
+      "id": 4095,
+      "name": "LaVine",
+      "lastname": "Zach",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 317,
+      "team2_id": 304,
+      "team3_id": 325,
+      "actual_team_id": 325,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Zach-LaVine.webp"
+    },
+    {
+      "id": 4096,
       "name": "Leonard",
       "lastname": "Kawhi",
       "nationality_id": 183,
@@ -20565,13 +21296,13 @@
       "team2_id": 328,
       "team3_id": 312,
       "actual_team_id": 312,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/Kawhi-Leonard.webp"
     },
     {
-      "id": 4056,
+      "id": 4097,
       "name": "Lillard",
       "lastname": "Damian",
       "nationality_id": 183,
@@ -20588,7 +21319,24 @@
       "photo": "images/basketball/Players/USA/Damian-Lillard.webp"
     },
     {
-      "id": 4057,
+      "id": 4098,
+      "name": "Lopez",
+      "lastname": "Brook",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 302,
+      "team2_id": 316,
+      "team3_id": 312,
+      "actual_team_id": 312,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Brook-Lopez.webp"
+    },
+    {
+      "id": 4099,
       "name": "Love",
       "lastname": "Kevin",
       "nationality_id": 183,
@@ -20597,15 +21345,15 @@
       "sport_id": 2,
       "team1_id": 317,
       "team2_id": 305,
-      "team3_id": null,
-      "actual_team_id": 305,
+      "team3_id": 329,
+      "actual_team_id": 329,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/Kevin-Love.webp"
     },
     {
-      "id": 4058,
+      "id": 4100,
       "name": "Lowry",
       "lastname": "Kyle",
       "nationality_id": 183,
@@ -20613,16 +21361,16 @@
       "position2_id": null,
       "sport_id": 2,
       "team1_id": 328,
-      "team2_id": null,
-      "team3_id": null,
-      "actual_team_id": 315,
+      "team2_id": 315,
+      "team3_id": 322,
+      "actual_team_id": 322,
       "legendary_player": null,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/Kyle-Lowry.webp"
     },
     {
-      "id": 4059,
+      "id": 4101,
       "name": "Malone",
       "lastname": "Karl",
       "nationality_id": 183,
@@ -20633,13 +21381,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Karl-Malone.webp"
     },
     {
-      "id": 4060,
+      "id": 4102,
       "name": "Malone",
       "lastname": "Moses",
       "nationality_id": 183,
@@ -20656,7 +21404,7 @@
       "photo": "images/basketball/Players/USA/Moses-Malone.webp"
     },
     {
-      "id": 4061,
+      "id": 4103,
       "name": "Maravich",
       "lastname": "Pete",
       "nationality_id": 183,
@@ -20673,7 +21421,58 @@
       "photo": "images/basketball/Players/USA/Pete-Maravich.webp"
     },
     {
-      "id": 4062,
+      "id": 4104,
+      "name": "Marbury",
+      "lastname": "Stephon",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 317,
+      "team2_id": 332,
+      "team3_id": 319,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Stephon-Marbury.webp"
+    },
+    {
+      "id": 4105,
+      "name": "Marion",
+      "lastname": "Shawn",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": 13,
+      "sport_id": 2,
+      "team1_id": 323,
+      "team2_id": 306,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Shawn-Marion.webp"
+    },
+    {
+      "id": 4106,
+      "name": "Maxey",
+      "lastname": "Tyrese",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 322,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 322,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Tyrese-Maxey.webp"
+    },
+    {
+      "id": 4107,
       "name": "McAdoo",
       "lastname": "Bob",
       "nationality_id": 183,
@@ -20690,7 +21489,24 @@
       "photo": "images/basketball/Players/USA/Bob-McAdoo.webp"
     },
     {
-      "id": 4063,
+      "id": 4108,
+      "name": "McCollum",
+      "lastname": "CJ",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 324,
+      "team2_id": 318,
+      "team3_id": 330,
+      "actual_team_id": 330,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/CJ-McCollum.webp"
+    },
+    {
+      "id": 4109,
       "name": "McDyess",
       "lastname": "Antonio",
       "nationality_id": 183,
@@ -20707,24 +21523,7 @@
       "photo": "images/basketball/Players/USA/Antonio-McDyess.webp"
     },
     {
-      "id": 4064,
-      "name": "McHale",
-      "lastname": "Kevin",
-      "nationality_id": 183,
-      "position1_id": 13,
-      "position2_id": null,
-      "sport_id": 2,
-      "team1_id": 301,
-      "team2_id": null,
-      "team3_id": null,
-      "actual_team_id": null,
-      "legendary_player": null,
-      "flag": "images/flags/USA.png",
-      "active": false,
-      "photo": "images/basketball/Players/USA/Kevin-McHale.webp"
-    },
-    {
-      "id": 4065,
+      "id": 4110,
       "name": "McGrady",
       "lastname": "Tracy",
       "nationality_id": 183,
@@ -20741,7 +21540,41 @@
       "photo": "images/basketball/Players/USA/Tracy-McGrady.webp"
     },
     {
-      "id": 4066,
+      "id": 4111,
+      "name": "McHale",
+      "lastname": "Kevin",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 301,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Kevin-McHale.webp"
+    },
+    {
+      "id": 4112,
+      "name": "Middleton",
+      "lastname": "Khris",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 316,
+      "team2_id": 330,
+      "team3_id": null,
+      "actual_team_id": 330,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Khris-Middleton.webp"
+    },
+    {
+      "id": 4113,
       "name": "Mikan",
       "lastname": "George",
       "nationality_id": 183,
@@ -20752,13 +21585,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/George-Mikan.webp"
     },
     {
-      "id": 4067,
+      "id": 4114,
       "name": "Miller",
       "lastname": "Reggie",
       "nationality_id": 183,
@@ -20775,7 +21608,58 @@
       "photo": "images/basketball/Players/USA/Reggie-Miller.webp"
     },
     {
-      "id": 4068,
+      "id": 4115,
+      "name": "Miller",
+      "lastname": "Andre",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 305,
+      "team2_id": 307,
+      "team3_id": 322,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Andre-Miller.webp"
+    },
+    {
+      "id": 4116,
+      "name": "Mitchell",
+      "lastname": "Donovan",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 10,
+      "sport_id": 2,
+      "team1_id": 329,
+      "team2_id": 305,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Donovan-Mitchell.webp"
+    },
+    {
+      "id": 4117,
+      "name": "Mobley",
+      "lastname": "Evan",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 305,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 305,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Evan-Mobley.webp"
+    },
+    {
+      "id": 4118,
       "name": "Monroe",
       "lastname": "Earl",
       "nationality_id": 183,
@@ -20792,7 +21676,7 @@
       "photo": "images/basketball/Players/USA/Earl-Monroe.webp"
     },
     {
-      "id": 4069,
+      "id": 4119,
       "name": "Morant",
       "lastname": "Ja",
       "nationality_id": 183,
@@ -20809,7 +21693,7 @@
       "photo": "images/basketball/Players/USA/Ja-Morant.webp"
     },
     {
-      "id": 4070,
+      "id": 4120,
       "name": "Mourning",
       "lastname": "Alonzo",
       "nationality_id": 183,
@@ -20826,7 +21710,7 @@
       "photo": "images/basketball/Players/USA/Alonzo-Mourning.webp"
     },
     {
-      "id": 4071,
+      "id": 4121,
       "name": "O'Neal",
       "lastname": "Shaquille",
       "nationality_id": 183,
@@ -20843,7 +21727,24 @@
       "photo": "images/basketball/Players/USA/Shaquille-O-Neal.webp"
     },
     {
-      "id": 4072,
+      "id": 4122,
+      "name": "Parish",
+      "lastname": "Robert",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 309,
+      "team2_id": 301,
+      "team3_id": 303,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Robert-Parish.webp"
+    },
+    {
+      "id": 4123,
       "name": "Paul",
       "lastname": "Chris",
       "nationality_id": 183,
@@ -20860,7 +21761,7 @@
       "photo": "images/basketball/Players/USA/Chris-Paul.webp"
     },
     {
-      "id": 4073,
+      "id": 4124,
       "name": "Payton",
       "lastname": "Gary",
       "nationality_id": 183,
@@ -20877,7 +21778,7 @@
       "photo": "images/basketball/Players/USA/Gary-Payton.webp"
     },
     {
-      "id": 4074,
+      "id": 4125,
       "name": "Pettit",
       "lastname": "Bob",
       "nationality_id": 183,
@@ -20888,13 +21789,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Bob-Pettit.webp"
     },
     {
-      "id": 4075,
+      "id": 4126,
       "name": "Pierce",
       "lastname": "Paul",
       "nationality_id": 183,
@@ -20911,7 +21812,7 @@
       "photo": "images/basketball/Players/USA/Paul-Pierce.webp"
     },
     {
-      "id": 4076,
+      "id": 4127,
       "name": "Pippen",
       "lastname": "Scottie",
       "nationality_id": 183,
@@ -20928,7 +21829,24 @@
       "photo": "images/basketball/Players/USA/Scottie-Pippen.webp"
     },
     {
-      "id": 4077,
+      "id": 4128,
+      "name": "Powell",
+      "lastname": "Norman",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 328,
+      "team2_id": 312,
+      "team3_id": 315,
+      "actual_team_id": 315,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Norman-Powell.webp"
+    },
+    {
+      "id": 4129,
       "name": "Price",
       "lastname": "Mark",
       "nationality_id": 183,
@@ -20945,7 +21863,41 @@
       "photo": "images/basketball/Players/USA/Mark-Price.webp"
     },
     {
-      "id": 4078,
+      "id": 4130,
+      "name": "Prince",
+      "lastname": "Tayshaun",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 308,
+      "team2_id": 314,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Tayshaun-Prince.webp"
+    },
+    {
+      "id": 4131,
+      "name": "Randle",
+      "lastname": "Julius",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 313,
+      "team2_id": 319,
+      "team3_id": 317,
+      "actual_team_id": 317,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Julius-Randle.webp"
+    },
+    {
+      "id": 4132,
       "name": "Randolph",
       "lastname": "Zach",
       "nationality_id": 183,
@@ -20962,7 +21914,41 @@
       "photo": "images/basketball/Players/USA/Zach-Randolph.webp"
     },
     {
-      "id": 4079,
+      "id": 4133,
+      "name": "Reaves",
+      "lastname": "Austin",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 313,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 313,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Austin-Reaves.webp"
+    },
+    {
+      "id": 4134,
+      "name": "Redd",
+      "lastname": "Michael",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 316,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Michael-Redd.webp"
+    },
+    {
+      "id": 4135,
       "name": "Reed",
       "lastname": "Willis",
       "nationality_id": 183,
@@ -20973,13 +21959,30 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Willis-Reed.webp"
     },
     {
-      "id": 4080,
+      "id": 4136,
+      "name": "Richmond",
+      "lastname": "Mitch",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 309,
+      "team2_id": 325,
+      "team3_id": 330,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Mitch-Richmond.webp"
+    },
+    {
+      "id": 4137,
       "name": "Robertson",
       "lastname": "Oscar",
       "nationality_id": 183,
@@ -20996,7 +21999,7 @@
       "photo": "images/basketball/Players/USA/Oscar-Robertson.webp"
     },
     {
-      "id": 4081,
+      "id": 4138,
       "name": "Robinson",
       "lastname": "David",
       "nationality_id": 183,
@@ -21007,13 +22010,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/David-Robinson.webp"
     },
     {
-      "id": 4082,
+      "id": 4139,
       "name": "Rodman",
       "lastname": "Dennis",
       "nationality_id": 183,
@@ -21030,7 +22033,7 @@
       "photo": "images/basketball/Players/USA/Dennis-Rodman.webp"
     },
     {
-      "id": 4083,
+      "id": 4140,
       "name": "Rondo",
       "lastname": "Rajon",
       "nationality_id": 183,
@@ -21047,7 +22050,7 @@
       "photo": "images/basketball/Players/USA/Rajon-Rondo.webp"
     },
     {
-      "id": 4084,
+      "id": 4141,
       "name": "Rose",
       "lastname": "Derrick",
       "nationality_id": 183,
@@ -21064,7 +22067,7 @@
       "photo": "images/basketball/Players/USA/Derrick-Rose.webp"
     },
     {
-      "id": 4085,
+      "id": 4142,
       "name": "Russell",
       "lastname": "Bill",
       "nationality_id": 183,
@@ -21081,7 +22084,7 @@
       "photo": "images/basketball/Players/USA/Bill-Russell.webp"
     },
     {
-      "id": 4086,
+      "id": 4143,
       "name": "Schayes",
       "lastname": "Dolph",
       "nationality_id": 183,
@@ -21098,7 +22101,24 @@
       "photo": "images/basketball/Players/USA/Dolph-Schayes.webp"
     },
     {
-      "id": 4087,
+      "id": 4144,
+      "name": "Sprewell",
+      "lastname": "Latrell",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 309,
+      "team2_id": 319,
+      "team3_id": 317,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Latrell-Sprewell.webp"
+    },
+    {
+      "id": 4145,
       "name": "Stockton",
       "lastname": "John",
       "nationality_id": 183,
@@ -21115,7 +22135,7 @@
       "photo": "images/basketball/Players/USA/John-Stockton.webp"
     },
     {
-      "id": 4088,
+      "id": 4146,
       "name": "Stoudemire",
       "lastname": "Amar'e",
       "nationality_id": 183,
@@ -21132,7 +22152,24 @@
       "photo": "images/basketball/Players/USA/Amar-e-Stoudemire.webp"
     },
     {
-      "id": 4089,
+      "id": 4147,
+      "name": "Strickland",
+      "lastname": "Rod",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 326,
+      "team2_id": 324,
+      "team3_id": 330,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Rod-Strickland.webp"
+    },
+    {
+      "id": 4148,
       "name": "Tatum",
       "lastname": "Jayson",
       "nationality_id": 183,
@@ -21149,7 +22186,24 @@
       "photo": "images/basketball/Players/USA/Jayson-Tatum.webp"
     },
     {
-      "id": 4090,
+      "id": 4149,
+      "name": "Terry",
+      "lastname": "Jason",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 10,
+      "sport_id": 2,
+      "team1_id": 300,
+      "team2_id": 306,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Jason-Terry.webp"
+    },
+    {
+      "id": 4150,
       "name": "Thomas",
       "lastname": "Isiah",
       "nationality_id": 183,
@@ -21160,13 +22214,13 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Isiah-Thomas.webp"
     },
     {
-      "id": 4091,
+      "id": 4151,
       "name": "Thompson",
       "lastname": "Klay",
       "nationality_id": 183,
@@ -21183,7 +22237,24 @@
       "photo": "images/basketball/Players/USA/Klay-Thompson.webp"
     },
     {
-      "id": 4092,
+      "id": 4152,
+      "name": "Thompson",
+      "lastname": "Amen",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 310,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 310,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Amen-Thompson.webp"
+    },
+    {
+      "id": 4153,
       "name": "Thurmond",
       "lastname": "Nate",
       "nationality_id": 183,
@@ -21200,7 +22271,24 @@
       "photo": "images/basketball/Players/USA/Nate-Thurmond.webp"
     },
     {
-      "id": 4093,
+      "id": 4154,
+      "name": "Turner",
+      "lastname": "Myles",
+      "nationality_id": 183,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 311,
+      "team2_id": 316,
+      "team3_id": null,
+      "actual_team_id": 316,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Myles-Turner.webp"
+    },
+    {
+      "id": 4155,
       "name": "Unseld",
       "lastname": "Wes",
       "nationality_id": 183,
@@ -21217,7 +22305,41 @@
       "photo": "images/basketball/Players/USA/Wes-Unseld.webp"
     },
     {
-      "id": 4094,
+      "id": 4156,
+      "name": "Van Exel",
+      "lastname": "Nick",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": 11,
+      "sport_id": 2,
+      "team1_id": 313,
+      "team2_id": 307,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": false,
+      "photo": "images/basketball/Players/USA/Nick-Van-Exel.webp"
+    },
+    {
+      "id": 4157,
+      "name": "VanVleet",
+      "lastname": "Fred",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 328,
+      "team2_id": 310,
+      "team3_id": null,
+      "actual_team_id": 310,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Fred-VanVleet.webp"
+    },
+    {
+      "id": 4158,
       "name": "Wade",
       "lastname": "Dwyane",
       "nationality_id": 183,
@@ -21228,13 +22350,13 @@
       "team2_id": 304,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": false,
       "photo": "images/basketball/Players/USA/Dwyane-Wade.webp"
     },
     {
-      "id": 4095,
+      "id": 4159,
       "name": "Wall",
       "lastname": "John",
       "nationality_id": 183,
@@ -21251,7 +22373,7 @@
       "photo": "images/basketball/Players/USA/John-Wall.webp"
     },
     {
-      "id": 4096,
+      "id": 4160,
       "name": "Wallace",
       "lastname": "Ben",
       "nationality_id": 183,
@@ -21268,7 +22390,7 @@
       "photo": "images/basketball/Players/USA/Ben-Wallace.webp"
     },
     {
-      "id": 4097,
+      "id": 4161,
       "name": "Wallace",
       "lastname": "Rasheed",
       "nationality_id": 183,
@@ -21285,7 +22407,7 @@
       "photo": "images/basketball/Players/USA/Rasheed-Wallace.webp"
     },
     {
-      "id": 4098,
+      "id": 4162,
       "name": "Walton",
       "lastname": "Bill",
       "nationality_id": 183,
@@ -21302,7 +22424,7 @@
       "photo": "images/basketball/Players/USA/Bill-Walton.webp"
     },
     {
-      "id": 4099,
+      "id": 4163,
       "name": "Webber",
       "lastname": "Chris",
       "nationality_id": 183,
@@ -21319,7 +22441,7 @@
       "photo": "images/basketball/Players/USA/Chris-Webber.webp"
     },
     {
-      "id": 4100,
+      "id": 4164,
       "name": "West",
       "lastname": "Jerry",
       "nationality_id": 183,
@@ -21336,7 +22458,7 @@
       "photo": "images/basketball/Players/USA/Jerry-West.webp"
     },
     {
-      "id": 4101,
+      "id": 4165,
       "name": "Westbrook",
       "lastname": "Russell",
       "nationality_id": 183,
@@ -21347,13 +22469,30 @@
       "team2_id": 313,
       "team3_id": 307,
       "actual_team_id": 307,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/USA.png",
       "active": true,
       "photo": "images/basketball/Players/USA/Russell-Westbrook.webp"
     },
     {
-      "id": 4102,
+      "id": 4166,
+      "name": "White",
+      "lastname": "Derrick",
+      "nationality_id": 183,
+      "position1_id": 11,
+      "position2_id": 10,
+      "sport_id": 2,
+      "team1_id": 326,
+      "team2_id": 301,
+      "team3_id": null,
+      "actual_team_id": 301,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Derrick-White.webp"
+    },
+    {
+      "id": 4167,
       "name": "Wilkins",
       "lastname": "Dominique",
       "nationality_id": 183,
@@ -21370,7 +22509,7 @@
       "photo": "images/basketball/Players/USA/Dominique-Wilkins.webp"
     },
     {
-      "id": 4103,
+      "id": 4168,
       "name": "Williams",
       "lastname": "Deron",
       "nationality_id": 183,
@@ -21387,7 +22526,7 @@
       "photo": "images/basketball/Players/USA/Deron-Williams.webp"
     },
     {
-      "id": 4104,
+      "id": 4169,
       "name": "Williams",
       "lastname": "Jason",
       "nationality_id": 183,
@@ -21404,7 +22543,41 @@
       "photo": "images/basketball/Players/USA/Jason-Williams.webp"
     },
     {
-      "id": 4105,
+      "id": 4170,
+      "name": "Williams",
+      "lastname": "Jalen",
+      "nationality_id": 183,
+      "position1_id": 12,
+      "position2_id": 13,
+      "sport_id": 2,
+      "team1_id": 320,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 320,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Jalen-Williams.webp"
+    },
+    {
+      "id": 4171,
+      "name": "Williamson",
+      "lastname": "Zion",
+      "nationality_id": 183,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 318,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 318,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Zion-Williamson.webp"
+    },
+    {
+      "id": 4172,
       "name": "Worthy",
       "lastname": "James",
       "nationality_id": 183,
@@ -21421,7 +22594,92 @@
       "photo": "images/basketball/Players/USA/James-Worthy.webp"
     },
     {
+      "id": 4173,
+      "name": "Young",
+      "lastname": "Trae",
+      "nationality_id": 183,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 300,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 300,
+      "legendary_player": null,
+      "flag": "images/flags/USA.png",
+      "active": true,
+      "photo": "images/basketball/Players/USA/Trae-Young.webp"
+    },
+    {
       "id": 4200,
+      "name": "Barrett",
+      "lastname": "RJ",
+      "nationality_id": 32,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 319,
+      "team2_id": 328,
+      "team3_id": null,
+      "actual_team_id": 328,
+      "legendary_player": null,
+      "flag": "images/flags/CAN.png",
+      "active": true,
+      "photo": "images/basketball/Players/CAN/RJ-Barrett.webp"
+    },
+    {
+      "id": 4201,
+      "name": "Brooks",
+      "lastname": "Dillon",
+      "nationality_id": 32,
+      "position1_id": 12,
+      "position2_id": 11,
+      "sport_id": 2,
+      "team1_id": 314,
+      "team2_id": 310,
+      "team3_id": 323,
+      "actual_team_id": 323,
+      "legendary_player": null,
+      "flag": "images/flags/CAN.png",
+      "active": true,
+      "photo": "images/basketball/Players/CAN/Dillon-Brooks.webp"
+    },
+    {
+      "id": 4202,
+      "name": "Dort",
+      "lastname": "Luguentz",
+      "nationality_id": 32,
+      "position1_id": 11,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 320,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 320,
+      "legendary_player": null,
+      "flag": "images/flags/CAN.png",
+      "active": true,
+      "photo": "images/basketball/Players/CAN/Luguentz-Dort.webp"
+    },
+    {
+      "id": 4203,
+      "name": "Edey",
+      "lastname": "Zach",
+      "nationality_id": 32,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 314,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 314,
+      "legendary_player": null,
+      "flag": "images/flags/CAN.png",
+      "active": true,
+      "photo": "images/basketball/Players/CAN/Zach-Edey.webp"
+    },
+    {
+      "id": 4204,
       "name": "Gilgeous-Alexander",
       "lastname": "Shai",
       "nationality_id": 32,
@@ -21438,7 +22696,7 @@
       "photo": "images/basketball/Players/CAN/Shai-Gilgeous-Alexander.webp"
     },
     {
-      "id": 4201,
+      "id": 4205,
       "name": "Murray",
       "lastname": "Jamal",
       "nationality_id": 32,
@@ -21455,7 +22713,7 @@
       "photo": "images/basketball/Players/CAN/Jamal-Murray.webp"
     },
     {
-      "id": 4202,
+      "id": 4206,
       "name": "Nash",
       "lastname": "Steve",
       "nationality_id": 32,
@@ -21466,13 +22724,64 @@
       "team2_id": 323,
       "team3_id": 313,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/CAN.png",
       "active": false,
       "photo": "images/basketball/Players/CAN/Steve-Nash.webp"
     },
     {
+      "id": 4207,
+      "name": "Sharpe",
+      "lastname": "Shaedon",
+      "nationality_id": 32,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 324,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 324,
+      "legendary_player": null,
+      "flag": "images/flags/CAN.png",
+      "active": true,
+      "photo": "images/basketball/Players/CAN/Shaedon-Sharpe.webp"
+    },
+    {
+      "id": 4208,
+      "name": "Wiggins",
+      "lastname": "Andrew",
+      "nationality_id": 32,
+      "position1_id": 12,
+      "position2_id": 11,
+      "sport_id": 2,
+      "team1_id": 317,
+      "team2_id": 309,
+      "team3_id": 315,
+      "actual_team_id": 315,
+      "legendary_player": null,
+      "flag": "images/flags/CAN.png",
+      "active": true,
+      "photo": "images/basketball/Players/CAN/Andrew-Wiggins.webp"
+    },
+    {
       "id": 4300,
+      "name": "Hartenstein",
+      "lastname": "Isaiah",
+      "nationality_id": 63,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 312,
+      "team2_id": 319,
+      "team3_id": 320,
+      "actual_team_id": 320,
+      "legendary_player": null,
+      "flag": "images/flags/GER.png",
+      "active": true,
+      "photo": "images/basketball/Players/GER/Isaiah-Hartenstein.webp"
+    },
+    {
+      "id": 4301,
       "name": "Nowitzki",
       "lastname": "Dirk",
       "nationality_id": 63,
@@ -21487,6 +22796,40 @@
       "flag": "images/flags/GER.png",
       "active": false,
       "photo": "images/basketball/Players/GER/Dirk-Nowitzki.webp"
+    },
+    {
+      "id": 4302,
+      "name": "Schroder",
+      "lastname": "Dennis",
+      "nationality_id": 63,
+      "position1_id": 10,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 300,
+      "team2_id": 320,
+      "team3_id": 325,
+      "actual_team_id": 325,
+      "legendary_player": null,
+      "flag": "images/flags/GER.png",
+      "active": true,
+      "photo": "images/basketball/Players/GER/Dennis-Schroder.webp"
+    },
+    {
+      "id": 4303,
+      "name": "Wagner",
+      "lastname": "Franz",
+      "nationality_id": 63,
+      "position1_id": 12,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 321,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 321,
+      "legendary_player": null,
+      "flag": "images/flags/GER.png",
+      "active": true,
+      "photo": "images/basketball/Players/GER/Franz-Wagner.webp"
     },
     {
       "id": 4400,
@@ -21575,6 +22918,23 @@
     },
     {
       "id": 4801,
+      "name": "Coulibaly",
+      "lastname": "Bilal",
+      "nationality_id": 59,
+      "position1_id": 11,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 330,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 330,
+      "legendary_player": null,
+      "flag": "images/flags/FRA.png",
+      "active": true,
+      "photo": "images/basketball/Players/FRA/Bilal-Coulibaly.webp"
+    },
+    {
+      "id": 4802,
       "name": "Diaw",
       "lastname": "Boris",
       "nationality_id": 59,
@@ -21591,7 +22951,7 @@
       "photo": "images/basketball/Players/FRA/Boris-Diaw.webp"
     },
     {
-      "id": 4802,
+      "id": 4803,
       "name": "Gobert",
       "lastname": "Rudy",
       "nationality_id": 59,
@@ -21608,7 +22968,7 @@
       "photo": "images/basketball/Players/FRA/Rudy-Gobert.webp"
     },
     {
-      "id": 4803,
+      "id": 4804,
       "name": "Noah",
       "lastname": "Joakim",
       "nationality_id": 59,
@@ -21625,7 +22985,7 @@
       "photo": "images/basketball/Players/FRA/Joakim-Noah.webp"
     },
     {
-      "id": 4804,
+      "id": 4805,
       "name": "Parker",
       "lastname": "Tony",
       "nationality_id": 59,
@@ -21636,13 +22996,47 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/FRA.png",
       "active": false,
       "photo": "images/basketball/Players/FRA/Tony-Parker.webp"
     },
     {
-      "id": 4805,
+      "id": 4806,
+      "name": "Raynaud",
+      "lastname": "Maxime",
+      "nationality_id": 59,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 325,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 325,
+      "legendary_player": null,
+      "flag": "images/flags/FRA.png",
+      "active": true,
+      "photo": "images/basketball/Players/FRA/Maxime-Raynaud.webp"
+    },
+    {
+      "id": 4807,
+      "name": "Sarr",
+      "lastname": "Alexandre",
+      "nationality_id": 59,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 330,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 330,
+      "legendary_player": null,
+      "flag": "images/flags/FRA.png",
+      "active": true,
+      "photo": "images/basketball/Players/FRA/Alexandre-Sarr.webp"
+    },
+    {
+      "id": 4808,
       "name": "Wembanyama",
       "lastname": "Victor",
       "nationality_id": 59,
@@ -21657,6 +23051,23 @@
       "flag": "images/flags/FRA.png",
       "active": true,
       "photo": "images/basketball/Players/FRA/Victor-Wembanyama.webp"
+    },
+    {
+      "id": 4809,
+      "name": "Yabusele",
+      "lastname": "Guerschon",
+      "nationality_id": 59,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 301,
+      "team2_id": 322,
+      "team3_id": 319,
+      "actual_team_id": 319,
+      "legendary_player": null,
+      "flag": "images/flags/FRA.png",
+      "active": true,
+      "photo": "images/basketball/Players/FRA/Guerschon-Yabusele.webp"
     },
     {
       "id": 4900,
@@ -21677,6 +23088,23 @@
     },
     {
       "id": 5000,
+      "name": "Horford",
+      "lastname": "Al",
+      "nationality_id": 48,
+      "position1_id": 14,
+      "position2_id": 13,
+      "sport_id": 2,
+      "team1_id": 300,
+      "team2_id": 301,
+      "team3_id": 309,
+      "actual_team_id": 309,
+      "legendary_player": null,
+      "flag": "images/flags/DOM.png",
+      "active": true,
+      "photo": "images/basketball/Players/DOM/Al-Horford.webp"
+    },
+    {
+      "id": 5001,
       "name": "Towns",
       "lastname": "Karl-Anthony",
       "nationality_id": 48,
@@ -21772,13 +23200,30 @@
       "team2_id": 313,
       "team3_id": 304,
       "actual_team_id": null,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/ESP.png",
       "active": false,
       "photo": "images/basketball/Players/ESP/Pau-Gasol.webp"
     },
     {
       "id": 5402,
+      "name": "Ibaka",
+      "lastname": "Serge",
+      "nationality_id": 161,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 320,
+      "team2_id": 328,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/ESP.png",
+      "active": false,
+      "photo": "images/basketball/Players/ESP/Serge-Ibaka.webp"
+    },
+    {
+      "id": 5403,
       "name": "Rubio",
       "lastname": "Ricky",
       "nationality_id": 161,
@@ -21863,6 +23308,23 @@
       "photo": "images/basketball/Players/LIT/Domantas-Sabonis.webp"
     },
     {
+      "id": 5550,
+      "name": "Porzingis",
+      "lastname": "Kristaps",
+      "nationality_id": 91,
+      "position1_id": 13,
+      "position2_id": 14,
+      "sport_id": 2,
+      "team1_id": 319,
+      "team2_id": 306,
+      "team3_id": 301,
+      "actual_team_id": 300,
+      "legendary_player": null,
+      "flag": "images/flags/LVA.png",
+      "active": true,
+      "photo": "images/basketball/Players/LVA/Kristaps-Porzingis.webp"
+    },
+    {
       "id": 5600,
       "name": "Embiid",
       "lastname": "Joel",
@@ -21874,10 +23336,163 @@
       "team2_id": null,
       "team3_id": null,
       "actual_team_id": 322,
-      "legendary_player": null,
+      "legendary_player": 1,
       "flag": "images/flags/CAM.png",
       "active": true,
       "photo": "images/basketball/Players/CAM/Joel-Embiid.webp"
+    },
+    {
+      "id": 5601,
+      "name": "Siakam",
+      "lastname": "Pascal",
+      "nationality_id": 31,
+      "position1_id": 13,
+      "position2_id": 12,
+      "sport_id": 2,
+      "team1_id": 328,
+      "team2_id": 311,
+      "team3_id": null,
+      "actual_team_id": 311,
+      "legendary_player": null,
+      "flag": "images/flags/CAM.png",
+      "active": true,
+      "photo": "images/basketball/Players/CAM/Pascal-Siakam.webp"
+    },
+    {
+      "id": 5650,
+      "name": "Giddey",
+      "lastname": "Josh",
+      "nationality_id": 9,
+      "position1_id": 10,
+      "position2_id": 11,
+      "sport_id": 2,
+      "team1_id": 320,
+      "team2_id": 304,
+      "team3_id": null,
+      "actual_team_id": 304,
+      "legendary_player": null,
+      "flag": "images/flags/AUS.png",
+      "active": true,
+      "photo": "images/basketball/Players/AUS/Josh-Giddey.webp"
+    },
+    {
+      "id": 5700,
+      "name": "Camara",
+      "lastname": "Toumani",
+      "nationality_id": 17,
+      "position1_id": 12,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 324,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 324,
+      "legendary_player": null,
+      "flag": "images/flags/BEL.png",
+      "active": true,
+      "photo": "images/basketball/Players/BEL/Toumani-Camara.webp"
+    },
+    {
+      "id": 5750,
+      "name": "Hachimura",
+      "lastname": "Rui",
+      "nationality_id": 83,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 330,
+      "team2_id": 313,
+      "team3_id": null,
+      "actual_team_id": 313,
+      "legendary_player": null,
+      "flag": "images/flags/JAP.png",
+      "active": true,
+      "photo": "images/basketball/Players/JAP/Rui-Hachimura.webp"
+    },
+    {
+      "id": 5800,
+      "name": "Smits",
+      "lastname": "Rik",
+      "nationality_id": 120,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 311,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": null,
+      "legendary_player": null,
+      "flag": "images/flags/NED.png",
+      "active": false,
+      "photo": "images/basketball/Players/NED/Rik-Smits.webp"
+    },
+    {
+      "id": 5850,
+      "name": "Vucevic",
+      "lastname": "Nikola",
+      "nationality_id": 113,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 321,
+      "team2_id": 304,
+      "team3_id": null,
+      "actual_team_id": 304,
+      "legendary_player": null,
+      "flag": "images/flags/MNE.png",
+      "active": true,
+      "photo": "images/basketball/Players/MNE/Nikola-Vucevic.webp"
+    },
+    {
+      "id": 5900,
+      "name": "Adams",
+      "lastname": "Steven",
+      "nationality_id": 121,
+      "position1_id": 14,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 320,
+      "team2_id": 314,
+      "team3_id": 310,
+      "actual_team_id": 310,
+      "legendary_player": null,
+      "flag": "images/flags/NZL.png",
+      "active": true,
+      "photo": "images/basketball/Players/NZL/Steven-Adams.webp"
+    },
+    {
+      "id": 5910,
+      "name": "Markkanen",
+      "lastname": "Lauri",
+      "nationality_id": 58,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 304,
+      "team2_id": 305,
+      "team3_id": 329,
+      "actual_team_id": 329,
+      "legendary_player": null,
+      "flag": "images/flags/FIN.png",
+      "active": true,
+      "photo": "images/basketball/Players/FIN/Lauri-Markkanen.webp"
+    },
+    {
+      "id": 5920,
+      "name": "Sengun",
+      "lastname": "Alperen",
+      "nationality_id": 176,
+      "position1_id": 13,
+      "position2_id": null,
+      "sport_id": 2,
+      "team1_id": 310,
+      "team2_id": null,
+      "team3_id": null,
+      "actual_team_id": 310,
+      "legendary_player": null,
+      "flag": "images/flags/TUR.png",
+      "active": true,
+      "photo": "images/basketball/Players/TUR/Alperen-Sengun.webp"
     },
     {
       "id": 6000,
@@ -30169,7 +31784,7 @@
       "team1_id": 226,
       "team2_id": 214,
       "team3_id": null,
-      "actual_team_id": null,
+      "actual_team_id": 214,
       "legendary_player": null,
       "flag": "images/flags/SWE.png",
       "active": true,
@@ -30815,7 +32430,7 @@
       "team1_id": 218,
       "team2_id": 207,
       "team3_id": null,
-      "actual_team_id": null,
+      "actual_team_id": 207,
       "legendary_player": null,
       "flag": "images/flags/FIN.png",
       "active": true,
