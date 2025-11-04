@@ -254,10 +254,11 @@ export default function DreamTeamBuilder() {
       if (selectedNationality !== "") {
         if (isNationalityGroup(selectedNationality)) {
           // Si c'est un groupe, vérifier si la nationalité du joueur est dans le groupe
-          nationalityCondition = getNationalitiesInGroup(selectedNationality as NationalityGroup).includes(player.nationality);
+          const nationalitiesInGroup = getNationalitiesInGroup(selectedNationality as NationalityGroup);
+          nationalityCondition = nationalitiesInGroup.includes(player.nationality1) || nationalitiesInGroup.includes(player.nationality2);
         } else {
           // Si c'est une nationalité individuelle, vérification directe
-          nationalityCondition = player.nationality === selectedNationality;
+          nationalityCondition = player.nationality1 === selectedNationality || player.nationality2 === selectedNationality;
         }
       }
 
