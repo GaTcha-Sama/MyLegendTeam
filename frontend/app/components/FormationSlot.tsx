@@ -79,7 +79,7 @@ const getSilhouettePath = (positionId: string, sport: string) => {
   if (sport === "hockey") {
     silhouetteFile = silhouetteIceHockeyMapping[positionId];
   }
-  return silhouetteFile ? `/images/${sport}/silhouettes/${silhouetteFile}` : null;
+  return silhouetteFile ? `/images/${sport}/silhouettes/${silhouetteFile}` : null; 
 };
 
 export const FormationSlot = ({ 
