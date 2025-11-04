@@ -7,7 +7,11 @@ export const NationalitySelector = ({ selectedNationality, onSelectNationality, 
     new Set(
       players
         .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
-        .map(player => player.nationality)
+        .map(player => player.nationality1)
+        .concat(players
+          .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
+          .map(player => player.nationality2)
+        )
     )
   ).sort();
 
@@ -36,7 +40,7 @@ export const NationalitySelector = ({ selectedNationality, onSelectNationality, 
         ))}
 
         {selectedSport.toLowerCase() === 'rugby' && (
-          <option disabled style={{ fontStyle: 'italic', color: '#666' }}>
+          <option key="separator" disabled style={{ fontStyle: 'italic', color: '#666' }}>
             ────────────────
           </option>
         )}

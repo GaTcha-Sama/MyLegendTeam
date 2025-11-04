@@ -2,8 +2,10 @@ export interface Player {
   id: number;
   name: string;
   lastname: string;
-  nationality: string;
-  flag: string;
+  nationality1: string;
+  nationality2: string;
+  flag1: string;
+  flag2: string;
   sport: string;
   position1: string;
   position2: string;

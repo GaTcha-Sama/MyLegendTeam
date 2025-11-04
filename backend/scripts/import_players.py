@@ -27,7 +27,7 @@ def clean_filename(text):
             .replace("—", "-") 
     )
 
-def get_player_photo_path(name, lastname, flag, sport_id, extension):
+def get_player_photo_path(name, lastname, flag1, flag2, sport_id, extension):
     sport_folder = get_sport_folder(sport_id)
     
     # Gestion des cas où il n'y a qu'un nom (comme Ronaldinho)
@@ -39,7 +39,12 @@ def get_player_photo_path(name, lastname, flag, sport_id, extension):
         filename = f"{lastname}-{name}"
     
     filename = clean_filename(filename)
-    return f"images/{sport_folder}/Players/{flag}/{filename}.{extension}"
+    
+    # Gestion du cas où flag2 est null/NaN - ne pas inclure le sous-dossier flag2
+    if pd.isna(flag2) or str(flag2).strip() == "" or str(flag2).lower() == "nan":
+        return f"images/{sport_folder}/Players/{flag1}/{filename}.{extension}"
+    else:
+        return f"images/{sport_folder}/Players/{flag1}/{flag2}/{filename}.{extension}"
 
 def import_players():
     script_dir = Path(__file__).parent
@@ -80,7 +85,8 @@ def import_players():
                     "id": int(row['id']),
                     "name": name,
                     "lastname": lastname,
-                    "nationality_id": int(row['nationality_id']),
+                    "nationality1_id": int(row['nationality1_id']),
+                    "nationality2_id": int(row['nationality2_id']) if pd.notna(row['nationality2_id']) else None,
                     "position1_id": int(row['position1_id']) if pd.notna(row['position1_id']) else None,
                     "position2_id": int(row['position2_id']) if pd.notna(row['position2_id']) else None,
                     "sport_id": sport_id,
@@ -89,12 +95,14 @@ def import_players():
                     "team3_id": team3_id,
                     "actual_team_id": int(row['actual_club']) if pd.notna(row['actual_club']) else None,
                     "legendary_player": int(row['legendary_player']) if pd.notna(row['legendary_player']) else None,
-                    "flag": get_flag_path(row['flag']),
+                    "flag1": get_flag_path(row['flag1']),
+                    "flag2": get_flag_path(row['flag2']) if pd.notna(row['flag2']) else None,
                     "active": int(row['active']) == 1,
                     "photo": get_player_photo_path(
                         name,
                         lastname,
-                        row['flag'],
+                        row['flag1'],
+                        row['flag2'],
                         sport_id,
                         row['extension']
                     )

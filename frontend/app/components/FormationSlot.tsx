@@ -4,7 +4,7 @@ import { Player as PlayerType } from "../types/players";
 import { slotSizes } from "../types/slotSizes";
 import { canPlayerBePlacedOnSlot } from "../utils/canPlayerBePlacedOnSlot";
 import { FormationSlotProps } from "../types/formationSlotProps";
-import { getPortraitPath, getFlagPath, getTeamLogoPath } from "../utils/imageHelpers";
+import { getPortraitPaths, getFlagPath, getTeamLogoPath } from "../utils/imageHelpers";
 import Image from "next/image";
 
 const getSilhouettePath = (positionId: string, sport: string) => {
@@ -97,8 +97,7 @@ export const FormationSlot = ({
   team,
   onSlotClick
 }: FormationSlotProps) => {
-  const [useDefaultImage, setUseDefaultImage] = useState(false);
-  const [useDefaultFlag, setUseDefaultFlag] = useState(false);
+  const [portraitPathIndex, setPortraitPathIndex] = useState(0);
   const [useDefaultActualTeamLogo, setUseDefaultActualTeamLogo] = useState(false);
 
   const [{ isDragging }, drag] = useDrag({
@@ -178,54 +177,71 @@ export const FormationSlot = ({
       }
       return <span className="text-black italic">{position}</span>;
     }
-    const renderTeamLogos = () => {
-      if (player.actual_team_logo) {
-        return (
-          <div className="relative w-6 h-6 rounded-sm p-1">
-            <Image
-              src={useDefaultActualTeamLogo ? '/images/team-default.webp' : `/${getTeamLogoPath(player.actual_team_logo)}`}
-              alt={`Logo ${player.actual_team}`}
-              fill  
-              className="object-contain"
-              sizes="24px"
-              onError={() => setUseDefaultActualTeamLogo(true)}
-              unoptimized
-            />
-          </div>
-        );
-      }
-      
-      return null;
-    };
+
+    const portraitPaths = getPortraitPaths(player.photo);
+    const currentPortraitPath = portraitPathIndex < portraitPaths.length 
+      ? portraitPaths[portraitPathIndex] 
+      : 'images/portrait-default.webp';
 
     return (
       <div className="flex flex-col items-center w-full h-full">
         <div className="relative w-full h-full">
           <Image 
-            src={`/${getPortraitPath(player.photo)}`}
+            src={`/${currentPortraitPath}`}
             alt={player.name}
             fill
             className="object-cover rounded-sm object-top"
             sizes="100%"
-            onError={() => setUseDefaultImage(true)}
-            unoptimized={useDefaultImage}
+            onError={() => {
+              // Essayer le chemin suivant s'il existe
+              if (portraitPathIndex < portraitPaths.length - 1) {
+                setPortraitPathIndex(portraitPathIndex + 1);
+              } else {
+                // Si tous les chemins ont échoué, utiliser l'image par défaut
+                setPortraitPathIndex(portraitPaths.length);
+              }
+            }}
+            unoptimized
           />
-          <div className="absolute left-1 right-1 flex justify-between">
-            {player.flag && (
+          <div className="absolute top-1 left-1 flex flex-col gap-1">
+            {player.flag1 && (
               <div className="relative w-6 h-4">
                 <Image
-                  src={`/${getFlagPath(player.flag)}`}
-                  alt={`Drapeau ${player.nationality}`}
+                  src={`/${getFlagPath(player.flag1)}`}
+                  alt={`Drapeau ${player.nationality1}`}
                   fill
                   className="object-contain"
                   sizes="24px"
-                  onError={() => setUseDefaultFlag(true)}
-                  unoptimized={useDefaultFlag}
+                  unoptimized
                 />
               </div>
             )}
-            {renderTeamLogos()}
+            {player.flag2 && (
+              <div className="relative w-6 h-4">
+                <Image
+                  src={`/${getFlagPath(player.flag2)}`}
+                  alt={`Drapeau ${player.nationality2}`}
+                  fill
+                  className="object-contain"
+                  sizes="24px"
+                  unoptimized
+                />
+              </div>
+            )}
           </div>
+          {player.actual_team_logo && (
+            <div className="absolute top-1 right-1 w-6 h-6">
+              <Image
+                src={useDefaultActualTeamLogo ? '/images/team-default.webp' : `/${getTeamLogoPath(player.actual_team_logo)}`}
+                alt={`Logo ${player.actual_team}`}
+                fill
+                className="object-contain"
+                sizes="24px"
+                onError={() => setUseDefaultActualTeamLogo(true)}
+                unoptimized
+              />
+            </div>
+          )}
         </div>
         <span className="font-semibold text-gray-800 text-xs text-center flex items-center justify-center gap-1 font-[family-name:var(--font-title)]">
           <span>{`${player.lastname} ${player.name}`}</span>

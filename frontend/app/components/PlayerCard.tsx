@@ -2,13 +2,14 @@ import { useDrag } from "react-dnd";
 import { PlayerCardProps } from "../types/playerCardProps";
 import Image from "next/image";
 import { useState } from "react";
-import { getPortraitPath, getFlagPath, getTeamLogoPath } from "../utils/imageHelpers";
+import { getPortraitPaths, getFlagPath, getTeamLogoPath } from "../utils/imageHelpers";
 
 export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosition, isDisabled }: PlayerCardProps) => {
   const [useDefaultTeamLogo1, setUseDefaultTeamLogo1] = useState(false);
   const [useDefaultTeamLogo2, setUseDefaultTeamLogo2] = useState(false);
   const [useDefaultTeamLogo3, setUseDefaultTeamLogo3] = useState(false);
   const [useDefaultActualTeamLogo, setUseDefaultActualTeamLogo] = useState(false);
+  const [portraitPathIndex, setPortraitPathIndex] = useState(0);
 
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
@@ -26,8 +27,12 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
     }),
   });
 
-  const imagePath = getPortraitPath(player.photo);
-  const flagPath = getFlagPath(player.flag);
+  const portraitPaths = getPortraitPaths(player.photo);
+  const currentPortraitPath = portraitPathIndex < portraitPaths.length 
+    ? portraitPaths[portraitPathIndex] 
+    : 'images/portrait-default.webp';
+  const flagPath1 = getFlagPath(player.flag1);
+  const flagPath2 = getFlagPath(player.flag2);
   const teamLogoPath1 = getTeamLogoPath(player.team1_logo);
   const teamLogoPath2 = getTeamLogoPath(player.team2_logo);
   const teamLogoPath3 = getTeamLogoPath(player.team3_logo);
@@ -92,19 +97,28 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
 
       <div className="relative w-full aspect-square mb-3 flex-grow bg-white rounded-lg">
         <Image 
-          src={`/${imagePath}`} 
+          src={`/${currentPortraitPath}`} 
           alt={`${player.lastname} ${player.name}`} 
           fill
           className="rounded-lg object-top object-cover bg-gray-400"
           sizes="(max-width: 768px) 100vw, 300px"
           unoptimized={true}
           priority
+          onError={() => {
+            // Essayer le chemin suivant s'il existe
+            if (portraitPathIndex < portraitPaths.length - 1) {
+              setPortraitPathIndex(portraitPathIndex + 1);
+            } else {
+              // Si tous les chemins ont échoué, utiliser l'image par défaut
+              setPortraitPathIndex(portraitPaths.length);
+            }
+          }}
         />
-        {player.flag && (
+        {player.flag1 && (
           <div className="absolute top-1 left-1 w-8">
             <Image
-              src={`/${flagPath}`}
-              alt={`Drapeau ${player.nationality}`}
+              src={`/${flagPath1}`}
+              alt={`Drapeau ${player.nationality1}`}
               className="object-contain"
               sizes="24px"
               height={24}
@@ -112,7 +126,18 @@ export const PlayerCard = ({ player, theme, onDragStart, onDragEnd, selectedPosi
             />
           </div>
         )}
-        
+        {player.flag2 && (
+          <div className="absolute top-7 left-1 w-8">
+            <Image
+              src={`/${flagPath2}`}
+              alt={`Drapeau ${player.nationality2}`}
+              className="object-contain"
+              sizes="24px"
+              height={24}
+              width={24}
+            />
+          </div>
+        )}
         {/* Actual team */}
         {player.actual_team_logo && (
           <div className="absolute top-1 right-0 w-8">

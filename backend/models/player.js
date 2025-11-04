@@ -7,8 +7,10 @@ class Player {
                 p.id,
                 p.name,
                 p.lastname,
-                n.name as nationality,
-                n.flag,
+                n1.name as nationality1,
+                n2.name as nationality2,
+                n1.flag as flag1,
+                n2.flag as flag2,
                 s.name as sport,
                 pos1.name as position1,
                 pos2.name as position2,
@@ -24,7 +26,8 @@ class Player {
                 p.legendary_player,
                 p.active
             FROM players p
-            LEFT JOIN nationalities n ON p.nationality_id = n.id
+            LEFT JOIN nationalities n1 ON p.nationality1_id = n1.id
+            LEFT JOIN nationalities n2 ON p.nationality2_id = n2.id
             LEFT JOIN teams t1 ON p.team1_id = t1.id
             LEFT JOIN teams t2 ON p.team2_id = t2.id
             LEFT JOIN teams t3 ON p.team3_id = t3.id
@@ -48,7 +51,10 @@ class Player {
                 p.id,
                 p.name,
                 p.lastname,
-                n.name as nationality,
+                n1.name as nationality1,
+                n2.name as nationality2,
+                n1.flag as flag1,
+                n2.flag as flag2,
                 n.flag,
                 s.name as sport,
                 pos1.name as position1,
@@ -65,7 +71,8 @@ class Player {
                 p.legendary_player,
                 p.active
             FROM players p
-            LEFT JOIN nationalities n ON p.nationality_id = n.id
+            LEFT JOIN nationalities n1 ON p.nationality1_id = n1.id
+            LEFT JOIN nationalities n2 ON p.nationality2_id = n2.id
             LEFT JOIN teams t1 ON p.team1_id = t1.id
             LEFT JOIN teams t2 ON p.team2_id = t2.id
             LEFT JOIN teams t3 ON p.team3_id = t3.id
