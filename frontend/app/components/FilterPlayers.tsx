@@ -29,7 +29,7 @@ export const FilterPlayers = ({
       const baseConditions = 
         player.sport.toLowerCase() === selectedSport && 
         !isPlayerInTeam(player.id) &&
-        (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
+        (selectedNationality.length === 0 || selectedNationality.includes(player.nationality1) || selectedNationality.includes(player.nationality2)) &&
         (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
         (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3) || selectedTeam.includes(player.actual_team)) &&
         activeRetiredLegendaryCondition;
@@ -68,7 +68,7 @@ export const FilterPlayers = ({
     const baseConditions = 
       player.sport.toLowerCase() === selectedSport && 
       !isPlayerInTeam(player.id) &&
-      (selectedNationality.length === 0 || selectedNationality.includes(player.nationality)) &&
+      (selectedNationality.length === 0 || selectedNationality.includes(player.nationality1) || selectedNationality.includes(player.nationality2)) &&
       (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
       (selectedTeam.length === 0 || selectedTeam.includes(player.team1) || selectedTeam.includes(player.team2) || selectedTeam.includes(player.team3) || selectedTeam.includes(player.actual_team)) &&
       activeRetiredLegendaryCondition;
