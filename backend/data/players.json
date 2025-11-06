@@ -3311,7 +3311,7 @@
       "name": "Bachop",
       "lastname": "Graeme",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 83,
       "position1_id": 5,
       "position2_id": null,
       "sport_id": 1,
@@ -3321,9 +3321,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/JAP.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Graeme-Bachop.webp"
+      "photo": "images/rugby/Players/NZL/JAP/Graeme-Bachop.webp"
     },
     {
       "id": 202,
@@ -3482,7 +3482,7 @@
       "name": "Brown",
       "lastname": "Olo",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 1,
       "position2_id": null,
       "sport_id": 1,
@@ -3492,16 +3492,16 @@
       "actual_team_id": null,
       "legendary_player": 1,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Olo-Brown.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Olo-Brown.webp"
     },
     {
       "id": 211,
       "name": "Bunce",
       "lastname": "Frank",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 7,
       "position2_id": null,
       "sport_id": 1,
@@ -3511,9 +3511,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Frank-Bunce.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Frank-Bunce.webp"
     },
     {
       "id": 212,
@@ -3577,7 +3577,7 @@
       "name": "Christie",
       "lastname": "Finlay",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 193,
       "position1_id": 5,
       "position2_id": null,
       "sport_id": 1,
@@ -3587,9 +3587,9 @@
       "actual_team_id": 32,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SCO.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Finlay-Christie.webp"
+      "photo": "images/rugby/Players/NZL/SCO/Finlay-Christie.webp"
     },
     {
       "id": 216,
@@ -3634,7 +3634,7 @@
       "name": "Collins",
       "lastname": "Jerry",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 4,
       "position2_id": null,
       "sport_id": 1,
@@ -3644,9 +3644,9 @@
       "actual_team_id": null,
       "legendary_player": 1,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Jerry-Collins.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Jerry-Collins.webp"
     },
     {
       "id": 219,
@@ -3824,7 +3824,7 @@
       "name": "Fainga'anuku",
       "lastname": "Leicester",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 173,
       "position1_id": 7,
       "position2_id": 8,
       "sport_id": 1,
@@ -3834,16 +3834,16 @@
       "actual_team_id": 30,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/TGA.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Leicester-Fainga-anuku.webp"
+      "photo": "images/rugby/Players/NZL/TGA/Leicester-Fainga-anuku.webp"
     },
     {
       "id": 229,
       "name": "Finau",
       "lastname": "Samipeni",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 173,
       "position1_id": 4,
       "position2_id": 30,
       "sport_id": 1,
@@ -3853,9 +3853,9 @@
       "actual_team_id": 34,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/TGA.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Samipeni-Finau.webp"
+      "photo": "images/rugby/Players/NZL/TGA/Samipeni-Finau.webp"
     },
     {
       "id": 230,
@@ -3863,7 +3863,7 @@
       "lastname": "Sean",
       "nationality1_id": 121,
       "nationality2_id": null,
-      "position1_id": 1,
+      "position1_id": 2,
       "position2_id": null,
       "sport_id": 1,
       "team1_id": 32,
@@ -3938,7 +3938,7 @@
       "name": "Frizell",
       "lastname": "Shannon",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 173,
       "position1_id": 4,
       "position2_id": 30,
       "sport_id": 1,
@@ -3948,9 +3948,9 @@
       "actual_team_id": 108,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/TGA.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Shannon-Frizell.webp"
+      "photo": "images/rugby/Players/NZL/TGA/Shannon-Frizell.webp"
     },
     {
       "id": 235,
@@ -4071,7 +4071,7 @@
       "name": "Holland",
       "lastname": "Fabian",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 120,
       "position1_id": 3,
       "position2_id": null,
       "sport_id": 1,
@@ -4081,9 +4081,9 @@
       "actual_team_id": 33,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/NED.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Fabian-Holland.webp"
+      "photo": "images/rugby/Players/NZL/NED/Fabian-Holland.webp"
     },
     {
       "id": 242,
@@ -4147,7 +4147,7 @@
       "name": "Ieremia",
       "lastname": "Alama",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 7,
       "position2_id": null,
       "sport_id": 1,
@@ -4157,9 +4157,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Alama-Ieremia.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Alama-Ieremia.webp"
     },
     {
       "id": 246,
@@ -4318,7 +4318,7 @@
       "name": "Kerr-Barlow",
       "lastname": "Tawera",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 9,
       "position1_id": 5,
       "position2_id": null,
       "sport_id": 1,
@@ -4328,9 +4328,9 @@
       "actual_team_id": 4,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/AUS.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Tawera-Kerr-Barlow.webp"
+      "photo": "images/rugby/Players/NZL/AUS/Tawera-Kerr-Barlow.webp"
     },
     {
       "id": 255,
@@ -4432,7 +4432,7 @@
       "name": "Laulala",
       "lastname": "Nepo",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 1,
       "position2_id": null,
       "sport_id": 1,
@@ -4442,9 +4442,9 @@
       "actual_team_id": 73,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Nepo-Laulala.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Nepo-Laulala.webp"
     },
     {
       "id": 261,
@@ -4508,7 +4508,7 @@
       "name": "Lomax",
       "lastname": "Tyrel",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 9,
       "position1_id": 1,
       "position2_id": null,
       "sport_id": 1,
@@ -4518,9 +4518,9 @@
       "actual_team_id": 31,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/AUS.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Tyrel-Lomax.webp"
+      "photo": "images/rugby/Players/NZL/AUS/Tyrel-Lomax.webp"
     },
     {
       "id": 265,
@@ -4603,7 +4603,7 @@
       "name": "Masoe",
       "lastname": "Chris",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 30,
       "position2_id": 4,
       "sport_id": 1,
@@ -4613,9 +4613,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Chris-Masoe.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Chris-Masoe.webp"
     },
     {
       "id": 270,
@@ -4907,7 +4907,7 @@
       "name": "Muliaina",
       "lastname": "Mils",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 9,
       "position2_id": 8,
       "sport_id": 1,
@@ -4917,9 +4917,9 @@
       "actual_team_id": null,
       "legendary_player": 1,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Mils-Muliaina.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Mils-Muliaina.webp"
     },
     {
       "id": 286,
@@ -4947,7 +4947,7 @@
       "nationality1_id": 121,
       "nationality2_id": null,
       "position1_id": 7,
-      "position2_id": null,
+      "position2_id": 8,
       "sport_id": 1,
       "team1_id": 31,
       "team2_id": 32,
@@ -5116,7 +5116,7 @@
       "name": "Reece",
       "lastname": "Sevu",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 57,
       "position1_id": 8,
       "position2_id": null,
       "sport_id": 1,
@@ -5126,9 +5126,9 @@
       "actual_team_id": 30,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/FJI.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Sevu-Reece.webp"
+      "photo": "images/rugby/Players/NZL/FJI/Sevu-Reece.webp"
     },
     {
       "id": 297,
@@ -5173,7 +5173,7 @@
       "name": "Rokocoko",
       "lastname": "Joe",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 57,
       "position1_id": 8,
       "position2_id": null,
       "sport_id": 1,
@@ -5183,9 +5183,9 @@
       "actual_team_id": null,
       "legendary_player": 1,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/FJI.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Joe-Rokocoko.webp"
+      "photo": "images/rugby/Players/NZL/FJI/Joe-Rokocoko.webp"
     },
     {
       "id": 300,
@@ -5268,7 +5268,7 @@
       "name": "Sititi",
       "lastname": "Wallace",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 4,
       "position2_id": 30,
       "sport_id": 1,
@@ -5278,16 +5278,16 @@
       "actual_team_id": 34,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Wallace-Sititi.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Wallace-Sititi.webp"
     },
     {
       "id": 305,
       "name": "Sivivatu",
       "lastname": "Sitiveni",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 57,
       "position1_id": 8,
       "position2_id": null,
       "sport_id": 1,
@@ -5297,9 +5297,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/FJI.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Sitiveni-Sivivatu.webp"
+      "photo": "images/rugby/Players/NZL/FJI/Sitiveni-Sivivatu.webp"
     },
     {
       "id": 306,
@@ -5382,7 +5382,7 @@
       "name": "So'oialo",
       "lastname": "Rodney",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 4,
       "position2_id": 30,
       "sport_id": 1,
@@ -5392,9 +5392,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Rodney-So-oialo.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Rodney-So-oialo.webp"
     },
     {
       "id": 311,
@@ -5420,7 +5420,7 @@
       "name": "Sotutu",
       "lastname": "Hoskins",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 57,
       "position1_id": 30,
       "position2_id": 4,
       "sport_id": 1,
@@ -5430,9 +5430,9 @@
       "actual_team_id": 32,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/FJI.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Hoskins-Sotutu.webp"
+      "photo": "images/rugby/Players/NZL/FJI/Hoskins-Sotutu.webp"
     },
     {
       "id": 313,
@@ -5458,7 +5458,7 @@
       "name": "Tauke'iaho",
       "lastname": "Samisoni",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 173,
       "position1_id": 2,
       "position2_id": null,
       "sport_id": 1,
@@ -5468,16 +5468,16 @@
       "actual_team_id": 34,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/TGA.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Samisoni-Tauke-iaho.webp"
+      "photo": "images/rugby/Players/NZL/TGA/Samisoni-Tauke-iaho.webp"
     },
     {
       "id": 315,
       "name": "Tavatavanawai",
       "lastname": "Timoci",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 57,
       "position1_id": 7,
       "position2_id": 8,
       "sport_id": 1,
@@ -5487,9 +5487,9 @@
       "actual_team_id": 33,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/FJI.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Timoci-Tavatavanawai.webp"
+      "photo": "images/rugby/Players/NZL/FJI/Timoci-Tavatavanawai.webp"
     },
     {
       "id": 316,
@@ -5534,7 +5534,7 @@
       "name": "Thorn",
       "lastname": "Brad",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 9,
       "position1_id": 3,
       "position2_id": null,
       "sport_id": 1,
@@ -5544,9 +5544,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/AUS.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Brad-Thorn.webp"
+      "photo": "images/rugby/Players/NZL/AUS/Brad-Thorn.webp"
     },
     {
       "id": 319,
@@ -5610,7 +5610,7 @@
       "name": "Toeava",
       "lastname": "Isaia",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 145,
       "position1_id": 7,
       "position2_id": 8,
       "sport_id": 1,
@@ -5620,9 +5620,9 @@
       "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/SAM.png",
       "active": false,
-      "photo": "images/rugby/Players/NZL/Isaia-Toeava.webp"
+      "photo": "images/rugby/Players/NZL/SAM/Isaia-Toeava.webp"
     },
     {
       "id": 323,
@@ -5648,7 +5648,7 @@
       "name": "Tu'ungafasi",
       "lastname": "Ofa",
       "nationality1_id": 121,
-      "nationality2_id": null,
+      "nationality2_id": 173,
       "position1_id": 1,
       "position2_id": null,
       "sport_id": 1,
@@ -5658,9 +5658,9 @@
       "actual_team_id": 32,
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
-      "flag2": null,
+      "flag2": "images/flags/TGA.png",
       "active": true,
-      "photo": "images/rugby/Players/NZL/Ofa-Tu-ungafasi.webp"
+      "photo": "images/rugby/Players/NZL/TGA/Ofa-Tu-ungafasi.webp"
     },
     {
       "id": 325,
@@ -18663,7 +18663,7 @@
       "name": "Capuozzo",
       "lastname": "Ange",
       "nationality1_id": 81,
-      "nationality2_id": null,
+      "nationality2_id": 59,
       "position1_id": 9,
       "position2_id": 8,
       "sport_id": 1,
@@ -18673,9 +18673,9 @@
       "actual_team_id": 1,
       "legendary_player": null,
       "flag1": "images/flags/ITA.png",
-      "flag2": null,
+      "flag2": "images/flags/FRA.png",
       "active": true,
-      "photo": "images/rugby/Players/ITA/Ange-Capuozzo.webp"
+      "photo": "images/rugby/Players/ITA/FRA/Ange-Capuozzo.webp"
     },
     {
       "id": 1613,
