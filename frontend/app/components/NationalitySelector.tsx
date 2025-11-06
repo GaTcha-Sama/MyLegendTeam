@@ -12,6 +12,7 @@ export const NationalitySelector = ({ selectedNationality, onSelectNationality, 
           .filter(player => player.sport.toLowerCase() === selectedSport.toLowerCase())
           .map(player => player.nationality2)
         )
+        .filter(nationality => nationality && nationality.trim() !== "")
     )
   ).sort();
 
