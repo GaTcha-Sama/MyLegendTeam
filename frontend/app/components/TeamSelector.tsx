@@ -68,6 +68,22 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
       'FJI': 'Fiji',
       'SAM': 'Samoa',
       'TON': 'Tonga',
+      'ESP': 'Spain',
+      'POR': 'Portugal',
+      'GER': 'Germany',
+      'NED': 'Netherlands',
+      'BEL': 'Belgium',
+      'SUI': 'Switzerland',
+      'AUT': 'Austria',
+      'SWE': 'Sweden',
+      'NOR': 'Norway',
+      'BRA': 'Brazil',
+      'CHN': 'China',
+      'IND': 'India',
+      'JPN': 'Japan',
+      'KOR': 'South Korea',
+      'MEX': 'Mexico',
+      'CAN': 'Canada',
       'Unknown': 'Other'
     };
     return countryNames[countryCode] || countryCode;

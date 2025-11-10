@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDrop, useDrag } from "react-dnd";
 import { Player as PlayerType } from "../types/players";
 import { slotSizes } from "../types/slotSizes";
@@ -100,6 +100,11 @@ export const FormationSlot = ({
   const [portraitPathIndex, setPortraitPathIndex] = useState(0);
   const [useDefaultActualTeamLogo, setUseDefaultActualTeamLogo] = useState(false);
 
+  useEffect(() => {
+    setPortraitPathIndex(0);
+    setUseDefaultActualTeamLogo(false);
+  }, [player?.id, player?.photo]);
+
   const [{ isDragging }, drag] = useDrag({
     type: "PLAYER",
     item: () => {
@@ -193,13 +198,9 @@ export const FormationSlot = ({
             className="object-cover rounded-sm object-top"
             sizes="100%"
             onError={() => {
-              // Essayer le chemin suivant s'il existe
-              if (portraitPathIndex < portraitPaths.length - 1) {
-                setPortraitPathIndex(portraitPathIndex + 1);
-              } else {
-                // Si tous les chemins ont échoué, utiliser l'image par défaut
-                setPortraitPathIndex(portraitPaths.length);
-              }
+              setPortraitPathIndex((prevIndex) =>
+                prevIndex < portraitPaths.length - 1 ? prevIndex + 1 : portraitPaths.length
+              );
             }}
             unoptimized
           />

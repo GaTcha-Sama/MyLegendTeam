@@ -789,8 +789,8 @@
     {
       "id": 132,
       "name": "Papua New Guinea",
-      "code": "PNG",
-      "flag": "public/images/flags/PNG.png"
+      "code": "PAP",
+      "flag": "public/images/flags/PAP.png"
     },
     {
       "id": 133,
@@ -1143,14 +1143,14 @@
     {
       "id": 191,
       "name": "Zambia",
-      "code": "ZMB",
-      "flag": "public/images/flags/ZMB.png"
+      "code": "ZAM",
+      "flag": "public/images/flags/ZAM.png"
     },
     {
       "id": 192,
       "name": "Zimbabwe",
-      "code": "ZWE",
-      "flag": "public/images/flags/ZWE.png"
+      "code": "ZIM",
+      "flag": "public/images/flags/ZIM.png"
     },
     {
       "id": 193,
@@ -1172,7 +1172,7 @@
     },
     {
       "id": 196,
-      "name": "Bretagne",
+      "name": "Breizh",
       "code": "BZH",
       "flag": "public/images/flags/BZH.png"
     },
