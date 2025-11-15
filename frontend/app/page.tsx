@@ -5,7 +5,6 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { PlayerCard } from "./components/PlayerCard";
 import { FormationSlot } from "./components/FormationSlot";
-// import { SportSelector } from "./components/SportSelector";
 import { NationalitySelector } from "./components/NationalitySelector";
 import { TeamSelector } from "./components/TeamSelector";
 import { PositionSelector } from "./components/PositionSelector";

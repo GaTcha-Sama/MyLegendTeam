@@ -675,8 +675,8 @@
     {
       "id": 113,
       "name": "Montenegro",
-      "code": "MNE",
-      "flag": "public/images/flags/MNE.png"
+      "code": "MTG",
+      "flag": "public/images/flags/MTG.png"
     },
     {
       "id": 114,
@@ -807,8 +807,8 @@
     {
       "id": 135,
       "name": "Philippines",
-      "code": "PHL",
-      "flag": "public/images/flags/PHL.png"
+      "code": "PHI",
+      "flag": "public/images/flags/PHI.png"
     },
     {
       "id": 136,
@@ -1199,6 +1199,12 @@
       "name": "Ivory Coast",
       "code": "CIV",
       "flag": "public/images/flags/CIV.png"
+    },
+    {
+      "id": 201,
+      "name": "Hong Kong",
+      "code": "HKG",
+      "flag": "public/images/flags/HKG.png"
     }
   ]
 }
