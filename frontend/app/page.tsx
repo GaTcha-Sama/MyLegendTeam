@@ -29,6 +29,7 @@ export default function DreamTeamBuilder() {
   const [selectedNationality, setSelectedNationality] = useState<string>("");
   const [selectedPosition, setSelectedPosition] = useState("");
   const [selectedTeam, setSelectedTeam] = useState("");
+  const [showActualPlayersOnly, setShowActualPlayersOnly] = useState(false);
   const [selectedActiveRetiredStared, setSelectedActiveRetiredStared] = useState<number | null | "legendary">(null);
   const [filteredPlayers, setFilteredPlayers] = useState<PlayerType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -68,6 +69,7 @@ export default function DreamTeamBuilder() {
     setSelectedNationality("");
     setSelectedPosition("");
     setSelectedTeam("");
+    setShowActualPlayersOnly(false);
     setSelectedActiveRetiredStared(null);
     setFilteredPlayers([]);
     setCurrentPage(1);
@@ -91,6 +93,7 @@ export default function DreamTeamBuilder() {
     setSelectedNationality("");
     setSelectedPosition("");
     setSelectedTeam("");
+    setShowActualPlayersOnly(false);
     setSelectedActiveRetiredStared(null);
   }, [selectedSport]);
 
@@ -238,36 +241,55 @@ export default function DreamTeamBuilder() {
 
   const currentTheme = sportThemes[selectedSport.toLowerCase() as Sport];
 
-  const playersToShow = (filteredPlayers.length > 0 ? filteredPlayers.filter(player => !isPlayerInTeam(player.id)) : players
-    .filter(player => {
-      let activeRetiredLegendaryCondition = true;
-      
-      if (selectedActiveRetiredStared === "legendary") {
-        activeRetiredLegendaryCondition = player.legendary_player === 1;
-      } else if (selectedActiveRetiredStared !== null) {
-        activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
-      }
+  // Fonction de filtrage réutilisable
+  const applyFilters = (player: PlayerType): boolean => {
+    let activeRetiredLegendaryCondition = true;
+    
+    if (selectedActiveRetiredStared === "legendary") {
+      activeRetiredLegendaryCondition = player.legendary_player === 1;
+    } else if (selectedActiveRetiredStared !== null) {
+      activeRetiredLegendaryCondition = player.active === selectedActiveRetiredStared;
+    }
 
-      // Logique de filtrage par nationalité (incluant les groupes)
-      let nationalityCondition = true;
-      if (selectedNationality !== "") {
-        if (isNationalityGroup(selectedNationality)) {
-          // Si c'est un groupe, vérifier si la nationalité du joueur est dans le groupe
-          const nationalitiesInGroup = getNationalitiesInGroup(selectedNationality as NationalityGroup);
-          nationalityCondition = nationalitiesInGroup.includes(player.nationality1) || nationalitiesInGroup.includes(player.nationality2);
-        } else {
-          // Si c'est une nationalité individuelle, vérification directe
-          nationalityCondition = player.nationality1 === selectedNationality || player.nationality2 === selectedNationality;
-        }
+    // Logique de filtrage par nationalité (incluant les groupes)
+    let nationalityCondition = true;
+    if (selectedNationality !== "") {
+      if (isNationalityGroup(selectedNationality)) {
+        // Si c'est un groupe, vérifier si la nationalité du joueur est dans le groupe
+        const nationalitiesInGroup = getNationalitiesInGroup(selectedNationality as NationalityGroup);
+        nationalityCondition = nationalitiesInGroup.includes(player.nationality1) || nationalitiesInGroup.includes(player.nationality2);
+      } else {
+        // Si c'est une nationalité individuelle, vérification directe
+        nationalityCondition = player.nationality1 === selectedNationality || player.nationality2 === selectedNationality;
       }
+    }
 
-      return player.sport.toLowerCase() === selectedSport && 
-             !isPlayerInTeam(player.id) &&
-             nationalityCondition &&
-             (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
-             (selectedTeam === "" || player.team1 === selectedTeam || player.team2 === selectedTeam || player.team3 === selectedTeam || player.actual_team === selectedTeam) &&
-             activeRetiredLegendaryCondition;
-    }))
+    // Logique de filtrage par équipe
+    let teamCondition = true;
+    if (selectedTeam !== "") {
+      const normalizedSelectedTeam = selectedTeam.trim().toLowerCase();
+      if (showActualPlayersOnly) {
+        // Toggle activé : seulement les joueurs actuels de l'équipe sélectionnée
+        teamCondition = !!(player.actual_team_logo && player.actual_team && player.actual_team.trim().toLowerCase() === normalizedSelectedTeam);
+      } else {
+        // Toggle désactivé : tous les joueurs qui ont joué ou jouent dans cette équipe
+        teamCondition = !!(player.team1 && player.team1.trim().toLowerCase() === normalizedSelectedTeam) || 
+                       !!(player.team2 && player.team2.trim().toLowerCase() === normalizedSelectedTeam) || 
+                       !!(player.team3 && player.team3.trim().toLowerCase() === normalizedSelectedTeam) || 
+                       !!(player.actual_team && player.actual_team.trim().toLowerCase() === normalizedSelectedTeam);
+      }
+    }
+
+    return player.sport.toLowerCase() === selectedSport && 
+           !isPlayerInTeam(player.id) &&
+           nationalityCondition &&
+           (selectedPosition === "" || player.position1 === selectedPosition || player.position2 === selectedPosition) &&
+           teamCondition &&
+           activeRetiredLegendaryCondition;
+  };
+
+  const playersToShow = (filteredPlayers.length > 0 ? filteredPlayers : players)
+    .filter(applyFilters)
     .sort((a, b) => {
       if (selectedPosition !== "") {
         const aIsPrimary = a.position1 === selectedPosition;
@@ -384,6 +406,23 @@ export default function DreamTeamBuilder() {
                   </div>
                   <div className="w-full sm:w-1/2">
                     <TeamSelector selectedTeam={selectedTeam} onSelectTeam={setSelectedTeam} players={players} selectedSport={selectedSport} />
+                    {selectedTeam && selectedTeam !== "" && (
+                      <div className="mb-4 flex items-center gap-2">
+                        <span className="text-black font-[family-name:var(--font-title)] text-sm">Actual players only :</span>
+                        <label className="relative inline-flex items-center cursor-pointer">
+                          <input
+                            type="checkbox"
+                            checked={showActualPlayersOnly}
+                            onChange={(e) => setShowActualPlayersOnly(e.target.checked)}
+                            className="sr-only peer"
+                          />
+                          <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-gray-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
+                          <span className="ml-3 text-sm font-medium text-gray-700 font-[family-name:var(--font-title)]">
+                            {showActualPlayersOnly ? "Yes" : "No"}
+                          </span>
+                        </label>
+                      </div>
+                    )}
                   </div>
                 </div>
                 

@@ -93,13 +93,17 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
     onSelectTeam(team);
   };
 
+  const resetTeam = () => {
+    onSelectTeam("");
+  };
+
   return (
-    <div>
+    <div className="relative">
       <select
         aria-label="Choose team"
         value={selectedTeam || ""}
         onChange={(e) => handleTeamChange(e.target.value)}
-        className="w-full px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent font-[family-name:var(--font-title)]"
+        className="w-full px-2 py-2 rounded-lg text-sm font-semibold text-gray-700 bg-gray-100 border mb-4 border-gray-600 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent font-[family-name:var(--font-title)] pr-10"
       >
         <option value="">All {selectedSport} teams</option>
         {Array.from(teamsByCountry.entries()).map(([countryCode, countryTeams]) => (
@@ -115,6 +119,26 @@ export const TeamSelector = ({ selectedTeam, onSelectTeam, players, selectedSpor
           </optgroup>
         ))}
       </select>
+      {selectedTeam && selectedTeam !== "" && (
+        <button
+          onClick={resetTeam}
+          className="absolute right-4 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-red-100"
+          aria-label="Clear team"
+          style={{ top: 'calc(50% - 8px)' }}
+        >
+          <svg
+            className="w-4 h-4 text-red-500"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      )}
     </div>
   );
 };
