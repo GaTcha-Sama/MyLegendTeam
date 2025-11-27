@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Orbitron } from "next/font/google"; // ou Bebas_Neue, Righteous, etc.
 import "./globals.css";
-import { Navbar } from "./components/layout/Navbar";
-import { Footer } from "./components/layout/Footer";
+import { ConditionalLayout } from "./components/layout/ConditionalLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -113,9 +112,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${titleFont.variable} antialiased`}
         suppressHydrationWarning
       >
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
