@@ -69,11 +69,11 @@
       "team1_id": 6,
       "team2_id": null,
       "team3_id": null,
-      "actual_team_id": 6,
+      "actual_team_id": null,
       "legendary_player": null,
       "flag1": "images/flags/FRA.png",
       "flag2": "images/flags/NZL.png",
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/FRA/NZL/Uini-Atonio.webp"
     },
     {
@@ -1698,7 +1698,7 @@
       "nationality1_id": 59,
       "nationality2_id": null,
       "position1_id": 4,
-      "position2_id": null,
+      "position2_id": 30,
       "sport_id": 1,
       "team1_id": 8,
       "team2_id": 1,
@@ -2534,7 +2534,7 @@
       "nationality1_id": 59,
       "nationality2_id": null,
       "position1_id": 4,
-      "position2_id": 30,
+      "position2_id": 3,
       "sport_id": 1,
       "team1_id": 14,
       "team2_id": 2,
@@ -3279,12 +3279,12 @@
       "sport_id": 1,
       "team1_id": 5,
       "team2_id": 71,
-      "team3_id": null,
-      "actual_team_id": null,
+      "team3_id": 39,
+      "actual_team_id": 39,
       "legendary_player": null,
       "flag1": "images/flags/FRA.png",
       "flag2": "images/flags/FJI.png",
-      "active": false,
+      "active": true,
       "photo": "images/rugby/Players/FRA/FJI/Virimi-Vakatawa.webp"
     },
     {
@@ -3493,7 +3493,7 @@
       "legendary_player": null,
       "flag1": "images/flags/NZL.png",
       "flag2": null,
-      "active": true,
+      "active": false,
       "photo": "images/rugby/Players/NZL/Scott-Barrett.webp"
     },
     {
